@@ -11,10 +11,10 @@ A free (no monthly charges) pipeline that produces quiz videos and Shorts every 
 | Item | Rate |
 |---|---|
 | Long quizzes produced | 3 a week |
-| Long quizzes published | **Pending** — days, times and cadence were set in a separate chat that couldn't be read from here. Placeholder: Thursday 3pm and Sunday 1pm US Eastern |
+| Long quizzes published | 2 a week: Thursday 3pm and Sunday 1pm US Eastern (Fri 7am / Mon 5am Melbourne) |
 | Buffer growth | Production minus publishing rate, into the upload pool |
 | Shorts | 2–3 cut from each approved quiz, published 1 a day or every second day (agreed 29 Oct) |
-| Upload lead time | Uploaded privately at least 5 days before publish *(assumption)* |
+| Upload lead time | Uploaded privately 3 days before publish (Monday for Thursday, Thursday for Sunday), then a processing check *(assumption: "well after upload"; earlier chat used ~30 hours)* |
 
 All times live in one file, `data/publish_schedule.json` (US Eastern, same format as the rain repo), so a change is one edit.
 
@@ -23,7 +23,7 @@ All times live in one file, `data/publish_schedule.json` (US Eastern, same forma
 ### 1. Writing — Claude scheduled task, weekly
 
 - Picks 3 topics (adjusted over time from analytics)
-- Writes 50 questions per quiz in Giulia's style: one plain sentence per question, punchy reveal with one emoji and a quip or myth-bust, capitals for emphasis, warm sign-off, Australian spelling, no AI tells
+- Writes 50 questions per quiz (may rise to 100 later; 25 in past videos) in Giulia's style: one plain sentence per question, punchy reveal with one emoji and a quip or myth-bust, capitals for emphasis, warm sign-off, Australian spelling, no AI tells
 - Fact-checks every answer in a second pass; uncertain questions are flagged for review
 - Checks every question against `data/question_bank.json` so nothing repeats
 - Writes title, description (existing caption template wording kept), tags, playlist and pinned-comment text
@@ -60,6 +60,34 @@ Decisions are stored on the review page; a Claude scheduled task syncs them to `
 - Posts the pinned-comment text as a comment
 - Uploads that quiz's Shorts with their own publish times
 
+## Upload settings (from the 28 Oct settings chat)
+
+| Setting | Value | How |
+|---|---|---|
+| Title, description, tags, chapters | Generated; caption template wording kept as is | Automatic |
+| Schedule line in description | Must read Thursday 3PM & Sunday 1PM ET. Upload is blocked if it still says AEST | Automatic check |
+| Category | Education | Automatic |
+| Made for kids | Always No | Automatic |
+| Language | English (Australia) | Automatic |
+| Recording date | Upload date | Automatic |
+| Paid promotion | No (`hasPaidProductPlacement: false`) | Automatic |
+| Altered/synthetic content | Yes (`containsSyntheticMedia: true`, cloned voice) | Automatic |
+| Licence, embedding, notify subscribers | Standard YouTube licence, embedding on, notify on | Automatic |
+| Visibility | Private with `publishAt` | Automatic |
+| Playlist | Created and assigned by Claude (none exist yet) | Automatic |
+| Thumbnail, captions | Generated | Automatic |
+| End screen | Studio template, end-screen target named in the outro voiceover | Browser task on Giulia's computer |
+| Pinned comment | Posted by the pipeline, pinned by the browser task | Browser task |
+| Caption certification, location (Melbourne), Shorts remixing on | Studio-only fields | Browser task |
+
+Browser task: runs the day after upload with Giulia's computer on and the Claude desktop app open, checks every setting and alerts if one is wrong.
+
+## On-screen wording
+
+- Tagline everywhere: "Your bi-weekly dose of trivia" (fixes slides that said "daily")
+- Credit: "created by Giulia Colaci & Lucas Shugg"
+- Slides are generated from the quiz file, so each reveal always shows its own question
+
 ## Assets (inventory, 29 Oct)
 
 Video template: Canva `DAHLUf1evdk` "02062026_OMQ_General Knowledge Quiz #1", 1920×1080, 53 pages.
@@ -74,14 +102,14 @@ Video template: Canva `DAHLUf1evdk` "02062026_OMQ_General Knowledge Quiz #1", 19
 
 Thumbnail template: Canva `DAHNRSzzcbE` "JOMQ - Thumbnails 26", 1280×720. Layout: topic in large white text + "Quiz # N" script on dark blue band, GIF still collage, "Everyone should know" band. No autofill fields, so thumbnails are rebuilt in code from this layout (fonts and colours matched), with Canva editing as a later option.
 
-Voice: 12.5 s ElevenLabs render of Giulia's voice (Quiz 8 Friends). Usable as the Chatterbox reference; a 20–30 s raw recording would clone more faithfully than cloning a clone.
+Voice: 12.5 s ElevenLabs render of Giulia's voice (Quiz 8 Friends) — agreed as the Chatterbox reference. Stored privately, never committed while the repo is public.
 
-Downloading Canva exports is blocked from Claude's workspace, so the exported files need to be downloaded once and added to `assets/`.
+In repo: `assets/video/intro.mp4` (16.9 s), `rules.mp4` (13.4 s), `outro.mp4` (11.7 s), and stills of pages 1–4 in `assets/canva/`. Canva exports are pulled in with the **Fetch asset** workflow (Claude exports, GitHub downloads). Still needed: blank question and reveal backgrounds (no text, GIF or timer).
 
 Observations from Quiz #1 template:
-- 25 questions per video (not 50) — confirm the target count
-- Some reveal slides show the previous question's text (e.g. Condensation under the monkeys question). Generating slides in code removes this class of error
-- Footer copy mixes "daily" and "bi-weekly" dose of trivia — pick one
+- 25 questions per video; new videos use 50 (decided 29 Oct)
+- Some reveal slides show the previous question's text (e.g. Condensation under the monkeys question). Generated slides remove this
+- Footer copy said "daily"; now "bi-weekly" (decided 29 Oct)
 
 ## Manual steps that remain (YouTube API limits)
 
@@ -110,4 +138,5 @@ Observations from Quiz #1 template:
 
 - 28 Oct 2026: Video built in code rather than filled in Canva; Canva kept for thumbnails only
 - 28 Oct 2026: 3 quizzes a week (buffer), previews via GitHub, Shorts added, Revise option added, fact-check pass added
+- 29 Oct 2026: 50 questions; "bi-weekly" tagline; cloned ElevenLabs clip used as voice reference; settings table adopted from the 28 Oct settings chat; Notion Quiz Queue approval replaced by the video review page.
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
