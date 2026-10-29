@@ -3,7 +3,7 @@
   "number": 9,
   "series": "General Knowledge",
   "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
-  "status": "awaiting_question_review",
+  "status": "questions_approved",
   "questions": [
     {
       "n": 1,
@@ -305,5 +305,13 @@
       "answer": "Sir Isaac Newton! 🍎",
       "reveal": "The apple didn't fall far from the genius."
     }
-  ]
+  ],
+  "review": {
+    "questions": {
+      "decision": "approved",
+      "by": "Giulia",
+      "date": "2026-10-29",
+      "evidence": "Approved all 50 questions in Claude chat, 29 Oct 2026 15:10 AEDT (\"These are great. I'm happy with it!\")"
+    }
+  }
 }
