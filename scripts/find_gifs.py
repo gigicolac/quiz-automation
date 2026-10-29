@@ -6,23 +6,25 @@ Writes gif_candidates.json next to the queries file.
 """
 import json, os, sys, urllib.parse, urllib.request
 
-BLOCKED_USERS = {"natgeowild", "southparkgifs", "natgeo", "netflix", "nbc", "foxsportsaus", "hbo", "disney", "warnerbros", "abcnetwork", "cbs", "bbc"}
+BLOCKED_TITLE_WORDS = ["friends", "simpsons", "spongebob", "breaking bad", "game of thrones", "trump", "beyonce", "salt bae", "south park", "netflix", "bbc", "red bull", "history", "general hospital", "pawn stars", "sea of thieves", "storybots", "galifianakis", "conan", "mr t", "beatles", "scarlett", "mia farrow", "horror", "movie", "season", "episode", "tv"]
+BLOCKED_USERS = {"natgeowild", "southparkgifs", "natgeo", "netflix", "nbc", "foxsportsaus", "hbo", "disney", "warnerbros", "abcnetwork", "cbs", "bbc", "bbcamerica", "bbcearth", "thesimpsons", "spongebob", "redbull", "generalhospital", "historylat", "historyuk", "seaofthieves", "storybots", "teamcoco", "netflixlat", "dazn", "outbacksteakhouse", "friends", "southpark", "lifetimetv", "adweek", "fuckthatsdelicious", "nowthis", "pri", "worldcup", "worldrugby"}
 
 def get(url):
     with urllib.request.urlopen(url, timeout=30) as r:
         return json.load(r)
 
 def giphy(q, key):
-    u = "https://api.giphy.com/v1/gifs/search?" + urllib.parse.urlencode({"api_key": key, "q": q, "limit": 15, "rating": "g", "lang": "en"})
+    u = "https://api.giphy.com/v1/gifs/search?" + urllib.parse.urlencode({"api_key": key, "q": q, "limit": 25, "rating": "g", "lang": "en"})
     out = []
     for g in get(u).get("data", []):
         user = (g.get("username") or "").lower()
-        if user in BLOCKED_USERS:
+        title = (g.get("title") or "").lower()
+        if user in BLOCKED_USERS or any(w in title for w in BLOCKED_TITLE_WORDS):
             continue
         mp4 = g.get("images", {}).get("original", {}).get("mp4")
         if mp4:
             out.append({"source": "giphy", "id": g["id"], "user": user, "title": g.get("title", ""), "mp4": mp4.split("?")[0]})
-        if len(out) >= 3:
+        if len(out) >= 5:
             break
     return out
 
