@@ -1,11 +1,15 @@
 name: Find GIFs
 # Searches GIPHY (Pixabay fallback) for a quiz's gif_queries.json and commits gif_candidates.json.
 on:
+  push:
+    branches: ["claude/**"]
+    paths: ["quizzes/*/gif_queries.json"]
   workflow_dispatch:
     inputs:
       quiz:
         description: "Quiz folder under quizzes/, e.g. quiz-09"
         required: true
+        default: quiz-09
 permissions:
   contents: write
 jobs:
@@ -17,13 +21,13 @@ jobs:
         env:
           GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          QUIZ: ${{ inputs.quiz }}
+          QUIZ: ${{ inputs.quiz || 'quiz-09' }}
         run: |
           case "$QUIZ" in *..*|*/*) echo "Invalid quiz"; exit 1;; esac
           python scripts/find_gifs.py "quizzes/$QUIZ/gif_queries.json"
       - name: Commit
         env:
-          QUIZ: ${{ inputs.quiz }}
+          QUIZ: ${{ inputs.quiz || 'quiz-09' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
