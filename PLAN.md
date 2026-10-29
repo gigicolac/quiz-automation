@@ -30,17 +30,27 @@ All times live in one file, `data/publish_schedule.json` (US Eastern, same forma
 - Marks time-sensitive quizzes (e.g. Christmas, World Cup) with an expiry date
 - Commits each quiz as `quizzes/<id>/quiz.json` and triggers the build
 
-### 2. Building — GitHub Actions
+### 2. Building — Canva for the slides, GitHub for the rest
 
-- **GIFs:** GIPHY API, Pixabay as fallback. Avoid film/TV clips where possible (Content ID risk)
-- **Voiceover:** Giulia's voice cloned with Chatterbox (CPU on free runners — speed and quality to be tested first)
-- **Video:** assembled in code (FFmpeg/Python) from premade assets exported once from Canva: intro, break, outro, question slide and reveal slide backgrounds. Text, GIFs, timer and music are layered on top
-- **Captions:** `.srt` generated from the script
-- **Thumbnail:** Canva template via the Canva connector; fallback is template image + text in code
-- **Shorts:** 2–3 vertical clips per quiz ("Can you get this one?")
-- **Output:** video, Shorts, thumbnail and metadata attached to a GitHub Release per quiz (also used for previews)
+Canva builds what you see; code handles timing and sound. This keeps every slide editable by hand in Canva.
 
-### 3. Review — page in Claude
+1. **Copy the template** (Claude, Canva connector): copy "Quiz Template - Asset Export" for each quiz. The master is never edited.
+2. **Fill the slides:** question text, answer text and quiz number written into each page; tagline "Your bi-weekly dose of trivia".
+3. **Place the GIFs:** found on GIPHY (Pixabay as fallback), uploaded to Canva by URL and placed, sized and cropped into each question and reveal frame.
+4. **Export:** the filled design is exported from Canva as MP4 (one clip per page) and pulled into GitHub by the **Fetch asset** workflow.
+5. **Assemble (GitHub Actions):** each page clip is looped or trimmed to the voiceover length. The 10-second countdown, music and captions are added, and the clips are joined into the full video.
+6. **Voiceover:** Giulia's voice cloned with Chatterbox (CPU on free runners, speed and quality tested first).
+7. **Thumbnail:** "JOMQ - Thumbnails 26" layout, duplicated and filled in Canva the same way, exported as PNG.
+8. **Shorts:** 2–3 vertical clips cut from each quiz ("Can you get this one?").
+9. **Output:** video, Shorts, thumbnail and metadata attached to a GitHub Release per quiz, used for previews.
+
+Risks to test on the first quiz: about 100 Canva page edits per quiz through the connector (speed and Claude usage), and whether Canva's MP4 export keeps GIFs animated at the right length.
+
+### 3. Review — two stages until we're happy, then video only
+
+- **Stage 1, questions:** each quiz's 50 questions, answers and reveals are sent to Giulia in Claude before anything is built. Approved quizzes go to the build.
+- **Stage 2, finished video:** every video is reviewed before upload while the pipeline is being proven. Once Giulia is happy, stage 1 is dropped and only stage 2 remains.
+
 
 Each quiz shows the preview (played from its GitHub Release), title, thumbnail and any fact-check flags, with four options:
 
@@ -138,5 +148,6 @@ Observations from Quiz #1 template:
 
 - 28 Oct 2026: Video built in code rather than filled in Canva; Canva kept for thumbnails only
 - 28 Oct 2026: 3 quizzes a week (buffer), previews via GitHub, Shorts added, Revise option added, fact-check pass added
+- 29 Oct 2026: Slides built in Canva (copy of the master template per quiz) and exported; voice, timer, music and captions added in GitHub. Two-stage review (questions, then video) until the pipeline is trusted. Upload 3 days ahead confirmed.
 - 29 Oct 2026: 50 questions; "bi-weekly" tagline; cloned ElevenLabs clip used as voice reference; settings table adopted from the 28 Oct settings chat; Notion Quiz Queue approval replaced by the video review page.
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout

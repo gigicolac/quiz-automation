@@ -1,0 +1,309 @@
+{
+  "id": "quiz-09",
+  "number": 9,
+  "series": "General Knowledge",
+  "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
+  "status": "awaiting_question_review",
+  "questions": [
+    {
+      "n": 1,
+      "question": "What is the capital city of Australia?",
+      "answer": "Canberra! 🇦🇺",
+      "reveal": "Not Sydney, not Melbourne. Canberra was built as the ultimate COMPROMISE!"
+    },
+    {
+      "n": 2,
+      "question": "How many legs does a spider have?",
+      "answer": "Eight! 🕷️",
+      "reveal": "Eight legs and zero chill."
+    },
+    {
+      "n": 3,
+      "question": "Which planet is the hottest in our solar system?",
+      "answer": "Venus! 🔥",
+      "reveal": "Not Mercury! Venus traps its heat under a thick blanket of clouds."
+    },
+    {
+      "n": 4,
+      "question": "What is the largest mammal on Earth?",
+      "answer": "The blue whale! 🐋",
+      "reveal": "Its heart alone can weigh around 180 kilograms. Big heart, BIGGER whale!"
+    },
+    {
+      "n": 5,
+      "question": "What is the tallest mountain above sea level?",
+      "answer": "Mount Everest! 🏔️",
+      "reveal": "Peak trivia, right there."
+    },
+    {
+      "n": 6,
+      "question": "Which country has the largest population in the world?",
+      "answer": "India! 🇮🇳",
+      "reveal": "India overtook China in 2023. Did that one catch you out?"
+    },
+    {
+      "n": 7,
+      "question": "How many minutes are in a full day?",
+      "answer": "1,440! ⏰",
+      "reveal": "Twenty-four times sixty, people!"
+    },
+    {
+      "n": 8,
+      "question": "What language is spoken in Brazil?",
+      "answer": "Portuguese! 🇧🇷",
+      "reveal": "Not Spanish! Brazil is the BIGGEST Portuguese-speaking country on the planet."
+    },
+    {
+      "n": 9,
+      "question": "What is the main ingredient in guacamole?",
+      "answer": "Avocado! 🥑",
+      "reveal": "Holy guacamole, that was an easy one."
+    },
+    {
+      "n": 10,
+      "question": "In which city would you find the Colosseum?",
+      "answer": "Rome! 🏟️",
+      "reveal": "When in Rome, answer like the Romans."
+    },
+    {
+      "n": 11,
+      "question": "What is the smallest prime number?",
+      "answer": "Two! 2️⃣",
+      "reveal": "The ONLY even prime. Odd, isn't it?"
+    },
+    {
+      "n": 12,
+      "question": "How many chambers does the human heart have?",
+      "answer": "Four! ❤️",
+      "reveal": "Four chambers, one very busy pump."
+    },
+    {
+      "n": 13,
+      "question": "How many players from each team are on the court in netball?",
+      "answer": "Seven! 🙌",
+      "reveal": "Seven a side, and every one of them has a set position."
+    },
+    {
+      "n": 14,
+      "question": "What is the bee that lays all the eggs in a hive called?",
+      "answer": "The queen! 👑",
+      "reveal": "Long live the queen BEE!"
+    },
+    {
+      "n": 15,
+      "question": "Who was the first person to walk on the Moon?",
+      "answer": "Neil Armstrong! 🌕",
+      "reveal": "One small step for man, one giant leap for your score."
+    },
+    {
+      "n": 16,
+      "question": "At what temperature in degrees Celsius does water boil at sea level?",
+      "answer": "100 degrees! 🫖",
+      "reveal": "Perfect timing for a cuppa."
+    },
+    {
+      "n": 17,
+      "question": "What is the smallest bone in the human body?",
+      "answer": "The stapes! 👂",
+      "reveal": "It lives in your ear and is smaller than a grain of rice."
+    },
+    {
+      "n": 18,
+      "question": "Which country is famous for its tulips and windmills?",
+      "answer": "The Netherlands! 🌷",
+      "reveal": "Tulip if you got that one right."
+    },
+    {
+      "n": 19,
+      "question": "What is the longest river in Australia?",
+      "answer": "The Murray River! 🌊",
+      "reveal": "Over 2,500 kilometres of it."
+    },
+    {
+      "n": 20,
+      "question": "Which author wrote Pride and Prejudice?",
+      "answer": "Jane Austen! 📚",
+      "reveal": "A truth universally acknowledged: Austen is a LEGEND."
+    },
+    {
+      "n": 21,
+      "question": "What colour do you get when you mix blue and yellow paint?",
+      "answer": "Green! 🎨",
+      "reveal": "Easy being green on this one."
+    },
+    {
+      "n": 22,
+      "question": "What is the fastest bird in the world?",
+      "answer": "The peregrine falcon! 🦅",
+      "reveal": "It can top 300 km/h in a dive. Zoom!"
+    },
+    {
+      "n": 23,
+      "question": "In which country would you find Machu Picchu?",
+      "answer": "Peru! 🦙",
+      "reveal": "Llama tell you, the views are INCREDIBLE."
+    },
+    {
+      "n": 24,
+      "question": "What is the chemical symbol for sodium?",
+      "answer": "Na! 🧂",
+      "reveal": "Not So! Na comes from its Latin name, natrium."
+    },
+    {
+      "n": 25,
+      "question": "How many days are in a leap year?",
+      "answer": "366! 📅",
+      "reveal": "One bonus day every four years. Lucky us!"
+    },
+    {
+      "n": 26,
+      "question": "Which planet is closest to the Sun?",
+      "answer": "Mercury! ☀️",
+      "reveal": "Closest, but NOT the hottest. Sneaky, right?"
+    },
+    {
+      "n": 27,
+      "question": "What colourful puzzle cube was invented by Ernő Rubik in 1974?",
+      "answer": "The Rubik's Cube! 🧩",
+      "reveal": "Bet you can't solve it in under ten seconds."
+    },
+    {
+      "n": 28,
+      "question": "Which ocean lies between Africa and Australia?",
+      "answer": "The Indian Ocean! 🌊",
+      "reveal": "Our neighbour to the west."
+    },
+    {
+      "n": 29,
+      "question": "Which fruit wears its seeds on the outside?",
+      "answer": "The strawberry! 🍓",
+      "reveal": "Around 200 seeds on every berry. Berry impressive."
+    },
+    {
+      "n": 30,
+      "question": "In which year did World War II end?",
+      "answer": "1945! 🕊️",
+      "reveal": "Peace at last."
+    },
+    {
+      "n": 31,
+      "question": "Which reptile is famous for changing the colour of its skin?",
+      "answer": "The chameleon! 🦎",
+      "reveal": "Myth-bust: it's mostly about mood and temperature, not hiding!"
+    },
+    {
+      "n": 32,
+      "question": "Who painted The Starry Night?",
+      "answer": "Vincent van Gogh! 🌌",
+      "reveal": "Painted from his window, and still a STAR."
+    },
+    {
+      "n": 33,
+      "question": "What is the largest country in the world by land area?",
+      "answer": "Russia! 🇷🇺",
+      "reveal": "It covers about one ninth of all the land on Earth."
+    },
+    {
+      "n": 34,
+      "question": "How many continents are there?",
+      "answer": "Seven! 🌍",
+      "reveal": "Seven continents, one very round planet."
+    },
+    {
+      "n": 35,
+      "question": "What is the name of the galaxy we live in?",
+      "answer": "The Milky Way! 🍫",
+      "reveal": "Not the chocolate bar, although we wouldn't say no."
+    },
+    {
+      "n": 36,
+      "question": "Which gas makes party balloons float?",
+      "answer": "Helium! 🎈",
+      "reveal": "Bonus points if you said it in a squeaky voice."
+    },
+    {
+      "n": 37,
+      "question": "In which sport would you hit a shuttlecock?",
+      "answer": "Badminton! 🏸",
+      "reveal": "The fastest racket sport on Earth. Smashing!"
+    },
+    {
+      "n": 38,
+      "question": "What is Big Ben in London?",
+      "answer": "The bell! 🔔",
+      "reveal": "Myth-bust: the tower is called the Elizabeth Tower. Big Ben is the BELL inside!"
+    },
+    {
+      "n": 39,
+      "question": "What is the square root of 144?",
+      "answer": "12! 🔢",
+      "reveal": "A dozen, if you're feeling fancy."
+    },
+    {
+      "n": 40,
+      "question": "Which Australian bird is famous for its laughing call?",
+      "answer": "The kookaburra! 😂",
+      "reveal": "Laughing all the way to the gum tree."
+    },
+    {
+      "n": 41,
+      "question": "What was the name of Captain Cook's ship when he reached Australia's east coast in 1770?",
+      "answer": "The Endeavour! ⛵",
+      "reveal": "A very fitting name for that trip."
+    },
+    {
+      "n": 42,
+      "question": "What is a word that sounds the same as another but has a different meaning?",
+      "answer": "A homophone! 🗣️",
+      "reveal": "Like sea and see. Did you hear that one coming?"
+    },
+    {
+      "n": 43,
+      "question": "Which planet has the most known moons?",
+      "answer": "Saturn! 🪐",
+      "reveal": "More than 270 and counting. Moon-believable!"
+    },
+    {
+      "n": 44,
+      "question": "What creature appears on the flag of Wales?",
+      "answer": "A red dragon! 🐉",
+      "reveal": "Wales doesn't do boring flags."
+    },
+    {
+      "n": 45,
+      "question": "Which vitamin does your body make when your skin is in sunlight?",
+      "answer": "Vitamin D! ☀️",
+      "reveal": "The sunshine vitamin. Slip, slop, slap first though!"
+    },
+    {
+      "n": 46,
+      "question": "Which city hosted the 2000 Summer Olympics?",
+      "answer": "Sydney! 🥇",
+      "reveal": "Aussie, Aussie, Aussie! Oi, oi, oi!"
+    },
+    {
+      "n": 47,
+      "question": "What type of pasta is shaped like little bow ties?",
+      "answer": "Farfalle! 🎀",
+      "reveal": "Farfalle means BUTTERFLIES in Italian."
+    },
+    {
+      "n": 48,
+      "question": "What do you call a word made by rearranging the letters of another word?",
+      "answer": "An anagram! 🔤",
+      "reveal": "Listen and silent. Mind blown?"
+    },
+    {
+      "n": 49,
+      "question": "What is the driest non-polar desert in the world?",
+      "answer": "The Atacama Desert! 🌵",
+      "reveal": "Some weather stations there have never recorded rain."
+    },
+    {
+      "n": 50,
+      "question": "Legend says a falling apple inspired which scientist's theory of gravity?",
+      "answer": "Sir Isaac Newton! 🍎",
+      "reveal": "The apple didn't fall far from the genius."
+    }
+  ]
+}
