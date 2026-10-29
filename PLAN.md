@@ -151,3 +151,19 @@ Observations from Quiz #1 template:
 - 29 Oct 2026: Slides built in Canva (copy of the master template per quiz) and exported; voice, timer, music and captions added in GitHub. Two-stage review (questions, then video) until the pipeline is trusted. Upload 3 days ahead confirmed.
 - 29 Oct 2026: 50 questions; "bi-weekly" tagline; cloned ElevenLabs clip used as voice reference; settings table adopted from the 28 Oct settings chat; Notion Quiz Queue approval replaced by the video review page.
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
+
+## Canva build proof run (29 Oct 2026, Quiz #9 questions 1)
+
+Designs (copies only; the master "Quiz Template - Asset Export" `DAHTqtWQvFk` was not edited):
+- `DAHZXN0M1hQ` "OMQ_General Knowledge Quiz #9 (automated build)": 100 pages, 50 question/answer pairs. Pair 1 filled.
+- `DAHZXLqb6v0` "OMQ_General Knowledge Quiz #9 (intro and outro)": intro, rules, outro, not yet filled.
+- Leftover test copies to delete by hand in Canva: `DAHZXAgyEzI`, `DAHZXBYSE4M` (both titled "Quiz Template - Asset Export").
+
+Findings:
+- Canva caps a design at 100 pages, so 50 questions fill one design exactly; intro, rules and outro live in a second design.
+- Pages can't be repeated in one copy, but merging the master's 25 pairs in twice works.
+- GIPHY GIF files fail to import into Canva; the MP4 version of the same GIF imports as a video and loops for the whole slide in the export. Verified by exporting pair 1 to MP4 (12.5 s) and checking frames.
+- The template's countdown video plays 10 to 1 on the question slide. The answer slide exports at about 2.5 s, too short for the answer and quip, so GitHub will hold the answer slide for the length of the voiceover.
+- Question-slide GIFs must not give the answer away (first pick showed "CANBERRA"). GIF search for question slides uses a topic hint, not the answer.
+- The answer pill text came out red: in the master, the space after "Answer:" is formatted red, and replacement text inherits it. Fix once in the master (make that space black) or split "Answer:" and the answer into two text boxes.
+- Work per quiz: about 100 GIF imports and 100 page edits through the connector.
