@@ -11,10 +11,12 @@ A free (no monthly charges) pipeline that produces quiz videos and Shorts every 
 | Item | Rate |
 |---|---|
 | Long quizzes produced | 3 a week |
-| Long quizzes published | 2 a week, Thursday 3pm and Sunday 1pm US Eastern *(confirm time zone)* |
-| Buffer growth | +1 a week into the upload pool |
-| Shorts | 2–3 cut from each approved quiz, published 1 a day *(assumption, confirm)* |
+| Long quizzes published | **Pending** — days, times and cadence were set in a separate chat that couldn't be read from here. Placeholder: Thursday 3pm and Sunday 1pm US Eastern |
+| Buffer growth | Production minus publishing rate, into the upload pool |
+| Shorts | 2–3 cut from each approved quiz, published 1 a day or every second day (agreed 29 Oct) |
 | Upload lead time | Uploaded privately at least 5 days before publish *(assumption)* |
+
+All times live in one file, `data/publish_schedule.json` (US Eastern, same format as the rain repo), so a change is one edit.
 
 ## Pipeline
 
@@ -58,6 +60,29 @@ Decisions are stored on the review page; a Claude scheduled task syncs them to `
 - Posts the pinned-comment text as a comment
 - Uploads that quiz's Shorts with their own publish times
 
+## Assets (inventory, 29 Oct)
+
+Video template: Canva `DAHLUf1evdk` "02062026_OMQ_General Knowledge Quiz #1", 1920×1080, 53 pages.
+
+| Page(s) | Use | Pipeline |
+|---|---|---|
+| 1 | Intro: title on blurred gradient, "Quiz!" logo top right | Export background; title drawn in code |
+| 2 | Rules: "There is no multiple-choice…" | Export as-is |
+| Odd 3–51 | Question: GIF panel left, question card right, 00:10 timer | Blank background exported; GIF, text and countdown drawn in code |
+| Even 4–52 | Reveal: same layout, green "Answer:" pill | Blank background exported; image, text and answer pill drawn in code |
+| 53 | Outro: "One more quiz?…", logo, Subscribe button | Export as-is; leave space for end screen elements |
+
+Thumbnail template: Canva `DAHNRSzzcbE` "JOMQ - Thumbnails 26", 1280×720. Layout: topic in large white text + "Quiz # N" script on dark blue band, GIF still collage, "Everyone should know" band. No autofill fields, so thumbnails are rebuilt in code from this layout (fonts and colours matched), with Canva editing as a later option.
+
+Voice: 12.5 s ElevenLabs render of Giulia's voice (Quiz 8 Friends). Usable as the Chatterbox reference; a 20–30 s raw recording would clone more faithfully than cloning a clone.
+
+Downloading Canva exports is blocked from Claude's workspace, so the exported files need to be downloaded once and added to `assets/`.
+
+Observations from Quiz #1 template:
+- 25 questions per video (not 50) — confirm the target count
+- Some reveal slides show the previous question's text (e.g. Condensation under the monkeys question). Generating slides in code removes this class of error
+- Footer copy mixes "daily" and "bi-weekly" dose of trivia — pick one
+
 ## Manual steps that remain (YouTube API limits)
 
 - **End screens:** cannot be set via the API. One click per video in Studio ("Import from video"); batch them since uploads are days ahead
@@ -66,7 +91,7 @@ Decisions are stored on the review page; a Claude scheduled task syncs them to `
 
 ## Blockers to clear first
 
-1. **YouTube API audit.** Uploads from an unaudited API project are locked to private, so `publishAt` won't work. Ask Shoma how the rain channel handled it, otherwise apply for the audit now (free, can take weeks)
+1. **YouTube API audit.** Uploads from an unaudited API project are locked to private, so `publishAt` won't work. The rain repo already uploads publicly with `publishAt`, so check one of its scheduled videos in YouTube Studio: if it went public on time, reuse that Google Cloud project (new OAuth token for the quiz channel). If it shows "Private (locked)" or "restricted", apply for the audit. Also check the OAuth consent screen is "In production", not "Testing" (Testing tokens expire every 7 days)
 2. **Chatterbox on free runners.** Test speed and voice quality on a 50-question script
 3. **Canva thumbnails unattended.** Test whether the Canva connector works from a scheduled run
 4. **Assets.** Export intro, break, outro, slide backgrounds, fonts, music and timer from Canva/current setup into `assets/`
@@ -85,3 +110,4 @@ Decisions are stored on the review page; a Claude scheduled task syncs them to `
 
 - 28 Oct 2026: Video built in code rather than filled in Canva; Canva kept for thumbnails only
 - 28 Oct 2026: 3 quizzes a week (buffer), previews via GitHub, Shorts added, Revise option added, fact-check pass added
+- 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
