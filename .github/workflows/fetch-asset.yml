@@ -1,0 +1,37 @@
+name: Fetch asset
+# Downloads a file from a URL (e.g. a short-lived Canva export link) into assets/ and commits it.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Download URL"
+        required: true
+      path:
+        description: "Destination path under assets/, e.g. video/intro.mp4"
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        env:
+          URL: ${{ inputs.url }}
+          DEST: assets/${{ inputs.path }}
+        run: |
+          case "$DEST" in *..*) echo "Invalid path"; exit 1;; esac
+          mkdir -p "$(dirname "$DEST")"
+          curl -fsSL --retry 3 -o "$DEST" "$URL"
+          ls -la "$DEST"
+      - name: Commit
+        env:
+          DEST: assets/${{ inputs.path }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          git commit -m "Add asset $DEST" || exit 0
+          git pull --rebase
+          git push
