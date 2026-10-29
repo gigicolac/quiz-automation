@@ -1,0 +1,27 @@
+name: Fetch Canva assets
+on:
+  push:
+    paths: ["assets/sources.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download each "path url" line
+        run: |
+          while read -r path url; do
+            [ -z "$path" ] && continue
+            mkdir -p "$(dirname "$path")"
+            curl -fsSL -o "$path" "$url" && echo "ok $path" || echo "FAILED $path"
+          done < assets/sources.txt
+          : > assets/sources.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A assets
+          git commit -m "Fetch Canva assets" || exit 0
+          git push
