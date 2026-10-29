@@ -23,9 +23,9 @@ All times live in one file, `data/publish_schedule.json` (US Eastern, same forma
 ### 1. Writing — Claude scheduled task, weekly
 
 - Picks 3 topics (adjusted over time from analytics)
-- Writes 50 questions per quiz (may rise to 100 later; 25 in past videos) in Giulia's style: one plain sentence per question, punchy reveal with one emoji and a quip or myth-bust, capitals for emphasis, warm sign-off, Australian spelling, no AI tells
-- Fact-checks every answer in a second pass; uncertain questions are flagged for review
-- Checks every question against `data/question_bank.json` so nothing repeats
+- Writes 50 questions per quiz (may rise to 100 later; 25 in past videos) in Giulia's style: one plain sentence per question, punchy reveal with one emoji and a quip or myth-bust, capitals for emphasis, warm sign-off, Australian spelling, no AI tells. Full rules, including the AI-tell list the lint enforces: [`docs/STYLE_GUIDE.md`](docs/STYLE_GUIDE.md)
+- Fact-checks every answer in a second pass. Each answer records **at least two independent sources** in `quiz.json`; contested answers are rewritten or dropped, and uncertain questions are flagged for review
+- Checks every question against `data/question_bank.json` so nothing repeats: exact matches, near-matches (fuzzy wording), and the same answer under a similar question
 - Writes title, description (existing caption template wording kept), tags, playlist and pinned-comment text
 - Marks time-sensitive quizzes (e.g. Christmas, World Cup) with an expiry date
 - Commits each quiz as `quizzes/<id>/quiz.json` and triggers the build
@@ -114,6 +114,8 @@ Thumbnail template: Canva `DAHNRSzzcbE` "JOMQ - Thumbnails 26", 1280×720. Layou
 
 Voice: 12.5 s ElevenLabs render of Giulia's voice (Quiz 8 Friends) — agreed as the Chatterbox reference. Stored privately, never committed while the repo is public.
 
+Also available: Giulia's **original 3 min 13 s recording** (sent 28 Oct; mono, 48 kHz, −22.2 LUFS integrated, peak −1.4 dBFS). Audition reference clips cut from it alongside the 12.5 s render. The original is the safer source: ElevenLabs' terms prohibit using its output as training data for competing AI models, and the original is more natural. **Storage:** where the voice file lives for hosted runs (private repo or Google Drive) is to be agreed by Giulia and Shoma (29 Oct). Until then it stays out of this public repo.
+
 In repo: `assets/video/intro.mp4` (16.9 s), `rules.mp4` (13.4 s), `outro.mp4` (11.7 s), and stills of pages 1–4 in `assets/canva/`. Canva exports are pulled in with the **Fetch asset** workflow (Claude exports, GitHub downloads). Still needed: blank question and reveal backgrounds (no text, GIF or timer).
 
 Observations from Quiz #1 template:
@@ -123,13 +125,19 @@ Observations from Quiz #1 template:
 
 ## Manual steps that remain (YouTube API limits)
 
-- **End screens:** cannot be set via the API. One click per video in Studio ("Import from video"); batch them since uploads are days ahead
-- **Pinning the comment:** the API can post but not pin
+- **End screens:** cannot be set via the API. Handled by the browser task (above). If that fails, the fallback is one click per video in Studio ("Import from video"), batched since uploads are days ahead
+- **Pinning the comment:** the API can post but not pin, so it's handled by the browser task. Fallback: pin by hand after release
 - **Approving videos** on the review page
+
+## Known risks accepted
+
+- **GIFs from GIPHY (28 Oct):** GIPHY's API terms say not to "cache or store copies of GIPHY's media assets", and GIPHY's user terms bar commercial use. TV and film GIFs belong to the studios whatever the source. Giulia accepted this for now. **Switch to licensed media (Pixabay or similar) before applying to the YouTube Partner Program.** Every GIF records its GIPHY ID so a claim can be traced and swapped. If the GIPHY key is limited or revoked, Pixabay is the automatic fallback
+- **Public repo (29 Oct):** this repo stays public for unlimited free Actions minutes. That makes quiz files and anything attached to GitHub Releases (preview videos, Shorts, thumbnails) visible to anyone **before** release. Accepted by Giulia. Keep answers out of workflow logs and keep preview retention short. The voice recording stays out of this repo (see Assets)
 
 ## Blockers to clear first
 
 1. **YouTube API audit.** Uploads from an unaudited API project are locked to private, so `publishAt` won't work. The rain repo already uploads publicly with `publishAt`, so check one of its scheduled videos in YouTube Studio: if it went public on time, reuse that Google Cloud project (new OAuth token for the quiz channel). If it shows "Private (locked)" or "restricted", apply for the audit. Also check the OAuth consent screen is "In production", not "Testing" (Testing tokens expire every 7 days)
+   - **Update 29 Oct:** the OAuth consent screen is now **In production** (confirmed by Giulia's screenshot: External, 3 of 100 user cap). The rain repo's records show a **public** 3-hour upload completing from this project on 2 Oct ([run 36974548325](https://github.com/gigicolac/rain-sounds-automation/actions/runs/36974548325)), which suggests no audit lock. Still worth confirming one scheduled rain video went public on time. The rain channel's refresh token was issued during Testing, so reissue it once. Make sure the `youtube.force-ssl` scope is added under Data Access (needed for captions, comments and playlists)
 2. **Chatterbox on free runners.** Test speed and voice quality on a 50-question script
 3. **Canva thumbnails unattended.** Test whether the Canva connector works from a scheduled run
 4. **Assets.** Export intro, break, outro, slide backgrounds, fonts, music and timer from Canva/current setup into `assets/`
@@ -151,3 +159,4 @@ Observations from Quiz #1 template:
 - 29 Oct 2026: Slides built in Canva (copy of the master template per quiz) and exported; voice, timer, music and captions added in GitHub. Two-stage review (questions, then video) until the pipeline is trusted. Upload 3 days ahead confirmed.
 - 29 Oct 2026: 50 questions; "bi-weekly" tagline; cloned ElevenLabs clip used as voice reference; settings table adopted from the 28 Oct settings chat; Notion Quiz Queue approval replaced by the video review page.
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
+- 29 Oct 2026: OAuth consent screen moved to Production. Repo stays public (free Actions minutes), with the risks above accepted. Voice file storage to be agreed with Shoma. Style guide added as `docs/STYLE_GUIDE.md` (dashes, groups of three and inflated vocabulary banned in scripts; caption template exempt). Two sources per answer. GIPHY risk and the switch-before-monetisation rule recorded
