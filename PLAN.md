@@ -155,9 +155,13 @@ Observations from Quiz #1 template:
 ## Canva build proof run (29 Oct 2026, Quiz #9 questions 1)
 
 Designs (copies only; the master "Quiz Template - Asset Export" `DAHTqtWQvFk` was not edited):
-- `DAHZXN0M1hQ` "OMQ_General Knowledge Quiz #9 (automated build)": 100 pages, 50 question/answer pairs. Pair 1 filled.
-- `DAHZXLqb6v0` "OMQ_General Knowledge Quiz #9 (intro and outro)": intro, rules, outro, not yet filled.
-- Leftover test copies to delete by hand in Canva: `DAHZXAgyEzI`, `DAHZXBYSE4M` (both titled "Quiz Template - Asset Export").
+- `DAHZXGh4_Gw` "OMQ_General Knowledge Quiz #9": 100 pages, all 50 question/answer pairs filled (30 Oct 2026). Question text, answer text and GIPHY MP4 clips in place; thumbnails checked page by page. Awaiting Giulia's slide review.
+- `DAHZcxkxydk` (still titled "Quiz Template - Asset Export"; rename to "OMQ_General Knowledge Quiz #9 (intro and outro)"): master pages 1, 3 and 55. Intro set to "General Knowledge Quiz", "Quiz # 9", "Your bi-weekly dose of trivia"; "Drop your score" and outro pages unchanged from the master.
+- Superseded or test copies to delete by hand in Canva: `DAHZXN0M1hQ`, `DAHZXLqb6v0`, `DAHZXAgyEzI`, `DAHZXBYSE4M`.
+
+GIF review notes for Quiz #9 (not approved; for Giulia's review):
+- Fixed 30 Oct: Q21 question clip (green paint stroke gave the answer away) swapped for paint brushes; A47 answer clip (rigatoni) swapped for a pasta-shapes graphic that includes bow ties.
+- Still flagged: watermarks or logos on Q1, A5, A17, Q23, Q24, Q30, A42, Q48; branded characters or trademarks on Q20 (Gromit), Q24 (Mr Bean), Q42 (Shaun the Sheep), Q46 (Olympic rings); off-topic or weak clips on Q4, Q11, A20, A24, Q31, Q32, Q38 (Budapest bus), A44, A48, A49 (Joshua Tree, not the Atacama).
 
 Findings:
 - Canva caps a design at 100 pages, so 50 questions fill one design exactly; intro, rules and outro live in a second design.
