@@ -15,10 +15,10 @@ The slides come from Canva. Everything you hear is added in GitHub by `.github/w
 4. Writes the voiceover script from `quiz.json` using the templates in `config/video.json`, then voices it with Chatterbox (a voice clone of the reference, running on the free CPU runner). Voice lines are cached, so a rebuild only re-voices lines that changed.
 5. Finds the question and answer pages in the slides export. Question pages have the black timer box; answer pages have the peach answer pill.
 6. Assembles the video:
-   - **Question slides** keep Canva's 10-second countdown. The question is read from 0.3 s.
-   - **Answer slides** are looped (the GIF keeps playing) until the answer and quip have been read, plus about 0.9 s.
+   - **Question slides** keep Canva's 10-second countdown and are cut at 10.6 s, just after "00:00". Canva pads some pages to the length of their GIF. The question is read from 0.3 s.
+   - **Answer slides** last as long as the answer and quip take to read, plus about 0.9 s, with a minimum of 3 s. Short GIFs loop and long pages are trimmed.
    - **Intro and "Drop your score" slides** are held on their last frame until their lines finish.
-   - **Ending slide:** the hooray plays at the start, the outro line at 1.6 s, and the slide ends 3 s after the line.
+   - **Ending slide:** the hooray plays at the start and the outro line at 1.6 s. The slide plays in full: the Quiz #8 page 53 animation runs about 26 s.
 7. Mixes the audio:
    - Canva's own audio is dropped.
    - Music runs under the whole video at about 13 dB below the voice. It dips a further 6 dB while someone is speaking and fades in and out over 3 s.
@@ -64,5 +64,11 @@ python scripts/build_video.py --quiz quizzes/quiz-09 --slides slides.mp4 --intro
 ## Limits and open items
 
 - Chatterbox speed and voice quality on the free runner are untested until the first real build.
+- Quiz #9 check (3 Nov 2026), run locally on the real Canva exports with a placeholder voice:
+  - all 100 pages detected
+  - total length 14.0 min
+  - voice about −20 dBFS RMS, music about −33 dBFS (−39 when ducked)
+  - fade in and out confirmed
+  - hooray at the start of the ending slide
 - If the slides export detects the wrong number of pages, the build stops with a message rather than guessing.
 - No countdown tick sound is added. Canva's own audio is dropped so nothing doubles up with the music.

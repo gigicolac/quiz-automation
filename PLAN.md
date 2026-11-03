@@ -157,11 +157,11 @@ Observations from Quiz #1 template:
 
 Designs (copies only; the master "Quiz Template - Asset Export" `DAHTqtWQvFk` was not edited):
 - `DAHZXGh4_Gw` "OMQ_General Knowledge Quiz #9": 100 pages, all 50 question/answer pairs filled (30 Oct 2026). Question text, answer text and GIPHY MP4 clips in place; thumbnails checked page by page. Slides approved by Giulia 3 Nov 2026.
-- `DAHZcxkxydk` "OMQ_General Knowledge Quiz #9 (intro and outro)": page 1 intro ("General Knowledge Quiz", "Quiz # 9", "Your bi-weekly dose of trivia"), page 2 "Drop your score… Let's get started!", page 3 ending slide copied from Quiz #8 (`DAHMzxppCMI` page 53, Giulia's chosen ending: "One more quiz?" / "Want to see more?" / Subscribe). Future quizzes copy that page 53 as the ending slide, not master page 55.
+- `DAHZcxkxydk` "OMQ_General Knowledge Quiz #9 (intro and outro)": page 1 intro ("General Knowledge Quiz", "Quiz # 9", "Your bi-weekly dose of trivia"), page 2 "Drop your score… Let's get started!", page 3 ending slide copied from Quiz #8 (`DAHMzxppCMI` page 53, Giulia's chosen ending: "One more quiz?" / "Want to see more?" / Subscribe). Future quizzes copy that page 53 as the ending slide, not master page 55. It still carries Quiz #8 details: a Friends cheering clip (with a Tumblr watermark) and a mock comment reading "25/25" (flagged 3 Nov).
 - Superseded or test copies to delete by hand in Canva: `DAHZXN0M1hQ`, `DAHZXLqb6v0`, `DAHZXAgyEzI`, `DAHZXBYSE4M`.
 
 GIF review notes for Quiz #9 (not approved; for Giulia's review):
-- Fixed 30 Oct: Q21 question clip (green paint stroke gave the answer away) swapped for paint brushes; A47 answer clip (rigatoni) swapped for a pasta-shapes graphic that includes bow ties.
+- Fixed 30 Oct: Q21 question clip (green paint stroke gave the answer away) swapped for paint brushes; A47 answer clip (rigatoni) swapped for a "Pasta Corta" clip, but the export shows mostly a short-pasta dish, so it's still not bow ties (flagged again 3 Nov).
 - Still flagged: watermarks or logos on Q1, A5, A17, Q23, Q24, Q30, A42, Q48; branded characters or trademarks on Q20 (Gromit), Q24 (Mr Bean), Q42 (Shaun the Sheep), Q46 (Olympic rings); off-topic or weak clips on Q4, Q11, A20, A24, Q31, Q32, Q38 (Budapest bus), A44, A48, A49 (Joshua Tree, not the Atacama).
 
 Findings:
