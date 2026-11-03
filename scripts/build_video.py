@@ -243,6 +243,7 @@ def render(src, start, length, out, target, cfg, mode):
     mode 'loop' repeats the clip (answer GIFs), 'hold' freezes the last frame."""
     vf = f"fps={cfg['fps']},scale={cfg['width']}:{cfg['height']},setsar=1,format=yuv420p"
     enc = ["-an", "-c:v", "libx264", "-preset", cfg["preset"], "-crf", cfg["crf"]]
+    length = min(length, target)
     extra = target - length
     if extra <= 0.02:
         ffmpeg("-ss", f"{start:.3f}", "-t", f"{length:.3f}", "-i", src, "-vf", vf, *enc, out)
@@ -359,12 +360,15 @@ def main():
         n = i + 1
         (_, qs, qe), (_, as_, ae) = pages[2 * i], pages[2 * i + 1]
         qid, aid = f"q{n:02d}", f"a{n:02d}"
+        # question page: Canva pads some pages past the countdown, so cut at question_max
+        q_len = min(qe - qs, vcfg["question_max"])
         q_need = vcfg["question_start"] + vlen[qid] + 0.3
-        if q_need > qe - qs:
+        if q_need > q_len:
             warnings.append(f"Q{n}: question voice ({vlen[qid]:.1f} s) runs past the timer; slide held")
-        add(args.slides, qs, qe - qs, max(qe - qs, q_need), "hold", [(qid, vcfg["question_start"])], qid)
-        a_need = vcfg["answer_start"] + vlen[aid] + vcfg["answer_tail"]
-        add(args.slides, as_, ae - as_, max(ae - as_, a_need), "loop", [(aid, vcfg["answer_start"])], aid)
+        add(args.slides, qs, q_len, max(q_len, q_need), "hold", [(qid, vcfg["question_start"])], qid)
+        # answer page: as long as the voice needs (at least answer_min), looping the GIF if short
+        a_need = max(vcfg["answer_start"] + vlen[aid] + vcfg["answer_tail"], vcfg["answer_min"])
+        add(args.slides, as_, ae - as_, a_need, "loop", [(aid, vcfg["answer_start"])], aid)
     d = duration(args.outro)
     o_need = pcfg["outro_voice_start"] + vlen["outro"] + pcfg["outro_tail"]
     add(args.outro, 0, d, max(d, o_need), "hold", [("outro", pcfg["outro_voice_start"])], "outro",

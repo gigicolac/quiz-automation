@@ -11,6 +11,8 @@
     "question_start": 0.3,
     "answer_start": 0.3,
     "answer_tail": 0.9,
+    "question_max": 10.6,
+    "answer_min": 3.0,
     "exaggeration": 0.5,
     "cfg_weight": 0.5
   },
