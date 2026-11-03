@@ -52,6 +52,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           # Canva links expire, so a copy is kept on a draft release and reused if a link has gone stale.
           # "slides" may be one link or a list of links (page chunks), joined in order.
           d="$RUNNER_TEMP/canva"; mkdir -p "$d/parts"; tag="$QUIZ-canva"; ok=1; b="quizzes/$QUIZ/build.json"
@@ -94,6 +95,7 @@ jobs:
 
       - name: Install Python packages
         run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           pip install -q numpy
           if [ "$TTS" = chatterbox ]; then
             pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
@@ -115,7 +117,9 @@ jobs:
         env:
           ASSET_KEY: ${{ secrets.ASSET_KEY }}
         run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           mkdir -p "$RUNNER_TEMP/private"
+          ASSET_KEY=$(printf %s "$ASSET_KEY" | tr -d '[:space:]'); export ASSET_KEY
           for f in music.flac hooray.m4a voice_ref.wav; do
             openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:ASSET_KEY \
               -in "assets/private/$f.enc" -out "$RUNNER_TEMP/private/$f"
@@ -123,6 +127,7 @@ jobs:
 
       - name: Build video
         run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           set -o pipefail
           python scripts/build_video.py --quiz "quizzes/$QUIZ" \
             --slides "$RUNNER_TEMP/canva/slides.mp4" --intro "$RUNNER_TEMP/canva/intro.mp4" \
@@ -146,6 +151,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           tag="$QUIZ-preview-${GITHUB_RUN_NUMBER}"
           o="$RUNNER_TEMP/out"
           {
@@ -162,7 +168,7 @@ jobs:
         run: |
           status=${{ job.status }}
           f="quizzes/$QUIZ/build_result.json"
-          tail_log=$(tail -n 40 "$RUNNER_TEMP/build.log" 2>/dev/null || true)
+          tail_log=$(tail -n 60 "$RUNNER_TEMP/steps.log" 2>/dev/null || true)
           jq -n --arg status "$status" --arg tag "${TAG:-}" --arg sha "$GITHUB_SHA" --arg run "$GITHUB_RUN_ID" \
             --arg tts "$TTS" --arg log "$tail_log" \
             --slurpfile report <(cat "$RUNNER_TEMP/out/build_report.json" 2>/dev/null || echo null) \
