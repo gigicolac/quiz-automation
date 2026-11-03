@@ -1,0 +1,47 @@
+{
+  "_comment": "Settings for scripts/build_video.py. Loudness values are RMS in dBFS. Times are seconds.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "crf": 20,
+  "preset": "veryfast",
+
+  "voice": {
+    "target_rms_db": -20.0,
+    "question_start": 0.3,
+    "answer_start": 0.3,
+    "answer_tail": 0.9,
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5
+  },
+
+  "music": {
+    "rms_db": -33.0,
+    "duck_db": -6.0,
+    "duck_attack": 0.15,
+    "duck_release": 0.5,
+    "fade_in": 3.0,
+    "fade_out": 3.0,
+    "loop_crossfade": 2.0
+  },
+
+  "hooray": {
+    "rms_db": -20.0,
+    "start": 0.0
+  },
+
+  "pages": {
+    "intro_min": 4.0,
+    "rules_min": 4.0,
+    "outro_voice_start": 1.6,
+    "outro_tail": 3.0
+  },
+
+  "script": {
+    "intro": "Welcome to Just One More Quiz! This is {series} Quiz number {number}. {count} questions, ten seconds each. Keep track of your score!",
+    "rules": "Drop your score in the comments below. Let's get started!",
+    "question": "Question {n}. {question}",
+    "answer": "The answer is {answer}. {reveal}",
+    "outro": "Thanks for playing! Want one more quiz? Check out one of our other videos."
+  }
+}

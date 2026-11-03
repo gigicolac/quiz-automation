@@ -150,13 +150,14 @@ Observations from Quiz #1 template:
 - 28 Oct 2026: 3 quizzes a week (buffer), previews via GitHub, Shorts added, Revise option added, fact-check pass added
 - 29 Oct 2026: Slides built in Canva (copy of the master template per quiz) and exported; voice, timer, music and captions added in GitHub. Two-stage review (questions, then video) until the pipeline is trusted. Upload 3 days ahead confirmed.
 - 29 Oct 2026: 50 questions; "bi-weekly" tagline; cloned ElevenLabs clip used as voice reference; settings table adopted from the 28 Oct settings chat; Notion Quiz Queue approval replaced by the video review page.
+- 3 Nov 2026: Quiz #9 slides approved. Voiceover and music are added in GitHub after the Canva export. Music: Game Show Groove under the whole video, quiet, 3 s fade in and out. Ending slide: Quiz #8 page 53 plus the hooray sound. Private audio is committed only encrypted (`assets/private/*.enc`, key in the `ASSET_KEY` secret). See docs/video-build.md and docs/canva-autofill.md.
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
 
 ## Canva build proof run (29 Oct 2026, Quiz #9 questions 1)
 
 Designs (copies only; the master "Quiz Template - Asset Export" `DAHTqtWQvFk` was not edited):
-- `DAHZXGh4_Gw` "OMQ_General Knowledge Quiz #9": 100 pages, all 50 question/answer pairs filled (30 Oct 2026). Question text, answer text and GIPHY MP4 clips in place; thumbnails checked page by page. Awaiting Giulia's slide review.
-- `DAHZcxkxydk` (still titled "Quiz Template - Asset Export"; rename to "OMQ_General Knowledge Quiz #9 (intro and outro)"): master pages 1, 3 and 55. Intro set to "General Knowledge Quiz", "Quiz # 9", "Your bi-weekly dose of trivia"; "Drop your score" and outro pages unchanged from the master.
+- `DAHZXGh4_Gw` "OMQ_General Knowledge Quiz #9": 100 pages, all 50 question/answer pairs filled (30 Oct 2026). Question text, answer text and GIPHY MP4 clips in place; thumbnails checked page by page. Slides approved by Giulia 3 Nov 2026.
+- `DAHZcxkxydk` "OMQ_General Knowledge Quiz #9 (intro and outro)": page 1 intro ("General Knowledge Quiz", "Quiz # 9", "Your bi-weekly dose of trivia"), page 2 "Drop your score… Let's get started!", page 3 ending slide copied from Quiz #8 (`DAHMzxppCMI` page 53, Giulia's chosen ending: "One more quiz?" / "Want to see more?" / Subscribe). Future quizzes copy that page 53 as the ending slide, not master page 55.
 - Superseded or test copies to delete by hand in Canva: `DAHZXN0M1hQ`, `DAHZXLqb6v0`, `DAHZXAgyEzI`, `DAHZXBYSE4M`.
 
 GIF review notes for Quiz #9 (not approved; for Giulia's review):
