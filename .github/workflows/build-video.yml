@@ -45,14 +45,26 @@ jobs:
           echo "QUIZ=$q" >> "$GITHUB_ENV"
           echo "TTS=${INPUT_TTS:-$(jq -r '.tts // "chatterbox"' quizzes/$q/build.json)}" >> "$GITHUB_ENV"
 
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Download Canva exports
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           # Canva links expire, so a copy is kept on a draft release and reused if a link has gone stale.
-          d="$RUNNER_TEMP/canva"; mkdir -p "$d"; tag="$QUIZ-canva"; ok=1
-          for k in slides intro rules outro; do
-            url=$(jq -r --arg k "$k" '.[$k] // empty' "quizzes/$QUIZ/build.json")
+          # "slides" may be one link or a list of links (page chunks), joined in order.
+          d="$RUNNER_TEMP/canva"; mkdir -p "$d/parts"; tag="$QUIZ-canva"; ok=1; b="quizzes/$QUIZ/build.json"
+          i=0
+          for url in $(jq -r '.slides | if type == "array" then .[] else . end // empty' "$b"); do
+            f=$(printf '%s/parts/%03d.mp4' "$d" "$i"); i=$((i+1))
+            curl -fsSL --retry 3 -o "$f" "$url" || ok=0
+            echo "file '$f'" >> "$d/parts/list.txt"
+          done
+          [ "$i" -gt 0 ] || ok=0
+          [ "$ok" = 1 ] && { ffmpeg -v error -y -f concat -safe 0 -i "$d/parts/list.txt" -c copy "$d/slides.mp4" || ok=0; }
+          for k in intro rules outro; do
+            url=$(jq -r --arg k "$k" '.[$k] // empty' "$b")
             [ -n "$url" ] && curl -fsSL --retry 3 -o "$d/$k.mp4" "$url" || ok=0
           done
           if [ "$ok" = 1 ]; then
@@ -73,9 +85,6 @@ jobs:
             echo "::error::Repository secret ASSET_KEY is not set (Settings > Secrets and variables > Actions)."
             exit 1
           fi
-
-      - name: Install ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
       - uses: actions/setup-python@v5
         with:
