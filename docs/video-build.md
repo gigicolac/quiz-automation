@@ -63,7 +63,10 @@ python scripts/build_video.py --quiz quizzes/quiz-09 --slides slides.mp4 --intro
 
 ## Limits and open items
 
-- Chatterbox speed and voice quality on the free runner are untested until the first real build.
+- First real build (preview #3, 3 Nov 2026):
+  - Chatterbox voiced all 103 lines on the free runner. The whole run took about 1 h 55 min, almost all of it the first-time voicing.
+  - Video length 15.3 min. Voice about −20 dBFS RMS, music about −35 dBFS.
+  - Found in that build and fixed afterwards: emoji were read out in a few answers (a02, a05, a07, a10, a11, a30), and "The answer is The…" had a capital T.
 - Quiz #9 check (3 Nov 2026), run locally on the real Canva exports with a placeholder voice:
   - all 100 pages detected
   - total length 14.0 min

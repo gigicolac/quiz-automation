@@ -109,11 +109,17 @@ def envelope(active, attack, release, block):
 
 # ---------------------------------------------------------------- script
 
-EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️‍⬀-⯿]")
+KEYCAP = re.compile("[0-9#*]️?⃣")
 
 
 def clean(text):
-    text = EMOJI.sub("", text)
+    """Drop emoji and other pictographs (keycaps like 2-in-a-box included); keep letters and punctuation."""
+    import unicodedata
+    text = KEYCAP.sub("", text)
+    text = re.sub("[\uFE0E\uFE0F\u200D]", "", text)  # emoji variation selectors and joiners
+    text = "".join(c for c in text if unicodedata.category(c) not in ("So", "Sk", "Cf", "Me", "Cs", "Co"))
+    text = re.sub(r"\s+([.!?,])", r"\1", text)
+    text = re.sub(r"([!?])\.", r"\1", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -126,6 +132,8 @@ def build_script(quiz, cfg):
     for q in qs:
         n = q["n"]
         answer = clean(q["answer"]).rstrip("!. ")
+        if answer.startswith("The "):
+            answer = "the " + answer[4:]  # "The answer is the Milky Way", not "is The Milky Way"
         lines.append({"id": f"q{n:02d}", "kind": "question", "n": n,
                       "text": s["question"].format(n=n, question=clean(q["question"]))})
         lines.append({"id": f"a{n:02d}", "kind": "answer", "n": n,

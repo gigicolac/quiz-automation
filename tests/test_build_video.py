@@ -19,6 +19,8 @@ class ScriptTests(unittest.TestCase):
         lines = bv.build_script(self.quiz, self.cfg)
         self.assertEqual([l["id"] for l in lines], ["intro", "rules", "q01", "a01", "outro"])
         self.assertEqual(lines[3]["text"], "The answer is Canberra. Not Sydney.")
+        self.assertEqual(bv.clean("1,440! ⏰"), "1,440!")
+        self.assertEqual(bv.clean("Two! 2️⃣"), "Two!")
         self.assertIn("Quiz number 9", lines[0]["text"])
 
 
