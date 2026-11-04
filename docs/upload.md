@@ -53,6 +53,6 @@ The upload's run summary and `upload.json` list these under `studio_tasks`. They
 
 ## Not yet included
 
-- **Thumbnail:** not generated yet. Add one in Studio, or place `thumbnail.png` in the quiz folder before uploading.
+- **Thumbnails:** made in Canva from the template (A = red band, B = blue band), exported, and listed in `quizzes/<quiz>/thumbnails.json`. Committing that file runs **Attach thumbnails**, which adds them to the approved release. The upload sets thumbnail A; B is for the Test & Compare A/B test in Studio.
 - **Shorts:** not uploaded yet.
 - **Other Studio-only settings** stay manual or a browser task: caption certification and location.

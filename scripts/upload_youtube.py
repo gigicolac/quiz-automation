@@ -279,7 +279,7 @@ def main():
         steps["captions"] = "uploaded"
     if args.thumbnail and Path(args.thumbnail).exists():
         http("POST", f"{UPLOAD_API}/thumbnails/set?videoId={vid}", token, Path(args.thumbnail).read_bytes(),
-             {"Content-Type": "image/png"})
+             {"Content-Type": "image/jpeg" if args.thumbnail.lower().endswith((".jpg", ".jpeg")) else "image/png"})
         steps["thumbnail"] = "set"
     else:
         steps["thumbnail"] = "none (add in Studio or build the thumbnail step)"

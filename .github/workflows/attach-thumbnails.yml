@@ -1,0 +1,35 @@
+name: Attach thumbnails
+# Downloads a quiz's thumbnail exports (Canva links expire within hours) and attaches them to the quiz's
+# approved draft release, where the upload step picks up thumbnail-a.jpg. Thumbnails are not committed.
+# Trigger: commit quizzes/<quiz>/thumbnails.json on a task branch: {"a": "<url>", "b": "<url>", ...}
+on:
+  push:
+    branches-ignore: [main]
+    paths: ["quizzes/*/thumbnails.json"]
+permissions:
+  contents: write
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Attach to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          q=$(git show --name-only --pretty= HEAD | grep -E '^quizzes/[^/]+/thumbnails.json$' | head -1 | cut -d/ -f2)
+          case "$q" in ""|*/*|*..*) echo "No quiz folder found"; exit 1;; esac
+          tag=$(jq -r '.review.video.release_tag // empty' "quizzes/$q/quiz.json")
+          test -n "$tag" || { echo "::error::No approved release_tag in quizzes/$q/quiz.json"; exit 1; }
+          d="$RUNNER_TEMP/thumbs"; mkdir -p "$d"
+          for k in $(jq -r 'keys[] | select(test("^[a-z]$"))' "quizzes/$q/thumbnails.json"); do
+            url=$(jq -r --arg k "$k" '.[$k]' "quizzes/$q/thumbnails.json")
+            curl -fsSL --retry 3 -o "$d/thumbnail-$k.jpg" "$url"
+            size=$(stat -c %s "$d/thumbnail-$k.jpg")
+            [ "$size" -le 2097152 ] || { echo "::error::thumbnail-$k.jpg is over YouTube's 2 MB limit ($size bytes)"; exit 1; }
+          done
+          ls -la "$d"
+          gh release upload "$tag" "$d"/*.jpg --clobber
+          echo "Attached $(ls "$d" | tr '\n' ' ') to $tag" >> "$GITHUB_STEP_SUMMARY"
