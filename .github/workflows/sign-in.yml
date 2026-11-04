@@ -1,0 +1,31 @@
+name: Sign in (Canva / YouTube)
+# One-time sign-in that connects GitHub to Canva or YouTube. See docs/sign-in.md.
+# Run once with Redirect URL blank to get the sign-in link, then again with the address the browser landed on.
+on:
+  workflow_dispatch:
+    inputs:
+      service:
+        description: "Which account to connect"
+        type: choice
+        options: [canva, youtube]
+        required: true
+      redirect_url:
+        description: "Step 2 only: the full address the browser landed on after approving (leave blank for step 1)"
+        required: false
+permissions:
+  contents: read
+jobs:
+  sign-in:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sign in
+        env:
+          SERVICE: ${{ inputs.service }}
+          REDIRECT_URL: ${{ inputs.redirect_url }}
+          CANVA_CLIENT_ID: ${{ secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+        run: python3 scripts/oauth_signin.py
