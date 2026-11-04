@@ -1,0 +1,20 @@
+{
+  "_comment": "Upload settings for scripts/upload_youtube.py. Times are US Eastern. Settings from PLAN.md 'Upload settings'.",
+  "timezone": "America/New_York",
+  "slots": [
+    {"weekday": "Thursday", "time": "15:00"},
+    {"weekday": "Sunday", "time": "13:00"}
+  ],
+  "lead_days": 3,
+  "category_id": "27",
+  "language": "en-AU",
+  "made_for_kids": false,
+  "contains_synthetic_media": true,
+  "paid_promotion": false,
+  "notify_subscribers": true,
+  "playlist_id": "",
+  "schedule_line": "New quizzes every Thursday 3PM & Sunday 1PM ET.",
+  "description": "How many can you get right? 🧠 {count} general knowledge questions, 10 seconds each. Keep score and drop it in the comments!\n\n{schedule_line} Subscribe for your bi-weekly dose of trivia.\n\nChapters\n{chapters}\n\n#quiz #trivia #generalknowledge",
+  "tags": ["quiz", "trivia", "general knowledge quiz", "general knowledge", "trivia quiz", "pub quiz", "quiz questions", "50 questions", "brain teaser", "Just One More Quiz"],
+  "comment": "What did you score out of {count}? Tell us below 👇"
+}

@@ -1,0 +1,86 @@
+name: Upload to YouTube
+# Uploads an APPROVED quiz video privately, scheduled with publishAt. Manual only.
+# mode=preview (default) shows the title, description and schedule without contacting YouTube.
+# mode=upload sends it. Each quiz can be uploaded once; the result is committed to quizzes/<quiz>/upload.json.
+on:
+  workflow_dispatch:
+    inputs:
+      quiz:
+        description: "Quiz folder, e.g. quiz-09"
+        required: true
+      mode:
+        description: "preview = no YouTube calls; upload = upload privately and schedule"
+        type: choice
+        options: [preview, upload]
+        default: preview
+      publish_at:
+        description: "'next' = next free Thu 3pm / Sun 1pm ET slot 3+ days ahead; blank = private, no schedule; or e.g. 2026-11-12T15:00 (US Eastern)"
+        default: next
+permissions:
+  contents: write
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    env:
+      QUIZ: ${{ inputs.quiz }}
+      MODE: ${{ inputs.mode }}
+      PUBLISH_AT: ${{ inputs.publish_at }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check quiz
+        run: |
+          case "$QUIZ" in ""|*/*|*..*) echo "Invalid quiz folder"; exit 1;; esac
+          f="quizzes/$QUIZ/quiz.json"; test -f "$f" || { echo "$f missing"; exit 1; }
+          tag=$(jq -r '.review.video.release_tag // empty' "$f")
+          [ "$(jq -r '.review.video.decision // empty' "$f")" = approved ] || { echo "::error::Final video not approved in $f"; exit 1; }
+          test -n "$tag" || { echo "::error::No approved release_tag in $f"; exit 1; }
+          echo "TAG=$tag" >> "$GITHUB_ENV"
+
+      - name: Download approved build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          d="$RUNNER_TEMP/build"; mkdir -p "$d"
+          if [ "$MODE" = upload ]; then pat=(-p "$QUIZ.mp4" -p "$QUIZ.srt" -p build_report.json); else pat=(-p build_report.json); fi
+          gh release download "$TAG" -D "$d" "${pat[@]}"
+          ls -la "$d"
+
+      - name: Check YouTube secrets
+        if: inputs.mode == 'upload'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          for v in YT_CLIENT_ID YT_CLIENT_SECRET YT_REFRESH_TOKEN; do
+            [ -n "${!v}" ] || { echo "::error::Repository secret $v is not set (see docs/sign-in.md)"; exit 1; }
+          done
+
+      - name: Upload
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          d="$RUNNER_TEMP/build"
+          thumb=""; [ -f "quizzes/$QUIZ/thumbnail.png" ] && thumb="quizzes/$QUIZ/thumbnail.png"
+          python3 scripts/upload_youtube.py --quiz "quizzes/$QUIZ" --report "$d/build_report.json" \
+            --video "$d/$QUIZ.mp4" --captions "$d/$QUIZ.srt" ${thumb:+--thumbnail "$thumb"} \
+            --publish-at "$PUBLISH_AT" --mode "$MODE" --out "$RUNNER_TEMP/plan.json"
+          { echo "## $QUIZ: $MODE"; echo '```json'; cat "$RUNNER_TEMP/plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Record result
+        if: always() && inputs.mode == 'upload'
+        run: |
+          f="quizzes/$QUIZ/upload.json"
+          [ -f "$f" ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git commit -m "Upload record for $QUIZ" || exit 0
+          git pull --rebase -q origin "$GITHUB_REF_NAME"
+          git push -q origin "HEAD:$GITHUB_REF_NAME"
