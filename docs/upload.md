@@ -27,9 +27,19 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
    It then:
    - uploads the English captions
    - sets the thumbnail, if `quizzes/<quiz>/thumbnail.png` exists
-   - adds the video to the playlist in `config/youtube.json`, if one is set
+   - adds the video to its series playlist, for example "General Knowledge Quizzes". A playlist whose title already mentions the series is reused; otherwise a public one is created (mapping in `config/youtube.json`)
    - posts the score comment (pin it in Studio)
    - records everything in `quizzes/<quiz>/upload.json`
+
+## Studio checklist (the YouTube API can't do these)
+
+The upload's run summary and `upload.json` list these under `studio_tasks`. They're done in YouTube Studio by Giulia or as a Claude browser task on her computer:
+
+- **End screen:** import the existing end screen from the previous quiz (two elements). Left = **Video: Most recent upload**. Right = **Playlist: the series playlist**, for example General Knowledge Quizzes.
+- **A/B test (Test & Compare):**
+  - titles: three variants are generated from `title_variants`
+  - thumbnails: once 2–3 thumbnail variants exist
+- **Pin** the score comment.
 
 ## Safety
 
@@ -45,4 +55,4 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
 
 - **Thumbnail:** not generated yet. Add one in Studio, or place `thumbnail.png` in the quiz folder before uploading.
 - **Shorts:** not uploaded yet.
-- **Studio-only settings** stay manual or a browser task: end screen, pinning the comment, caption certification, location.
+- **Other Studio-only settings** stay manual or a browser task: caption certification and location.
