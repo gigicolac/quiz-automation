@@ -76,6 +76,10 @@ def main():
         params = {"client_id": cid, "redirect_uri": REDIRECT, "response_type": "code",
                   "scope": cfg["scope"], "code_challenge": challenge, "state": service, **cfg["extra"]}
         link = cfg["authorize"] + "?" + urllib.parse.urlencode(params, quote_via=urllib.parse.quote)
+        if os.environ.get("CLIENT_ID_IS_VARIABLE") != "true":
+            summary("> **Note:** the client ID is stored as a secret, so GitHub hides it as `***` in the link below. "
+                    f"Either replace `***` in the link with your client ID, or move it to a repository **variable** "
+                    f"named `{cfg['id_env']}` (Settings > Secrets and variables > Actions > Variables).\n")
         summary(f"## {service.title()} sign-in, step 1\n\nClient ID in use: `{cid[:6]}…{cid[-4:]}` "
                 f"({len(cid)} characters). Check it matches the developer portal.\n\n1. Open this link and approve: [Sign in to {service.title()}]({link})\n"
                 "2. The browser ends on a page that won't load (127.0.0.1). That's expected.\n"

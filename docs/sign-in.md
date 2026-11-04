@@ -9,8 +9,8 @@ Add these under Settings > Secrets and variables > Actions:
 | Secret | Where it comes from |
 |---|---|
 | `GH_SECRETS_TOKEN` | GitHub > your profile > Settings > Developer settings > Personal access tokens > **Fine-grained tokens** > Generate. Repository access: only `quiz-automation`. Permissions: **Secrets: Read and write**. Lets the workflows save refresh tokens (Canva issues a new one each time it is used). |
-| `CANVA_CLIENT_ID`, `CANVA_CLIENT_SECRET` | Canva Developer Portal > Quiz Automations > Outside Canva > Configuration. Redirect URL must include `http://127.0.0.1:3001/oauth/redirect`. |
-| `YT_CLIENT_ID`, `YT_CLIENT_SECRET` | Google Cloud, see below. |
+| `CANVA_CLIENT_SECRET` (secret) and `CANVA_CLIENT_ID` (repository **variable**, so GitHub doesn't hide it as `***` in the sign-in link) | Canva Developer Portal > Quiz Automations > Outside Canva > Configuration. Redirect URL must include `http://127.0.0.1:3001/oauth/redirect`. |
+| `YT_CLIENT_SECRET` (secret) and `YT_CLIENT_ID` (repository **variable**) | Google Cloud, see below. |
 
 ### YouTube: Google Cloud setup
 
