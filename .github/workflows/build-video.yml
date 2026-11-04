@@ -1,0 +1,182 @@
+name: Build video
+# Builds a preview video for one quiz from its Canva exports.
+# Trigger: commit quizzes/<quiz>/build.json (holds the Canva export links), or run manually.
+# Output: a DRAFT GitHub release (visible only to repo collaborators) with the video,
+# captions and build report, plus quizzes/<quiz>/build_result.json committed back.
+# Nothing is uploaded to YouTube.
+on:
+  push:
+    paths: ["quizzes/*/build.json"]
+  workflow_dispatch:
+    inputs:
+      quiz:
+        description: "Quiz folder, e.g. quiz-09"
+        required: true
+      tts:
+        description: "Voice engine (dummy = tone placeholder for testing)"
+        default: chatterbox
+        type: choice
+        options: [chatterbox, dummy]
+permissions:
+  contents: write
+concurrency:
+  group: build-video-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      INPUT_QUIZ: ${{ inputs.quiz }}
+      INPUT_TTS: ${{ inputs.tts }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Pick quiz
+        run: |
+          q="$INPUT_QUIZ"
+          if [ -z "$q" ]; then
+            q=$(git show --name-only --pretty= HEAD | grep -E '^quizzes/[^/]+/build.json$' | head -1 | cut -d/ -f2)
+          fi
+          case "$q" in ""|*/*|*..*) echo "No valid quiz folder found"; exit 1;; esac
+          test -f "quizzes/$q/build.json" || { echo "quizzes/$q/build.json missing"; exit 1; }
+          echo "QUIZ=$q" >> "$GITHUB_ENV"
+          echo "TTS=${INPUT_TTS:-$(jq -r '.tts // "chatterbox"' quizzes/$q/build.json)}" >> "$GITHUB_ENV"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Download Canva exports
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          # Canva links expire, so a copy is kept on a draft release and reused if a link has gone stale.
+          # "slides" may be one link or a list of links (page chunks), joined in order.
+          d="$RUNNER_TEMP/canva"; mkdir -p "$d/parts"; tag="$QUIZ-canva"; ok=1; b="quizzes/$QUIZ/build.json"
+          i=0
+          for url in $(jq -r '.slides | if type == "array" then .[] else . end // empty' "$b"); do
+            f=$(printf '%s/parts/%03d.mp4' "$d" "$i"); i=$((i+1))
+            curl -fsSL --retry 3 -o "$f" "$url" || ok=0
+            echo "file '$f'" >> "$d/parts/list.txt"
+          done
+          [ "$i" -gt 0 ] || ok=0
+          [ "$ok" = 1 ] && { ffmpeg -v error -y -f concat -safe 0 -i "$d/parts/list.txt" -c copy "$d/slides.mp4" || ok=0; }
+          for k in intro rules outro; do
+            url=$(jq -r --arg k "$k" '.[$k] // empty' "$b")
+            [ -n "$url" ] && curl -fsSL --retry 3 -o "$d/$k.mp4" "$url" || ok=0
+          done
+          if [ "$ok" = 1 ]; then
+            gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --draft \
+              --title "$QUIZ Canva exports" --notes "Slide exports used by the Build video workflow. Draft, not public."
+            gh release upload "$tag" "$d"/*.mp4 --clobber
+          else
+            echo "One or more Canva links failed; using the stored copies"
+            gh release download "$tag" -D "$d" --clobber
+          fi
+          ls -la "$d"
+
+      - name: Check asset key
+        env:
+          ASSET_KEY: ${{ secrets.ASSET_KEY }}
+        run: |
+          if [ -z "$ASSET_KEY" ]; then
+            echo "::error::Repository secret ASSET_KEY is not set (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-video.txt
+
+      - name: Install Python packages
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          pip install -q numpy num2words==0.5.14
+          if [ "$TTS" = chatterbox ]; then
+            pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+            pip install -q -r requirements-video.txt
+          fi
+
+      - name: Restore voice model and voiceover lines
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            .cache/voice
+          key: voice-${{ env.QUIZ }}-${{ hashFiles(format('quizzes/{0}/quiz.json', env.QUIZ), 'config/video.json') }}
+          restore-keys: |
+            voice-${{ env.QUIZ }}-
+            voice-
+
+      - name: Decrypt private audio
+        env:
+          ASSET_KEY: ${{ secrets.ASSET_KEY }}
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          mkdir -p "$RUNNER_TEMP/private"
+          ASSET_KEY=$(printf %s "$ASSET_KEY" | tr -d '[:space:]'); export ASSET_KEY
+          for f in music.flac hooray.m4a voice_ref.wav; do
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:ASSET_KEY \
+              -in "assets/private/$f.enc" -out "$RUNNER_TEMP/private/$f"
+          done
+
+      - name: Build video
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          set -o pipefail
+          python scripts/build_video.py --quiz "quizzes/$QUIZ" \
+            --slides "$RUNNER_TEMP/canva/slides.mp4" --intro "$RUNNER_TEMP/canva/intro.mp4" \
+            --rules "$RUNNER_TEMP/canva/rules.mp4" --outro "$RUNNER_TEMP/canva/outro.mp4" \
+            --private "$RUNNER_TEMP/private" --out "$RUNNER_TEMP/out" --tts "$TTS" 2>&1 | tee "$RUNNER_TEMP/build.log"
+
+      - name: Save voice model and voiceover lines
+        if: always() && env.TTS == 'chatterbox'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            .cache/voice
+          key: voice-${{ env.QUIZ }}-${{ hashFiles(format('quizzes/{0}/quiz.json', env.QUIZ), 'config/video.json') }}-${{ github.run_id }}
+
+      - name: Remove private audio
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/private"
+
+      - name: Publish draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          tag="$QUIZ-preview-${GITHUB_RUN_NUMBER}"
+          o="$RUNNER_TEMP/out"
+          {
+            echo "Preview build of $QUIZ from \`${GITHUB_REF_NAME}\` (${GITHUB_SHA::7}). Draft: not public, not uploaded to YouTube."
+            echo; echo '```'; jq '{duration_s, tts, levels_db, warnings}' "$o/build_report.json"; echo '```'
+          } > "$RUNNER_TEMP/notes.md"
+          gh release create "$tag" --draft --target "$GITHUB_SHA" --title "$QUIZ preview #${GITHUB_RUN_NUMBER}" \
+            --notes-file "$RUNNER_TEMP/notes.md" \
+            "$o/$QUIZ.mp4" "$o/$QUIZ.srt" "$o/build_report.json" "$o/voiceover.json"
+          echo "TAG=$tag" >> "$GITHUB_ENV"
+
+      - name: Record result
+        if: always()
+        run: |
+          status=${{ job.status }}
+          f="quizzes/$QUIZ/build_result.json"
+          tail_log=$(tail -n 60 "$RUNNER_TEMP/steps.log" 2>/dev/null || true)
+          jq -n --arg status "$status" --arg tag "${TAG:-}" --arg sha "$GITHUB_SHA" --arg run "$GITHUB_RUN_ID" \
+            --arg tts "$TTS" --arg log "$tail_log" \
+            --slurpfile report <(cat "$RUNNER_TEMP/out/build_report.json" 2>/dev/null || echo null) \
+            '{status: $status, release_tag: $tag, source_commit: $sha, run_id: $run, tts: $tts,
+              report: ($report[0] // null), log_tail: $log}' > "$f"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git commit -m "Build result for $QUIZ: $status" || exit 0
+          git pull --rebase -q origin "$GITHUB_REF_NAME"
+          git push -q origin "HEAD:$GITHUB_REF_NAME"

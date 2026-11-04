@@ -3,7 +3,7 @@
   "number": 9,
   "series": "General Knowledge",
   "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
-  "status": "awaiting_question_review",
+  "status": "video_approved",
   "questions": [
     {
       "n": 1,
@@ -305,5 +305,32 @@
       "answer": "Sir Isaac Newton! 🍎",
       "reveal": "The apple didn't fall far from the genius."
     }
-  ]
+  ],
+  "review": {
+    "questions": {
+      "decision": "approved",
+      "by": "Giulia",
+      "date": "2026-10-29",
+      "evidence": "Approved all 50 questions in Claude chat, 29 Oct 2026 15:10 AEDT (\"These are great. I'm happy with it!\")"
+    },
+    "slides": {
+      "decision": "approved",
+      "by": "Giulia",
+      "date": "2026-11-03",
+      "evidence": "Approved the question and answer slides in Claude chat, 3 Nov 2026 19:53 AEDT (\"Quiz questions / answer approved\"). No GIF swaps requested; flagged GIFs listed in PLAN.md remain as built.",
+      "canva": {
+        "slides": "DAHZXGh4_Gw",
+        "intro_outro": "DAHZcxkxydk"
+      }
+    },
+    "video": {
+      "decision": "approved",
+      "by": "Giulia",
+      "date": "2026-11-04",
+      "evidence": "Approved the final video in Claude chat, 4 Nov 2026 15:38 AEDT (\"Great this is perfect. Final version approved.\")",
+      "release": "quiz-09-preview-4 (draft)",
+      "source_commit": "9b7e094",
+      "duration_s": 914.97
+    }
+  }
 }

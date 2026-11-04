@@ -150,4 +150,26 @@ Observations from Quiz #1 template:
 - 28 Oct 2026: 3 quizzes a week (buffer), previews via GitHub, Shorts added, Revise option added, fact-check pass added
 - 29 Oct 2026: Slides built in Canva (copy of the master template per quiz) and exported; voice, timer, music and captions added in GitHub. Two-stage review (questions, then video) until the pipeline is trusted. Upload 3 days ahead confirmed.
 - 29 Oct 2026: 50 questions; "bi-weekly" tagline; cloned ElevenLabs clip used as voice reference; settings table adopted from the 28 Oct settings chat; Notion Quiz Queue approval replaced by the video review page.
+- 3 Nov 2026: Quiz #9 slides approved. Voiceover and music are added in GitHub after the Canva export. Music: Game Show Groove under the whole video, quiet, 3 s fade in and out. Ending slide: Quiz #8 page 53 plus the hooray sound. Private audio is committed only encrypted (`assets/private/*.enc`, key in the `ASSET_KEY` secret). See docs/video-build.md and docs/canva-autofill.md.
+- 4 Nov 2026: Giulia's feedback on preview #3: cloned voice approved; add the countdown buzzer; add like/subscribe voiceover on the ending slide; no emoji sounds in the audio (emoji stay on slides); numbers spoken as words; keep the Friends clip on the ending slide; A47 GIF is fine. Giulia deleted and reinstated the One More Quiz YouTube channel, so any existing YouTube API sign-in for it should be treated as revoked: the upload step needs a fresh OAuth sign-in for the channel when it is built.
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
+
+## Canva build proof run (29 Oct 2026, Quiz #9 questions 1)
+
+Designs (copies only; the master "Quiz Template - Asset Export" `DAHTqtWQvFk` was not edited):
+- `DAHZXGh4_Gw` "OMQ_General Knowledge Quiz #9": 100 pages, all 50 question/answer pairs filled (30 Oct 2026). Question text, answer text and GIPHY MP4 clips in place; thumbnails checked page by page. Slides approved by Giulia 3 Nov 2026.
+- `DAHZcxkxydk` "OMQ_General Knowledge Quiz #9 (intro and outro)": page 1 intro ("General Knowledge Quiz", "Quiz # 9", "Your bi-weekly dose of trivia"), page 2 "Drop your score… Let's get started!", page 3 ending slide copied from Quiz #8 (`DAHMzxppCMI` page 53, Giulia's chosen ending: "One more quiz?" / "Want to see more?" / Subscribe). Future quizzes copy that page 53 as the ending slide, not master page 55. It still carries Quiz #8 details: a Friends cheering clip (with a Tumblr watermark) and a mock comment reading "25/25" (flagged 3 Nov).
+- Superseded or test copies to delete by hand in Canva: `DAHZXN0M1hQ`, `DAHZXLqb6v0`, `DAHZXAgyEzI`, `DAHZXBYSE4M`.
+
+GIF review notes for Quiz #9 (not approved; for Giulia's review):
+- Fixed 30 Oct: Q21 question clip (green paint stroke gave the answer away) swapped for paint brushes; A47 answer clip (rigatoni) swapped for a "Pasta Corta" clip, but the export shows mostly a short-pasta dish, so it's still not bow ties (flagged again 3 Nov).
+- Still flagged: watermarks or logos on Q1, A5, A17, Q23, Q24, Q30, A42, Q48; branded characters or trademarks on Q20 (Gromit), Q24 (Mr Bean), Q42 (Shaun the Sheep), Q46 (Olympic rings); off-topic or weak clips on Q4, Q11, A20, A24, Q31, Q32, Q38 (Budapest bus), A44, A48, A49 (Joshua Tree, not the Atacama).
+
+Findings:
+- Canva caps a design at 100 pages, so 50 questions fill one design exactly; intro, rules and outro live in a second design.
+- Pages can't be repeated in one copy, but merging the master's 25 pairs in twice works.
+- GIPHY GIF files fail to import into Canva; the MP4 version of the same GIF imports as a video and loops for the whole slide in the export. Verified by exporting pair 1 to MP4 (12.5 s) and checking frames.
+- The template's countdown video plays 10 to 1 on the question slide. The answer slide exports at about 2.5 s, too short for the answer and quip, so GitHub will hold the answer slide for the length of the voiceover.
+- Question-slide GIFs must not give the answer away (first pick showed "CANBERRA"). GIF search for question slides uses a topic hint, not the answer.
+- The answer pill text came out red: in the master, the space after "Answer:" is formatted red, and replacement text inherits it. Fix once in the master (make that space black) or split "Answer:" and the answer into two text boxes.
+- Work per quiz: about 100 GIF imports and 100 page edits through the connector.
