@@ -328,9 +328,9 @@
       "by": "Giulia",
       "date": "2026-11-04",
       "evidence": "Approved the final video in Claude chat, 4 Nov 2026 15:38 AEDT (\"Great this is perfect. Final version approved.\")",
-      "release": "quiz-09-preview-4 (draft)",
       "source_commit": "9b7e094",
-      "duration_s": 914.97
+      "duration_s": 914.97,
+      "release_tag": "quiz-09-preview-4"
     }
   }
 }
