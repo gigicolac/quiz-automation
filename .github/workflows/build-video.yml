@@ -96,7 +96,7 @@ jobs:
       - name: Install Python packages
         run: |
           exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
-          pip install -q numpy
+          pip install -q numpy num2words==0.5.14
           if [ "$TTS" = chatterbox ]; then
             pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
             pip install -q -r requirements-video.txt

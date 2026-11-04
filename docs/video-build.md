@@ -12,15 +12,19 @@ The slides come from Canva. Everything you hear is added in GitHub by `.github/w
    - music: Game Show Groove
    - the hooray sound
    - the voice reference
-4. Writes the voiceover script from `quiz.json` using the templates in `config/video.json`, then voices it with Chatterbox (a voice clone of the reference, running on the free CPU runner). Voice lines are cached, so a rebuild only re-voices lines that changed.
+4. Writes the voiceover script from `quiz.json` using the templates in `config/video.json`:
+   - Emoji are removed from what is spoken but stay on the slides.
+   - Numbers are written out as words for the voice, for example 130 becomes "one hundred and thirty" and 1945 becomes "nineteen forty-five". Captions keep the digits.
+
+   It then voices the script with Chatterbox (a voice clone of the reference, running on the free CPU runner). Voice lines are cached, so a rebuild only re-voices lines that changed.
 5. Finds the question and answer pages in the slides export. Question pages have the black timer box; answer pages have the peach answer pill.
 6. Assembles the video:
    - **Question slides** keep Canva's 10-second countdown and are cut at 10.6 s, just after "00:00". Canva pads some pages to the length of their GIF. The question is read from 0.3 s.
    - **Answer slides** last as long as the answer and quip take to read, plus about 0.9 s, with a minimum of 3 s. Short GIFs loop and long pages are trimmed.
    - **Intro and "Drop your score" slides** are held on their last frame until their lines finish.
-   - **Ending slide:** the hooray plays at the start and the outro line at 1.6 s. The slide plays in full: the Quiz #8 page 53 animation runs about 26 s.
+   - **Ending slide:** the hooray plays at the start, then four outro lines are timed to the slide's animation (set in `config/video.json`): "How did you go?" at 1.8 s, "Drop your score…" at 4.9 s, "like and subscribe" at 8.2 s and "One more quiz?…" at 14.7 s. The slide plays in full, about 26 s.
 7. Mixes the audio:
-   - Canva's own audio is dropped.
+   - Canva's own audio is dropped, apart from the buzzer: the countdown's "time's up" buzzer (10 s into each question page) is kept, levelled to about −19 dBFS.
    - Music runs under the whole video at about 13 dB below the voice. It dips a further 6 dB while someone is speaking and fades in and out over 3 s.
 8. Writes captions (`.srt`) from the voiceover timings.
 9. Uploads the video, captions, `voiceover.json` and `build_report.json` to a **draft** release `<quiz>-preview-<run>`. Drafts are visible only to repo collaborators.
@@ -74,4 +78,4 @@ python scripts/build_video.py --quiz quizzes/quiz-09 --slides slides.mp4 --intro
   - fade in and out confirmed
   - hooray at the start of the ending slide
 - If the slides export detects the wrong number of pages, the build stops with a message rather than guessing.
-- No countdown tick sound is added. Canva's own audio is dropped so nothing doubles up with the music.
+- The countdown ticks are not used, only the buzzer. To add the ticks, take more of the Canva audio (`buzzer.from` in `config/video.json`).

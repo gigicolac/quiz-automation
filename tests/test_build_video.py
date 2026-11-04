@@ -17,11 +17,21 @@ class ScriptTests(unittest.TestCase):
 
     def test_script_lines_and_emoji_removed(self):
         lines = bv.build_script(self.quiz, self.cfg)
-        self.assertEqual([l["id"] for l in lines], ["intro", "rules", "q01", "a01", "outro"])
+        self.assertEqual([l["id"] for l in lines], ["intro", "rules", "q01", "a01", "outro1", "outro2", "outro3", "outro4"])
         self.assertEqual(lines[3]["text"], "The answer is Canberra. Not Sydney.")
         self.assertEqual(bv.clean("1,440! ⏰"), "1,440!")
         self.assertEqual(bv.clean("Two! 2️⃣"), "Two!")
-        self.assertIn("Quiz number 9", lines[0]["text"])
+        self.assertIn("Quiz number nine", lines[0]["text"])
+        self.assertIn("Quiz number 9", lines[0]["caption"])
+
+
+class NumberTests(unittest.TestCase):
+    def test_numbers_become_words(self):
+        self.assertEqual(bv.say_numbers("around 130 seeds"), "around one hundred and thirty seeds")
+        self.assertEqual(bv.say_numbers("The answer is 1,440."), "The answer is one thousand four hundred and forty.")
+        self.assertEqual(bv.say_numbers("in 1945."), "in nineteen forty-five.")
+        self.assertEqual(bv.say_numbers("top 300 km/h"), "top three hundred kilometres per hour")
+        self.assertEqual(bv.say_numbers("the 21st century"), "the twenty-first century")
 
 
 class PageDetectionTests(unittest.TestCase):

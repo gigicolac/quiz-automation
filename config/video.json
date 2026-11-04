@@ -1,11 +1,10 @@
 {
-  "_comment": "Settings for scripts/build_video.py. Loudness values are RMS in dBFS. Times are seconds.",
+  "_comment": "Settings for scripts/build_video.py. Loudness values are RMS in dBFS. Times are seconds. Outro 'at' times match the Quiz #8 ending slide: clip 0-4.7 s, score comment 4.8 s, 'Want to see more?' 8 s, 'One more quiz?' 14.5 s.",
   "width": 1920,
   "height": 1080,
   "fps": 30,
   "crf": 20,
   "preset": "veryfast",
-
   "voice": {
     "target_rms_db": -20.0,
     "question_start": 0.3,
@@ -16,7 +15,6 @@
     "exaggeration": 0.5,
     "cfg_weight": 0.5
   },
-
   "music": {
     "rms_db": -33.0,
     "duck_db": -6.0,
@@ -26,24 +24,47 @@
     "fade_out": 3.0,
     "loop_crossfade": 2.0
   },
-
   "hooray": {
     "rms_db": -20.0,
     "start": 0.0
   },
-
   "pages": {
     "intro_min": 4.0,
     "rules_min": 4.0,
-    "outro_voice_start": 1.6,
     "outro_tail": 3.0
   },
-
   "script": {
     "intro": "Welcome to Just One More Quiz! This is {series} Quiz number {number}. {count} questions, ten seconds each. Keep track of your score!",
     "rules": "Drop your score in the comments below. Let's get started!",
     "question": "Question {n}. {question}",
     "answer": "The answer is {answer}. {reveal}",
-    "outro": "Thanks for playing! Want one more quiz? Check out one of our other videos."
+    "outro": [
+      {
+        "at": 1.8,
+        "text": "And that's the end of the quiz! How did you go?"
+      },
+      {
+        "at": 4.9,
+        "text": "Drop your score in the comments below."
+      },
+      {
+        "at": 8.2,
+        "text": "If you enjoyed it, give this video a like and hit subscribe so you never miss a quiz."
+      },
+      {
+        "at": 14.7,
+        "text": "Want one more quiz? Check out one of our other videos!"
+      }
+    ]
+  },
+  "buzzer": {
+    "_comment": "Taken from Canva's countdown audio: the buzzer sounds as the timer hits 00:00 (10 s into each question page). Its onset is searched for between search_from and search_to and placed at 'at'.",
+    "enabled": true,
+    "at": 10.0,
+    "search_from": 9.0,
+    "search_to": 12.5,
+    "onset_db": -20.0,
+    "length": 0.8,
+    "rms_db": -19.0
   }
 }

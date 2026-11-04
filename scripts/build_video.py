@@ -123,22 +123,56 @@ def clean(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+UNITS = [(r"(?<=\d)\s*km/h\b", " kilometres per hour"), (r"(?<=\d)\s*%", " per cent"),
+         (r"(?<=\d)\s*°C\b", " degrees Celsius"), (r"(?<=\d)\s*km\b", " kilometres"),
+         (r"(?<=\d)\s*kg\b", " kilograms")]
+NUMBER = re.compile(r"(?<![\w.])(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?(st|nd|rd|th)?(?!\w)")
+
+
+def say_numbers(text):
+    """Write digits as words for the voice: 130 -> one hundred and thirty, 1945 -> nineteen forty-five."""
+    from num2words import num2words
+    for pat, rep in UNITS:
+        text = re.sub(pat, rep, text)
+
+    def word(m):
+        whole, frac, suffix = m.group(1), m.group(2), m.group(3)
+        n = int(whole.replace(",", ""))
+        if suffix:
+            out = num2words(n, lang="en", to="ordinal")
+        elif frac:
+            out = num2words(float(f"{n}.{frac}"), lang="en")
+        elif "," not in whole and 1100 <= n <= 2099:
+            out = num2words(n, lang="en", to="year")
+        else:
+            out = num2words(n, lang="en")
+        return out.replace(",", "")
+
+    return NUMBER.sub(word, text)
+
+
+def make_line(lid, kind, caption, **extra):
+    """A voice line: `caption` keeps digits for the subtitles, `text` is what the voice reads."""
+    caption = clean(caption)
+    return {"id": lid, "kind": kind, "caption": caption, "text": say_numbers(caption), **extra}
+
+
 def build_script(quiz, cfg):
     s = cfg["script"]
     qs = quiz["questions"]
-    lines = [{"id": "intro", "kind": "intro", "text": s["intro"].format(
-        series=quiz.get("series", ""), number=quiz["number"], count=len(qs))},
-        {"id": "rules", "kind": "rules", "text": s["rules"]}]
+    lines = [make_line("intro", "intro", s["intro"].format(
+        series=quiz.get("series", ""), number=quiz["number"], count=len(qs))),
+        make_line("rules", "rules", s["rules"])]
     for q in qs:
         n = q["n"]
         answer = clean(q["answer"]).rstrip("!. ")
         if answer.startswith("The "):
             answer = "the " + answer[4:]  # "The answer is the Milky Way", not "is The Milky Way"
-        lines.append({"id": f"q{n:02d}", "kind": "question", "n": n,
-                      "text": s["question"].format(n=n, question=clean(q["question"]))})
-        lines.append({"id": f"a{n:02d}", "kind": "answer", "n": n,
-                      "text": clean(s["answer"].format(answer=answer, reveal=clean(q.get("reveal", ""))))})
-    lines.append({"id": "outro", "kind": "outro", "text": s["outro"]})
+        lines.append(make_line(f"q{n:02d}", "question", s["question"].format(n=n, question=clean(q["question"])), n=n))
+        lines.append(make_line(f"a{n:02d}", "answer",
+                               s["answer"].format(answer=answer, reveal=clean(q.get("reveal", ""))), n=n))
+    for i, part in enumerate(s["outro"], 1):
+        lines.append(make_line(f"outro{i}", "outro", part["text"], at=part["at"]))
     return lines
 
 
@@ -374,12 +408,20 @@ def main():
         if q_need > q_len:
             warnings.append(f"Q{n}: question voice ({vlen[qid]:.1f} s) runs past the timer; slide held")
         add(args.slides, qs, q_len, max(q_len, q_need), "hold", [(qid, vcfg["question_start"])], qid)
+        segs[-1]["page_start"] = qs
+        segs[-1]["page_end"] = qe
         # answer page: as long as the voice needs (at least answer_min), looping the GIF if short
         a_need = max(vcfg["answer_start"] + vlen[aid] + vcfg["answer_tail"], vcfg["answer_min"])
         add(args.slides, as_, ae - as_, a_need, "loop", [(aid, vcfg["answer_start"])], aid)
     d = duration(args.outro)
-    o_need = pcfg["outro_voice_start"] + vlen["outro"] + pcfg["outro_tail"]
-    add(args.outro, 0, d, max(d, o_need), "hold", [("outro", pcfg["outro_voice_start"])], "outro",
+    outro_cues, t_free = [], 0.0
+    for line in (l for l in lines if l["kind"] == "outro"):
+        start = max(line["at"], t_free)
+        if start > line["at"] + 0.05:
+            warnings.append(f"{line['id']}: starts {start - line['at']:.1f} s late (previous line ran long)")
+        outro_cues.append((line["id"], start))
+        t_free = start + vlen[line["id"]] + 0.3
+    add(args.outro, 0, d, max(d, t_free + pcfg["outro_tail"]), "hold", outro_cues, "outro",
         extra=[("hooray", cfg["hooray"]["start"])])
 
     # 4. join video and lay out the timeline from real encoded durations
@@ -403,7 +445,7 @@ def main():
             a = int((s["start"] + off) * SR)
             clip = vo[lid][: n - a]
             voice[a:a + len(clip)] += clip
-            cues.append((s["start"] + off, len(clip) / SR, next(l["text"] for l in lines if l["id"] == lid)))
+            cues.append((s["start"] + off, len(clip) / SR, next(l["caption"] for l in lines if l["id"] == lid)))
     fx = np.zeros(n, np.float32)
     hooray = set_rms(trim_silence(load_audio(private / "hooray.m4a")), cfg["hooray"]["rms_db"])
     for s in segs:
@@ -411,6 +453,35 @@ def main():
             a = int((s["start"] + off) * SR)
             clip = hooray[: n - a]
             fx[a:a + len(clip)] += clip
+
+    bcfg = cfg.get("buzzer", {})
+    if bcfg.get("enabled", True):
+        canva = load_audio(args.slides)
+        for sg in segs:
+            if "page_start" not in sg:
+                continue
+            # the slides' audio can drift a little from the picture (chunked exports), so find the
+            # buzzer's onset near the end of the countdown instead of trusting the clock
+            w0 = int((sg["page_start"] + bcfg["search_from"]) * SR)
+            w1 = int((sg["page_start"] + bcfg["search_to"]) * SR)
+            win = canva[w0:w1]
+            blk = int(0.02 * SR)
+            if len(win) < blk:
+                warnings.append(f"{sg['name']}: no buzzer found in the Canva audio")
+                continue
+            nb = len(win) // blk
+            lvl = 20 * np.log10(np.sqrt((win[: nb * blk].reshape(nb, blk) ** 2).mean(axis=1)) + 1e-12)
+            loud = np.nonzero(lvl > bcfg["onset_db"])[0]
+            if len(loud) == 0:
+                warnings.append(f"{sg['name']}: no buzzer found in the Canva audio")
+                continue
+            on = w0 + loud[0] * blk
+            clip = canva[on:on + int(bcfg["length"] * SR)].copy()
+            clip = set_rms(clip, bcfg["rms_db"])
+            ramp = min(len(clip), int(0.05 * SR))
+            clip[-ramp:] *= np.linspace(1, 0, ramp)
+            a = int((sg["start"] + bcfg["at"]) * SR)
+            fx[a:a + len(clip)] += clip[: n - a]
 
     music = load_audio(next(private.glob("music.*")))
     music = set_rms(music, mcfg["rms_db"])
