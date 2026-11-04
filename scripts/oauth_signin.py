@@ -63,7 +63,9 @@ def summary(text):
 def main():
     service = os.environ["SERVICE"]
     cfg = SERVICES[service]
-    cid, secret = os.environ.get(cfg["id_env"]), os.environ.get(cfg["secret_env"])
+    # secrets pasted with a stray space or line break make the provider reject the client ID
+    cid = (os.environ.get(cfg["id_env"]) or "").strip()
+    secret = (os.environ.get(cfg["secret_env"]) or "").strip()
     if not cid or not secret:
         sys.exit(f"Missing repository secrets {cfg['id_env']} / {cfg['secret_env']}.")
     ver = verifier(secret, service)
@@ -74,7 +76,8 @@ def main():
         params = {"client_id": cid, "redirect_uri": REDIRECT, "response_type": "code",
                   "scope": cfg["scope"], "code_challenge": challenge, "state": service, **cfg["extra"]}
         link = cfg["authorize"] + "?" + urllib.parse.urlencode(params, quote_via=urllib.parse.quote)
-        summary(f"## {service.title()} sign-in, step 1\n\n1. Open this link and approve: [Sign in to {service.title()}]({link})\n"
+        summary(f"## {service.title()} sign-in, step 1\n\nClient ID in use: `{cid[:6]}…{cid[-4:]}` "
+                f"({len(cid)} characters). Check it matches the developer portal.\n\n1. Open this link and approve: [Sign in to {service.title()}]({link})\n"
                 "2. The browser ends on a page that won't load (127.0.0.1). That's expected.\n"
                 "3. Copy the full address from the address bar and run this workflow again with it pasted "
                 "into **Redirect URL**, within a few minutes.")
@@ -107,7 +110,7 @@ def main():
                  "myaccount.google.com/permissions and sign in again.")
     print(f"::add-mask::{refresh}")
 
-    gh_token = os.environ.get("GH_SECRETS_TOKEN")
+    gh_token = (os.environ.get("GH_SECRETS_TOKEN") or "").strip()
     if not gh_token:
         sys.exit("Missing repository secret GH_SECRETS_TOKEN, needed to save the refresh token.")
     env = {**os.environ, "GH_TOKEN": gh_token}
