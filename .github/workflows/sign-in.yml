@@ -23,9 +23,10 @@ jobs:
         env:
           SERVICE: ${{ inputs.service }}
           REDIRECT_URL: ${{ inputs.redirect_url }}
-          CANVA_CLIENT_ID: ${{ secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
           CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          CLIENT_ID_IS_VARIABLE: ${{ (inputs.service == 'canva' && vars.CANVA_CLIENT_ID != '') || (inputs.service == 'youtube' && vars.YT_CLIENT_ID != '') }}
         run: python3 scripts/oauth_signin.py
