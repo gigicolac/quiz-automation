@@ -26,9 +26,11 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
    - **Title:** from `quiz.json`.
    - **Description:** from `config/youtube.json`, with chapters taken from the real timings (`0:00 Intro`, `0:18 Question 1`, … `14:49 Thanks for playing`).
    - **Tags.**
-   - **Schedule check:** the build is blocked unless the description says "Thursday 3PM & Sunday 1PM ET", and blocked if it mentions AEST.
+   - **Description:** Giulia's house style: a series hook line, "🎯 How It Works", the @JustOneMoreQuiz link, like/comment/subscribe ("here for you every Thursday, Saturday & Sunday"), then chapters. Hook lines per series are in `config/youtube.json` (`description_hooks`); `quiz.json` can set its own `description_hook`.
+   - **Tags:** series keywords first (`series_tags`, from vidIQ keyword research), then shared quiz tags (`tags`, including searches like "good weekend quiz"), trimmed to YouTube's 500-character limit. `quiz.json` can add its own `tags`.
+   - **Schedule check:** blocked unless the description says "every Thursday, Saturday & Sunday", and blocked if it mentions AEST.
 4. Picks the publish time:
-   - `next` (default): the next free slot (Thursday 3pm or Sunday 1pm US Eastern) at least 3 days ahead, skipping slots already used in other `upload.json` files.
+   - `next` (default): the next free slot (Thursday 3pm, Saturday 1pm or Sunday 1pm US Eastern) at least 3 days ahead, skipping slots already used in other `upload.json` files.
    - An exact US Eastern time, for example `2026-11-12T15:00`.
    - Blank: private with no schedule.
 5. **mode = preview** (default) stops here and shows everything in the run summary. Nothing is sent to YouTube.
@@ -36,7 +38,7 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
    - category Education
    - language English (Australia)
    - made for kids: no
-   - altered or synthetic content: yes
+   - altered or synthetic content: **no** (Giulia's instruction, 6 Nov 2026)
    - paid promotion: no
    - standard licence, embedding on, notify subscribers on
 
@@ -51,16 +53,15 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
 The upload's run summary and `upload.json` list these under `studio_tasks`. They're done in YouTube Studio by Giulia or as a Claude browser task on her computer:
 
 - **End screen:** import the existing end screen from the previous quiz (two elements). Left = **Video: Most recent upload**. Right = **Playlist: the series playlist**, for example General Knowledge Quizzes.
-- **A/B test (Test & Compare):**
-  - titles: three variants are generated from `title_variants`
-  - thumbnails: once 2–3 thumbnail variants exist
+- **A/B test (Test & Compare), "Title and thumbnail":** the current title with thumbnail A against a research-based title (`title_variants`) with thumbnail B.
+- **Category Education:** Type **Activity**, and **Problems** = the `problems` list in `upload.json` (one line per question: timecode, question).
 - **Pin** the score comment, after release, once **Post score comment** has posted it.
 - **Caption certification:** "This content has never aired on television in the U.S."
 - **Shorts remixing:** allowed.
 
 ## Safety
 
-- **Once per quiz:** if `upload.json` already holds a video ID, the upload is refused. If a run fails part-way, `upload.json` shows `status: uploading`. Check YouTube Studio before trying again.
+- **Once per quiz:** if `upload.json` already holds a video ID, the upload is refused. To re-upload (for example a sharper 4K build), run with **replace**: the old copy is taken off the schedule first (left private, never deleted; delete it in Studio) and recorded under `replaced`. If a run fails part-way, `upload.json` shows `status: uploading`. Check YouTube Studio before trying again.
 - **What the record shows:** it keeps the file transfer and YouTube's processing status separately. An upload response alone doesn't prove the video is fine, so check Studio.
 
 ## Needs (one-time)
