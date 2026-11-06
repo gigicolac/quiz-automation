@@ -1,0 +1,45 @@
+{
+  "quiz": "quiz-09",
+  "channel": {
+    "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+    "title": "One More Quiz!"
+  },
+  "status": "schedule_unconfirmed",
+  "started_at": "2026-11-06T01:22:05.100881+00:00",
+  "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
+  "intended_publish_at": "2026-11-08T18:00:00Z",
+  "publish_at_local": {
+    "US Eastern": "Sun 08 Nov 2026 13:00 EST",
+    "Sydney": "Mon 09 Nov 2026 05:00 AEDT"
+  },
+  "release_tag": "quiz-09-preview-4",
+  "playlist": "General Knowledge Quizzes",
+  "steps": {
+    "captions": "uploaded",
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PL2ijqZth2mEDrfRkon0zcRDgGIV_ONmzx",
+      "title": "General Knowledge Quizzes",
+      "created": false
+    }
+  },
+  "video_id": "JoGfwPrG0IU",
+  "url": "https://youtu.be/JoGfwPrG0IU",
+  "upload_completed_at": "2026-11-06T01:22:08Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: General Knowledge Quizzes.",
+    "Test & Compare (A/B): titles General Knowledge Quiz #9 | 50 Questions Everyone Should Know | Can You Score 50/50? General Knowledge Quiz #9 | 50 General Knowledge Questions Everyone Should Know | Quiz #9; thumbnails once there are 2-3 variants.",
+    "Pin the score comment."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-08T18:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false
+  }
+}
