@@ -92,6 +92,51 @@ def parse_publish_at(value, now, cfg, taken):
     return when
 
 
+def playlist_title(quiz, cfg):
+    series = quiz.get("series", "")
+    return cfg.get("playlists", {}).get(series) or f"{series} Quizzes"
+
+
+def title_variants(quiz, cfg):
+    count = len(quiz["questions"]) if isinstance(quiz["questions"], list) else quiz["questions"]
+    out = []
+    for t in cfg.get("title_variants", ["{title}"]):
+        v = t.format(title=quiz["title"], count=count, series=quiz.get("series", ""), number=quiz.get("number", ""))
+        if v not in out and len(v) <= 100:
+            out.append(v)
+    return out
+
+
+def studio_tasks(quiz, cfg, playlist):
+    """Things the YouTube API can't do; done in Studio (browser task) after upload."""
+    es = cfg.get("end_screen", {})
+    return [
+        f"End screen: {es.get('note', '')} Left = {es.get('left', '')}; right = {es.get('right', '').format(playlist=playlist)}.",
+        "Test & Compare (A/B): titles " + " | ".join(title_variants(quiz, cfg)) + "; thumbnails once there are 2-3 variants.",
+        "Pin the score comment.",
+    ]
+
+
+def find_or_create_playlist(token, title, series):
+    """Reuse a playlist whose title mentions the series, else create a public one."""
+    page = ""
+    while True:
+        _, _, resp = http("GET", f"{API}/playlists?part=snippet&mine=true&maxResults=50{page}", token)
+        for item in resp.get("items", []):
+            t = item["snippet"]["title"]
+            if t.lower() == title.lower() or (series and series.lower() in t.lower()):
+                return item["id"], t, False
+        if not resp.get("nextPageToken"):
+            break
+        page = f"&pageToken={resp['nextPageToken']}"
+    body = {"snippet": {"title": title, "description": f"Every {series} quiz from Just One More Quiz. "
+                        "Grab a pen, keep score and see how you go!"},
+            "status": {"privacyStatus": "public"}}
+    _, _, resp = http("POST", f"{API}/playlists?part=snippet,status", token, json.dumps(body).encode(),
+                      {"Content-Type": "application/json"})
+    return resp["id"], title, True
+
+
 def build_metadata(quiz, report, cfg):
     count = len(quiz["questions"]) if isinstance(quiz["questions"], list) else quiz["questions"]
     desc = cfg["description"].format(count=count, schedule_line=cfg["schedule_line"], chapters=chapters(report))
@@ -197,9 +242,11 @@ def main():
             "publish_at_local": {"US Eastern": when.strftime("%a %d %b %Y %H:%M %Z") if when else None,
                                  "Melbourne": when.astimezone(ZoneInfo("Australia/Melbourne")).strftime(
                                      "%a %d %b %Y %H:%M %Z") if when else None},
-            "release_tag": review.get("release_tag")}
+            "release_tag": review.get("release_tag"), "playlist": playlist_title(quiz, cfg),
+            "studio_tasks": studio_tasks(quiz, cfg, playlist_title(quiz, cfg))}
     Path(args.out).write_text(json.dumps(plan, indent=2, ensure_ascii=False))
-    print(json.dumps({k: plan[k] for k in ("title", "publish_at", "publish_at_local")}, indent=2, ensure_ascii=False))
+    print(json.dumps({k: plan[k] for k in ("title", "publish_at", "publish_at_local", "playlist", "studio_tasks")},
+                     indent=2, ensure_ascii=False))
     if args.mode == "preview":
         print("Preview only: nothing was sent to YouTube.")
         return
@@ -232,15 +279,17 @@ def main():
         steps["captions"] = "uploaded"
     if args.thumbnail and Path(args.thumbnail).exists():
         http("POST", f"{UPLOAD_API}/thumbnails/set?videoId={vid}", token, Path(args.thumbnail).read_bytes(),
-             {"Content-Type": "image/png"})
+             {"Content-Type": "image/jpeg" if args.thumbnail.lower().endswith((".jpg", ".jpeg")) else "image/png"})
         steps["thumbnail"] = "set"
     else:
         steps["thumbnail"] = "none (add in Studio or build the thumbnail step)"
-    if cfg.get("playlist_id"):
-        pl = {"snippet": {"playlistId": cfg["playlist_id"], "resourceId": {"kind": "youtube#video", "videoId": vid}}}
-        http("POST", f"{API}/playlistItems?part=snippet", token, json.dumps(pl).encode(),
-             {"Content-Type": "application/json"})
-        steps["playlist"] = cfg["playlist_id"]
+    pid, ptitle, created = find_or_create_playlist(token, playlist_title(quiz, cfg), quiz.get("series", ""))
+    pl = {"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": vid}}}
+    http("POST", f"{API}/playlistItems?part=snippet", token, json.dumps(pl).encode(),
+         {"Content-Type": "application/json"})
+    steps["playlist"] = f"{ptitle} ({pid}){' - created' if created else ''}"
+    plan["studio_tasks"] = studio_tasks(quiz, cfg, ptitle)
+    record["studio_tasks"] = plan["studio_tasks"]
     if meta["comment"]:
         c = {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": meta["comment"]}}}}
         _, _, resp = http("POST", f"{API}/commentThreads?part=snippet", token, json.dumps(c).encode(),
@@ -255,7 +304,7 @@ def main():
                   finished_at=dt.datetime.now(dt.timezone.utc).isoformat())
     record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
     print(json.dumps({k: record.get(k) for k in ("video_id", "url", "publish_at", "steps", "youtube_status",
-                                                  "processing")}, indent=2))
+                                                  "processing", "studio_tasks")}, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

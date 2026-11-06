@@ -2,8 +2,14 @@
   "_comment": "Upload settings for scripts/upload_youtube.py. Times are US Eastern. Settings from PLAN.md 'Upload settings'.",
   "timezone": "America/New_York",
   "slots": [
-    {"weekday": "Thursday", "time": "15:00"},
-    {"weekday": "Sunday", "time": "13:00"}
+    {
+      "weekday": "Thursday",
+      "time": "15:00"
+    },
+    {
+      "weekday": "Sunday",
+      "time": "13:00"
+    }
   ],
   "lead_days": 3,
   "category_id": "27",
@@ -12,9 +18,40 @@
   "contains_synthetic_media": true,
   "paid_promotion": false,
   "notify_subscribers": true,
-  "playlist_id": "",
   "schedule_line": "New quizzes every Thursday 3PM & Sunday 1PM ET.",
   "description": "How many can you get right? 🧠 {count} general knowledge questions, 10 seconds each. Keep score and drop it in the comments!\n\n{schedule_line} Subscribe for your bi-weekly dose of trivia.\n\nChapters\n{chapters}\n\n#quiz #trivia #generalknowledge",
-  "tags": ["quiz", "trivia", "general knowledge quiz", "general knowledge", "trivia quiz", "pub quiz", "quiz questions", "50 questions", "brain teaser", "Just One More Quiz"],
-  "comment": "What did you score out of {count}? Tell us below 👇"
+  "tags": [
+    "quiz",
+    "trivia",
+    "general knowledge quiz",
+    "general knowledge",
+    "trivia quiz",
+    "pub quiz",
+    "quiz questions",
+    "50 questions",
+    "brain teaser",
+    "Just One More Quiz"
+  ],
+  "comment": "What did you score out of {count}? Tell us below 👇",
+  "playlists": {
+    "_comment": "Series in quiz.json -> playlist. An existing playlist whose title contains the series name is reused; otherwise one is created with this title.",
+    "General Knowledge": "General Knowledge Quizzes",
+    "Movies": "Movie Quizzes",
+    "TV": "TV Show Quizzes",
+    "Music": "Music Quizzes",
+    "Sport": "Sport Quizzes",
+    "Geography": "Geography Quizzes",
+    "History": "History Quizzes",
+    "Science": "Science Quizzes"
+  },
+  "title_variants": [
+    "{title}",
+    "Can You Score {count}/{count}? {series} Quiz #{number}",
+    "{count} {series} Questions Everyone Should Know | Quiz #{number}"
+  ],
+  "end_screen": {
+    "left": "Video: Most recent upload",
+    "right": "Playlist: {playlist}",
+    "note": "Import the existing end screen from the previous quiz, then set the two elements."
+  }
 }
