@@ -1,0 +1,15 @@
+{
+  "_comment": "Hooks for quiz Shorts, rotated per Short ({n} = questions in the Short). Based on breakout quiz Shorts (vidIQ outliers 6 Nov 2026: 'Can you answer all 6…?' 57x, 'Can you get 10/10' 3x, 'Comment your score' 6.6x). The Monday run updates these from Shorts performance.",
+  "hooks": [
+    "Can you get {n}/{n}? 🧠",
+    "Bet you can't get all {n} 🤔",
+    "{n} questions. 5 seconds each. Go! ⏱️",
+    "Smarter than most? Prove it 🧠",
+    "How many can you get right? 👀",
+    "Pub quiz champ? Try these {n} 🍻",
+    "Comment your score! 👇 {n} questions"
+  ],
+  "per_short": 7,
+  "think_seconds": 5,
+  "times_us_eastern": ["08:00", "18:00"]
+}
