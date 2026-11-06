@@ -4,7 +4,7 @@
     "id": "UCbP3HMh1h7XAWUruf_M8n7g",
     "title": "One More Quiz!"
   },
-  "status": "schedule_unconfirmed",
+  "status": "scheduled",
   "started_at": "2026-11-06T01:22:05.100881+00:00",
   "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
   "intended_publish_at": "2026-11-08T18:00:00Z",
@@ -36,10 +36,12 @@
   "youtube_status": {
     "uploadStatus": "processed",
     "privacyStatus": "private",
+    "publishAt": "2026-11-08T18:00:00Z",
     "license": "youtube",
     "embeddable": true,
     "publicStatsViewable": true,
-    "madeForKids": false,
-    "selfDeclaredMadeForKids": false
-  }
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true
+  },
+  "finished_at": "2026-11-06T01:24:34Z"
 }

@@ -55,7 +55,7 @@
     "note": "Import the existing end screen from the previous quiz, then set the two elements."
   },
   "expected_channel_title": "One More Quiz",
-  "expected_channel_id": "",
+  "expected_channel_id": "UCbP3HMh1h7XAWUruf_M8n7g",
   "minimum_lead_minutes": 1440,
   "processing_wait_minutes": 45,
   "_buffer": "Rain-sounds pattern: upload private with no publishAt, wait for processing, then schedule the intended slot but never sooner than minimum_lead_minutes after the transfer finished."
