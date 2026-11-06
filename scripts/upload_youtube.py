@@ -113,7 +113,9 @@ def studio_tasks(quiz, cfg, playlist):
     return [
         f"End screen: {es.get('note', '')} Left = {es.get('left', '')}; right = {es.get('right', '').format(playlist=playlist)}.",
         "Test & Compare (A/B): titles " + " | ".join(title_variants(quiz, cfg)) + "; thumbnails once there are 2-3 variants.",
-        "Pin the score comment.",
+        "Pin the score comment once it is posted (the Post score comment run links it).",
+        "Caption certification: This content has never aired on television in the U.S.",
+        "Shorts remixing: allowed.",
     ]
 
 
