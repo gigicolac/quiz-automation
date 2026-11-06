@@ -273,7 +273,7 @@ def main():
         raise SystemExit(f"{quiz['id']}: final video is not approved in quiz.json; not uploading.")
     record_path = qdir / "upload.json"
     record = json.loads(record_path.read_text()) if record_path.exists() else {}
-    if record.get("status") == "scheduled":
+    if record.get("status") == "scheduled":  # done; anything else with a video_id resumes
         raise SystemExit(f"{quiz['id']} is already uploaded and scheduled as {record['video_id']}; nothing to do.")
     if record and not record.get("video_id"):
         raise SystemExit(f"{quiz['id']}: a previous upload stopped before YouTube returned a video ID. "
@@ -367,12 +367,21 @@ def main():
         record.update(publish_at=iso(publish), publish_at_local=local_times(publish))
         save()
         body = {"id": vid, "status": {"privacyStatus": "private", "publishAt": iso(publish), **status_fields}}
-        http("PUT", f"{API}/videos?part=status", token, json.dumps(body).encode(),
-             {"Content-Type": "application/json"})
-        _, _, info = http("GET", f"{API}/videos?part=status&id={vid}", token)
-        st = (info.get("items") or [{}])[0].get("status", {})
+        # confirm from the update response, as the rain pipeline does: a read straight
+        # after the update can return the old status without publishAt
+        _, _, resp = http("PUT", f"{API}/videos?part=status", token, json.dumps(body).encode(),
+                          {"Content-Type": "application/json"})
+        st = resp.get("status", {})
+        if not st.get("publishAt"):
+            import time
+            for _ in range(6):
+                time.sleep(10)
+                _, _, info = http("GET", f"{API}/videos?part=status&id={vid}", token)
+                st = (info.get("items") or [{}])[0].get("status", {})
+                if st.get("publishAt"):
+                    break
         record["youtube_status"] = st
-        if st.get("publishAt", "").replace(".000Z", "Z") != iso(publish):
+        if st.get("privacyStatus") != "private" or st.get("publishAt", "").replace(".000Z", "Z") != iso(publish):
             record["status"] = "schedule_unconfirmed"
             save()
             raise SystemExit(f"YouTube did not confirm the schedule for {vid}: {st}")
