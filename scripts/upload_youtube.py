@@ -309,7 +309,7 @@ def main():
     record_path = qdir / "upload.json"
     record = json.loads(record_path.read_text()) if record_path.exists() else {}
     replacing = None
-    if record.get("status") == "scheduled" and args.replace and args.mode == "upload":
+    if record.get("status") == "scheduled" and args.replace:
         replacing, record = record, {}
     elif record.get("status") == "scheduled":  # done; anything else with a video_id resumes
         raise SystemExit(f"{quiz['id']} is already uploaded and scheduled as {record['video_id']}; nothing to do. "
