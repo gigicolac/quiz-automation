@@ -47,6 +47,8 @@ jobs:
           d="$RUNNER_TEMP/build"; mkdir -p "$d"
           if [ "$MODE" = upload ]; then pat=(-p "$QUIZ.mp4" -p "$QUIZ.srt" -p build_report.json); else pat=(-p build_report.json); fi
           gh release download "$TAG" -D "$d" "${pat[@]}"
+          # thumbnail A (if attached by the Attach thumbnails workflow) becomes the starting thumbnail
+          gh release download "$TAG" -D "$d" -p thumbnail-a.jpg 2>/dev/null || echo "No thumbnail-a.jpg on $TAG"
           ls -la "$d"
 
       - name: Check YouTube secrets
@@ -67,7 +69,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
           d="$RUNNER_TEMP/build"
-          thumb=""; [ -f "quizzes/$QUIZ/thumbnail.png" ] && thumb="quizzes/$QUIZ/thumbnail.png"
+          thumb=""; [ -f "$d/thumbnail-a.jpg" ] && thumb="$d/thumbnail-a.jpg"
           python3 scripts/upload_youtube.py --quiz "quizzes/$QUIZ" --report "$d/build_report.json" \
             --video "$d/$QUIZ.mp4" --captions "$d/$QUIZ.srt" ${thumb:+--thumbnail "$thumb"} \
             --publish-at "$PUBLISH_AT" --mode "$MODE" --out "$RUNNER_TEMP/plan.json"

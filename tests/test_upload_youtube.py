@@ -47,5 +47,17 @@ class MetadataTests(unittest.TestCase):
             up.build_metadata(self.quiz, self.report, bad)
 
 
+class PlaylistTests(unittest.TestCase):
+    quiz = {"title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know", "questions": [1] * 50,
+            "series": "General Knowledge", "number": 9}
+
+    def test_playlist_and_tasks(self):
+        self.assertEqual(up.playlist_title(self.quiz, CFG), "General Knowledge Quizzes")
+        self.assertEqual(up.playlist_title({**self.quiz, "series": "Space"}, CFG), "Space Quizzes")
+        tasks = up.studio_tasks(self.quiz, CFG, "General Knowledge Quizzes")
+        self.assertIn("Left = Video: Most recent upload; right = Playlist: General Knowledge Quizzes", tasks[0])
+        self.assertIn("Can You Score 50/50? General Knowledge Quiz #9", tasks[1])
+
+
 if __name__ == "__main__":
     unittest.main()

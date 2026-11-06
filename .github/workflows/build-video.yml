@@ -6,6 +6,8 @@ name: Build video
 # Nothing is uploaded to YouTube.
 on:
   push:
+    # task branches only: merging a PR into main must not start a rebuild
+    branches-ignore: [main]
     paths: ["quizzes/*/build.json"]
   workflow_dispatch:
     inputs:
@@ -164,7 +166,7 @@ jobs:
           echo "TAG=$tag" >> "$GITHUB_ENV"
 
       - name: Record result
-        if: always()
+        if: always() && env.QUIZ != ''
         run: |
           status=${{ job.status }}
           f="quizzes/$QUIZ/build_result.json"
