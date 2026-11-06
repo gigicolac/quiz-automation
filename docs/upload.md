@@ -1,5 +1,16 @@
 # YouTube upload (GitHub Actions)
 
+**Release pattern (same as the rain-sounds pipeline, 6 Nov 2026):**
+1. Upload **private with no publishAt** and record `upload_completed_at`.
+2. Add the captions, thumbnail A and the series playlist.
+3. Wait for YouTube processing (up to 45 minutes).
+4. Then set `publishAt` to the intended slot, but never sooner than **24 hours** after the transfer finished (`minimum_lead_minutes`).
+5. Confirm the schedule with YouTube.
+
+- **Resume:** a failed run leaves the video private, and re-running resumes the recorded video ID without uploading again.
+- **Channel check:** the upload refuses to run unless the signed-in channel name contains "One More Quiz", or the ID matches `expected_channel_id` once that's set.
+- **Score comment:** posted by **Post score comment** (`comment.yml`) 15 minutes after each Thursday 3pm and Sunday 1pm ET release, plus a daily 5:45pm ET catch-up. It only posts once the video is public and never posts twice. Pinning has no API, so the run summary gives an "Open and pin" link.
+
 The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upload_youtube.py`) is run by hand from the Actions tab. It isn't scheduled yet.
 
 ## What it does

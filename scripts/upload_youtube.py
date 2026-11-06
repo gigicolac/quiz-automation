@@ -208,6 +208,45 @@ def multipart(meta, payload, payload_type):
     return body, f"multipart/related; boundary={boundary}"
 
 
+def iso(t):
+    return t.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def local_times(t):
+    if not t:
+        return None
+    return {"US Eastern": t.astimezone(ZoneInfo("America/New_York")).strftime("%a %d %b %Y %H:%M %Z"),
+            "Sydney": t.astimezone(ZoneInfo("Australia/Sydney")).strftime("%a %d %b %Y %H:%M %Z")}
+
+
+def check_channel(token, cfg):
+    """Refuse to upload unless the signed-in channel is the quiz channel."""
+    _, _, resp = http("GET", f"{API}/channels?part=snippet&mine=true", token)
+    items = resp.get("items") or []
+    if not items:
+        raise SystemExit("The YouTube sign-in has no channel. Re-run the YouTube sign-in and pick One More Quiz.")
+    ch = items[0]
+    want_id, want_name = cfg.get("expected_channel_id"), cfg.get("expected_channel_title", "")
+    if want_id and ch["id"] != want_id:
+        raise SystemExit(f"Signed in to channel {ch['id']} ({ch['snippet']['title']}), expected {want_id}.")
+    if not want_id and want_name.lower() not in ch["snippet"]["title"].lower():
+        raise SystemExit(f"Signed in to '{ch['snippet']['title']}', expected a channel named like '{want_name}'.")
+    return {"id": ch["id"], "title": ch["snippet"]["title"]}
+
+
+def wait_for_processing(token, vid, minutes):
+    import time
+    deadline = time.time() + minutes * 60
+    while True:
+        _, _, info = http("GET", f"{API}/videos?part=status,processingDetails&id={vid}", token)
+        item = (info.get("items") or [{}])[0]
+        state = item.get("processingDetails", {}).get("processingStatus")
+        print(f"  processing: {state}", flush=True)
+        if state in ("succeeded", "failed", "terminated") or time.time() > deadline:
+            return item
+        time.sleep(30)
+
+
 # ---------------------------------------------------------------- main
 
 def main():
@@ -232,79 +271,117 @@ def main():
         raise SystemExit(f"{quiz['id']}: final video is not approved in quiz.json; not uploading.")
     record_path = qdir / "upload.json"
     record = json.loads(record_path.read_text()) if record_path.exists() else {}
-    if record.get("video_id"):
-        raise SystemExit(f"{quiz['id']} already uploaded as {record['video_id']}; not uploading again.")
+    if record.get("status") == "scheduled":
+        raise SystemExit(f"{quiz['id']} is already uploaded and scheduled as {record['video_id']}; nothing to do.")
+    if record and not record.get("video_id"):
+        raise SystemExit(f"{quiz['id']}: a previous upload stopped before YouTube returned a video ID. "
+                         "Check YouTube Studio for a stray private upload, then reconcile upload.json by hand.")
+    resume = bool(record.get("video_id"))
 
     now = dt.datetime.now(dt.timezone.utc)
     when = parse_publish_at(args.publish_at, now, cfg, taken_slots(qdir.parent, qdir.name))
+    if resume and record.get("intended_publish_at"):
+        when = dt.datetime.fromisoformat(record["intended_publish_at"].replace("Z", "+00:00"))
     meta = build_metadata(quiz, report, cfg)
-    plan = {**meta, "publish_at": when.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z") if when else None,
-            "publish_at_local": {"US Eastern": when.strftime("%a %d %b %Y %H:%M %Z") if when else None,
-                                 "Melbourne": when.astimezone(ZoneInfo("Australia/Melbourne")).strftime(
-                                     "%a %d %b %Y %H:%M %Z") if when else None},
+    plan = {**meta, "intended_publish_at": iso(when) if when else None,
+            "publish_at_local": local_times(when),
             "release_tag": review.get("release_tag"), "playlist": playlist_title(quiz, cfg),
             "studio_tasks": studio_tasks(quiz, cfg, playlist_title(quiz, cfg))}
     Path(args.out).write_text(json.dumps(plan, indent=2, ensure_ascii=False))
-    print(json.dumps({k: plan[k] for k in ("title", "publish_at", "publish_at_local", "playlist", "studio_tasks")},
-                     indent=2, ensure_ascii=False))
+    print(json.dumps({k: plan[k] for k in ("title", "intended_publish_at", "publish_at_local", "playlist",
+                                           "studio_tasks")}, indent=2, ensure_ascii=False))
     if args.mode == "preview":
         print("Preview only: nothing was sent to YouTube.")
         return
 
-    token = access_token()
-    today = dt.date.today().isoformat()
-    body = {
-        "snippet": {"title": meta["title"], "description": meta["description"], "tags": meta["tags"],
-                    "categoryId": cfg["category_id"], "defaultLanguage": cfg["language"],
-                    "defaultAudioLanguage": cfg["language"]},
-        "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": cfg["made_for_kids"],
-                   "containsSyntheticMedia": cfg["contains_synthetic_media"], "license": "youtube",
-                   "embeddable": True, **({"publishAt": plan["publish_at"]} if when else {})},
-        "recordingDetails": {"recordingDate": f"{today}T00:00:00Z"},
-        "paidProductPlacementDetails": {"hasPaidProductPlacement": cfg["paid_promotion"]},
-    }
-    # record the attempt first, so an interrupted upload is reconciled against YouTube before retrying
-    record = {"quiz": quiz["id"], "status": "uploading", "started_at": now.isoformat(), **plan}
-    record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
-    video = upload_video(token, Path(args.video), body, cfg["notify_subscribers"])
-    vid = video["id"]
-    record.update(video_id=vid, url=f"https://youtu.be/{vid}", status="uploaded", transfer="complete")
-    record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
+    def save():
+        record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
 
-    steps = {}
-    if args.captions and Path(args.captions).exists():
+    token = access_token()
+    channel = check_channel(token, cfg)
+    status_fields = {"selfDeclaredMadeForKids": cfg["made_for_kids"], "license": "youtube", "embeddable": True,
+                     "publicStatsViewable": True, "containsSyntheticMedia": cfg["contains_synthetic_media"]}
+
+    if not resume:
+        # 1. transfer PRIVATE with no publishAt (rain-sounds release buffer pattern)
+        today = dt.date.today().isoformat()
+        body = {
+            "snippet": {"title": meta["title"], "description": meta["description"], "tags": meta["tags"],
+                        "categoryId": cfg["category_id"], "defaultLanguage": cfg["language"],
+                        "defaultAudioLanguage": cfg["language"]},
+            "status": {"privacyStatus": "private", **status_fields},
+            "recordingDetails": {"recordingDate": f"{today}T00:00:00Z"},
+            "paidProductPlacementDetails": {"hasPaidProductPlacement": cfg["paid_promotion"]},
+        }
+        record = {"quiz": quiz["id"], "channel": channel, "status": "uploading", "started_at": now.isoformat(),
+                  **{k: plan[k] for k in ("title", "intended_publish_at", "publish_at_local", "release_tag",
+                                          "playlist")}, "steps": {}}
+        save()
+        video = upload_video(token, Path(args.video), body, cfg["notify_subscribers"])
+        vid = video["id"]
+        record.update(video_id=vid, url=f"https://youtu.be/{vid}", status="transferred",
+                      upload_completed_at=iso(dt.datetime.now(dt.timezone.utc)))
+        save()
+    vid = record["video_id"]
+    steps = record.setdefault("steps", {})
+
+    # 2. captions, thumbnail, playlist (each once, so a resumed run doesn't repeat them)
+    if "captions" not in steps and args.captions and Path(args.captions).exists():
         data, ctype = multipart({"snippet": {"videoId": vid, "language": "en", "name": "English"}},
                                 Path(args.captions).read_bytes(), "application/octet-stream")
         http("POST", f"{UPLOAD_API}/captions?part=snippet&uploadType=multipart", token, data, {"Content-Type": ctype})
         steps["captions"] = "uploaded"
-    if args.thumbnail and Path(args.thumbnail).exists():
+        save()
+    if "thumbnail" not in steps and args.thumbnail and Path(args.thumbnail).exists():
         http("POST", f"{UPLOAD_API}/thumbnails/set?videoId={vid}", token, Path(args.thumbnail).read_bytes(),
              {"Content-Type": "image/jpeg" if args.thumbnail.lower().endswith((".jpg", ".jpeg")) else "image/png"})
-        steps["thumbnail"] = "set"
-    else:
-        steps["thumbnail"] = "none (add in Studio or build the thumbnail step)"
-    pid, ptitle, created = find_or_create_playlist(token, playlist_title(quiz, cfg), quiz.get("series", ""))
-    pl = {"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": vid}}}
-    http("POST", f"{API}/playlistItems?part=snippet", token, json.dumps(pl).encode(),
-         {"Content-Type": "application/json"})
-    steps["playlist"] = f"{ptitle} ({pid}){' - created' if created else ''}"
-    plan["studio_tasks"] = studio_tasks(quiz, cfg, ptitle)
-    record["studio_tasks"] = plan["studio_tasks"]
-    if meta["comment"]:
-        c = {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": meta["comment"]}}}}
-        _, _, resp = http("POST", f"{API}/commentThreads?part=snippet", token, json.dumps(c).encode(),
-                          {"Content-Type": "application/json"}, expect=(200, 201, 403))
-        steps["comment"] = "posted (pin it in Studio)" if resp.get("id") else "not posted (comments may be off until processing finishes)"
+        steps["thumbnail"] = Path(args.thumbnail).name
+        save()
+    if "playlist" not in steps:
+        pid, ptitle, created = find_or_create_playlist(token, playlist_title(quiz, cfg), quiz.get("series", ""))
+        pl = {"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": vid}}}
+        http("POST", f"{API}/playlistItems?part=snippet", token, json.dumps(pl).encode(),
+             {"Content-Type": "application/json"})
+        steps["playlist"] = {"id": pid, "title": ptitle, "created": created}
+        record["studio_tasks"] = studio_tasks(quiz, cfg, ptitle)
+        save()
 
-    # what YouTube reports back, kept separate from the transfer itself
-    _, _, info = http("GET", f"{API}/videos?part=status,processingDetails&id={vid}", token)
-    item = (info.get("items") or [{}])[0]
-    record.update(steps=steps, youtube_status=item.get("status"),
-                  processing=item.get("processingDetails", {}).get("processingStatus"), status="uploaded",
-                  finished_at=dt.datetime.now(dt.timezone.utc).isoformat())
-    record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
-    print(json.dumps({k: record.get(k) for k in ("video_id", "url", "publish_at", "steps", "youtube_status",
-                                                  "processing", "studio_tasks")}, indent=2, ensure_ascii=False))
+    # 3. wait for YouTube to finish processing
+    item = wait_for_processing(token, vid, cfg.get("processing_wait_minutes", 45))
+    record["processing"] = item.get("processingDetails", {}).get("processingStatus")
+    save()
+    if record["processing"] != "succeeded":
+        record["status"] = "processing_incomplete"
+        save()
+        raise SystemExit(f"Video {vid} is still private: processing status is {record['processing']}. "
+                         "Re-run the upload later; it resumes this video without uploading again.")
+
+    # 4. schedule: intended slot, but never sooner than the minimum buffer after the transfer finished
+    if when:
+        done = dt.datetime.fromisoformat(record["upload_completed_at"].replace("Z", "+00:00"))
+        earliest = max(done + dt.timedelta(minutes=cfg.get("minimum_lead_minutes", 1440)),
+                       dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=1))
+        publish = max(when, earliest)
+        record.update(publish_at=iso(publish), publish_at_local=local_times(publish))
+        save()
+        body = {"id": vid, "status": {"privacyStatus": "private", "publishAt": iso(publish), **status_fields}}
+        http("PUT", f"{API}/videos?part=status", token, json.dumps(body).encode(),
+             {"Content-Type": "application/json"})
+        _, _, info = http("GET", f"{API}/videos?part=status&id={vid}", token)
+        st = (info.get("items") or [{}])[0].get("status", {})
+        record["youtube_status"] = st
+        if st.get("publishAt", "").replace(".000Z", "Z") != iso(publish):
+            record["status"] = "schedule_unconfirmed"
+            save()
+            raise SystemExit(f"YouTube did not confirm the schedule for {vid}: {st}")
+        record["status"] = "scheduled"
+    else:
+        record["status"] = "private_unscheduled"
+    record["finished_at"] = iso(dt.datetime.now(dt.timezone.utc))
+    save()
+    print(json.dumps({k: record.get(k) for k in ("video_id", "url", "status", "publish_at", "publish_at_local",
+                                                  "steps", "processing", "studio_tasks")}, indent=2,
+                     ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -54,7 +54,7 @@ jobs:
       - name: Check YouTube secrets
         if: inputs.mode == 'upload'
         env:
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
@@ -64,7 +64,7 @@ jobs:
 
       - name: Upload
         env:
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |

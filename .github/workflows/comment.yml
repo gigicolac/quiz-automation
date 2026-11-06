@@ -1,0 +1,38 @@
+name: Post score comment
+# Runs 15 minutes after each quiz release (Thu 3pm, Sun 1pm US Eastern) plus a daily catch-up,
+# and posts the score comment on quiz videos that have gone public. Pinning stays manual (no API).
+on:
+  schedule:
+    - cron: "15 15 * * 4"
+      timezone: "America/New_York"
+    - cron: "15 13 * * 0"
+      timezone: "America/New_York"
+    - cron: "45 17 * * *"
+      timezone: "America/New_York"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Post comments
+        env:
+          YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/post_comment.py
+      - name: Record comments
+        run: |
+          git add quizzes/*/upload.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Record score comments"
+          git pull --rebase -q origin "$GITHUB_REF_NAME"
+          git push -q origin "HEAD:$GITHUB_REF_NAME"
