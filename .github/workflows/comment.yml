@@ -1,9 +1,11 @@
 name: Post score comment
-# Runs 15 minutes after each quiz release (Thu 3pm, Sun 1pm US Eastern) plus a daily catch-up,
+# Runs 15 minutes after each quiz release (Thu 3pm, Sat 1pm, Sun 1pm US Eastern) plus a daily catch-up,
 # and posts the score comment on quiz videos that have gone public. Pinning stays manual (no API).
 on:
   schedule:
     - cron: "15 15 * * 4"
+      timezone: "America/New_York"
+    - cron: "15 13 * * 6"
       timezone: "America/New_York"
     - cron: "15 13 * * 0"
       timezone: "America/New_York"
