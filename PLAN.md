@@ -125,6 +125,8 @@ Observations from Quiz #1 template:
 
 - **End screens:** cannot be set via the API. One click per video in Studio ("Import from video"); batch them since uploads are days ahead
 - **Pinning the comment:** the API can post but not pin
+- **Caption certification, Shorts remixing, Test & Compare:** Studio only
+- All of these: daily Claude browser task at 10:13am Sydney on Giulia's computer (see docs/upload.md)
 - **Approving videos** on the review page
 
 ## Blockers to clear first
@@ -153,6 +155,7 @@ Observations from Quiz #1 template:
 - 4 Nov 2026: Quiz #9 final video approved. Every upload gets the existing two-element end screen (left: most recent upload; right: the series playlist, e.g. General Knowledge), is added to its series playlist (created if missing), and gets a Test & Compare A/B test. End screens and A/B tests are Studio-only (no API), so they are a Studio checklist/browser task after each upload.
 - 3 Nov 2026: Quiz #9 slides approved. Voiceover and music are added in GitHub after the Canva export. Music: Game Show Groove under the whole video, quiet, 3 s fade in and out. Ending slide: Quiz #8 page 53 plus the hooray sound. Private audio is committed only encrypted (`assets/private/*.enc`, key in the `ASSET_KEY` secret). See docs/video-build.md and docs/canva-autofill.md.
 - 4 Nov 2026: Giulia's feedback on preview #3: cloned voice approved; add the countdown buzzer; add like/subscribe voiceover on the ending slide; no emoji sounds in the audio (emoji stay on slides); numbers spoken as words; keep the Friends clip on the ending slide; A47 GIF is fine. Giulia deleted and reinstated the One More Quiz YouTube channel, so any existing YouTube API sign-in for it should be treated as revoked: the upload step needs a fresh OAuth sign-in for the channel when it is built.
+- 6 Nov 2026: Uploads run daily at 8am Sydney in GitHub (approved quizzes only, next free slot; off switch `AUTO_UPLOAD=false`). Giulia or her partner has a computer on between 10am and 8pm Sydney, not at night, so the Studio-only steps (end screen, Test & Compare, caption certification, Shorts remixing, pinning) run as a daily Claude scheduled task at 10:13am Sydney in the Claude desktop app's built-in browser on her computer. Pins land the same morning as the Fri 7am / Mon 5am Sydney releases. Claude doesn't sign in to YouTube from the cloud (Google blocks automated sign-ins; storing a Google login would expose the whole account).
 - 29 Oct 2026: Shorts 1 a day or every second day. Canva templates inventoried; thumbnails rebuilt in code from the Canva layout
 
 ## Canva build proof run (29 Oct 2026, Quiz #9 questions 1)

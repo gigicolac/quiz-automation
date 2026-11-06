@@ -11,7 +11,12 @@
 - **Channel check:** the upload refuses to run unless the signed-in channel name contains "One More Quiz", or the ID matches `expected_channel_id` once that's set.
 - **Score comment:** posted by **Post score comment** (`comment.yml`) 15 minutes after each Thursday 3pm and Sunday 1pm ET release, plus a daily 5:45pm ET catch-up. It only posts once the video is public and never posts twice. Pinning has no API, so the run summary gives an "Open and pin" link.
 
-The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upload_youtube.py`) is run by hand from the Actions tab. It isn't scheduled yet.
+The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upload_youtube.py`):
+
+- **Runs daily at 8am Sydney.** It uploads the first quiz whose final video is approved and has no upload yet, or resumes an unfinished upload that has a video ID, into the next free slot (`next`). One quiz per run. Uploads run in GitHub's cloud and don't need anyone's computer.
+- **Off switch:** set the repository variable `AUTO_UPLOAD` to `false`.
+- **By hand:** it can also be run from the Actions tab (preview or upload).
+- **Studio steps:** a daily Claude scheduled task at 10:13am Sydney does them in the Claude desktop app's built-in browser on Giulia's computer. Giulia and her partner have a computer on between 10am and 8pm Sydney, so that's when this runs. It does the Studio checklist below for new uploads and pins the score comment on released videos. Releases are Friday 7am and Monday 5am Sydney, so the pin lands the same morning.
 
 ## What it does
 
@@ -27,7 +32,7 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
    - An exact US Eastern time, for example `2026-11-12T15:00`.
    - Blank: private with no schedule.
 5. **mode = preview** (default) stops here and shows everything in the run summary. Nothing is sent to YouTube.
-6. **mode = upload** uploads the video privately with `publishAt` and these settings:
+6. **mode = upload** uploads the video privately (no `publishAt` until processing finishes) with these settings:
    - category Education
    - language English (Australia)
    - made for kids: no
@@ -39,7 +44,6 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
    - uploads the English captions
    - sets the thumbnail, if `quizzes/<quiz>/thumbnail.png` exists
    - adds the video to its series playlist, for example "General Knowledge Quizzes". A playlist whose title already mentions the series is reused; otherwise a public one is created (mapping in `config/youtube.json`)
-   - posts the score comment (pin it in Studio)
    - records everything in `quizzes/<quiz>/upload.json`
 
 ## Studio checklist (the YouTube API can't do these)
@@ -50,7 +54,9 @@ The upload's run summary and `upload.json` list these under `studio_tasks`. They
 - **A/B test (Test & Compare):**
   - titles: three variants are generated from `title_variants`
   - thumbnails: once 2–3 thumbnail variants exist
-- **Pin** the score comment.
+- **Pin** the score comment, after release, once **Post score comment** has posted it.
+- **Caption certification:** "This content has never aired on television in the U.S."
+- **Shorts remixing:** allowed.
 
 ## Safety
 
