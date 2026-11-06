@@ -84,7 +84,11 @@ jobs:
           if [ "$MODE" = upload ]; then pat=(-p "$QUIZ.mp4" -p "$QUIZ.srt" -p build_report.json); else pat=(-p build_report.json); fi
           gh release download "$TAG" -D "$d" "${pat[@]}"
           # thumbnail A (if attached by the Attach thumbnails workflow) becomes the starting thumbnail
-          gh release download "$TAG" -D "$d" -p thumbnail-a.jpg 2>/dev/null || echo "No thumbnail-a.jpg on $TAG"
+          # (falls back to earlier builds of the same quiz, e.g. after a 4K re-render)
+          for t in $(jq -r '[.review.video.release_tag] + [.review.video.history[]?.release_tag] | .[] | select(. != null)' "quizzes/$QUIZ/quiz.json"); do
+            gh release download "$t" -D "$d" -p thumbnail-a.jpg 2>/dev/null && { echo "thumbnail-a.jpg from $t"; break; }
+          done
+          [ -f "$d/thumbnail-a.jpg" ] || echo "No thumbnail-a.jpg found"
           ls -la "$d"
 
       - name: Check YouTube secrets

@@ -330,7 +330,14 @@
       "evidence": "Approved the final video in Claude chat, 4 Nov 2026 15:38 AEDT (\"Great this is perfect. Final version approved.\")",
       "source_commit": "9b7e094",
       "duration_s": 914.97,
-      "release_tag": "quiz-09-preview-4"
+      "release_tag": "quiz-09-preview-6",
+      "history": [
+        {
+          "release_tag": "quiz-09-preview-4",
+          "note": "1080p build approved by Giulia; replaced by the 4K re-render"
+        }
+      ],
+      "note": "4K re-render of the approved Quiz #9 (same questions, voice and slides), requested by Giulia on 6 Nov 2026 because the 1080p upload looked blurry."
     }
   }
 }
