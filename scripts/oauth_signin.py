@@ -36,7 +36,7 @@ SERVICES = {
         "id_env": "YT_CLIENT_ID", "secret_env": "YT_CLIENT_SECRET", "save_as": "YT_REFRESH_TOKEN",
         "authorize": "https://accounts.google.com/o/oauth2/v2/auth",
         "token": "https://oauth2.googleapis.com/token",
-        "scope": "https://www.googleapis.com/auth/youtube.force-ssl",
+        "scope": "https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/yt-analytics.readonly",
         "extra": {"code_challenge_method": "S256", "access_type": "offline", "prompt": "consent"},
         "basic_auth": False,
     },

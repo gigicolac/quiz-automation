@@ -15,7 +15,7 @@ Add these under Settings > Secrets and variables > Actions:
 ### YouTube: Google Cloud setup
 
 1. Go to [console.cloud.google.com](https://console.cloud.google.com) and pick a project. Reuse the rain channel's project if it already uploads with scheduled publishing, otherwise create "Quiz automation".
-2. Go to APIs & Services > Library and enable **YouTube Data API v3**.
+2. Go to APIs & Services > Library and enable **YouTube Data API v3** and **YouTube Analytics API** (read-only analytics for the weekly insights; added 6 Nov 2026).
 3. Set up the OAuth consent screen (Google Auth Platform):
    1. Choose External, enter the app name and your email.
    2. Under Audience, set the publishing status to **In production**. In "Testing", sign-ins expire every 7 days.
