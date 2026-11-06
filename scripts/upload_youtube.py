@@ -61,7 +61,7 @@ def taken_slots(quizzes_dir, skip):
 
 
 def next_slot(now, cfg, taken=()):
-    """First Thursday/Sunday slot at least lead_days after now that isn't already used."""
+    """First publishing slot (config slots) at least lead_days after now that isn't already used."""
     tz = ZoneInfo(cfg["timezone"])
     earliest = now.astimezone(tz) + dt.timedelta(days=cfg["lead_days"])
     day = earliest.date()
@@ -110,12 +110,15 @@ def title_variants(quiz, cfg):
 def studio_tasks(quiz, cfg, playlist):
     """Things the YouTube API can't do; done in Studio (browser task) after upload."""
     es = cfg.get("end_screen", {})
+    titles = title_variants(quiz, cfg)
     return [
         f"End screen: {es.get('note', '')} Left = {es.get('left', '')}; right = {es.get('right', '').format(playlist=playlist)}.",
-        "Test & Compare (A/B): titles " + " | ".join(title_variants(quiz, cfg)) + "; thumbnails once there are 2-3 variants.",
-        "Pin the score comment once it is posted (the Post score comment run links it).",
+        "Test & Compare (A/B), Title and thumbnail: " + " | ".join(
+            f"{t} + thumbnail {chr(65 + i)}" for i, t in enumerate(titles)) + ".",
+        "Category Education: Type = Activity; Problems = the 'problems' list in upload.json.",
         "Caption certification: This content has never aired on television in the U.S.",
         "Shorts remixing: allowed.",
+        "Pin the score comment once it is posted (every release).",
     ]
 
 
@@ -139,19 +142,48 @@ def find_or_create_playlist(token, title, series):
     return resp["id"], title, True
 
 
+def tag_length(tags):
+    # YouTube counts quotes around tags that contain spaces, plus the separating commas
+    return sum(len(t) + (2 if " " in t else 0) for t in tags) + max(len(tags) - 1, 0)
+
+
+def build_tags(quiz, cfg, limit=500):
+    tags = []
+    for t in quiz.get("tags", []) + cfg.get("series_tags", {}).get(quiz.get("series", ""), []) + cfg["tags"]:
+        if t.lower() not in {x.lower() for x in tags} and tag_length(tags + [t]) <= limit:
+            tags.append(t)
+    return tags
+
+
+def problems(quiz, report):
+    """Studio > Category Education > Problems: one line per question, timecode then question."""
+    qs = {q["n"]: q["question"] for q in quiz["questions"] if isinstance(q, dict)} \
+        if isinstance(quiz["questions"], list) else {}
+    out = []
+    for seg in report["segments"]:
+        n = seg["name"]
+        if n.startswith("q") and n[1:].isdigit() and int(n[1:]) in qs:
+            out.append(f"{stamp(seg['start'])} {qs[int(n[1:])]}")
+    return "\n".join(out)
+
+
 def build_metadata(quiz, report, cfg):
     count = len(quiz["questions"]) if isinstance(quiz["questions"], list) else quiz["questions"]
-    desc = cfg["description"].format(count=count, schedule_line=cfg["schedule_line"], chapters=chapters(report))
-    if "Thursday 3PM & Sunday 1PM ET" not in desc or "AEST" in desc:
-        raise SystemExit("Blocked: the description's schedule line must read 'Thursday 3PM & Sunday 1PM ET' "
-                         "and must not mention AEST.")
+    hooks = cfg.get("description_hooks", {})
+    hook = quiz.get("description_hook") or hooks.get(quiz.get("series", ""), hooks.get("default", ""))
+    desc = cfg["description"].format(hook=hook.format(count=count), count=count, schedule_line=cfg["schedule_line"],
+                                     chapters=chapters(report))
+    need = cfg.get("schedule_required", "every Thursday, Saturday & Sunday")
+    if need not in desc or "AEST" in desc:
+        raise SystemExit(f"Blocked: the description's schedule line must say '{need}' and must not mention AEST.")
     if len(desc) > 5000 or len(quiz["title"]) > 100:
         raise SystemExit("Title or description is over YouTube's limit (100 / 5000 characters).")
     return {
         "title": quiz["title"],
         "description": desc,
-        "tags": cfg["tags"],
+        "tags": build_tags(quiz, cfg),
         "comment": cfg.get("comment", "").format(count=count),
+        "problems": problems(quiz, report),
     }
 
 
@@ -262,6 +294,9 @@ def main():
     ap.add_argument("--mode", choices=["preview", "upload"], default="preview")
     ap.add_argument("--out", required=True)
     ap.add_argument("--config", default=str(ROOT / "config" / "youtube.json"))
+    ap.add_argument("--replace", action="store_true",
+                    help="re-upload a quiz that is already scheduled: the old video is taken off the schedule "
+                         "(left private, not deleted) and a new upload is scheduled instead")
     args = ap.parse_args()
 
     cfg = json.loads(Path(args.config).read_text())
@@ -273,9 +308,13 @@ def main():
         raise SystemExit(f"{quiz['id']}: final video is not approved in quiz.json; not uploading.")
     record_path = qdir / "upload.json"
     record = json.loads(record_path.read_text()) if record_path.exists() else {}
-    if record.get("status") == "scheduled":  # done; anything else with a video_id resumes
-        raise SystemExit(f"{quiz['id']} is already uploaded and scheduled as {record['video_id']}; nothing to do.")
-    if record and not record.get("video_id"):
+    replacing = None
+    if record.get("status") == "scheduled" and args.replace:
+        replacing, record = record, {}
+    elif record.get("status") == "scheduled":  # done; anything else with a video_id resumes
+        raise SystemExit(f"{quiz['id']} is already uploaded and scheduled as {record['video_id']}; nothing to do. "
+                         "Use replace to re-upload it.")
+    if record and not record.get("video_id") and set(record) != {"replaced"}:
         raise SystemExit(f"{quiz['id']}: a previous upload stopped before YouTube returned a video ID. "
                          "Check YouTube Studio for a stray private upload, then reconcile upload.json by hand.")
     resume = bool(record.get("video_id"))
@@ -304,6 +343,19 @@ def main():
     status_fields = {"selfDeclaredMadeForKids": cfg["made_for_kids"], "license": "youtube", "embeddable": True,
                      "publicStatsViewable": True, "containsSyntheticMedia": cfg["contains_synthetic_media"]}
 
+    if replacing:
+        # take the old upload off the schedule first, so only one copy can go live; it stays private (not deleted)
+        old = replacing["video_id"]
+        body = {"id": old, "status": {"privacyStatus": "private", **status_fields}}
+        _, _, resp = http("PUT", f"{API}/videos?part=status", token, json.dumps(body).encode(),
+                          {"Content-Type": "application/json"})
+        if resp.get("status", {}).get("publishAt"):
+            raise SystemExit(f"YouTube kept the schedule on the old video {old}; not uploading a second copy.")
+        replacing.update(status="replaced_unscheduled", unscheduled_at=iso(dt.datetime.now(dt.timezone.utc)))
+        replaced_list = replacing.pop("replaced", []) + [replacing]
+        record_path.write_text(json.dumps({"replaced": replaced_list}, indent=2, ensure_ascii=False))
+        record = {"replaced": replaced_list}
+
     if not resume:
         # 1. transfer PRIVATE with no publishAt (rain-sounds release buffer pattern)
         today = dt.date.today().isoformat()
@@ -317,7 +369,8 @@ def main():
         }
         record = {"quiz": quiz["id"], "channel": channel, "status": "uploading", "started_at": now.isoformat(),
                   **{k: plan[k] for k in ("title", "intended_publish_at", "publish_at_local", "release_tag",
-                                          "playlist")}, "steps": {}}
+                                          "playlist", "problems")}, "steps": {},
+                  **({"replaced": record["replaced"]} if record.get("replaced") else {})}
         save()
         video = upload_video(token, Path(args.video), body, cfg["notify_subscribers"])
         vid = video["id"]

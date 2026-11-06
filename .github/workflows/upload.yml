@@ -1,7 +1,7 @@
 name: Upload to YouTube
 # Uploads an APPROVED quiz video privately, then schedules it with publishAt (rain-sounds pattern).
 # Daily at 8am Sydney: uploads the next approved quiz that has no upload yet (or resumes an unfinished one)
-# to the next free Thu 3pm / Sun 1pm ET slot. Turn the daily run off with repository variable AUTO_UPLOAD=false.
+# to the next free Thu 3pm / Sat 1pm / Sun 1pm ET slot. Turn the daily run off with repository variable AUTO_UPLOAD=false.
 # By hand: mode=preview (default) shows the title, description and schedule without contacting YouTube;
 # mode=upload sends it. Each quiz is uploaded once; the result is committed to quizzes/<quiz>/upload.json.
 on:
@@ -19,8 +19,12 @@ on:
         options: [preview, upload]
         default: preview
       publish_at:
-        description: "'next' = next free Thu 3pm / Sun 1pm ET slot 3+ days ahead; blank = private, no schedule; or e.g. 2026-11-12T15:00 (US Eastern)"
+        description: "'next' = next free Thu 3pm / Sat 1pm / Sun 1pm ET slot 3+ days ahead; blank = private, no schedule; or e.g. 2026-11-12T15:00 (US Eastern)"
         default: next
+      replace:
+        description: "Re-upload a quiz that is already scheduled (old copy is taken off the schedule and left private)"
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -39,9 +43,10 @@ jobs:
           IN_QUIZ: ${{ inputs.quiz }}
           IN_MODE: ${{ inputs.mode }}
           IN_PUBLISH_AT: ${{ inputs.publish_at }}
+          IN_REPLACE: ${{ inputs.replace }}
         run: |
           if [ "$EVENT" != schedule ]; then
-            { echo "QUIZ=$IN_QUIZ"; echo "MODE=$IN_MODE"; echo "PUBLISH_AT=$IN_PUBLISH_AT"; } >> "$GITHUB_ENV"
+            { echo "QUIZ=$IN_QUIZ"; echo "MODE=$IN_MODE"; echo "PUBLISH_AT=$IN_PUBLISH_AT"; echo "REPLACE=$IN_REPLACE"; } >> "$GITHUB_ENV"
             exit 0
           fi
           # Daily run: first approved quiz with no upload, or with an unfinished upload that has a video ID.
@@ -79,7 +84,11 @@ jobs:
           if [ "$MODE" = upload ]; then pat=(-p "$QUIZ.mp4" -p "$QUIZ.srt" -p build_report.json); else pat=(-p build_report.json); fi
           gh release download "$TAG" -D "$d" "${pat[@]}"
           # thumbnail A (if attached by the Attach thumbnails workflow) becomes the starting thumbnail
-          gh release download "$TAG" -D "$d" -p thumbnail-a.jpg 2>/dev/null || echo "No thumbnail-a.jpg on $TAG"
+          # (falls back to earlier builds of the same quiz, e.g. after a 4K re-render)
+          for t in $(jq -r '[.review.video.release_tag] + [.review.video.history[]?.release_tag] | .[] | select(. != null)' "quizzes/$QUIZ/quiz.json"); do
+            gh release download "$t" -D "$d" -p thumbnail-a.jpg 2>/dev/null && { echo "thumbnail-a.jpg from $t"; break; }
+          done
+          [ -f "$d/thumbnail-a.jpg" ] || echo "No thumbnail-a.jpg found"
           ls -la "$d"
 
       - name: Check YouTube secrets
@@ -104,7 +113,8 @@ jobs:
           thumb=""; [ -f "$d/thumbnail-a.jpg" ] && thumb="$d/thumbnail-a.jpg"
           python3 scripts/upload_youtube.py --quiz "quizzes/$QUIZ" --report "$d/build_report.json" \
             --video "$d/$QUIZ.mp4" --captions "$d/$QUIZ.srt" ${thumb:+--thumbnail "$thumb"} \
-            --publish-at "$PUBLISH_AT" --mode "$MODE" --out "$RUNNER_TEMP/plan.json"
+            --publish-at "$PUBLISH_AT" --mode "$MODE" --out "$RUNNER_TEMP/plan.json" \
+            ${REPLACE:+$( [ "$REPLACE" = true ] && echo --replace )}
           { echo "## $QUIZ: $MODE"; echo '```json'; cat "$RUNNER_TEMP/plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Record result
