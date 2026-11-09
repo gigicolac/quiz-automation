@@ -1,0 +1,5 @@
+{
+  "note": "Quiz #10 slides are made in GitHub: scripts/canva_build.py fills the OMQ Quiz Pair brand templates (large/medium/small question text) through the Canva Connect API and exports them in 4K.",
+  "canva_build": {"quality": "horizontal_4k", "parallel": 4},
+  "tts": "chatterbox"
+}

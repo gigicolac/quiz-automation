@@ -1,0 +1,56 @@
+name: Canva build (test)
+# Fills the quiz-pair brand template in Canva for some questions of a quiz and exports them, without building
+# the whole video: a quick check of the Canva Connect API route (scripts/canva_build.py). The exported pairs are
+# kept as a workflow artifact for 7 days. Nothing is uploaded to YouTube. The full build runs in "Build video".
+on:
+  workflow_dispatch:
+    inputs:
+      quiz:
+        description: "Quiz folder, e.g. quiz-10"
+        required: true
+      only:
+        description: "Question numbers separated by spaces, e.g. '3 21'"
+        default: "3"
+      quality:
+        description: "Export quality"
+        type: choice
+        options: [horizontal_1080p, horizontal_4k]
+        default: horizontal_1080p
+permissions:
+  contents: read
+concurrency:
+  group: build-video  # shares Canva's single-use refresh token with the Build video workflow
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Fill and export
+        env:
+          QUIZ: ${{ inputs.quiz }}
+          ONLY: ${{ inputs.only }}
+          QUALITY: ${{ inputs.quality }}
+          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          CANVA_TOKEN_CACHE: ${{ runner.temp }}/canva-access-token
+        run: |
+          case "$QUIZ" in */*|*..*|"") echo "Invalid quiz"; exit 1;; esac
+          case "$ONLY" in *[!0-9\ ]*) echo "Question numbers only"; exit 1;; esac
+          b="quizzes/$QUIZ/build.json"
+          jq --arg q "$QUALITY" '.canva_build.quality = $q' "$b" > "$RUNNER_TEMP/build.json" && cp "$RUNNER_TEMP/build.json" "$b"
+          python3 scripts/canva_build.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/out" --only $ONLY
+          { echo "## Canva build test: $QUIZ questions $ONLY ($QUALITY)"; echo '```json'; cat "$RUNNER_TEMP/out/canva_state.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: canva-build-test
+          path: |
+            ${{ runner.temp }}/out/pairs/*.mp4
+            ${{ runner.temp }}/out/canva_state.json
+          retention-days: 7

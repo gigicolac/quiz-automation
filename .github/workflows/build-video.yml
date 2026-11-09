@@ -51,21 +51,30 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
       - name: Export from Canva
-        # build.json "canva_export" block: export straight from Canva via the Connect API (e.g. 4K)
+        # build.json "canva_build" (fill the quiz-pair template per question) and/or "canva_export" (export
+        # existing designs) blocks: straight from Canva via the Connect API (e.g. 4K)
         env:
           CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
           CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
           CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
           GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
           GH_TOKEN: ${{ github.token }}
+          CANVA_TOKEN_CACHE: ${{ runner.temp }}/canva-access-token
         run: |
           exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           b="quizzes/$QUIZ/build.json"; d="$RUNNER_TEMP/canva"; mkdir -p "$d"
-          if [ "$(jq 'has("canva_export")' "$b")" != true ]; then echo "No canva_export block; using links"; exit 0; fi
-          python3 scripts/canva_export.py --build "$b" --out "$d"
-          tag="$QUIZ-canva-$(jq -r '.canva_export.quality' "$b")"
+          if [ "$(jq 'has("canva_export") or has("canva_build")' "$b")" != true ]; then echo "No canva_export/canva_build block; using links"; exit 0; fi
+          # canva_build: fill the quiz-pair brand template for every question and export (slides.mp4)
+          if [ "$(jq 'has("canva_build")' "$b")" = true ]; then
+            python3 scripts/canva_build.py --quiz "quizzes/$QUIZ" --out "$d"
+          fi
+          # canva_export: intro / rules / outro (and slides, for hand-made decks)
+          if [ "$(jq 'has("canva_export")' "$b")" = true ]; then
+            python3 scripts/canva_export.py --build "$b" --out "$d"
+          fi
+          q=$(jq -r '.canva_build.quality // .canva_export.quality' "$b"); tag="$QUIZ-canva-$q"
           gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --draft \
-            --title "$QUIZ Canva exports ($(jq -r '.canva_export.quality' "$b"))" --notes "Slide exports used by the Build video workflow. Draft, not public."
+            --title "$QUIZ Canva exports ($q)" --notes "Slide exports used by the Build video workflow. Draft, not public."
           gh release upload "$tag" "$d"/slides.mp4 "$d"/intro.mp4 "$d"/rules.mp4 "$d"/outro.mp4 --clobber
           echo "EXPORTED=1" >> "$GITHUB_ENV"
           ls -la "$d"

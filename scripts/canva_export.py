@@ -29,6 +29,13 @@ API = "https://api.canva.com/rest/v1"
 
 
 def access_token():
+    # Canva refresh tokens work once, so within one job the access token is shared through a file
+    # (CANVA_TOKEN_CACHE) rather than refreshing again with a token that has already been used.
+    cache = os.environ.get("CANVA_TOKEN_CACHE")
+    if cache and os.path.exists(cache) and time.time() - os.path.getmtime(cache) < 3 * 3600:
+        tok = open(cache).read().strip()
+        print(f"::add-mask::{tok}")
+        return tok
     cid = os.environ["CANVA_CLIENT_ID"].strip()
     secret = os.environ["CANVA_CLIENT_SECRET"].strip()
     refresh = os.environ["CANVA_REFRESH_TOKEN"].strip()
@@ -50,6 +57,10 @@ def access_token():
         subprocess.run(["gh", "secret", "set", "CANVA_REFRESH_TOKEN", "-R", os.environ["GITHUB_REPOSITORY"]],
                        input=new.encode(), env=env, check=True)
     print(f"::add-mask::{tok['access_token']}")
+    if cache:
+        with open(cache, "w") as f:
+            f.write(tok["access_token"])
+        os.chmod(cache, 0o600)
     return tok["access_token"]
 
 
@@ -110,12 +121,13 @@ def main():
     quality, chunk = spec.get("quality", "horizontal_1080p"), int(spec.get("chunk", 10))
     token = access_token()
 
-    s = spec["slides"]
-    parts = []
-    for i, first in enumerate(range(1, s["pages"] + 1, chunk)):
-        pages = list(range(first, min(first + chunk, s["pages"] + 1)))
-        parts += export(token, s["design"], pages, quality, out / "parts" / f"{i:03d}.mp4")
-    join(parts, out / "slides.mp4")
+    s = spec.get("slides")  # absent when canva_build.py makes the slides from the template
+    if s:
+        parts = []
+        for i, first in enumerate(range(1, s["pages"] + 1, chunk)):
+            pages = list(range(first, min(first + chunk, s["pages"] + 1)))
+            parts += export(token, s["design"], pages, quality, out / "parts" / f"{i:03d}.mp4")
+        join(parts, out / "slides.mp4")
     for k in ("intro", "rules", "outro"):
         if k in spec:
             p = spec[k]
