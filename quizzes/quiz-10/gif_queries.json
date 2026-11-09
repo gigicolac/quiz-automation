@@ -1,252 +1,306 @@
-[
+{
+ "allow_branded": true,
+ "note": "Disney quiz: GIFs must come from the actual Disney/Pixar films (Giulia, 9 Nov). image_title is the Wikipedia article used for a still image when no GIF fits. Question GIFs must not give the answer away.",
+ "queries": [
   {
-    "n": 1,
-    "question_query": "cartoon rabbit",
-    "answer_query": "rabbit"
+   "n": 1,
+   "question_query": "Walt Disney",
+   "answer_query": "Oswald the Lucky Rabbit",
+   "image_title": "Oswald the Lucky Rabbit"
   },
   {
-    "n": 2,
-    "question_query": "steamboat",
-    "answer_query": "steamboat whistle"
+   "n": 2,
+   "question_query": "Mickey Mouse",
+   "answer_query": "Steamboat Willie Mickey whistling",
+   "image_title": "Steamboat Willie"
   },
   {
-    "n": 3,
-    "question_query": "red apple",
-    "answer_query": "apple"
+   "n": 3,
+   "question_query": "Snow White and the Seven Dwarfs",
+   "answer_query": "Snow White apple",
+   "image_title": "Snow White and the Seven Dwarfs (1937 film)"
   },
   {
-    "n": 4,
-    "question_query": "eel",
-    "answer_query": "moray eel"
+   "n": 4,
+   "question_query": "Ursula Little Mermaid",
+   "answer_query": "Flotsam and Jetsam",
+   "image_title": "Flotsam and Jetsam"
   },
   {
-    "n": 5,
-    "question_query": "fork",
-    "answer_query": "brushing hair"
+   "n": 5,
+   "question_query": "Ariel Little Mermaid",
+   "answer_query": "dinglehopper",
+   "image_title": "The Little Mermaid (1989 film)"
   },
   {
-    "n": 6,
-    "question_query": "black horse",
-    "answer_query": "horse galloping"
+   "n": 6,
+   "question_query": "Mulan",
+   "answer_query": "Mulan horse Khan",
+   "image_title": "Mulan (1998 film)"
   },
   {
-    "n": 7,
-    "question_query": "hyena",
-    "answer_query": "hyenas laughing"
+   "n": 7,
+   "question_query": "Lion King hyenas",
+   "answer_query": "Shenzi Banzai Ed",
+   "image_title": "The Lion King"
   },
   {
-    "n": 8,
-    "question_query": "tiger",
-    "answer_query": "tiger yawn"
+   "n": 8,
+   "question_query": "Princess Jasmine",
+   "answer_query": "Rajah Jasmine tiger",
+   "image_title": "Princess Jasmine"
   },
   {
-    "n": 9,
-    "question_query": "forest cottage",
-    "answer_query": "rose"
+   "n": 9,
+   "question_query": "Sleeping Beauty Aurora",
+   "answer_query": "Briar Rose Sleeping Beauty",
+   "image_title": "Sleeping Beauty (1959 film)"
   },
   {
-    "n": 10,
-    "question_query": "glass slipper",
-    "answer_query": "high heel shoe"
+   "n": 10,
+   "question_query": "Cinderella stepsisters",
+   "answer_query": "Anastasia Drizella",
+   "image_title": "Cinderella (1950 film)"
   },
   {
-    "n": 11,
-    "question_query": "dalmatian",
-    "answer_query": "dalmatian puppies"
+   "n": 11,
+   "question_query": "101 Dalmatians Pongo",
+   "answer_query": "Pongo Perdita",
+   "image_title": "One Hundred and One Dalmatians"
   },
   {
-    "n": 12,
-    "question_query": "monkey dancing",
-    "answer_query": "orangutan"
+   "n": 12,
+   "question_query": "Jungle Book Mowgli",
+   "answer_query": "King Louie",
+   "image_title": "King Louie"
   },
   {
-    "n": 13,
-    "question_query": "alien",
-    "answer_query": "blue alien"
+   "n": 13,
+   "question_query": "Lilo and Stitch",
+   "answer_query": "Stitch experiment 626",
+   "image_title": "Stitch (Lilo & Stitch)"
   },
   {
-    "n": 14,
-    "question_query": "chameleon",
-    "answer_query": "chameleon changing colour"
+   "n": 14,
+   "question_query": "Tangled Rapunzel",
+   "answer_query": "Pascal Tangled",
+   "image_title": "Tangled"
   },
   {
-    "n": 15,
-    "question_query": "snowflake",
-    "answer_query": "fjord norway"
+   "n": 15,
+   "question_query": "Frozen Elsa",
+   "answer_query": "Arendelle Frozen",
+   "image_title": "Frozen (2013 film)"
   },
   {
-    "n": 16,
-    "question_query": "piglet",
-    "answer_query": "pig"
+   "n": 16,
+   "question_query": "Moana",
+   "answer_query": "Moana Pua pig",
+   "image_title": "Moana (2016 film)"
   },
   {
-    "n": 17,
-    "question_query": "dragon",
-    "answer_query": "water dragon"
+   "n": 17,
+   "question_query": "Raya and the Last Dragon",
+   "answer_query": "Sisu dragon",
+   "image_title": "Raya and the Last Dragon"
   },
   {
-    "n": 18,
-    "question_query": "butterflies",
-    "answer_query": "yellow butterflies"
+   "n": 18,
+   "question_query": "Encanto",
+   "answer_query": "Encanto Madrigal family",
+   "image_title": "Encanto"
   },
   {
-    "n": 19,
-    "question_query": "computer animation",
-    "answer_query": "toy cowboy"
+   "n": 19,
+   "question_query": "Pixar lamp",
+   "answer_query": "Toy Story Woody Buzz",
+   "image_title": "Toy Story"
   },
   {
-    "n": 20,
-    "question_query": "broken toy",
-    "answer_query": "robot toy"
+   "n": 20,
+   "question_query": "Toy Story toys",
+   "answer_query": "Sid Toy Story",
+   "image_title": "Toy Story"
   },
   {
-    "n": 21,
-    "question_query": "clownfish",
-    "answer_query": "sydney harbour"
+   "n": 21,
+   "question_query": "Finding Nemo Dory",
+   "answer_query": "P Sherman 42 Wallaby Way",
+   "image_title": "Finding Nemo"
   },
   {
-    "n": 22,
-    "question_query": "golden retriever",
-    "answer_query": "squirrel"
+   "n": 22,
+   "question_query": "Up Pixar",
+   "answer_query": "Dug Up squirrel",
+   "image_title": "Up (2009 film)"
   },
   {
-    "n": 23,
-    "question_query": "fluffy monster",
-    "answer_query": "blue fur"
+   "n": 23,
+   "question_query": "Monsters Inc Sulley",
+   "answer_query": "Sulley Monsters Inc",
+   "image_title": "Monsters, Inc."
   },
   {
-    "n": 24,
-    "question_query": "superhero cape",
-    "answer_query": "fashion designer"
+   "n": 24,
+   "question_query": "The Incredibles",
+   "answer_query": "Edna Mode no capes",
+   "image_title": "Edna Mode"
   },
   {
-    "n": 25,
-    "question_query": "rat cooking",
-    "answer_query": "chef"
+   "n": 25,
+   "question_query": "Ratatouille Remy",
+   "answer_query": "Anyone can cook Gusteau",
+   "image_title": "Ratatouille (film)"
   },
   {
-    "n": 26,
-    "question_query": "robot",
-    "answer_query": "plant seedling"
+   "n": 26,
+   "question_query": "WALL-E",
+   "answer_query": "WALL-E EVE",
+   "image_title": "WALL-E"
   },
   {
-    "n": 27,
-    "question_query": "race car",
-    "answer_query": "racing finish line"
+   "n": 27,
+   "question_query": "Cars Mater",
+   "answer_query": "Lightning McQueen kachow",
+   "image_title": "Lightning McQueen"
   },
   {
-    "n": 28,
-    "question_query": "hairless dog",
-    "answer_query": "marigold flowers"
+   "n": 28,
+   "question_query": "Coco Pixar Miguel",
+   "answer_query": "Dante Coco",
+   "image_title": "Coco (2017 film)"
   },
   {
-    "n": 29,
-    "question_query": "sloth",
-    "answer_query": "sloth slow"
+   "n": 29,
+   "question_query": "Zootopia Judy Hopps",
+   "answer_query": "Flash sloth Zootopia",
+   "image_title": "Zootopia"
   },
   {
-    "n": 30,
-    "question_query": "city skyline",
-    "answer_query": "golden gate bridge"
+   "n": 30,
+   "question_query": "Big Hero 6 Baymax",
+   "answer_query": "San Fransokyo",
+   "image_title": "Big Hero 6 (film)"
   },
   {
-    "n": 31,
-    "question_query": "candy",
-    "answer_query": "lollipop"
+   "n": 31,
+   "question_query": "Wreck-It Ralph Vanellope",
+   "answer_query": "Sugar Rush Vanellope",
+   "image_title": "Wreck-It Ralph"
   },
   {
-    "n": 32,
-    "question_query": "alligator",
-    "answer_query": "trumpet jazz"
+   "n": 32,
+   "question_query": "Princess and the Frog",
+   "answer_query": "Louis alligator trumpet",
+   "image_title": "The Princess and the Frog"
   },
   {
-    "n": 33,
-    "question_query": "scottish highlands",
-    "answer_query": "bear"
+   "n": 33,
+   "question_query": "Brave Merida",
+   "answer_query": "Brave Merida mum bear",
+   "image_title": "Brave (2012 film)"
   },
   {
-    "n": 34,
-    "question_query": "rose",
-    "answer_query": "oscar trophy"
+   "n": 34,
+   "question_query": "Oscar statue",
+   "answer_query": "Beauty and the Beast ballroom",
+   "image_title": "Beauty and the Beast (1991 film)"
   },
   {
-    "n": 35,
-    "question_query": "devil",
-    "answer_query": "fire"
+   "n": 35,
+   "question_query": "Hercules Hades",
+   "answer_query": "Pain and Panic Hercules",
+   "image_title": "Hercules (1997 film)"
   },
   {
-    "n": 36,
-    "question_query": "gargoyle",
-    "answer_query": "notre dame"
+   "n": 36,
+   "question_query": "Hunchback of Notre Dame Quasimodo",
+   "answer_query": "Hunchback gargoyles",
+   "image_title": "The Hunchback of Notre Dame (1996 film)"
   },
   {
-    "n": 37,
-    "question_query": "raccoon",
-    "answer_query": "raccoon eating"
+   "n": 37,
+   "question_query": "Pocahontas",
+   "answer_query": "Meeko raccoon",
+   "image_title": "Pocahontas (1995 film)"
   },
   {
-    "n": 38,
-    "question_query": "nanny",
-    "answer_query": "saint bernard"
+   "n": 38,
+   "question_query": "Peter Pan",
+   "answer_query": "Nana Peter Pan dog",
+   "image_title": "Peter Pan (1953 film)"
   },
   {
-    "n": 39,
-    "question_query": "skunk",
-    "answer_query": "flowers"
+   "n": 39,
+   "question_query": "Bambi",
+   "answer_query": "Bambi Flower skunk",
+   "image_title": "Bambi"
   },
   {
-    "n": 40,
-    "question_query": "baby elephant",
-    "answer_query": "mouse"
+   "n": 40,
+   "question_query": "Dumbo",
+   "answer_query": "Timothy mouse Dumbo",
+   "image_title": "Dumbo"
   },
   {
-    "n": 41,
-    "question_query": "ducklings",
-    "answer_query": "three ducks"
+   "n": 41,
+   "question_query": "Donald Duck",
+   "answer_query": "Huey Dewey Louie",
+   "image_title": "Huey, Dewey, and Louie"
   },
   {
-    "n": 42,
-    "question_query": "father and son",
-    "answer_query": "road trip"
+   "n": 42,
+   "question_query": "Goofy",
+   "answer_query": "Goofy Max A Goofy Movie",
+   "image_title": "A Goofy Movie"
   },
   {
-    "n": 43,
-    "question_query": "tea party",
-    "answer_query": "birthday cake"
+   "n": 43,
+   "question_query": "Mad Hatter Alice in Wonderland",
+   "answer_query": "unbirthday Mad Hatter",
+   "image_title": "Alice in Wonderland (1951 film)"
   },
   {
-    "n": 44,
-    "question_query": "parrot",
-    "answer_query": "red parrot"
+   "n": 44,
+   "question_query": "Jafar Aladdin",
+   "answer_query": "Iago parrot",
+   "image_title": "Iago (Aladdin)"
   },
   {
-    "n": 45,
-    "question_query": "candles",
-    "answer_query": "candelabra"
+   "n": 45,
+   "question_query": "Beauty and the Beast Belle",
+   "answer_query": "Lumiere Beauty and the Beast",
+   "image_title": "Lumière (Beauty and the Beast)"
   },
   {
-    "n": 46,
-    "question_query": "dark castle",
-    "answer_query": "black raven"
+   "n": 46,
+   "question_query": "Sleeping Beauty fairies",
+   "answer_query": "Maleficent Sleeping Beauty",
+   "image_title": "Maleficent"
   },
   {
-    "n": 47,
-    "question_query": "jungle",
-    "answer_query": "bear dancing"
+   "n": 47,
+   "question_query": "Disney sing along",
+   "answer_query": "Bare Necessities Baloo",
+   "image_title": "The Jungle Book (1967 film)"
   },
   {
-    "n": 48,
-    "question_query": "chinese dragon",
-    "answer_query": "lantern"
+   "n": 48,
+   "question_query": "Mulan",
+   "answer_query": "Mushu",
+   "image_title": "Mushu"
   },
   {
-    "n": 49,
-    "question_query": "crying",
-    "answer_query": "blue"
+   "n": 49,
+   "question_query": "Inside Out emotions",
+   "answer_query": "Sadness Inside Out",
+   "image_title": "Inside Out (2015 film)"
   },
   {
-    "n": 50,
-    "question_query": "pizza",
-    "answer_query": "rocket"
+   "n": 50,
+   "question_query": "Toy Story Woody",
+   "answer_query": "Pizza Planet Toy Story",
+   "image_title": "Toy Story"
   }
-]
+ ]
+}
