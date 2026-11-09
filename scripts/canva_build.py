@@ -6,8 +6,8 @@ For each question in quizzes/<quiz>/quiz.json:
   2. autofill the "OMQ Quiz Pair" brand template (fields: question, question_gif, question_repeat,
      answer, answer_gif) into a new 2-page design
   3. export that design as MP4
-Then joins the pairs in order into <out>/slides.mp4, which the Build video workflow uses instead of
-downloading a hand-made export. Intro/rules/outro come from build.json "canva_export" as before.
+Then joins the pairs in order into <out>/slides.mp4, and fills the intro template ("<series> Quiz", "Quiz # <n>")
+for intro.mp4 / rules.mp4 / outro.mp4. The Build video workflow uses these instead of a hand-made export.
 
 Three versions of the template differ only in question font size, so long questions never run off the card
 (Giulia, 9 Nov); each question uses the largest size its length allows. The green "Answer:" label is fixed in
@@ -33,6 +33,8 @@ from canva_export import access_token, call, export, join  # noqa: E402
 
 # (longest question that fits, brand template): large 116px, medium 88px, small 68px text
 TEMPLATES = [(60, "EAHaZJo0d7w"), (95, "EAHaZMCHgTI"), (170, "EAHaZCRO1wg")]
+# intro (page 1: "<series> Quiz" / "Quiz # <n>"), rules (page 2) and outro (page 3)
+INTRO_TEMPLATE = "EAHaZFWuBik"
 MAX_ANSWER = 30
 
 
@@ -160,6 +162,22 @@ def main():
         parts = list(pool.map(render, questions))
     join(parts, out / "slides.mp4")
     print(f"slides.mp4 from {len(parts)} pairs")
+
+    if args.only:  # quick test: question slides only
+        return
+    # intro / rules / outro from the intro template, with this quiz's series and number
+    if "intro_design" not in state:
+        data = {"series_title": {"type": "text", "text": f"{label} Quiz"},
+                "quiz_number": {"type": "text", "text": f"Quiz # {quiz['number']}"}}
+        job = call("POST", "/autofills", token, {"brand_template_id": spec.get("intro_template", INTRO_TEMPLATE),
+                                                  "title": f"{label} Quiz #{quiz['number']} (intro and outro)",
+                                                  "data": data})["job"]
+        state["intro_design"] = wait(token, "/autofills", job, "Autofill of the intro")["result"]["design"]["id"]
+        state_path.write_text(json.dumps(state, indent=1))
+    for page, name in ((1, "intro"), (2, "rules"), (3, "outro")):
+        join(export(token, state["intro_design"], [page], quality, out / "pairs" / f"{name}.part.mp4"),
+             out / f"{name}.mp4")
+    print(f"intro/rules/outro from {state['intro_design']}")
 
 
 if __name__ == "__main__":
