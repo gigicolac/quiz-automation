@@ -22,6 +22,7 @@ Env: as scripts/canva_export.py (CANVA_CLIENT_ID, CANVA_CLIENT_SECRET, CANVA_REF
 """
 import argparse
 import json
+import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -85,6 +86,19 @@ def upload(token, name, url, timeout=300):
     return asset["id"], asset.get("type", "image")
 
 
+# (name, max question characters, max answer characters) — measured on the template's text boxes:
+# large 116px question / 60px answer, medium 92 / 48, small 74 / 40.
+SIZES = [("large", 58, 26), ("medium", 80, 34), ("small", 140, 44)]
+
+
+def size_for(q):
+    for name, qmax, amax in SIZES:
+        if len(q["question"]) <= qmax and len(q["answer"]) <= amax:
+            return name
+    sys.exit(f"Q{q['n']} is too long for the smallest template (question {len(q['question'])} chars, "
+             f"answer {len(q['answer'])} chars). Shorten it in quiz.json.")
+
+
 def media_url(m):
     return m.get("clean_mp4") or m.get("mp4") if m.get("type", "gif") == "gif" else m["url"]
 
@@ -123,6 +137,9 @@ def main():
     state_path = out / "canva_state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
     token = access_token()
+    if os.environ.get("GITHUB_ENV"):  # later Canva steps in this job reuse it (the refresh token has rotated)
+        with open(os.environ["GITHUB_ENV"], "a") as f:
+            f.write(f"CANVA_ACCESS_TOKEN={token}\n")
     label = quiz.get("series", "Quiz")
 
     def prepare(q):
