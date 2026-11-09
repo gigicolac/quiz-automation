@@ -1,0 +1,317 @@
+{
+  "id": "quiz-10",
+  "number": 10,
+  "series": "Disney",
+  "difficulty": "hard",
+  "title": "How Well Do You REALLY Know Disney? 50 Hard Questions | Disney Quiz #10",
+  "description_hook": "🏰 Put your Disney knowledge to the test with 50 hard questions that'll sort the superfans from the casual viewers.",
+  "status": "questions_written",
+  "questions": [
+    {
+      "n": 1,
+      "question": "Before Mickey Mouse, what was Walt Disney's first big cartoon star?",
+      "answer": "Oswald the Lucky Rabbit! 🐰",
+      "reveal": "Walt lost the rights to Oswald in 1928, so he created a mouse instead."
+    },
+    {
+      "n": 2,
+      "question": "In which 1928 cartoon did Mickey Mouse make his debut with synchronised sound?",
+      "answer": "Steamboat Willie! 🚢",
+      "reveal": "Mickey whistles at the wheel of a riverboat, and an icon was born."
+    },
+    {
+      "n": 3,
+      "question": "In which year was Snow White and the Seven Dwarfs released?",
+      "answer": "1937! 🍎",
+      "reveal": "It was the first full-length cel-animated feature film."
+    },
+    {
+      "n": 4,
+      "question": "What are the names of Ursula's two eels in The Little Mermaid?",
+      "answer": "Flotsam and Jetsam! 🐍",
+      "reveal": "Named after the bits of a shipwreck floating on the sea."
+    },
+    {
+      "n": 5,
+      "question": "What does Ariel call a fork in The Little Mermaid?",
+      "answer": "A dinglehopper! 🍴",
+      "reveal": "Scuttle insists humans use it to straighten their hair."
+    },
+    {
+      "n": 6,
+      "question": "What is the name of Mulan's horse?",
+      "answer": "Khan! 🐎",
+      "reveal": "Khan is the Mongolian word for ruler."
+    },
+    {
+      "n": 7,
+      "question": "What are the names of the three hyenas in The Lion King?",
+      "answer": "Shenzi, Banzai and Ed! 🐾",
+      "reveal": "Ed only laughs. He never says a single word."
+    },
+    {
+      "n": 8,
+      "question": "In Aladdin, what is the name of Princess Jasmine's tiger?",
+      "answer": "Rajah! 🐯",
+      "reveal": "Rajah means king in Sanskrit and Hindi."
+    },
+    {
+      "n": 9,
+      "question": "What name does Aurora go by while hiding in the forest in Sleeping Beauty?",
+      "answer": "Briar Rose! 🌹",
+      "reveal": "The three good fairies raised her in a woodcutter's cottage."
+    },
+    {
+      "n": 10,
+      "question": "What are the names of Cinderella's two stepsisters?",
+      "answer": "Anastasia and Drizella! 👠",
+      "reveal": "Drizella wears green and Anastasia wears pink."
+    },
+    {
+      "n": 11,
+      "question": "In 101 Dalmatians, what is the name of Pongo's partner?",
+      "answer": "Perdita! 🐶",
+      "reveal": "Together they have 15 puppies of their own."
+    },
+    {
+      "n": 12,
+      "question": "What kind of animal is King Louie in The Jungle Book (1967)?",
+      "answer": "An orangutan! 🦧",
+      "reveal": "He doesn't appear in Rudyard Kipling's original book at all."
+    },
+    {
+      "n": 13,
+      "question": "What is Stitch's experiment number in Lilo & Stitch?",
+      "answer": "626! 👽",
+      "reveal": "Stitch was designed by Dr Jumba to destroy everything he touches."
+    },
+    {
+      "n": 14,
+      "question": "In Tangled, what is the name of Rapunzel's chameleon?",
+      "answer": "Pascal! 🦎",
+      "reveal": "Pascal changes colour to show how he's feeling."
+    },
+    {
+      "n": 15,
+      "question": "What is the name of the kingdom in Frozen?",
+      "answer": "Arendelle! ❄️",
+      "reveal": "Its look was inspired by Norway's fjords."
+    },
+    {
+      "n": 16,
+      "question": "What is the name of Moana's pet pig?",
+      "answer": "Pua! 🐷",
+      "reveal": "Heihei the rooster gets the adventure; Pua stays home."
+    },
+    {
+      "n": 17,
+      "question": "In Raya and the Last Dragon, what is the name of the last dragon?",
+      "answer": "Sisu! 🐉",
+      "reveal": "Sisu can borrow abilities from her dragon siblings."
+    },
+    {
+      "n": 18,
+      "question": "In Encanto, what is the family's surname?",
+      "answer": "Madrigal! 🦋",
+      "reveal": "Everyone gets a magic gift except Mirabel."
+    },
+    {
+      "n": 19,
+      "question": "What was the first fully computer-animated feature film?",
+      "answer": "Toy Story! 🤠",
+      "reveal": "Released in 1995, it took Pixar about four years to make."
+    },
+    {
+      "n": 20,
+      "question": "What is the name of the boy who tortures toys in Toy Story?",
+      "answer": "Sid! 🔧",
+      "reveal": "Sid Phillips later shows up as a rubbish collector in Toy Story 3."
+    },
+    {
+      "n": 21,
+      "question": "In Finding Nemo, what address does Dory keep reading?",
+      "answer": "P. Sherman, 42 Wallaby Way, Sydney! 🐠",
+      "reveal": "It's the dentist's office where Nemo ends up in a fish tank."
+    },
+    {
+      "n": 22,
+      "question": "In Up, what is the name of the talking dog?",
+      "answer": "Dug! 🐕",
+      "reveal": "Squirrel!"
+    },
+    {
+      "n": 23,
+      "question": "What is Sulley's full name in Monsters, Inc.?",
+      "answer": "James P. Sullivan! 👹",
+      "reveal": "He has more than two million individually animated hairs."
+    },
+    {
+      "n": 24,
+      "question": "In The Incredibles, what is the name of the superhero costume designer?",
+      "answer": "Edna Mode! 👓",
+      "reveal": "Her number one rule: NO CAPES!"
+    },
+    {
+      "n": 25,
+      "question": "In Ratatouille, which famous chef's motto is 'Anyone can cook'?",
+      "answer": "Auguste Gusteau! 👨‍🍳",
+      "reveal": "Remy learns everything from Gusteau's cookbook."
+    },
+    {
+      "n": 26,
+      "question": "In WALL-E, what is the name of the robot WALL-E falls for?",
+      "answer": "EVE! 🤖",
+      "reveal": "EVE stands for Extraterrestrial Vegetation Evaluator."
+    },
+    {
+      "n": 27,
+      "question": "What is Lightning McQueen's racing number in Cars?",
+      "answer": "95! 🏎️",
+      "reveal": "A nod to 1995, the year Toy Story came out."
+    },
+    {
+      "n": 28,
+      "question": "In Coco, what is the name of Miguel's dog?",
+      "answer": "Dante! 💀",
+      "reveal": "He's a Xoloitzcuintli, the national dog of Mexico."
+    },
+    {
+      "n": 29,
+      "question": "In Zootopia, what is the name of the sloth at the DMV?",
+      "answer": "Flash! 🦥",
+      "reveal": "Flash, Flash, Hundred-Yard Dash. Not exactly speedy."
+    },
+    {
+      "n": 30,
+      "question": "In Big Hero 6, what is the name of the city?",
+      "answer": "San Fransokyo! 🌉",
+      "reveal": "A mash-up of San Francisco and Tokyo."
+    },
+    {
+      "n": 31,
+      "question": "In Wreck-It Ralph, which racing game is Vanellope from?",
+      "answer": "Sugar Rush! 🍭",
+      "reveal": "Every kart in it is made of sweets."
+    },
+    {
+      "n": 32,
+      "question": "In The Princess and the Frog, what is the name of the trumpet-playing alligator?",
+      "answer": "Louis! 🎺",
+      "reveal": "He dreams of playing jazz with the big bands."
+    },
+    {
+      "n": 33,
+      "question": "In Brave, what does Merida's mother turn into?",
+      "answer": "A bear! 🐻",
+      "reveal": "All because of a spell from a woodcarver witch."
+    },
+    {
+      "n": 34,
+      "question": "Which was the first animated film nominated for the Best Picture Oscar?",
+      "answer": "Beauty and the Beast! 🥀",
+      "reveal": "It was nominated in 1992, but The Silence of the Lambs won."
+    },
+    {
+      "n": 35,
+      "question": "In Hercules, what are the names of Hades' two sidekicks?",
+      "answer": "Pain and Panic! 😈",
+      "reveal": "Pain is pink and short; Panic is blue and tall."
+    },
+    {
+      "n": 36,
+      "question": "What are the names of the three gargoyles in The Hunchback of Notre Dame?",
+      "answer": "Victor, Hugo and Laverne! 🗿",
+      "reveal": "Victor and Hugo are named after the novel's author, Victor Hugo."
+    },
+    {
+      "n": 37,
+      "question": "In Pocahontas, what is the name of the raccoon?",
+      "answer": "Meeko! 🦝",
+      "reveal": "Meeko is always stealing biscuits."
+    },
+    {
+      "n": 38,
+      "question": "In Peter Pan, what kind of animal is Nana, the Darlings' nanny?",
+      "answer": "A dog! 🐕",
+      "reveal": "She's a Saint Bernard in the 1953 film."
+    },
+    {
+      "n": 39,
+      "question": "In Bambi, what is the name of the skunk?",
+      "answer": "Flower! 🦨",
+      "reveal": "Bambi accidentally names him while learning the word for flower."
+    },
+    {
+      "n": 40,
+      "question": "In Dumbo, what kind of animal is Timothy?",
+      "answer": "A mouse! 🐭",
+      "reveal": "Fitting, since elephants are supposedly scared of mice."
+    },
+    {
+      "n": 41,
+      "question": "What are the names of Donald Duck's three nephews?",
+      "answer": "Huey, Dewey and Louie! 🦆",
+      "reveal": "In the old cartoons, their caps were red, blue and green."
+    },
+    {
+      "n": 42,
+      "question": "What is the name of Goofy's son?",
+      "answer": "Max! 🧢",
+      "reveal": "He starred in A Goofy Movie in 1995."
+    },
+    {
+      "n": 43,
+      "question": "In Alice in Wonderland (1951), what do the Mad Hatter and March Hare celebrate?",
+      "answer": "Their unbirthday! 🎩",
+      "reveal": "With 364 unbirthdays a year, there's plenty of cake."
+    },
+    {
+      "n": 44,
+      "question": "In Aladdin, what is the name of Jafar's parrot?",
+      "answer": "Iago! 🦜",
+      "reveal": "Named after the scheming villain in Shakespeare's Othello."
+    },
+    {
+      "n": 45,
+      "question": "In Beauty and the Beast, what kind of object is Lumière?",
+      "answer": "A candelabra! 🕯️",
+      "reveal": "He's a French maître d' turned into candlesticks."
+    },
+    {
+      "n": 46,
+      "question": "What is the name of the evil fairy in Sleeping Beauty?",
+      "answer": "Maleficent! 🖤",
+      "reveal": "She's furious she wasn't invited to the christening."
+    },
+    {
+      "n": 47,
+      "question": "Which Disney film features the song 'The Bare Necessities'?",
+      "answer": "The Jungle Book! 🐻",
+      "reveal": "Baloo sings it while floating down the river with Mowgli."
+    },
+    {
+      "n": 48,
+      "question": "What is the name of Mulan's dragon guardian?",
+      "answer": "Mushu! 🔥",
+      "reveal": "He was demoted to gong-ringer before his big mission."
+    },
+    {
+      "n": 49,
+      "question": "In Inside Out, which emotion has blue skin and glasses?",
+      "answer": "Sadness! 💙",
+      "reveal": "And she turns out to be the key to the whole film."
+    },
+    {
+      "n": 50,
+      "question": "In Toy Story, what is the name of the pizza restaurant?",
+      "answer": "Pizza Planet! 🍕",
+      "reveal": "Its delivery truck shows up in almost every Pixar film."
+    }
+  ],
+  "review": {
+    "questions": {
+      "decision": "auto-approved",
+      "note": "Giulia, 6 Nov 2026: no approval stops; fully automated. Fact-checked by Claude when written."
+    }
+  }
+}

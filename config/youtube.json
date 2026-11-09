@@ -57,7 +57,9 @@
     "Sport": "Sport Quizzes",
     "Geography": "Geography Quizzes",
     "History": "History Quizzes",
-    "Science": "Science Quizzes"
+    "Science": "Science Quizzes",
+    "Disney": "Disney Quizzes",
+    "Pop Culture": "Pop Culture Quizzes"
   },
   "title_variants": [
     "{title}",
@@ -86,7 +88,8 @@
     "Geography": "🌍 Put your geography to the test with {count} questions that'll sort the globetrotters from the homebodies.",
     "History": "📜 Put your history knowledge to the test with {count} questions that'll sort the scholars from the time-travellers.",
     "Science": "🔬 Put your science knowledge to the test with {count} questions that'll sort the boffins from the beginners.",
-    "default": "🧠 Put your knowledge to the test with {count} questions. How many can you get right?"
+    "default": "🧠 Put your knowledge to the test with {count} questions. How many can you get right?",
+    "Disney": "🏰 Put your Disney knowledge to the test with {count} questions that'll sort the superfans from the casual viewers."
   },
   "series_tags": {
     "_comment": "Put first; the combined list is trimmed to YouTube's 500-character limit. Keyword research (vidIQ) 6 Nov 2026.",
@@ -140,6 +143,14 @@
     "Science": [
       "science quiz",
       "science trivia"
+    ],
+    "Disney": [
+      "disney quiz",
+      "disney trivia",
+      "pixar quiz",
+      "disney movie quiz",
+      "hard disney quiz",
+      "movie quiz"
     ]
   },
   "_title_variants": "A/B: current title vs a research-based one (vidIQ outliers 6 Nov 2026: 'Can you pass…' challenge titles break out; vidIQ title score 91). The Monday run updates this from results.",
