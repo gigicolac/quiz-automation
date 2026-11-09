@@ -66,10 +66,20 @@ def wait(token, path, job, what, timeout=600):
     return job
 
 
-def upload(token, name, url):
+class UploadFailed(Exception):
+    pass
+
+
+def upload(token, name, url, timeout=300):
     """Returns (asset_id, "image" | "video")."""
     job = call("POST", "/url-asset-uploads", token, {"name": name[:50], "url": url})["job"]
-    asset = wait(token, "/url-asset-uploads", job, f"Upload of {name}")["asset"]
+    t0 = time.time()
+    while job["status"] == "in_progress" and time.time() - t0 < timeout:
+        time.sleep(3)
+        job = call("GET", f"/url-asset-uploads/{job['id']}", token)["job"]
+    if job["status"] != "success":
+        raise UploadFailed(f"upload of {url} failed: {job.get('error') or job['status']}")
+    asset = job["asset"]
     return asset["id"], asset.get("type", "image")
 
 
@@ -118,7 +128,14 @@ def main():
         g = gifs[n]
         for slot in ("question_gif", "answer_gif"):
             if slot not in s:
-                s[slot] = upload(token, f"{quiz['id']} Q{n} {slot}", media_url(g[slot]))
+                urls = [media_url(g[slot])] + ([g[slot]["still"]] if g[slot].get("still") else [])
+                for i, url in enumerate(urls):  # a GIF Canva can't fetch falls back to its still frame
+                    try:
+                        s[slot] = upload(token, f"{quiz['id']} Q{n} {slot}", url)
+                        break
+                    except UploadFailed as e:
+                        if i == len(urls) - 1:
+                            sys.exit(f"Q{n} {slot}: {e}. Pick another GIF or image in gifs_selected.json.")
         if "design" not in s:
             s["template"] = pick_template(q["question"], templates)
             s["design"] = fill(token, s["template"], f"{label} Quiz #{quiz['number']} Q{n:02d}", q,
