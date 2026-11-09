@@ -1,945 +1,1099 @@
 [
-  {
-    "n": 1,
-    "question_gif": {
-      "source": "giphy",
-      "id": "z14S0YOKN66kPkZ5yU",
-      "user": "michaelverhuelsdonk",
-      "title": "",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1NTRvajgzOHNmMDdvYWN2cHlsb2hxZm5pb283NjlyZXVydG52eHpzdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/z14S0YOKN66kPkZ5yU/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/z14S0YOKN66kPkZ5yU/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "uwyMn2ITwUcw6FSd1S",
-      "user": "tierparkberlin",
-      "title": "Eat Up GIF by Tierpark Berlin",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1emgxNmJ5dThuM3VqOHVlaXJjbWczN25ld24za3J6cmRsbXcxZmM4byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uwyMn2ITwUcw6FSd1S/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/uwyMn2ITwUcw6FSd1S/giphy.mp4"
-    }
+ {
+  "n": 1,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "It3ZU6cM0i6Pu",
+   "user": "disney",
+   "title": "Peter Pan Dance GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1cHF5MXdoZnJjdm5jZDE5emU2c213dWZ6NWNkeDZhbHFieWlydHMycyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/It3ZU6cM0i6Pu/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/It3ZU6cM0i6Pu/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1cHF5MXdoZnJjdm5jZDE5emU2c213dWZ6NWNkeDZhbHFieWlydHMycyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/It3ZU6cM0i6Pu/giphy_s.gif"
   },
-  {
-    "n": 2,
-    "question_gif": {
-      "source": "giphy",
-      "id": "xUPGcegLLR3z01Y3Hq",
-      "user": "thijsgeritz",
-      "title": " ",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1aWc2Y3djNzI5aGZtYTJmYXBtcjRhb3NmMWVmbXRpc2lxYm5wb290ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xUPGcegLLR3z01Y3Hq/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/xUPGcegLLR3z01Y3Hq/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "wnrPKbugw35n7rvELG",
-      "user": "aap",
-      "title": "Steam Engine Animation GIF by aap",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2sxbnljcW9tN2g5eTJmcGM0Z2V2aWQ3OXZocTY4NWY5YTh1MmY0eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wnrPKbugw35n7rvELG/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/wnrPKbugw35n7rvELG/giphy.mp4"
-    }
-  },
-  {
-    "n": 3,
-    "question_gif": {
-      "source": "giphy",
-      "id": "h1kNfboSyleuh9HyEt",
-      "user": "goaltraveler",
-      "title": "Apple GIF by Goal Traveler",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWhudnk3c3dzOG1oNWc2bmJtcXN6bmV6Mmd5cmI4cXc4Y2NjNGY4OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/h1kNfboSyleuh9HyEt/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/h1kNfboSyleuh9HyEt/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "3ornkbOjVuqWhB8GwE",
-      "user": "playkids",
-      "title": "Kids Apple GIF by PlayKids",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1MmEwanRrMmg4azJseWYwNDR5bWZ5cmM2Z2RhbGJoODBmYTBmYWZpaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ornkbOjVuqWhB8GwE/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3ornkbOjVuqWhB8GwE/giphy.mp4"
-    }
-  },
-  {
-    "n": 4,
-    "question_gif": {
-      "source": "giphy",
-      "id": "eLpVN9rA3YB25xpIq9",
-      "user": "",
-      "title": "Marine Biology Ocean GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXlucTVhc3F4ODF4eWI0ZnNqN3dzdWtnc3RtMjcyY2F5ZGJlczF1byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eLpVN9rA3YB25xpIq9/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/eLpVN9rA3YB25xpIq9/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "omDuVG0YW2FX2",
-      "user": "",
-      "title": "eel moray GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1cHN2cDF2azJhNXpiaHc2NW9vcnZ3Znd2Ymw4bDExYWw3MGY3cjNteCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/omDuVG0YW2FX2/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/omDuVG0YW2FX2/giphy.mp4"
-    }
-  },
-  {
-    "n": 5,
-    "question_gif": {
-      "source": "giphy",
-      "id": "Kf5bPeufoDJl21uYRJ",
-      "user": "allegriabulgaria",
-      "title": "",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2UzOGlqMmxrMXdpYTUwZDV2NDQ0Mzd4ZnhhMmkwa3kwYXJwenN1eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Kf5bPeufoDJl21uYRJ/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Kf5bPeufoDJl21uYRJ/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "noG98sNEsYggqRA0Zd",
-      "user": "goodeaton",
-      "title": "Animation Grooming GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1YzBrdHlwcWY5b2wzY3NjMzRocmd6NnZsaGRycjVoeHdxZnR3emh2bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/noG98sNEsYggqRA0Zd/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/noG98sNEsYggqRA0Zd/giphy.mp4"
-    }
-  },
-  {
-    "n": 6,
-    "question_gif": {
-      "source": "giphy",
-      "id": "ctPKn2LRX6mkM",
-      "user": "",
-      "title": "horse GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHd4bTRtbDhzOWFkc2JxOGZtbTUzZzBlMjk5Z3h0YWp1enEyYXdjdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ctPKn2LRX6mkM/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/ctPKn2LRX6mkM/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "l9mASFqtemeKk",
-      "user": "",
-      "title": "running horse GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzB2b2xuYzlqMGc4YjRvcWt3Y3pjY3BrOHY2emNtcWR6NWlqdDhhbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l9mASFqtemeKk/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/l9mASFqtemeKk/giphy.mp4"
-    }
-  },
-  {
-    "n": 7,
-    "question_gif": {
-      "source": "giphy",
-      "id": "3o6wrrmcDcHtwbGaA0",
-      "user": "savagekingdom",
-      "title": "try again nat geo wild GIF by Savage Kingdom",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTJodGg4aXFxZWV4Y29zOGcwYnM5ZWxoZXduY3Q2bG5nZ3M3Z3A4ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o6wrrmcDcHtwbGaA0/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3o6wrrmcDcHtwbGaA0/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "gstVWIzl4JKKI",
-      "user": "",
-      "title": "Loop King GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTJodGg4aXFxZWV4Y29zOGcwYnM5ZWxoZXduY3Q2bG5nZ3M3Z3A4ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gstVWIzl4JKKI/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/gstVWIzl4JKKI/giphy.mp4"
-    }
-  },
-  {
-    "n": 8,
-    "question_gif": {
-      "source": "giphy",
-      "id": "oj3ikZnoJBp2Oq7yBX",
-      "user": "johnballzoogr",
-      "title": "Roaring Big Cat GIF by John Ball Zoo",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dWpnY2hrdHV0NDR6eHd1ejB4enh3ZW9ueHFlbTFybXdyZjlpZGtwbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/oj3ikZnoJBp2Oq7yBX/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/oj3ikZnoJBp2Oq7yBX/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "R9z50rPINd5ew",
-      "user": "",
-      "title": "tiger yawn GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmgzeW9jM3gyZG9tajljbjJpdmhubnZkcGp4aHdycTI5MGcycTllaSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/R9z50rPINd5ew/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/R9z50rPINd5ew/giphy.mp4"
-    }
-  },
-  {
-    "n": 9,
-    "question_gif": {
-      "source": "giphy",
-      "id": "3oz8xViL9Nwmx6aDgk",
-      "user": "ninopaulito",
-      "title": "forest deer cottage GIF by Nino Paulito",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1M25yZHcxNXNjanFmZWd0MGdmdzIwMjEyZXVybWNhMHdlZHY5YXdmdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oz8xViL9Nwmx6aDgk/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3oz8xViL9Nwmx6aDgk/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "b9Ii69eefkK76",
-      "user": "",
-      "title": "National Red Rose Day GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmFjcnlmNXNnc21hdzhreG9wb2JxODNxb3hncG1jMnZuM2Zid3NsZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/b9Ii69eefkK76/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/b9Ii69eefkK76/giphy.mp4"
-    }
-  },
-  {
-    "n": 10,
-    "question_gif": {
-      "source": "giphy",
-      "id": "XbtFLEbN9YxFIiLcwB",
-      "user": "hidrogenesse",
-      "title": "Cat Surprise GIF by Hidrogenesse",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1cngzN3BtdTJwNjMwY2Q1Njc4OTV4bTM4ZTlxMm11a2YyOTBsa2Z3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XbtFLEbN9YxFIiLcwB/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/XbtFLEbN9YxFIiLcwB/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "2tMYOWRjFHveuOB6jg",
-      "user": "sarahsscribbles",
-      "title": "Well Done Adventure GIF by Sarah's Scribbles",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1N255MDJubHZ6NHQyOW4xMzIwbmI4b2RjZzh6bWdkODZsdjd3MXhpYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2tMYOWRjFHveuOB6jg/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/2tMYOWRjFHveuOB6jg/giphy.mp4"
-    }
-  },
-  {
-    "n": 11,
-    "question_gif": {
-      "source": "giphy",
-      "id": "TIiuJRgkQ4loitmjiO",
-      "user": "emselbams",
-      "title": "",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1YmNtNjhvbmN0MGk3MmFkMWdkeGZzdmJ5anYyMmU0ZWszc213N2djdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TIiuJRgkQ4loitmjiO/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/TIiuJRgkQ4loitmjiO/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "3ohze3bwRWiI5tXlq8",
-      "user": "boomunderground",
-      "title": "Vintage Sleeping GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cjlha3BmbGVza2sxazB1dzBmYWI2bG9rdGpuajBzYzB0Y3ZheDF3YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohze3bwRWiI5tXlq8/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3ohze3bwRWiI5tXlq8/giphy.mp4"
-    }
-  },
-  {
-    "n": 12,
-    "question_gif": {
-      "source": "giphy",
-      "id": "DohrzSCB07moM",
-      "user": "",
-      "title": "chimpanzee GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1NjIzcmFubnNvY3R0ZGN0bGFmZGZ5OHlmenR5Yms4aTE0eHNta3R1YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DohrzSCB07moM/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/DohrzSCB07moM/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "vQIl9FWhoFl2p4rQxC",
-      "user": "civenz",
-      "title": "Monkey Talking GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aXp0NzNoNjNyZXU4YnczajN4YWFhNWIyNG1tNGw0NXUxMG1rdzFqayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vQIl9FWhoFl2p4rQxC/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/vQIl9FWhoFl2p4rQxC/giphy.mp4"
-    }
-  },
-  {
-    "n": 13,
-    "question_gif": {
-      "source": "giphy",
-      "id": "dNMEGDrcAW4VFeeFGQ",
-      "user": "romuloroyo",
-      "title": "Cat Kitten GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZGpoeWY1eWJwaG9iYmoxNWlmbTF3Yjg5NzRvbnA5ZzdibDRjZXk1NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dNMEGDrcAW4VFeeFGQ/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/dNMEGDrcAW4VFeeFGQ/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "EspU8K48Rvo5umJX0j",
-      "user": "bloroxgifs",
-      "title": "Eyes Holding GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZGpoeWY1eWJwaG9iYmoxNWlmbTF3Yjg5NzRvbnA5ZzdibDRjZXk1NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EspU8K48Rvo5umJX0j/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/EspU8K48Rvo5umJX0j/giphy.mp4"
-    }
-  },
-  {
-    "n": 14,
-    "question_gif": {
-      "source": "giphy",
-      "id": "pbentD1Lrl02gN045g",
-      "user": "koe_opku",
-      "title": "",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MDU0ZWcwZW9lbjA0czN5ZnFkMWMzaGs4aWRhcG0xeXUwYThzYXdidyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pbentD1Lrl02gN045g/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/pbentD1Lrl02gN045g/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "wZQBoc6V821fSJMrRO",
-      "user": "",
-      "title": "Chameleon GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTRmZmVhNXpkanhpcGJkZ205aW9yZTg5MGg1YmlmeDhpZnpxZXd4MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wZQBoc6V821fSJMrRO/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/wZQBoc6V821fSJMrRO/giphy.mp4"
-    }
-  },
-  {
-    "n": 15,
-    "question_gif": {
-      "source": "giphy",
-      "id": "GwctFBl59kizK",
-      "user": "",
-      "title": "snowflake microscope GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3Bzb2tkZWh0Z3B6dXd0NWVtaHRzYTA0c3pmM251dmR2ZW03Z3ZhZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GwctFBl59kizK/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/GwctFBl59kizK/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "yP464kZrd60EQLtWnq",
-      "user": "airvuz",
-      "title": "Drone GIF by AirVuz",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHQ2ZGVkd3VpYW9penIyNHZvbHU4c2Z0OHFnNzg4MDhtZHpobGgxaSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/yP464kZrd60EQLtWnq/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/yP464kZrd60EQLtWnq/giphy.mp4"
-    }
-  },
-  {
-    "n": 16,
-    "question_gif": {
-      "source": "giphy",
-      "id": "u34NAQE27bmbC",
-      "user": "",
-      "title": "piglets baby pigs GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ODRwOGRhNmJ4MHJoMHk1MDVyMHhuczg3dGs4MWhoNzA3MDFucjRnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/u34NAQE27bmbC/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/u34NAQE27bmbC/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "fSD3yT23GL0SPqEIqF",
-      "user": "kenjikungifs",
-      "title": "Hungry Monster GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1b296OHg5ZjRxYWp4bDg2ZjNpNWxjYTY4emMzemxyOHUwZ3R1MGE5aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fSD3yT23GL0SPqEIqF/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/fSD3yT23GL0SPqEIqF/giphy.mp4"
-    }
-  },
-  {
-    "n": 17,
-    "question_gif": {
-      "source": "giphy",
-      "id": "1xMKttQZkAkJUsjTQg",
-      "user": "mgdoodlestudio",
-      "title": "Breathing Fire GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1MGQ1eTg5djlrZTE2YmtwZnk3ajJidjYxcXRrMzU0endxYTZ1NWhobCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1xMKttQZkAkJUsjTQg/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/1xMKttQZkAkJUsjTQg/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "vqZmmm3JQgoH7aey4J",
-      "user": "dreamimaginations",
-      "title": "Art Ai GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDNhczl0M2IwcGI2YWpjdWF0cWZ5ZDM3bDc5dTVnYzY2YTBoOXJhdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vqZmmm3JQgoH7aey4J/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/vqZmmm3JQgoH7aey4J/giphy.mp4"
-    }
-  },
-  {
-    "n": 18,
-    "question_gif": {
-      "source": "giphy",
-      "id": "Uiujny6Aqrg40",
-      "user": "",
-      "title": "monarch butterfly sky GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZXFuNGRzeXc2empqeDZndWNvcnNzOTE3a2h1cnh0OWZubG9pY3RiciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Uiujny6Aqrg40/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Uiujny6Aqrg40/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "IQnw7YeJWjYha",
-      "user": "",
-      "title": "3d butterfly GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1aGtyaGZwcWR6Y3Q1azhiOTVudW44OTBmNm9sYTI5MHRxNXB1a3Y2diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IQnw7YeJWjYha/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/IQnw7YeJWjYha/giphy.mp4"
-    }
-  },
-  {
-    "n": 19,
-    "question_gif": {
-      "source": "giphy",
-      "id": "3o7aCTfyhYawdOXcFW",
-      "user": "gfaught",
-      "title": "Animation Render GIF by gfaught",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cXEwaGNqZnd4ZzF0cGEyd21ibjBlMno3MWV6dmh4bGV1aWNtN2tieCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7aCTfyhYawdOXcFW/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "gjNdWdNuCNhbW",
-      "user": "",
-      "title": "q GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzYzYWg3aDMzMTlsY3B0eHhhbHdpc2V2bm9tNnhvMG55cGc2YzNydSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gjNdWdNuCNhbW/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/gjNdWdNuCNhbW/giphy.mp4"
-    }
-  },
-  {
-    "n": 20,
-    "question_gif": {
-      "source": "giphy",
-      "id": "CqpZnB6QEIXsI7sGPM",
-      "user": "yesterdaymp4",
-      "title": "Broken Heart GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTV0ZHJyeG04OHgwZGVlNGMwd2N6YnducGdmanFjdWxrMGJldHJzZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CqpZnB6QEIXsI7sGPM/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/CqpZnB6QEIXsI7sGPM/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "LLKRc4dEfKH3FHvAGw",
-      "user": "tinrobotgamess",
-      "title": "Good Time Dancing GIF by Tin Robot Games",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXQyMGpieHRyMGNra3l0MGQzaXNvZjF2eWx5czgweWZuNjZjeGE4ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LLKRc4dEfKH3FHvAGw/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/LLKRc4dEfKH3FHvAGw/giphy.mp4"
-    }
-  },
-  {
-    "n": 21,
-    "question_gif": {
-      "source": "giphy",
-      "id": "Y4K9JjSigTV1FkgiNE",
-      "user": "oceanaorg",
-      "title": "Marine Life Fish GIF by Oceana",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWVxZWl6eGticmZoc254ZHF1dmxtMGh4a3ptZ3N3ZXdvOHptMXVtciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y4K9JjSigTV1FkgiNE/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Y4K9JjSigTV1FkgiNE/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "VNGhrQtzWORWM",
-      "user": "",
-      "title": "water lights GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Nzl4OHA3dnUwMm9uMHR4Y2Y3ODFqZngwaDg0aTg1dXowd3U0emxnZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VNGhrQtzWORWM/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/VNGhrQtzWORWM/giphy.mp4"
-    }
-  },
-  {
-    "n": 22,
-    "question_gif": {
-      "source": "giphy",
-      "id": "Q343jgPdGDu251pGvI",
-      "user": "woofwaggers",
-      "title": "Golden Retriever Dog GIF by WoofWaggers",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXJuNGx5bmxidzN4Mm8yNnJiZTk1OGQyOWxyZmEycjVkbm11bWJ1byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Q343jgPdGDu251pGvI/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Q343jgPdGDu251pGvI/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "NoHe3HpB1Mg8w",
-      "user": "",
-      "title": "squirrel GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mzh5Z3IxeXI1dTd2a2I3Zjdxc2gzNjlycnZ3NjFhcm5heTE0d3phNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NoHe3HpB1Mg8w/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/NoHe3HpB1Mg8w/giphy.mp4"
-    }
-  },
-  {
-    "n": 23,
-    "question_gif": {
-      "source": "giphy",
-      "id": "xT0BKN0Z8tNQCjtOSs",
-      "user": "milkteethmotion",
-      "title": "stop motion animation GIF by Chelsea Quinlan",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dDM4ZjRjMGt6Nmk1ZGlqa2N5d3N3OXpmaHl0czZvdzl4dDE2cmRidSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT0BKN0Z8tNQCjtOSs/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/xT0BKN0Z8tNQCjtOSs/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "BgZSQa3GyitdsjNT6I",
-      "user": "bcandcc",
-      "title": "International Cat Day Celebration GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NGY1aHJqMTAwaWVsc21tYndnMDZkN3BtYzNhd25uaTluMGRxY2drcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BgZSQa3GyitdsjNT6I/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/BgZSQa3GyitdsjNT6I/giphy.mp4"
-    }
-  },
-  {
-    "n": 24,
-    "question_gif": {
-      "source": "giphy",
-      "id": "ZuiX4CT8JmVOw",
-      "user": "",
-      "title": "cape GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cjI0aGlxMmhwYmlidWphN2tzdGI4bGh1NzMyaW14YnE3ZnZrNm5kdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZuiX4CT8JmVOw/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/ZuiX4CT8JmVOw/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "vlYZYUxO3Pt92WEeGw",
-      "user": "carolynnyoe",
-      "title": "Fashion Designer Art GIF by Carolynn",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWxya2l4NWg0dzI3N3NheHZrNGw0d3ozM3NlM2NhemFqeThrdjJseSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vlYZYUxO3Pt92WEeGw/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/vlYZYUxO3Pt92WEeGw/giphy.mp4"
-    }
-  },
-  {
-    "n": 25,
-    "question_gif": {
-      "source": "giphy",
-      "id": "47xYNavndLfCGK5hc2",
-      "user": "chinohillshusky",
-      "title": "Fiesta Pig GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDhybXYwa256bHlnYzY1ZWpjazdnYmU0a2xybGl5a21jZDhuazF1dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/47xYNavndLfCGK5hc2/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/47xYNavndLfCGK5hc2/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "5UvS10Ih8f04w",
-      "user": "",
-      "title": "chef master GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MGNkbDM0Z3Btc2MxNWZlOTB3ZG8yOWF5aWI3ZXBzNmRoMXBhMTJlaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5UvS10Ih8f04w/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/5UvS10Ih8f04w/giphy.mp4"
-    }
-  },
-  {
-    "n": 26,
-    "question_gif": {
-      "source": "giphy",
-      "id": "ABVK96HgZvWI9SBbXr",
-      "user": "ecrookedletterz",
-      "title": "Robot No GIF by EsZ  Giphy World",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzVmcGRxb2NtcWNhZWprcmtha25iMmI5cnh2ZWp3Y2VpMHhra2R4NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ABVK96HgZvWI9SBbXr/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/ABVK96HgZvWI9SBbXr/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "mDBBU8K7Np2UQs9Dqy",
-      "user": "neweconomy",
-      "title": "plants seeds GIF by New Economy Coalition",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MHo4OHkzMWFuZTFqNnJueHRuZXczd2dicmFzZG5uNGc3ejFvYXFndCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mDBBU8K7Np2UQs9Dqy/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/mDBBU8K7Np2UQs9Dqy/giphy.mp4"
-    }
-  },
-  {
-    "n": 27,
-    "question_gif": {
-      "source": "giphy",
-      "id": "ksaO2FlAq79r6e7h8o",
-      "user": "turn14",
-      "title": "Drifting Formula Drift GIF by Turn 14 Distribution",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZDh2cWZ2ZGU5ZDZrNXV4ZjQzdmM3MHozMDFvdGM5ZTJsc3dzOXphbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ksaO2FlAq79r6e7h8o/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/ksaO2FlAq79r6e7h8o/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "WoddXx7YtZeCqUD2tV",
-      "user": "peterautoracing",
-      "title": "",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1amM5ZGh4eDJ1M29jbHhrd3ZpMm9jNWtta3V5cXBpMTZsaDZ6c3ZkeSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WoddXx7YtZeCqUD2tV/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/WoddXx7YtZeCqUD2tV/giphy.mp4"
-    }
-  },
-  {
-    "n": 28,
-    "question_gif": {
-      "source": "giphy",
-      "id": "2sYcU8T8xv6KWIMbtS",
-      "user": "carlosthexolo",
-      "title": "Animated GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cjA5NXluYm5wdWN4b3U2ZXVmZTVmcjF0eXR3MTcybTFrYndoM21jMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2sYcU8T8xv6KWIMbtS/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/2sYcU8T8xv6KWIMbtS/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "Ax5K34tEf8mSMbFYjd",
-      "user": "miguelduarte-stopmotion",
-      "title": "",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXZtcndzaDJqZnl2OWJqaThvbjRzOGIwcThjb3pwaXJhajJjanBrOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ax5K34tEf8mSMbFYjd/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Ax5K34tEf8mSMbFYjd/giphy.mp4"
-    }
-  },
-  {
-    "n": 29,
-    "question_gif": {
-      "source": "giphy",
-      "id": "kA158Gup0eSpG",
-      "user": "",
-      "title": "sloth GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTlxaHBudnh0aTE5Mnd5MTQ2NTdkeGZvZ3p2OG9sYngxbjcxamMzayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kA158Gup0eSpG/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/kA158Gup0eSpG/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "3og0INAY5MLmEBubyU",
-      "user": "",
-      "title": "Sloth Dmv GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Y2JtODA1ZHlsZnBwdjF4OWV5bHc3MHN2aTUyM3c3dm90bGJianZoOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3og0INAY5MLmEBubyU/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3og0INAY5MLmEBubyU/giphy.mp4"
-    }
-  },
-  {
-    "n": 30,
-    "question_gif": {
-      "source": "giphy",
-      "id": "fniVO5yA3ddAq6A19V",
-      "user": "earthhour",
-      "title": "Hong Kong Night GIF by Earth Hour",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Nm5rNmhjOHJsZmJxcWM1czdzenJpbWZlMDJ2NGlwZzQ2ZG1xOWh1eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fniVO5yA3ddAq6A19V/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/fniVO5yA3ddAq6A19V/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "dtVChqtd2zHsd10A2C",
-      "user": "",
-      "title": "golden gate bridge GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1N3kxMXJ5b2Frc3Uzejlrb3d4azNiZzBncHk4bnc2ajAzaGttcW5hZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dtVChqtd2zHsd10A2C/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/dtVChqtd2zHsd10A2C/giphy.mp4"
-    }
-  },
-  {
-    "n": 31,
-    "question_gif": {
-      "source": "giphy",
-      "id": "xqAa5qy90DlzCIyTmQ",
-      "user": "vicofoodbox",
-      "title": "Trick Or Treat Halloween GIF by Vico Food Box",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cTFqNnl4bnJnYXduNWYxbjJwODBsNXpiaGVzejBkdGNpdmxxZHg1eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xqAa5qy90DlzCIyTmQ/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/xqAa5qy90DlzCIyTmQ/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "E2QRGvpf0CWVuzv9Yo",
-      "user": "hugoelburrito",
-      "title": "Candy Lick GIF by Hugo El Burrito",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aG83NWxmYWl6YzRqOWgxbm5vNmZqeGp5YTEwZjRyNGh6MjI1cTJleCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/E2QRGvpf0CWVuzv9Yo/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/E2QRGvpf0CWVuzv9Yo/giphy.mp4"
-    }
-  },
-  {
-    "n": 32,
-    "question_gif": {
-      "source": "giphy",
-      "id": "1NL6eIFm2dOKDa3TS7",
-      "user": "allieranae",
-      "title": "Pool Party Summer Vibes GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXR2eHJuaDdvcWhqbGZsazgwdnd6dWt4Z3J0ang5OTJvZzJpZHl4aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1NL6eIFm2dOKDa3TS7/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/1NL6eIFm2dOKDa3TS7/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "SgINW0HXcII9tYXiIU",
-      "user": "jukeboxsaints",
-      "title": "Jazz Music Band GIF by Jukebox Saints",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1aG44djlmZ3pqMjk3dmtrd3VuanhkM2hybHd0NGU4c20zbXh2NDk1ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SgINW0HXcII9tYXiIU/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/SgINW0HXcII9tYXiIU/giphy.mp4"
-    }
-  },
-  {
-    "n": 33,
-    "question_gif": {
-      "source": "giphy",
-      "id": "BZIJDXHSEAACwv97XU",
-      "user": "parkdeanresorts",
-      "title": "Scotland Scottish GIF by Parkdean Resorts",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXl6dmR3MmdqYWxwbDh3OHhpbnBuMXV6ZzM2NnZrM3J2Zjl5dGNoNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BZIJDXHSEAACwv97XU/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/BZIJDXHSEAACwv97XU/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "IThjAlJnD9WNO",
-      "user": "",
-      "title": "Wave Hello GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzNsbTJuenNsbXE5dDl6cmRkamMxNmc3dWQ2dDl5a3F0cDFkbzNraCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IThjAlJnD9WNO/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/IThjAlJnD9WNO/giphy.mp4"
-    }
-  },
-  {
-    "n": 34,
-    "question_gif": {
-      "source": "giphy",
-      "id": "b9Ii69eefkK76",
-      "user": "",
-      "title": "National Red Rose Day GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmFjcnlmNXNnc21hdzhreG9wb2JxODNxb3hncG1jMnZuM2Zid3NsZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/b9Ii69eefkK76/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/b9Ii69eefkK76/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "QaFsFZCy9CxJHts5uH",
-      "user": "afoundsweden",
-      "title": "Happy Friday GIF by Afound",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bHMxMXp6ZHVzamZocmU0aDBtODh5dmk2ZWw1M2R5cHB3NnkxcHpobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QaFsFZCy9CxJHts5uH/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/QaFsFZCy9CxJHts5uH/giphy.mp4"
-    }
-  },
-  {
-    "n": 35,
-    "question_gif": {
-      "source": "giphy",
-      "id": "Lu94S7ZRGJ9mM",
-      "user": "",
-      "title": "Child Devil GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHdlZG5wdnF3Z3ozbDduN3g0b3lydHZ3MHUzMzFlODZ6djd0NWprOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Lu94S7ZRGJ9mM/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Lu94S7ZRGJ9mM/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "q4voi8znbYANE5GtYI",
-      "user": "tracheotommy",
-      "title": "Loop Fire GIF by tracheotommy",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDNlMWViejU3ZHpmNjBnejJkNmV6bzdnbndmMGQzdDZubHNoMzRxNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/q4voi8znbYANE5GtYI/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/q4voi8znbYANE5GtYI/giphy.mp4"
-    }
-  },
-  {
-    "n": 36,
-    "question_gif": {
-      "source": "giphy",
-      "id": "9so0K0kpE14CaXi22O",
-      "user": "chebemchn",
-      "title": "Monster Jumping GIF by chebemchn",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ODE5N3BkanFiYWRnNzBsNThkZWJ4czJ4dGQyaWtkaDFkaDhpcmg1bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9so0K0kpE14CaXi22O/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/9so0K0kpE14CaXi22O/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "ES73WMEUtGdKE",
-      "user": "",
-      "title": "notre dame GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1c25ubGp2cHN4bHQ3bDZsYXljN21hMWE0MXBvdmJhYjYyZTBmaTJpZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ES73WMEUtGdKE/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/ES73WMEUtGdKE/giphy.mp4"
-    }
-  },
-  {
-    "n": 37,
-    "question_gif": {
-      "source": "giphy",
-      "id": "zfNAMCrhSQzte",
-      "user": "",
-      "title": "Clapping Raccoon GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTZhZ2k2dTM1b2IwMDU0c2MxeHppd3N5OXgycDJtaThndWo0a3N1cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zfNAMCrhSQzte/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/zfNAMCrhSQzte/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "X1fikdyut2uv6",
-      "user": "",
-      "title": "Racoon GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Ym1qdjFrZ3JraTBsZW1maDE5dWx5ODA1aXFqYXR3NnI1bmhrdGlucSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/X1fikdyut2uv6/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/X1fikdyut2uv6/giphy.mp4"
-    }
-  },
-  {
-    "n": 38,
-    "question_gif": {
-      "source": "giphy",
-      "id": "8JQTrIPpFfPIYlqv4c",
-      "user": "originals",
-      "title": "Mothers Day Mom GIF by Originals",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1amtsYzBpZ2NrdjMxNDh4MWx6OGJrdWJiMTFyYzA2azNtenpudHJkNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8JQTrIPpFfPIYlqv4c/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/8JQTrIPpFfPIYlqv4c/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "3otXeBZTojR1AEb63K",
-      "user": "westminsterkennelclub",
-      "title": "dog show GIF by Westminster Kennel Club",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MWd1cXB3NzJlZDV1cmN5eHR0bDhsc2hsOTBiMnFjZ21qdmYxcHlwcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3otXeBZTojR1AEb63K/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/3otXeBZTojR1AEb63K/giphy.mp4"
-    }
-  },
-  {
-    "n": 39,
-    "question_gif": {
-      "source": "giphy",
-      "id": "l0DAHBfRsnvUTPxqo",
-      "user": "heyarnold",
-      "title": "Animated GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1MnpiN2d0cjE0cmpvb2U0ZTloMzJqNXhyY3d3ZG04aGpneXQzc3BpZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0DAHBfRsnvUTPxqo/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/l0DAHBfRsnvUTPxqo/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "8QbwUh40Hl96yMgvOx",
-      "user": "",
-      "title": "I Love You Flower GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZWgxeWI1N3d2aXhvenl5N3FtZXJydG0zcHV0a2w1YzdrYXF3cGN2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8QbwUh40Hl96yMgvOx/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/8QbwUh40Hl96yMgvOx/giphy.mp4"
-    }
-  },
-  {
-    "n": 40,
-    "question_gif": {
-      "source": "giphy",
-      "id": "4VY80dptzlyAo",
-      "user": "",
-      "title": "Animated GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1OG5qcXZoOWc4bm9jOXhyOHJyOW0zbWR2cmEwOWZ2cWx5Ymk3NGM5aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4VY80dptzlyAo/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/4VY80dptzlyAo/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "QXh9XnIJetPi0",
-      "user": "",
-      "title": "Mouse Rodent GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bml0ZThiNWZqZXdvNno4c3Rwd2dmdTVqYzRsMTVrMzMzc3dqbHJhMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QXh9XnIJetPi0/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/QXh9XnIJetPi0/giphy.mp4"
-    }
-  },
-  {
-    "n": 41,
-    "question_gif": {
-      "source": "giphy",
-      "id": "8Bkqq19phBmRsZEVks",
-      "user": "thedodo",
-      "title": "ducks ducklings GIF by The Dodo",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aDZ0cTdqcGg3bjd6cGV3dTNnYTVqNjR0N3FqOHRvazFzZDl5MTJoOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8Bkqq19phBmRsZEVks/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/8Bkqq19phBmRsZEVks/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "qjGhmKyiy3gSIeaWS9",
-      "user": "wildlife_buxtehude",
-      "title": "Duck Zusammen GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTZvOXRlbHV1aHkwMzZvcW5vZmxwOGxtNGc0dWVhMnpsMmdnZXh6biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qjGhmKyiy3gSIeaWS9/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/qjGhmKyiy3gSIeaWS9/giphy.mp4"
-    }
-  },
-  {
-    "n": 42,
-    "question_gif": {
-      "source": "giphy",
-      "id": "BX6A5Og1xWQMPEldfF",
-      "user": "emauxti0n",
-      "title": "Father And Son Family GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZTgxdnJicWtqMmt3cDkybWRjZHN4ZWltMzd5eDV1b2d6d2t2Y3preiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BX6A5Og1xWQMPEldfF/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/BX6A5Og1xWQMPEldfF/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "Vu1uYzxZ5m5he",
-      "user": "",
-      "title": "road trip GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MHNrMms3aWs2d2NvazA5OHFydmQzeW5rczd6bTF4ZGppcWo4b2ppdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Vu1uYzxZ5m5he/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Vu1uYzxZ5m5he/giphy.mp4"
-    }
-  },
-  {
-    "n": 43,
-    "question_gif": {
-      "source": "giphy",
-      "id": "1wrBRtirHVo2KzehH9",
-      "user": "roberteblackmon",
-      "title": "Tea Time Please GIF by Robert E Blackmon",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZTRtemR0M2x0eGwzMGQ4MHR6a2ZuYXZpYnB4cTNqNzY1NTBkMjA2aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1wrBRtirHVo2KzehH9/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/1wrBRtirHVo2KzehH9/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "R1242mdUTmdWhI5N50",
-      "user": "bcandcc",
-      "title": "Happy Birthday Party GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c3JuNnRrODJpOGJ2ZjQydzNuNTZ3OXUzM3M0bjJmMjJ5bmU0dGRiNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/R1242mdUTmdWhI5N50/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/R1242mdUTmdWhI5N50/giphy.mp4"
-    }
-  },
-  {
-    "n": 44,
-    "question_gif": {
-      "source": "giphy",
-      "id": "WxqLeRWNWB9DD1THfD",
-      "user": "stizzydrew",
-      "title": "Bird Stomping GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dGNlZ3N0anl5MDM1Y281ZmNkZ3RrOTZmaG83c2U0bmdwYzBjN3BrMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WxqLeRWNWB9DD1THfD/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/WxqLeRWNWB9DD1THfD/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "AORI3Pcli9JHG",
-      "user": "",
-      "title": "parrot GIF",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWhxMjRlaHdoNW81b2VyNHN3aDZ2N3hvbHZoNGFlcWhtNXFqbXVqZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/AORI3Pcli9JHG/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/AORI3Pcli9JHG/giphy.mp4"
-    }
-  },
-  {
-    "n": 45,
-    "question_gif": {
-      "source": "giphy",
-      "id": "8cN4FnI0tB7MsOMnjU",
-      "user": "",
-      "title": "All Souls Day Candle GIF by MOODMAN",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1M2Jzb2h3Zmt6dXpjdjVpaHZjaWpqdHg3aWU3ajF2OHg4b21tN2Y0ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8cN4FnI0tB7MsOMnjU/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/8cN4FnI0tB7MsOMnjU/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "Uqs224y6P8SdvlhUFI",
-      "user": "nissart",
-      "title": "",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MnZzbjFnajdzMmRpMDc0OGR5YXB6M3MydXI2dmZ0cms4ZHQzdTdhcSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Uqs224y6P8SdvlhUFI/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/Uqs224y6P8SdvlhUFI/giphy.mp4"
-    }
-  },
-  {
-    "n": 46,
-    "question_gif": {
-      "source": "giphy",
-      "id": "qJ5gvao8Mb6iVveA2E",
-      "user": "oracle_hf",
-      "title": "",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2JoM2Z0cHFzZm5lZnowa2M5czA2dWw5N2d0bjBvenZvYjl1MDV1MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qJ5gvao8Mb6iVveA2E/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/qJ5gvao8Mb6iVveA2E/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "gEG1j8eBvHVYs",
-      "user": "",
-      "title": "black and white raven GIF",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHl4YW92N3hsZXY0NXljbDd3cGxnaWllZHBlcjFwYzZkNGNkaGkyOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gEG1j8eBvHVYs/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/gEG1j8eBvHVYs/giphy.mp4"
-    }
-  },
-  {
-    "n": 47,
-    "question_gif": {
-      "source": "giphy",
-      "id": "dBd2kn9Sgm2xN87Ljy",
-      "user": "kilroynl",
-      "title": "Jungle Reizen GIF by kilroynl",
-      "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1YWh6ZnVoc280OGFweTM1M2I3a3RibnZuZzl6bGF1cXZ5N28yaXh0ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dBd2kn9Sgm2xN87Ljy/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/dBd2kn9Sgm2xN87Ljy/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "kk6qghWpFqA0Jougfe",
-      "user": "danielbonquin",
-      "title": "Dance Youre Mine GIF",
-      "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dDczZGYyZ213eXoxYjd2ZTFrcmY5aWMxZjRudXUwNWpxMW02dzZrbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kk6qghWpFqA0Jougfe/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/kk6qghWpFqA0Jougfe/giphy.mp4"
-    }
-  },
-  {
-    "n": 48,
-    "question_gif": {
-      "source": "giphy",
-      "id": "UrhShJWgU4saTYGY1G",
-      "user": "visitlondon",
-      "title": "Chinese New Year GIF by VisitLondon",
-      "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzVwd21ianB3ajlkMHByeGkybXc5cHI4bmI4aDN3NHVuaDA0cTI2eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UrhShJWgU4saTYGY1G/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/UrhShJWgU4saTYGY1G/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "k1caQpYQYniCt9PhQ7",
-      "user": "mujkaktus",
-      "title": "Lamp Lantern GIF by mujkaktus",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzR5b2NyemkyaGJvNDA2cnZvaG1nNjZmamgwamNrMmZvaXpwYW5tMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/k1caQpYQYniCt9PhQ7/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/k1caQpYQYniCt9PhQ7/giphy.mp4"
-    }
-  },
-  {
-    "n": 49,
-    "question_gif": null,
-    "answer_gif": {
-      "source": "giphy",
-      "id": "fQMfeTUMCNbhLK86RQ",
-      "user": "konczakowski",
-      "title": "I Love You Hearts GIF by Feliks Tomasz Konczakowski",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXRybWZ0cWpxcjA1Y3h5bmw5NW8wNXJvMXphdDJ1dXl0MTJuNW5mOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fQMfeTUMCNbhLK86RQ/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/fQMfeTUMCNbhLK86RQ/giphy.mp4"
-    }
-  },
-  {
-    "n": 50,
-    "question_gif": {
-      "source": "giphy",
-      "id": "9fuvOqZ8tbZOU",
-      "user": "",
-      "title": "Dog Pizza GIF",
-      "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cjhxbzExcG9vNnY1cnhueDBjdjEwaTMzYnh5cWNncmN4azlncmU0ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9fuvOqZ8tbZOU/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/9fuvOqZ8tbZOU/giphy.mp4"
-    },
-    "answer_gif": {
-      "source": "giphy",
-      "id": "mi6DsSSNKDbUY",
-      "user": "",
-      "title": "Space Rocket GIF",
-      "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cnp3OTlrbGt2M3NjdWtxbTBlMXpyZ2lsM214eGwzcnYycXE4bGtiZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mi6DsSSNKDbUY/giphy.mp4",
-      "clean_mp4": "https://media.giphy.com/media/mi6DsSSNKDbUY/giphy.mp4"
-    }
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "3jdTyxPxxi01y",
+   "user": "disney",
+   "title": "mickey mouse animation GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1M2E5Y2RraTN6aDl6MmJkM2pzaDIyajVweHZiMHZueXhiaDEzdW93bSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3jdTyxPxxi01y/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/3jdTyxPxxi01y/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1M2E5Y2RraTN6aDl6MmJkM2pzaDIyajVweHZiMHZueXhiaDEzdW93bSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3jdTyxPxxi01y/giphy_s.gif"
   }
+ },
+ {
+  "n": 2,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "jNJFbhvvnj6fe",
+   "user": "disney",
+   "title": "Happy Birthday GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eWRwcmdoMWM4aGxrbTVtOTF6Nmt2NnB4b3Y2bmtmYndkNWxhazZnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jNJFbhvvnj6fe/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/jNJFbhvvnj6fe/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eWRwcmdoMWM4aGxrbTVtOTF6Nmt2NnB4b3Y2bmtmYndkNWxhazZnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jNJFbhvvnj6fe/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "l2JhL0Gpfbvs4Y07K",
+   "user": "old-hollywood-films",
+   "title": "Mickey Mouse Animation GIF",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1YjNndTkweWlpNmF4aXd4cXI1cnJuaWM2Y3AycG1vcXYwdDR2OGI5OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l2JhL0Gpfbvs4Y07K/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/l2JhL0Gpfbvs4Y07K/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1YjNndTkweWlpNmF4aXd4cXI1cnJuaWM2Y3AycG1vcXYwdDR2OGI5OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l2JhL0Gpfbvs4Y07K/giphy_s.gif"
+  }
+ },
+ {
+  "n": 3,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Cm9cwPDTXLPDG",
+   "user": "disney",
+   "title": "snow white song GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cHV1cmN5bHU3MzB4MHk2c2FveW4ydmFobmd2NjhheWVhMTRvZWFxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Cm9cwPDTXLPDG/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Cm9cwPDTXLPDG/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cHV1cmN5bHU3MzB4MHk2c2FveW4ydmFobmd2NjhheWVhMTRvZWFxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Cm9cwPDTXLPDG/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "ff748OtDfBwuk",
+   "user": "disney",
+   "title": "Snow White GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZnYyZmY1ZzU0dnF3aWducm1ub2p3Y2h4OGM1dmZyd3RjcXo5ZHdnNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ff748OtDfBwuk/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/ff748OtDfBwuk/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZnYyZmY1ZzU0dnF3aWducm1ub2p3Y2h4OGM1dmZyd3RjcXo5ZHdnNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ff748OtDfBwuk/giphy_s.gif"
+  }
+ },
+ {
+  "n": 4,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "yZjqFuVvqP9QAaiDNo",
+   "user": "disney",
+   "title": "Ursula GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXl3NzFnMmR4dzBwYzNjeWE4aGxxcHJtbnl2dW9wdzBwdGdldmJteiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/yZjqFuVvqP9QAaiDNo/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/yZjqFuVvqP9QAaiDNo/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXl3NzFnMmR4dzBwYzNjeWE4aGxxcHJtbnl2dW9wdzBwdGdldmJteiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/yZjqFuVvqP9QAaiDNo/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "KcKJvWJVLcTuM",
+   "user": "",
+   "title": "the little mermaid ariel GIF",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGFrZnN4czV3OHF2eGtnM2QwZWM1YXg1aWFqbXo5MXdxajgzZGFiNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KcKJvWJVLcTuM/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/KcKJvWJVLcTuM/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGFrZnN4czV3OHF2eGtnM2QwZWM1YXg1aWFqbXo5MXdxajgzZGFiNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KcKJvWJVLcTuM/giphy_s.gif"
+  }
+ },
+ {
+  "n": 5,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "cjI4nRSSGPDonzu3oT",
+   "user": "disney",
+   "title": "The Little Mermaid Water GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzdicDVnOHE1Mm13dmVxY2x6YXlsa295MzN5aGV3YmtueGN1aW1nbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cjI4nRSSGPDonzu3oT/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/cjI4nRSSGPDonzu3oT/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzdicDVnOHE1Mm13dmVxY2x6YXlsa295MzN5aGV3YmtueGN1aW1nbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cjI4nRSSGPDonzu3oT/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "12gKzNnkH1gUik",
+   "user": "disney",
+   "title": "the little mermaid princess GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmdhbmpvNXlrbmlyZWx0YzN2eXgwM2g2d2R3anIyaHBmbTdiczJ5NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12gKzNnkH1gUik/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/12gKzNnkH1gUik/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmdhbmpvNXlrbmlyZWx0YzN2eXgwM2g2d2R3anIyaHBmbTdiczJ5NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12gKzNnkH1gUik/giphy_s.gif"
+  }
+ },
+ {
+  "n": 6,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Acfgbm04rHWsawoRrZ",
+   "user": "disney",
+   "title": "I Am Here GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dmRudDM4c3AxYnljdzJ0MG13ZThkZnc5NmJ6MmxzZDNuMTg4Zm96NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Acfgbm04rHWsawoRrZ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Acfgbm04rHWsawoRrZ/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dmRudDM4c3AxYnljdzJ0MG13ZThkZnc5NmJ6MmxzZDNuMTg4Zm96NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Acfgbm04rHWsawoRrZ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "uym9sd5fTTaOA",
+   "user": "disney",
+   "title": "Little Brother Dog GIF by Disney",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHFwMjFpbnBzenVrNHpucDY3Z2MzanhxNmFvZDgzN3A4dDk4NmNzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uym9sd5fTTaOA/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/uym9sd5fTTaOA/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHFwMjFpbnBzenVrNHpucDY3Z2MzanhxNmFvZDgzN3A4dDk4NmNzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uym9sd5fTTaOA/giphy_s.gif"
+  }
+ },
+ {
+  "n": 7,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "szmmbDDpS67LO",
+   "user": "disney",
+   "title": "the lion king simba GIF by Disney",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MzJxN3V0a2NubmU5NnZ1M3ljZnpmc2R2cmx3NW50M2w3azJ5OWRoZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/szmmbDDpS67LO/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/szmmbDDpS67LO/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MzJxN3V0a2NubmU5NnZ1M3ljZnpmc2R2cmx3NW50M2w3azJ5OWRoZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/szmmbDDpS67LO/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "dNW7m0PkG0akw",
+   "user": "",
+   "title": "the lion king disney GIF",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1anRkYW1oejB1ODIwajE5MnVoenFpOGVocXQ2dXRjMzg1MTc3cGJzeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dNW7m0PkG0akw/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/dNW7m0PkG0akw/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1anRkYW1oejB1ODIwajE5MnVoenFpOGVocXQ2dXRjMzg1MTc3cGJzeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dNW7m0PkG0akw/giphy_s.gif"
+  }
+ },
+ {
+  "n": 8,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "4vzJIq12ynNSJAousR",
+   "user": "disney",
+   "title": "Relaxing Disney Princess GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2tsOHg0enN1eWlyZ3V2bGR1bHV6d2lmdGdyczd5ajM1eXhxOG5nNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4vzJIq12ynNSJAousR/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/4vzJIq12ynNSJAousR/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2tsOHg0enN1eWlyZ3V2bGR1bHV6d2lmdGdyczd5ajM1eXhxOG5nNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4vzJIq12ynNSJAousR/giphy_s.gif"
+  }
+ },
+ {
+  "n": 9,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "jP8FwQeywl0PG4nrmr",
+   "user": "disney",
+   "title": "Tired Princess Aurora GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NTVzNGowNTlieTYwZmI4Z3loMGV5cWpibzY3ajRxM3J2Y25jb2hxbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jP8FwQeywl0PG4nrmr/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/jP8FwQeywl0PG4nrmr/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NTVzNGowNTlieTYwZmI4Z3loMGV5cWpibzY3ajRxM3J2Y25jb2hxbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jP8FwQeywl0PG4nrmr/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "wikipedia",
+   "type": "image",
+   "id": 2287636,
+   "title": "Sleeping Beauty (1959 film)",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Sleeping_Beauty_%281959_poster_-_Style_A%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+  }
+ },
+ {
+  "n": 10,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "OImxYjt4OjOTIuk3GD",
+   "user": "disney",
+   "title": "Cinderella GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWZ6dzZ6dHdnaWsxNXZlYmhpbGZwdHl0MW0ycWJ4a2czeHR0ajQ5cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OImxYjt4OjOTIuk3GD/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/OImxYjt4OjOTIuk3GD/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWZ6dzZ6dHdnaWsxNXZlYmhpbGZwdHl0MW0ycWJ4a2czeHR0ajQ5cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OImxYjt4OjOTIuk3GD/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "13adQ9y8BHlV7Sb5YO",
+   "user": "disney",
+   "title": "Cinderella GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1b3BtdHVmYnE2aXM0OWxscmZzcGJmNjBvYmQ5N3hnbDFldml4anR5cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13adQ9y8BHlV7Sb5YO/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/13adQ9y8BHlV7Sb5YO/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1b3BtdHVmYnE2aXM0OWxscmZzcGJmNjBvYmQ5N3hnbDFldml4anR5cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13adQ9y8BHlV7Sb5YO/giphy_s.gif"
+  }
+ },
+ {
+  "n": 11,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "ETyvHffjTaq8uBsubt",
+   "user": "disneyplus",
+   "title": "Disney Animation GIF by Disney+",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NW4xeG52a3Y1b2l4N2hiZjhwNHQ3aWIxNGl1N3JpZXNtczA5NzhtMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ETyvHffjTaq8uBsubt/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/ETyvHffjTaq8uBsubt/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NW4xeG52a3Y1b2l4N2hiZjhwNHQ3aWIxNGl1N3JpZXNtczA5NzhtMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ETyvHffjTaq8uBsubt/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "m1FDIHtq2Vko8",
+   "user": "",
+   "title": "101 dalmatians love GIF",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bXRuZmc0MDJjOTlsdnB0cmxlbDJ3N2Z2NGlyZjZ6dWR5a3cwdzBuNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m1FDIHtq2Vko8/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/m1FDIHtq2Vko8/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bXRuZmc0MDJjOTlsdnB0cmxlbDJ3N2Z2NGlyZjZ6dWR5a3cwdzBuNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m1FDIHtq2Vko8/giphy_s.gif"
+  }
+ },
+ {
+  "n": 12,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "U3rFVRHeGBhbq",
+   "user": "disney",
+   "title": "the jungle book GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1MHhzc2ZwbWpkdDN4YzlmdGRpNHc5NTlubnJneHh4eWZ5YjhhbTFlaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U3rFVRHeGBhbq/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/U3rFVRHeGBhbq/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1MHhzc2ZwbWpkdDN4YzlmdGRpNHc5NTlubnJneHh4eWZ5YjhhbTFlaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U3rFVRHeGBhbq/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "EDAXF9QnEAUla",
+   "user": "disney",
+   "title": "Princess And The Frog Jazz GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHhydnN0Zm80ZnBvN3l1cm5jMmJtY2JyeWtndzdlNGk5c2VvNm1rciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EDAXF9QnEAUla/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/EDAXF9QnEAUla/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHhydnN0Zm80ZnBvN3l1cm5jMmJtY2JyeWtndzdlNGk5c2VvNm1rciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EDAXF9QnEAUla/giphy_s.gif"
+  }
+ },
+ {
+  "n": 13,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Fl7K2cgGi8K6Q",
+   "user": "disney",
+   "title": "walt disney animation studios GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHppMGpvaWEzYjJwOHppd2hnM2k2b2p1N3V5cXl6Mzl2OHpqOTc4dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Fl7K2cgGi8K6Q/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Fl7K2cgGi8K6Q/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHppMGpvaWEzYjJwOHppd2hnM2k2b2p1N3V5cXl6Mzl2OHpqOTc4dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Fl7K2cgGi8K6Q/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "UL7vDMUJSXRJwlmICi",
+   "user": "disneystudios",
+   "title": "Lilo And Stitch Surfing GIF by Walt Disney Studios",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bWdlanJyYmRqeHNweWd5d3N0MXE2aW45N2N2YmFqYzZkNDRjN3l1cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UL7vDMUJSXRJwlmICi/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/UL7vDMUJSXRJwlmICi/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bWdlanJyYmRqeHNweWd5d3N0MXE2aW45N2N2YmFqYzZkNDRjN3l1cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UL7vDMUJSXRJwlmICi/giphy_s.gif"
+  }
+ },
+ {
+  "n": 14,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "jANPgpES8mFUY",
+   "user": "disney",
+   "title": "GIF by Disney",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2Job212enkzamZqc3FwMTd4Z2lybjd4ZHU5cGF2c2s3NHIzcGc4ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jANPgpES8mFUY/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/jANPgpES8mFUY/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2Job212enkzamZqc3FwMTd4Z2lybjd4ZHU5cGF2c2s3NHIzcGc4ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jANPgpES8mFUY/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "npJ8NTtCAE4Ja",
+   "user": "disney",
+   "title": "walt disney animation studios friendship GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnR4NWtiaHBtN28xNDZxcnFiZGVkdzhkaGxnc3Q1Z2hndzRpbWV1ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/npJ8NTtCAE4Ja/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/npJ8NTtCAE4Ja/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnR4NWtiaHBtN28xNDZxcnFiZGVkdzhkaGxnc3Q1Z2hndzRpbWV1ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/npJ8NTtCAE4Ja/giphy_s.gif"
+  }
+ },
+ {
+  "n": 15,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "1qch1F1fItY2CjYXiZ",
+   "user": "disneystudios",
+   "title": "frozen GIF by Walt Disney Studios",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1a3F5MXc3c2sxaDBiNnVocHFwM3g0dm9uaDc2YXJmOTk3NjNvYzFkZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1qch1F1fItY2CjYXiZ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/1qch1F1fItY2CjYXiZ/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1a3F5MXc3c2sxaDBiNnVocHFwM3g0dm9uaDc2YXJmOTk3NjNvYzFkZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1qch1F1fItY2CjYXiZ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Vg5VCsV161HZGlI95G",
+   "user": "disneystudios",
+   "title": "Disney Animation GIF by Walt Disney Studios",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aDB3eGZwNzNnbjc4NTg0dnFtbXpxeXo5MjI5cHI4amZ1bzJvdTlncyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Vg5VCsV161HZGlI95G/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Vg5VCsV161HZGlI95G/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aDB3eGZwNzNnbjc4NTg0dnFtbXpxeXo5MjI5cHI4amZ1bzJvdTlncyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Vg5VCsV161HZGlI95G/giphy_s.gif"
+  }
+ },
+ {
+  "n": 16,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "0PJVIgvpEEwFdECnie",
+   "user": "disney",
+   "title": "Water Good Job GIF by Disney",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YW15b2RiczJibG9hODlqajR3NWdhd2YxcHBvbHhzNzA4cnRkbmtxMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0PJVIgvpEEwFdECnie/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/0PJVIgvpEEwFdECnie/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YW15b2RiczJibG9hODlqajR3NWdhd2YxcHBvbHhzNzA4cnRkbmtxMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0PJVIgvpEEwFdECnie/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "GGWjnlU12ekhXtKQAx",
+   "user": "trauminsel",
+   "title": "Pig Hello GIF by Trauminsel Reisen",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGlscjdtcGpraHNrbTh5bHpzbHl6b2FtanA4d3BqdnZ2YWF4ZnA0eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GGWjnlU12ekhXtKQAx/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/GGWjnlU12ekhXtKQAx/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGlscjdtcGpraHNrbTh5bHpzbHl6b2FtanA4d3BqdnZ2YWF4ZnA0eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GGWjnlU12ekhXtKQAx/giphy_s.gif"
+  }
+ },
+ {
+  "n": 17,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "vIGwkHlazI3Jqsp5aE",
+   "user": "disneystudios",
+   "title": "Movie Film GIF by Walt Disney Studios",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1bDF5ZXY5Nmg5NzVzMnFiNGt3ZGJ1bmgxbXZzMGluaHFkenY1dHl0YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vIGwkHlazI3Jqsp5aE/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/vIGwkHlazI3Jqsp5aE/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1bDF5ZXY5Nmg5NzVzMnFiNGt3ZGJ1bmgxbXZzMGluaHFkenY1dHl0YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vIGwkHlazI3Jqsp5aE/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "MmhkDTiW6UhCgxrG3g",
+   "user": "disneyplus",
+   "title": "Raya Disney Plus GIF by Disney+",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cG95eTlxdHRzb2FkMTVuaGIzcWtpZnVpcTV2NTkyMTQxanc4dG1mZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MmhkDTiW6UhCgxrG3g/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/MmhkDTiW6UhCgxrG3g/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cG95eTlxdHRzb2FkMTVuaGIzcWtpZnVpcTV2NTkyMTQxanc4dG1mZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MmhkDTiW6UhCgxrG3g/giphy_s.gif"
+  }
+ },
+ {
+  "n": 18,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "tRNiMauFTFgZWZAwRo",
+   "user": "disneyplus",
+   "title": "Disney Plus GIF by Disney+",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2Z2cGV1Z3Zkd2x0MmZobmRpNG9jNGZpeXAxenVuMjU2b3kwOHlmYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tRNiMauFTFgZWZAwRo/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/tRNiMauFTFgZWZAwRo/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2Z2cGV1Z3Zkd2x0MmZobmRpNG9jNGZpeXAxenVuMjU2b3kwOHlmYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tRNiMauFTFgZWZAwRo/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "dP9M7IXdjhlJST7qo4",
+   "user": "disneyonice",
+   "title": "Happy Feld Entertainment GIF by Disney On Ice",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dG55em9wOW1vYjJyNXJ4NjhnYmlpMnY2ZmE2MHpkbWg0bjhubGp3ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dP9M7IXdjhlJST7qo4/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/dP9M7IXdjhlJST7qo4/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dG55em9wOW1vYjJyNXJ4NjhnYmlpMnY2ZmE2MHpkbWg0bjhubGp3ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dP9M7IXdjhlJST7qo4/giphy_s.gif"
+  }
+ },
+ {
+  "n": 19,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "fmGal3W3PNhHa",
+   "user": "disneypixar",
+   "title": "logo pixar gif GIF by Disney Pixar",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NGZhaWF2OHp4ZWhpdWl3bnV6Zmxwa2t6eGZiNHUxNmFrMjc0YTM4ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fmGal3W3PNhHa/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/fmGal3W3PNhHa/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NGZhaWF2OHp4ZWhpdWl3bnV6Zmxwa2t6eGZiNHUxNmFrMjc0YTM4ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fmGal3W3PNhHa/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Iq1jUmodST6yg7rY9F",
+   "user": "disney",
+   "title": "Toy Story Goodbye GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1b2NpdzNoeDUzY284ZjJ5NXdtcWZ6ZWFnam96M2U5eG02YnBtajRhZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Iq1jUmodST6yg7rY9F/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Iq1jUmodST6yg7rY9F/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1b2NpdzNoeDUzY284ZjJ5NXdtcWZ6ZWFnam96M2U5eG02YnBtajRhZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Iq1jUmodST6yg7rY9F/giphy_s.gif"
+  }
+ },
+ {
+  "n": 20,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "wbUN79XuaSV6zyB4l3",
+   "user": "disney",
+   "title": "Toy Story Laughing GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dXg1a2w5MXlpcnJhZ3FoZjU3ZWhoOWM3eWFqeXZxaXVmaDVneTI3YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wbUN79XuaSV6zyB4l3/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/wbUN79XuaSV6zyB4l3/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dXg1a2w5MXlpcnJhZ3FoZjU3ZWhoOWM3eWFqeXZxaXVmaDVneTI3YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wbUN79XuaSV6zyB4l3/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "8xDfNPJ4mJFSg",
+   "user": "disney",
+   "title": "disney pixar bear GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmdrdjVuOGs1MnB5YTgwZ3hnbTEyazRvZ3lyMHI1cXF1NHpoMmN0OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8xDfNPJ4mJFSg/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/8xDfNPJ4mJFSg/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmdrdjVuOGs1MnB5YTgwZ3hnbTEyazRvZ3lyMHI1cXF1NHpoMmN0OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8xDfNPJ4mJFSg/giphy_s.gif"
+  }
+ },
+ {
+  "n": 21,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "JS1Q6Su80jcoo",
+   "user": "disney",
+   "title": "Disney Pixar Ocean GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmZqenVlNG5wM3FoaTI5Y3UyaDRtN24xaHN0OTB0azEydGNmOTk3byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JS1Q6Su80jcoo/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/JS1Q6Su80jcoo/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmZqenVlNG5wM3FoaTI5Y3UyaDRtN24xaHN0OTB0azEydGNmOTk3byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JS1Q6Su80jcoo/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "w18EDi2pjK7nO",
+   "user": "disneypixar",
+   "title": "finding dory pixar gif GIF by Disney Pixar",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXNncGlxMm44dG1mODYxeTVpcGFvZ3A0eXVrMGJzOWVnM3U0OWlzZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/w18EDi2pjK7nO/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/w18EDi2pjK7nO/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXNncGlxMm44dG1mODYxeTVpcGFvZ3A0eXVrMGJzOWVnM3U0OWlzZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/w18EDi2pjK7nO/giphy_s.gif"
+  }
+ },
+ {
+  "n": 22,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "JHkyBMp6tzceQ",
+   "user": "disneypixar",
+   "title": "Cant Even Over It GIF by Disney Pixar",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZGZyZGZvaXpiOXh6dmhpMjRkcnJ2bmdzaWNkenV2dGJja29uaHI1ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JHkyBMp6tzceQ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/JHkyBMp6tzceQ/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZGZyZGZvaXpiOXh6dmhpMjRkcnJ2bmdzaWNkenV2dGJja29uaHI1ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JHkyBMp6tzceQ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "W5C6fHXWBd2gLtZdE6",
+   "user": "parkerpup",
+   "title": "Disney Pixar GIF",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2loMmV5a3NxYmhjeHN2Ynh4YjNjOTN3Y3h1dmhreThyM284Yms0aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W5C6fHXWBd2gLtZdE6/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/W5C6fHXWBd2gLtZdE6/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2loMmV5a3NxYmhjeHN2Ynh4YjNjOTN3Y3h1dmhreThyM284Yms0aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W5C6fHXWBd2gLtZdE6/giphy_s.gif"
+  }
+ },
+ {
+  "n": 23,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "s3qCaXmFQqJsQ",
+   "user": "disneypixar",
+   "title": "Monsters Inc Fainting GIF by Disney Pixar",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1OGh3cnc0cXFqMGFjcThjeDlkczV6emYyemgxNHNsbTZtb3JiYXo3YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s3qCaXmFQqJsQ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/s3qCaXmFQqJsQ/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1OGh3cnc0cXFqMGFjcThjeDlkczV6emYyemgxNHNsbTZtb3JiYXo3YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s3qCaXmFQqJsQ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "rWRAw6cbaWWDS",
+   "user": "disneypixar",
+   "title": "Monsters Inc Monster GIF by Disney Pixar",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1MjYyZDFwdDUyanExenFpNjQxdHc2dnY5cnAyMXZ3YXRlZG1vcm1vaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/rWRAw6cbaWWDS/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/rWRAw6cbaWWDS/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1MjYyZDFwdDUyanExenFpNjQxdHc2dnY5cnAyMXZ3YXRlZG1vcm1vaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/rWRAw6cbaWWDS/giphy_s.gif"
+  }
+ },
+ {
+  "n": 24,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "9LWa9QQR8W3uOjGDV7",
+   "user": "disneystudios",
+   "title": "the incredibles pixar GIF by Walt Disney Studios",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1a3V4cmJieGxkNmVmb2Fja3hlMmh2Nmd5YXV0cGY2OHduMWw5c3d6aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9LWa9QQR8W3uOjGDV7/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/9LWa9QQR8W3uOjGDV7/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1a3V4cmJieGxkNmVmb2Fja3hlMmh2Nmd5YXV0cGY2OHduMWw5c3d6aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9LWa9QQR8W3uOjGDV7/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "cnlQghfDPdBy8",
+   "user": "disneypixar",
+   "title": "the incredibles edna GIF by Disney Pixar",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YW11eXJqZmR4dTMwaHJ6MWV2czloc2FvOHZjdm55M293MDdjaDdiZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cnlQghfDPdBy8/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/cnlQghfDPdBy8/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YW11eXJqZmR4dTMwaHJ6MWV2czloc2FvOHZjdm55M293MDdjaDdiZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cnlQghfDPdBy8/giphy_s.gif"
+  }
+ },
+ {
+  "n": 25,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "wNDa1OZtvl6Fi",
+   "user": "disney",
+   "title": "disney pixar ratatouille GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZjBlNm1oN2ZuMnN5Zmx6Mmc4YnAxcGl6dDJiZWtxNWxxZ2w5anFmdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/wNDa1OZtvl6Fi/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZjBlNm1oN2ZuMnN5Zmx6Mmc4YnAxcGl6dDJiZWtxNWxxZ2w5anFmdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy_s.gif"
+  }
+ },
+ {
+  "n": 26,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "cT0VoNhjCf1rG",
+   "user": "disneypixar",
+   "title": "animation film GIF by Disney Pixar",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z20zYmJ5MzlhajFuZHRqdndxODN2bWV4anFqODVhcW56b3NqeWdjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cT0VoNhjCf1rG/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/cT0VoNhjCf1rG/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z20zYmJ5MzlhajFuZHRqdndxODN2bWV4anFqODVhcW56b3NqeWdjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cT0VoNhjCf1rG/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Fdsxpt2wIlKtG",
+   "user": "disneypixar",
+   "title": "wall e love GIF by Disney Pixar",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bnZuMmlhYXF5Z3Y4aml2cjQ2eG42azdpMWRkanVnaXBvcmo3cXF5bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Fdsxpt2wIlKtG/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Fdsxpt2wIlKtG/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bnZuMmlhYXF5Z3Y4aml2cjQ2eG42azdpMWRkanVnaXBvcmo3cXF5bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Fdsxpt2wIlKtG/giphy_s.gif"
+  }
+ },
+ {
+  "n": 27,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "B1CrvUCoMxhy8",
+   "user": "disneypixar",
+   "title": "Lightning Mcqueen Car GIF by Disney Pixar",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZTcyYWJ1enozYmNtM3cyamQ4NHVzM29xcGoxNG9rbGR6NDRnNjQwbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B1CrvUCoMxhy8/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/B1CrvUCoMxhy8/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZTcyYWJ1enozYmNtM3cyamQ4NHVzM29xcGoxNG9rbGR6NDRnNjQwbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B1CrvUCoMxhy8/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "euViOMMZk8W76",
+   "user": "disneypixar",
+   "title": "GIF by Disney Pixar",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1enpsNzlzN2c5YmR2N2ZrM3ZkOWdmZHdlOGVrNzBjbHJtNjlrMXB2diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/euViOMMZk8W76/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/euViOMMZk8W76/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1enpsNzlzN2c5YmR2N2ZrM3ZkOWdmZHdlOGVrNzBjbHJtNjlrMXB2diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/euViOMMZk8W76/giphy_s.gif"
+  }
+ },
+ {
+  "n": 28,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "MCL6prm5SIeuFb91xZ",
+   "user": "disneyplus",
+   "title": "Disney Pixar GIF by Disney+",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmVtNWpma21tZmpibTc3Z3lkYWF1cGYxMmk2Ymx6cDk0NzFodHhrNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MCL6prm5SIeuFb91xZ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/MCL6prm5SIeuFb91xZ/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmVtNWpma21tZmpibTc3Z3lkYWF1cGYxMmk2Ymx6cDk0NzFodHhrNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MCL6prm5SIeuFb91xZ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "jpuY4XbAu0viI7oDx7",
+   "user": "disneyplus",
+   "title": "Disney Pixar GIF by Disney+",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YTV2a2Q3cmJ5eTBqZGI0bGpyYTlkem13bXdmanE2djN2cmJ0OG5vNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jpuY4XbAu0viI7oDx7/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/jpuY4XbAu0viI7oDx7/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YTV2a2Q3cmJ5eTBqZGI0bGpyYTlkem13bXdmanE2djN2cmJ0OG5vNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jpuY4XbAu0viI7oDx7/giphy_s.gif"
+  }
+ },
+ {
+  "n": 29,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Azuq3cwCUV7os",
+   "user": "disney",
+   "title": "Judy Hopps Lol GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1eTcxZzE5d2FvdmQzZG12anZ5MnU2bzVpNDZmdjlsNGI0ZWtpa3VoayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Azuq3cwCUV7os/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Azuq3cwCUV7os/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1eTcxZzE5d2FvdmQzZG12anZ5MnU2bzVpNDZmdjlsNGI0ZWtpa3VoayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Azuq3cwCUV7os/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "1xkMJIvxeKiDS",
+   "user": "disney",
+   "title": "bunny lol GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2t2bXp4Z2trNnN4cXNmbDVpMXMxY2YyN3Q0ZDBhbmI3bDVvdDZuciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1xkMJIvxeKiDS/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/1xkMJIvxeKiDS/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2t2bXp4Z2trNnN4cXNmbDVpMXMxY2YyN3Q0ZDBhbmI3bDVvdDZuciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1xkMJIvxeKiDS/giphy_s.gif"
+  }
+ },
+ {
+  "n": 30,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "vVGzlimI9KAOQ",
+   "user": "disney",
+   "title": "Big Hero 6 Hug GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cGl2cW53M2IwdXpldnZwcGhrOWplMnJua2luaW93enByeGc4ajlldiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vVGzlimI9KAOQ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/vVGzlimI9KAOQ/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cGl2cW53M2IwdXpldnZwcGhrOWplMnJua2luaW93enByeGc4ajlldiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vVGzlimI9KAOQ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "LO3eXdAocudz2",
+   "user": "disneyanimation",
+   "title": "big hero 6 fred GIF by Walt Disney Animation Studios",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHgybXA0ZGdybWQ3bnIxdThtcnpteDFrNDFybHR4cWh2c20zb3F4OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LO3eXdAocudz2/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/LO3eXdAocudz2/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aHgybXA0ZGdybWQ3bnIxdThtcnpteDFrNDFybHR4cWh2c20zb3F4OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LO3eXdAocudz2/giphy_s.gif"
+  }
+ },
+ {
+  "n": 31,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "WsniBzqbaDn1Grz3se",
+   "user": "disneyplus",
+   "title": "Gold Medal Smirk GIF by Disney+",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zzcwc3FjbzhiNTFrbXA0NDhwcGUxNmNsN3Nha3ZxNzFsMTI5MjhyaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WsniBzqbaDn1Grz3se/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/WsniBzqbaDn1Grz3se/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zzcwc3FjbzhiNTFrbXA0NDhwcGUxNmNsN3Nha3ZxNzFsMTI5MjhyaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WsniBzqbaDn1Grz3se/giphy_s.gif"
+  }
+ },
+ {
+  "n": 32,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "fFzwuKdBtRO9aWXNQW",
+   "user": "disney",
+   "title": "I Love You Heart GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1b3VxcXprbWt2aGFhZ3dlYnZ5N2MyOWRweGdnNWF4OGY1dzRoODFvZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fFzwuKdBtRO9aWXNQW/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/fFzwuKdBtRO9aWXNQW/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1b3VxcXprbWt2aGFhZ3dlYnZ5N2MyOWRweGdnNWF4OGY1dzRoODFvZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fFzwuKdBtRO9aWXNQW/giphy_s.gif"
+  }
+ },
+ {
+  "n": 33,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "ONojtlI89zzu6YQDHZ",
+   "user": "disney",
+   "title": "Princess Merida GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1anFmaGI3eGF3c3hocDc2YjhzdHZwOXQweHAxaW96aTlzNXk2cmVkdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ONojtlI89zzu6YQDHZ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/ONojtlI89zzu6YQDHZ/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1anFmaGI3eGF3c3hocDc2YjhzdHZwOXQweHAxaW96aTlzNXk2cmVkdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ONojtlI89zzu6YQDHZ/giphy_s.gif"
+  }
+ },
+ {
+  "n": 34,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "26gsclwvSJNZ2TrRS",
+   "user": "oscars",
+   "title": "oscars GIF by The Academy Awards",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZTJ2dmZidGxra3UwbGt1Z3VjOWd4dzhqanhuZmQ4b2N2NTltNGZxMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26gsclwvSJNZ2TrRS/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/26gsclwvSJNZ2TrRS/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZTJ2dmZidGxra3UwbGt1Z3VjOWd4dzhqanhuZmQ4b2N2NTltNGZxMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26gsclwvSJNZ2TrRS/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "kW12R0mPFuiVG",
+   "user": "disney",
+   "title": "beauty and the beast ballroom GIF by Disney",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHZvcjNreXVrNW11MnJscDJhb2JtYWdsMTk1Mml6bDl0ZjNlcXFlYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kW12R0mPFuiVG/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/kW12R0mPFuiVG/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHZvcjNreXVrNW11MnJscDJhb2JtYWdsMTk1Mml6bDl0ZjNlcXFlYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kW12R0mPFuiVG/giphy_s.gif"
+  }
+ },
+ {
+  "n": 35,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "CTIIyOTFjXZ0BOsE3I",
+   "user": "disneyplus",
+   "title": "Flex Muscle GIF by Disney+",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWN6cTZjd3pnNXh6ams0a3pmZ3U0d2tyZDdteXRla2FwMzdxaTNlNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CTIIyOTFjXZ0BOsE3I/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/CTIIyOTFjXZ0BOsE3I/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWN6cTZjd3pnNXh6ams0a3pmZ3U0d2tyZDdteXRla2FwMzdxaTNlNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CTIIyOTFjXZ0BOsE3I/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "8OpVoc3ZMk1mE",
+   "user": "disney",
+   "title": "walt disney animation studios dance GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1MnYxYmN6aHAza2wzZmhucWJxN3ZpZ3d6aHhoeWF6N2g0aTU2a2E2ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8OpVoc3ZMk1mE/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/8OpVoc3ZMk1mE/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1MnYxYmN6aHAza2wzZmhucWJxN3ZpZ3d6aHhoeWF6N2g0aTU2a2E2ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8OpVoc3ZMk1mE/giphy_s.gif"
+  }
+ },
+ {
+  "n": 36,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Y4cmZ07Z99vO0",
+   "user": "disney",
+   "title": "the hunchback of notre dame inspiration GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1N3BvZ3B0NHR0OG5jNzVvMWlnaGpybnZ5ano0djFmZXI1dm81bjQ4ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y4cmZ07Z99vO0/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Y4cmZ07Z99vO0/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1N3BvZ3B0NHR0OG5jNzVvMWlnaGpybnZ5ano0djFmZXI1dm81bjQ4ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y4cmZ07Z99vO0/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "QVma1aqsJDvjCbNlCM",
+   "user": "disneyplus",
+   "title": "Disney Afternoon GIF by Disney+",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTd5cGdrdjJrNDMycXczdTNyeG84MzAxaWw1cTVodjJ2OXBlZHA5bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QVma1aqsJDvjCbNlCM/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/QVma1aqsJDvjCbNlCM/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTd5cGdrdjJrNDMycXczdTNyeG84MzAxaWw1cTVodjJ2OXBlZHA5bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QVma1aqsJDvjCbNlCM/giphy_s.gif"
+  }
+ },
+ {
+  "n": 37,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "w166m9QsCzvSE",
+   "user": "disney",
+   "title": "disney princess love GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mmk0OWg0N3RoZzd4YXAwY3p1d3BhNGh1cTFwa2M2OWl2OW9ld3dhYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/w166m9QsCzvSE/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/w166m9QsCzvSE/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mmk0OWg0N3RoZzd4YXAwY3p1d3BhNGh1cTFwa2M2OWl2OW9ld3dhYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/w166m9QsCzvSE/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "SV8c9Pli18bza",
+   "user": "disney",
+   "title": "raccoon snacktime GIF by Disney",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZmljaTZ4c2IzcWtubmhiODh1eG1zYmh5bXYzbnM1ZXhiZnFpdDIzYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SV8c9Pli18bza/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/SV8c9Pli18bza/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZmljaTZ4c2IzcWtubmhiODh1eG1zYmh5bXYzbnM1ZXhiZnFpdDIzYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SV8c9Pli18bza/giphy_s.gif"
+  }
+ },
+ {
+  "n": 38,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "2LMSyE8Sw5cnC",
+   "user": "disney",
+   "title": "peter pan animation GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXNlMWR2dWR4Y242YzIydDgxY2xidWE4eXUxbmptMDN2d2kxNnFtdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2LMSyE8Sw5cnC/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/2LMSyE8Sw5cnC/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXNlMWR2dWR4Y242YzIydDgxY2xidWE4eXUxbmptMDN2d2kxNnFtdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2LMSyE8Sw5cnC/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "UrdTBMD5m9TVu",
+   "user": "disney",
+   "title": "Peter Pan Animation GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHhuN3p3aGltMjA5Y3ZqbDhjcWY3YTdsdmgxejZ4aGlpdnZtZTNqaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UrdTBMD5m9TVu/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/UrdTBMD5m9TVu/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHhuN3p3aGltMjA5Y3ZqbDhjcWY3YTdsdmgxejZ4aGlpdnZtZTNqaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UrdTBMD5m9TVu/giphy_s.gif"
+  }
+ },
+ {
+  "n": 39,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "3jypLWJySKjw4",
+   "user": "disney",
+   "title": "Classic Disney Deer GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MG5odm43enQwemI3b3M1aTY5MnVvMjZod3Brcm1zbHA0dXpkOGM1aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3jypLWJySKjw4/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/3jypLWJySKjw4/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MG5odm43enQwemI3b3M1aTY5MnVvMjZod3Brcm1zbHA0dXpkOGM1aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3jypLWJySKjw4/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "P51nsK97xCczm",
+   "user": "disney",
+   "title": "animation flower GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2c3dG82enI3ZmFsbGpibTM3czN1ZzN5MTk1bTRvZGsxMjF3ODF2NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/P51nsK97xCczm/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/P51nsK97xCczm/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2c3dG82enI3ZmFsbGpibTM3czN1ZzN5MTk1bTRvZGsxMjF3ODF2NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/P51nsK97xCczm/giphy_s.gif"
+  }
+ },
+ {
+  "n": 40,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "HVa6dxpbXGnkc",
+   "user": "disney",
+   "title": "Mothers Day Mom GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dXNwczFyY2Q1ZjBucjI1cTF0czkxNjNlY2Fnd3U3c3piYjJscjF5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HVa6dxpbXGnkc/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/HVa6dxpbXGnkc/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dXNwczFyY2Q1ZjBucjI1cTF0czkxNjNlY2Fnd3U3c3piYjJscjF5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HVa6dxpbXGnkc/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "PVE9gMrs450vC",
+   "user": "",
+   "title": "timothy q mouse disney GIF",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWNva3liczczZzR0ZzZxeXZ6enM5MGJzY3o0eHd0OWN3ZGpydmJzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PVE9gMrs450vC/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/PVE9gMrs450vC/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWNva3liczczZzR0ZzZxeXZ6enM5MGJzY3o0eHd0OWN3ZGpydmJzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PVE9gMrs450vC/giphy_s.gif"
+  }
+ },
+ {
+  "n": 41,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "4bB0aawjHpFQY",
+   "user": "disney",
+   "title": "donald duck lol GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NXk2Nng1ZHdwcWpqMDVpNXpzdG82cWJnNXlkaXo5cGhiaW52am4xaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4bB0aawjHpFQY/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/4bB0aawjHpFQY/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NXk2Nng1ZHdwcWpqMDVpNXpzdG82cWJnNXlkaXo5cGhiaW52am4xaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4bB0aawjHpFQY/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "lGPObE9bvo0EwzBwhL",
+   "user": "disneyplus",
+   "title": "Chip N Dale Smile GIF by Disney+",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zzd1NHRzZm4zbTVibm9jYnNzZzVyaXk4a2dtN2k0cmozczBhdGFxMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lGPObE9bvo0EwzBwhL/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/lGPObE9bvo0EwzBwhL/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zzd1NHRzZm4zbTVibm9jYnNzZzVyaXk4a2dtN2k0cmozczBhdGFxMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lGPObE9bvo0EwzBwhL/giphy_s.gif"
+  }
+ },
+ {
+  "n": 42,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "2wKbtCMHTVoOY",
+   "user": "",
+   "title": "A Goofy Movie Reaction GIF",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eWNqdWczM2hlOXBraGhvamY0aDUxMGk0eHZ5NzU0a3d3YjZxYjNnaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2wKbtCMHTVoOY/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/2wKbtCMHTVoOY/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eWNqdWczM2hlOXBraGhvamY0aDUxMGk0eHZ5NzU0a3d3YjZxYjNnaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2wKbtCMHTVoOY/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "7C0nKlgKZyTDO",
+   "user": "",
+   "title": "stand out goofy movie GIF",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1am5qYWIwY3VhMjBvN3ZyNHNpcHo4cmQzbjMzZGRydzBmdjVyb2oweCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7C0nKlgKZyTDO/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/7C0nKlgKZyTDO/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1am5qYWIwY3VhMjBvN3ZyNHNpcHo4cmQzbjMzZGRydzBmdjVyb2oweCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7C0nKlgKZyTDO/giphy_s.gif"
+  }
+ },
+ {
+  "n": 43,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "EZELNssmfIzni",
+   "user": "disney",
+   "title": "Alice In Wonderland Party GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1YWduYmVtZHRsNWZ4YzdqbDNtMHE1ZXJxajB3ZHhqeml4bTQyZTVhdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EZELNssmfIzni/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/EZELNssmfIzni/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1YWduYmVtZHRsNWZ4YzdqbDNtMHE1ZXJxajB3ZHhqeml4bTQyZTVhdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EZELNssmfIzni/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "PnAv1bUc15znfDES24",
+   "user": "disney",
+   "title": "Alice In Wonderland Cheers GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnJzYXNjZTA3azJ6cXpnZG9jdHExaXlrd3J4aHJvZnowdjR3Z2xmZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PnAv1bUc15znfDES24/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/PnAv1bUc15znfDES24/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnJzYXNjZTA3azJ6cXpnZG9jdHExaXlrd3J4aHJvZnowdjR3Z2xmZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PnAv1bUc15znfDES24/giphy_s.gif"
+  }
+ },
+ {
+  "n": 44,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "13FD3rp8IqYUXm",
+   "user": "disney",
+   "title": "Walt Disney Animation Studios Laugh GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zm8ydmkzNmpuem9pMnE3Zmd5Mm4zNzVobHFoODZ4ajQ5azJkZGJ2ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13FD3rp8IqYUXm/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/13FD3rp8IqYUXm/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zm8ydmkzNmpuem9pMnE3Zmd5Mm4zNzVobHFoODZ4ajQ5azJkZGJ2ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13FD3rp8IqYUXm/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "vXZ64WLzTCUOUZLtht",
+   "user": "notaxuaxi",
+   "title": "Parrot GIF",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1am1vZjNsb2owNG10cHI1MnRkb2VvOWN2OWY4ODB3NXNpMTR3M2hvdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vXZ64WLzTCUOUZLtht/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/vXZ64WLzTCUOUZLtht/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1am1vZjNsb2owNG10cHI1MnRkb2VvOWN2OWY4ODB3NXNpMTR3M2hvdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vXZ64WLzTCUOUZLtht/giphy_s.gif"
+  }
+ },
+ {
+  "n": 45,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "ruEHx9JgxTqPC",
+   "user": "disney",
+   "title": "Beauty And The Beast Spin GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cm0xanZpdXdsZGo4Nml0bzVpbHZ4ZnhrNWprdnhwbGxpamRvY2F0ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ruEHx9JgxTqPC/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/ruEHx9JgxTqPC/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cm0xanZpdXdsZGo4Nml0bzVpbHZ4ZnhrNWprdnhwbGxpamRvY2F0ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ruEHx9JgxTqPC/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "v0Qq2RZrS7DTNBFUNY",
+   "user": "disney",
+   "title": "Beauty And The Beast Hooray GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ejljY3g2MmUza2Nqam93aGs4NjB6amV0ZWtmbTV3Mzg2dHdwNTRxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/v0Qq2RZrS7DTNBFUNY/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/v0Qq2RZrS7DTNBFUNY/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ejljY3g2MmUza2Nqam93aGs4NjB6amV0ZWtmbTV3Mzg2dHdwNTRxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/v0Qq2RZrS7DTNBFUNY/giphy_s.gif"
+  }
+ },
+ {
+  "n": 46,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "jP8FwQeywl0PG4nrmr",
+   "user": "disney",
+   "title": "Tired Princess Aurora GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1djR1ZXJrdG1vdGJhemNwOHlpd3Qwa3Azb2Q4ejZ1Z2tpaXYxYTM2NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jP8FwQeywl0PG4nrmr/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/jP8FwQeywl0PG4nrmr/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1djR1ZXJrdG1vdGJhemNwOHlpd3Qwa3Azb2Q4ejZ1Z2tpaXYxYTM2NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jP8FwQeywl0PG4nrmr/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "irXOwdP3CQ9WM",
+   "user": "disney",
+   "title": "angelina jolie film GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mm92YXk3cWFud3hlNDNjcHYxZzF2YnZub2gzMHJxOXBrN3VxNWxtYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/irXOwdP3CQ9WM/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/irXOwdP3CQ9WM/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mm92YXk3cWFud3hlNDNjcHYxZzF2YnZub2gzMHJxOXBrN3VxNWxtYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/irXOwdP3CQ9WM/giphy_s.gif"
+  }
+ },
+ {
+  "n": 47,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Cm9cwPDTXLPDG",
+   "user": "disney",
+   "title": "snow white song GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZnA2MzV0c3U2NXNlNjgwYnQzbDhoc3d6cXY4cWc3d2piZGtua2o3OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Cm9cwPDTXLPDG/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Cm9cwPDTXLPDG/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZnA2MzV0c3U2NXNlNjgwYnQzbDhoc3d6cXY4cWc3d2piZGtua2o3OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Cm9cwPDTXLPDG/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "ykUYsNYRvrprq",
+   "user": "disney",
+   "title": "The Jungle Book Dancing GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1czJ4cDQ3cXJmbnU5aDN0YWFlZ2MwZW10cWcyeGk5b3Q2a2w2bWo2YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ykUYsNYRvrprq/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/ykUYsNYRvrprq/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1czJ4cDQ3cXJmbnU5aDN0YWFlZ2MwZW10cWcyeGk5b3Q2a2w2bWo2YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ykUYsNYRvrprq/giphy_s.gif"
+  }
+ },
+ {
+  "n": 48,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "Acfgbm04rHWsawoRrZ",
+   "user": "disney",
+   "title": "I Am Here GIF by Disney",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dmRudDM4c3AxYnljdzJ0MG13ZThkZnc5NmJ6MmxzZDNuMTg4Zm96NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Acfgbm04rHWsawoRrZ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/Acfgbm04rHWsawoRrZ/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dmRudDM4c3AxYnljdzJ0MG13ZThkZnc5NmJ6MmxzZDNuMTg4Zm96NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Acfgbm04rHWsawoRrZ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "zWK7WneTg3aV2eVM40",
+   "user": "disney",
+   "title": "Movie Theater Popcorn GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z3YwdG9xZjYzZWxucXNwcTVmZHg3bTZ1NDlydGdiMWRjODNsN2VwMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zWK7WneTg3aV2eVM40/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/zWK7WneTg3aV2eVM40/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z3YwdG9xZjYzZWxucXNwcTVmZHg3bTZ1NDlydGdiMWRjODNsN2VwMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zWK7WneTg3aV2eVM40/giphy_s.gif"
+  }
+ },
+ {
+  "n": 49,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "gD7PbhbmVsw1i",
+   "user": "disney",
+   "title": "disney pixar trailer GIF by Disney",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cWt5ZGdoMHZscmxqdmgzem45N2ZxNjh6NW00cTJ5Yzh0aTVra2Z3OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gD7PbhbmVsw1i/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/gD7PbhbmVsw1i/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cWt5ZGdoMHZscmxqdmgzem45N2ZxNjh6NW00cTJ5Yzh0aTVra2Z3OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gD7PbhbmVsw1i/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "avvZ3Y5ucf09a",
+   "user": "disneypixar",
+   "title": "inside out sadness GIF by Disney Pixar",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1azJocjk1emw5MW5vd2ptZm5pYnEyMjV3YnV6Y3h3dHpwanI5dzF0ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/avvZ3Y5ucf09a/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/avvZ3Y5ucf09a/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1azJocjk1emw5MW5vd2ptZm5pYnEyMjV3YnV6Y3h3dHpwanI5dzF0ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/avvZ3Y5ucf09a/giphy_s.gif"
+  }
+ },
+ {
+  "n": 50,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "U7L2cb7zrq2aQZxFTN",
+   "user": "disneystudios",
+   "title": "toy story 4 crash GIF by Walt Disney Studios",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MHRlamg4ZHkyb3FhMjN2a2x5ajZsNWUyaTM3bjAwY2lucDhob3k5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U7L2cb7zrq2aQZxFTN/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/U7L2cb7zrq2aQZxFTN/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MHRlamg4ZHkyb3FhMjN2a2x5ajZsNWUyaTM3bjAwY2lucDhob3k5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U7L2cb7zrq2aQZxFTN/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "flhHZsO9Iy4g0",
+   "user": "disney",
+   "title": "Toy Story Food GIF by Disney",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dTMweTQ3bGlyeXdtZXVtMWI5d215c3V6ZHNoeWxxeWZ0bXR6eHNxdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/flhHZsO9Iy4g0/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/flhHZsO9Iy4g0/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dTMweTQ3bGlyeXdtZXVtMWI5d215c3V6ZHNoeWxxeWZ0bXR6eHNxdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/flhHZsO9Iy4g0/giphy_s.gif"
+  }
+ }
 ]
