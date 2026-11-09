@@ -312,6 +312,15 @@
     "questions": {
       "decision": "auto-approved",
       "note": "Giulia, 6 Nov 2026: no approval stops; fully automated. Fact-checked by Claude when written."
+    },
+    "video": {
+      "decision": "approved",
+      "by": "Claude (automated, per Giulia)",
+      "date": "2026-11-09",
+      "evidence": "Giulia, 6 Nov 2026: no approval stops; upload and schedule without manual intervention. Build video run 42581862297 succeeded: 4K 3840x2160, 932.7 s, 50 question and 50 answer segments, voice -20.1 dB RMS, music -35.8 dB, peak -0.3 dB; one minor warning (outro line starts 0.2 s late). Claude spot-checked frames at the intro, Q21 question/answer, Q50 and outro.",
+      "source_commit": "7c770cb",
+      "duration_s": 932.73,
+      "release_tag": "quiz-10-preview-11"
     }
   }
 }
