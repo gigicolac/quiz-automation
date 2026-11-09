@@ -1,0 +1,106 @@
+name: Shorts
+# Cut a quiz's Shorts from its final video and (mode=upload) upload them privately, then schedule them
+# at 8am and 6pm US Eastern, at least 24 hours after upload (rain-sounds pattern). Record: quizzes/<quiz>/shorts-upload.json.
+on:
+  # a commit that changes quizzes/<quiz>/shorts-request.json ({"mode": "upload", "only": "2,3"}) on a branch also runs it
+  push:
+    branches-ignore: [main]
+    paths: ["quizzes/*/shorts-request.json"]
+  workflow_dispatch:
+    inputs:
+      quiz:
+        description: "Quiz folder, e.g. quiz-09"
+        required: true
+      mode:
+        description: "preview = make the Shorts and show the titles only; upload = upload and schedule"
+        type: choice
+        options: [preview, upload, retitle]
+        default: preview
+      only:
+        description: "Short numbers to make, e.g. 2,3,4,5,6,7 (blank = all not already uploaded)"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+jobs:
+  shorts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Which quiz
+        env:
+          IN_QUIZ: ${{ inputs.quiz }}
+          IN_MODE: ${{ inputs.mode }}
+          IN_ONLY: ${{ inputs.only }}
+        run: |
+          if [ "${{ github.event_name }}" = push ]; then
+            f=$(git diff --name-only HEAD~1 HEAD -- 'quizzes/*/shorts-request.json' | head -1)
+            q=$(basename "$(dirname "$f")")
+            { echo "QUIZ=$q"; echo "MODE=$(jq -r '.mode // "preview"' "$f")"; echo "ONLY=$(jq -r '.only // ""' "$f")"; } >> "$GITHUB_ENV"
+          else
+            { echo "QUIZ=$IN_QUIZ"; echo "MODE=$IN_MODE"; echo "ONLY=$IN_ONLY"; } >> "$GITHUB_ENV"
+          fi
+
+      - name: Fonts and tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-color-emoji ffmpeg >/dev/null
+          sudo mkdir -p /usr/share/fonts/truetype/google-fonts
+          sudo curl -fsSL -o /usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf \
+            https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf
+          pip install -q pillow==11.0.0
+
+      - name: Download the final video
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          case "$QUIZ" in ""|*/*|*..*) echo "Invalid quiz folder"; exit 1;; esac
+          tag=$(jq -r '.review.video.release_tag' "quizzes/$QUIZ/quiz.json")
+          d="$RUNNER_TEMP/build"; mkdir -p "$d"
+          gh release download "$tag" -D "$d" -p "$QUIZ.mp4" -p "$QUIZ.srt" -p build_report.json
+          for t in $(jq -r '[.review.video.release_tag] + [.review.video.history[]?.release_tag] | .[] | select(. != null)' "quizzes/$QUIZ/quiz.json"); do
+            gh release download "$t" -D "$d" -p thumbnail-a.jpg 2>/dev/null && break
+          done
+          echo "TAG=$tag" >> "$GITHUB_ENV"; ls -la "$d"
+
+      - name: Make Shorts
+        if: env.MODE != 'retitle'
+        run: |
+          d="$RUNNER_TEMP/build"
+          python3 scripts/make_shorts.py --video "$d/$QUIZ.mp4" --report "$d/build_report.json" \
+            --captions "$d/$QUIZ.srt" --quiz "quizzes/$QUIZ/quiz.json" --out "$RUNNER_TEMP/shorts" ${ONLY:+--only "$ONLY"}
+          ls -la "$RUNNER_TEMP/shorts"
+
+      - name: Keep the Shorts on the build's draft release
+        if: env.MODE != 'retitle'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$TAG" "$RUNNER_TEMP"/shorts/*.mp4 --clobber
+
+      - name: Upload and schedule
+        env:
+          YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          thumb=""; [ -f "$RUNNER_TEMP/build/thumbnail-a.jpg" ] && thumb="$RUNNER_TEMP/build/thumbnail-a.jpg"
+          python3 scripts/upload_shorts.py --quiz "quizzes/$QUIZ" --dir "$RUNNER_TEMP/shorts" \
+            ${thumb:+--thumbnail "$thumb"} --mode "$MODE" | tee "$RUNNER_TEMP/shorts-plan.json"
+          { echo "## $QUIZ Shorts: $MODE"; echo '```json'; cat "$RUNNER_TEMP/shorts-plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Record result
+        if: always() && (env.MODE == 'upload' || env.MODE == 'retitle')
+        run: |
+          f="quizzes/$QUIZ/shorts-upload.json"
+          [ -f "$f" ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git commit -m "Shorts upload record for $QUIZ" || exit 0
+          git pull --rebase -q origin "$GITHUB_REF_NAME"
+          git push -q origin "HEAD:$GITHUB_REF_NAME"
