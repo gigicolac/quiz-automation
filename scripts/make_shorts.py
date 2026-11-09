@@ -219,7 +219,11 @@ def main():
         srt = out / f"{quiz['id']}-short-{gi}.srt"
         srt.write_text("\n".join(f"{i}\n{ts(a)} --> {ts(b)}\n{t}\n" for i, (a, b, t) in enumerate(subs, 1)),
                        encoding="utf-8")
-        made.append({"short": gi, "file": final.name, "captions": srt.name, "questions": qs, "hook": hook})
+        # thumbnail: a frame of the first question (hook header, question card and timer), like Giulia's Short 1
+        thumb = out / f"{quiz['id']}-short-{gi}.jpg"
+        run("-ss", "3", "-i", final, "-frames:v", "1", "-q:v", "3", thumb)
+        made.append({"short": gi, "file": final.name, "captions": srt.name, "thumbnail": thumb.name,
+                     "questions": qs, "hook": hook})
     (out / "shorts.json").write_text(json.dumps(made, indent=2, ensure_ascii=False))
     print(json.dumps(made, indent=2, ensure_ascii=False))
 

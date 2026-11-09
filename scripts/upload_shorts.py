@@ -2,7 +2,7 @@
 """Upload a quiz's Shorts and schedule them twice a day (rain-sounds release pattern, like the long videos).
 
 For each Short made by make_shorts.py (shorts.json in --dir) that isn't done yet:
-  upload private with no publishAt -> captions -> thumbnail (same as the full quiz) -> wait for processing
+  upload private with no publishAt -> captions -> thumbnail (a frame of the Short's first question, like Short 1) -> wait for processing
   -> schedule to the next free Shorts slot (config/shorts.json times, US Eastern) that is at least
      minimum_lead_minutes after the upload finished and not taken by any scheduled video on the channel.
 Same settings as the long videos: Education, en-AU, not made for kids, altered/synthetic content No.
@@ -80,7 +80,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--quiz", required=True, help="quizzes/<quiz>")
     ap.add_argument("--dir", required=True, help="folder with make_shorts.py output")
-    ap.add_argument("--thumbnail", help="thumbnail for every Short (the full quiz's thumbnail A)")
+    ap.add_argument("--thumbnail", help="fallback thumbnail if a Short has none of its own")
     ap.add_argument("--mode", choices=["preview", "upload"], default="preview")
     args = ap.parse_args()
 
@@ -128,11 +128,12 @@ def main():
                     {"Content-Type": ctype})
             steps["captions"] = "uploaded"
             save()
-        if "thumbnail" not in steps and args.thumbnail and Path(args.thumbnail).exists():
+        thumb = sdir / m["thumbnail"] if m.get("thumbnail") else (Path(args.thumbnail) if args.thumbnail else None)
+        if "thumbnail" not in steps and thumb and thumb.exists():
             code, _, _ = up.http("POST", f"{up.UPLOAD_API}/thumbnails/set?videoId={vid}", token,
-                                 Path(args.thumbnail).read_bytes(), {"Content-Type": "image/jpeg"},
+                                 thumb.read_bytes(), {"Content-Type": "image/jpeg"},
                                  expect=(200, 201, 400, 403))
-            steps["thumbnail"] = Path(args.thumbnail).name if code in (200, 201) else f"not accepted ({code})"
+            steps["thumbnail"] = thumb.name if code in (200, 201) else f"not accepted ({code})"
             save()
         r["studio_tasks"] = [f"Related video: link to the full quiz https://youtu.be/{meta['full_quiz_video_id']}.",
                              "Pin the score comment once it is posted."]
