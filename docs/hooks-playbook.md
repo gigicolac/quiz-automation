@@ -33,6 +33,21 @@ Sources:
 
 The best hooks **stack 2–3 patterns**, for example a specific question plus a contradiction plus a challenge.
 
+## Fill-in templates (vidIQ's nine, in quiz form)
+| Template | Quiz version |
+|---|---|
+| Curiosity: "I thought I knew [topic], until I found out [twist]" | "You think you know Big Ben. You don't 🔔" |
+| Drop into the action: "It's [time]. I'm [mid-problem]" | "Question 1, no warm-up, 5 seconds: go ⏱️" |
+| Audience callout: "You're doing [mistake], and it's costing you [pain]" | "If you said 'Sydney', you're not alone (and you're wrong) 😬" |
+| Time promise: "In the next [X], you'll [outcome]" | "In 60 seconds you'll know if you're pub-quiz ready 🍻" |
+| Raise the stakes: "If you don't [fix], you'll keep [bad outcome]" | "Miss 3 and you're buying the next round 🍻" |
+| Contrarian: "Stop doing [popular advice]" | "Stop guessing the obvious answer 🛑" |
+| Visual first: show the surprising image, then explain | Thumbnail/first frame = the most surprising picture card |
+| Shocking stat: "[Stat]. That's why most people [struggle]" | Only with a real, sourced number |
+| Unanswered question: "What if [assumption] is wrong?" | "What if the smallest bone isn't where you think? 👂" |
+
+The job of a hook isn't just to get attention, it's to **earn investment**: stack 2–3 techniques (a stat, a question, a visual, a challenge) and make the opening match the title and thumbnail so the promise is kept straight away.
+
 ## Long-video titles
 - Keep the proven series title as variant A, e.g. "General Knowledge Quiz #9 | 50 Questions Everyone Should Know".
 - Variant B (Test & Compare) is a hook title built from this playbook and vidIQ outliers, e.g. "Can You Pass This General Knowledge Quiz? 🧠 50 Trivia Questions | Quiz #9".
