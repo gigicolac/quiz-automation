@@ -14,6 +14,7 @@ Usage:
 """
 import argparse
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -21,8 +22,9 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H = 1080, 1920
-FONT = "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf"
-EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+FONT = os.environ.get("SHORTS_FONT", "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf")
+EMOJI = os.environ.get("SHORTS_EMOJI_FONT", "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf")
+SCALE = 1.0  # source width / 1920, set in main() so 4K sources are cropped at full detail
 # regions of the 1920x1080 slide (x, y, w, h)
 QCARD, STRIP, PCARD = (978, 193, 832, 624), (500, 840, 920, 180), (88, 196, 830, 624)
 CARD_W = 900
@@ -41,8 +43,13 @@ def srt_cues(path):
         lines = block.strip().splitlines()
         if len(lines) >= 2 and "-->" in lines[1]:
             a, b = (secs(x.strip()) for x in lines[1].split("-->"))
-            cues.append((a, b))
+            cues.append((a, b, "\n".join(lines[2:])))
     return cues
+
+
+def ts(t):
+    ms = int(round(t * 1000))
+    return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
 
 
 def is_emoji(ch):
@@ -117,8 +124,8 @@ def end_png(path, lines):
 
 def layout_filter(header):
     def crop(r, name):
-        x, y, w, h = r
-        nh = round(h * CARD_W / w / 2) * 2
+        x, y, w, h = (round(v * SCALE / 2) * 2 for v in r)
+        nh = round(r[3] * CARD_W / r[2] / 2) * 2
         return f"[0:v]crop={w}:{h}:{x}:{y},scale={CARD_W}:{nh}[{name}]", nh
     fq, hq = crop(QCARD, "q")
     fs, hs = crop(STRIP, "s")
@@ -141,7 +148,13 @@ def main():
     ap.add_argument("--per", type=int, default=7)
     ap.add_argument("--think", type=float, default=5.0, help="seconds of countdown kept after the question is read")
     ap.add_argument("--hooks", default=str(Path(__file__).resolve().parent.parent / "config" / "shorts.json"))
+    ap.add_argument("--only", default="", help="comma-separated Short numbers to make, e.g. 2,3,4 (default all)")
     args = ap.parse_args()
+    global SCALE
+    w = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width",
+                        "-of", "csv=p=0", args.video], capture_output=True, text=True, check=True).stdout.strip()
+    SCALE = int(w) / 1920
+    only = {int(x) for x in args.only.split(",") if x.strip()}
 
     quiz = json.loads(Path(args.quiz).read_text())
     report = json.loads(Path(args.report).read_text())
@@ -156,7 +169,10 @@ def main():
     groups = [g for g in groups if len(g) == args.per]  # leftovers stay in the long video
     made = []
     for gi, qs in enumerate(groups, 1):
+        if only and gi not in only:
+            continue
         hook = hooks[(gi - 1) % len(hooks)].format(n=len(qs))
+        subs, t_out = [], 0.0
         sub = f"{quiz.get('series', '')} Quiz #{quiz.get('number', '')} · Part {gi}"
         hdr = work / f"h{gi}.png"
         header_png(hdr, hook, sub)
@@ -164,7 +180,7 @@ def main():
         for n in qs:
             q, a = segs[f"q{n:02d}"], segs[f"a{n:02d}"]
             t0, t_end = q["start"], q["start"] + q["dur"]
-            spoken = [b for s_, b in cues if t0 <= s_ < t_end]
+            spoken = [b for s_, b, _ in cues if t0 <= s_ < t_end]
             tv = (max(spoken) if spoken else t0 + 4) + 0.3
             spans = [(t0, tv), (max(tv, t_end - args.think - 0.6), t_end)] if tv < t_end - args.think - 0.6 \
                 else [(t0, t_end)]
@@ -172,6 +188,10 @@ def main():
             for a0, a1 in spans:
                 p = work / f"s{gi}_{len(pieces):03d}.mp4"
                 d = a1 - a0
+                for c0, c1, text in cues:  # captions that fall inside this piece, moved to the Short's timeline
+                    if c1 > a0 and c0 < a1:
+                        subs.append((t_out + max(c0, a0) - a0, t_out + min(c1, a1) - a0, text))
+                t_out += d
                 run("-ss", f"{a0:.3f}", "-t", f"{d:.3f}", "-i", args.video, "-loop", "1", "-i", hdr,
                     "-filter_complex", layout_filter(hdr), "-map", "[v]", "-map", "0:a",
                     "-af", f"afade=t=in:d=0.03,afade=t=out:st={max(d - 0.04, 0):.3f}:d=0.04",
@@ -196,7 +216,10 @@ def main():
         lst.write_text("".join(f"file '{x.resolve()}'\n" for x in pieces))
         final = out / f"{quiz['id']}-short-{gi}.mp4"
         run("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", "-movflags", "+faststart", final)
-        made.append({"file": final.name, "questions": qs, "hook": hook})
+        srt = out / f"{quiz['id']}-short-{gi}.srt"
+        srt.write_text("\n".join(f"{i}\n{ts(a)} --> {ts(b)}\n{t}\n" for i, (a, b, t) in enumerate(subs, 1)),
+                       encoding="utf-8")
+        made.append({"short": gi, "file": final.name, "captions": srt.name, "questions": qs, "hook": hook})
     (out / "shorts.json").write_text(json.dumps(made, indent=2, ensure_ascii=False))
     print(json.dumps(made, indent=2, ensure_ascii=False))
 

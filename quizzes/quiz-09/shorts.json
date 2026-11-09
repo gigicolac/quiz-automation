@@ -1,0 +1,43 @@
+{
+  "_comment": "Shorts for Quiz #9. Titles and openings written with docs/hooks-playbook.md (9 Nov 2026). Short 1 was uploaded by Giulia (We0QZw6oG0E).",
+  "full_quiz_video_id": "4x-3R1l3SD8",
+  "series_tag": "generalknowledge",
+  "shorts": {
+    "1": {
+      "title": "Most people get these WRONG 😬 General Knowledge Quiz #9",
+      "video_id": "We0QZw6oG0E",
+      "uploaded_by": "Giulia",
+      "pattern": "challenge / contrast"
+    },
+    "2": {
+      "title": "Quick: how many chambers does your heart have? 🫀 GK Quiz #9",
+      "opening": "Sneak peek 👀 Your heart, a prime number and a queen bee walk into a quiz… how many can you get?",
+      "pattern": "specific question / curiosity"
+    },
+    "3": {
+      "title": "The smallest bone in your body isn't in your hand 👂 GK Quiz #9",
+      "opening": "Sneak peek 👀 Seven questions, five seconds each, and one bone you've probably never heard of.",
+      "pattern": "contradiction + specificity"
+    },
+    "4": {
+      "title": "7 questions. 5 seconds each. Go! ⏱️ General Knowledge Quiz #9",
+      "opening": "Sneak peek 👀 No warm-up, no hints: 7 questions, 5 seconds each. Ready?",
+      "pattern": "timeframe tension"
+    },
+    "5": {
+      "title": "Which fruit wears its seeds on the outside? 🍓 GK Quiz #9",
+      "opening": "Sneak peek 👀 You've eaten it a hundred times. Can you name it in five seconds?",
+      "pattern": "specific question / curiosity"
+    },
+    "6": {
+      "title": "Big Ben isn't actually the clock 🤯 General Knowledge Quiz #9",
+      "opening": "Sneak peek 👀 Everyone thinks they know this one. Do you?",
+      "pattern": "contrarian / contradiction"
+    },
+    "7": {
+      "title": "Saturn or Jupiter: which has more moons? 🪐 GK Quiz #9",
+      "opening": "Sneak peek 👀 Space, dragons and pasta shapes: can you get 7/7?",
+      "pattern": "either-or curiosity"
+    }
+  }
+}

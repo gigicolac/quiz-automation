@@ -11,5 +11,24 @@
   ],
   "per_short": 7,
   "think_seconds": 5,
-  "times_us_eastern": ["08:00", "18:00"]
+  "times_us_eastern": [
+    "08:00",
+    "18:00"
+  ],
+  "description": "{opening}\n\nThis is just a taste of this week's {series} Quiz #{number}, with {count} questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: {full_quiz_link}\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #{series_tag} #trivia #quiztime #brainteaser #justonemorequiz",
+  "default_opening": "Sneak peek 👀 How many can you get right before the timer runs out?",
+  "comment": "What did you score out of {n}? Tell us below 👇",
+  "tags": [
+    "quiz shorts",
+    "trivia quiz",
+    "quiz time",
+    "quiz",
+    "trivia",
+    "pub quiz",
+    "brain teaser",
+    "quiz challenge",
+    "Just One More Quiz"
+  ],
+  "_titles": "Per-quiz titles live in quizzes/<quiz>/shorts.json. Follow docs/hooks-playbook.md: hook first, specific, true, under ~50 characters before the quiz tag.",
+  "minimum_lead_minutes": 1440
 }
