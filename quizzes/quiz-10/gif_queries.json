@@ -5,13 +5,13 @@
   {
    "n": 1,
    "question_query": "Walt Disney",
-   "answer_query": "Oswald the Lucky Rabbit",
+   "answer_query": "Oswald Lucky Rabbit",
    "image_title": "Oswald the Lucky Rabbit"
   },
   {
    "n": 2,
    "question_query": "Mickey Mouse",
-   "answer_query": "Steamboat Willie Mickey whistling",
+   "answer_query": "Steamboat Willie",
    "image_title": "Steamboat Willie"
   },
   {
@@ -35,7 +35,7 @@
   {
    "n": 6,
    "question_query": "Mulan",
-   "answer_query": "Mulan horse Khan",
+   "answer_query": "Khan horse Mulan",
    "image_title": "Mulan (1998 film)"
   },
   {
@@ -47,13 +47,13 @@
   {
    "n": 8,
    "question_query": "Princess Jasmine",
-   "answer_query": "Rajah Jasmine tiger",
+   "answer_query": "Rajah tiger Aladdin",
    "image_title": "Princess Jasmine"
   },
   {
    "n": 9,
    "question_query": "Sleeping Beauty Aurora",
-   "answer_query": "Briar Rose Sleeping Beauty",
+   "answer_query": "Aurora Briar Rose",
    "image_title": "Sleeping Beauty (1959 film)"
   },
   {
@@ -71,7 +71,7 @@
   {
    "n": 12,
    "question_query": "Jungle Book Mowgli",
-   "answer_query": "King Louie",
+   "answer_query": "King Louie Jungle Book",
    "image_title": "King Louie"
   },
   {
@@ -95,7 +95,7 @@
   {
    "n": 16,
    "question_query": "Moana",
-   "answer_query": "Moana Pua pig",
+   "answer_query": "Pua pig Moana",
    "image_title": "Moana (2016 film)"
   },
   {
@@ -149,7 +149,7 @@
   {
    "n": 25,
    "question_query": "Ratatouille Remy",
-   "answer_query": "Anyone can cook Gusteau",
+   "answer_query": "Gusteau Ratatouille",
    "image_title": "Ratatouille (film)"
   },
   {
@@ -185,19 +185,19 @@
   {
    "n": 31,
    "question_query": "Wreck-It Ralph Vanellope",
-   "answer_query": "Sugar Rush Vanellope",
+   "answer_query": "Vanellope Sugar Rush",
    "image_title": "Wreck-It Ralph"
   },
   {
    "n": 32,
    "question_query": "Princess and the Frog",
-   "answer_query": "Louis alligator trumpet",
+   "answer_query": "Louis alligator Princess and the Frog",
    "image_title": "The Princess and the Frog"
   },
   {
    "n": 33,
    "question_query": "Brave Merida",
-   "answer_query": "Brave Merida mum bear",
+   "answer_query": "Brave bear Merida",
    "image_title": "Brave (2012 film)"
   },
   {
@@ -263,7 +263,7 @@
   {
    "n": 44,
    "question_query": "Jafar Aladdin",
-   "answer_query": "Iago parrot",
+   "answer_query": "Iago parrot Aladdin",
    "image_title": "Iago (Aladdin)"
   },
   {
@@ -287,7 +287,7 @@
   {
    "n": 48,
    "question_query": "Mulan",
-   "answer_query": "Mushu",
+   "answer_query": "Mushu Mulan dragon",
    "image_title": "Mushu"
   },
   {

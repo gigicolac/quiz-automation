@@ -8,8 +8,9 @@ gif_queries.json is either a plain list of {"n", "question_query", "answer_query
 - By default branded/TV accounts in BLOCKED_USERS are skipped. "allow_branded": true (fandom quizzes,
   e.g. a Disney quiz where Giulia wants GIFs from the actual films) lifts that filter and prefers
   official studio accounts in PREFERRED_USERS.
-- When no GIF is found for a slot and the row has "image_title", the lead image of that Wikipedia
-  article is used instead (a still image, type "image").
+- For fandom quizzes a GIF is only picked when its title mentions something from the query. When no
+  GIF fits, a still image from the film is used instead (first frame of a GIF found by the row's
+  "film" name, else the name in "image_title"), then the Wikipedia lead image of "image_title".
 - A GIF is not reused for both the question and the answer of the same pair.
 Writes gif_candidates.json and gifs_selected.json next to the queries file.
 """
@@ -44,9 +45,22 @@ def giphy(q, key, branded=False):
             out.append({"source": "giphy", "type": "gif", "id": g["id"], "user": user, "title": g.get("title", ""),
                         "mp4": mp4.split("?")[0], "clean_mp4": f"https://media.giphy.com/media/{g['id']}/giphy.mp4",
                         "still": (imgs.get("original_still", {}).get("url") or "").split("?")[0]})
-    if branded:  # official studio accounts first, otherwise GIPHY's relevance order
-        out.sort(key=lambda c: c["user"] not in PREFERRED_USERS)
+    if branded:  # best title match first, official studio accounts break ties, then GIPHY's order
+        out.sort(key=lambda c: -score(q, c))
     return out[:8]
+
+
+STOP = {"the", "and", "of", "a", "an", "in", "gif", "by", "disney", "pixar", "film", "movie", "animation"}
+
+
+def words(text):
+    ws = "".join(ch if ch.isalnum() else " " for ch in text.lower()).split()
+    return {w[:-1] if w.endswith("s") and len(w) > 3 else w for w in ws if len(w) > 2 and w not in STOP}
+
+
+def score(q, c):
+    """2 per query word found in the GIF title, +1 for an official studio account."""
+    return 2 * len(words(q) & words(c.get("title", ""))) + (c.get("user") in PREFERRED_USERS)
 
 
 def pixabay(q, key):
@@ -68,10 +82,23 @@ def wiki_image(title):
     return None
 
 
-def pick(cands, avoid):
+def pick(cands, avoid, q, strict):
+    """First unused candidate; with strict, its title must mention something from the query."""
     for c in cands:
-        if c.get("id") not in avoid:
-            return c
+        if c.get("id") in avoid:
+            continue
+        if strict and not (words(q) & words(c.get("title", ""))):
+            continue
+        return c
+    return None
+
+
+def still_image(film, key, avoid):
+    """A still frame from the actual film: the first frame of the best GIF for the film's name."""
+    for c in giphy(film, key, branded=True):
+        if c.get("id") not in avoid and c.get("still") and words(film) & words(c.get("title", "")):
+            return {"source": "giphy_still", "type": "image", "id": c["id"], "user": c["user"],
+                    "title": c["title"], "url": c["still"]}
     return None
 
 
@@ -99,7 +126,13 @@ def main(path):
             slot = field.replace("_query", "_gif")
             entry[field] = q
             entry[field.replace("query", "candidates")] = cache[q]
-            choice = pick(cache[q], used)
+            choice = pick(cache[q], used, q, strict=branded)
+            film = row.get("film") or (row.get("image_title") or "").split(" (")[0]
+            if not choice and branded and film and gk:
+                try:
+                    choice = still_image(film, gk, used)
+                except Exception as e:
+                    print("error still", film, e)
             if not choice and row.get("image_title"):
                 try:
                     choice = wiki_image(row["image_title"])
