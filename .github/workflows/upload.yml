@@ -19,7 +19,7 @@ on:
         options: [preview, upload]
         default: preview
       publish_at:
-        description: "'next' = next free Thu 3pm / Sat 1pm / Sun 1pm ET slot 3+ days ahead; blank = private, no schedule; or e.g. 2026-11-12T15:00 (US Eastern)"
+        description: "'next' = next free Thu 3pm / Sat 1pm / Sun 1pm ET slot 1+ day ahead (and 24h+ after the upload finishes); blank = private, no schedule; or e.g. 2026-11-12T15:00 (US Eastern)"
         default: next
       replace:
         description: "Re-upload a quiz that is already scheduled (old copy is taken off the schedule and left private)"

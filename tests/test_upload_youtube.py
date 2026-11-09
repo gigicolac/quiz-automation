@@ -15,14 +15,18 @@ NY = ZoneInfo("America/New_York")
 
 
 class ScheduleTests(unittest.TestCase):
-    def test_next_slot_is_three_days_ahead(self):
-        now = dt.datetime(2026, 11, 4, 4, 0, tzinfo=dt.timezone.utc)  # Tue 3 Nov 11pm New York
-        self.assertEqual(up.next_slot(now, CFG), dt.datetime(2026, 11, 7, 13, 0, tzinfo=NY))  # Saturday 1pm
+    def test_next_slot_is_a_day_ahead(self):
+        now = dt.datetime(2026, 11, 9, 21, 0, tzinfo=dt.timezone.utc)  # Tue 10 Nov 8am Sydney = Mon 4pm New York
+        self.assertEqual(up.next_slot(now, CFG), dt.datetime(2026, 11, 12, 15, 0, tzinfo=NY))  # Thursday 3pm
+
+    def test_slot_less_than_a_day_away_is_skipped(self):
+        now = dt.datetime(2026, 11, 11, 21, 0, tzinfo=dt.timezone.utc)  # Wed 4pm New York
+        self.assertEqual(up.next_slot(now, CFG), dt.datetime(2026, 11, 14, 13, 0, tzinfo=NY))  # Saturday 1pm
 
     def test_taken_slot_is_skipped(self):
-        now = dt.datetime(2026, 11, 4, 4, 0, tzinfo=dt.timezone.utc)
-        taken = {dt.datetime(2026, 11, 7, 13, 0, tzinfo=NY), dt.datetime(2026, 11, 8, 13, 0, tzinfo=NY)}
-        self.assertEqual(up.next_slot(now, CFG, taken), dt.datetime(2026, 11, 12, 15, 0, tzinfo=NY))  # Thursday 3pm
+        now = dt.datetime(2026, 11, 9, 21, 0, tzinfo=dt.timezone.utc)
+        taken = {dt.datetime(2026, 11, 12, 15, 0, tzinfo=NY), dt.datetime(2026, 11, 14, 13, 0, tzinfo=NY)}
+        self.assertEqual(up.next_slot(now, CFG, taken), dt.datetime(2026, 11, 15, 13, 0, tzinfo=NY))  # Sunday 1pm
 
     def test_explicit_time_is_new_york(self):
         now = dt.datetime(2026, 11, 4, tzinfo=dt.timezone.utc)

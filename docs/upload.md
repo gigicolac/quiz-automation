@@ -30,7 +30,7 @@ The **Upload to YouTube** workflow (`.github/workflows/upload.yml`, `scripts/upl
    - **Tags:** series keywords first (`series_tags`, from vidIQ keyword research), then shared quiz tags (`tags`, including searches like "good weekend quiz"), trimmed to YouTube's 500-character limit. `quiz.json` can add its own `tags`.
    - **Schedule check:** blocked unless the description says "every Thursday, Saturday & Sunday", and blocked if it mentions AEST.
 4. Picks the publish time:
-   - `next` (default): the next free slot (Thursday 3pm, Saturday 1pm or Sunday 1pm US Eastern) at least 3 days ahead, skipping slots already used in other `upload.json` files.
+   - `next` (default): the next free slot (Thursday 3pm, Saturday 1pm or Sunday 1pm US Eastern) at least 1 day ahead (and never less than 24 hours after the upload finishes), skipping slots already used in other `upload.json` files.
    - An exact US Eastern time, for example `2026-11-12T15:00`.
    - Blank: private with no schedule.
 5. **mode = preview** (default) stops here and shows everything in the run summary. Nothing is sent to YouTube.

@@ -1,0 +1,546 @@
+{
+ "allow_branded": true,
+ "note": "Disney quiz: GIFs must come from the actual Disney/Pixar films (Giulia, 9 Nov); question GIFs must not give the answer away. A GIF is only used when its title contains one of the row's 'match' terms; otherwise a still from the film ('film'), then the Wikipedia lead image of 'image_title'. *_pick fields: hand-picked after reviewing the automatic choices (Claude, 9 Nov).",
+ "queries": [
+  {
+   "n": 1,
+   "question_query": "Mickey Mouse classic",
+   "answer_query": "Oswald Lucky Rabbit",
+   "image_title": "Oswald the Lucky Rabbit",
+   "film": "Mickey Mouse",
+   "match": [
+    "mickey",
+    "walt disney",
+    "oswald"
+   ]
+  },
+  {
+   "n": 2,
+   "question_query": "Mickey Mouse",
+   "answer_query": "Steamboat Willie Mickey",
+   "image_title": "Steamboat Willie",
+   "film": "Mickey Mouse",
+   "match": [
+    "mickey",
+    "steamboat"
+   ],
+   "question_pick": "Qzil8rCXqEK3ijMPUs"
+  },
+  {
+   "n": 3,
+   "question_query": "Snow White and the Seven Dwarfs",
+   "answer_query": "Snow White apple",
+   "image_title": "Snow White and the Seven Dwarfs (1937 film)",
+   "film": "Snow White",
+   "match": [
+    "snow white"
+   ]
+  },
+  {
+   "n": 4,
+   "question_query": "Ursula Little Mermaid",
+   "answer_query": "Flotsam Jetsam Little Mermaid",
+   "image_title": "Flotsam and Jetsam",
+   "film": "Little Mermaid",
+   "match": [
+    "little mermaid"
+   ],
+   "answer_pick": "KcKJvWJVLcTuM"
+  },
+  {
+   "n": 5,
+   "question_query": "Ariel Little Mermaid",
+   "answer_query": "dinglehopper Little Mermaid",
+   "image_title": "The Little Mermaid (1989 film)",
+   "film": "Little Mermaid",
+   "match": [
+    "little mermaid"
+   ],
+   "answer_pick": "14jFxqLMUY51AI"
+  },
+  {
+   "n": 6,
+   "question_query": "Mulan",
+   "answer_query": "Khan horse Mulan",
+   "image_title": "Mulan (1998 film)",
+   "film": "Mulan",
+   "match": [
+    "mulan"
+   ]
+  },
+  {
+   "n": 7,
+   "question_query": "Lion King hyenas",
+   "answer_query": "Shenzi Banzai Ed",
+   "image_title": "The Lion King",
+   "film": "Lion King",
+   "match": [
+    "lion king"
+   ]
+  },
+  {
+   "n": 8,
+   "question_query": "Princess Jasmine",
+   "answer_query": "Rajah tiger Aladdin",
+   "image_title": "Princess Jasmine",
+   "film": "Aladdin",
+   "match": [
+    "aladdin"
+   ]
+  },
+  {
+   "n": 9,
+   "question_query": "Sleeping Beauty Aurora",
+   "answer_query": "Aurora Briar Rose",
+   "image_title": "Sleeping Beauty (1959 film)",
+   "film": "Sleeping Beauty",
+   "match": [
+    "sleeping beauty"
+   ]
+  },
+  {
+   "n": 10,
+   "question_query": "Cinderella stepsisters",
+   "answer_query": "Anastasia Drizella",
+   "image_title": "Cinderella (1950 film)",
+   "film": "Cinderella",
+   "match": [
+    "cinderella"
+   ]
+  },
+  {
+   "n": 11,
+   "question_query": "101 Dalmatians Pongo",
+   "answer_query": "Pongo Perdita",
+   "image_title": "One Hundred and One Dalmatians",
+   "film": "101 Dalmatians",
+   "match": [
+    "101 dalmatians"
+   ]
+  },
+  {
+   "n": 12,
+   "question_query": "Jungle Book Mowgli",
+   "answer_query": "King Louie Jungle Book",
+   "image_title": "King Louie",
+   "film": "Jungle Book",
+   "match": [
+    "jungle book"
+   ]
+  },
+  {
+   "n": 13,
+   "question_query": "Lilo and Stitch",
+   "answer_query": "Stitch experiment 626",
+   "image_title": "Stitch (Lilo & Stitch)",
+   "film": "Lilo and Stitch",
+   "match": [
+    "lilo and stitch"
+   ]
+  },
+  {
+   "n": 14,
+   "question_query": "Tangled Rapunzel",
+   "answer_query": "Pascal Tangled",
+   "image_title": "Tangled",
+   "film": "Tangled",
+   "match": [
+    "tangled",
+    "rapunzel",
+    "pascal"
+   ],
+   "question_pick": "W5yshKbH5wrwA",
+   "answer_pick": "mPeN4EPPLIgbNhQWBk"
+  },
+  {
+   "n": 15,
+   "question_query": "Frozen Elsa",
+   "answer_query": "Arendelle Frozen",
+   "image_title": "Frozen (2013 film)",
+   "film": "Frozen",
+   "match": [
+    "frozen"
+   ]
+  },
+  {
+   "n": 16,
+   "question_query": "Moana",
+   "answer_query": "Moana pig Pua",
+   "image_title": "Moana (2016 film)",
+   "film": "Moana",
+   "match": [
+    "moana",
+    "maui",
+    "pua"
+   ]
+  },
+  {
+   "n": 17,
+   "question_query": "Raya Disney",
+   "answer_query": "Sisu dragon Raya",
+   "image_title": "Raya and the Last Dragon",
+   "film": "Raya",
+   "match": [
+    "raya",
+    "sisu"
+   ]
+  },
+  {
+   "n": 18,
+   "question_query": "Encanto",
+   "answer_query": "Encanto Madrigal family",
+   "image_title": "Encanto",
+   "film": "Encanto",
+   "match": [
+    "encanto",
+    "madrigal",
+    "mirabel"
+   ],
+   "answer_pick": "xc7bHMhVwyITq8I6Gx"
+  },
+  {
+   "n": 19,
+   "question_query": "Pixar lamp",
+   "answer_query": "Toy Story Woody Buzz",
+   "image_title": "Toy Story",
+   "film": "Toy Story",
+   "match": [
+    "toy story"
+   ]
+  },
+  {
+   "n": 20,
+   "question_query": "Toy Story toys",
+   "answer_query": "Sid Toy Story",
+   "image_title": "Toy Story",
+   "film": "Toy Story",
+   "match": [
+    "toy story"
+   ]
+  },
+  {
+   "n": 21,
+   "question_query": "Finding Nemo Dory",
+   "answer_query": "P Sherman 42 Wallaby Way",
+   "image_title": "Finding Nemo",
+   "film": "Finding Nemo",
+   "match": [
+    "finding nemo"
+   ]
+  },
+  {
+   "n": 22,
+   "question_query": "Up Carl Russell",
+   "answer_query": "Dug squirrel",
+   "image_title": "Up (2009 film)",
+   "film": "Pixar Up",
+   "match": [
+    "pixar up",
+    "dug",
+    "carl",
+    "russell",
+    " up "
+   ]
+  },
+  {
+   "n": 23,
+   "question_query": "Monsters Inc Sulley",
+   "answer_query": "Sulley Monsters Inc",
+   "image_title": "Monsters, Inc.",
+   "film": "Monsters Inc",
+   "match": [
+    "monsters inc"
+   ]
+  },
+  {
+   "n": 24,
+   "question_query": "The Incredibles",
+   "answer_query": "Edna Mode",
+   "image_title": "Edna Mode",
+   "film": "Incredibles",
+   "match": [
+    "incredible",
+    "edna"
+   ]
+  },
+  {
+   "n": 25,
+   "question_query": "Ratatouille Remy",
+   "answer_query": "Gusteau Ratatouille",
+   "image_title": "Ratatouille (film)",
+   "film": "Ratatouille",
+   "match": [
+    "ratatouille"
+   ]
+  },
+  {
+   "n": 26,
+   "question_query": "WALL-E",
+   "answer_query": "WALL-E EVE",
+   "image_title": "WALL-E",
+   "film": "WALL-E",
+   "match": [
+    "wall-e",
+    "wall e",
+    "walle",
+    "eve"
+   ]
+  },
+  {
+   "n": 27,
+   "question_query": "Cars Mater",
+   "answer_query": "Lightning McQueen kachow",
+   "image_title": "Lightning McQueen",
+   "film": "Cars Lightning McQueen",
+   "match": [
+    "mcqueen",
+    "cars"
+   ]
+  },
+  {
+   "n": 28,
+   "question_query": "Coco Miguel guitar",
+   "answer_query": "Dante Coco dog",
+   "image_title": "Coco (2017 film)",
+   "film": "Coco Pixar",
+   "match": [
+    "coco",
+    "miguel",
+    "dante",
+    "hector"
+   ],
+   "answer_pick": "cjudF7TsDnKsqTVxAL"
+  },
+  {
+   "n": 29,
+   "question_query": "Zootopia Judy Hopps",
+   "answer_query": "Flash sloth Zootopia",
+   "image_title": "Zootopia",
+   "film": "Zootopia",
+   "match": [
+    "zootopia"
+   ]
+  },
+  {
+   "n": 30,
+   "question_query": "Big Hero 6 Baymax",
+   "answer_query": "San Fransokyo Big Hero 6",
+   "image_title": "Big Hero 6 (film)",
+   "film": "Big Hero 6",
+   "match": [
+    "big hero 6"
+   ]
+  },
+  {
+   "n": 31,
+   "question_query": "Wreck-It Ralph Vanellope",
+   "answer_query": "Vanellope Sugar Rush",
+   "image_title": "Wreck-It Ralph",
+   "film": "Wreck-It Ralph",
+   "match": [
+    "wreck-it ralph"
+   ]
+  },
+  {
+   "n": 32,
+   "question_query": "Princess and the Frog",
+   "answer_query": "Louis alligator Princess and the Frog",
+   "image_title": "The Princess and the Frog",
+   "film": "Princess and the Frog",
+   "match": [
+    "princess and the frog"
+   ]
+  },
+  {
+   "n": 33,
+   "question_query": "Brave Merida",
+   "answer_query": "Brave bear Merida",
+   "image_title": "Brave (2012 film)",
+   "film": "Brave Merida",
+   "match": [
+    "brave",
+    "merida"
+   ]
+  },
+  {
+   "n": 34,
+   "question_query": "Oscar statue",
+   "answer_query": "Beauty and the Beast ballroom",
+   "image_title": "Beauty and the Beast (1991 film)",
+   "film": "Beauty and the Beast",
+   "match": [
+    "beauty and the beast"
+   ]
+  },
+  {
+   "n": 35,
+   "question_query": "Hercules Hades",
+   "answer_query": "Pain and Panic Hercules",
+   "image_title": "Hercules (1997 film)",
+   "film": "Hercules",
+   "match": [
+    "hercules"
+   ]
+  },
+  {
+   "n": 36,
+   "question_query": "Hunchback of Notre Dame Quasimodo",
+   "answer_query": "Hunchback gargoyles",
+   "image_title": "The Hunchback of Notre Dame (1996 film)",
+   "film": "Hunchback of Notre Dame",
+   "match": [
+    "hunchback of notre dame"
+   ]
+  },
+  {
+   "n": 37,
+   "question_query": "Pocahontas",
+   "answer_query": "Meeko raccoon",
+   "image_title": "Pocahontas (1995 film)",
+   "film": "Pocahontas",
+   "match": [
+    "pocahontas"
+   ]
+  },
+  {
+   "n": 38,
+   "question_query": "Peter Pan",
+   "answer_query": "Nana Peter Pan dog",
+   "image_title": "Peter Pan (1953 film)",
+   "film": "Peter Pan",
+   "match": [
+    "peter pan"
+   ]
+  },
+  {
+   "n": 39,
+   "question_query": "Bambi",
+   "answer_query": "Bambi Flower skunk",
+   "image_title": "Bambi",
+   "film": "Bambi",
+   "match": [
+    "bambi"
+   ]
+  },
+  {
+   "n": 40,
+   "question_query": "Dumbo",
+   "answer_query": "Timothy mouse Dumbo",
+   "image_title": "Dumbo",
+   "film": "Dumbo",
+   "match": [
+    "dumbo",
+    "timothy"
+   ],
+   "answer_pick": "PVE9gMrs450vC"
+  },
+  {
+   "n": 41,
+   "question_query": "Donald Duck",
+   "answer_query": "Huey Dewey Louie",
+   "image_title": "Huey, Dewey, and Louie",
+   "film": "Donald Duck",
+   "match": [
+    "donald",
+    "huey",
+    "dewey",
+    "louie",
+    "duck tales",
+    "ducktales"
+   ],
+   "answer_pick": "vIJaz7nMJhTUc"
+  },
+  {
+   "n": 42,
+   "question_query": "Goofy",
+   "answer_query": "Goofy Max A Goofy Movie",
+   "image_title": "A Goofy Movie",
+   "film": "Goofy",
+   "match": [
+    "goofy"
+   ]
+  },
+  {
+   "n": 43,
+   "question_query": "Mad Hatter Alice in Wonderland",
+   "answer_query": "unbirthday Mad Hatter",
+   "image_title": "Alice in Wonderland (1951 film)",
+   "film": "Alice in Wonderland",
+   "match": [
+    "alice in wonderland"
+   ]
+  },
+  {
+   "n": 44,
+   "question_query": "Jafar Aladdin",
+   "answer_query": "Iago Aladdin",
+   "image_title": "Iago (Aladdin)",
+   "film": "Aladdin",
+   "match": [
+    "aladdin"
+   ],
+   "question_pick": "Dwekg7HJYSE2t4wW9h",
+   "answer_pick": "t7NqkPey14axG"
+  },
+  {
+   "n": 45,
+   "question_query": "Beauty and the Beast Belle",
+   "answer_query": "Lumiere Beauty and the Beast",
+   "image_title": "Lumière (Beauty and the Beast)",
+   "film": "Beauty and the Beast",
+   "match": [
+    "beauty and the beast"
+   ]
+  },
+  {
+   "n": 46,
+   "question_query": "Sleeping Beauty fairies",
+   "answer_query": "Maleficent Sleeping Beauty",
+   "image_title": "Maleficent",
+   "film": "Sleeping Beauty",
+   "match": [
+    "sleeping beauty"
+   ]
+  },
+  {
+   "n": 47,
+   "question_query": "Disney singing",
+   "answer_query": "Bare Necessities Jungle Book",
+   "image_title": "The Jungle Book (1967 film)",
+   "film": "Jungle Book",
+   "match": [
+    "jungle book"
+   ]
+  },
+  {
+   "n": 48,
+   "question_query": "Mulan",
+   "answer_query": "Mushu Mulan",
+   "image_title": "Mushu",
+   "film": "Mulan",
+   "match": [
+    "mulan"
+   ]
+  },
+  {
+   "n": 49,
+   "question_query": "Inside Out emotions",
+   "answer_query": "Sadness Inside Out",
+   "image_title": "Inside Out (2015 film)",
+   "film": "Inside Out",
+   "match": [
+    "inside out"
+   ]
+  },
+  {
+   "n": 50,
+   "question_query": "Toy Story Woody",
+   "answer_query": "Pizza Planet Toy Story",
+   "image_title": "Toy Story",
+   "film": "Toy Story",
+   "match": [
+    "toy story"
+   ]
+  }
+ ]
+}

@@ -1,5 +1,6 @@
 name: Find GIFs
-# Searches GIPHY (Pixabay fallback) for a quiz's gif_queries.json and commits gif_candidates.json.
+# Searches GIPHY (Pixabay / Wikipedia-image fallbacks) for a quiz's gif_queries.json and commits
+# gif_candidates.json + gifs_selected.json. On push it works out the quiz from the changed file.
 on:
   push:
     branches: ["claude/**"]
@@ -9,7 +10,6 @@ on:
       quiz:
         description: "Quiz folder under quizzes/, e.g. quiz-09"
         required: true
-        default: quiz-09
 permissions:
   contents: write
 jobs:
@@ -17,20 +17,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Pick quiz
+        env:
+          IN_QUIZ: ${{ inputs.quiz }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          q="$IN_QUIZ"
+          # on push: the quiz whose gif_queries.json changed
+          if [ -z "$q" ]; then
+            q=$(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/gif_queries.json' 2>/dev/null | head -1 | cut -d/ -f2)
+          fi
+          case "$q" in ""|*..*|*/*) echo "Invalid or missing quiz '$q'"; exit 1;; esac
+          echo "QUIZ=$q" >> "$GITHUB_ENV"
       - name: Search
         env:
           GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          QUIZ: ${{ inputs.quiz || 'quiz-09' }}
-        run: |
-          case "$QUIZ" in *..*|*/*) echo "Invalid quiz"; exit 1;; esac
-          python scripts/find_gifs.py "quizzes/$QUIZ/gif_queries.json"
+        run: python scripts/find_gifs.py "quizzes/$QUIZ/gif_queries.json"
       - name: Commit
-        env:
-          QUIZ: ${{ inputs.quiz || 'quiz-09' }}
+        if: always() && env.QUIZ != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "quizzes/$QUIZ/gif_candidates.json"
+          for f in gif_candidates.json gifs_selected.json gif_search_cache.json; do
+            [ -f "quizzes/$QUIZ/$f" ] && git add "quizzes/$QUIZ/$f"
+          done
           git commit -m "Add GIF candidates for $QUIZ" || exit 0
-          git push
+          git pull --rebase -q origin "$GITHUB_REF_NAME"
+          git push -q origin "HEAD:$GITHUB_REF_NAME"

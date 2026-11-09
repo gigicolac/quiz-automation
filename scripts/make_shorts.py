@@ -176,8 +176,9 @@ def main():
         sub = f"{quiz.get('series', '')} Quiz #{quiz.get('number', '')} · Part {gi}"
         hdr = work / f"h{gi}.png"
         header_png(hdr, hook, sub)
-        pieces = []
+        pieces, starts = [], []
         for n in qs:
+            starts.append(round(t_out, 2))  # where this question starts in the Short (for Studio Problems)
             q, a = segs[f"q{n:02d}"], segs[f"a{n:02d}"]
             t0, t_end = q["start"], q["start"] + q["dur"]
             spoken = [b for s_, b, _ in cues if t0 <= s_ < t_end]
@@ -223,7 +224,7 @@ def main():
         thumb = out / f"{quiz['id']}-short-{gi}.jpg"
         run("-ss", "3", "-i", final, "-frames:v", "1", "-q:v", "3", thumb)
         made.append({"short": gi, "file": final.name, "captions": srt.name, "thumbnail": thumb.name,
-                     "questions": qs, "hook": hook})
+                     "questions": qs, "question_starts": starts, "hook": hook})
     (out / "shorts.json").write_text(json.dumps(made, indent=2, ensure_ascii=False))
     print(json.dumps(made, indent=2, ensure_ascii=False))
 

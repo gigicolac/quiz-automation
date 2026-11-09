@@ -1,0 +1,1040 @@
+{
+  "status": "success",
+  "release_tag": "quiz-10-preview-11",
+  "source_commit": "7c770cb68d3e30c371ee2b8d25a8ca6f64f439f3",
+  "run_id": "42581862297",
+  "tts": "chatterbox",
+  "report": {
+    "quiz": "quiz-10",
+    "tts": "chatterbox",
+    "duration_s": 932.73,
+    "segments": [
+      {
+        "name": "intro",
+        "start": 0.0,
+        "dur": 11.23
+      },
+      {
+        "name": "rules",
+        "start": 11.23,
+        "dur": 8.1
+      },
+      {
+        "name": "q01",
+        "start": 19.33,
+        "dur": 10.63
+      },
+      {
+        "name": "a01",
+        "start": 29.97,
+        "dur": 9.5
+      },
+      {
+        "name": "q02",
+        "start": 39.47,
+        "dur": 10.6
+      },
+      {
+        "name": "a02",
+        "start": 50.07,
+        "dur": 7.13
+      },
+      {
+        "name": "q03",
+        "start": 57.2,
+        "dur": 10.6
+      },
+      {
+        "name": "a03",
+        "start": 67.8,
+        "dur": 7.47
+      },
+      {
+        "name": "q04",
+        "start": 75.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a04",
+        "start": 85.87,
+        "dur": 7.83
+      },
+      {
+        "name": "q05",
+        "start": 93.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a05",
+        "start": 104.3,
+        "dur": 7.5
+      },
+      {
+        "name": "q06",
+        "start": 111.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a06",
+        "start": 122.4,
+        "dur": 6.1
+      },
+      {
+        "name": "q07",
+        "start": 128.5,
+        "dur": 10.6
+      },
+      {
+        "name": "a07",
+        "start": 139.1,
+        "dur": 7.4
+      },
+      {
+        "name": "q08",
+        "start": 146.5,
+        "dur": 10.6
+      },
+      {
+        "name": "a08",
+        "start": 157.1,
+        "dur": 6.77
+      },
+      {
+        "name": "q09",
+        "start": 163.87,
+        "dur": 10.6
+      },
+      {
+        "name": "a09",
+        "start": 174.47,
+        "dur": 6.57
+      },
+      {
+        "name": "q10",
+        "start": 181.03,
+        "dur": 10.6
+      },
+      {
+        "name": "a10",
+        "start": 191.63,
+        "dur": 8.07
+      },
+      {
+        "name": "q11",
+        "start": 199.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a11",
+        "start": 210.3,
+        "dur": 6.33
+      },
+      {
+        "name": "q12",
+        "start": 216.63,
+        "dur": 10.6
+      },
+      {
+        "name": "a12",
+        "start": 227.23,
+        "dur": 7.13
+      },
+      {
+        "name": "q13",
+        "start": 234.37,
+        "dur": 10.6
+      },
+      {
+        "name": "a13",
+        "start": 244.97,
+        "dur": 8.93
+      },
+      {
+        "name": "q14",
+        "start": 253.9,
+        "dur": 10.6
+      },
+      {
+        "name": "a14",
+        "start": 264.5,
+        "dur": 6.3
+      },
+      {
+        "name": "q15",
+        "start": 270.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a15",
+        "start": 281.4,
+        "dur": 6.27
+      },
+      {
+        "name": "q16",
+        "start": 287.67,
+        "dur": 10.6
+      },
+      {
+        "name": "a16",
+        "start": 298.27,
+        "dur": 7.1
+      },
+      {
+        "name": "q17",
+        "start": 305.37,
+        "dur": 10.6
+      },
+      {
+        "name": "a17",
+        "start": 315.97,
+        "dur": 6.33
+      },
+      {
+        "name": "q18",
+        "start": 322.3,
+        "dur": 10.6
+      },
+      {
+        "name": "a18",
+        "start": 332.9,
+        "dur": 6.4
+      },
+      {
+        "name": "q19",
+        "start": 339.3,
+        "dur": 10.6
+      },
+      {
+        "name": "a19",
+        "start": 349.9,
+        "dur": 8.6
+      },
+      {
+        "name": "q20",
+        "start": 358.5,
+        "dur": 10.6
+      },
+      {
+        "name": "a20",
+        "start": 369.1,
+        "dur": 8.33
+      },
+      {
+        "name": "q21",
+        "start": 377.43,
+        "dur": 10.6
+      },
+      {
+        "name": "a21",
+        "start": 388.03,
+        "dur": 9.77
+      },
+      {
+        "name": "q22",
+        "start": 397.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a22",
+        "start": 408.4,
+        "dur": 3.77
+      },
+      {
+        "name": "q23",
+        "start": 412.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a23",
+        "start": 422.77,
+        "dur": 7.4
+      },
+      {
+        "name": "q24",
+        "start": 430.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a24",
+        "start": 440.77,
+        "dur": 6.7
+      },
+      {
+        "name": "q25",
+        "start": 447.47,
+        "dur": 10.6
+      },
+      {
+        "name": "a25",
+        "start": 458.07,
+        "dur": 6.33
+      },
+      {
+        "name": "q26",
+        "start": 464.4,
+        "dur": 10.6
+      },
+      {
+        "name": "a26",
+        "start": 475.0,
+        "dur": 7.83
+      },
+      {
+        "name": "q27",
+        "start": 482.83,
+        "dur": 10.6
+      },
+      {
+        "name": "a27",
+        "start": 493.43,
+        "dur": 7.13
+      },
+      {
+        "name": "q28",
+        "start": 500.57,
+        "dur": 10.6
+      },
+      {
+        "name": "a28",
+        "start": 511.17,
+        "dur": 6.6
+      },
+      {
+        "name": "q29",
+        "start": 517.77,
+        "dur": 10.6
+      },
+      {
+        "name": "a29",
+        "start": 528.37,
+        "dur": 7.23
+      },
+      {
+        "name": "q30",
+        "start": 535.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a30",
+        "start": 546.2,
+        "dur": 5.93
+      },
+      {
+        "name": "q31",
+        "start": 552.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a31",
+        "start": 562.73,
+        "dur": 5.87
+      },
+      {
+        "name": "q32",
+        "start": 568.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a32",
+        "start": 579.2,
+        "dur": 6.07
+      },
+      {
+        "name": "q33",
+        "start": 585.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a33",
+        "start": 595.87,
+        "dur": 6.3
+      },
+      {
+        "name": "q34",
+        "start": 602.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a34",
+        "start": 612.77,
+        "dur": 9.6
+      },
+      {
+        "name": "q35",
+        "start": 622.37,
+        "dur": 10.6
+      },
+      {
+        "name": "a35",
+        "start": 632.97,
+        "dur": 8.0
+      },
+      {
+        "name": "q36",
+        "start": 640.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a36",
+        "start": 651.57,
+        "dur": 8.57
+      },
+      {
+        "name": "q37",
+        "start": 660.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a37",
+        "start": 670.73,
+        "dur": 5.47
+      },
+      {
+        "name": "q38",
+        "start": 676.2,
+        "dur": 10.6
+      },
+      {
+        "name": "a38",
+        "start": 686.8,
+        "dur": 7.37
+      },
+      {
+        "name": "q39",
+        "start": 694.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a39",
+        "start": 704.77,
+        "dur": 6.57
+      },
+      {
+        "name": "q40",
+        "start": 711.33,
+        "dur": 10.6
+      },
+      {
+        "name": "a40",
+        "start": 721.93,
+        "dur": 7.07
+      },
+      {
+        "name": "q41",
+        "start": 729.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a41",
+        "start": 739.6,
+        "dur": 7.97
+      },
+      {
+        "name": "q42",
+        "start": 747.57,
+        "dur": 10.6
+      },
+      {
+        "name": "a42",
+        "start": 758.17,
+        "dur": 7.0
+      },
+      {
+        "name": "q43",
+        "start": 765.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a43",
+        "start": 775.77,
+        "dur": 8.4
+      },
+      {
+        "name": "q44",
+        "start": 784.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a44",
+        "start": 794.77,
+        "dur": 7.5
+      },
+      {
+        "name": "q45",
+        "start": 802.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a45",
+        "start": 812.87,
+        "dur": 7.57
+      },
+      {
+        "name": "q46",
+        "start": 820.43,
+        "dur": 10.6
+      },
+      {
+        "name": "a46",
+        "start": 831.03,
+        "dur": 6.77
+      },
+      {
+        "name": "q47",
+        "start": 837.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a47",
+        "start": 848.4,
+        "dur": 6.6
+      },
+      {
+        "name": "q48",
+        "start": 855.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a48",
+        "start": 865.6,
+        "dur": 6.37
+      },
+      {
+        "name": "q49",
+        "start": 871.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a49",
+        "start": 882.57,
+        "dur": 6.3
+      },
+      {
+        "name": "q50",
+        "start": 888.87,
+        "dur": 10.6
+      },
+      {
+        "name": "a50",
+        "start": 899.47,
+        "dur": 7.3
+      },
+      {
+        "name": "outro",
+        "start": 906.77,
+        "dur": 25.97
+      }
+    ],
+    "slide_pages": [
+      {
+        "kind": "Q",
+        "start": 0.0,
+        "end": 11.07
+      },
+      {
+        "kind": "A",
+        "start": 11.07,
+        "end": 12.17
+      },
+      {
+        "kind": "Q",
+        "start": 12.17,
+        "end": 23.2
+      },
+      {
+        "kind": "A",
+        "start": 23.2,
+        "end": 26.2
+      },
+      {
+        "kind": "Q",
+        "start": 26.2,
+        "end": 37.23
+      },
+      {
+        "kind": "A",
+        "start": 37.23,
+        "end": 38.77
+      },
+      {
+        "kind": "Q",
+        "start": 38.77,
+        "end": 49.8
+      },
+      {
+        "kind": "A",
+        "start": 49.8,
+        "end": 51.03
+      },
+      {
+        "kind": "Q",
+        "start": 51.03,
+        "end": 62.07
+      },
+      {
+        "kind": "A",
+        "start": 62.07,
+        "end": 64.47
+      },
+      {
+        "kind": "Q",
+        "start": 64.47,
+        "end": 75.5
+      },
+      {
+        "kind": "A",
+        "start": 75.5,
+        "end": 80.5
+      },
+      {
+        "kind": "Q",
+        "start": 80.5,
+        "end": 91.53
+      },
+      {
+        "kind": "A",
+        "start": 91.53,
+        "end": 92.6
+      },
+      {
+        "kind": "Q",
+        "start": 92.6,
+        "end": 103.63
+      },
+      {
+        "kind": "A",
+        "start": 103.63,
+        "end": 108.67
+      },
+      {
+        "kind": "Q",
+        "start": 108.67,
+        "end": 119.7
+      },
+      {
+        "kind": "A",
+        "start": 119.7,
+        "end": 124.7
+      },
+      {
+        "kind": "Q",
+        "start": 124.7,
+        "end": 135.73
+      },
+      {
+        "kind": "A",
+        "start": 135.73,
+        "end": 138.6
+      },
+      {
+        "kind": "Q",
+        "start": 138.6,
+        "end": 149.63
+      },
+      {
+        "kind": "A",
+        "start": 149.63,
+        "end": 151.23
+      },
+      {
+        "kind": "Q",
+        "start": 151.23,
+        "end": 162.27
+      },
+      {
+        "kind": "A",
+        "start": 162.27,
+        "end": 164.67
+      },
+      {
+        "kind": "Q",
+        "start": 164.67,
+        "end": 175.7
+      },
+      {
+        "kind": "A",
+        "start": 175.7,
+        "end": 178.0
+      },
+      {
+        "kind": "Q",
+        "start": 178.0,
+        "end": 189.03
+      },
+      {
+        "kind": "A",
+        "start": 189.03,
+        "end": 190.77
+      },
+      {
+        "kind": "Q",
+        "start": 190.77,
+        "end": 201.8
+      },
+      {
+        "kind": "A",
+        "start": 201.8,
+        "end": 205.47
+      },
+      {
+        "kind": "Q",
+        "start": 205.47,
+        "end": 216.5
+      },
+      {
+        "kind": "A",
+        "start": 216.5,
+        "end": 221.5
+      },
+      {
+        "kind": "Q",
+        "start": 221.5,
+        "end": 232.53
+      },
+      {
+        "kind": "A",
+        "start": 232.53,
+        "end": 233.53
+      },
+      {
+        "kind": "Q",
+        "start": 233.53,
+        "end": 244.57
+      },
+      {
+        "kind": "A",
+        "start": 244.57,
+        "end": 246.67
+      },
+      {
+        "kind": "Q",
+        "start": 246.67,
+        "end": 257.7
+      },
+      {
+        "kind": "A",
+        "start": 257.7,
+        "end": 260.13
+      },
+      {
+        "kind": "Q",
+        "start": 260.13,
+        "end": 271.17
+      },
+      {
+        "kind": "A",
+        "start": 271.17,
+        "end": 272.2
+      },
+      {
+        "kind": "Q",
+        "start": 272.2,
+        "end": 283.23
+      },
+      {
+        "kind": "A",
+        "start": 283.23,
+        "end": 288.23
+      },
+      {
+        "kind": "Q",
+        "start": 288.23,
+        "end": 299.27
+      },
+      {
+        "kind": "A",
+        "start": 299.27,
+        "end": 303.43
+      },
+      {
+        "kind": "Q",
+        "start": 303.43,
+        "end": 314.47
+      },
+      {
+        "kind": "A",
+        "start": 314.47,
+        "end": 316.87
+      },
+      {
+        "kind": "Q",
+        "start": 316.87,
+        "end": 327.9
+      },
+      {
+        "kind": "A",
+        "start": 327.9,
+        "end": 328.8
+      },
+      {
+        "kind": "Q",
+        "start": 328.8,
+        "end": 339.83
+      },
+      {
+        "kind": "A",
+        "start": 339.83,
+        "end": 340.73
+      },
+      {
+        "kind": "Q",
+        "start": 340.73,
+        "end": 351.77
+      },
+      {
+        "kind": "A",
+        "start": 351.77,
+        "end": 353.63
+      },
+      {
+        "kind": "Q",
+        "start": 353.63,
+        "end": 364.67
+      },
+      {
+        "kind": "A",
+        "start": 364.67,
+        "end": 365.53
+      },
+      {
+        "kind": "Q",
+        "start": 365.53,
+        "end": 376.57
+      },
+      {
+        "kind": "A",
+        "start": 376.57,
+        "end": 380.0
+      },
+      {
+        "kind": "Q",
+        "start": 380.0,
+        "end": 391.03
+      },
+      {
+        "kind": "A",
+        "start": 391.03,
+        "end": 392.53
+      },
+      {
+        "kind": "Q",
+        "start": 392.53,
+        "end": 403.57
+      },
+      {
+        "kind": "A",
+        "start": 403.57,
+        "end": 408.57
+      },
+      {
+        "kind": "Q",
+        "start": 408.57,
+        "end": 419.6
+      },
+      {
+        "kind": "A",
+        "start": 419.6,
+        "end": 424.6
+      },
+      {
+        "kind": "Q",
+        "start": 424.6,
+        "end": 435.63
+      },
+      {
+        "kind": "A",
+        "start": 435.63,
+        "end": 440.67
+      },
+      {
+        "kind": "Q",
+        "start": 440.67,
+        "end": 451.7
+      },
+      {
+        "kind": "A",
+        "start": 451.7,
+        "end": 456.7
+      },
+      {
+        "kind": "Q",
+        "start": 456.7,
+        "end": 467.73
+      },
+      {
+        "kind": "A",
+        "start": 467.73,
+        "end": 470.13
+      },
+      {
+        "kind": "Q",
+        "start": 470.13,
+        "end": 481.17
+      },
+      {
+        "kind": "A",
+        "start": 481.17,
+        "end": 485.77
+      },
+      {
+        "kind": "Q",
+        "start": 485.77,
+        "end": 496.8
+      },
+      {
+        "kind": "A",
+        "start": 496.8,
+        "end": 501.83
+      },
+      {
+        "kind": "Q",
+        "start": 501.83,
+        "end": 512.87
+      },
+      {
+        "kind": "A",
+        "start": 512.87,
+        "end": 517.87
+      },
+      {
+        "kind": "Q",
+        "start": 517.87,
+        "end": 528.9
+      },
+      {
+        "kind": "A",
+        "start": 528.9,
+        "end": 531.3
+      },
+      {
+        "kind": "Q",
+        "start": 531.3,
+        "end": 542.33
+      },
+      {
+        "kind": "A",
+        "start": 542.33,
+        "end": 544.77
+      },
+      {
+        "kind": "Q",
+        "start": 544.77,
+        "end": 555.8
+      },
+      {
+        "kind": "A",
+        "start": 555.8,
+        "end": 557.33
+      },
+      {
+        "kind": "Q",
+        "start": 557.33,
+        "end": 568.37
+      },
+      {
+        "kind": "A",
+        "start": 568.37,
+        "end": 571.4
+      },
+      {
+        "kind": "Q",
+        "start": 571.4,
+        "end": 582.43
+      },
+      {
+        "kind": "A",
+        "start": 582.43,
+        "end": 586.03
+      },
+      {
+        "kind": "Q",
+        "start": 586.03,
+        "end": 597.07
+      },
+      {
+        "kind": "A",
+        "start": 597.07,
+        "end": 599.47
+      },
+      {
+        "kind": "Q",
+        "start": 599.47,
+        "end": 610.5
+      },
+      {
+        "kind": "A",
+        "start": 610.5,
+        "end": 613.97
+      },
+      {
+        "kind": "Q",
+        "start": 613.97,
+        "end": 625.0
+      },
+      {
+        "kind": "A",
+        "start": 625.0,
+        "end": 626.97
+      },
+      {
+        "kind": "Q",
+        "start": 626.97,
+        "end": 638.0
+      },
+      {
+        "kind": "A",
+        "start": 638.0,
+        "end": 640.4
+      },
+      {
+        "kind": "Q",
+        "start": 640.4,
+        "end": 651.43
+      },
+      {
+        "kind": "A",
+        "start": 651.43,
+        "end": 653.83
+      },
+      {
+        "kind": "Q",
+        "start": 653.83,
+        "end": 664.87
+      },
+      {
+        "kind": "A",
+        "start": 664.87,
+        "end": 667.3
+      },
+      {
+        "kind": "Q",
+        "start": 667.3,
+        "end": 678.33
+      },
+      {
+        "kind": "A",
+        "start": 678.33,
+        "end": 681.93
+      },
+      {
+        "kind": "Q",
+        "start": 681.93,
+        "end": 692.97
+      },
+      {
+        "kind": "A",
+        "start": 692.97,
+        "end": 694.97
+      }
+    ],
+    "levels_db": {
+      "voice_rms": -20.1,
+      "music_rms": -35.8,
+      "mix_peak": -0.3
+    },
+    "warnings": [
+      "outro2: starts 0.2 s late (previous line ran long)"
+    ]
+  },
+  "log_tail": "Exported DAHaZwsq-kc pages 1-2 (horizontal_4k) in 61s\nExported DAHaZ4LypCw pages 1-2 (horizontal_4k) in 71s\nExported DAHaZ7PR264 pages 1-2 (horizontal_4k) in 61s\nExported DAHaZ5WkcR4 pages 1-2 (horizontal_4k) in 92s\nExported DAHaZ2bzzX8 pages 1-2 (horizontal_4k) in 51s\nExported DAHaZ5NeADI pages 1-2 (horizontal_4k) in 92s\nExported DAHaZzbYJ30 pages 1-2 (horizontal_4k) in 61s\nExported DAHaZ6x3CxY pages 1-2 (horizontal_4k) in 61s\nExported DAHaZwBW9dk pages 1-2 (horizontal_4k) in 61s\nExported DAHaZ2jCQUE pages 1-2 (horizontal_4k) in 51s\nExported DAHaZw3tlFc pages 1-2 (horizontal_4k) in 81s\nExported DAHaZ8jf84Q pages 1-2 (horizontal_4k) in 61s\nExported DAHaZ8fjX2M pages 1-2 (horizontal_4k) in 41s\nExported DAHaZ-4AjY0 pages 1-2 (horizontal_4k) in 51s\nExported DAHaZ-DXnNI pages 1-2 (horizontal_4k) in 82s\nExported DAHaZ0G2pBs pages 1-2 (horizontal_4k) in 51s\nExported DAHaZw1h7ec pages 1-2 (horizontal_4k) in 71s\nExported DAHaZxlghpI pages 1-2 (horizontal_4k) in 51s\nslides.mp4 from 50 pairs\nExported DAHaaOhXEf0 pages 1-1 (horizontal_4k) in 31s\nExported DAHaaOhXEf0 pages 2-2 (horizontal_4k) in 31s\nExported DAHaaOhXEf0 pages 3-3 (horizontal_4k) in 41s\nintro/rules/outro from DAHaaOhXEf0\ntotal 327536\ndrwxr-xr-x 3 runner runner      4096 Nov  9 08:10 .\ndrwxr-xr-x 5 runner runner      4096 Nov  9 07:51 ..\n-rw-r--r-- 1 runner runner      8725 Nov  9 08:08 canva_state.json\n-rw-r--r-- 1 runner runner   2227398 Nov  9 08:09 intro.mp4\n-rw-r--r-- 1 runner runner  15613918 Nov  9 08:10 outro.mp4\ndrwxr-xr-x 2 runner runner      4096 Nov  9 08:10 pairs\n-rw-r--r-- 1 runner runner   3025973 Nov  9 08:09 rules.mp4\n-rw-r--r-- 1 runner runner 314488597 Nov  9 08:08 slides.mp4\n-rw-r--r-- 1 runner runner      2550 Nov  9 08:08 slides.txt\n-rw-r--r-- 1 runner runner        17 Nov  9 08:10 source.sha\n== __run_6\n\n[notice] A new release of pip is available: 26.2.2 -> 26.3\n[notice] To update, run: pip install --upgrade pip\n\n[notice] A new release of pip is available: 26.2.2 -> 26.3\n[notice] To update, run: pip install --upgrade pip\n\n[notice] A new release of pip is available: 26.2.2 -> 26.3\n[notice] To update, run: pip install --upgrade pip\n== __run_7\n== __run_8\nScript: 106 lines\nLoading Chatterbox (CPU)…\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.\n  deprecate(\"LoRACompatibleLinear\", \"1.0.0\", deprecation_message)\nloaded PerthNet (Implicit) at step 250,000\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-10.mp4 (15.5 min), 1 warning(s)\n  ! outro2: starts 0.2 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-d3fa630da05efc7098f0\n== __run_11\n::add-mask::eyJraWQiOiI0NWUzMzYwYi0zODJhLTQxNDUtOGI4Ni1jYjI2ODg5ODM5NTgiLCJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJVR2F2dU5RUmtwV29MQ01Hd3FDTjlRIiwiY2xpZW50X2lkIjoiT0MtQWFHa3Rna25JRE1HIiwiYXVkIjoiaHR0cHM6Ly9hcGkuY2FudmEuY29tIiwiaWF0IjoxNzk0MjEwNjY0LCJuYmYiOjE3OTQyMTA2NjQsImV4cCI6MTc5NDIyNTA2NCwic3ViIjoib1VaYkpoeVdGbUw0WEJhWEhUbDB5VSIsImJyYW5kIjoib0JaYkpBNDIwV050LWZiZ2ZUSjJScyIsIm9yZ2FuaXphdGlvbiI6bnVsbCwic2NvcGVzIjpbImFzc2V0OnJlYWQiLCJhc3NldDp3cml0ZSIsImJyYW5kdGVtcGxhdGU6Y29udGVudDpyZWFkIiwiYnJhbmR0ZW1wbGF0ZTptZXRhOnJlYWQiLCJkZXNpZ246Y29udGVudDpyZWFkIiwiZGVzaWduOmNvbnRlbnQ6d3JpdGUiLCJkZXNpZ246bWV0YTpyZWFkIl0sImJ1bmRsZXMiOlsiUFJPMiJdLCJjb2RlX2lkIjoibFdxX3RvN0FYeXRCU1Bhb1Z2ckdRQSIsImFjdF9hcyI6InUiLCJhY3giOiJ0S0ZUWG1BRXRrUnhRRmx1ZmhzaUk3cGIzc25PZE9FaXRCdThON2Y0SmpLVDdwRy1Xak5BUUR0SzFqaFdEb0xfZUZTcWF3TDRZZmh3MVpFLWZsWHVBU0dlQlpoOFVzVDBiNkR0ZmROYjgyNXA0RlZoR3BnUDFSamhnTDVDWXFoN0gzTklveEVrOXQ1bHNsbXlrTktrblBDNXpMaGRsY3NZUDcwM1JTcnlpRlN4ZXFsLV9VeVFsZUlDenBwTlZuLXVHSEtuMnNaODVSZEpXMDIxN3VkalVXcW4xZjBjLWZaZDhkaDdJbWxoWklnbFJIZXdhaDF6LUVTMlR4YUVmbnh2MnJHUXJBbmN5bmxJcWd6elU1ZzV4U3lNajlseVhFbENIY2h2eUtwRGUyak43eWQ3MFNhcUNzREtuSm1IWWZ2ZWxDNlhMRzRHOUFBMElYQnFKME10YmdZcXZaTSJ9.lBX6Dfs_u8RFQUJ8-0P3ULU_ncCwAq4aZjG8aR2vd3hWmbHdR-Qjk1OtVGBI-MtCDFrYZNvXsfeO7ZSV0mnLJaYqJbpe0xze0550sXMLF9ia8aizTRvxyDX0pDg9KrwhltysfjrKW1CG92ptT-CE2gXDXm1OxPI2GHkFuMqDNiwJT9rvbnKUchZ-YvQklDmAUD85j6NJktvNTOI-jkafJ76_4e73BBGTpV_q9a8_2d7c7pItICXJ4aK0lT39Jdsu4DCjRGgfCnqjhA8U2bbhIra6X1vr47f-s5X0LVYW-ft2HR2kibHn3F8-blFLXNcY7VyjnME6iWBHopsTwilkkg\nThumbnails A and B from design DAHaaJSzoH8 (tagline: REAL fans only)"
+}

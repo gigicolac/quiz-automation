@@ -7,7 +7,9 @@ For each Short made by make_shorts.py (shorts.json in --dir) that isn't done yet
      minimum_lead_minutes after the upload finished and not taken by any scheduled video on the channel.
 Same settings as the long videos: Education, en-AU, not made for kids, altered/synthetic content No.
 Records everything in quizzes/<quiz>/shorts-upload.json; a re-run resumes and never uploads a Short twice.
-Studio-only steps (Related video = full quiz, pin the score comment) are listed for the Studio run.
+Also: added to the series playlist, recording date 2-7 days before upload (varied per Short), Problems list.
+Studio-only steps (Related video = full quiz, paid promotion No, location Melbourne VIC, Education type/Problems/level,
+pin the score comment) are listed in studio_tasks for the Studio run.
 
 Env: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
 """
@@ -40,6 +42,35 @@ def metadata(n, quiz, meta, scfg, ycfg):
         if t.lower() not in {x.lower() for x in tags} and up.tag_length(tags + [t]) <= 500:
             tags.append(t)
     return {"title": s["title"], "description": desc, "tags": tags}
+
+
+def recording_date(upload_day, video_key, lo=2, hi=7):
+    """Recording date a few days before upload (Giulia: 'one week prior or a couple of days prior; vary these').
+    Varies per Short but is stable for the same Short, so a re-run records the same date."""
+    import hashlib
+    back = lo + int(hashlib.sha256(video_key.encode()).hexdigest(), 16) % (hi - lo + 1)
+    return (upload_day - dt.timedelta(days=back)).strftime("%Y-%m-%dT00:00:00Z")
+
+
+def short_problems(quiz, made_entry):
+    """Studio > Education > Problems for a Short: timecode in the Short, then the question."""
+    qs = {q["n"]: q["question"] for q in quiz["questions"] if isinstance(q, dict)}
+    starts = made_entry.get("question_starts") or [None] * len(made_entry["questions"])
+    return "\n".join((f"{up.stamp(t)} " if t is not None else "") + qs[n]
+                     for n, t in zip(made_entry["questions"], starts) if n in qs)
+
+
+def short_studio_tasks(meta, scfg, problems, playlist):
+    st = scfg.get("studio", {})
+    return [f"Related video: link to the full quiz https://youtu.be/{meta['full_quiz_video_id']}.",
+            f"Playlist: check it is in '{playlist}'.",
+            "Paid promotion: 'No, my video doesn't include paid promotion'.",
+            f"Video location: {st.get('location', 'Melbourne, VIC')}.",
+            "Recording date: check it is set (see recording_date in this record).",
+            f"Category Education: Type = {st.get('education_type', 'Activity')}; Problems = the 'problems' in this record"
+            f"{'; Level = ' + st['level'] if st.get('level') else ''}.",
+            "Altered or synthetic content: No (it's Giulia's own voice).",
+            "Pin the score comment once it is posted."]
 
 
 def scheduled_slots(token):
@@ -131,15 +162,21 @@ def main():
     up.check_channel(token, ycfg)
     status_fields = {"selfDeclaredMadeForKids": ycfg["made_for_kids"], "license": "youtube", "embeddable": True,
                      "publicStatsViewable": True, "containsSyntheticMedia": ycfg["contains_synthetic_media"]}
+    playlist = up.playlist_title(quiz, ycfg)
+    today = dt.datetime.now(dt.timezone.utc)
     for m in todo:
         n = str(m["short"])
         r = rec["shorts"].setdefault(n, {"short": m["short"], "status": "uploading", "steps": {}})
         md = metadata(m["short"], quiz, meta, scfg, ycfg)
+        r.setdefault("recording_date", recording_date(today, f"{quiz['id']}-short-{n}",
+                                                      *scfg.get("studio", {}).get("recording_days_before", [2, 7])))
+        r["problems"] = short_problems(quiz, m)
         if not r.get("video_id"):
             body = {"snippet": {"title": md["title"], "description": md["description"], "tags": md["tags"],
                                 "categoryId": ycfg["category_id"], "defaultLanguage": ycfg["language"],
                                 "defaultAudioLanguage": ycfg["language"]},
-                    "status": {"privacyStatus": "private", **status_fields}}
+                    "status": {"privacyStatus": "private", **status_fields},
+                    "recordingDetails": {"recordingDate": r["recording_date"]}}
             resp = up.upload_video(token, sdir / m["file"], body, ycfg.get("notify_subscribers", True))
             r.update(video_id=resp["id"], url=f"https://youtube.com/shorts/{resp['id']}", title=md["title"],
                      description=md["description"],
@@ -160,8 +197,14 @@ def main():
                                  expect=(200, 201, 400, 403))
             steps["thumbnail"] = thumb.name if code in (200, 201) else f"not accepted ({code})"
             save()
-        r["studio_tasks"] = [f"Related video: link to the full quiz https://youtu.be/{meta['full_quiz_video_id']}.",
-                             "Pin the score comment once it is posted."]
+        if "playlist" not in steps:  # same series playlist as the full quiz (Giulia, 9 Nov)
+            pid, ptitle, created = up.find_or_create_playlist(token, playlist, quiz.get("series", ""))
+            pl = {"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": vid}}}
+            up.http("POST", f"{up.API}/playlistItems?part=snippet", token, json.dumps(pl).encode(),
+                    {"Content-Type": "application/json"})
+            steps["playlist"] = {"id": pid, "title": ptitle, "created": created}
+            save()
+        r["studio_tasks"] = short_studio_tasks(meta, scfg, r["problems"], playlist)
         save()
 
     # schedule after processing, in order, each in the next free slot
