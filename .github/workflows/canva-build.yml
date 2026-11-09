@@ -2,7 +2,12 @@ name: Canva build (test)
 # Fills the quiz-pair brand template in Canva for some questions of a quiz and exports them, without building
 # the whole video: a quick check of the Canva Connect API route (scripts/canva_build.py). The exported pairs are
 # kept as a workflow artifact for 7 days. Nothing is uploaded to YouTube. The full build runs in "Build video".
+# Also runs when a branch commits quizzes/<quiz>/canva-test.json: {"only": [3, 21], "quality": "horizontal_1080p"}
+# (new workflows can only be started by hand once they are on main).
 on:
+  push:
+    branches: ["claude/**"]
+    paths: ["quizzes/*/canva-test.json"]
   workflow_dispatch:
     inputs:
       quiz:
@@ -27,13 +32,26 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Install ffmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Pick quiz
+        env:
+          IN_QUIZ: ${{ inputs.quiz }}
+          IN_ONLY: ${{ inputs.only }}
+          IN_QUALITY: ${{ inputs.quality }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ -n "$IN_QUIZ" ]; then
+            { echo "QUIZ=$IN_QUIZ"; echo "ONLY=$IN_ONLY"; echo "QUALITY=$IN_QUALITY"; } >> "$GITHUB_ENV"; exit 0
+          fi
+          f=$(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/canva-test.json' | head -1)
+          q=$(echo "$f" | cut -d/ -f2)
+          { echo "QUIZ=$q"; echo "ONLY=$(jq -r '.only | map(tostring) | join(" ")' "$f")"
+            echo "QUALITY=$(jq -r '.quality // "horizontal_1080p"' "$f")"; } >> "$GITHUB_ENV"
       - name: Fill and export
         env:
-          QUIZ: ${{ inputs.quiz }}
-          ONLY: ${{ inputs.only }}
-          QUALITY: ${{ inputs.quality }}
           CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
           CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
           CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
