@@ -195,6 +195,24 @@ jobs:
             "$o/$QUIZ.mp4" "$o/$QUIZ.srt" "$o/build_report.json" "$o/voiceover.json"
           echo "TAG=$tag" >> "$GITHUB_ENV"
 
+      - name: Thumbnails
+        # build.json "canva_build": thumbnails A and B from the Canva thumbnail template (scripts/canva_thumbnails.py),
+        # attached to this build's draft release, where the upload step picks up thumbnail-a.jpg
+        if: env.TAG != ''
+        continue-on-error: true
+        env:
+          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          CANVA_TOKEN_CACHE: ${{ runner.temp }}/canva-access-token
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          [ "$(jq 'has("canva_build")' "quizzes/$QUIZ/build.json")" = true ] || { echo "No canva_build block"; exit 0; }
+          python3 scripts/canva_thumbnails.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/thumbs"
+          gh release upload "$TAG" "$RUNNER_TEMP/thumbs/thumbnail-a.jpg" "$RUNNER_TEMP/thumbs/thumbnail-b.jpg" --clobber
+
       - name: Record result
         if: always() && env.QUIZ != ''
         run: |

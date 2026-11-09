@@ -1,0 +1,56 @@
+name: Canva thumbnails
+# Makes a quiz's thumbnails A and B from the Canva thumbnail template (scripts/canva_thumbnails.py) and attaches
+# them to the quiz's latest build release (build_result.json release_tag). The Build video workflow does this
+# itself after each build; this is for re-making them on their own.
+# Trigger: commit quizzes/<quiz>/thumbnails-request.json on a branch (any content), or run by hand once on main.
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["quizzes/*/thumbnails-request.json"]
+  workflow_dispatch:
+    inputs:
+      quiz:
+        description: "Quiz folder, e.g. quiz-10"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: build-video  # shares Canva's single-use refresh token with the Build video workflow
+  cancel-in-progress: false
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Pick quiz
+        env:
+          IN_QUIZ: ${{ inputs.quiz }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          q="$IN_QUIZ"
+          [ -n "$q" ] || q=$(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/thumbnails-request.json' | head -1 | cut -d/ -f2)
+          case "$q" in ""|*/*|*..*) echo "No quiz"; exit 1;; esac
+          echo "QUIZ=$q" >> "$GITHUB_ENV"
+      - name: Make and attach
+        env:
+          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          CANVA_TOKEN_CACHE: ${{ runner.temp }}/canva-access-token
+        run: |
+          git pull -q origin "$GITHUB_REF_NAME" || true
+          tag=$(jq -r '.review.video.release_tag // empty' "quizzes/$QUIZ/quiz.json")
+          [ -n "$tag" ] || tag=$(jq -r '.release_tag // empty' "quizzes/$QUIZ/build_result.json" 2>/dev/null)
+          test -n "$tag" || { echo "::error::No build release for $QUIZ yet"; exit 1; }
+          python3 scripts/canva_thumbnails.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/thumbs"
+          gh release upload "$tag" "$RUNNER_TEMP/thumbs/thumbnail-a.jpg" "$RUNNER_TEMP/thumbs/thumbnail-b.jpg" --clobber
+          { echo "## $QUIZ thumbnails attached to $tag"; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thumbnails-${{ env.QUIZ }}
+          path: ${{ runner.temp }}/thumbs/*.jpg
+          retention-days: 14

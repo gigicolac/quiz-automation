@@ -157,5 +157,18 @@
   "studio_education": {
     "type": "Activity",
     "problems": "one line per question: timecode then the question"
+  },
+  "thumbnail_taglines": {
+    "_comment": "Bottom line of the thumbnail (scripts/canva_thumbnails.py); quiz.json thumbnail_tagline overrides. Keep it under ~20 characters.",
+    "General Knowledge": "Everyone should know",
+    "Disney": "REAL fans only",
+    "Movies": "Film buffs only",
+    "Pop Culture": "Only true fans know",
+    "TV": "Binge-watchers only",
+    "Music": "Name that tune?",
+    "Sport": "True fans only",
+    "Geography": "Know the world?",
+    "History": "History buffs only",
+    "Science": "Big brains only"
   }
 }
