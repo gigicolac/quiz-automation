@@ -15,7 +15,7 @@ gif_queries.json is either a plain list of {"n", "question_query", "answer_query
 - A GIF is not reused for both the question and the answer of the same pair.
 Writes gif_candidates.json and gifs_selected.json next to the queries file.
 """
-import json, os, sys, urllib.parse, urllib.request
+import json, os, sys, urllib.error, urllib.parse, urllib.request
 
 BLOCKED_TITLE_WORDS = ["friends", "simpsons", "spongebob", "breaking bad", "game of thrones", "trump", "beyonce", "salt bae", "south park", "netflix", "bbc", "red bull", "history", "general hospital", "pawn stars", "sea of thieves", "storybots", "galifianakis", "conan", "mr t", "beatles", "scarlett", "mia farrow", "horror", "movie", "season", "episode", "tv"]
 BLOCKED_USERS = {"natgeowild", "southparkgifs", "natgeo", "netflix", "nbc", "foxsportsaus", "hbo", "disney", "warnerbros", "abcnetwork", "cbs", "bbc", "bbcamerica", "bbcearth", "thesimpsons", "spongebob", "redbull", "generalhospital", "historylat", "historyuk", "seaofthieves", "storybots", "teamcoco", "netflixlat", "dazn", "outbacksteakhouse", "friends", "southpark", "lifetimetv", "adweek", "fuckthatsdelicious", "nowthis", "pri", "worldcup", "worldrugby"}
@@ -99,10 +99,14 @@ def pick(cands, avoid, terms):
     return None
 
 
-def still_image(film, key, avoid, terms):
-    """A still frame from the actual film: the first frame of the best GIF for the film's name."""
-    for c in giphy(film, key, branded=True):
-        if c.get("id") not in avoid and c.get("still") and matches(c, terms or [film]):
+class RateLimited(Exception):
+    pass
+
+
+def still_image(cands, avoid, terms):
+    """A still frame from the actual film: the first frame of the best GIF found for the film's name."""
+    for c in cands:
+        if c.get("id") not in avoid and c.get("still") and matches(c, terms):
             return {"source": "giphy_still", "type": "image", "id": c["id"], "user": c["user"],
                     "title": c["title"], "url": c["still"]}
     return None
@@ -116,43 +120,59 @@ def main(path):
     spec = json.load(open(path))
     branded = isinstance(spec, dict) and spec.get("allow_branded", False)
     queries = spec["queries"] if isinstance(spec, dict) else spec
-    cache, result, selected = {}, [], []
-    for row in queries:
-        entry, sel, used = {"n": row["n"]}, {"n": row["n"]}, set()
-        for field in ("question_query", "answer_query"):
-            q = row[field]
-            if q not in cache:
-                c = []
-                try:
-                    if gk: c = giphy(q, gk, branded)
-                    if not c and pk and not branded: c = pixabay(q, pk)
-                except Exception as e:
-                    print("error", q, e)
-                cache[q] = c
-            slot = field.replace("_query", "_gif")
-            entry[field] = q
-            entry[field.replace("query", "candidates")] = cache[q]
+    d = os.path.dirname(path)
+    # GIPHY's free key allows ~100 searches an hour, so results are cached in the repo and re-runs only
+    # search for new or changed queries.
+    cache_path = os.path.join(d, "gif_search_cache.json")
+    cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
+    key = lambda q: f"{'branded' if branded else 'plain'}:{q}"
+
+    def search(q):
+        if key(q) not in cache:
+            c = []
+            try:
+                if gk: c = giphy(q, gk, branded)
+                if not c and pk and not branded: c = pixabay(q, pk)
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    raise RateLimited(q)
+                print("error", q, e)
+                return []
+            cache[key(q)] = c
+        return cache[key(q)]
+
+    result, selected = [], []
+    try:
+        for row in queries:
+            entry, sel, used = {"n": row["n"]}, {"n": row["n"]}, set()
             film = row.get("film") or (row.get("image_title") or "").split(" (")[0]
             terms = (row.get("match") or ([film] if film else [])) if branded else []
-            choice = pick(cache[q], used, terms)
-            if not choice and branded and film and gk:
-                try:
-                    choice = still_image(film, gk, used, terms)
-                except Exception as e:
-                    print("error still", film, e)
-            if not choice and row.get("image_title"):
-                try:
-                    choice = wiki_image(row["image_title"])
-                except Exception as e:
-                    print("error image", row["image_title"], e)
-            if choice:
-                used.add(choice.get("id"))
-                sel[slot] = choice
-        result.append(entry)
-        selected.append(sel)
-        print(row["n"], {k: len(v) for k, v in entry.items() if k.endswith("candidates")},
-              {k: v["type"] for k, v in sel.items() if k != "n"})
-    d = os.path.dirname(path)
+            for field in ("question_query", "answer_query"):
+                q = row[field]
+                slot = field.replace("_query", "_gif")
+                entry[field] = q
+                entry[field.replace("query", "candidates")] = search(q)
+                choice = pick(cache[key(q)], used, terms)
+                if not choice and branded and film and gk:
+                    choice = still_image(search(film), used, terms or [film])
+                if not choice and row.get("image_title"):
+                    try:
+                        choice = wiki_image(row["image_title"])
+                    except Exception as e:
+                        print("error image", row["image_title"], e)
+                if choice:
+                    used.add(choice.get("id"))
+                    sel[slot] = choice
+            result.append(entry)
+            selected.append(sel)
+            print(row["n"], {k: len(v) for k, v in entry.items() if k.endswith("candidates")},
+                  {k: v["type"] for k, v in sel.items() if k != "n"})
+    except RateLimited as e:
+        json.dump(cache, open(cache_path, "w"), indent=1)
+        print(f"::warning::GIPHY rate limit reached at '{e}'. Saved {len(cache)} searches; run again in an hour "
+              "to finish. gifs_selected.json was not changed.")
+        sys.exit(2)
+    json.dump(cache, open(cache_path, "w"), indent=1)
     json.dump(result, open(os.path.join(d, "gif_candidates.json"), "w"), indent=1)
     json.dump(selected, open(os.path.join(d, "gifs_selected.json"), "w"), indent=1)
     missing = [s["n"] for s in selected if not ("question_gif" in s and "answer_gif" in s)]
