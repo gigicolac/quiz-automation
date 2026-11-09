@@ -14,7 +14,7 @@ on:
       mode:
         description: "preview = make the Shorts and show the titles only; upload = upload and schedule"
         type: choice
-        options: [preview, upload]
+        options: [preview, upload, retitle]
         default: preview
       only:
         description: "Short numbers to make, e.g. 2,3,4,5,6,7 (blank = all not already uploaded)"
@@ -69,6 +69,7 @@ jobs:
           echo "TAG=$tag" >> "$GITHUB_ENV"; ls -la "$d"
 
       - name: Make Shorts
+        if: env.MODE != 'retitle'
         run: |
           d="$RUNNER_TEMP/build"
           python3 scripts/make_shorts.py --video "$d/$QUIZ.mp4" --report "$d/build_report.json" \
@@ -76,6 +77,7 @@ jobs:
           ls -la "$RUNNER_TEMP/shorts"
 
       - name: Keep the Shorts on the build's draft release
+        if: env.MODE != 'retitle'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload "$TAG" "$RUNNER_TEMP"/shorts/*.mp4 --clobber
@@ -92,7 +94,7 @@ jobs:
           { echo "## $QUIZ Shorts: $MODE"; echo '```json'; cat "$RUNNER_TEMP/shorts-plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Record result
-        if: always() && env.MODE == 'upload'
+        if: always() && (env.MODE == 'upload' || env.MODE == 'retitle')
         run: |
           f="quizzes/$QUIZ/shorts-upload.json"
           [ -f "$f" ] || exit 0

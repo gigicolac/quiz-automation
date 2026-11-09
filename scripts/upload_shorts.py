@@ -81,7 +81,8 @@ def main():
     ap.add_argument("--quiz", required=True, help="quizzes/<quiz>")
     ap.add_argument("--dir", required=True, help="folder with make_shorts.py output")
     ap.add_argument("--thumbnail", help="fallback thumbnail if a Short has none of its own")
-    ap.add_argument("--mode", choices=["preview", "upload"], default="preview")
+    ap.add_argument("--mode", choices=["preview", "upload", "retitle"], default="preview",
+                    help="retitle = update the title/description of Shorts already uploaded to match shorts.json")
     args = ap.parse_args()
 
     qdir, sdir = Path(args.quiz), Path(args.dir)
@@ -89,12 +90,35 @@ def main():
     meta = json.loads((qdir / "shorts.json").read_text())
     scfg = json.loads((ROOT / "config" / "shorts.json").read_text())
     ycfg = json.loads((ROOT / "config" / "youtube.json").read_text())
-    made = json.loads((sdir / "shorts.json").read_text())
     rec_path = qdir / "shorts-upload.json"
     rec = json.loads(rec_path.read_text()) if rec_path.exists() else {"quiz": quiz["id"], "shorts": {}}
 
     def save():
         rec_path.write_text(json.dumps(rec, indent=2, ensure_ascii=False))
+
+    if args.mode == "retitle":
+        token = up.access_token()
+        up.check_channel(token, ycfg)
+        changed = {}
+        for n, r in rec["shorts"].items():
+            md = metadata(int(n), quiz, meta, scfg, ycfg)
+            if not r.get("video_id") or (r.get("title") == md["title"] and r.get("description") == md["description"]):
+                continue
+            body = {"id": r["video_id"], "snippet": {"title": md["title"], "description": md["description"],
+                                                     "tags": md["tags"], "categoryId": ycfg["category_id"],
+                                                     "defaultLanguage": ycfg["language"],
+                                                     "defaultAudioLanguage": ycfg["language"]}}
+            _, _, resp = up.http("PUT", f"{up.API}/videos?part=snippet", token, json.dumps(body).encode(),
+                                 {"Content-Type": "application/json"})
+            if resp.get("snippet", {}).get("title") != md["title"]:
+                raise SystemExit(f"Short {n}: YouTube didn't confirm the new title")
+            r.update(title=md["title"], description=md["description"])
+            changed[n] = md["title"]
+            save()
+        print(json.dumps({"retitled": changed}, indent=2, ensure_ascii=False))
+        return
+
+    made = json.loads((sdir / "shorts.json").read_text())
 
     todo = [m for m in made if rec["shorts"].get(str(m["short"]), {}).get("status") != "scheduled"
             and not meta["shorts"][str(m["short"])].get("video_id")]
@@ -118,6 +142,7 @@ def main():
                     "status": {"privacyStatus": "private", **status_fields}}
             resp = up.upload_video(token, sdir / m["file"], body, ycfg.get("notify_subscribers", True))
             r.update(video_id=resp["id"], url=f"https://youtube.com/shorts/{resp['id']}", title=md["title"],
+                     description=md["description"],
                      upload_completed_at=up.iso(dt.datetime.now(dt.timezone.utc)), questions=m["questions"])
             save()
         vid, steps = r["video_id"], r.setdefault("steps", {})
