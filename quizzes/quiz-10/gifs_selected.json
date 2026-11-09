@@ -36,18 +36,24 @@
  {
   "n": 3,
   "question_gif": {
-   "source": "wikipedia",
-   "type": "image",
-   "id": 76361,
-   "title": "Snow White and the Seven Dwarfs (film)",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Snow_White_and_the_Seven_Dwarfs_%28Style_B%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+   "source": "giphy",
+   "type": "gif",
+   "id": "lDhTsr2nFe07e",
+   "user": "",
+   "title": "snow white and the seven dwarfs GIF",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dWpna2c3a2V3Y2M0NW10aXZoMmI2eTh6cGl5aWw2emo3MHdra21uZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lDhTsr2nFe07e/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/lDhTsr2nFe07e/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dWpna2c3a2V3Y2M0NW10aXZoMmI2eTh6cGl5aWw2emo3MHdra21uZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lDhTsr2nFe07e/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "wikipedia",
-   "type": "image",
-   "id": 76361,
-   "title": "Snow White and the Seven Dwarfs (film)",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Snow_White_and_the_Seven_Dwarfs_%28Style_B%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+   "source": "giphy",
+   "type": "gif",
+   "id": "eFhwH0A3R5aRHcIcnv",
+   "user": "disneystudios",
+   "title": "Snow White Apple GIF by Walt Disney Studios",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cjB6ZnI0eXJ0ZHB4bWtqcTRiMDM0NnpoczJ6bG9zOWxsaDF3MWFoeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eFhwH0A3R5aRHcIcnv/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/eFhwH0A3R5aRHcIcnv/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cjB6ZnI0eXJ0ZHB4bWtqcTRiMDM0NnpoczJ6bG9zOWxsaDF3MWFoeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eFhwH0A3R5aRHcIcnv/giphy_s.gif"
   }
  },
  {
@@ -81,7 +87,27 @@
   "n": 13
  },
  {
-  "n": 14
+  "n": 14,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "W5yshKbH5wrwA",
+   "user": "",
+   "title": "frying pan rapunzel GIF",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZXFuaHdtZTd0NWV1OGhqMXdsOTJtOHRqOTVjMGM3aWYzeTRpd2xhbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W5yshKbH5wrwA/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/W5yshKbH5wrwA/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZXFuaHdtZTd0NWV1OGhqMXdsOTJtOHRqOTVjMGM3aWYzeTRpd2xhbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W5yshKbH5wrwA/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "mPeN4EPPLIgbNhQWBk",
+   "user": "disney",
+   "title": "Pascal Smiling GIF by Disney",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzQyY3NqYXJhN2F3Y3NvczQ5N3Z3OWdnc3lkdjdyamo5bnhkZHk1eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mPeN4EPPLIgbNhQWBk/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/mPeN4EPPLIgbNhQWBk/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzQyY3NqYXJhN2F3Y3NvczQ5N3Z3OWdnc3lkdjdyamo5bnhkZHk1eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mPeN4EPPLIgbNhQWBk/giphy_s.gif"
+  }
  },
  {
   "n": 15
