@@ -119,7 +119,7 @@ def main():
     out = Path(args.out)
     (out / "parts").mkdir(parents=True, exist_ok=True)
     quality, chunk = spec.get("quality", "horizontal_1080p"), int(spec.get("chunk", 10))
-    token = access_token(os.environ.get("CANVA_ACCESS_TOKEN"))
+    token = access_token()
 
     s = spec.get("slides")  # absent when canva_build.py makes the slides from the template
     if s:
