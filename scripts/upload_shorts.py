@@ -44,6 +44,25 @@ def metadata(n, quiz, meta, scfg, ycfg):
     return {"title": s["title"], "description": desc, "tags": tags}
 
 
+def default_meta(quiz, qdir, scfg, made):
+    """Titles/openings for a quiz with no hand-written shorts.json: rotate the config hooks, then name the quiz."""
+    rec = json.loads((qdir / "upload.json").read_text()) if (qdir / "upload.json").exists() else {}
+    if not rec.get("video_id"):
+        raise SystemExit("The full quiz isn't uploaded yet (no video_id in upload.json), so the Shorts can't link to it.")
+    series, number = quiz.get("series", "Quiz"), quiz.get("number", "")
+    titles, openings = scfg["title_hooks"], scfg["opening_hooks"]
+    start = int(number or 0) % len(titles)  # a different first hook each quiz
+    shorts = {}
+    for i, m in enumerate(made):
+        n = len(m["questions"])
+        k = (start + i) % len(titles)
+        shorts[str(m["short"])] = {"title": f"{titles[k].format(n=n)} {series} Quiz #{number}",
+                                   "opening": openings[k % len(openings)].format(n=n), "pattern": "config default"}
+    return {"_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+            "full_quiz_video_id": rec["video_id"],
+            "series_tag": "".join(ch for ch in series.lower() if ch.isalnum()) or "quiz", "shorts": shorts}
+
+
 def recording_date(upload_day, video_key, lo=2, hi=7):
     """Recording date a few days before upload (Giulia: 'one week prior or a couple of days prior; vary these').
     Varies per Short but is stable for the same Short, so a re-run records the same date."""
@@ -118,7 +137,13 @@ def main():
 
     qdir, sdir = Path(args.quiz), Path(args.dir)
     quiz = json.loads((qdir / "quiz.json").read_text())
-    meta = json.loads((qdir / "shorts.json").read_text())
+    scfg_ = json.loads((ROOT / "config" / "shorts.json").read_text())
+    if (qdir / "shorts.json").exists():
+        meta = json.loads((qdir / "shorts.json").read_text())
+    else:
+        meta = default_meta(quiz, qdir, scfg_, json.loads((sdir / "shorts.json").read_text()))
+        if args.mode != "preview":
+            (qdir / "shorts.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
     scfg = json.loads((ROOT / "config" / "shorts.json").read_text())
     ycfg = json.loads((ROOT / "config" / "youtube.json").read_text())
     rec_path = qdir / "shorts-upload.json"
