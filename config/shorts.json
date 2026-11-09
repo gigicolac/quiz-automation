@@ -30,5 +30,15 @@
     "Just One More Quiz"
   ],
   "_titles": "Per-quiz titles live in quizzes/<quiz>/shorts.json. Follow docs/hooks-playbook.md: hook first, specific, true, under ~50 characters before the quiz tag.",
-  "minimum_lead_minutes": 1440
+  "minimum_lead_minutes": 1440,
+  "studio": {
+    "_comment": "Giulia, 9 Nov 2026: every Short goes in the series playlist; paid promotion No; recording date set (2-7 days before upload, varied); location Melbourne, VIC; Problems always filled in; set Level when it fits the quiz.",
+    "location": "Melbourne, VIC",
+    "education_type": "Activity",
+    "level": "",
+    "recording_days_before": [
+      2,
+      7
+    ]
+  }
 }
