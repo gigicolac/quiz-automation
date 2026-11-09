@@ -5,15 +5,16 @@
     "title": "One More Quiz!"
   },
   "status": "scheduled",
-  "started_at": "2026-11-06T01:22:05.100881+00:00",
+  "started_at": "2026-11-06T06:20:36.183593+00:00",
   "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
   "intended_publish_at": "2026-11-08T18:00:00Z",
   "publish_at_local": {
     "US Eastern": "Sun 08 Nov 2026 13:00 EST",
     "Sydney": "Mon 09 Nov 2026 05:00 AEDT"
   },
-  "release_tag": "quiz-09-preview-4",
+  "release_tag": "quiz-09-preview-6",
   "playlist": "General Knowledge Quizzes",
+  "problems": "0:18 What is the capital city of Australia?\n0:36 How many legs does a spider have?\n0:52 Which planet is the hottest in our solar system?\n1:12 What is the largest mammal on Earth?\n1:31 What is the tallest mountain above sea level?\n1:47 Which country has the largest population in the world?\n2:06 How many minutes are in a full day?\n2:24 What language is spoken in Brazil?\n2:42 What is the main ingredient in guacamole?\n2:59 In which city would you find the Colosseum?\n3:16 What is the smallest prime number?\n3:34 How many chambers does the human heart have?\n3:50 How many players from each team are on the court in netball?\n4:08 What is the bee that lays all the eggs in a hive called?\n4:24 Who was the first person to walk on the Moon?\n4:42 At what temperature in degrees Celsius does water boil at sea level?\n4:59 What is the smallest bone in the human body?\n5:16 Which country is famous for its tulips and windmills?\n5:33 What is the longest river in Australia?\n5:50 Which author wrote Pride and Prejudice?\n6:08 What colour do you get when you mix blue and yellow paint?\n6:24 What is the fastest bird in the world?\n6:43 In which country would you find Machu Picchu?\n7:00 What is the chemical symbol for sodium?\n7:18 How many days are in a leap year?\n7:37 Which planet is closest to the Sun?\n7:54 What colourful puzzle cube was invented by Ernő Rubik in 1974?\n8:11 Which ocean lies between Africa and Australia?\n8:27 Which fruit wears its seeds on the outside?\n8:45 In which year did World War II end?\n9:01 Which reptile is famous for changing the colour of its skin?\n9:19 Who painted The Starry Night?\n9:36 What is the largest country in the world by land area?\n9:53 How many continents are there?\n10:10 What is the name of the galaxy we live in?\n10:28 Which gas makes party balloons float?\n10:44 In which sport would you hit a shuttlecock?\n11:02 What is Big Ben in London?\n11:22 What is the square root of 144?\n11:38 Which Australian bird is famous for its laughing call?\n11:54 What was the name of Captain Cook's ship when he reached Australia's east coast in 1770?\n12:10 What is a word that sounds the same as another but has a different meaning?\n12:27 Which planet has the most known moons?\n12:46 What creature appears on the flag of Wales?\n13:02 Which vitamin does your body make when your skin is in sunlight?\n13:20 Which city hosted the 2000 Summer Olympics?\n13:37 What type of pasta is shaped like little bow ties?\n13:53 What do you call a word made by rearranging the letters of another word?\n14:11 What is the driest non-polar desert in the world?\n14:28 Legend says a falling apple inspired which scientist's theory of gravity?",
   "steps": {
     "captions": "uploaded",
     "thumbnail": "thumbnail-a.jpg",
@@ -23,13 +24,66 @@
       "created": false
     }
   },
-  "video_id": "JoGfwPrG0IU",
-  "url": "https://youtu.be/JoGfwPrG0IU",
-  "upload_completed_at": "2026-11-06T01:22:08Z",
+  "replaced": [
+    {
+      "quiz": "quiz-09",
+      "channel": {
+        "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+        "title": "One More Quiz!"
+      },
+      "status": "replaced_unscheduled",
+      "started_at": "2026-11-06T01:22:05.100881+00:00",
+      "title": "General Knowledge Quiz #9 | 50 Questions Everyone Should Know",
+      "intended_publish_at": "2026-11-08T18:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sun 08 Nov 2026 13:00 EST",
+        "Sydney": "Mon 09 Nov 2026 05:00 AEDT"
+      },
+      "release_tag": "quiz-09-preview-4",
+      "playlist": "General Knowledge Quizzes",
+      "steps": {
+        "captions": "uploaded",
+        "thumbnail": "thumbnail-a.jpg",
+        "playlist": {
+          "id": "PL2ijqZth2mEDrfRkon0zcRDgGIV_ONmzx",
+          "title": "General Knowledge Quizzes",
+          "created": false
+        }
+      },
+      "video_id": "JoGfwPrG0IU",
+      "url": "https://youtu.be/JoGfwPrG0IU",
+      "upload_completed_at": "2026-11-06T01:22:08Z",
+      "studio_tasks": [
+        "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: General Knowledge Quizzes.",
+        "Test & Compare (A/B): titles General Knowledge Quiz #9 | 50 Questions Everyone Should Know | Can You Score 50/50? General Knowledge Quiz #9 | 50 General Knowledge Questions Everyone Should Know | Quiz #9; thumbnails once there are 2-3 variants.",
+        "Pin the score comment."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-08T18:00:00Z",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-08T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": true
+      },
+      "finished_at": "2026-11-06T01:24:34Z",
+      "unscheduled_at": "2026-11-06T06:20:37Z"
+    }
+  ],
+  "video_id": "4x-3R1l3SD8",
+  "url": "https://youtu.be/4x-3R1l3SD8",
+  "upload_completed_at": "2026-11-06T06:21:02Z",
   "studio_tasks": [
     "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: General Knowledge Quizzes.",
-    "Test & Compare (A/B): titles General Knowledge Quiz #9 | 50 Questions Everyone Should Know | Can You Score 50/50? General Knowledge Quiz #9 | 50 General Knowledge Questions Everyone Should Know | Quiz #9; thumbnails once there are 2-3 variants.",
-    "Pin the score comment."
+    "Test & Compare (A/B), Title and thumbnail: General Knowledge Quiz #9 | 50 Questions Everyone Should Know + thumbnail A | Can You Pass This General Knowledge Quiz? 🧠 50 Trivia Questions | Quiz #9 + thumbnail B.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
   ],
   "processing": "succeeded",
   "publish_at": "2026-11-08T18:00:00Z",
@@ -41,7 +95,10 @@
     "embeddable": true,
     "publicStatsViewable": true,
     "selfDeclaredMadeForKids": false,
-    "containsSyntheticMedia": true
+    "containsSyntheticMedia": false
   },
-  "finished_at": "2026-11-06T01:24:34Z"
+  "finished_at": "2026-11-06T06:22:48Z",
+  "comment_id": "Ugx18sw4FhD5DVe2s5Z4AaABAg",
+  "comment_posted_at": "2026-11-09T00:03:47Z",
+  "pin_link": "https://www.youtube.com/watch?v=4x-3R1l3SD8&lc=Ugx18sw4FhD5DVe2s5Z4AaABAg"
 }

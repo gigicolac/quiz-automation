@@ -235,7 +235,7 @@ def classify_slides(path, fps):
     w, h = 37, 9
     proc = subprocess.Popen(
         ["ffmpeg", "-v", "error", "-i", str(path), "-vf",
-         f"fps={fps},crop=370:90:760:900,scale={w}:{h}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+         f"fps={fps},scale=1920:1080,crop=370:90:760:900,scale={w}:{h}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
         stdout=subprocess.PIPE)
     labels = []
     size = w * h * 3
@@ -306,19 +306,6 @@ def srt_time(t):
     return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
 
 
-def caption_chunks(text, max_chars=84):
-    words, chunks, cur = text.split(), [], ""
-    for w in words:
-        if cur and len(cur) + 1 + len(w) > max_chars:
-            chunks.append(cur)
-            cur = w
-        else:
-            cur = f"{cur} {w}".strip()
-    if cur:
-        chunks.append(cur)
-    return chunks
-
-
 def wrap2(chunk, width=42):
     if len(chunk) <= width:
         return chunk
@@ -328,17 +315,87 @@ def wrap2(chunk, width=42):
     return top + "\n" + " ".join(words)
 
 
+def speech_bounds(clip, thresh_db=-40):
+    """First and last moment of speech in a voice clip (seconds), ignoring leading/trailing silence."""
+    blk = int(0.01 * SR)
+    nb = len(clip) // blk
+    if nb == 0:
+        return 0.0, len(clip) / SR
+    lvl = 20 * np.log10(np.sqrt((clip[: nb * blk].reshape(nb, blk) ** 2).mean(axis=1)) + 1e-12)
+    on = np.nonzero(lvl > thresh_db)[0]
+    if len(on) == 0:
+        return 0.0, len(clip) / SR
+    return on[0] * 0.01, (on[-1] + 1) * 0.01
+
+
+_whisper = None
+
+
+def word_times(clip):
+    """Word start/end times in a voice clip from faster-whisper, or None if it isn't installed."""
+    global _whisper
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        return None
+    if _whisper is None:
+        _whisper = WhisperModel("base.en", device="cpu", compute_type="int8")
+    audio16 = clip[:: SR // 16000].astype(np.float32)
+    segs, _ = _whisper.transcribe(audio16, language="en", word_timestamps=True, beam_size=1,
+                                  vad_filter=False, condition_on_previous_text=False)
+    return [(w.start, w.end) for sg in segs for w in (sg.words or [])]
+
+
+def caption_chunks(text, max_chars=42):
+    """Split a caption into one-line chunks, preferring breaks after punctuation."""
+    words, chunks, cur = text.split(), [], ""
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > max_chars:
+            chunks.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}".strip()
+            if cur.endswith((".", "!", "?")) and len(cur) > max_chars * 0.4:
+                chunks.append(cur)
+                cur = ""
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
+def timed_cues(items):
+    """items: (start, clip, caption, spoken). Returns (start, end, text) caption cues that follow the
+    actual speech: each chunk starts at the spoken word it begins with (whisper word timings), or,
+    without whisper, spreads over the speech (silence trimmed) by the length of its spoken words."""
+    cues = []
+    for start, clip, caption, spoken in items:
+        chunks = caption_chunks(caption)
+        n_spoken = [len(say_numbers(c).split()) for c in chunks]
+        total = max(sum(n_spoken), 1)
+        a, b = speech_bounds(clip)
+        words = word_times(clip)
+        bounds, k = [], 0
+        for n in n_spoken:
+            if words:
+                i0 = min(round(k * len(words) / total), len(words) - 1)
+                i1 = min(round((k + n) * len(words) / total), len(words)) - 1
+                bounds.append((words[i0][0], words[max(i1, i0)][1]))
+            else:
+                bounds.append((a + (b - a) * k / total, a + (b - a) * (k + n) / total))
+            k += n
+        for i, (c, (t0, t1)) in enumerate(zip(chunks, bounds)):
+            # hold each cue until the next one starts (or a moment after the last word)
+            nxt = bounds[i + 1][0] if i + 1 < len(bounds) else t1 + 0.4
+            cues.append((start + t0, start + max(nxt, t0 + 0.8), c))
+    # no overlaps between consecutive cues
+    for i in range(len(cues) - 1):
+        if cues[i][1] > cues[i + 1][0]:
+            cues[i] = (cues[i][0], cues[i + 1][0], cues[i][2])
+    return cues
+
+
 def write_srt(cues, path):
-    out, i = [], 1
-    for start, dur, text in cues:
-        chunks = caption_chunks(text)
-        total = sum(len(c) for c in chunks)
-        t = start
-        for c in chunks:
-            d = dur * len(c) / total
-            out.append(f"{i}\n{srt_time(t)} --> {srt_time(t + d)}\n{wrap2(c)}\n")
-            i += 1
-            t += d
+    out = [f"{i}\n{srt_time(t0)} --> {srt_time(t1)}\n{c}\n" for i, (t0, t1, c) in enumerate(cues, 1)]
     path.write_text("\n".join(out), encoding="utf-8")
 
 
@@ -445,7 +502,8 @@ def main():
             a = int((s["start"] + off) * SR)
             clip = vo[lid][: n - a]
             voice[a:a + len(clip)] += clip
-            cues.append((s["start"] + off, len(clip) / SR, next(l["caption"] for l in lines if l["id"] == lid)))
+            line = next(l for l in lines if l["id"] == lid)
+            cues.append((s["start"] + off, clip, line["caption"], line["text"]))
     fx = np.zeros(n, np.float32)
     hooray = set_rms(trim_silence(load_audio(private / "hooray.m4a")), cfg["hooray"]["rms_db"])
     for s in segs:
@@ -510,7 +568,7 @@ def main():
     final = out / f"{slug}.mp4"
     ffmpeg("-i", video, "-i", audio, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", final)
-    write_srt(cues, out / f"{slug}.srt")
+    write_srt(timed_cues(cues), out / f"{slug}.srt")
 
     report = {
         "quiz": slug, "tts": tts.name, "duration_s": round(total, 2),

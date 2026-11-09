@@ -22,7 +22,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: build-video-${{ github.ref }}
+  group: build-video
   cancel-in-progress: false
 jobs:
   build:
@@ -50,7 +50,28 @@ jobs:
       - name: Install ffmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
+      - name: Export from Canva
+        # build.json "canva_export" block: export straight from Canva via the Connect API (e.g. 4K)
+        env:
+          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
+          b="quizzes/$QUIZ/build.json"; d="$RUNNER_TEMP/canva"; mkdir -p "$d"
+          if [ "$(jq 'has("canva_export")' "$b")" != true ]; then echo "No canva_export block; using links"; exit 0; fi
+          python3 scripts/canva_export.py --build "$b" --out "$d"
+          tag="$QUIZ-canva-$(jq -r '.canva_export.quality' "$b")"
+          gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --draft \
+            --title "$QUIZ Canva exports ($(jq -r '.canva_export.quality' "$b"))" --notes "Slide exports used by the Build video workflow. Draft, not public."
+          gh release upload "$tag" "$d"/slides.mp4 "$d"/intro.mp4 "$d"/rules.mp4 "$d"/outro.mp4 --clobber
+          echo "EXPORTED=1" >> "$GITHUB_ENV"
+          ls -la "$d"
+
       - name: Download Canva exports
+        if: env.EXPORTED != '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

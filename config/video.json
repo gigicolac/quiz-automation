@@ -1,9 +1,9 @@
 {
   "_comment": "Settings for scripts/build_video.py. Loudness values are RMS in dBFS. Times are seconds. Outro 'at' times match the Quiz #8 ending slide: clip 0-4.7 s, score comment 4.8 s, 'Want to see more?' 8 s, 'One more quiz?' 14.5 s.",
-  "width": 1920,
-  "height": 1080,
+  "width": 3840,
+  "height": 2160,
   "fps": 30,
-  "crf": 20,
+  "crf": 18,
   "preset": "veryfast",
   "voice": {
     "target_rms_db": -20.0,
