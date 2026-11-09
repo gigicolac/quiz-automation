@@ -40,5 +40,25 @@
       2,
       7
     ]
-  }
+  },
+  "max_shorts_per_quiz": 5,
+  "_comment_titles": "Default Shorts titles/openings when quizzes/<quiz>/shorts.json isn't written by hand (patterns from Quiz #9, Giulia 9 Nov: challenge hook first, then make the quiz clear). {n} = questions in the Short. The weekly run may write a quiz's own shorts.json instead, following the hooks playbook.",
+  "title_hooks": [
+    "How much do you REALLY know? 🤔",
+    "Can you beat the average score? 🧠",
+    "No multiple choice. No hints. Can you get them all? 🧠",
+    "Think you're smart? Prove it in {n} questions ⏱️",
+    "{n} questions, 5 seconds each. Can you keep up? ⏱️",
+    "Smart enough for a perfect {n}/{n}? 👀",
+    "Most people get these WRONG 😬"
+  ],
+  "opening_hooks": [
+    "Sneak peek 👀 {n} questions, five seconds each. How much do you REALLY know?",
+    "Sneak peek 👀 {n} questions. Can you beat the average score?",
+    "Sneak peek 👀 No multiple choice, no hints, five seconds each. Can you get all {n}?",
+    "Sneak peek 👀 Think you're smart? {n} questions, five seconds each. Prove it.",
+    "Sneak peek 👀 {n} questions, five seconds each, no warm-up. Can you keep up?",
+    "Sneak peek 👀 Smart enough for a perfect {n}/{n}?",
+    "Sneak peek 👀 Most people get at least one of these wrong. Will you?"
+  ]
 }

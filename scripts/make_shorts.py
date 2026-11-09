@@ -167,6 +167,9 @@ def main():
     nq = len([n for n in segs if re.fullmatch(r"q\d+", n)])
     groups = [list(range(i, min(i + args.per, nq + 1))) for i in range(1, nq + 1, args.per)]
     groups = [g for g in groups if len(g) == args.per]  # leftovers stay in the long video
+    cfg = json.loads(Path(args.hooks).read_text())
+    if cfg.get("max_shorts_per_quiz"):  # 2 slots a day can't take 3 quizzes x 7 Shorts a week (Giulia, 10 Nov)
+        groups = groups[:cfg["max_shorts_per_quiz"]]
     made = []
     for gi, qs in enumerate(groups, 1):
         if only and gi not in only:
