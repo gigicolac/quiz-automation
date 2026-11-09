@@ -2,6 +2,11 @@ name: Shorts
 # Cut a quiz's Shorts from its final video and (mode=upload) upload them privately, then schedule them
 # at 8am and 6pm US Eastern, at least 24 hours after upload (rain-sounds pattern). Record: quizzes/<quiz>/shorts-upload.json.
 on:
+  # daily, after the 8am long-video upload: Shorts for the first quiz whose long video is scheduled and whose
+  # Shorts aren't all uploaded yet (set repository variable AUTO_UPLOAD=false to pause, as for upload.yml)
+  schedule:
+    - cron: "30 9 * * *"
+      timezone: "Australia/Sydney"
   # a commit that changes quizzes/<quiz>/shorts-request.json ({"mode": "upload", "only": "2,3"}) on a branch also runs it
   push:
     branches-ignore: [main]
@@ -26,6 +31,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   shorts:
+    if: github.event_name != 'schedule' || vars.AUTO_UPLOAD != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
@@ -39,7 +45,23 @@ jobs:
           IN_MODE: ${{ inputs.mode }}
           IN_ONLY: ${{ inputs.only }}
         run: |
-          if [ "${{ github.event_name }}" = push ]; then
+          if [ "${{ github.event_name }}" = schedule ]; then
+            # first quiz whose long video is scheduled and that has no Shorts record, or an unfinished one.
+            # A record whose Shorts are all scheduled is left alone (Shorts Giulia posted by hand aren't redone).
+            pick=""
+            for f in quizzes/*/quiz.json; do
+              q=$(basename "$(dirname "$f")")
+              [ "$(jq -r '.review.video.decision // empty' "$f")" = approved ] || continue
+              [ "$(jq -r '.status // empty' "quizzes/$q/upload.json" 2>/dev/null)" = scheduled ] || continue
+              s="quizzes/$q/shorts-upload.json"
+              if [ ! -f "$s" ] || [ "$(jq '[.shorts[]? | select(.status != "scheduled")] | length' "$s")" != 0 ]; then
+                pick=$q; break
+              fi
+            done
+            if [ -z "$pick" ]; then echo "No Shorts to make today." | tee -a "$GITHUB_STEP_SUMMARY"; echo "QUIZ=" >> "$GITHUB_ENV"; exit 0; fi
+            echo "Daily Shorts: $pick" | tee -a "$GITHUB_STEP_SUMMARY"
+            { echo "QUIZ=$pick"; echo "MODE=upload"; echo "ONLY="; } >> "$GITHUB_ENV"
+          elif [ "${{ github.event_name }}" = push ]; then
             # only a request changed on this branch (not one that arrived by merging main)
             git fetch -q --depth=50 origin main || true
             f=""

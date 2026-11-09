@@ -69,8 +69,11 @@ The upload's run summary and `upload.json` list these under `studio_tasks`. They
 - `YT_CLIENT_ID`, `YT_CLIENT_SECRET` and `YT_REFRESH_TOKEN` secrets. See `docs/sign-in.md`.
 - **The API audit:** YouTube locks videos uploaded through an unaudited API project as private, so `publishAt` won't make them public. Check Studio after the first upload. If the video shows as locked or restricted, apply for the YouTube API audit for the Google Cloud project.
 
+## Shorts
+
+The **Shorts** workflow also runs daily at 9:30am Sydney, after the 8am upload. It picks the first approved quiz whose long video is scheduled and whose Shorts aren't all scheduled yet. It cuts 7-question Shorts from the final video, uploads them privately and schedules each to the next free 8am or 6pm US Eastern slot, at least 24 hours after its upload. A quiz whose Shorts are all scheduled is skipped, so Shorts posted by hand aren't redone. Repository variable `AUTO_UPLOAD=false` pauses this as well. The Studio task on Giulia's Mac does the Studio-only Shorts settings (location, paid promotion, related video, level, pinning).
+
 ## Not yet included
 
 - **Thumbnails:** made in Canva from the template (A = red band, B = blue band), exported, and listed in `quizzes/<quiz>/thumbnails.json`. Committing that file runs **Attach thumbnails**, which adds them to the approved release. The upload sets thumbnail A; B is for the Test & Compare A/B test in Studio.
-- **Shorts:** not uploaded yet.
 - **Other Studio-only settings** stay manual or a browser task: caption certification and location.
