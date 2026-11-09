@@ -46,11 +46,17 @@ jobs:
           if [ -n "$IN_QUIZ" ]; then
             { echo "QUIZ=$IN_QUIZ"; echo "ONLY=$IN_ONLY"; echo "QUALITY=$IN_QUALITY"; } >> "$GITHUB_ENV"; exit 0
           fi
-          f=$(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/canva-test.json' | head -1)
+          f=""
+          for c in $(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/canva-test.json' 2>/dev/null); do
+            git diff --quiet origin/main HEAD -- "$c" 2>/dev/null && continue  # arrived by merging main
+            f=$c; break
+          done
+          if [ -z "$f" ]; then echo "No new canva-test.json on this branch"; echo "QUIZ=" >> "$GITHUB_ENV"; exit 0; fi
           q=$(echo "$f" | cut -d/ -f2)
           { echo "QUIZ=$q"; echo "ONLY=$(jq -r '.only | map(tostring) | join(" ")' "$f")"
             echo "QUALITY=$(jq -r '.quality // "horizontal_1080p"' "$f")"; } >> "$GITHUB_ENV"
       - name: Fill and export
+        if: env.QUIZ != ''
         env:
           CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
           CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
@@ -65,7 +71,7 @@ jobs:
           python3 scripts/canva_build.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/out" --only $ONLY
           { echo "## Canva build test: $QUIZ questions $ONLY ($QUALITY)"; echo '```json'; cat "$RUNNER_TEMP/out/canva_state.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && env.QUIZ != ''
         with:
           name: canva-build-test
           path: |

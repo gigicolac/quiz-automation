@@ -40,7 +40,14 @@ jobs:
           IN_ONLY: ${{ inputs.only }}
         run: |
           if [ "${{ github.event_name }}" = push ]; then
-            f=$(git diff --name-only HEAD~1 HEAD -- 'quizzes/*/shorts-request.json' | head -1)
+            # only a request changed on this branch (not one that arrived by merging main)
+            git fetch -q --depth=50 origin main || true
+            f=""
+            for c in $(git diff --name-only "${{ github.event.before }}" HEAD -- 'quizzes/*/shorts-request.json' 2>/dev/null); do
+              git diff --quiet origin/main HEAD -- "$c" 2>/dev/null && continue
+              f=$c; break
+            done
+            if [ -z "$f" ]; then echo "No new Shorts request on this branch; nothing to do."; echo "QUIZ=" >> "$GITHUB_ENV"; exit 0; fi
             q=$(basename "$(dirname "$f")")
             { echo "QUIZ=$q"; echo "MODE=$(jq -r '.mode // "preview"' "$f")"; echo "ONLY=$(jq -r '.only // ""' "$f")"; } >> "$GITHUB_ENV"
           else
@@ -48,6 +55,7 @@ jobs:
           fi
 
       - name: Fonts and tools
+        if: env.QUIZ != ''
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-color-emoji ffmpeg >/dev/null
           sudo mkdir -p /usr/share/fonts/truetype/google-fonts
@@ -56,6 +64,7 @@ jobs:
           pip install -q pillow==11.0.0
 
       - name: Download the final video
+        if: env.QUIZ != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -69,7 +78,7 @@ jobs:
           echo "TAG=$tag" >> "$GITHUB_ENV"; ls -la "$d"
 
       - name: Make Shorts
-        if: env.MODE != 'retitle'
+        if: env.QUIZ != '' && (env.MODE != 'retitle')
         run: |
           d="$RUNNER_TEMP/build"
           python3 scripts/make_shorts.py --video "$d/$QUIZ.mp4" --report "$d/build_report.json" \
@@ -77,12 +86,13 @@ jobs:
           ls -la "$RUNNER_TEMP/shorts"
 
       - name: Keep the Shorts on the build's draft release
-        if: env.MODE != 'retitle'
+        if: env.QUIZ != '' && (env.MODE != 'retitle')
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload "$TAG" "$RUNNER_TEMP"/shorts/*.mp4 --clobber
 
       - name: Upload and schedule
+        if: env.QUIZ != ''
         env:
           YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -94,7 +104,7 @@ jobs:
           { echo "## $QUIZ Shorts: $MODE"; echo '```json'; cat "$RUNNER_TEMP/shorts-plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Record result
-        if: always() && (env.MODE == 'upload' || env.MODE == 'retitle')
+        if: env.QUIZ != '' && (always() && (env.MODE == 'upload' || env.MODE == 'retitle'))
         run: |
           f="quizzes/$QUIZ/shorts-upload.json"
           [ -f "$f" ] || exit 0
