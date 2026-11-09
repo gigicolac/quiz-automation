@@ -8,7 +8,8 @@ gif_queries.json is either a plain list of {"n", "question_query", "answer_query
 - By default branded/TV accounts in BLOCKED_USERS are skipped. "allow_branded": true (fandom quizzes,
   e.g. a Disney quiz where Giulia wants GIFs from the actual films) lifts that filter and prefers
   official studio accounts in PREFERRED_USERS.
-- For fandom quizzes a GIF is only picked when its title mentions something from the query. When no
+- For fandom quizzes a GIF is only picked when its title contains one of the row's "match" terms
+  (default: its "film" name), so off-topic GIFs that merely share a word are skipped. When no
   GIF fits, a still image from the film is used instead (first frame of a GIF found by the row's
   "film" name, else the name in "image_title"), then the Wikipedia lead image of "image_title".
 - A GIF is not reused for both the question and the answer of the same pair.
@@ -19,7 +20,7 @@ import json, os, sys, urllib.parse, urllib.request
 BLOCKED_TITLE_WORDS = ["friends", "simpsons", "spongebob", "breaking bad", "game of thrones", "trump", "beyonce", "salt bae", "south park", "netflix", "bbc", "red bull", "history", "general hospital", "pawn stars", "sea of thieves", "storybots", "galifianakis", "conan", "mr t", "beatles", "scarlett", "mia farrow", "horror", "movie", "season", "episode", "tv"]
 BLOCKED_USERS = {"natgeowild", "southparkgifs", "natgeo", "netflix", "nbc", "foxsportsaus", "hbo", "disney", "warnerbros", "abcnetwork", "cbs", "bbc", "bbcamerica", "bbcearth", "thesimpsons", "spongebob", "redbull", "generalhospital", "historylat", "historyuk", "seaofthieves", "storybots", "teamcoco", "netflixlat", "dazn", "outbacksteakhouse", "friends", "southpark", "lifetimetv", "adweek", "fuckthatsdelicious", "nowthis", "pri", "worldcup", "worldrugby"}
 # never wanted, even for fandom quizzes
-ALWAYS_BLOCKED_TITLE_WORDS = ["trump", "horror"]
+ALWAYS_BLOCKED_TITLE_WORDS = ["trump", "horror", "terrifier", "survivor", "live action", "angelina", "on ice", "broadway", "musical"]
 PREFERRED_USERS = {"disney", "pixar", "disneyanimation", "disneystudios", "disneyplus", "disneyjunior", "disneychannel", "disneypixar", "waltdisneystudios", "disneyparks"}
 UA = {"User-Agent": "quiz-automation-gif-finder/1.0"}
 
@@ -82,21 +83,26 @@ def wiki_image(title):
     return None
 
 
-def pick(cands, avoid, q, strict):
-    """First unused candidate; with strict, its title must mention something from the query."""
+def matches(c, terms):
+    title = f' {(c.get("title") or "").lower().replace("-", " ")} '
+    return any(t.lower().replace("-", " ") in title for t in terms)
+
+
+def pick(cands, avoid, terms):
+    """First unused candidate; with match terms (fandom quizzes), its title must contain one of them."""
     for c in cands:
         if c.get("id") in avoid:
             continue
-        if strict and not (words(q) & words(c.get("title", ""))):
+        if terms and not matches(c, terms):
             continue
         return c
     return None
 
 
-def still_image(film, key, avoid):
+def still_image(film, key, avoid, terms):
     """A still frame from the actual film: the first frame of the best GIF for the film's name."""
     for c in giphy(film, key, branded=True):
-        if c.get("id") not in avoid and c.get("still") and words(film) & words(c.get("title", "")):
+        if c.get("id") not in avoid and c.get("still") and matches(c, terms or [film]):
             return {"source": "giphy_still", "type": "image", "id": c["id"], "user": c["user"],
                     "title": c["title"], "url": c["still"]}
     return None
@@ -126,11 +132,12 @@ def main(path):
             slot = field.replace("_query", "_gif")
             entry[field] = q
             entry[field.replace("query", "candidates")] = cache[q]
-            choice = pick(cache[q], used, q, strict=branded)
             film = row.get("film") or (row.get("image_title") or "").split(" (")[0]
+            terms = (row.get("match") or ([film] if film else [])) if branded else []
+            choice = pick(cache[q], used, terms)
             if not choice and branded and film and gk:
                 try:
-                    choice = still_image(film, gk, used)
+                    choice = still_image(film, gk, used, terms)
                 except Exception as e:
                     print("error still", film, e)
             if not choice and row.get("image_title"):
