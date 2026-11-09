@@ -1,16 +1,11 @@
 name: Post score comment
-# Runs 15 minutes after each quiz release (Thu 3pm, Sat 1pm, Sun 1pm US Eastern) plus a daily catch-up,
+# Runs every hour,
 # and posts the score comment on quiz videos that have gone public. Pinning stays manual (no API).
 on:
   schedule:
-    - cron: "15 15 * * 4"
-      timezone: "America/New_York"
-    - cron: "15 13 * * 6"
-      timezone: "America/New_York"
-    - cron: "15 13 * * 0"
-      timezone: "America/New_York"
-    - cron: "45 17 * * *"
-      timezone: "America/New_York"
+    # hourly (UTC, no timezone key): the timed runs at release +15 min did not fire reliably, and Shorts
+    # release twice a day. A run with nothing due finishes in seconds.
+    - cron: "17 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -31,7 +26,7 @@ jobs:
         run: python3 scripts/post_comment.py
       - name: Record comments
         run: |
-          git add quizzes/*/upload.json 2>/dev/null || true
+          git add quizzes/*/upload.json quizzes/*/shorts-upload.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

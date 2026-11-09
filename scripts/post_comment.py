@@ -52,6 +52,17 @@ def main():
         if dt.datetime.fromisoformat(rec["publish_at"].replace("Z", "+00:00")) > now + dt.timedelta(minutes=5):
             continue
         due.append((f, rec))
+    # Shorts: one comment per Short once it is public ("What did you score out of 7?")
+    scfg = json.loads((ROOT / "config" / "shorts.json").read_text())
+    for f in sorted((ROOT / "quizzes").glob("*/shorts-upload.json")):
+        srec = json.loads(f.read_text())
+        for n, r in srec.get("shorts", {}).items():
+            if r.get("status") != "scheduled" or r.get("comment_id") or not r.get("publish_at"):
+                continue
+            if dt.datetime.fromisoformat(r["publish_at"].replace("Z", "+00:00")) > now + dt.timedelta(minutes=5):
+                continue
+            due.append((f, {**r, "quiz": f"{srec['quiz']} Short {n}", "_short": n,
+                            "_text": scfg["comment"].format(n=len(r.get("questions", [])) or 7)}))
     summary = ["## Score comments", ""]
     if not due:
         summary.append("Nothing due.")
@@ -65,16 +76,22 @@ def main():
             if privacy != "public":
                 summary.append(f"- {rec['quiz']}: video is {privacy}, not public yet; will retry.")
                 continue
-            text = comment_text(f.parent, cfg)
+            text = rec.get("_text") or comment_text(f.parent, cfg)
             cid = existing_comment(token, vid, channel["id"], text)
             if not cid:
                 body = {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}}
                 _, _, resp = up.http("POST", f"{up.API}/commentThreads?part=snippet", token,
                                      json.dumps(body).encode(), {"Content-Type": "application/json"})
                 cid = resp["id"]
-            rec.update(comment_id=cid, comment_posted_at=up.iso(now),
-                       pin_link=f"https://www.youtube.com/watch?v={vid}&lc={cid}")
-            f.write_text(json.dumps(rec, indent=2, ensure_ascii=False))
+            done = dict(comment_id=cid, comment_posted_at=up.iso(now),
+                        pin_link=f"https://www.youtube.com/watch?v={vid}&lc={cid}")
+            rec.update(done)
+            if "_short" in rec:  # write back into the Shorts record
+                srec = json.loads(f.read_text())
+                srec["shorts"][rec["_short"]].update(done)
+                f.write_text(json.dumps(srec, indent=2, ensure_ascii=False))
+            else:
+                f.write_text(json.dumps(rec, indent=2, ensure_ascii=False))
             summary.append(f"- {rec['quiz']}: comment posted. [Open and pin]({rec['pin_link']}) "
                            "(comment's ⋮ menu → Pin).")
     out = "\n".join(summary)
