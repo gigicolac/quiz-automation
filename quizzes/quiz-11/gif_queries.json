@@ -1,0 +1,252 @@
+[
+  {
+    "n": 1,
+    "question_query": "fast",
+    "answer_query": "light beam"
+  },
+  {
+    "n": 2,
+    "question_query": "outer space",
+    "answer_query": "sun"
+  },
+  {
+    "n": 3,
+    "question_query": "push",
+    "answer_query": "apple falling"
+  },
+  {
+    "n": 4,
+    "question_query": "speaker bass",
+    "answer_query": "slinky"
+  },
+  {
+    "n": 5,
+    "question_query": "astronaut",
+    "answer_query": "silence"
+  },
+  {
+    "n": 6,
+    "question_query": "soup",
+    "answer_query": "hot spoon"
+  },
+  {
+    "n": 7,
+    "question_query": "energy",
+    "answer_query": "lightning"
+  },
+  {
+    "n": 8,
+    "question_query": "rainbow",
+    "answer_query": "red"
+  },
+  {
+    "n": 9,
+    "question_query": "car race",
+    "answer_query": "rocket launch"
+  },
+  {
+    "n": 10,
+    "question_query": "lightning",
+    "answer_query": "thunder"
+  },
+  {
+    "n": 11,
+    "question_query": "glass of water",
+    "answer_query": "straw in water"
+  },
+  {
+    "n": 12,
+    "question_query": "beach",
+    "answer_query": "sunscreen"
+  },
+  {
+    "n": 13,
+    "question_query": "hot air balloon",
+    "answer_query": "hot air balloon"
+  },
+  {
+    "n": 14,
+    "question_query": "moon",
+    "answer_query": "moon jump"
+  },
+  {
+    "n": 15,
+    "question_query": "sound wave",
+    "answer_query": "radio"
+  },
+  {
+    "n": 16,
+    "question_query": "pendulum",
+    "answer_query": "newtons cradle"
+  },
+  {
+    "n": 17,
+    "question_query": "running",
+    "answer_query": "skateboard"
+  },
+  {
+    "n": 18,
+    "question_query": "hospital",
+    "answer_query": "x-ray"
+  },
+  {
+    "n": 19,
+    "question_query": "dog whistle",
+    "answer_query": "bat"
+  },
+  {
+    "n": 20,
+    "question_query": "sliding",
+    "answer_query": "ice skating"
+  },
+  {
+    "n": 21,
+    "question_query": "train tracks",
+    "answer_query": "steel"
+  },
+  {
+    "n": 22,
+    "question_query": "ocean waves",
+    "answer_query": "waves"
+  },
+  {
+    "n": 23,
+    "question_query": "tv remote",
+    "answer_query": "tv remote"
+  },
+  {
+    "n": 24,
+    "question_query": "rocket",
+    "answer_query": "rocket launch"
+  },
+  {
+    "n": 25,
+    "question_query": "singing",
+    "answer_query": "opera singer"
+  },
+  {
+    "n": 26,
+    "question_query": "sunrise",
+    "answer_query": "sunrise"
+  },
+  {
+    "n": 27,
+    "question_query": "rubber band",
+    "answer_query": "slingshot"
+  },
+  {
+    "n": 28,
+    "question_query": "speed",
+    "answer_query": "compass"
+  },
+  {
+    "n": 29,
+    "question_query": "explosion",
+    "answer_query": "supernova"
+  },
+  {
+    "n": 30,
+    "question_query": "white light",
+    "answer_query": "prism"
+  },
+  {
+    "n": 31,
+    "question_query": "falling",
+    "answer_query": "earth"
+  },
+  {
+    "n": 32,
+    "question_query": "shouting",
+    "answer_query": "jet"
+  },
+  {
+    "n": 33,
+    "question_query": "electricity",
+    "answer_query": "plug"
+  },
+  {
+    "n": 34,
+    "question_query": "feather",
+    "answer_query": "moon"
+  },
+  {
+    "n": 35,
+    "question_query": "big wave",
+    "answer_query": "surfing"
+  },
+  {
+    "n": 36,
+    "question_query": "wires",
+    "answer_query": "copper"
+  },
+  {
+    "n": 37,
+    "question_query": "stadium",
+    "answer_query": "mexican wave"
+  },
+  {
+    "n": 38,
+    "question_query": "antenna",
+    "answer_query": "radio"
+  },
+  {
+    "n": 39,
+    "question_query": "electric shock",
+    "answer_query": "rubber gloves"
+  },
+  {
+    "n": 40,
+    "question_query": "boat",
+    "answer_query": "floating"
+  },
+  {
+    "n": 41,
+    "question_query": "laboratory",
+    "answer_query": "scientist"
+  },
+  {
+    "n": 42,
+    "question_query": "skydiving",
+    "answer_query": "falling"
+  },
+  {
+    "n": 43,
+    "question_query": "hourglass",
+    "answer_query": "fossil"
+  },
+  {
+    "n": 44,
+    "question_query": "canyon",
+    "answer_query": "echo"
+  },
+  {
+    "n": 45,
+    "question_query": "light",
+    "answer_query": "speed of light"
+  },
+  {
+    "n": 46,
+    "question_query": "bus",
+    "answer_query": "falling over"
+  },
+  {
+    "n": 47,
+    "question_query": "car engine",
+    "answer_query": "fire"
+  },
+  {
+    "n": 48,
+    "question_query": "doorway",
+    "answer_query": "around the corner"
+  },
+  {
+    "n": 49,
+    "question_query": "squash",
+    "answer_query": "squeeze"
+  },
+  {
+    "n": 50,
+    "question_query": "einstein",
+    "answer_query": "mind blown"
+  }
+]
