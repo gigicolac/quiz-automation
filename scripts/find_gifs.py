@@ -13,6 +13,8 @@ gif_queries.json is either a plain list of {"n", "question_query", "answer_query
   GIF fits, a still image from the film is used instead (first frame of a GIF found by the row's
   "film" name, else the name in "image_title"), then the Wikipedia lead image of "image_title".
 - A GIF is not reused for both the question and the answer of the same pair.
+- After reviewing gifs_selected.json, a row can name a better candidate: "question_pick"/"answer_pick" =
+  a GIPHY id from gif_search_cache.json, or "still:<id>" for a still frame of it.
 Writes gif_candidates.json and gifs_selected.json next to the queries file.
 """
 import json, os, sys, urllib.error, urllib.parse, urllib.request
@@ -20,7 +22,11 @@ import json, os, sys, urllib.error, urllib.parse, urllib.request
 BLOCKED_TITLE_WORDS = ["friends", "simpsons", "spongebob", "breaking bad", "game of thrones", "trump", "beyonce", "salt bae", "south park", "netflix", "bbc", "red bull", "history", "general hospital", "pawn stars", "sea of thieves", "storybots", "galifianakis", "conan", "mr t", "beatles", "scarlett", "mia farrow", "horror", "movie", "season", "episode", "tv"]
 BLOCKED_USERS = {"natgeowild", "southparkgifs", "natgeo", "netflix", "nbc", "foxsportsaus", "hbo", "disney", "warnerbros", "abcnetwork", "cbs", "bbc", "bbcamerica", "bbcearth", "thesimpsons", "spongebob", "redbull", "generalhospital", "historylat", "historyuk", "seaofthieves", "storybots", "teamcoco", "netflixlat", "dazn", "outbacksteakhouse", "friends", "southpark", "lifetimetv", "adweek", "fuckthatsdelicious", "nowthis", "pri", "worldcup", "worldrugby"}
 # never wanted, even for fandom quizzes
-ALWAYS_BLOCKED_TITLE_WORDS = ["trump", "horror", "terrifier", "survivor", "live action", "angelina", "on ice", "broadway", "musical"]
+ALWAYS_BLOCKED_TITLE_WORDS = ["trump", "horror", "terrifier", "survivor", "live action", "angelina", "on ice", "broadway",
+                              "musical", "alan tudyk", "naomi scott", "flintstones", "perrie edwards", "pedro pascal",
+                              "danny pudi"]
+# accounts that aren't the films themselves (live-action remakes, cruise lines, charities, web agencies, places)
+ALWAYS_BLOCKED_USERS = {"abcnetwork", "amocruzeirodisney", "assoaides", "boven-webdesign", "dumbobrooklyn", "trauminsel", "skytv"}
 PREFERRED_USERS = {"disney", "pixar", "disneyanimation", "disneystudios", "disneyplus", "disneyjunior", "disneychannel", "disneypixar", "waltdisneystudios", "disneyparks"}
 UA = {"User-Agent": "quiz-automation-gif-finder/1.0"}
 
@@ -36,7 +42,7 @@ def giphy(q, key, branded=False):
     for g in get(u).get("data", []):
         user = (g.get("username") or "").lower()
         title = (g.get("title") or "").lower()
-        if any(w in title for w in ALWAYS_BLOCKED_TITLE_WORDS):
+        if user in ALWAYS_BLOCKED_USERS or any(w in title for w in ALWAYS_BLOCKED_TITLE_WORDS):
             continue
         if not branded and (user in BLOCKED_USERS or any(w in title for w in BLOCKED_TITLE_WORDS)):
             continue
@@ -141,6 +147,19 @@ def main(path):
             cache[key(q)] = c
         return cache[key(q)]
 
+    def by_id(pick):
+        """A hand-picked GIPHY id from any cached search ("still:<id>" = a still frame of it)."""
+        gid = pick.split(":", 1)[-1]
+        for cands in cache.values():
+            for c in cands:
+                if str(c.get("id")) == gid:
+                    if pick.startswith("still:"):
+                        return {"source": "giphy_still", "type": "image", "id": c["id"], "user": c.get("user"),
+                                "title": c.get("title"), "url": c["still"]}
+                    return c
+        print(f"::warning::Picked GIF {pick} isn't in the search cache; choosing automatically")
+        return None
+
     result, selected = [], []
     try:
         for row in queries:
@@ -152,7 +171,9 @@ def main(path):
                 slot = field.replace("_query", "_gif")
                 entry[field] = q
                 entry[field.replace("query", "candidates")] = search(q)
-                choice = pick(cache[key(q)], used, terms)
+                hand = row.get(slot.replace("_gif", "_pick"))  # e.g. "answer_pick": "<giphy id>" after a review
+                choice = by_id(hand) if hand else None
+                choice = choice or pick(cache[key(q)], used, terms)
                 if not choice and branded and film and gk:
                     choice = still_image(search(film), used, terms or [film])
                 if not choice and row.get("image_title"):

@@ -1,6 +1,6 @@
 {
  "allow_branded": true,
- "note": "Disney quiz: GIFs must come from the actual Disney/Pixar films (Giulia, 9 Nov); question GIFs must not give the answer away. A GIF is only used when its title contains one of the row's 'match' terms; otherwise a still from the film ('film'), then the Wikipedia lead image of 'image_title'.",
+ "note": "Disney quiz: GIFs must come from the actual Disney/Pixar films (Giulia, 9 Nov); question GIFs must not give the answer away. A GIF is only used when its title contains one of the row's 'match' terms; otherwise a still from the film ('film'), then the Wikipedia lead image of 'image_title'. *_pick fields: hand-picked after reviewing the automatic choices (Claude, 9 Nov).",
  "queries": [
   {
    "n": 1,
@@ -23,7 +23,8 @@
    "match": [
     "mickey",
     "steamboat"
-   ]
+   ],
+   "question_pick": "Qzil8rCXqEK3ijMPUs"
   },
   {
    "n": 3,
@@ -43,7 +44,8 @@
    "film": "Little Mermaid",
    "match": [
     "little mermaid"
-   ]
+   ],
+   "answer_pick": "KcKJvWJVLcTuM"
   },
   {
    "n": 5,
@@ -53,7 +55,8 @@
    "film": "Little Mermaid",
    "match": [
     "little mermaid"
-   ]
+   ],
+   "answer_pick": "14jFxqLMUY51AI"
   },
   {
    "n": 6,
@@ -142,8 +145,12 @@
    "image_title": "Tangled",
    "film": "Tangled",
    "match": [
-    "tangled"
-   ]
+    "tangled",
+    "rapunzel",
+    "pascal"
+   ],
+   "question_pick": "W5yshKbH5wrwA",
+   "answer_pick": "mPeN4EPPLIgbNhQWBk"
   },
   {
    "n": 15,
@@ -162,7 +169,9 @@
    "image_title": "Moana (2016 film)",
    "film": "Moana",
    "match": [
-    "moana"
+    "moana",
+    "maui",
+    "pua"
    ]
   },
   {
@@ -183,8 +192,11 @@
    "image_title": "Encanto",
    "film": "Encanto",
    "match": [
-    "encanto"
-   ]
+    "encanto",
+    "madrigal",
+    "mirabel"
+   ],
+   "answer_pick": "xc7bHMhVwyITq8I6Gx"
   },
   {
    "n": 19,
@@ -292,8 +304,12 @@
    "image_title": "Coco (2017 film)",
    "film": "Coco Pixar",
    "match": [
-    "coco"
-   ]
+    "coco",
+    "miguel",
+    "dante",
+    "hector"
+   ],
+   "answer_pick": "cjudF7TsDnKsqTVxAL"
   },
   {
    "n": 29,
@@ -413,8 +429,10 @@
    "image_title": "Dumbo",
    "film": "Dumbo",
    "match": [
-    "dumbo"
-   ]
+    "dumbo",
+    "timothy"
+   ],
+   "answer_pick": "PVE9gMrs450vC"
   },
   {
    "n": 41,
@@ -429,7 +447,8 @@
     "louie",
     "duck tales",
     "ducktales"
-   ]
+   ],
+   "answer_pick": "vIJaz7nMJhTUc"
   },
   {
    "n": 42,
@@ -459,7 +478,9 @@
    "film": "Aladdin",
    "match": [
     "aladdin"
-   ]
+   ],
+   "question_pick": "Dwekg7HJYSE2t4wW9h",
+   "answer_pick": "t7NqkPey14axG"
   },
   {
    "n": 45,
