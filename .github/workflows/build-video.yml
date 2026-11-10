@@ -217,10 +217,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
-          sudo mkdir -p /usr/share/fonts/truetype/google-fonts
-          for f in "ofl/poppins/Poppins-Bold.ttf:Poppins-Bold.ttf" "ofl/lora/Lora-Italic%5Bwght%5D.ttf:Lora-Italic-Variable.ttf"; do
-            sudo curl -fsSL -o "/usr/share/fonts/truetype/google-fonts/${f#*:}" "https://github.com/google/fonts/raw/main/${f%%:*}"
-          done
+          bash scripts/install_thumbnail_fonts.sh
           pip install -q pillow
           python3 scripts/make_thumbnails.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/thumbs"
           gh release upload "$TAG" "$RUNNER_TEMP/thumbs/thumbnail-a.jpg" "$RUNNER_TEMP/thumbs/thumbnail-b.jpg" --clobber
@@ -235,9 +232,10 @@ jobs:
         run: |
           status=${{ job.status }}
           f="quizzes/$QUIZ/build_result.json"
-          tail_log=$(tail -n 60 "$RUNNER_TEMP/steps.log" 2>/dev/null || true)
+          # the log tail goes in via a file: progress lines can be megabytes long ("Argument list too long", 10 Nov)
+          tail -n 60 "$RUNNER_TEMP/steps.log" 2>/dev/null | tail -c 20000 > "$RUNNER_TEMP/log_tail.txt" || true
           jq -n --arg status "$status" --arg tag "${TAG:-}" --arg sha "$GITHUB_SHA" --arg run "$GITHUB_RUN_ID" \
-            --arg tts "$TTS" --arg log "$tail_log" \
+            --arg tts "$TTS" --rawfile log "$RUNNER_TEMP/log_tail.txt" \
             --slurpfile report <(cat "$RUNNER_TEMP/out/build_report.json" 2>/dev/null || echo null) \
             '{status: $status, release_tag: $tag, source_commit: $sha, run_id: $run, tts: $tts,
               report: ($report[0] // null), log_tail: $log}' > "$f"
