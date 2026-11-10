@@ -318,6 +318,7 @@ def update_existing(quiz, report, cfg, record, record_path, args):
         done["thumbnail"] = Path(args.thumbnail).name
     record.setdefault("updates", []).append(done)
     record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
+    Path(args.out).write_text(json.dumps(done, indent=2, ensure_ascii=False))
     print(json.dumps(done, indent=2, ensure_ascii=False))
 
 
