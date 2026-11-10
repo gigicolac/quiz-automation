@@ -8,7 +8,7 @@ of the top band whatever the series name, and everything is drawn at twice YouTu
   top band     heading: series (bold sans) + "Quiz #<n>" (italic serif), fitted to the full width
   middle       12 picture tiles from the quiz's own GIFs and images (2 rows x 6)
   bottom band  the hook line (quiz.json "thumbnail_tagline", else config/youtube.json thumbnail_taglines[series]),
-               kept clear of the bottom-right corner where YouTube shows the video length
+               fitted to the same full width as the heading so the two read as one line of thought
 
 A and B differ in one thing only, set in config/youtube.json "thumbnail_test" (default: the top band colour),
 so the Test & Compare result says which one thing worked.
@@ -28,7 +28,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 W, H = 2560, 1440
-TOP, BOTTOM = 440, 1120         # top band ends / bottom band starts
+TOP, BOTTOM = 400, 1040         # top band ends / bottom band starts (equal bands, so both lines can match)
 MARGIN = 70
 SANS = os.environ.get("THUMB_SANS", "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf")
 SERIF_I = os.environ.get("THUMB_SERIF_ITALIC", "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf")
@@ -163,11 +163,14 @@ def render(quiz, tiles, style, line):
         y = (TOP - h) / 2 - top
         draw_shadowed(img, (x, y), text, font, colour)
         x += font.getlength(text)
-    # bottom band (radial-ish dark to blue, as before) + hook line, clear of the video-length badge
+    # bottom band + hook line: the same full width as the heading (Giulia, 10 Nov: in line with the top text,
+    # as large as possible without spilling over), so it reads on from it: "Disney Quiz #10 / Only REAL fans would know"
     band(img, (0, BOTTOM, W, H), STYLES["blue"])
-    f = fit_line(line, SANS, W * 0.80 - MARGIN, (H - BOTTOM) * 0.62)
+    f = fit_line(line, SANS, W - 2 * MARGIN, (H - BOTTOM) * 0.86)
     box = f.getbbox(line)
-    draw_shadowed(img, (MARGIN, BOTTOM + (H - BOTTOM - (box[3] - box[1])) / 2 - box[1]), line, f, (255, 255, 255))
+    lw = f.getlength(line)
+    draw_shadowed(img, ((W - lw) / 2, BOTTOM + (H - BOTTOM - (box[3] - box[1])) / 2 - box[1]), line, f,
+                  (255, 255, 255))
     return img.convert("RGB")
 
 

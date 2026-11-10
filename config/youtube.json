@@ -159,17 +159,18 @@
     "problems": "one line per question: timecode then the question"
   },
   "thumbnail_taglines": {
-    "_comment": "Bottom line of the thumbnail (scripts/make_thumbnails.py): a hook from the playbook. Giulia 10 Nov: 'REAL fans only' was weak, use the 'Only REAL fans would know' style. quiz.json thumbnail_tagline overrides. Keep it under ~22 characters.",
+    "_comment": "Bottom line of the thumbnail (scripts/make_thumbnails.py). It must read on from the heading, e.g. 'Disney Quiz #10' then 'Only REAL fans would know' (Giulia 10 Nov). quiz.json thumbnail_tagline overrides.",
     "General Knowledge": "Can you get 50/50?",
-    "Disney": "Only REAL fans know",
-    "Movies": "Only film buffs know",
-    "Pop Culture": "Only REAL fans know",
-    "TV": "Only REAL fans know",
+    "Disney": "Only REAL fans would know",
+    "Movies": "Only film buffs would know",
+    "Pop Culture": "Only REAL fans would know",
+    "TV": "Only REAL fans would know",
     "Music": "Name that tune?",
-    "Sport": "Only REAL fans know",
+    "Sport": "Only REAL fans would know",
     "Geography": "Can you pass this?",
     "History": "Can you pass this?",
-    "Science": "Can you pass this?"
+    "Science": "Can you pass this?",
+    "Fandom": "Only REAL fans would know"
   },
   "thumbnail_test": {
     "_comment": "Thumbnail A/B (Test & Compare) changes ONE thing at a time. Next ideas: band colour, tagline wording, heading style. Update from the weekly results.",
