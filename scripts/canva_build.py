@@ -28,7 +28,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from canva_export import access_token, call, export, join  # noqa: E402
+from canva_export import CanvaError, access_token, call, export, join  # noqa: E402
 
 
 # (longest question that fits, brand template): large 116px, medium 88px, small 68px text
@@ -74,7 +74,18 @@ class UploadFailed(Exception):
 
 def upload(token, name, url, timeout=300):
     """Returns (asset_id, "image" | "video")."""
-    job = call("POST", "/url-asset-uploads", token, {"name": name[:50], "url": url})["job"]
+    # Canva can answer 400 "Asset Upload for url ... already exists" (seen on Quiz #11, 10 Nov 2026, when a
+    # retried request or an earlier upload of the same URL is still on its side). The same file with a harmless
+    # query string is a new URL to Canva, so try that a couple of times before giving up.
+    for attempt in range(3):
+        u = url if not attempt else f"{url}{'&' if '?' in url else '?'}omq={attempt}"
+        try:
+            job = call("POST", "/url-asset-uploads", token, {"name": name[:50], "url": u}, raise_codes=(400,))["job"]
+            break
+        except CanvaError as e:
+            if "already exists" not in e.body or attempt == 2:
+                raise UploadFailed(f"upload of {url} failed: {e}")
+            time.sleep(5)
     t0 = time.time()
     while job["status"] == "in_progress" and time.time() - t0 < timeout:
         time.sleep(3)
