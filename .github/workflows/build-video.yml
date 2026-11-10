@@ -27,6 +27,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    # Updating a quiz branch from main ("Merge ...") can carry other quizzes' build.json; that isn't a build request.
+    if: github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Merge ')
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:

@@ -14,6 +14,8 @@ permissions:
   contents: write
 jobs:
   find:
+    # Updating a quiz branch from main ("Merge ...") can carry other quizzes' gif_queries.json; skip those pushes.
+    if: github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Merge ')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,12 +32,20 @@ jobs:
             # a brand-new branch has no "before" commit (all zeros), so compare it with main instead
             case "$BEFORE" in ""|0000000000000000000000000000000000000000) BEFORE=$(git merge-base origin/main HEAD);; esac
             q=$(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/gif_queries.json' 2>/dev/null | head -1 | cut -d/ -f2)
+            # on a claude/quiz-NN branch, only ever touch quiz-NN (never another quiz's picks)
+            case "$GITHUB_REF_NAME" in claude/quiz-*)
+              own="${GITHUB_REF_NAME#claude/}"
+              if git diff --name-only "$BEFORE" HEAD -- "quizzes/$own/gif_queries.json" | grep -q .; then q="$own"
+              else echo "::notice::No change to quizzes/$own/gif_queries.json on this branch; nothing to do"; exit 0; fi;;
+            esac
           fi
           case "$q" in ""|*..*|*/*) echo "Invalid or missing quiz '$q'"; exit 1;; esac
           echo "QUIZ=$q" >> "$GITHUB_ENV"
       - name: ffprobe (clip lengths)
+        if: env.QUIZ != ''
         run: command -v ffprobe >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
       - name: Search
+        if: env.QUIZ != ''
         env:
           GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
