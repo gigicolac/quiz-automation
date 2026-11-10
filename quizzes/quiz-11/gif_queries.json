@@ -4,7 +4,7 @@
     "question_query": "fast",
     "answer_query": "light beam",
     "question_pick": "C5PF3WUVttTB8fTONu",
-    "answer_pick": "t0SMGIYAGVtkUmFBHM"
+    "answer_pick": "e6aGKFKIf0SnpbOoLy"
   },
   {
     "n": 2,
@@ -32,14 +32,14 @@
     "question_query": "astronaut",
     "answer_query": "silence",
     "question_pick": "wPyDWwurn8XEWdR9ol",
-    "answer_pick": "tUv2FIiNLxUVZ0hbJV"
+    "answer_pick": "VxdNf4DadRSsMYAfnv"
   },
   {
     "n": 6,
     "question_query": "soup",
     "answer_query": "hot spoon",
     "question_pick": "fiQVb12xU5DK8",
-    "answer_pick": "VTB3bA1UbnQjSlngss"
+    "answer_pick": "JUagrUden3a19pzE0G"
   },
   {
     "n": 7,
@@ -52,7 +52,7 @@
     "n": 8,
     "question_query": "rainbow",
     "answer_query": "red",
-    "question_pick": "55MfwQSbrwyzK",
+    "question_pick": "26gsdnFwRgz36WPhC",
     "answer_pick": "xT0GqimU9dTwmE5lra"
   },
   {
@@ -74,14 +74,14 @@
     "question_query": "glass of water",
     "answer_query": "straw in water",
     "question_pick": "m5of6ouIA4TFm",
-    "answer_pick": "yUBTEQ63lGCJ3ugqwD"
+    "answer_pick": "kHq5k5sCPCih1vxVho"
   },
   {
     "n": 12,
     "question_query": "beach",
     "answer_query": "sunscreen",
     "question_pick": "7hPOEOap8roXD56fa9",
-    "answer_pick": "7Lah0JvIGxQxk3YhLq"
+    "answer_pick": "3TAwJiI506cBP8IzAM"
   },
   {
     "n": 13,
@@ -143,7 +143,7 @@
     "n": 21,
     "question_query": "train tracks",
     "answer_query": "steel",
-    "question_pick": "NGSbD5vI6lUvC",
+    "question_pick": "RI5Hz9PBGuWfebrD4H",
     "answer_pick": "Yxpd00FNQTfFK"
   },
   {
@@ -179,7 +179,7 @@
     "question_query": "sunrise",
     "answer_query": "sunrise",
     "question_pick": "MsjdQQCxq0OHtM0uuP",
-    "answer_pick": "i6BsWXxUSHp7amMJS3"
+    "answer_pick": "Z4oPJW36axa32zBA6C"
   },
   {
     "n": 27,
@@ -190,9 +190,8 @@
   },
   {
     "n": 28,
-    "question_query": "speed",
+    "question_query": "speedometer",
     "answer_query": "compass",
-    "question_pick": "toDt4cc8ee3OMYDVcY",
     "answer_pick": "9aOWMFD0kqXGU"
   },
   {
@@ -207,7 +206,7 @@
     "question_query": "white light",
     "answer_query": "prism",
     "question_pick": "26u438LeS0Pf8RGHS",
-    "answer_pick": "8kdLHlYG2qYDe"
+    "answer_pick": "26BGGp9NoFefWZFPG"
   },
   {
     "n": 31,
@@ -218,10 +217,9 @@
   },
   {
     "n": 32,
-    "question_query": "shouting",
+    "question_query": "megaphone",
     "answer_query": "jet",
-    "question_pick": "mJW2s8ShSuIZdkTrDX",
-    "answer_pick": "Btn42lfKKrOzS"
+    "answer_pick": "ToMjGpSRhDQ6vzZXVIs"
   },
   {
     "n": 33,
@@ -242,7 +240,7 @@
     "question_query": "big wave",
     "answer_query": "surfing",
     "question_pick": "2A1a3apxFQkGM2d3Zs",
-    "answer_pick": "dJUtqIcqeyMvK"
+    "answer_pick": "5nh8FKSRtxFEyuajGc"
   },
   {
     "n": 36,
@@ -283,14 +281,14 @@
     "n": 41,
     "question_query": "laboratory",
     "answer_query": "scientist",
-    "question_pick": "OeChpMekaySHBPITJ8",
-    "answer_pick": "3pZhyDpeZRy46gsO9i"
+    "question_pick": "A2u7NuwWTr0vC",
+    "answer_pick": "iNQ2cIve8rUqI"
   },
   {
     "n": 42,
     "question_query": "skydiving",
     "answer_query": "falling",
-    "question_pick": "3og0IRYvfFYb3dKhgs",
+    "question_pick": "l0Iybu0aRRUfzoN0I",
     "answer_pick": "KJLsTTsF5ruMg"
   },
   {
