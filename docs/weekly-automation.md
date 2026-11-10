@@ -18,6 +18,11 @@ This is the runbook the scheduled tasks follow. They start with no memory of ear
 
 The Mac task's instructions live in docs/mac-studio-task.md; the cloud tasks follow this file. To change what a task does, change the file through a pull request. Device-bound tasks need Giulia's approval for every prompt edit, so the prompts only point here.
 
+**Keep approvals to a minimum** (Giulia, 11 Nov 2026: "try to minimise the number of new tasks or updates"):
+- Don't create new scheduled tasks, and don't edit the existing tasks' prompts. Change these docs instead; the four tasks read them on every run.
+- Above all, never create or edit a task that runs on Giulia's Mac: each one needs her approval on that computer.
+- If a new task really is unavoidable, prefer a cloud task, and say why in the PR.
+
 Release slots for the week the quizzes are written in: Thursday 3pm, Saturday 1pm and Sunday 1pm US Eastern (Fri 6–7am, Sun 4–5am and Mon 4–5am Melbourne).
 
 ## 1. Plan (Monday)
