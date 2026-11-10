@@ -56,3 +56,29 @@ class UploadAlreadyExists(unittest.TestCase):
         with mock.patch.object(cb, "call", fake_call):
             with self.assertRaises(cb.UploadFailed):
                 cb.upload("t", "n", "https://example.com/a.gif")
+
+
+class StaleRefreshToken(unittest.TestCase):
+    """A run queued before another job renewed the Canva sign-in must not use its stale copy."""
+
+    def check(self, created, updated):
+        from datetime import datetime
+        from unittest import mock
+        import canva_export as ce
+        times = {".created_at": datetime.fromisoformat(created), ".updated_at": datetime.fromisoformat(updated)}
+        env = {"GITHUB_REPOSITORY": "o/r", "GITHUB_RUN_ID": "1", "GH_SECRETS_TOKEN": "s", "GH_TOKEN": "g"}
+        with mock.patch.dict("os.environ", env), \
+                mock.patch.object(ce, "_gh_json_field", lambda path, field, token: times[field]):
+            return ce.refresh_token_may_be_stale()
+
+    def test_renewed_after_run_was_created(self):
+        self.assertTrue(self.check("2026-11-10T02:37:27+00:00", "2026-11-10T02:37:45+00:00"))
+
+    def test_renewed_long_before(self):
+        self.assertFalse(self.check("2026-11-10T02:37:27+00:00", "2026-11-10T01:00:00+00:00"))
+
+    def test_outside_actions_is_never_stale(self):
+        from unittest import mock
+        import canva_export as ce
+        with mock.patch.dict("os.environ", {}, clear=True):
+            self.assertFalse(ce.refresh_token_may_be_stale())
