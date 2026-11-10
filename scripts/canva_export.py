@@ -64,7 +64,14 @@ def access_token():
     return tok["access_token"]
 
 
-def call(method, path, token, body=None):
+class CanvaError(Exception):
+    def __init__(self, code, body):
+        super().__init__(f"{code}: {body}")
+        self.code, self.body = code, body
+
+
+def call(method, path, token, body=None, raise_codes=()):
+    """raise_codes: HTTP codes to raise as CanvaError for the caller to handle, instead of stopping the run."""
     req = urllib.request.Request(f"{API}{path}", method=method,
                                  data=json.dumps(body).encode() if body is not None else None,
                                  headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
@@ -76,7 +83,10 @@ def call(method, path, token, body=None):
             if e.code == 429 or e.code >= 500:
                 time.sleep(15 * (attempt + 1))
                 continue
-            sys.exit(f"Canva {method} {path} failed ({e.code}): {e.read().decode()[:300]}")
+            text = e.read().decode()[:300]
+            if e.code in raise_codes:
+                raise CanvaError(e.code, text)
+            sys.exit(f"Canva {method} {path} failed ({e.code}): {text}")
     sys.exit(f"Canva {method} {path} kept failing")
 
 
