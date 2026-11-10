@@ -27,10 +27,14 @@ jobs:
           q="$IN_QUIZ"
           # on push: the quiz whose gif_queries.json changed
           if [ -z "$q" ]; then
+            # a brand-new branch has no "before" commit (all zeros), so compare it with main instead
+            case "$BEFORE" in ""|0000000000000000000000000000000000000000) BEFORE=$(git merge-base origin/main HEAD);; esac
             q=$(git diff --name-only "$BEFORE" HEAD -- 'quizzes/*/gif_queries.json' 2>/dev/null | head -1 | cut -d/ -f2)
           fi
           case "$q" in ""|*..*|*/*) echo "Invalid or missing quiz '$q'"; exit 1;; esac
           echo "QUIZ=$q" >> "$GITHUB_ENV"
+      - name: ffprobe (clip lengths)
+        run: command -v ffprobe >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
       - name: Search
         env:
           GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
@@ -41,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in gif_candidates.json gifs_selected.json gif_search_cache.json; do
+          for f in gif_candidates.json gifs_selected.json gif_search_cache.json gif_durations.json; do
             [ -f "quizzes/$QUIZ/$f" ] && git add "quizzes/$QUIZ/$f"
           done
           git commit -m "Add GIF candidates for $QUIZ" || exit 0
