@@ -15,7 +15,10 @@ so the Test & Compare result says which one thing worked.
 
 Usage: make_thumbnails.py --quiz quizzes/quiz-11 --out DIR [--tiles DIR_OF_IMAGES]
 Without --tiles, the tile pictures are downloaded from gifs_selected.json (GIF first frames or chosen images).
-Fonts: THUMB_SANS (default Poppins Bold) and THUMB_SERIF_ITALIC (default Lora Italic).
+Fonts: the original Canva thumbnail's own (Giulia, 10 Nov: "use the same fonts"). Its PDF export embeds
+NunitoSans10pt-Bold (series and hook line) and TimesNRMTPro-Italic ("Quiz #n"). Nunito Sans is a free Google font;
+Times New Roman Pro is licensed, so its free metric-compatible twin Tinos Italic (same letter shapes and widths)
+stands in. Override with THUMB_SANS / THUMB_SERIF_ITALIC.
 """
 import argparse
 import io
@@ -30,8 +33,8 @@ ROOT = Path(__file__).resolve().parent.parent
 W, H = 2560, 1440
 TOP, BOTTOM = 400, 1040         # top band ends / bottom band starts (equal bands, so both lines can match)
 MARGIN = 70
-SANS = os.environ.get("THUMB_SANS", "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf")
-SERIF_I = os.environ.get("THUMB_SERIF_ITALIC", "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf")
+SANS = os.environ.get("THUMB_SANS", "/usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf")
+SERIF_I = os.environ.get("THUMB_SERIF_ITALIC", "/usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf")
 MAX_BYTES = 2_000_000            # YouTube's thumbnail limit is 2 MB
 
 STYLES = {  # top band fill: a solid colour, or a left-to-right gradient

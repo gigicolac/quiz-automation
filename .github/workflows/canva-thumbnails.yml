@@ -35,10 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          sudo mkdir -p /usr/share/fonts/truetype/google-fonts
-          for f in "ofl/poppins/Poppins-Bold.ttf:Poppins-Bold.ttf" "ofl/lora/Lora-Italic%5Bwght%5D.ttf:Lora-Italic-Variable.ttf"; do
-            sudo curl -fsSL -o "/usr/share/fonts/truetype/google-fonts/${f#*:}" "https://github.com/google/fonts/raw/main/${f%%:*}"
-          done
+          bash scripts/install_thumbnail_fonts.sh
           pip install -q pillow
           git pull -q origin "$GITHUB_REF_NAME" || true
           tag=$(jq -r '.review.video.release_tag // empty' "quizzes/$QUIZ/quiz.json")
