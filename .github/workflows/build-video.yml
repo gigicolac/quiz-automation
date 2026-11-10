@@ -209,22 +209,26 @@ jobs:
           echo "TAG=$tag" >> "$GITHUB_ENV"
 
       - name: Thumbnails
-        # build.json "canva_build": thumbnails A and B from the Canva thumbnail template (scripts/canva_thumbnails.py),
+        # thumbnails A and B made in code (scripts/make_thumbnails.py, 2560x1440, heading fitted to the full width),
         # attached to this build's draft release, where the upload step picks up thumbnail-a.jpg
         if: env.TAG != ''
         continue-on-error: true
         env:
-          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
-          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
-          CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
-          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
           GH_TOKEN: ${{ github.token }}
-          CANVA_TOKEN_CACHE: ${{ runner.temp }}/canva-access-token
         run: |
           exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
-          [ "$(jq 'has("canva_build")' "quizzes/$QUIZ/build.json")" = true ] || { echo "No canva_build block"; exit 0; }
-          python3 scripts/canva_thumbnails.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/thumbs"
+          sudo mkdir -p /usr/share/fonts/truetype/google-fonts
+          for f in "ofl/poppins/Poppins-Bold.ttf:Poppins-Bold.ttf" "ofl/lora/Lora-Italic%5Bwght%5D.ttf:Lora-Italic-Variable.ttf"; do
+            sudo curl -fsSL -o "/usr/share/fonts/truetype/google-fonts/${f#*:}" "https://github.com/google/fonts/raw/main/${f%%:*}"
+          done
+          pip install -q pillow
+          python3 scripts/make_thumbnails.py --quiz "quizzes/$QUIZ" --out "$RUNNER_TEMP/thumbs"
           gh release upload "$TAG" "$RUNNER_TEMP/thumbs/thumbnail-a.jpg" "$RUNNER_TEMP/thumbs/thumbnail-b.jpg" --clobber
+          # public copies for the Studio task on Giulia's Mac (draft releases need a GitHub sign-in): release "thumbnails"
+          for v in a b; do cp "$RUNNER_TEMP/thumbs/thumbnail-$v.jpg" "$RUNNER_TEMP/thumbs/$QUIZ-thumbnail-$v.jpg"; done
+          gh release view thumbnails >/dev/null 2>&1 || gh release create thumbnails --prerelease --target main \
+            --title "Thumbnails" --notes "Thumbnail A and B for each quiz (<quiz>-thumbnail-a.jpg / -b.jpg), for the YouTube Studio A/B test."
+          gh release upload thumbnails "$RUNNER_TEMP/thumbs/$QUIZ-thumbnail-a.jpg" "$RUNNER_TEMP/thumbs/$QUIZ-thumbnail-b.jpg" --clobber
 
       - name: Record result
         if: always() && env.QUIZ != ''

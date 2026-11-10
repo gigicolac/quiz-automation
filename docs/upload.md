@@ -75,5 +75,6 @@ The **Shorts** workflow also runs daily at 9:30am Sydney, after the 8am upload. 
 
 ## Not yet included
 
-- **Thumbnails:** made in Canva from the template (A = red band, B = blue band), exported, and listed in `quizzes/<quiz>/thumbnails.json`. Committing that file runs **Attach thumbnails**, which adds them to the approved release. The upload sets thumbnail A; B is for the Test & Compare A/B test in Studio.
+- **Thumbnails:** made in code by `scripts/make_thumbnails.py` at 2560x1440 (twice YouTube's size, so they stay sharp), at the end of each build and by the **Thumbnails** workflow (commit `quizzes/<quiz>/thumbnails-request.json`). The heading ("Disney Quiz #10") is fitted to the full width; the hook line comes from `thumbnail_taglines` and stays clear of the video-length badge. A and B change one thing only (`thumbnail_test` in config/youtube.json). They go on the build release and, as `<quiz>-thumbnail-a.jpg` / `-b.jpg`, on the public `thumbnails` release for the Studio task. Every quiz from #11 tests **title and thumbnail** together; results go in the weekly report.
+- **Changing tags or thumbnail A after upload:** run **Upload** with mode `update`. It refreshes the tags (quiz.json `tags`, from vidIQ keyword research, then the series and channel tags) and thumbnail A; title, description, schedule and visibility are untouched.
 - **Other Studio-only settings** stay manual or a browser task: caption certification and location.
