@@ -1,0 +1,342 @@
+{
+  "id": "quiz-12",
+  "number": 12,
+  "series": "Movies",
+  "difficulty": "medium",
+  "title": "How Well Do You REALLY Know Movies? 🎬 50 Movie Trivia Questions | Movies Quiz #12",
+  "description_hook": "🎬 From Pixar to blockbusters: 50 movie questions that'll sort the film buffs from the popcorn munchers.",
+  "thumbnail_tagline": "Only film buffs would know",
+  "tags": [
+    "movie quiz",
+    "movie trivia quiz",
+    "movies quiz",
+    "movie trivia",
+    "ultimate movie quiz",
+    "movie quiz with answers",
+    "movie quiz game",
+    "family movie quiz",
+    "pixar quiz",
+    "marvel quiz",
+    "animated movie quiz",
+    "film quiz"
+  ],
+  "status": "questions_written",
+  "review": {
+    "questions": {
+      "decision": "auto-approved",
+      "note": "Giulia, 6 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 10 Nov 2026. Family-friendly (Giulia 10 Nov); GIF picks avoid real actors where possible."
+    },
+    "video": {
+      "decision": "approved",
+      "by": "Claude (automated, per Giulia)",
+      "date": "2026-11-10",
+      "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 42807221959 succeeded: 4K 3840x2160, 915.8 s, 50 question and 50 answer segments, voice -20.1 dB RMS, music -35.9 dB, peak -0.3 dB; one minor warning (outro line starts 0.1 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s) for real people's faces and unsuitable content after replacing the GIFs in 15 slots across two rebuilds; frames that looked out of sync were re-checked with continuous decoding (Q19-Q20 plays correctly). Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage suitable. Note for Giulia: the template outro includes a Friends clip (same as Quiz #10).",
+      "source_commit": "8b02799",
+      "duration_s": 915.8,
+      "release_tag": "quiz-12-preview-21"
+    }
+  },
+  "questions": [
+    {
+      "n": 1,
+      "question": "In Finding Nemo, what kind of fish is Nemo?",
+      "answer": "A clownfish! 🐠",
+      "reveal": "His dad Marlin crosses the whole ocean to find him."
+    },
+    {
+      "n": 2,
+      "question": "Which 1997 film about a doomed ocean liner won 11 Oscars?",
+      "answer": "Titanic! 🚢",
+      "reveal": "It tied the record set by Ben-Hur, later matched by The Return of the King."
+    },
+    {
+      "n": 3,
+      "question": "What is the name of the snowman in Frozen?",
+      "answer": "Olaf! ⛄",
+      "reveal": "He likes warm hugs."
+    },
+    {
+      "n": 4,
+      "question": "In the 1939 film The Wizard of Oz, what colour are Dorothy's slippers?",
+      "answer": "Ruby red! 👠",
+      "reveal": "In L. Frank Baum's original book, they were silver."
+    },
+    {
+      "n": 5,
+      "question": "In Jaws, what kind of animal terrorises the beaches of Amity Island?",
+      "answer": "A great white shark! 🦈",
+      "reveal": "The mechanical shark kept breaking down, so the director showed it as little as possible."
+    },
+    {
+      "n": 6,
+      "question": "In The Lion King, what does 'Hakuna Matata' mean?",
+      "answer": "No worries! 🦁",
+      "reveal": "It's a Swahili phrase, made famous by Timon and Pumbaa."
+    },
+    {
+      "n": 7,
+      "question": "Which film's famous line is 'To infinity and beyond!'?",
+      "answer": "Toy Story! 🚀",
+      "reveal": "Buzz Lightyear says it, and it became one of Pixar's most quoted lines."
+    },
+    {
+      "n": 8,
+      "question": "What is the name of the green ogre who lives in a swamp?",
+      "answer": "Shrek! 🧅",
+      "reveal": "Shrek won the very first Oscar for Best Animated Feature."
+    },
+    {
+      "n": 9,
+      "question": "In Despicable Me, what are Gru's small yellow helpers called?",
+      "answer": "Minions! 🍌",
+      "reveal": "They speak their own language, a mix of words from lots of real languages."
+    },
+    {
+      "n": 10,
+      "question": "Which film series follows hobbits on a quest to destroy a powerful ring?",
+      "answer": "The Lord of the Rings! 💍",
+      "reveal": "The books were written by J.R.R. Tolkien."
+    },
+    {
+      "n": 11,
+      "question": "In Up, what lifts Carl's house into the sky?",
+      "answer": "Balloons! 🎈",
+      "reveal": "Thousands of helium balloons, tied to the chimney."
+    },
+    {
+      "n": 12,
+      "question": "In which film does an alien who wants to 'phone home' befriend a boy called Elliott?",
+      "answer": "E.T.! 👽",
+      "reveal": "E.T. the Extra-Terrestrial was released in 1982."
+    },
+    {
+      "n": 13,
+      "question": "Which director made Jaws, E.T. and Jurassic Park?",
+      "answer": "Steven Spielberg! 🎬",
+      "reveal": "He's one of the most successful film directors of all time."
+    },
+    {
+      "n": 14,
+      "question": "In Toy Story, what's the name of the cowboy doll?",
+      "answer": "Woody! 🤠",
+      "reveal": "He's Andy's favourite toy, until Buzz Lightyear arrives."
+    },
+    {
+      "n": 15,
+      "question": "Which 2016 Disney film features the song 'How Far I'll Go'?",
+      "answer": "Moana! 🌊",
+      "reveal": "Moana sails across the ocean with the demigod Maui."
+    },
+    {
+      "n": 16,
+      "question": "In Finding Nemo, what's the name of the blue tang fish with short-term memory loss?",
+      "answer": "Dory! 💙",
+      "reveal": "Just keep swimming!"
+    },
+    {
+      "n": 17,
+      "question": "Which country was The Lord of the Rings trilogy mainly filmed in?",
+      "answer": "New Zealand! 🇳🇿",
+      "reveal": "Hobbiton, the village set, is still open to visitors."
+    },
+    {
+      "n": 18,
+      "question": "In Jurassic Park, scientists got dinosaur DNA from mosquitoes trapped in what?",
+      "answer": "Amber! 🦟",
+      "reveal": "Amber is fossilised tree resin."
+    },
+    {
+      "n": 19,
+      "question": "Which animated film features a rat who dreams of being a chef in Paris?",
+      "answer": "Ratatouille! 🐀",
+      "reveal": "The rat's name is Remy."
+    },
+    {
+      "n": 20,
+      "question": "In The Incredibles, what is the superhero family's surname?",
+      "answer": "Parr! 🦸",
+      "reveal": "Mr Incredible's real name is Bob Parr."
+    },
+    {
+      "n": 21,
+      "question": "Which Pixar film takes place inside the mind of a girl called Riley?",
+      "answer": "Inside Out! 🧠",
+      "reveal": "Joy, Sadness, Anger, Fear and Disgust run her headquarters."
+    },
+    {
+      "n": 22,
+      "question": "In Monsters, Inc., what powers the city of Monstropolis?",
+      "answer": "Children's screams! 😱",
+      "reveal": "By the end, they find out that laughter is even more powerful."
+    },
+    {
+      "n": 23,
+      "question": "In One Hundred and One Dalmatians, what's the name of the villain who wants a spotty coat?",
+      "answer": "Cruella de Vil! 🐾",
+      "reveal": "She's one of Disney's most famous villains."
+    },
+    {
+      "n": 24,
+      "question": "Which Pixar film has a little robot cleaning up an abandoned Earth?",
+      "answer": "WALL-E! 🤖",
+      "reveal": "He falls for a sleek robot called EVE."
+    },
+    {
+      "n": 25,
+      "question": "What kind of animal is Baloo in The Jungle Book?",
+      "answer": "A bear! 🐻",
+      "reveal": "He sings 'The Bare Necessities'."
+    },
+    {
+      "n": 26,
+      "question": "In Mary Poppins, a spoonful of sugar helps what go down?",
+      "answer": "The medicine! 🥄",
+      "reveal": "In the most delightful way!"
+    },
+    {
+      "n": 27,
+      "question": "In The Chronicles of Narnia, what is the name of the great lion?",
+      "answer": "Aslan! 🦁",
+      "reveal": "The children reach Narnia through a wardrobe."
+    },
+    {
+      "n": 28,
+      "question": "Which country does Paddington Bear come from?",
+      "answer": "Peru! 🧸",
+      "reveal": "Darkest Peru, to be exact. He loves marmalade sandwiches."
+    },
+    {
+      "n": 29,
+      "question": "In Kung Fu Panda, what's the name of the panda who becomes the Dragon Warrior?",
+      "answer": "Po! 🐼",
+      "reveal": "He's a noodle-loving panda who's mad about kung fu."
+    },
+    {
+      "n": 30,
+      "question": "In Cars, what's the name of the red race car?",
+      "answer": "Lightning McQueen! 🏎️",
+      "reveal": "Ka-chow!"
+    },
+    {
+      "n": 31,
+      "question": "Which 2008 film kicked off the Marvel Cinematic Universe?",
+      "answer": "Iron Man! 🦾",
+      "reveal": "Tony Stark ends the film by telling the world: 'I am Iron Man.'"
+    },
+    {
+      "n": 32,
+      "question": "Which 2009 film is set on the moon Pandora, home of the blue Na'vi?",
+      "answer": "Avatar! 🌏",
+      "reveal": "It's still one of the highest-grossing films ever made."
+    },
+    {
+      "n": 33,
+      "question": "In Ice Age, what's the name of the sabre-toothed squirrel who's obsessed with an acorn?",
+      "answer": "Scrat! 🐿️",
+      "reveal": "He barely speaks, but he steals every scene."
+    },
+    {
+      "n": 34,
+      "question": "What is the name of Thor's magical hammer?",
+      "answer": "Mjolnir! 🔨",
+      "reveal": "Only someone who is worthy can lift it."
+    },
+    {
+      "n": 35,
+      "question": "In Back to the Future, how fast must the DeLorean go to travel through time?",
+      "answer": "88 miles per hour! ⚡",
+      "reveal": "It also needs 1.21 gigawatts of power."
+    },
+    {
+      "n": 36,
+      "question": "In Black Panther, what is the name of T'Challa's hidden African nation?",
+      "answer": "Wakanda! 🐾",
+      "reveal": "Wakanda forever!"
+    },
+    {
+      "n": 37,
+      "question": "How many Infinity Stones are there in the Marvel films?",
+      "answer": "Six! 💎",
+      "reveal": "Space, Mind, Reality, Power, Time and Soul."
+    },
+    {
+      "n": 38,
+      "question": "In Guardians of the Galaxy, what are the only three words Groot says?",
+      "answer": "I am Groot! 🌳",
+      "reveal": "He says them in different ways to mean different things."
+    },
+    {
+      "n": 39,
+      "question": "Which secret agent has the code number 007?",
+      "answer": "James Bond! 🕶️",
+      "reveal": "He was created by the author Ian Fleming."
+    },
+    {
+      "n": 40,
+      "question": "In Charlie and the Chocolate Factory, what are Willy Wonka's small workers called?",
+      "answer": "Oompa-Loompas! 🍫",
+      "reveal": "They come from a place called Loompaland."
+    },
+    {
+      "n": 41,
+      "question": "In Home Alone, where is Kevin's family flying to when they leave him behind?",
+      "answer": "Paris! ✈️",
+      "reveal": "Kevin defends the house from two burglars with homemade traps."
+    },
+    {
+      "n": 42,
+      "question": "In The Sound of Music, how many von Trapp children are there?",
+      "answer": "Seven! 🎶",
+      "reveal": "The film is set in Salzburg, Austria."
+    },
+    {
+      "n": 43,
+      "question": "Which Pixar film is centred on Mexico's Day of the Dead?",
+      "answer": "Coco! 💀",
+      "reveal": "Miguel journeys to the Land of the Dead to find his family's story."
+    },
+    {
+      "n": 44,
+      "question": "Which comic-book company's heroes include Iron Man, Thor and Captain America?",
+      "answer": "Marvel! 🦸",
+      "reveal": "Its films are known as the Marvel Cinematic Universe."
+    },
+    {
+      "n": 45,
+      "question": "In Pinocchio, what happens when Pinocchio tells a lie?",
+      "answer": "His nose grows! 🤥",
+      "reveal": "His conscience is a cricket called Jiminy."
+    },
+    {
+      "n": 46,
+      "question": "In the 1933 film, which New York building does King Kong climb?",
+      "answer": "The Empire State Building! 🏙️",
+      "reveal": "It was the world's tallest building at the time."
+    },
+    {
+      "n": 47,
+      "question": "In The Wizard of Oz, what does the Tin Man want from the Wizard?",
+      "answer": "A heart! ❤️",
+      "reveal": "The Scarecrow wants a brain and the Lion wants courage."
+    },
+    {
+      "n": 48,
+      "question": "What's the name of Kristoff's reindeer in Frozen?",
+      "answer": "Sven! 🦌",
+      "reveal": "Kristoff often 'speaks' for him in a silly voice."
+    },
+    {
+      "n": 49,
+      "question": "Which 2023 film about a famous doll was the highest-grossing film of that year worldwide?",
+      "answer": "Barbie! 💖",
+      "reveal": "It took more than 1.4 billion US dollars at the box office."
+    },
+    {
+      "n": 50,
+      "question": "In Star Wars, what is the name of Han Solo's spaceship?",
+      "answer": "The Millennium Falcon! 🚀",
+      "reveal": "Han says it made the Kessel Run in less than twelve parsecs."
+    }
+  ],
+  "tags_research": "vidIQ keyword research 10 Nov 2026 ('movie quiz' ~45k searches/month; 'movie trivia quiz' ~4.6k; 'movies quiz' ~4k). 'guess the movie' left out: this isn't a guess-the-movie format."
+}
