@@ -16,6 +16,8 @@ This is the runbook the scheduled tasks follow. They start with no memory of ear
 | Daily 11:47am | Email Giulia and Shoma about anything uploaded in the last day | Cloud scheduled task |
 | Tue/Fri/Sun/Mon 10:13am | Studio-only settings (end screen, location, level, A/B test, pinning) | Mac scheduled task |
 
+The Mac task's instructions live in docs/mac-studio-task.md; the cloud tasks follow this file. To change what a task does, change the file through a pull request. Device-bound tasks need Giulia's approval for every prompt edit, so the prompts only point here.
+
 Release slots for the week the quizzes are written in: Thursday 3pm, Saturday 1pm and Sunday 1pm US Eastern (Fri 6–7am, Sun 4–5am and Mon 4–5am Melbourne).
 
 ## 1. Plan (Monday)
