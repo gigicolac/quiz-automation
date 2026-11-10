@@ -80,6 +80,13 @@ When a build succeeds:
 2. **Frames:** extract frames straight from the release asset with ffmpeg. Get the asset URL with `curl -sS -o /dev/null -w '%{redirect_url}' -H "Authorization: Bearer $(gh auth token)" -H "Accept: application/octet-stream" https://api.github.com/repos/gigicolac/quiz-automation/releases/assets/<id>`, then run `ffmpeg -ss <s> -i "$url" -frames:v 1`. Use the segment start times in the report.
    - **What to look at:** the intro, a question and its answer, one more question near the middle, and the outro.
    - **What to check:** text fits its box, the GIF matches the question, there are no real people's faces and nothing unsuitable, and the video is 3840×2160.
+   - **Every GIF, not just a sample.** On 10 Nov a sample looked fine, but a full check found 16 of Quiz #11's 100 GIFs and 15 of Quiz #12's showing real faces: memes, actors, a K-pop group, Stan Lee. One was also album-cover art. So also take one frame per `qNN`/`aNN` segment (start + 3 s, at 640 px wide), crop the GIF box (about x 46–290, y 82–258 at that size), tile them into labelled sheets of 25 and look at all 100.
+   - Faces seen from behind, tiny distant figures, crowds, masked or costumed characters and cartoons are fine. A clear human face is not.
+   - **Fixing a pick:**
+     - Giphy is blocked from the cloud shell. Choose from `gif_candidates.json`: prefer titles that say animation, cartoon or illustration, or name an object.
+     - On Giulia's Mac, the built-in browser can show the candidates. Open giphy.com, then replace the page with a grid of the candidates' `still` images.
+     - If every candidate is a person, change that row's query to an object (for example "speedometer", "megaphone", "oil can"). For film quizzes, add a word from the new query to the row's `match` list.
+     - Push; Find GIFs runs again. Check the new picks, then rebuild.
 3. **Thumbnails:** download `thumbnail-a.jpg` and `-b.jpg` from the same release and look at them.
    - The heading and hook are both full width and readable.
    - The fonts are Nunito Sans Bold and Tinos Italic.
