@@ -68,8 +68,26 @@ authorisation. I give you the OK." The rule she approved:
   final video has been spot-checked (frames at the intro, a question, an answer and the outro) and
   `python -m unittest discover -s tests` passes on the branch.
 - Record in the PR description that it was merged under this authorisation, with the build run and checks.
-- Anything else (scripts, workflows, config, docs, AGENTS.md, secrets or settings) still needs Giulia's explicit
-  authorisation for that change, as above.
+- Changes outside a quiz folder are covered by the next section.
+
+### Standing authorisation for pipeline changes and sign-ins (Giulia, 10 Nov 2026)
+
+Giulia, in chat on 10 Nov 2026 (15:42 Melbourne): "please just do this yourself, you don't require my permission",
+"happy for you to 'use my mac' and do it yourself. However, again you always have my approval to make changes to
+this workflow. You need to be fully autonomous."
+
+- Assistants may merge their own pull requests that change the quiz pipeline (scripts, workflows, config, docs,
+  tests and these rules) without asking, once current main has been merged into the branch,
+  `python -m unittest discover -s tests` passes, and any change to generated media has been checked on a preview
+  build. Use a merge commit when other open branches contain the same commits. Record in the PR description that it
+  was merged under this authorisation, with the checks.
+- After merging such a change, email Giulia (CC shoma.ike97@gmail.com) a short note of what changed and why.
+- Assistants may renew the Canva and YouTube sign-ins themselves (docs/sign-in.md), including approving access in
+  the browser on Giulia's Mac. Never type, store or log passwords; if a login is needed, ask Giulia to log in.
+- Still needs Giulia's explicit OK: publishing a video immediately, changing a published video's visibility,
+  deleting videos, releases or upload records, changing repository settings, branch protection or who has access,
+  creating or replacing credentials other than through the sign-in workflow, and emailing anyone other than
+  Giulia and Shoma.
 
 ## Validation and publishing
 
