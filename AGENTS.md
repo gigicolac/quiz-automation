@@ -58,6 +58,19 @@ Do not infer merge permission from a save, push or review command.
 - Report the final branch, commit, checks, and any work still awaiting review.
   Start subsequent independent work from the updated main.
 
+### Standing merge authorisation for quiz content (Giulia, 10 Nov 2026)
+
+Giulia (repository owner) authorised assistants in chat on 10 Nov 2026: "Happy for you to have this
+authorisation. I give you the OK." The rule she approved:
+
+- A pull request that **only adds or changes files inside one `quizzes/<quiz>/` folder** may be merged by an
+  assistant without asking, once that quiz's **Build video** run has passed, the build report checks pass, the
+  final video has been spot-checked (frames at the intro, a question, an answer and the outro) and
+  `python -m unittest discover -s tests` passes on the branch.
+- Record in the PR description that it was merged under this authorisation, with the build run and checks.
+- Anything else (scripts, workflows, config, docs, AGENTS.md, secrets or settings) still needs Giulia's explicit
+  authorisation for that change, as above.
+
 ## Validation and publishing
 
 - Run relevant tests. When available, run:

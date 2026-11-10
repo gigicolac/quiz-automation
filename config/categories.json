@@ -1,0 +1,23 @@
+{
+  "_comment": "Quiz category rotation and topic rules (Giulia, 10 Nov 2026). The weekly run picks each week's 3 quizzes from here and adds a history entry for every quiz it makes.",
+  "rotation": ["General Knowledge", "Fandom", "Movies", "Pop Culture", "TV", "Music", "Sport", "Geography", "History", "Science", "Education"],
+  "rules": [
+    "Go round the rotation in order; never the same category twice in a row.",
+    "Fandom = one franchise people love (e.g. Friends, Stranger Things, Harry Potter, Disney, Pokemon). Research each week which fandoms people love and search for right now (vidIQ, YouTube trends, channel data).",
+    "A topic (fandom, franchise, show, film series, band, sport, etc.) is not repeated within 365 days of its last quiz.",
+    "Family-friendly only: never anything sexual, graphic, hateful or otherwise inappropriate. Pick topics that suit a general audience on a quiz channel.",
+    "Education = a school topic (e.g. a Victorian Curriculum science unit for Years 7-12).",
+    "Fandom quizzes are hard; others medium unless the analytics say otherwise (Giulia: Quiz #10 felt hard; report on retention)."
+  ],
+  "topic_repeat_days": 365,
+  "history": [
+    {"quiz": "quiz-01..05", "category": "General Knowledge", "topic": "General knowledge", "released": "2026-07 (approx.)"},
+    {"quiz": "quiz-06", "category": "Sport", "topic": "FIFA World Cup", "released": "2026-07 (approx.)"},
+    {"quiz": "quiz-07", "category": "Fandom", "topic": "Harry Potter", "released": "2026-07 (approx.)"},
+    {"quiz": "quiz-08", "category": "Fandom", "topic": "Friends", "released": "2026-07 (approx.)"},
+    {"quiz": "quiz-09", "category": "General Knowledge", "topic": "General knowledge", "released": "2026-11-08"},
+    {"quiz": "quiz-10", "category": "Fandom", "topic": "Disney", "released": "2026-11-12"},
+    {"quiz": "quiz-11", "category": "Education", "topic": "Year 9/10 physics (Victorian Curriculum science)", "released": "2026-11-14 (planned)"},
+    {"quiz": "quiz-12", "category": "Movies", "topic": "Movies (general)", "released": "2026-11-15 (planned)"}
+  ]
+}
