@@ -50,7 +50,7 @@
         "road",
         "ruby"
       ],
-      "question_pick": "Y0FZeOprlmXn2",
+      "question_pick": "cbjhoDImfJUo8",
       "answer_pick": "OPVhCXh7JNGtG"
     },
     {
@@ -267,7 +267,7 @@
         "sadness",
         "pixar"
       ],
-      "question_pick": "hN8BGpsTCdrsPoH3oO",
+      "question_pick": "2bYewTk7K2No1NvcuK",
       "answer_pick": "7TZ7LgchcXw76"
     },
     {
@@ -344,7 +344,7 @@
         "wardrobe",
         "lion"
       ],
-      "question_pick": "No6X7hD2L8qF99q19n",
+      "question_pick": "uiMgLzJmryXxDclLsT",
       "answer_pick": "1m8Al0BagHUD6"
     },
     {
@@ -437,14 +437,14 @@
     {
       "n": 35,
       "question_query": "clock tower",
-      "answer_query": "speed",
+      "answer_query": "speedometer",
       "match": [
         "clock",
         "tower",
-        "speed"
+        "speed",
+        "speedometer"
       ],
-      "question_pick": "jpzj3sv9qFHjHfKSQ0",
-      "answer_pick": "toDt4cc8ee3OMYDVcY"
+      "question_pick": "jpzj3sv9qFHjHfKSQ0"
     },
     {
       "n": 36,
@@ -457,7 +457,7 @@
         "marvel"
       ],
       "question_pick": "Umc1F1eCeqGVW",
-      "answer_pick": "d3yvDeQ9fES0JTfG"
+      "answer_pick": "o6FWop1Gbuyly"
     },
     {
       "n": 37,
@@ -491,13 +491,13 @@
     {
       "n": 39,
       "question_query": "spy",
-      "answer_query": "secret agent",
+      "answer_query": "spy cartoon",
       "match": [
         "secret",
-        "agent"
+        "agent",
+        "spy"
       ],
-      "question_pick": "12IvkjPnlDuaUE",
-      "answer_pick": "uooozW7eXukKufx0dV"
+      "question_pick": "12IvkjPnlDuaUE"
     },
     {
       "n": 40,
@@ -519,7 +519,7 @@
         "airplane",
         "paris"
       ],
-      "question_pick": "Btn42lfKKrOzS",
+      "question_pick": "Rl5egXNtcIXDRtyNn6",
       "answer_pick": "l41lQ7dhii0sGaYtW"
     },
     {
@@ -585,12 +585,12 @@
     },
     {
       "n": 47,
-      "question_query": "tin man",
+      "question_query": "oil can",
       "answer_query": "heart",
       "match": [
-        "heart"
+        "heart",
+        "oil"
       ],
-      "question_pick": "1dLjvy5ZBd4Tm",
       "answer_pick": "fOqzMnu0EhxmM"
     },
     {
@@ -615,7 +615,7 @@
         "dollhouse"
       ],
       "question_pick": "kZqbBT64ECtjy",
-      "answer_pick": "3oEduGeoOQjoKOtPGg"
+      "answer_pick": "jJXlYfTeeRRuM"
     },
     {
       "n": 50,
