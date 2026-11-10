@@ -1,0 +1,330 @@
+{
+  "id": "quiz-11",
+  "number": 11,
+  "series": "Science",
+  "difficulty": "medium",
+  "title": "Year 9 Physics Quiz That Will Blow Your Mind 🤯 50 Science Questions | Science Quiz #11",
+  "description_hook": "🔬 Think you'd still pass Year 9 physics? 50 questions on light, sound, energy and forces that'll sort the boffins from the beginners.",
+  "thumbnail_tagline": "Pass Year 9 physics?",
+  "curriculum": {
+    "note": "Educational quiz (Giulia, 10 Nov 2026): Victorian Curriculum 2.0 Science, Levels 9 and 10 (taught as one band), Physical sciences: energy transfer and transformation, waves (sound, light, electromagnetic spectrum), forces and motion (Newton's laws), plus electric circuits and radioactivity basics. The curriculum does not assign topics to terms; schools sequence them."
+  },
+  "status": "questions_written",
+  "review": {
+    "questions": {
+      "decision": "auto-approved",
+      "note": "Giulia, 6 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 10 Nov 2026."
+    },
+    "video": {
+      "decision": "approved",
+      "by": "Claude (automated, per Giulia)",
+      "date": "2026-11-10",
+      "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 42813550631 succeeded: 4K 3840x2160, 996.3 s, 50 question and 50 answer segments, voice -20.1 dB RMS, music -36.3 dB, peak -0.3 dB; one minor warning (outro line starts 0.5 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s) for real people's faces and unsuitable content after replacing the GIFs in 17 slots across four rebuilds (real faces, album-cover art, a person falling); a frame that looked out of sync was re-checked directly (A12 plays correctly). Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage suitable. Note for Giulia: the template outro includes a Friends clip (same as Quiz #10).",
+      "source_commit": "fe468bc",
+      "duration_s": 996.27,
+      "release_tag": "quiz-11-preview-22"
+    }
+  },
+  "questions": [
+    {
+      "n": 1,
+      "question": "What's the fastest thing in the universe?",
+      "answer": "Light! 💡",
+      "reveal": "In a vacuum, light covers nearly 300,000 kilometres every second."
+    },
+    {
+      "n": 2,
+      "question": "Which type of heat transfer can travel through the vacuum of space?",
+      "answer": "Radiation! ☀️",
+      "reveal": "That's how the Sun's heat reaches us across about 150 million kilometres of empty space."
+    },
+    {
+      "n": 3,
+      "question": "What is the unit of force?",
+      "answer": "The newton! 🍎",
+      "reveal": "Named after Isaac Newton, who famously wondered why apples fall."
+    },
+    {
+      "n": 4,
+      "question": "Is sound a transverse wave or a longitudinal wave?",
+      "answer": "Longitudinal! 🔊",
+      "reveal": "Air particles squash together and spread apart in the same direction the sound travels."
+    },
+    {
+      "n": 5,
+      "question": "Why can't sound travel through space?",
+      "answer": "No particles to vibrate! 🚀",
+      "reveal": "Sound needs a medium like air, water or rock. In space, no one can hear you scream."
+    },
+    {
+      "n": 6,
+      "question": "Heat moving up a metal spoon sitting in hot soup is an example of which type of heat transfer?",
+      "answer": "Conduction! 🥄",
+      "reveal": "Vibrating particles pass the energy along to their neighbours, all the way up the handle."
+    },
+    {
+      "n": 7,
+      "question": "What is the unit of energy?",
+      "answer": "The joule! ⚡",
+      "reveal": "Named after the English physicist James Prescott Joule."
+    },
+    {
+      "n": 8,
+      "question": "Which colour of visible light has the longest wavelength?",
+      "answer": "Red! 🔴",
+      "reveal": "Violet is at the other end of the rainbow, with the shortest wavelength."
+    },
+    {
+      "n": 9,
+      "question": "Newton's second law says force equals mass times what?",
+      "answer": "Acceleration! 🚀",
+      "reveal": "Push twice as hard on the same mass and it accelerates twice as fast."
+    },
+    {
+      "n": 10,
+      "question": "Why do you see lightning before you hear the thunder?",
+      "answer": "Light is faster! ⚡",
+      "reveal": "Count the seconds between flash and boom, divide by three, and that's roughly how many kilometres away it is."
+    },
+    {
+      "n": 11,
+      "question": "What's the name for light bending as it passes from air into water?",
+      "answer": "Refraction! 🥤",
+      "reveal": "That's why a straw looks bent in a glass of water."
+    },
+    {
+      "n": 12,
+      "question": "Which part of the electromagnetic spectrum gives you sunburn?",
+      "answer": "Ultraviolet! 🧴",
+      "reveal": "UV can burn you even on a cloudy day, so slip, slop, slap!"
+    },
+    {
+      "n": 13,
+      "question": "Hot air rising and cooler air sinking to form a current is called what?",
+      "answer": "Convection! 🎈",
+      "reveal": "It's why the top floor of a house is often the warmest."
+    },
+    {
+      "n": 14,
+      "question": "On the Moon, would your mass or your weight be smaller?",
+      "answer": "Your weight! 🌕",
+      "reveal": "Your mass stays the same, but the Moon's gravity is only about one sixth of Earth's."
+    },
+    {
+      "n": 15,
+      "question": "What is the unit used to measure frequency?",
+      "answer": "Hertz! 〰️",
+      "reveal": "One hertz means one complete wave every second."
+    },
+    {
+      "n": 16,
+      "question": "Energy can't be created or destroyed, only changed from one form to another. What is this law called?",
+      "answer": "Conservation of energy! ♻️",
+      "reveal": "The total energy in a closed system always stays the same."
+    },
+    {
+      "n": 17,
+      "question": "What type of energy does any moving object have?",
+      "answer": "Kinetic energy! 🏃",
+      "reveal": "The word comes from the Greek for 'to move'."
+    },
+    {
+      "n": 18,
+      "question": "Which electromagnetic waves are used to see broken bones in hospital?",
+      "answer": "X-rays! 🦴",
+      "reveal": "Wilhelm Röntgen discovered them in 1895 and won the first ever Nobel Prize in Physics."
+    },
+    {
+      "n": 19,
+      "question": "What do we call sound that's too high-pitched for humans to hear?",
+      "answer": "Ultrasound! 🦇",
+      "reveal": "That's above about 20,000 hertz. Bats use it to find food in the dark."
+    },
+    {
+      "n": 20,
+      "question": "What is the force that slows down a sliding object?",
+      "answer": "Friction! 🧊",
+      "reveal": "Without it, you couldn't even walk without slipping over."
+    },
+    {
+      "n": 21,
+      "question": "Does sound travel faster through air or through steel?",
+      "answer": "Steel! 🔩",
+      "reveal": "Sound moves more than ten times faster through steel than through air."
+    },
+    {
+      "n": 22,
+      "question": "What do we call the distance from one wave crest to the next?",
+      "answer": "Wavelength! 📏",
+      "reveal": "Long wavelengths sound low; short wavelengths sound high."
+    },
+    {
+      "n": 23,
+      "question": "Which type of electromagnetic wave do most TV remotes use?",
+      "answer": "Infrared! 📺",
+      "reveal": "Point a remote at your phone camera and press a button: you may see it flash."
+    },
+    {
+      "n": 24,
+      "question": "'For every action, there is an equal and opposite reaction.' Which of Newton's laws is this?",
+      "answer": "The third law! 🚀",
+      "reveal": "Rockets push gas down, and the gas pushes the rocket up."
+    },
+    {
+      "n": 25,
+      "question": "What does a sound wave's frequency decide: its pitch or its loudness?",
+      "answer": "Its pitch! 🎵",
+      "reveal": "Higher frequency means a higher pitch. The amplitude decides how loud it is."
+    },
+    {
+      "n": 26,
+      "question": "Roughly how long does sunlight take to reach Earth?",
+      "answer": "About 8 minutes! ☀️",
+      "reveal": "The sunlight hitting you right now left the Sun around eight minutes ago."
+    },
+    {
+      "n": 27,
+      "question": "What kind of energy is stored in a stretched rubber band?",
+      "answer": "Elastic potential energy! 🏹",
+      "reveal": "Let it go and that stored energy turns into kinetic energy."
+    },
+    {
+      "n": 28,
+      "question": "Speed in a particular direction is called what?",
+      "answer": "Velocity! 🧭",
+      "reveal": "Fifty kilometres per hour is a speed. Fifty kilometres per hour heading north is a velocity."
+    },
+    {
+      "n": 29,
+      "question": "Which electromagnetic waves have the highest energy?",
+      "answer": "Gamma rays! ☢️",
+      "reveal": "They come from radioactive decay and some of the most violent explosions in the universe."
+    },
+    {
+      "n": 30,
+      "question": "White light splits into a rainbow when it passes through which triangular glass object?",
+      "answer": "A prism! 🌈",
+      "reveal": "Isaac Newton used prisms to show that white light is a mix of all the colours."
+    },
+    {
+      "n": 31,
+      "question": "What force pulls objects towards the centre of the Earth?",
+      "answer": "Gravity! 🌍",
+      "reveal": "It's also what keeps the Moon in orbit around the Earth."
+    },
+    {
+      "n": 32,
+      "question": "Roughly how fast does sound travel through air?",
+      "answer": "About 343 metres a second! 🔊",
+      "reveal": "That's at 20 degrees Celsius. Sound travels a little faster in warmer air."
+    },
+    {
+      "n": 33,
+      "question": "What is the unit of electric current?",
+      "answer": "The amp! 🔌",
+      "reveal": "Short for ampere, after the French physicist André-Marie Ampère."
+    },
+    {
+      "n": 34,
+      "question": "Without air resistance, which hits the ground first: a hammer or a feather dropped at the same time?",
+      "answer": "They land together! 🪶",
+      "reveal": "Apollo 15 astronaut David Scott tested it on the Moon in 1971, and they landed together."
+    },
+    {
+      "n": 35,
+      "question": "What is the height of a wave from its rest position to its crest called?",
+      "answer": "Amplitude! 🌊",
+      "reveal": "The bigger the amplitude of a sound wave, the louder it sounds."
+    },
+    {
+      "n": 36,
+      "question": "Which metal is most often used for the wires in household electrical cables?",
+      "answer": "Copper! 🔌",
+      "reveal": "It's an excellent conductor, and far cheaper than silver, the best conductor of all."
+    },
+    {
+      "n": 37,
+      "question": "In a transverse wave, which way do the particles move compared with the direction the wave travels?",
+      "answer": "At right angles! 📐",
+      "reveal": "Like a Mexican wave: people move up and down while the wave travels around the stadium."
+    },
+    {
+      "n": 38,
+      "question": "Which electromagnetic waves have the longest wavelengths?",
+      "answer": "Radio waves! 📻",
+      "reveal": "Some radio waves are kilometres long."
+    },
+    {
+      "n": 39,
+      "question": "What do we call materials like rubber and plastic that stop electricity flowing easily?",
+      "answer": "Insulators! 🧤",
+      "reveal": "That's why electrical wires are wrapped in plastic."
+    },
+    {
+      "n": 40,
+      "question": "What is the upward force from a liquid that keeps a boat afloat called?",
+      "answer": "Buoyancy! ⛵",
+      "reveal": "It's also called upthrust."
+    },
+    {
+      "n": 41,
+      "question": "Which scientist won Nobel Prizes in both physics and chemistry for her work on radioactivity?",
+      "answer": "Marie Curie! ⚛️",
+      "reveal": "She's still the only person to win Nobel Prizes in two different sciences."
+    },
+    {
+      "n": 42,
+      "question": "Roughly how much speed does a falling object gain each second on Earth, ignoring air resistance?",
+      "answer": "About 9.8 metres a second! 🌍",
+      "reveal": "That's the acceleration due to gravity: about 9.8 metres per second squared."
+    },
+    {
+      "n": 43,
+      "question": "The time it takes for half of a radioactive substance to decay is called what?",
+      "answer": "Its half-life! ☢️",
+      "reveal": "Carbon-14's half-life is about 5,700 years, which is how we date ancient bones."
+    },
+    {
+      "n": 44,
+      "question": "What's the name for a sound wave bouncing back off a cliff or a wall?",
+      "answer": "An echo! 🏞️",
+      "reveal": "Bats and dolphins use echoes to work out where things are."
+    },
+    {
+      "n": 45,
+      "question": "Do radio waves, visible light and X-rays all travel at the same speed in a vacuum?",
+      "answer": "Yes! 💡",
+      "reveal": "Every electromagnetic wave travels at the speed of light in a vacuum."
+    },
+    {
+      "n": 46,
+      "question": "When a bus brakes suddenly, why do the passengers lurch forward?",
+      "answer": "Inertia! 🚌",
+      "reveal": "Newton's first law: your body keeps moving until a force stops it."
+    },
+    {
+      "n": 47,
+      "question": "In a petrol car engine, most of the fuel's energy is lost as which form of energy?",
+      "answer": "Heat! 🔥",
+      "reveal": "Only a small share of the fuel's energy actually moves the car."
+    },
+    {
+      "n": 48,
+      "question": "What is the name for waves spreading out as they pass through a gap or around an obstacle?",
+      "answer": "Diffraction! 🚪",
+      "reveal": "That's why you can hear someone talking around a corner, even when you can't see them."
+    },
+    {
+      "n": 49,
+      "question": "What do we call the part of a sound wave where the air particles are squashed closest together?",
+      "answer": "A compression! 🗜️",
+      "reveal": "The spread-out parts in between are called rarefactions."
+    },
+    {
+      "n": 50,
+      "question": "In Einstein's famous equation, E equals m c squared, what does the c stand for?",
+      "answer": "The speed of light! 💡",
+      "reveal": "It's such a huge number that a tiny bit of mass holds an enormous amount of energy."
+    }
+  ]
+}
