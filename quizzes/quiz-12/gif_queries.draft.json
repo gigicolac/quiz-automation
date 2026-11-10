@@ -1,0 +1,519 @@
+{
+  "allow_branded": true,
+  "queries": [
+    {
+      "n": 1,
+      "question_query": "finding nemo",
+      "answer_query": "clownfish",
+      "film": "nemo",
+      "match": [
+        "nemo",
+        "clownfish",
+        "pixar"
+      ]
+    },
+    {
+      "n": 2,
+      "question_query": "ship ocean",
+      "answer_query": "iceberg",
+      "match": [
+        "ship",
+        "ocean",
+        "iceberg"
+      ]
+    },
+    {
+      "n": 3,
+      "question_query": "frozen elsa",
+      "answer_query": "olaf",
+      "film": "frozen",
+      "match": [
+        "frozen",
+        "olaf",
+        "elsa",
+        "anna"
+      ]
+    },
+    {
+      "n": 4,
+      "question_query": "yellow brick road",
+      "answer_query": "ruby slippers",
+      "match": [
+        "yellow",
+        "brick",
+        "road",
+        "ruby"
+      ]
+    },
+    {
+      "n": 5,
+      "question_query": "beach swimming",
+      "answer_query": "shark",
+      "match": [
+        "beach",
+        "swimming",
+        "shark"
+      ]
+    },
+    {
+      "n": 6,
+      "question_query": "lion king",
+      "answer_query": "hakuna matata",
+      "film": "lion king",
+      "match": [
+        "lion king",
+        "simba",
+        "timon",
+        "pumbaa",
+        "hakuna"
+      ]
+    },
+    {
+      "n": 7,
+      "question_query": "toy story",
+      "answer_query": "buzz lightyear",
+      "film": "toy story",
+      "match": [
+        "toy story",
+        "buzz",
+        "woody",
+        "pixar"
+      ]
+    },
+    {
+      "n": 8,
+      "question_query": "swamp",
+      "answer_query": "shrek",
+      "film": "shrek",
+      "match": [
+        "shrek",
+        "donkey",
+        "fiona"
+      ]
+    },
+    {
+      "n": 9,
+      "question_query": "despicable me",
+      "answer_query": "minions",
+      "film": "minion",
+      "match": [
+        "minion",
+        "despicable",
+        "gru"
+      ]
+    },
+    {
+      "n": 10,
+      "question_query": "gold ring",
+      "answer_query": "the one ring",
+      "match": [
+        "gold",
+        "ring",
+        "ring"
+      ]
+    },
+    {
+      "n": 11,
+      "question_query": "up pixar",
+      "answer_query": "balloons house",
+      "film": "up",
+      "match": [
+        "up",
+        "balloon",
+        "carl",
+        "russell",
+        "pixar"
+      ]
+    },
+    {
+      "n": 12,
+      "question_query": "alien",
+      "answer_query": "bicycle moon",
+      "match": [
+        "alien",
+        "bicycle",
+        "moon"
+      ]
+    },
+    {
+      "n": 13,
+      "question_query": "film director",
+      "answer_query": "clapperboard",
+      "match": [
+        "film",
+        "director",
+        "clapperboard"
+      ]
+    },
+    {
+      "n": 14,
+      "question_query": "cowboy",
+      "answer_query": "woody toy story",
+      "film": "toy story",
+      "match": [
+        "toy story",
+        "woody",
+        "pixar"
+      ]
+    },
+    {
+      "n": 15,
+      "question_query": "ocean sailing",
+      "answer_query": "moana",
+      "film": "moana",
+      "match": [
+        "moana",
+        "maui"
+      ]
+    },
+    {
+      "n": 16,
+      "question_query": "blue fish",
+      "answer_query": "dory",
+      "film": "dory",
+      "match": [
+        "dory",
+        "nemo",
+        "pixar"
+      ]
+    },
+    {
+      "n": 17,
+      "question_query": "mountains",
+      "answer_query": "new zealand",
+      "match": [
+        "mountains",
+        "zealand"
+      ]
+    },
+    {
+      "n": 18,
+      "question_query": "dinosaur",
+      "answer_query": "mosquito",
+      "match": [
+        "dinosaur",
+        "mosquito"
+      ]
+    },
+    {
+      "n": 19,
+      "question_query": "paris",
+      "answer_query": "ratatouille",
+      "film": "ratatouille",
+      "match": [
+        "ratatouille",
+        "remy",
+        "pixar"
+      ]
+    },
+    {
+      "n": 20,
+      "question_query": "superhero",
+      "answer_query": "the incredibles",
+      "film": "incredible",
+      "match": [
+        "incredible",
+        "pixar"
+      ]
+    },
+    {
+      "n": 21,
+      "question_query": "brain",
+      "answer_query": "inside out",
+      "film": "inside out",
+      "match": [
+        "inside out",
+        "joy",
+        "sadness",
+        "pixar"
+      ]
+    },
+    {
+      "n": 22,
+      "question_query": "monsters inc",
+      "answer_query": "scream",
+      "film": "monsters",
+      "match": [
+        "monsters",
+        "sulley",
+        "mike wazowski",
+        "pixar"
+      ]
+    },
+    {
+      "n": 23,
+      "question_query": "dalmatian",
+      "answer_query": "dalmatian puppies",
+      "film": "dalmatian",
+      "match": [
+        "dalmatian",
+        "cruella"
+      ]
+    },
+    {
+      "n": 24,
+      "question_query": "robot",
+      "answer_query": "wall-e",
+      "film": "wall-e",
+      "match": [
+        "wall-e",
+        "walle",
+        "wall e",
+        "eve",
+        "pixar"
+      ]
+    },
+    {
+      "n": 25,
+      "question_query": "jungle",
+      "answer_query": "bear dancing",
+      "match": [
+        "jungle",
+        "bear",
+        "dancing"
+      ]
+    },
+    {
+      "n": 26,
+      "question_query": "umbrella flying",
+      "answer_query": "spoonful of sugar",
+      "match": [
+        "umbrella",
+        "flying",
+        "spoonful",
+        "sugar"
+      ]
+    },
+    {
+      "n": 27,
+      "question_query": "wardrobe",
+      "answer_query": "lion",
+      "match": [
+        "wardrobe",
+        "lion"
+      ]
+    },
+    {
+      "n": 28,
+      "question_query": "teddy bear",
+      "answer_query": "peru",
+      "match": [
+        "teddy",
+        "bear",
+        "peru"
+      ]
+    },
+    {
+      "n": 29,
+      "question_query": "kung fu",
+      "answer_query": "panda",
+      "match": [
+        "kung",
+        "panda"
+      ]
+    },
+    {
+      "n": 30,
+      "question_query": "race car",
+      "answer_query": "lightning mcqueen",
+      "film": "mcqueen",
+      "match": [
+        "mcqueen",
+        "cars",
+        "pixar"
+      ]
+    },
+    {
+      "n": 31,
+      "question_query": "zoo",
+      "answer_query": "lion roar",
+      "match": [
+        "lion",
+        "roar"
+      ]
+    },
+    {
+      "n": 32,
+      "question_query": "planet",
+      "answer_query": "jungle glowing",
+      "match": [
+        "planet",
+        "jungle",
+        "glowing"
+      ]
+    },
+    {
+      "n": 33,
+      "question_query": "acorn",
+      "answer_query": "squirrel",
+      "match": [
+        "acorn",
+        "squirrel"
+      ]
+    },
+    {
+      "n": 34,
+      "question_query": "vintage car",
+      "answer_query": "flying car",
+      "match": [
+        "vintage",
+        "flying"
+      ]
+    },
+    {
+      "n": 35,
+      "question_query": "clock tower",
+      "answer_query": "speed",
+      "match": [
+        "clock",
+        "tower",
+        "speed"
+      ]
+    },
+    {
+      "n": 36,
+      "question_query": "desk lamp",
+      "answer_query": "lamp",
+      "match": [
+        "desk",
+        "lamp",
+        "lamp"
+      ]
+    },
+    {
+      "n": 37,
+      "question_query": "red carpet",
+      "answer_query": "trophy",
+      "match": [
+        "carpet",
+        "trophy"
+      ]
+    },
+    {
+      "n": 38,
+      "question_query": "hollywood",
+      "answer_query": "los angeles",
+      "match": [
+        "hollywood",
+        "angeles"
+      ]
+    },
+    {
+      "n": 39,
+      "question_query": "spy",
+      "answer_query": "secret agent",
+      "match": [
+        "secret",
+        "agent"
+      ]
+    },
+    {
+      "n": 40,
+      "question_query": "chocolate",
+      "answer_query": "chocolate factory",
+      "match": [
+        "chocolate",
+        "chocolate",
+        "factory"
+      ]
+    },
+    {
+      "n": 41,
+      "question_query": "airplane",
+      "answer_query": "paris",
+      "match": [
+        "airplane",
+        "paris"
+      ]
+    },
+    {
+      "n": 42,
+      "question_query": "mountains singing",
+      "answer_query": "austria",
+      "match": [
+        "mountains",
+        "singing",
+        "austria"
+      ]
+    },
+    {
+      "n": 43,
+      "question_query": "marigold",
+      "answer_query": "day of the dead",
+      "match": [
+        "marigold",
+        "dead"
+      ]
+    },
+    {
+      "n": 44,
+      "question_query": "comic book",
+      "answer_query": "superhero flying",
+      "match": [
+        "comic",
+        "book",
+        "superhero",
+        "flying"
+      ]
+    },
+    {
+      "n": 45,
+      "question_query": "puppet",
+      "answer_query": "pinocchio",
+      "film": "pinocchio",
+      "match": [
+        "pinocchio",
+        "jiminy"
+      ]
+    },
+    {
+      "n": 46,
+      "question_query": "gorilla",
+      "answer_query": "empire state building",
+      "match": [
+        "gorilla",
+        "empire",
+        "state",
+        "building"
+      ]
+    },
+    {
+      "n": 47,
+      "question_query": "tin man",
+      "answer_query": "heart",
+      "match": [
+        "heart"
+      ]
+    },
+    {
+      "n": 48,
+      "question_query": "reindeer",
+      "answer_query": "sven frozen",
+      "film": "sven",
+      "match": [
+        "sven",
+        "frozen",
+        "kristoff"
+      ]
+    },
+    {
+      "n": 49,
+      "question_query": "pink",
+      "answer_query": "dollhouse",
+      "match": [
+        "pink",
+        "dollhouse"
+      ]
+    },
+    {
+      "n": 50,
+      "question_query": "spaceship",
+      "answer_query": "space stars",
+      "match": [
+        "spaceship",
+        "space",
+        "stars"
+      ]
+    }
+  ]
+}
