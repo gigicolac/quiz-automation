@@ -25,6 +25,15 @@
     "questions": {
       "decision": "auto-approved",
       "note": "Giulia, 6 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 10 Nov 2026. Family-friendly (Giulia 10 Nov); GIF picks avoid real actors where possible."
+    },
+    "video": {
+      "decision": "approved",
+      "by": "Claude (automated, per Giulia)",
+      "date": "2026-11-10",
+      "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 42807221959 succeeded: 4K 3840x2160, 915.8 s, 50 question and 50 answer segments, voice -20.1 dB RMS, music -35.9 dB, peak -0.3 dB; one minor warning (outro line starts 0.1 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s) for real people's faces and unsuitable content after replacing 16 picks across two rebuilds; frames that looked out of sync were re-checked with continuous decoding (Q19-Q20 plays correctly). Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage suitable. Note for Giulia: the template outro includes a Friends clip (same as Quiz #10).",
+      "source_commit": "8b02799",
+      "duration_s": 915.8,
+      "release_tag": "quiz-12-preview-21"
     }
   },
   "questions": [
