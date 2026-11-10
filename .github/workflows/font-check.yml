@@ -1,0 +1,36 @@
+name: Font check (one-off)
+# Exports the old Canva thumbnail design as PDF and lists its fonts, so the code-made thumbnails can use the same
+# ones (Giulia, 10 Nov). Runs on a push to this branch only; delete the branch afterwards.
+on:
+  push:
+    branches: ["claude/font-check"]
+permissions:
+  contents: read
+concurrency:
+  group: build-video  # shares Canva's single-use refresh token with the Build video workflow
+  cancel-in-progress: false
+jobs:
+  fonts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export PDF and list fonts
+        env:
+          CANVA_CLIENT_ID: ${{ vars.CANVA_CLIENT_ID || secrets.CANVA_CLIENT_ID }}
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          CANVA_REFRESH_TOKEN: ${{ secrets.CANVA_REFRESH_TOKEN }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          python3 - <<'PY'
+          import sys, urllib.request
+          sys.path.insert(0, "scripts")
+          from canva_export import access_token, call
+          from canva_build import wait
+          t = access_token()
+          job = call("POST", "/exports", t, {"design_id": "DAHaaJSzoH8", "format": {"type": "pdf", "pages": [1]}})["job"]
+          job = wait(t, "/exports", job, "PDF export")
+          urllib.request.urlretrieve(job["urls"][0], "thumb.pdf")
+          PY
+          pdffonts thumb.pdf | tee -a "$GITHUB_STEP_SUMMARY"
