@@ -325,11 +325,14 @@
     },
     {
       "n": 31,
-      "question_query": "zoo",
-      "answer_query": "lion roar",
+      "question_query": "iron man",
+      "answer_query": "iron man suit",
+      "film": "iron man",
       "match": [
-        "lion",
-        "roar"
+        "iron man",
+        "tony stark",
+        "marvel",
+        "avengers"
       ]
     },
     {
@@ -353,11 +356,14 @@
     },
     {
       "n": 34,
-      "question_query": "vintage car",
-      "answer_query": "flying car",
+      "question_query": "thunder lightning",
+      "answer_query": "thor hammer",
+      "film": "thor",
       "match": [
-        "vintage",
-        "flying"
+        "thor",
+        "mjolnir",
+        "hammer",
+        "marvel"
       ]
     },
     {
@@ -372,30 +378,38 @@
     },
     {
       "n": 36,
-      "question_query": "desk lamp",
-      "answer_query": "lamp",
+      "question_query": "black panther",
+      "answer_query": "wakanda",
+      "film": "black panther",
       "match": [
-        "desk",
-        "lamp",
-        "lamp"
+        "black panther",
+        "wakanda",
+        "marvel"
       ]
     },
     {
       "n": 37,
-      "question_query": "red carpet",
-      "answer_query": "trophy",
+      "question_query": "infinity gauntlet",
+      "answer_query": "infinity stones",
+      "film": "infinity",
       "match": [
-        "carpet",
-        "trophy"
+        "infinity",
+        "gauntlet",
+        "thanos",
+        "marvel",
+        "avengers"
       ]
     },
     {
       "n": 38,
-      "question_query": "hollywood",
-      "answer_query": "los angeles",
+      "question_query": "guardians of the galaxy",
+      "answer_query": "groot",
+      "film": "groot",
       "match": [
-        "hollywood",
-        "angeles"
+        "groot",
+        "guardians",
+        "rocket",
+        "marvel"
       ]
     },
     {

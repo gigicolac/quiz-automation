@@ -16,6 +16,7 @@
     "movie quiz game",
     "family movie quiz",
     "pixar quiz",
+    "marvel quiz",
     "animated movie quiz",
     "film quiz"
   ],
@@ -209,9 +210,9 @@
     },
     {
       "n": 31,
-      "question": "In Madagascar, what kind of animal is Alex?",
-      "answer": "A lion! 🦁",
-      "reveal": "He's the star attraction at New York's Central Park Zoo."
+      "question": "Which 2008 film kicked off the Marvel Cinematic Universe?",
+      "answer": "Iron Man! 🦾",
+      "reveal": "Tony Stark ends the film by telling the world: 'I am Iron Man.'"
     },
     {
       "n": 32,
@@ -227,9 +228,9 @@
     },
     {
       "n": 34,
-      "question": "What's the name of the magical flying car in the 1968 musical film?",
-      "answer": "Chitty Chitty Bang Bang! 🚗",
-      "reveal": "The story was written by Ian Fleming, who also created James Bond."
+      "question": "What is the name of Thor's magical hammer?",
+      "answer": "Mjolnir! 🔨",
+      "reveal": "Only someone who is worthy can lift it."
     },
     {
       "n": 35,
@@ -239,21 +240,21 @@
     },
     {
       "n": 36,
-      "question": "Which studio's logo features a little desk lamp hopping across its name?",
-      "answer": "Pixar! 💡",
-      "reveal": "The lamp is called Luxo Jr., from Pixar's 1986 short film."
+      "question": "In Black Panther, what is the name of T'Challa's hidden African nation?",
+      "answer": "Wakanda! 🐾",
+      "reveal": "Wakanda forever!"
     },
     {
       "n": 37,
-      "question": "What is the name of the golden statue given at the Academy Awards?",
-      "answer": "Oscar! 🏆",
-      "reveal": "The ceremony is officially called the Academy Awards."
+      "question": "How many Infinity Stones are there in the Marvel films?",
+      "answer": "Six! 💎",
+      "reveal": "Space, Mind, Reality, Power, Time and Soul."
     },
     {
       "n": 38,
-      "question": "In which city is the famous Hollywood sign?",
-      "answer": "Los Angeles! 🎬",
-      "reveal": "It originally read 'Hollywoodland'."
+      "question": "In Guardians of the Galaxy, what are the only three words Groot says?",
+      "answer": "I am Groot! 🌳",
+      "reveal": "He says them in different ways to mean different things."
     },
     {
       "n": 39,
