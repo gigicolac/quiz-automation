@@ -2,14 +2,12 @@
  {
   "n": 1,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "C5PF3WUVttTB8fTONu",
    "user": "officialwrc",
    "title": "Friday Driving GIF by FIA World Rally Championship",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHBldDh2dmVhYnVlamNnMTZ6MWl4M3MzaXFyMzR6Z250djExbnBwYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/C5PF3WUVttTB8fTONu/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/C5PF3WUVttTB8fTONu/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHBldDh2dmVhYnVlamNnMTZ6MWl4M3MzaXFyMzR6Z250djExbnBwYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/C5PF3WUVttTB8fTONu/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHBldDh2dmVhYnVlamNnMTZ6MWl4M3MzaXFyMzR6Z250djExbnBwYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/C5PF3WUVttTB8fTONu/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -35,14 +33,12 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bDRmYmVvdmJrajE2amN5aGFmbXV2bXF5OThheDNhemh6ZWs3bTVocyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4ydWTcMBjimLbT1CHi/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "ctGFLebG1AqK4",
    "user": "",
    "title": "sun GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aG50YzJ4eWViZjZlbzgwc25jMnc2eHV2amY3d25odTBqd3Q4M3ExYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ctGFLebG1AqK4/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/ctGFLebG1AqK4/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aG50YzJ4eWViZjZlbzgwc25jMnc2eHV2amY3d25odTBqd3Q4M3ExYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ctGFLebG1AqK4/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aG50YzJ4eWViZjZlbzgwc25jMnc2eHV2amY3d25odTBqd3Q4M3ExYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ctGFLebG1AqK4/giphy_s.gif"
   }
  },
  {
@@ -58,37 +54,31 @@
    "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1OGZjeTQwMW9kd2VqNXB4Z2R3eWQ3bDFoOGl6djl5eHQzeTRxZGV2ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/D74yIoiOstPA1e3xYL/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "sonyRJC9Kw53t9sVXP",
    "user": "papirovamamaspk",
    "title": "Fall Apple GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGs3djAyN3pvZWZwOTZ1czV0dmFiMnRuYzlneDR3aTgwOHltbDUybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sonyRJC9Kw53t9sVXP/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/sonyRJC9Kw53t9sVXP/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGs3djAyN3pvZWZwOTZ1czV0dmFiMnRuYzlneDR3aTgwOHltbDUybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sonyRJC9Kw53t9sVXP/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGs3djAyN3pvZWZwOTZ1czV0dmFiMnRuYzlneDR3aTgwOHltbDUybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sonyRJC9Kw53t9sVXP/giphy_s.gif"
   }
  },
  {
   "n": 4,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "ajuW0WpGQyHFS",
    "user": "",
    "title": "Speakers GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bGhwNHQxbXN3dWVqNms4OGY4bWVnYmpyYzY5dWNsYmJobHYya3FubyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ajuW0WpGQyHFS/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/ajuW0WpGQyHFS/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bGhwNHQxbXN3dWVqNms4OGY4bWVnYmpyYzY5dWNsYmJobHYya3FubyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ajuW0WpGQyHFS/giphy_s.gif"
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bGhwNHQxbXN3dWVqNms4OGY4bWVnYmpyYzY5dWNsYmJobHYya3FubyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ajuW0WpGQyHFS/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "l4JyPq9bAWkLGvWGA",
    "user": "samcannon",
    "title": "slinky loop GIF by Sam Cannon",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDZscG53cmR2dmhkZzEwZHI4b2w3and5ZGQzcHlpbmVreGt4Z2pleCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4JyPq9bAWkLGvWGA/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/l4JyPq9bAWkLGvWGA/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDZscG53cmR2dmhkZzEwZHI4b2w3and5ZGQzcHlpbmVreGt4Z2pleCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4JyPq9bAWkLGvWGA/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDZscG53cmR2dmhkZzEwZHI4b2w3and5ZGQzcHlpbmVreGt4Z2pleCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4JyPq9bAWkLGvWGA/giphy_s.gif"
   }
  },
  {
@@ -150,14 +140,12 @@
    "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1N3dmenJkcGZmMmsxcTFqNnBlaWFmaG9vazVoODFncWtsYjU5eW1laSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/23xN9cYQSKwFy/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "ESfdA1EX02VW",
    "user": "",
    "title": "lightening GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ESfdA1EX02VW/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/ESfdA1EX02VW/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ESfdA1EX02VW/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ESfdA1EX02VW/giphy_s.gif"
   }
  },
  {
@@ -196,50 +184,42 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bjY4d3c1Y3M4MHk2eXRrYWVvNDJyNXdxZnN0OWc4eXJqcXQ2ZjZ2diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/o6S51npJYQM48/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "b85mPT4Usz7fq",
    "user": "",
    "title": "Rocket Launch GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXJoNHgzNXNxNDBtMHZzcHllM21vNTZpd2M4dTZ2anNvZXExZnQzaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/b85mPT4Usz7fq/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/b85mPT4Usz7fq/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXJoNHgzNXNxNDBtMHZzcHllM21vNTZpd2M4dTZ2anNvZXExZnQzaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/b85mPT4Usz7fq/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MXJoNHgzNXNxNDBtMHZzcHllM21vNTZpd2M4dTZ2anNvZXExZnQzaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/b85mPT4Usz7fq/giphy_s.gif"
   }
  },
  {
   "n": 10,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "DX1vOC6sDgBuU",
    "user": "headlikeanorange",
    "title": "landscape lightning GIF by Head Like an Orange",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DX1vOC6sDgBuU/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/DX1vOC6sDgBuU/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DX1vOC6sDgBuU/giphy_s.gif"
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DX1vOC6sDgBuU/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "xaZCqV4weJwHu",
    "user": "",
    "title": "storm front GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xaZCqV4weJwHu/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/xaZCqV4weJwHu/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xaZCqV4weJwHu/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1aTJncTMzdHFzbWVrYW1zMDJnOXRjMGJrYWRkcmU5Y2pyenlpOTc5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xaZCqV4weJwHu/giphy_s.gif"
   }
  },
  {
   "n": 11,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "m5of6ouIA4TFm",
    "user": "",
    "title": "Water Agua GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dTYxczNpeTRlaHJ1MTllMW52bXd4czYwMXEyODNhYzN3OWthOHdqaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m5of6ouIA4TFm/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/m5of6ouIA4TFm/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dTYxczNpeTRlaHJ1MTllMW52bXd4czYwMXEyODNhYzN3OWthOHdqaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m5of6ouIA4TFm/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dTYxczNpeTRlaHJ1MTllMW52bXd4czYwMXEyODNhYzN3OWthOHdqaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m5of6ouIA4TFm/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -278,14 +258,12 @@
  {
   "n": 13,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "LKXHB3J1HGCeWiwOLn",
    "user": "suestewarts",
    "title": "Hot Air Balloon Summer GIF by SueStewarts",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1b2c1dGI1a2NzM28wYnpmdWZ5YTcxY3F5N21nNGFsM2c4N2I3OW1kdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LKXHB3J1HGCeWiwOLn/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/LKXHB3J1HGCeWiwOLn/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1b2c1dGI1a2NzM28wYnpmdWZ5YTcxY3F5N21nNGFsM2c4N2I3OW1kdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LKXHB3J1HGCeWiwOLn/giphy_s.gif"
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1b2c1dGI1a2NzM28wYnpmdWZ5YTcxY3F5N21nNGFsM2c4N2I3OW1kdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LKXHB3J1HGCeWiwOLn/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -301,14 +279,12 @@
  {
   "n": 14,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "8fbi5HcNR7Mbu",
    "user": "",
    "title": "Full Moon GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWIxeGEydm9zZmZ4cTk5aGNsdXQ5b3l1Z2FxdWlsN3AxaHozd2MyZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8fbi5HcNR7Mbu/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/8fbi5HcNR7Mbu/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWIxeGEydm9zZmZ4cTk5aGNsdXQ5b3l1Z2FxdWlsN3AxaHozd2MyZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8fbi5HcNR7Mbu/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWIxeGEydm9zZmZ4cTk5aGNsdXQ5b3l1Z2FxdWlsN3AxaHozd2MyZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8fbi5HcNR7Mbu/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -347,14 +323,12 @@
  {
   "n": 16,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "o65WgXSDBVY1G",
    "user": "",
    "title": "animation physics GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3Y1cTdncmRzYWl2bncyYWR4bGMxd3QxejZhdHJleXdwNjM5cDVpeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/o65WgXSDBVY1G/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/o65WgXSDBVY1G/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3Y1cTdncmRzYWl2bncyYWR4bGMxd3QxejZhdHJleXdwNjM5cDVpeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/o65WgXSDBVY1G/giphy_s.gif"
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3Y1cTdncmRzYWl2bncyYWR4bGMxd3QxejZhdHJleXdwNjM5cDVpeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/o65WgXSDBVY1G/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -370,14 +344,12 @@
  {
   "n": 17,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "H4uE6w9G1uK4M",
    "user": "",
    "title": "penguin running GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NjZnZ3ZkcHZ6M2F6MWVrbHY3Ym5lenBsNmo4eDFjdDV1OXNuOGZjdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/H4uE6w9G1uK4M/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/H4uE6w9G1uK4M/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NjZnZ3ZkcHZ6M2F6MWVrbHY3Ym5lenBsNmo4eDFjdDV1OXNuOGZjdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/H4uE6w9G1uK4M/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1NjZnZ3ZkcHZ6M2F6MWVrbHY3Ym5lenBsNmo4eDFjdDV1OXNuOGZjdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/H4uE6w9G1uK4M/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -403,14 +375,12 @@
    "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NmZjem5zd24wbXZxYnJ0eWdpczAyd2lmc2FpNjZpcjJ4bXgxcXdmbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/L4IUCSVDV7Fvy/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "7HeN31sikXE76",
    "user": "",
    "title": "xray GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWtkMmdicm5ocWxnd3M2Ymd1aDU3eTllZTRhbDBubGY1eHV2MHBjNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7HeN31sikXE76/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/7HeN31sikXE76/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWtkMmdicm5ocWxnd3M2Ymd1aDU3eTllZTRhbDBubGY1eHV2MHBjNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7HeN31sikXE76/giphy_s.gif"
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1NWtkMmdicm5ocWxnd3M2Ymd1aDU3eTllZTRhbDBubGY1eHV2MHBjNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7HeN31sikXE76/giphy_s.gif"
   }
  },
  {
@@ -426,14 +396,12 @@
    "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cmhwcXBrODZ3cWRweHF0cGh3NnAybjNncTFvaXU4dWRjN2IyZWYxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9ryCWhW8nmQms/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "10I2yiQCXk4aaI",
    "user": "",
    "title": "bat flying GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mmc0a2JvY3k1NzdpYnlkdTFnbzBzeGZyaWFtd2YwZzgwZnV1M2trYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/10I2yiQCXk4aaI/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/10I2yiQCXk4aaI/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mmc0a2JvY3k1NzdpYnlkdTFnbzBzeGZyaWFtd2YwZzgwZnV1M2trYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/10I2yiQCXk4aaI/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mmc0a2JvY3k1NzdpYnlkdTFnbzBzeGZyaWFtd2YwZzgwZnV1M2trYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/10I2yiQCXk4aaI/giphy_s.gif"
   }
  },
  {
@@ -462,14 +430,12 @@
  {
   "n": 21,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "NGSbD5vI6lUvC",
    "user": "",
    "title": "Loop Train GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXg5NW9rMDBlYXExb3diMnZhaHBxcWRlc2h1Yzd0eDdkejJuZjZsYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NGSbD5vI6lUvC/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/NGSbD5vI6lUvC/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXg5NW9rMDBlYXExb3diMnZhaHBxcWRlc2h1Yzd0eDdkejJuZjZsYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NGSbD5vI6lUvC/giphy_s.gif"
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXg5NW9rMDBlYXExb3diMnZhaHBxcWRlc2h1Yzd0eDdkejJuZjZsYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NGSbD5vI6lUvC/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -485,14 +451,12 @@
  {
   "n": 22,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "HGvjR72DXRHWw",
    "user": "",
    "title": "Ocean Waves GIF",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MTc0cjljcWQ3MGNxNjJiODA5cW9yc2czNG1mdDkxbnVoOHR0aGdkZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HGvjR72DXRHWw/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/HGvjR72DXRHWw/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MTc0cjljcWQ3MGNxNjJiODA5cW9yc2czNG1mdDkxbnVoOHR0aGdkZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HGvjR72DXRHWw/giphy_s.gif"
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MTc0cjljcWQ3MGNxNjJiODA5cW9yc2czNG1mdDkxbnVoOHR0aGdkZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HGvjR72DXRHWw/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -508,24 +472,20 @@
  {
   "n": 23,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "hpdgIvGZMXsit6mE6U",
    "user": "bachilla",
    "title": "Sad Remote Control GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZzZ0cm56MzlwZXdqb2Rjbmh1anNsbmd2c2tiN2U4bDE0M3l5eWkydiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hpdgIvGZMXsit6mE6U/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/hpdgIvGZMXsit6mE6U/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZzZ0cm56MzlwZXdqb2Rjbmh1anNsbmd2c2tiN2U4bDE0M3l5eWkydiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hpdgIvGZMXsit6mE6U/giphy_s.gif"
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZzZ0cm56MzlwZXdqb2Rjbmh1anNsbmd2c2tiN2U4bDE0M3l5eWkydiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hpdgIvGZMXsit6mE6U/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "KZe02gpoAj4yVjxKQt",
    "user": "",
    "title": "Remote Control Reaction GIF by MOODMAN",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZzZ0cm56MzlwZXdqb2Rjbmh1anNsbmd2c2tiN2U4bDE0M3l5eWkydiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KZe02gpoAj4yVjxKQt/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/KZe02gpoAj4yVjxKQt/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZzZ0cm56MzlwZXdqb2Rjbmh1anNsbmd2c2tiN2U4bDE0M3l5eWkydiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KZe02gpoAj4yVjxKQt/giphy_s.gif"
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZzZ0cm56MzlwZXdqb2Rjbmh1anNsbmd2c2tiN2U4bDE0M3l5eWkydiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KZe02gpoAj4yVjxKQt/giphy_s.gif"
   }
  },
  {
@@ -600,14 +560,12 @@
  {
   "n": 27,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "xT4Ap8HkKFwHPotdwk",
    "user": "angrybirds",
    "title": "GIF by Angry Birds",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dWNpd2h6dnQyM3NwYTl6eTBqbGp1YWJxY3N2MG5rbXRxMTM4Z2N0YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT4Ap8HkKFwHPotdwk/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/xT4Ap8HkKFwHPotdwk/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dWNpd2h6dnQyM3NwYTl6eTBqbGp1YWJxY3N2MG5rbXRxMTM4Z2N0YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT4Ap8HkKFwHPotdwk/giphy_s.gif"
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dWNpd2h6dnQyM3NwYTl6eTBqbGp1YWJxY3N2MG5rbXRxMTM4Z2N0YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT4Ap8HkKFwHPotdwk/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -623,14 +581,12 @@
  {
   "n": 28,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "toDt4cc8ee3OMYDVcY",
    "user": "aml_off",
    "title": "Speed GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2U2dnNhNXA4djl3ZDJtajdnenhveDhxZmZveHJsbGtyZWEyYjl6MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/toDt4cc8ee3OMYDVcY/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/toDt4cc8ee3OMYDVcY/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2U2dnNhNXA4djl3ZDJtajdnenhveDhxZmZveHJsbGtyZWEyYjl6MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/toDt4cc8ee3OMYDVcY/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2U2dnNhNXA4djl3ZDJtajdnenhveDhxZmZveHJsbGtyZWEyYjl6MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/toDt4cc8ee3OMYDVcY/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -646,14 +602,12 @@
  {
   "n": 29,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "13mxP6bXy9lR16",
    "user": "",
    "title": "Water Explosion GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YmczcGJjd2ZraWEyM2RwcmJ2ZWV4dmdiNjcydHBya3N1bWI0c3M4YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13mxP6bXy9lR16/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/13mxP6bXy9lR16/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YmczcGJjd2ZraWEyM2RwcmJ2ZWV4dmdiNjcydHBya3N1bWI0c3M4YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13mxP6bXy9lR16/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YmczcGJjd2ZraWEyM2RwcmJ2ZWV4dmdiNjcydHBya3N1bWI0c3M4YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13mxP6bXy9lR16/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -669,24 +623,20 @@
  {
   "n": 30,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "26u438LeS0Pf8RGHS",
    "user": "ericaofanderson",
    "title": "Glow Energy Beam GIF by Erica Anderson",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YjB1eHc2NnA4Y2RuYW0zejVmY3RyOHZ2dTh5OWFhaDZsMGw4eW8yZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26u438LeS0Pf8RGHS/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/26u438LeS0Pf8RGHS/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YjB1eHc2NnA4Y2RuYW0zejVmY3RyOHZ2dTh5OWFhaDZsMGw4eW8yZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26u438LeS0Pf8RGHS/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YjB1eHc2NnA4Y2RuYW0zejVmY3RyOHZ2dTh5OWFhaDZsMGw4eW8yZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26u438LeS0Pf8RGHS/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "8kdLHlYG2qYDe",
    "user": "",
    "title": "prism GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGZ5aHgwZzVrd3dnZTU4MTAzbGNuaTdvbWl6ZHpycWdvaHFndWI2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8kdLHlYG2qYDe/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/8kdLHlYG2qYDe/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGZ5aHgwZzVrd3dnZTU4MTAzbGNuaTdvbWl6ZHpycWdvaHFndWI2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8kdLHlYG2qYDe/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGZ5aHgwZzVrd3dnZTU4MTAzbGNuaTdvbWl6ZHpycWdvaHFndWI2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8kdLHlYG2qYDe/giphy_s.gif"
   }
  },
  {
@@ -738,37 +688,31 @@
  {
   "n": 33,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "RTP5yqpBaN8li",
    "user": "",
    "title": "electricity pylons GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXMzOWRkd2ZqaHNmbDhwbnJoNGJqOXE0ZGtieWhvdjRhd2F4MDVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RTP5yqpBaN8li/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/RTP5yqpBaN8li/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXMzOWRkd2ZqaHNmbDhwbnJoNGJqOXE0ZGtieWhvdjRhd2F4MDVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RTP5yqpBaN8li/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXMzOWRkd2ZqaHNmbDhwbnJoNGJqOXE0ZGtieWhvdjRhd2F4MDVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RTP5yqpBaN8li/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "QpwcOvykEGBjy",
    "user": "",
    "title": "art power GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2VpeHhjYWwzMG9uNHc4ejE3cmw2bnNiYTc5bGcwYWh2Nm52Y3ducCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QpwcOvykEGBjy/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/QpwcOvykEGBjy/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2VpeHhjYWwzMG9uNHc4ejE3cmw2bnNiYTc5bGcwYWh2Nm52Y3ducCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QpwcOvykEGBjy/giphy_s.gif"
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z2VpeHhjYWwzMG9uNHc4ejE3cmw2bnNiYTc5bGcwYWh2Nm52Y3ducCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QpwcOvykEGBjy/giphy_s.gif"
   }
  },
  {
   "n": 34,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "12iVBUL6BucyiY",
    "user": "",
    "title": "feather GIF",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eW12eTdnZXE4dnZtcWRkM2JjMmo0bGcxZG9oODBsa2wzcmxlbHUzZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12iVBUL6BucyiY/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/12iVBUL6BucyiY/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eW12eTdnZXE4dnZtcWRkM2JjMmo0bGcxZG9oODBsa2wzcmxlbHUzZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12iVBUL6BucyiY/giphy_s.gif"
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eW12eTdnZXE4dnZtcWRkM2JjMmo0bGcxZG9oODBsa2wzcmxlbHUzZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12iVBUL6BucyiY/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -863,37 +807,31 @@
    "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1cmgxMzUxcDF3dWM2eG9yMjlwNjM1ZnR6cHE3OHdrdmtvdHV1aHhiciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/u8c4YHeayi5yPCS3kp/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "7scCYNWRHUwKc",
    "user": "",
    "title": "National Radio Day GIF",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmh0cmtkMTh2bW0zYnZ0cmNnd3g3NGYzZW5ibHJjbHpxdWEzbzJtMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7scCYNWRHUwKc/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/7scCYNWRHUwKc/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmh0cmtkMTh2bW0zYnZ0cmNnd3g3NGYzZW5ibHJjbHpxdWEzbzJtMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7scCYNWRHUwKc/giphy_s.gif"
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bmh0cmtkMTh2bW0zYnZ0cmNnd3g3NGYzZW5ibHJjbHpxdWEzbzJtMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7scCYNWRHUwKc/giphy_s.gif"
   }
  },
  {
   "n": 39,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "lM86pZcDxfx5e",
    "user": "",
    "title": "pokemon electricity GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXMzOWRkd2ZqaHNmbDhwbnJoNGJqOXE0ZGtieWhvdjRhd2F4MDVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lM86pZcDxfx5e/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/lM86pZcDxfx5e/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXMzOWRkd2ZqaHNmbDhwbnJoNGJqOXE0ZGtieWhvdjRhd2F4MDVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lM86pZcDxfx5e/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OXMzOWRkd2ZqaHNmbDhwbnJoNGJqOXE0ZGtieWhvdjRhd2F4MDVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lM86pZcDxfx5e/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "l4pTnnegezSUb1Hfa",
    "user": "jackmanworks",
    "title": "doctor making GIF",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Ym0wZnY0bnFvOGFkdXRnMGpxbTM5Z3dheGJuM2VnNDUwNDl1NGJ1eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4pTnnegezSUb1Hfa/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/l4pTnnegezSUb1Hfa/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Ym0wZnY0bnFvOGFkdXRnMGpxbTM5Z3dheGJuM2VnNDUwNDl1NGJ1eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4pTnnegezSUb1Hfa/giphy_s.gif"
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Ym0wZnY0bnFvOGFkdXRnMGpxbTM5Z3dheGJuM2VnNDUwNDl1NGJ1eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4pTnnegezSUb1Hfa/giphy_s.gif"
   }
  },
  {
@@ -909,14 +847,12 @@
    "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXpoanpiY3VnY2lmb3BqdjFkYnI4a2NvdndiaHBkb3RocWZidmV1aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/38ISvaK9S12kPHEkoQ/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "jCk6e18CMinKjKTzqS",
    "user": "gammezlycom",
    "title": "Bear Floating GIF by Gammezly.com",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cnR0MnR3Ym44cWMzdno3YnMzOXZiZnlnMWxwNmN3a3RvOXYyaHIybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jCk6e18CMinKjKTzqS/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/jCk6e18CMinKjKTzqS/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cnR0MnR3Ym44cWMzdno3YnMzOXZiZnlnMWxwNmN3a3RvOXYyaHIybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jCk6e18CMinKjKTzqS/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cnR0MnR3Ym44cWMzdno3YnMzOXZiZnlnMWxwNmN3a3RvOXYyaHIybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jCk6e18CMinKjKTzqS/giphy_s.gif"
   }
  },
  {
@@ -955,14 +891,12 @@
    "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3og0IRYvfFYb3dKhgs/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "KJLsTTsF5ruMg",
    "user": "",
    "title": "cat skydiving GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KJLsTTsF5ruMg/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/KJLsTTsF5ruMg/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KJLsTTsF5ruMg/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KJLsTTsF5ruMg/giphy_s.gif"
   }
  },
  {
@@ -1093,27 +1027,23 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1M2piZ2o5eWUzd3U4c2kwZ25jODJmZnV5aHBmYmh3aTNiMjk1NDhjZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l378znZcUM7b6VDyM/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "3i1qHj5Kge5wqgsX5w",
    "user": "hoojafun",
    "title": "Suspicious Around The Corner GIF by Hooja",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NHBwbHd0MTJnOHczdHBiejIxY3piOHJia241djFhYjU4ZW5vbW9yZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3i1qHj5Kge5wqgsX5w/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/3i1qHj5Kge5wqgsX5w/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NHBwbHd0MTJnOHczdHBiejIxY3piOHJia241djFhYjU4ZW5vbW9yZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3i1qHj5Kge5wqgsX5w/giphy_s.gif"
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1NHBwbHd0MTJnOHczdHBiejIxY3piOHJia241djFhYjU4ZW5vbW9yZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3i1qHj5Kge5wqgsX5w/giphy_s.gif"
   }
  },
  {
   "n": 49,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "DExL0S30fcvXHehGDu",
    "user": "fourletternerd",
    "title": "Squish Joetrick GIF",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTg2NmY3Nm50a2Y2ZDhoMTFxajl3em9mNjY4ZGZwa29zOG51MXNrbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DExL0S30fcvXHehGDu/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/DExL0S30fcvXHehGDu/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTg2NmY3Nm50a2Y2ZDhoMTFxajl3em9mNjY4ZGZwa29zOG51MXNrbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DExL0S30fcvXHehGDu/giphy_s.gif"
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTg2NmY3Nm50a2Y2ZDhoMTFxajl3em9mNjY4ZGZwa29zOG51MXNrbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DExL0S30fcvXHehGDu/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
