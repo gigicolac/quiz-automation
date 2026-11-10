@@ -68,7 +68,7 @@ gh api "repos/gigicolac/quiz-automation/actions/workflows/build-video.yml/runs?p
 
 That must print nothing. Then start the build by committing `quizzes/quiz-NN/build.json`, a copy of the previous quiz's with the number changed (4K Canva slides, Chatterbox voice), and pushing. After a failure, start it again with `gh workflow run build-video.yml --ref claude/quiz-NN -f quiz=quiz-NN`.
 
-A build takes about 3 hours. If one fails with "Canva token refresh failed … Run the Sign in workflow", the Canva sign-in is gone. Stop starting builds and email Giulia (CC Shoma) that the Mac task will renew it on its next run. The Mac scheduled task renews it in the browser on Giulia's Mac (docs/sign-in.md, AGENTS.md "Standing authorisation for pipeline changes and sign-ins"), then restarts the failed build.
+A build takes about 3 hours. If one fails with "Canva token refresh failed … Run the Sign in workflow", the Canva sign-in is gone. Stop starting builds and start the Mac scheduled task "Quiz Studio steps on Giulia's Mac" now (fire it with the scheduled-task tools). It renews the sign-in in the browser on Giulia's Mac (docs/sign-in.md, "Renewing the Canva sign-in without Giulia") and restarts the failed build. Email Giulia (CC Shoma) only if that fails, for example because the Mac is off or Canva asks for a login.
 
 ## 4. Check, approve, merge (progress task)
 
