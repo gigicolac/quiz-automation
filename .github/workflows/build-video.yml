@@ -21,6 +21,7 @@ on:
         options: [chatterbox, dummy]
 permissions:
   contents: write
+  actions: write   # re-queue this build if its Canva sign-in copy is stale (scripts/canva_export.py)
 concurrency:
   group: build-video
   cancel-in-progress: false
@@ -63,6 +64,15 @@ jobs:
         run: |
           exec > >(tee -a "$RUNNER_TEMP/steps.log") 2>&1; echo "== $GITHUB_ACTION"
           b="quizzes/$QUIZ/build.json"; d="$RUNNER_TEMP/canva"; mkdir -p "$d"
+          # exit 75 = this run's Canva sign-in copy is stale (it was queued behind another Canva job): queue a fresh
+          # run of the same build and stop this one without touching Canva
+          requeue() {
+            if [ "$1" = 75 ]; then
+              gh workflow run build-video.yml --ref "$GITHUB_REF_NAME" -f quiz="$QUIZ" -f tts="$TTS" \
+                && echo "::warning::Queued a fresh build of $QUIZ (this run's Canva sign-in copy was stale)"
+            fi
+            exit "$1"
+          }
           if [ "$(jq 'has("canva_export") or has("canva_build")' "$b")" != true ]; then echo "No canva_export/canva_build block; using links"; exit 0; fi
           q=$(jq -r '.canva_build.quality // .canva_export.quality' "$b"); tag="$QUIZ-canva-$q"
           # fingerprint of everything the slides are made from: a re-run with unchanged inputs reuses the stored
@@ -77,11 +87,11 @@ jobs:
           fi
           # canva_build: fill the quiz-pair brand template for every question and export (slides.mp4)
           if [ "$(jq 'has("canva_build")' "$b")" = true ]; then
-            python3 scripts/canva_build.py --quiz "quizzes/$QUIZ" --out "$d"
+            python3 scripts/canva_build.py --quiz "quizzes/$QUIZ" --out "$d" || requeue $?
           fi
           # canva_export: intro / rules / outro (and slides, for hand-made decks)
           if [ "$(jq 'has("canva_export")' "$b")" = true ]; then
-            python3 scripts/canva_export.py --build "$b" --out "$d"
+            python3 scripts/canva_export.py --build "$b" --out "$d" || requeue $?
           fi
           gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --draft \
             --title "$QUIZ Canva exports ($q)" --notes "Slide exports used by the Build video workflow. Draft, not public."
