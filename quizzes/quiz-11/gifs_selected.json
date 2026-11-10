@@ -642,14 +642,12 @@
  {
   "n": 31,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "vT8XzTnEQC81KJqWPV",
-   "user": "nattan_universe",
-   "title": "Fun Falling GIF by Nattan_Universe",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZGJidnFndDVtdTJsc2w3OGJnc2N0aDN4YW94am1peTN3MGNiOXNvMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vT8XzTnEQC81KJqWPV/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/vT8XzTnEQC81KJqWPV/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZGJidnFndDVtdTJsc2w3OGJnc2N0aDN4YW94am1peTN3MGNiOXNvMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vT8XzTnEQC81KJqWPV/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "oQsCmsHEK2WNhPar52",
+   "user": "fugeeschool",
+   "title": "",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eGs3djAyN3pvZWZwOTZ1czV0dmFiMnRuYzlneDR3aTgwOHltbDUybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/oQsCmsHEK2WNhPar52/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
