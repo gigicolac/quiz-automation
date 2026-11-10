@@ -113,13 +113,23 @@ def studio_tasks(quiz, cfg, playlist):
     titles = title_variants(quiz, cfg)
     return [
         f"End screen: {es.get('note', '')} Left = {es.get('left', '')}; right = {es.get('right', '').format(playlist=playlist)}.",
-        "Test & Compare (A/B), Title and thumbnail: " + " | ".join(
-            f"{t} + thumbnail {chr(65 + i)}" for i, t in enumerate(titles)) + ".",
-        "Category Education: Type = Activity; Problems = the 'problems' list in upload.json.",
+        "Test & Compare (A/B), Title and thumbnail (BOTH, every quiz from #11; Giulia 10 Nov): " + " | ".join(
+            f"{t} + thumbnail {chr(65 + i)}" for i, t in enumerate(titles)) + ". Thumbnails A and B are "
+        "thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+        f"Video location: {cfg.get('studio', {}).get('location', 'Melbourne, VIC')}.",
+        "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; "
+        f"Level = {level(quiz, cfg)}.",
         "Caption certification: This content has never aired on television in the U.S.",
         "Shorts remixing: allowed.",
         "Pin the score comment once it is posted (every release).",
     ]
+
+
+def level(quiz, cfg):
+    """Studio Education level from the quiz difficulty (Giulia set Quiz #10, a hard fandom quiz, to hard).
+    Studio's option names aren't documented, so the task names the difficulty and Studio's closest option."""
+    d = str(quiz.get("difficulty", "medium")).lower()
+    return cfg.get("studio", {}).get("levels", {}).get(d) or f"the option closest to '{d}'"
 
 
 def find_or_create_playlist(token, title, series):
@@ -283,6 +293,34 @@ def wait_for_processing(token, vid, minutes):
 
 # ---------------------------------------------------------------- main
 
+def update_existing(quiz, report, cfg, record, record_path, args):
+    """Refresh tags (from quiz.json "tags" + config) and thumbnail A on an uploaded video; nothing else changes."""
+    vid = record.get("video_id")
+    if not vid:
+        raise SystemExit(f"{quiz['id']} has no uploaded video to update.")
+    token = access_token()
+    check_channel(token, cfg)
+    _, _, info = http("GET", f"{API}/videos?part=snippet&id={vid}", token)
+    items = info.get("items") or []
+    if not items:
+        raise SystemExit(f"YouTube returned no video {vid}")
+    snippet = items[0]["snippet"]
+    tags = build_metadata(quiz, report, cfg)["tags"]
+    body = {"id": vid, "snippet": {k: snippet[k] for k in ("title", "description", "categoryId") if k in snippet}}
+    body["snippet"].update(tags=tags, defaultLanguage=snippet.get("defaultLanguage", cfg["language"]),
+                           defaultAudioLanguage=snippet.get("defaultAudioLanguage", cfg["language"]))
+    _, _, resp = http("PUT", f"{API}/videos?part=snippet", token, json.dumps(body).encode(),
+                      {"Content-Type": "application/json"})
+    done = {"at": iso(dt.datetime.now(dt.timezone.utc)), "tags": resp.get("snippet", {}).get("tags", tags)}
+    if args.thumbnail and Path(args.thumbnail).exists():
+        http("POST", f"{UPLOAD_API}/thumbnails/set?videoId={vid}", token, Path(args.thumbnail).read_bytes(),
+             {"Content-Type": "image/jpeg"})
+        done["thumbnail"] = Path(args.thumbnail).name
+    record.setdefault("updates", []).append(done)
+    record_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
+    print(json.dumps(done, indent=2, ensure_ascii=False))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--quiz", required=True)
@@ -291,7 +329,9 @@ def main():
     ap.add_argument("--captions")
     ap.add_argument("--thumbnail")
     ap.add_argument("--publish-at", default="next", help="'next', blank (private, unscheduled) or a New York time")
-    ap.add_argument("--mode", choices=["preview", "upload"], default="preview")
+    ap.add_argument("--mode", choices=["preview", "upload", "update"], default="preview",
+                    help="update = refresh the tags and thumbnail A of a video that is already uploaded "
+                         "(title, description, schedule and visibility are left alone)")
     ap.add_argument("--out", required=True)
     ap.add_argument("--config", default=str(ROOT / "config" / "youtube.json"))
     ap.add_argument("--replace", action="store_true",
@@ -308,6 +348,8 @@ def main():
         raise SystemExit(f"{quiz['id']}: final video is not approved in quiz.json; not uploading.")
     record_path = qdir / "upload.json"
     record = json.loads(record_path.read_text()) if record_path.exists() else {}
+    if args.mode == "update":
+        return update_existing(quiz, report, cfg, record, record_path, args)
     replacing = None
     if record.get("status") == "scheduled" and args.replace:
         replacing, record = record, {}

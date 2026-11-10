@@ -159,16 +159,31 @@
     "problems": "one line per question: timecode then the question"
   },
   "thumbnail_taglines": {
-    "_comment": "Bottom line of the thumbnail (scripts/canva_thumbnails.py); quiz.json thumbnail_tagline overrides. Keep it under ~20 characters.",
-    "General Knowledge": "Everyone should know",
-    "Disney": "REAL fans only",
-    "Movies": "Film buffs only",
-    "Pop Culture": "Only true fans know",
-    "TV": "Binge-watchers only",
+    "_comment": "Bottom line of the thumbnail (scripts/make_thumbnails.py): a hook from the playbook. Giulia 10 Nov: 'REAL fans only' was weak, use the 'Only REAL fans would know' style. quiz.json thumbnail_tagline overrides. Keep it under ~22 characters.",
+    "General Knowledge": "Can you get 50/50?",
+    "Disney": "Only REAL fans know",
+    "Movies": "Only film buffs know",
+    "Pop Culture": "Only REAL fans know",
+    "TV": "Only REAL fans know",
     "Music": "Name that tune?",
-    "Sport": "True fans only",
-    "Geography": "Know the world?",
-    "History": "History buffs only",
-    "Science": "Big brains only"
+    "Sport": "Only REAL fans know",
+    "Geography": "Can you pass this?",
+    "History": "Can you pass this?",
+    "Science": "Can you pass this?"
+  },
+  "thumbnail_test": {
+    "_comment": "Thumbnail A/B (Test & Compare) changes ONE thing at a time. Next ideas: band colour, tagline wording, heading style. Update from the weekly results.",
+    "a": {
+      "band": "red"
+    },
+    "b": {
+      "band": "blue"
+    }
+  },
+  "studio": {
+    "location": "Melbourne, VIC",
+    "levels": {
+      "_comment": "Studio Education level per quiz difficulty. Fill in Studio's exact option names once seen; until then the task picks the closest option."
+    }
   }
 }
