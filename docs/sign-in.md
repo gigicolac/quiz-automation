@@ -38,3 +38,14 @@ If step 4 fails with an expired code, start again at step 1.
 - The repo is public, so run pages are visible to anyone. The sign-in link and the pasted address are useless without the client secret, and the code in the address can be used only once. Tokens are masked in the logs.
 - Re-run the sign-in if the channel or Canva account is changed, deleted or reinstated, or if access is removed. Giulia reinstated the One More Quiz channel on 4 Nov 2026, so any earlier YouTube sign-in should be treated as gone.
 - **YouTube API audit:** uploads from a project that YouTube hasn't audited are locked to private, so scheduled publishing (`publishAt`) won't take effect. See PLAN.md, "Before building", step 1.
+
+## Renewing the Canva sign-in without Giulia (her Mac's browser)
+
+Giulia authorised assistants on 10 Nov 2026 to renew the sign-ins themselves on her Mac (AGENTS.md, "Standing authorisation for pipeline changes and sign-ins"). This worked on 10 Nov 2026 (run 42761255693). It uses the built-in browser in the Claude desktop app on her Mac, which stays logged in to Canva as giuliacolaci97@gmail.com. If Canva shows its login page, stop and ask Giulia to log in there; never type passwords.
+
+1. **Step 1:** run the workflow with Redirect URL blank: `gh workflow run sign-in.yml --ref main -f service=canva`. When it finishes, take the sign-in link from its log: `gh api repos/gigicolac/quiz-automation/actions/jobs/<job id>/logs | grep -o 'https://www.canva.com/api/oauth/authorize[^ )]*'`. The log hides the client ID as `***`, and the run summary is only visible when signed in to GitHub.
+2. **Client ID:** in the built-in browser, set the viewport to 1400×900 (the Developer Portal refuses narrow windows), open `https://www.canva.com/developers/app/AAHOGBaZ1A4/version/1/overview` and read the client ID on the page (it starts with `OC-`). Reset the viewport to desktop. Put the ID in place of `***` in the link.
+3. **Approve:** open the link. Check the page says "Quiz Automations would like access", with Giulia's account. Click **Allow**.
+4. **Code:** the browser can't open `127.0.0.1`, so the page seems to hang. Read the network log instead: list requests matching `authorize-oauth-client`, open that request's response, and take the `K` field. That's the one-time code, valid for 10 minutes. Never paste it into chat, emails or files.
+5. **Step 2:** `gh workflow run sign-in.yml --ref main -f service=canva -f redirect_url="http://127.0.0.1:3001/oauth/redirect?code=<K>&state=canva"`. Its log must say "Canva sign-in complete" and "Saved repository secret `CANVA_REFRESH_TOKEN`".
+6. **Restart** any build that failed because of the expired sign-in, one at a time (docs/weekly-automation.md, section 3).
