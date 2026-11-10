@@ -13,6 +13,9 @@ gif_queries.json is either a plain list of {"n", "question_query", "answer_query
   GIF fits, a still image from the film is used instead (first frame of a GIF found by the row's
   "film" name, else the name in "image_title"), then the Wikipedia lead image of "image_title".
 - A GIF is not reused for both the question and the answer of the same pair.
+- Very short clips (under MIN_SECONDS) are skipped: Canva loops them several times a second, which looks like
+  a glitch (Quiz #10 Q7 and Q8, Giulia 10 Nov). A hand-picked short clip is used as a still frame instead.
+  Lengths are measured with ffprobe and kept in gif_durations.json; an unmeasurable clip is allowed.
 - After reviewing gifs_selected.json, a row can name a better candidate: "question_pick"/"answer_pick" =
   a GIPHY id from gif_search_cache.json, or "still:<id>" for a still frame of it.
 Writes gif_candidates.json and gifs_selected.json next to the queries file.
@@ -29,6 +32,35 @@ ALWAYS_BLOCKED_TITLE_WORDS = ["trump", "horror", "terrifier", "survivor", "live 
 ALWAYS_BLOCKED_USERS = {"abcnetwork", "amocruzeirodisney", "assoaides", "boven-webdesign", "dumbobrooklyn", "trauminsel", "skytv"}
 PREFERRED_USERS = {"disney", "pixar", "disneyanimation", "disneystudios", "disneyplus", "disneyjunior", "disneychannel", "disneypixar", "waltdisneystudios", "disneyparks"}
 UA = {"User-Agent": "quiz-automation-gif-finder/1.0"}
+MIN_SECONDS = float(os.environ.get("GIF_MIN_SECONDS", "2.0"))
+DURATIONS = {}  # GIPHY id -> clip length in seconds (gif_durations.json)
+
+
+def clip_seconds(c):
+    """Length of a candidate's MP4 in seconds, or None if it can't be measured (stills are never short)."""
+    if c.get("type", "gif") != "gif" or not c.get("id"):
+        return None
+    gid = str(c["id"])
+    if gid not in DURATIONS:
+        import subprocess
+        url = c.get("clean_mp4") or c.get("mp4")
+        try:
+            out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", url],
+                                 capture_output=True, text=True, timeout=30).stdout.strip()
+            DURATIONS[gid] = float(out) if out else None
+        except Exception:
+            DURATIONS[gid] = None
+    return DURATIONS[gid]
+
+
+def too_short(c):
+    secs = clip_seconds(c)
+    return secs is not None and secs < MIN_SECONDS
+
+
+def as_still(c):
+    return {"source": "giphy_still", "type": "image", "id": c["id"], "user": c.get("user"),
+            "title": c.get("title"), "url": c["still"]}
 
 
 def get(url):
@@ -101,6 +133,8 @@ def pick(cands, avoid, terms):
             continue
         if terms and not matches(c, terms):
             continue
+        if too_short(c):
+            continue
         return c
     return None
 
@@ -131,6 +165,8 @@ def main(path):
     # search for new or changed queries.
     cache_path = os.path.join(d, "gif_search_cache.json")
     cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
+    dur_path = os.path.join(d, "gif_durations.json")
+    DURATIONS.update(json.load(open(dur_path)) if os.path.exists(dur_path) else {})
     key = lambda q: f"{'branded' if branded else 'plain'}:{q}"
 
     def search(q):
@@ -154,8 +190,10 @@ def main(path):
             for c in cands:
                 if str(c.get("id")) == gid:
                     if pick.startswith("still:"):
-                        return {"source": "giphy_still", "type": "image", "id": c["id"], "user": c.get("user"),
-                                "title": c.get("title"), "url": c["still"]}
+                        return as_still(c)
+                    if too_short(c) and c.get("still"):
+                        print(f"::notice::Picked GIF {gid} is only {DURATIONS[gid]:.1f}s long; using its still frame")
+                        return as_still(c)
                     return c
         print(f"::warning::Picked GIF {pick} isn't in the search cache; choosing automatically")
         return None
@@ -190,10 +228,12 @@ def main(path):
                   {k: v["type"] for k, v in sel.items() if k != "n"})
     except RateLimited as e:
         json.dump(cache, open(cache_path, "w"), indent=1)
+        json.dump(DURATIONS, open(dur_path, "w"), indent=1)
         print(f"::warning::GIPHY rate limit reached at '{e}'. Saved {len(cache)} searches; run again in an hour "
               "to finish. gifs_selected.json was not changed.")
         sys.exit(2)
     json.dump(cache, open(cache_path, "w"), indent=1)
+    json.dump(DURATIONS, open(dur_path, "w"), indent=1)
     json.dump(result, open(os.path.join(d, "gif_candidates.json"), "w"), indent=1)
     json.dump(selected, open(os.path.join(d, "gifs_selected.json"), "w"), indent=1)
     missing = [s["n"] for s in selected if not ("question_gif" in s and "answer_gif" in s)]

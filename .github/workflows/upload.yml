@@ -16,7 +16,7 @@ on:
       mode:
         description: "preview = no YouTube calls; upload = upload privately and schedule"
         type: choice
-        options: [preview, upload]
+        options: [preview, upload, update]
         default: preview
       publish_at:
         description: "'next' = next free Thu 3pm / Sat 1pm / Sun 1pm ET slot 1+ day ahead (and 24h+ after the upload finishes); blank = private, no schedule; or e.g. 2026-11-12T15:00 (US Eastern)"
@@ -92,7 +92,7 @@ jobs:
           ls -la "$d"
 
       - name: Check YouTube secrets
-        if: env.QUIZ != '' && env.MODE == 'upload'
+        if: env.QUIZ != '' && env.MODE != 'preview'
         env:
           YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -118,7 +118,7 @@ jobs:
           { echo "## $QUIZ: $MODE"; echo '```json'; cat "$RUNNER_TEMP/plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Record result
-        if: always() && env.QUIZ != '' && env.MODE == 'upload'
+        if: always() && env.QUIZ != '' && env.MODE != 'preview'
         run: |
           f="quizzes/$QUIZ/upload.json"
           [ -f "$f" ] || exit 0
