@@ -881,14 +881,12 @@
  {
   "n": 42,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
+   "source": "giphy_still",
+   "type": "image",
    "id": "l0Iybu0aRRUfzoN0I",
    "user": "much",
    "title": "thrill sky diving GIF by Much",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Iybu0aRRUfzoN0I/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/l0Iybu0aRRUfzoN0I/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Iybu0aRRUfzoN0I/giphy_s.gif"
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHR2cDI4bmFkcDNkNzh4aDV4aWFqZ2w0cTJjYW14aDkwcDdqaHN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Iybu0aRRUfzoN0I/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy_still",
