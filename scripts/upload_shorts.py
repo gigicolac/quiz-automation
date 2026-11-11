@@ -38,7 +38,9 @@ def metadata(n, quiz, meta, scfg, ycfg):
     if len(s["title"]) > 100 or len(desc) > 5000:
         raise SystemExit(f"Short {n}: title or description over YouTube's limit")
     tags = []
-    for t in scfg.get("tags", []) + ycfg.get("series_tags", {}).get(quiz.get("series", ""), []):
+    # Giulia, 11 Nov 2026: every Short carries the quiz's researched tags (vidIQ/Apify, quiz.json "tags")
+    for t in scfg.get("tags", [])[:1] + quiz.get("tags", []) + scfg.get("tags", [])[1:] \
+            + ycfg.get("series_tags", {}).get(quiz.get("series", ""), []):
         if t.lower() not in {x.lower() for x in tags} and up.tag_length(tags + [t]) <= 500:
             tags.append(t)
     return {"title": s["title"], "description": desc, "tags": tags}
@@ -79,7 +81,21 @@ def short_problems(quiz, made_entry):
                      for n, t in zip(made_entry["questions"], starts) if n in qs)
 
 
-def short_studio_tasks(meta, scfg, problems, playlist):
+def set_paid_promotion_no(token, vid):
+    """Paid promotion = No (Giulia, 11 Nov 2026). A separate call so an API refusal never stops an upload."""
+    body = {"id": vid, "paidProductPlacementDetails": {"hasPaidProductPlacement": False}}
+    code, _, _ = up.http("PUT", f"{up.API}/videos?part=paidProductPlacementDetails", token,
+                         json.dumps(body).encode(), {"Content-Type": "application/json"}, expect=(200, 400, 403))
+    return "no" if code == 200 else f"not set by API ({code}); set it in Studio"
+
+
+def short_level(quiz, scfg):
+    """Studio Level for a Short: config "level" if set, else from the quiz difficulty (hard = Advanced)."""
+    st = scfg.get("studio", {})
+    return st.get("level") or st.get("level_by_difficulty", {}).get((quiz.get("difficulty") or "medium").lower(), "")
+
+
+def short_studio_tasks(meta, scfg, problems, playlist, level=""):
     st = scfg.get("studio", {})
     return [f"Related video: link to the full quiz https://youtu.be/{meta['full_quiz_video_id']}.",
             f"Playlist: check it is in '{playlist}'.",
@@ -87,7 +103,7 @@ def short_studio_tasks(meta, scfg, problems, playlist):
             f"Video location: {st.get('location', 'Melbourne, VIC')}.",
             "Recording date: check it is set (see recording_date in this record).",
             f"Category Education: Type = {st.get('education_type', 'Activity')}; Problems = the 'problems' in this record"
-            f"{'; Level = ' + st['level'] if st.get('level') else ''}.",
+            f"{'; Level = ' + level if level else ''}.",
             "Altered or synthetic content: No (it's Giulia's own voice).",
             "Pin the score comment once it is posted."]
 
@@ -131,8 +147,9 @@ def main():
     ap.add_argument("--quiz", required=True, help="quizzes/<quiz>")
     ap.add_argument("--dir", required=True, help="folder with make_shorts.py output")
     ap.add_argument("--thumbnail", help="fallback thumbnail if a Short has none of its own")
-    ap.add_argument("--mode", choices=["preview", "upload", "retitle"], default="preview",
-                    help="retitle = update the title/description of Shorts already uploaded to match shorts.json")
+    ap.add_argument("--mode", choices=["preview", "upload", "retitle", "defaults"], default="preview",
+                    help="retitle = update the title/description of Shorts already uploaded to match shorts.json; "
+                         "defaults = re-apply tags and paid promotion No to every Short already uploaded")
     args = ap.parse_args()
 
     qdir, sdir = Path(args.quiz), Path(args.dir)
@@ -151,6 +168,35 @@ def main():
 
     def save():
         rec_path.write_text(json.dumps(rec, indent=2, ensure_ascii=False))
+
+    if args.mode == "defaults":
+        # Giulia, 11 Nov 2026: bring every uploaded Short up to the standard settings the API can set
+        # (title/description/tags as metadata() builds them, paid promotion No). Studio-only settings
+        # (location, type, Problems, Level, related video) are done by the Mac task (docs/mac-studio-task.md).
+        token = up.access_token()
+        up.check_channel(token, ycfg)
+        done = {}
+        for n, r in rec["shorts"].items():
+            if not r.get("video_id"):
+                continue
+            md = metadata(int(n), quiz, meta, scfg, ycfg)
+            body = {"id": r["video_id"], "snippet": {"title": md["title"], "description": md["description"],
+                                                     "tags": md["tags"], "categoryId": ycfg["category_id"],
+                                                     "defaultLanguage": ycfg["language"],
+                                                     "defaultAudioLanguage": ycfg["language"]}}
+            _, _, resp = up.http("PUT", f"{up.API}/videos?part=snippet", token, json.dumps(body).encode(),
+                                 {"Content-Type": "application/json"})
+            if [t.lower() for t in resp.get("snippet", {}).get("tags", [])] != [t.lower() for t in md["tags"]]:
+                raise SystemExit(f"Short {n}: YouTube didn't confirm the tags")
+            r.update(title=md["title"], description=md["description"], tags=md["tags"],
+                     paid_promotion=set_paid_promotion_no(token, r["video_id"]))
+            r["problems"] = r.get("problems") or short_problems(quiz, {"questions": r.get("questions", [])})
+            r["studio_tasks"] = short_studio_tasks(meta, scfg, r["problems"], up.playlist_title(quiz, ycfg),
+                                                   short_level(quiz, scfg))
+            done[n] = {"video_id": r["video_id"], "tags": len(md["tags"]), "paid_promotion": r["paid_promotion"]}
+            save()
+        print(json.dumps({"defaults": done}, indent=2, ensure_ascii=False))
+        return
 
     if args.mode == "retitle":
         token = up.access_token()
@@ -208,6 +254,9 @@ def main():
                      upload_completed_at=up.iso(dt.datetime.now(dt.timezone.utc)), questions=m["questions"])
             save()
         vid, steps = r["video_id"], r.setdefault("steps", {})
+        if "paid_promotion" not in steps:
+            steps["paid_promotion"] = set_paid_promotion_no(token, vid)
+            save()
         if "captions" not in steps and (sdir / m["captions"]).exists():
             data, ctype = up.multipart({"snippet": {"videoId": vid, "language": "en", "name": "English"}},
                                        (sdir / m["captions"]).read_bytes(), "application/octet-stream")
@@ -229,7 +278,7 @@ def main():
                     {"Content-Type": "application/json"})
             steps["playlist"] = {"id": pid, "title": ptitle, "created": created}
             save()
-        r["studio_tasks"] = short_studio_tasks(meta, scfg, r["problems"], playlist)
+        r["studio_tasks"] = short_studio_tasks(meta, scfg, r["problems"], playlist, short_level(quiz, scfg))
         save()
 
     # schedule after processing, in order, each in the next free slot
