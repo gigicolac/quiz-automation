@@ -4,7 +4,7 @@
     "id": "UCbP3HMh1h7XAWUruf_M8n7g",
     "title": "One More Quiz!"
   },
-  "status": "transferred",
+  "status": "scheduled",
   "started_at": "2026-11-11T00:10:42.439320+00:00",
   "title": "Year 9 Physics Quiz That Will Blow Your Mind 🤯 50 Science Questions | Science Quiz #11",
   "intended_publish_at": "2026-11-14T18:00:00Z",
@@ -17,9 +17,36 @@
   "problems": "0:18 What's the fastest thing in the universe?\n0:36 Which type of heat transfer can travel through the vacuum of space?\n0:57 What is the unit of force?\n1:16 Is sound a transverse wave or a longitudinal wave?\n1:36 Why can't sound travel through space?\n1:57 Heat moving up a metal spoon sitting in hot soup is an example of which type of heat transfer?\n2:17 What is the unit of energy?\n2:35 Which colour of visible light has the longest wavelength?\n2:53 Newton's second law says force equals mass times what?\n3:12 Why do you see lightning before you hear the thunder?\n3:33 What's the name for light bending as it passes from air into water?\n3:50 Which part of the electromagnetic spectrum gives you sunburn?\n4:10 Hot air rising and cooler air sinking to form a current is called what?\n4:27 On the Moon, would your mass or your weight be smaller?\n4:48 What is the unit used to measure frequency?\n5:06 Energy can't be created or destroyed, only changed from one form to another. What is this law called?\n5:25 What type of energy does any moving object have?\n5:43 Which electromagnetic waves are used to see broken bones in hospital?\n6:04 What do we call sound that's too high-pitched for humans to hear?\n6:23 What is the force that slows down a sliding object?\n6:41 Does sound travel faster through air or through steel?\n6:59 What do we call the distance from one wave crest to the next?\n7:17 Which type of electromagnetic wave do most TV remotes use?\n7:35 'For every action, there is an equal and opposite reaction.' Which of Newton's laws is this?\n7:53 What does a sound wave's frequency decide: its pitch or its loudness?\n8:12 Roughly how long does sunlight take to reach Earth?\n8:32 What kind of energy is stored in a stretched rubber band?\n8:51 Speed in a particular direction is called what?\n9:12 Which electromagnetic waves have the highest energy?\n9:31 White light splits into a rainbow when it passes through which triangular glass object?\n9:49 What force pulls objects towards the centre of the Earth?\n10:07 Roughly how fast does sound travel through air?\n10:28 What is the unit of electric current?\n10:47 Without air resistance, which hits the ground first: a hammer or a feather dropped at the same time?\n11:09 What is the height of a wave from its rest position to its crest called?\n11:27 Which metal is most often used for the wires in household electrical cables?\n11:46 In a transverse wave, which way do the particles move compared with the direction the wave travels?\n12:06 Which electromagnetic waves have the longest wavelengths?\n12:23 What do we call materials like rubber and plastic that stop electricity flowing easily?\n12:40 What is the upward force from a liquid that keeps a boat afloat called?\n12:56 Which scientist won Nobel Prizes in both physics and chemistry for her work on radioactivity?\n13:16 Roughly how much speed does a falling object gain each second on Earth, ignoring air resistance?\n13:37 The time it takes for half of a radioactive substance to decay is called what?\n13:58 What's the name for a sound wave bouncing back off a cliff or a wall?\n14:17 Do radio waves, visible light and X-rays all travel at the same speed in a vacuum?\n14:35 When a bus brakes suddenly, why do the passengers lurch forward?\n14:54 In a petrol car engine, most of the fuel's energy is lost as which form of energy?\n15:12 What is the name for waves spreading out as they pass through a gap or around an obstacle?\n15:31 What do we call the part of a sound wave where the air particles are squashed closest together?\n15:50 In Einstein's famous equation, E equals m c squared, what does the c stand for?",
   "steps": {
     "captions": "uploaded",
-    "thumbnail": "thumbnail-a.jpg"
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PLC83dOVs21fg",
+      "title": "Science Quizzes",
+      "created": false
+    }
   },
   "video_id": "O6IMzJuUPCY",
   "url": "https://youtu.be/O6IMzJuUPCY",
-  "upload_completed_at": "2026-11-11T00:10:51Z"
+  "upload_completed_at": "2026-11-11T00:10:51Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: Science Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail (BOTH, every quiz from #11; Giulia 10 Nov): Year 9 Physics Quiz That Will Blow Your Mind 🤯 50 Science Questions | Science Quiz #11 + thumbnail A | Can You Pass This Science Quiz? 🧠 50 Trivia Questions | Quiz #11 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-14T18:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-14T18:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-11T00:12:15Z"
 }
