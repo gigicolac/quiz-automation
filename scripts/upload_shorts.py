@@ -186,14 +186,17 @@ def main():
                                                      "defaultAudioLanguage": ycfg["language"]}}
             _, _, resp = up.http("PUT", f"{up.API}/videos?part=snippet", token, json.dumps(body).encode(),
                                  {"Content-Type": "application/json"})
-            if [t.lower() for t in resp.get("snippet", {}).get("tags", [])] != [t.lower() for t in md["tags"]]:
-                raise SystemExit(f"Short {n}: YouTube didn't confirm the tags")
+            if resp.get("snippet", {}).get("title") != md["title"]:
+                raise SystemExit(f"Short {n}: YouTube didn't confirm the update")
+            back = resp.get("snippet", {}).get("tags")  # YouTube may not echo tags exactly; record what it says
+            r["tags_confirmed"] = len(back) if back is not None else "not echoed"
             r.update(title=md["title"], description=md["description"], tags=md["tags"],
                      paid_promotion=set_paid_promotion_no(token, r["video_id"]))
             r["problems"] = r.get("problems") or short_problems(quiz, {"questions": r.get("questions", [])})
             r["studio_tasks"] = short_studio_tasks(meta, scfg, r["problems"], up.playlist_title(quiz, ycfg),
                                                    short_level(quiz, scfg))
-            done[n] = {"video_id": r["video_id"], "tags": len(md["tags"]), "paid_promotion": r["paid_promotion"]}
+            done[n] = {"video_id": r["video_id"], "tags_sent": len(md["tags"]), "tags_confirmed": r["tags_confirmed"],
+                       "paid_promotion": r["paid_promotion"]}
             save()
         print(json.dumps({"defaults": done}, indent=2, ensure_ascii=False))
         return
