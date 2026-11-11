@@ -1,0 +1,32 @@
+{
+  "_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+  "full_quiz_video_id": "O6IMzJuUPCY",
+  "series_tag": "science",
+  "shorts": {
+    "1": {
+      "title": "7 questions, 5 seconds each. Can you keep up? ⏱️ Science Quiz #11",
+      "opening": "Sneak peek 👀 7 questions, five seconds each, no warm-up. Can you keep up?",
+      "pattern": "config default"
+    },
+    "2": {
+      "title": "Smart enough for a perfect 7/7? 👀 Science Quiz #11",
+      "opening": "Sneak peek 👀 Smart enough for a perfect 7/7?",
+      "pattern": "config default"
+    },
+    "3": {
+      "title": "Most people get these WRONG 😬 Science Quiz #11",
+      "opening": "Sneak peek 👀 Most people get at least one of these wrong. Will you?",
+      "pattern": "config default"
+    },
+    "4": {
+      "title": "How much do you REALLY know? 🤔 Science Quiz #11",
+      "opening": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?",
+      "pattern": "config default"
+    },
+    "5": {
+      "title": "Can you beat the average score? 🧠 Science Quiz #11",
+      "opening": "Sneak peek 👀 7 questions. Can you beat the average score?",
+      "pattern": "config default"
+    }
+  }
+}
