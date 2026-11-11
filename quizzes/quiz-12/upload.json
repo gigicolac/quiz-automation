@@ -1,0 +1,52 @@
+{
+  "quiz": "quiz-12",
+  "channel": {
+    "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+    "title": "One More Quiz!"
+  },
+  "status": "scheduled",
+  "started_at": "2026-11-11T01:02:04.532844+00:00",
+  "title": "How Well Do You REALLY Know Movies? 🎬 50 Movie Trivia Questions | Movies Quiz #12",
+  "intended_publish_at": "2026-11-15T18:00:00Z",
+  "publish_at_local": {
+    "US Eastern": "Sun 15 Nov 2026 13:00 EST",
+    "Sydney": "Mon 16 Nov 2026 05:00 AEDT"
+  },
+  "release_tag": "quiz-12-preview-21",
+  "playlist": "Movie Quizzes",
+  "problems": "0:18 In Finding Nemo, what kind of fish is Nemo?\n0:37 Which 1997 film about a doomed ocean liner won 11 Oscars?\n0:56 What is the name of the snowman in Frozen?\n1:12 In the 1939 film The Wizard of Oz, what colour are Dorothy's slippers?\n1:29 In Jaws, what kind of animal terrorises the beaches of Amity Island?\n1:49 In The Lion King, what does 'Hakuna Matata' mean?\n2:08 Which film's famous line is 'To infinity and beyond!'?\n2:27 What is the name of the green ogre who lives in a swamp?\n2:44 In Despicable Me, what are Gru's small yellow helpers called?\n3:03 Which film series follows hobbits on a quest to destroy a powerful ring?\n3:21 In Up, what lifts Carl's house into the sky?\n3:38 In which film does an alien who wants to 'phone home' befriend a boy called Elliott?\n3:57 Which director made Jaws, E.T. and Jurassic Park?\n4:15 In Toy Story, what's the name of the cowboy doll?\n4:32 Which 2016 Disney film features the song 'How Far I'll Go'?\n4:49 In Finding Nemo, what's the name of the blue tang fish with short-term memory loss?\n5:05 Which country was The Lord of the Rings trilogy mainly filmed in?\n5:22 In Jurassic Park, scientists got dinosaur DNA from mosquitoes trapped in what?\n5:38 Which animated film features a rat who dreams of being a chef in Paris?\n5:54 In The Incredibles, what is the superhero family's surname?\n6:10 Which Pixar film takes place inside the mind of a girl called Riley?\n6:29 In Monsters, Inc., what powers the city of Monstropolis?\n6:48 In One Hundred and One Dalmatians, what's the name of the villain who wants a spotty coat?\n7:05 Which Pixar film has a little robot cleaning up an abandoned Earth?\n7:22 What kind of animal is Baloo in The Jungle Book?\n7:39 In Mary Poppins, a spoonful of sugar helps what go down?\n7:55 In The Chronicles of Narnia, what is the name of the great lion?\n8:12 Which country does Paddington Bear come from?\n8:30 In Kung Fu Panda, what's the name of the panda who becomes the Dragon Warrior?\n8:47 In Cars, what's the name of the red race car?\n9:03 Which 2008 film kicked off the Marvel Cinematic Universe?\n9:22 Which 2009 film is set on the moon Pandora, home of the blue Na'vi?\n9:40 In Ice Age, what's the name of the sabre-toothed squirrel who's obsessed with an acorn?\n9:56 What is the name of Thor's magical hammer?\n10:12 In Back to the Future, how fast must the DeLorean go to travel through time?\n10:31 In Black Panther, what is the name of T'Challa's hidden African nation?\n10:46 How many Infinity Stones are there in the Marvel films?\n11:04 In Guardians of the Galaxy, what are the only three words Groot says?\n11:21 Which secret agent has the code number 007?\n11:37 In Charlie and the Chocolate Factory, what are Willy Wonka's small workers called?\n11:55 In Home Alone, where is Kevin's family flying to when they leave him behind?\n12:13 In The Sound of Music, how many von Trapp children are there?\n12:29 Which Pixar film is centred on Mexico's Day of the Dead?\n12:47 Which comic-book company's heroes include Iron Man, Thor and Captain America?\n13:04 In Pinocchio, what happens when Pinocchio tells a lie?\n13:22 In the 1933 film, which New York building does King Kong climb?\n13:39 In The Wizard of Oz, what does the Tin Man want from the Wizard?\n13:56 What's the name of Kristoff's reindeer in Frozen?\n14:13 Which 2023 film about a famous doll was the highest-grossing film of that year worldwide?\n14:31 In Star Wars, what is the name of Han Solo's spaceship?",
+  "steps": {
+    "captions": "uploaded",
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PLBJv2_VDZUew",
+      "title": "Movie Quizzes",
+      "created": true
+    }
+  },
+  "video_id": "7hV38jV8D-I",
+  "url": "https://youtu.be/7hV38jV8D-I",
+  "upload_completed_at": "2026-11-11T01:02:21Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: Movie Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail (BOTH, every quiz from #11; Giulia 10 Nov): How Well Do You REALLY Know Movies? 🎬 50 Movie Trivia Questions | Movies Quiz #12 + thumbnail A | Can You Pass This Movies Quiz? 🧠 50 Trivia Questions | Quiz #12 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-15T18:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-15T18:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-11T01:04:00Z"
+}
