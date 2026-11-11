@@ -35,7 +35,7 @@
         "Paid promotion: 'No, my video doesn't include paid promotion'.",
         "Video location: Melbourne, VIC.",
         "Recording date: check it is set (see recording_date in this record).",
-        "Category Education: Type = Activity; Problems = the 'problems' in this record.",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
       ],
@@ -44,7 +44,34 @@
       "publish_at_local": {
         "US Eastern": "Fri 13 Nov 2026 08:00 EST",
         "Sydney": "Sat 14 Nov 2026 00:00 AEDT"
-      }
+      },
+      "tags_confirmed": 23,
+      "tags": [
+        "quiz shorts",
+        "disney quiz",
+        "disney trivia",
+        "disney trivia quiz",
+        "hard disney quiz",
+        "can you pass disney quiz",
+        "disney quiz questions and answers",
+        "disney quiz challenge",
+        "ultimate disney quiz",
+        "disney movie quiz",
+        "disney characters quiz",
+        "disney princess quiz",
+        "disney quizzes",
+        "trivia quiz",
+        "quiz time",
+        "quiz",
+        "trivia",
+        "pub quiz",
+        "brain teaser",
+        "quiz challenge",
+        "Just One More Quiz",
+        "pixar quiz",
+        "movie quiz"
+      ],
+      "paid_promotion": "no"
     },
     "2": {
       "short": 2,
@@ -80,7 +107,7 @@
         "Paid promotion: 'No, my video doesn't include paid promotion'.",
         "Video location: Melbourne, VIC.",
         "Recording date: check it is set (see recording_date in this record).",
-        "Category Education: Type = Activity; Problems = the 'problems' in this record.",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
       ],
@@ -89,7 +116,34 @@
       "publish_at_local": {
         "US Eastern": "Fri 13 Nov 2026 18:00 EST",
         "Sydney": "Sat 14 Nov 2026 10:00 AEDT"
-      }
+      },
+      "tags_confirmed": 23,
+      "tags": [
+        "quiz shorts",
+        "disney quiz",
+        "disney trivia",
+        "disney trivia quiz",
+        "hard disney quiz",
+        "can you pass disney quiz",
+        "disney quiz questions and answers",
+        "disney quiz challenge",
+        "ultimate disney quiz",
+        "disney movie quiz",
+        "disney characters quiz",
+        "disney princess quiz",
+        "disney quizzes",
+        "trivia quiz",
+        "quiz time",
+        "quiz",
+        "trivia",
+        "pub quiz",
+        "brain teaser",
+        "quiz challenge",
+        "Just One More Quiz",
+        "pixar quiz",
+        "movie quiz"
+      ],
+      "paid_promotion": "no"
     },
     "3": {
       "short": 3,
@@ -125,7 +179,7 @@
         "Paid promotion: 'No, my video doesn't include paid promotion'.",
         "Video location: Melbourne, VIC.",
         "Recording date: check it is set (see recording_date in this record).",
-        "Category Education: Type = Activity; Problems = the 'problems' in this record.",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
       ],
@@ -134,7 +188,34 @@
       "publish_at_local": {
         "US Eastern": "Sat 14 Nov 2026 08:00 EST",
         "Sydney": "Sun 15 Nov 2026 00:00 AEDT"
-      }
+      },
+      "tags_confirmed": 23,
+      "tags": [
+        "quiz shorts",
+        "disney quiz",
+        "disney trivia",
+        "disney trivia quiz",
+        "hard disney quiz",
+        "can you pass disney quiz",
+        "disney quiz questions and answers",
+        "disney quiz challenge",
+        "ultimate disney quiz",
+        "disney movie quiz",
+        "disney characters quiz",
+        "disney princess quiz",
+        "disney quizzes",
+        "trivia quiz",
+        "quiz time",
+        "quiz",
+        "trivia",
+        "pub quiz",
+        "brain teaser",
+        "quiz challenge",
+        "Just One More Quiz",
+        "pixar quiz",
+        "movie quiz"
+      ],
+      "paid_promotion": "no"
     },
     "4": {
       "short": 4,
@@ -170,7 +251,7 @@
         "Paid promotion: 'No, my video doesn't include paid promotion'.",
         "Video location: Melbourne, VIC.",
         "Recording date: check it is set (see recording_date in this record).",
-        "Category Education: Type = Activity; Problems = the 'problems' in this record.",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
       ],
@@ -179,7 +260,34 @@
       "publish_at_local": {
         "US Eastern": "Sat 14 Nov 2026 18:00 EST",
         "Sydney": "Sun 15 Nov 2026 10:00 AEDT"
-      }
+      },
+      "tags_confirmed": 23,
+      "tags": [
+        "quiz shorts",
+        "disney quiz",
+        "disney trivia",
+        "disney trivia quiz",
+        "hard disney quiz",
+        "can you pass disney quiz",
+        "disney quiz questions and answers",
+        "disney quiz challenge",
+        "ultimate disney quiz",
+        "disney movie quiz",
+        "disney characters quiz",
+        "disney princess quiz",
+        "disney quizzes",
+        "trivia quiz",
+        "quiz time",
+        "quiz",
+        "trivia",
+        "pub quiz",
+        "brain teaser",
+        "quiz challenge",
+        "Just One More Quiz",
+        "pixar quiz",
+        "movie quiz"
+      ],
+      "paid_promotion": "no"
     },
     "5": {
       "short": 5,
@@ -215,7 +323,7 @@
         "Paid promotion: 'No, my video doesn't include paid promotion'.",
         "Video location: Melbourne, VIC.",
         "Recording date: check it is set (see recording_date in this record).",
-        "Category Education: Type = Activity; Problems = the 'problems' in this record.",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
       ],
@@ -224,7 +332,34 @@
       "publish_at_local": {
         "US Eastern": "Sun 15 Nov 2026 08:00 EST",
         "Sydney": "Mon 16 Nov 2026 00:00 AEDT"
-      }
+      },
+      "tags_confirmed": 23,
+      "tags": [
+        "quiz shorts",
+        "disney quiz",
+        "disney trivia",
+        "disney trivia quiz",
+        "hard disney quiz",
+        "can you pass disney quiz",
+        "disney quiz questions and answers",
+        "disney quiz challenge",
+        "ultimate disney quiz",
+        "disney movie quiz",
+        "disney characters quiz",
+        "disney princess quiz",
+        "disney quizzes",
+        "trivia quiz",
+        "quiz time",
+        "quiz",
+        "trivia",
+        "pub quiz",
+        "brain teaser",
+        "quiz challenge",
+        "Just One More Quiz",
+        "pixar quiz",
+        "movie quiz"
+      ],
+      "paid_promotion": "no"
     }
   }
 }
