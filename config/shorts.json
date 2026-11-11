@@ -39,7 +39,14 @@
     "recording_days_before": [
       2,
       7
-    ]
+    ],
+    "_comment_defaults": "Giulia, 11 Nov 2026: EVERY Short, always: paid promotion No (unless she says otherwise); the quiz's researched tags (vidIQ/Apify); location Melbourne, VIC; Category Education, type Activity and Problems as for long videos; Level from the quiz difficulty (hard = Advanced); related video = the full quiz.",
+    "level_by_difficulty": {
+      "easy": "Beginner",
+      "medium": "Intermediate",
+      "hard": "Advanced"
+    },
+    "paid_promotion": "No"
   },
   "max_shorts_per_quiz": 5,
   "_comment_titles": "Default Shorts titles/openings when quizzes/<quiz>/shorts.json isn't written by hand (patterns from Quiz #9, Giulia 9 Nov: challenge hook first, then make the quiz clear). {n} = questions in the Short. The weekly run may write a quiz's own shorts.json instead, following the hooks playbook.",

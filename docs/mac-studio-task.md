@@ -48,21 +48,25 @@ In scope: records with a video_id whose status is "scheduled", or that are alrea
    - If thumbnail B truly can't be added, set a "Title only" test with the same two titles and say so under "Needs attention".
 4. **Pin** (after release, once the record has comment_id): pin that comment (Studio > Comments, remove filters, ⋮ > Pin > Pin).
 
-## 4. Each Short (shorts-upload.json): Giulia's Shorts settings, 9 Nov 2026
+## 4. Each Short (shorts-upload.json): Giulia's standard settings
 
-1. **Related video** (if None): the full quiz (full_quiz_video_id in `quizzes/<quiz>/shorts.json`).
-2. **Playlist:** the Short must be in the series playlist (e.g. "General Knowledge Quizzes"); add it if missing.
-3. **Details > Show more**
-   - Paid promotion = "No, my video doesn't include paid promotion".
-   - Recording date = the record's recording_date. If none, pick a date 2–7 days before the upload date, varied between Shorts.
-   - Video location = Melbourne, VIC.
-   - Altered content = No.
-   - Category Education, Type = Activity.
-   - Problems = the record's "problems" (or the Short's questions, one per line), trimmed to 800 characters.
-   - Level = the option closest to the quiz difficulty in quiz.json.
-   - Shorts remixing = allowed.
-   - Save.
-4. **Pin** (after release, once the record has comment_id): pin it.
+Giulia, 11 Nov 2026: "For every short ALWAYS…". These six are defaults for EVERY Short, every time, unless she says otherwise. Check every Short in scope on every run, and fix any that is missing one, not only new ones.
+
+1. **Paid promotion:** "No, my video doesn't include paid promotion". The upload also sets it through the API (`paid_promotion` in the record); confirm the "No" button is selected in Studio.
+2. **Tags:** the quiz's researched tags (vidIQ/Apify; quiz.json `tags`) are set by the upload through the API, so check they're there. If a Short has only generic tags, run `shorts.yml` with `mode=defaults` for that quiz (cloud shell, `gh workflow run shorts.yml --ref main -f quiz=<quiz> -f mode=defaults`). If the quiz has no `tags` in quiz.json, say so under "Needs attention".
+3. **Video location:** Melbourne, VIC.
+4. **Category Education:** Type = Activity, and Problems = the record's "problems" (the Short's questions, one per line, with their timecodes), trimmed to 800 characters. This is the same as for long videos.
+5. **Level:** from the quiz difficulty in quiz.json: hard = Advanced, medium = Intermediate, easy = Beginner (config/shorts.json `studio.level_by_difficulty`; a missing difficulty counts as medium). Fandom quizzes are hard.
+6. **Related video:** the full quiz (full_quiz_video_id in `quizzes/<quiz>/shorts.json`, or the quiz's upload.json video_id).
+
+Also:
+
+- **Playlist:** the Short must be in the series playlist (e.g. "General Knowledge Quizzes"); add it if missing.
+- **Recording date:** the record's recording_date. If none, pick a date 2–7 days before the upload date, varied between Shorts.
+- **Altered content:** No.
+- **Shorts remixing:** allowed.
+- **Save** after the changes, then reload once to confirm they stuck.
+- **Pin** the score comment after release, once the record has comment_id.
 
 ## 5. Mondays only: weekly report (after the Studio steps)
 
