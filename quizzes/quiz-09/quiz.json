@@ -339,5 +339,22 @@
       ],
       "note": "4K re-render of the approved Quiz #9 (same questions, voice and slides), requested by Giulia on 6 Nov 2026 because the 1080p upload looked blurry."
     }
+  },
+  "tags": [
+    "general knowledge quiz",
+    "general knowledge questions",
+    "general knowledge",
+    "quiz game",
+    "fun quiz",
+    "trivia quiz",
+    "quiz challenge",
+    "general knowledge questions and answers",
+    "50 questions"
+  ],
+  "tags_research": {
+    "tool": "vidIQ keyword research",
+    "date": "2026-11-11",
+    "by": "Claude",
+    "notes": "'general knowledge quiz': ~322,000 searches/month, competition 73, demand +49.5%. 'general knowledge questions': ~22,000/month. 'general knowledge': ~144,000/month. 'quiz game': ~431,000/month, competition 55. 'fun quiz': ~50,000/month, competition 48. 'trivia quiz': ~130,000/month. 'quiz challenge': ~69,000/month. Added 11 Nov for the Shorts' tags."
   }
 }
