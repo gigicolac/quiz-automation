@@ -11,12 +11,19 @@ Also: added to the series playlist, recording date 2-7 days before upload (varie
 Studio-only steps (Related video = full quiz, paid promotion No, location Melbourne VIC, Education type/Problems/level,
 pin the score comment) are listed in studio_tasks for the Studio run.
 
+--mode replace (Giulia, 13 Nov 2026: Shorts countdown 10 s -> 5 s, "fix all current shorts that are scheduled but
+haven't yet posted and re-upload them"): every Short in the record that hasn't gone live and wasn't made with the
+current countdown (config/shorts.json think_seconds) is uploaded again from the new files. The new upload takes the
+old one's publish slot; the old video is kept private with its schedule removed (never deleted; deleting needs
+Giulia's OK) and its record moves to "replaced". Shorts due within REPLACE_MARGIN_MINUTES are left alone.
+
 Env: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
 """
 import argparse
 import datetime as dt
 import json
 import sys
+import time
 import urllib.parse
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -26,6 +33,32 @@ import upload_youtube as up  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ET = ZoneInfo("America/New_York")
+REPLACE_MARGIN_MINUTES = 90  # a Short due sooner than this is left as it is (it may already be going live)
+
+
+def upload_captions(token, vid, srt_bytes, tries=6, wait=20):
+    """Captions right after an upload can get 404 videoNotFound (quiz-12 Short 2, 12 Nov 2026): retry."""
+    data, ctype = up.multipart({"snippet": {"videoId": vid, "language": "en", "name": "English"}},
+                               srt_bytes, "application/octet-stream")
+    for i in range(tries):
+        code, _, _ = up.http("POST", f"{up.UPLOAD_API}/captions?part=snippet&uploadType=multipart", token, data,
+                             {"Content-Type": ctype}, expect=(200, 201, 404))
+        if code in (200, 201):
+            return "uploaded"
+        time.sleep(wait)
+    return "not uploaded (video not found yet); add in Studio"
+
+
+def needs_replacing(r, think, now):
+    """A Short record that hasn't gone live and wasn't made with the current countdown."""
+    if not r.get("video_id") or r.get("countdown_seconds") == think:
+        return False
+    if r.get("status") == "scheduled":
+        p = r.get("publish_at")
+        if not p:
+            return False
+        return dt.datetime.fromisoformat(p.replace("Z", "+00:00")) > now + dt.timedelta(minutes=REPLACE_MARGIN_MINUTES)
+    return True  # uploaded but never scheduled (e.g. a failed run): replace it too
 
 
 def metadata(n, quiz, meta, scfg, ycfg):
@@ -142,12 +175,25 @@ def next_short_slot(after, times, taken):
     raise SystemExit("No free Shorts slot in the next 60 days")
 
 
+def unschedule(token, vid, status_fields):
+    """Keep a replaced Short private and remove its publish time (never deletes it)."""
+    body = {"id": vid, "status": {"privacyStatus": "private", **status_fields}}
+    up.http("PUT", f"{up.API}/videos?part=status", token, json.dumps(body).encode(),
+            {"Content-Type": "application/json"})
+    _, _, r = up.http("GET", f"{up.API}/videos?part=status&id={vid}", token)
+    items = r.get("items", [])
+    if not items:
+        return "not found"
+    st = items[0]["status"]
+    return "yes" if st.get("privacyStatus") == "private" and not st.get("publishAt") else f"no ({st})"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--quiz", required=True, help="quizzes/<quiz>")
     ap.add_argument("--dir", required=True, help="folder with make_shorts.py output")
     ap.add_argument("--thumbnail", help="fallback thumbnail if a Short has none of its own")
-    ap.add_argument("--mode", choices=["preview", "upload", "retitle", "defaults"], default="preview",
+    ap.add_argument("--mode", choices=["preview", "upload", "retitle", "defaults", "replace"], default="preview",
                     help="retitle = update the title/description of Shorts already uploaded to match shorts.json; "
                          "defaults = re-apply tags and paid promotion No to every Short already uploaded")
     args = ap.parse_args()
@@ -224,6 +270,29 @@ def main():
         return
 
     made = json.loads((sdir / "shorts.json").read_text())
+    now = dt.datetime.now(dt.timezone.utc)
+    think = scfg.get("think_seconds", 5)
+    targets = {}  # Short number -> the publish slot it keeps when replaced
+    if args.mode == "replace":
+        for m in made:
+            n = str(m["short"])
+            old = rec["shorts"].get(n)
+            if old and needs_replacing(old, think, now):
+                if old.get("status") == "scheduled":
+                    targets[n] = old["publish_at"]
+                old = {**old, "replaced_reason": f"countdown changed to {think} s (Giulia, 13 Nov 2026)",
+                       "keep_slot": targets.get(n)}
+                rec.setdefault("replaced", []).append(old)
+                rec["shorts"][n] = {"short": m["short"], "status": "uploading", "steps": {},
+                                    "countdown_seconds": m.get("countdown_seconds"), "replaces": old["video_id"],
+                                    "recording_date": old.get("recording_date")}
+                if targets.get(n):
+                    rec["shorts"][n]["keep_slot"] = targets[n]
+        save()
+        args.mode = "upload"
+    for n, r in rec["shorts"].items():  # a resumed run keeps the slots it was given
+        if r.get("keep_slot") and r.get("status") != "scheduled":
+            targets[n] = r["keep_slot"]
 
     todo = [m for m in made if rec["shorts"].get(str(m["short"]), {}).get("status") != "scheduled"
             and not meta["shorts"][str(m["short"])].get("video_id")]
@@ -254,18 +323,15 @@ def main():
             resp = up.upload_video(token, sdir / m["file"], body, ycfg.get("notify_subscribers", True))
             r.update(video_id=resp["id"], url=f"https://youtube.com/shorts/{resp['id']}", title=md["title"],
                      description=md["description"],
-                     upload_completed_at=up.iso(dt.datetime.now(dt.timezone.utc)), questions=m["questions"])
+                     upload_completed_at=up.iso(dt.datetime.now(dt.timezone.utc)), questions=m["questions"],
+                     countdown_seconds=m.get("countdown_seconds"))
             save()
         vid, steps = r["video_id"], r.setdefault("steps", {})
         if "paid_promotion" not in steps:
             steps["paid_promotion"] = set_paid_promotion_no(token, vid)
             save()
         if "captions" not in steps and (sdir / m["captions"]).exists():
-            data, ctype = up.multipart({"snippet": {"videoId": vid, "language": "en", "name": "English"}},
-                                       (sdir / m["captions"]).read_bytes(), "application/octet-stream")
-            up.http("POST", f"{up.UPLOAD_API}/captions?part=snippet&uploadType=multipart", token, data,
-                    {"Content-Type": ctype})
-            steps["captions"] = "uploaded"
+            steps["captions"] = upload_captions(token, vid, (sdir / m["captions"]).read_bytes())
             save()
         thumb = sdir / m["thumbnail"] if m.get("thumbnail") else (Path(args.thumbnail) if args.thumbnail else None)
         if "thumbnail" not in steps and thumb and thumb.exists():
@@ -296,10 +362,23 @@ def main():
             r["status"] = "processing_incomplete"
             save()
             continue
-        done = dt.datetime.fromisoformat(r["upload_completed_at"].replace("Z", "+00:00"))
-        after = max(done + dt.timedelta(minutes=scfg.get("minimum_lead_minutes", 1440)),
-                    dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=5))
-        slot = next_short_slot(after, scfg["times_us_eastern"], taken)
+        if r.get("replaces") and r.get("old_unscheduled") != "yes":
+            # take the old upload out of the schedule first, so the two never both go live
+            r["old_unscheduled"] = unschedule(token, r["replaces"], status_fields)
+            save()
+            if r["old_unscheduled"] != "yes":
+                r["status"] = "old_still_scheduled"
+                save()
+                continue
+        keep = targets.get(str(m["short"]))
+        keep = dt.datetime.fromisoformat(keep.replace("Z", "+00:00")) if keep else None
+        if keep and keep > dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10):
+            slot = keep.astimezone(ET)  # the replaced Short's own slot (its old upload no longer holds it)
+        else:
+            done = dt.datetime.fromisoformat(r["upload_completed_at"].replace("Z", "+00:00"))
+            after = max(done + dt.timedelta(minutes=scfg.get("minimum_lead_minutes", 1440)),
+                        dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=5))
+            slot = next_short_slot(after, scfg["times_us_eastern"], taken)
         body = {"id": r["video_id"], "status": {"privacyStatus": "private", "publishAt": up.iso(slot), **status_fields}}
         _, _, resp = up.http("PUT", f"{up.API}/videos?part=status", token, json.dumps(body).encode(),
                              {"Content-Type": "application/json"})

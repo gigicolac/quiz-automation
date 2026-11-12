@@ -17,9 +17,9 @@ on:
         description: "Quiz folder, e.g. quiz-09"
         required: true
       mode:
-        description: "preview = make the Shorts and show the titles only; upload = upload and schedule"
+        description: "preview = make the Shorts and show the titles only; upload = upload and schedule; replace = re-make and re-upload Shorts not yet live (old uploads unscheduled, kept private)"
         type: choice
-        options: [preview, upload, retitle, defaults]
+        options: [preview, upload, retitle, defaults, replace]
         default: preview
       only:
         description: "Short numbers to make, e.g. 2,3,4,5,6,7 (blank = all not already uploaded)"
@@ -127,7 +127,7 @@ jobs:
           { echo "## $QUIZ Shorts: $MODE"; echo '```json'; cat "$RUNNER_TEMP/shorts-plan.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Record result
-        if: env.QUIZ != '' && (always() && (env.MODE == 'upload' || env.MODE == 'retitle' || env.MODE == 'defaults'))
+        if: env.QUIZ != '' && (always() && (env.MODE == 'upload' || env.MODE == 'retitle' || env.MODE == 'defaults' || env.MODE == 'replace'))
         run: |
           f="quizzes/$QUIZ/shorts-upload.json"
           [ -f "$f" ] || exit 0
