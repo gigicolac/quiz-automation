@@ -3,6 +3,238 @@
   "shorts": {
     "1": {
       "short": 1,
+      "status": "old_still_scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-10-short-1.jpg",
+        "playlist": {
+          "id": "PLG52UpPG8e8g",
+          "title": "Disney Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "2rfVa0n6BKk",
+      "recording_date": "2026-11-02T00:00:00Z",
+      "keep_slot": "2026-11-13T13:00:00Z",
+      "problems": "0:00 Before Mickey Mouse, what was Walt Disney's first big cartoon star?\n0:21 In which 1928 cartoon did Mickey Mouse make his debut with synchronised sound?\n0:42 In which year was Snow White and the Seven Dwarfs released?\n1:00 What are the names of Ursula's two eels in The Little Mermaid?\n1:20 What does Ariel call a fork in The Little Mermaid?\n1:39 What is the name of Mulan's horse?\n1:56 What are the names of the three hyenas in The Lion King?",
+      "video_id": "IVmJ7W6Smas",
+      "url": "https://youtube.com/shorts/IVmJ7W6Smas",
+      "title": "Think you're smart? Prove it in 7 questions ⏱️ Disney Quiz #10",
+      "description": "Sneak peek 👀 Think you're smart? 7 questions, five seconds each. Prove it.\n\nThis is just a taste of this week's Disney Quiz #10, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/2BEWfPBSI0w\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #disney #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T22:47:09Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/2BEWfPBSI0w.",
+        "Playlist: check it is in 'Disney Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-13T13:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+    },
+    "2": {
+      "short": 2,
+      "status": "old_still_scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-10-short-2.jpg",
+        "playlist": {
+          "id": "PLG52UpPG8e8g",
+          "title": "Disney Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "buBOt-sWwH8",
+      "recording_date": "2026-11-06T00:00:00Z",
+      "keep_slot": "2026-11-13T23:00:00Z",
+      "problems": "0:00 In Aladdin, what is the name of Princess Jasmine's tiger?\n0:18 What name does Aurora go by while hiding in the forest in Sleeping Beauty?\n0:36 What are the names of Cinderella's two stepsisters?\n0:55 In 101 Dalmatians, what is the name of Pongo's partner?\n1:14 What kind of animal is King Louie in The Jungle Book (1967)?\n1:33 What is Stitch's experiment number in Lilo & Stitch?\n1:54 In Tangled, what is the name of Rapunzel's chameleon?",
+      "video_id": "13GuSc9gwKo",
+      "url": "https://youtube.com/shorts/13GuSc9gwKo",
+      "title": "7 questions, 5 seconds each. Can you keep up? ⏱️ Disney Quiz #10",
+      "description": "Sneak peek 👀 7 questions, five seconds each, no warm-up. Can you keep up?\n\nThis is just a taste of this week's Disney Quiz #10, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/2BEWfPBSI0w\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #disney #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T22:47:16Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/2BEWfPBSI0w.",
+        "Playlist: check it is in 'Disney Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-13T23:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+    },
+    "3": {
+      "short": 3,
+      "status": "old_still_scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-10-short-3.jpg",
+        "playlist": {
+          "id": "PLG52UpPG8e8g",
+          "title": "Disney Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "THb_u8cgIRo",
+      "recording_date": "2026-11-06T00:00:00Z",
+      "keep_slot": "2026-11-14T13:00:00Z",
+      "problems": "0:00 What is the name of the kingdom in Frozen?\n0:16 What is the name of Moana's pet pig?\n0:34 In Raya and the Last Dragon, what is the name of the last dragon?\n0:53 In Encanto, what is the family's surname?\n1:09 What was the first fully computer-animated feature film?\n1:30 What is the name of the boy who tortures toys in Toy Story?\n1:50 In Finding Nemo, what address does Dory keep reading?",
+      "video_id": "em1D3uocoww",
+      "url": "https://youtube.com/shorts/em1D3uocoww",
+      "title": "Smart enough for a perfect 7/7? 👀 Disney Quiz #10",
+      "description": "Sneak peek 👀 Smart enough for a perfect 7/7?\n\nThis is just a taste of this week's Disney Quiz #10, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/2BEWfPBSI0w\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #disney #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T22:47:21Z",
+      "questions": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/2BEWfPBSI0w.",
+        "Playlist: check it is in 'Disney Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-14T13:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+    },
+    "4": {
+      "short": 4,
+      "status": "old_still_scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-10-short-4.jpg",
+        "playlist": {
+          "id": "PLG52UpPG8e8g",
+          "title": "Disney Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "7C7lMoyfRRs",
+      "recording_date": "2026-11-05T00:00:00Z",
+      "keep_slot": "2026-11-14T23:00:00Z",
+      "problems": "0:00 In Up, what is the name of the talking dog?\n0:14 What is Sulley's full name in Monsters, Inc.?\n0:33 In The Incredibles, what is the name of the superhero costume designer?\n0:51 In Ratatouille, which famous chef's motto is 'Anyone can cook'?\n1:10 In WALL-E, what is the name of the robot WALL-E falls for?\n1:31 What is Lightning McQueen's racing number in Cars?\n1:49 In Coco, what is the name of Miguel's dog?",
+      "video_id": "eg2ZuuEGUYE",
+      "url": "https://youtube.com/shorts/eg2ZuuEGUYE",
+      "title": "Most people get these WRONG 😬 Disney Quiz #10",
+      "description": "Sneak peek 👀 Most people get at least one of these wrong. Will you?\n\nThis is just a taste of this week's Disney Quiz #10, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/2BEWfPBSI0w\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #disney #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T22:47:27Z",
+      "questions": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/2BEWfPBSI0w.",
+        "Playlist: check it is in 'Disney Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-14T23:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+    },
+    "5": {
+      "short": 5,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-10-short-5.jpg",
+        "playlist": {
+          "id": "PLG52UpPG8e8g",
+          "title": "Disney Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "9pHChu9B6Zc",
+      "recording_date": "2026-11-06T00:00:00Z",
+      "keep_slot": "2026-11-15T13:00:00Z",
+      "problems": "0:00 In Zootopia, what is the name of the sloth at the DMV?\n0:19 In Big Hero 6, what is the name of the city?\n0:36 In Wreck-It Ralph, which racing game is Vanellope from?\n0:54 In The Princess and the Frog, what is the name of the trumpet-playing alligator?\n1:13 In Brave, what does Merida's mother turn into?\n1:30 Which was the first animated film nominated for the Best Picture Oscar?\n1:52 In Hercules, what are the names of Hades' two sidekicks?",
+      "video_id": "Y-OpLJT4vUc",
+      "url": "https://youtube.com/shorts/Y-OpLJT4vUc",
+      "title": "How much do you REALLY know? 🤔 Disney Quiz #10",
+      "description": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?\n\nThis is just a taste of this week's Disney Quiz #10, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/2BEWfPBSI0w\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #disney #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T22:47:36Z",
+      "questions": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/2BEWfPBSI0w.",
+        "Playlist: check it is in 'Disney Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Advanced.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-15T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sun 15 Nov 2026 08:00 EST",
+        "Sydney": "Mon 16 Nov 2026 00:00 AEDT"
+      }
+    }
+  },
+  "replaced": [
+    {
+      "short": 1,
       "status": "scheduled",
       "steps": {
         "captions": "uploaded",
@@ -71,9 +303,11 @@
         "pixar quiz",
         "movie quiz"
       ],
-      "paid_promotion": "no"
+      "paid_promotion": "no",
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-13T13:00:00Z"
     },
-    "2": {
+    {
       "short": 2,
       "status": "scheduled",
       "steps": {
@@ -143,9 +377,11 @@
         "pixar quiz",
         "movie quiz"
       ],
-      "paid_promotion": "no"
+      "paid_promotion": "no",
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-13T23:00:00Z"
     },
-    "3": {
+    {
       "short": 3,
       "status": "scheduled",
       "steps": {
@@ -215,9 +451,11 @@
         "pixar quiz",
         "movie quiz"
       ],
-      "paid_promotion": "no"
+      "paid_promotion": "no",
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-14T13:00:00Z"
     },
-    "4": {
+    {
       "short": 4,
       "status": "scheduled",
       "steps": {
@@ -287,9 +525,11 @@
         "pixar quiz",
         "movie quiz"
       ],
-      "paid_promotion": "no"
+      "paid_promotion": "no",
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-14T23:00:00Z"
     },
-    "5": {
+    {
       "short": 5,
       "status": "scheduled",
       "steps": {
@@ -359,7 +599,9 @@
         "pixar quiz",
         "movie quiz"
       ],
-      "paid_promotion": "no"
+      "paid_promotion": "no",
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-15T13:00:00Z"
     }
-  }
+  ]
 }
