@@ -1,0 +1,32 @@
+{
+  "_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+  "full_quiz_video_id": "7hV38jV8D-I",
+  "series_tag": "movies",
+  "shorts": {
+    "1": {
+      "title": "Smart enough for a perfect 7/7? 👀 Movies Quiz #12",
+      "opening": "Sneak peek 👀 Smart enough for a perfect 7/7?",
+      "pattern": "config default"
+    },
+    "2": {
+      "title": "Most people get these WRONG 😬 Movies Quiz #12",
+      "opening": "Sneak peek 👀 Most people get at least one of these wrong. Will you?",
+      "pattern": "config default"
+    },
+    "3": {
+      "title": "How much do you REALLY know? 🤔 Movies Quiz #12",
+      "opening": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?",
+      "pattern": "config default"
+    },
+    "4": {
+      "title": "Can you beat the average score? 🧠 Movies Quiz #12",
+      "opening": "Sneak peek 👀 7 questions. Can you beat the average score?",
+      "pattern": "config default"
+    },
+    "5": {
+      "title": "No multiple choice. No hints. Can you get them all? 🧠 Movies Quiz #12",
+      "opening": "Sneak peek 👀 No multiple choice, no hints, five seconds each. Can you get all 7?",
+      "pattern": "config default"
+    }
+  }
+}
