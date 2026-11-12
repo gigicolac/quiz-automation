@@ -3,7 +3,7 @@
   "shorts": {
     "1": {
       "short": 1,
-      "status": "old_still_scheduled",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -44,11 +44,16 @@
         "Pin the score comment once it is posted."
       ],
       "processing": "succeeded",
-      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-13T13:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-13T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Fri 13 Nov 2026 08:00 EST",
+        "Sydney": "Sat 14 Nov 2026 00:00 AEDT"
+      }
     },
     "2": {
       "short": 2,
-      "status": "old_still_scheduled",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -89,11 +94,16 @@
         "Pin the score comment once it is posted."
       ],
       "processing": "succeeded",
-      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-13T23:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-13T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Fri 13 Nov 2026 18:00 EST",
+        "Sydney": "Sat 14 Nov 2026 10:00 AEDT"
+      }
     },
     "3": {
       "short": 3,
-      "status": "old_still_scheduled",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -134,11 +144,16 @@
         "Pin the score comment once it is posted."
       ],
       "processing": "succeeded",
-      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-14T13:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-14T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sat 14 Nov 2026 08:00 EST",
+        "Sydney": "Sun 15 Nov 2026 00:00 AEDT"
+      }
     },
     "4": {
       "short": 4,
-      "status": "old_still_scheduled",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -179,7 +194,12 @@
         "Pin the score comment once it is posted."
       ],
       "processing": "succeeded",
-      "old_unscheduled": "no ({'uploadStatus': 'processed', 'privacyStatus': 'private', 'publishAt': '2026-11-14T23:00:00Z', 'license': 'youtube', 'embeddable': True, 'publicStatsViewable': True, 'madeForKids': False, 'selfDeclaredMadeForKids': False})"
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-14T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sat 14 Nov 2026 18:00 EST",
+        "Sydney": "Sun 15 Nov 2026 10:00 AEDT"
+      }
     },
     "5": {
       "short": 5,
