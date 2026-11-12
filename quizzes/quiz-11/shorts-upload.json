@@ -7,6 +7,258 @@
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
+        "thumbnail": "quiz-11-short-1.jpg",
+        "playlist": {
+          "id": "PLC83dOVs21fg",
+          "title": "Science Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "Yte1gSh8Uok",
+      "recording_date": "2026-11-04T00:00:00Z",
+      "keep_slot": "2026-11-15T23:00:00Z",
+      "problems": "0:00 What's the fastest thing in the universe?\n0:17 Which type of heat transfer can travel through the vacuum of space?\n0:39 What is the unit of force?\n0:57 Is sound a transverse wave or a longitudinal wave?\n1:18 Why can't sound travel through space?\n1:39 Heat moving up a metal spoon sitting in hot soup is an example of which type of heat transfer?\n2:02 What is the unit of energy?",
+      "video_id": "_lEH-gVd1NM",
+      "url": "https://youtube.com/shorts/_lEH-gVd1NM",
+      "title": "7 questions, 5 seconds each. Can you keep up? ⏱️ Science Quiz #11",
+      "description": "Sneak peek 👀 7 questions, five seconds each, no warm-up. Can you keep up?\n\nThis is just a taste of this week's Science Quiz #11, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/O6IMzJuUPCY\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #science #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:17:28Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/O6IMzJuUPCY.",
+        "Playlist: check it is in 'Science Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-15T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sun 15 Nov 2026 18:00 EST",
+        "Sydney": "Mon 16 Nov 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-11-short-2.jpg",
+        "playlist": {
+          "id": "PLC83dOVs21fg",
+          "title": "Science Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "Gy7VHoXZUqM",
+      "recording_date": "2026-11-05T00:00:00Z",
+      "keep_slot": "2026-11-16T13:00:00Z",
+      "problems": "0:00 Which colour of visible light has the longest wavelength?\n0:18 Newton's second law says force equals mass times what?\n0:39 Why do you see lightning before you hear the thunder?\n1:00 What's the name for light bending as it passes from air into water?\n1:18 Which part of the electromagnetic spectrum gives you sunburn?\n1:39 Hot air rising and cooler air sinking to form a current is called what?\n2:00 On the Moon, would your mass or your weight be smaller?",
+      "video_id": "v46EN5QdgtU",
+      "url": "https://youtube.com/shorts/v46EN5QdgtU",
+      "title": "Smart enough for a perfect 7/7? 👀 Science Quiz #11",
+      "description": "Sneak peek 👀 Smart enough for a perfect 7/7?\n\nThis is just a taste of this week's Science Quiz #11, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/O6IMzJuUPCY\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #science #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:17:35Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/O6IMzJuUPCY.",
+        "Playlist: check it is in 'Science Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-16T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Mon 16 Nov 2026 08:00 EST",
+        "Sydney": "Tue 17 Nov 2026 00:00 AEDT"
+      }
+    },
+    "3": {
+      "short": 3,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-11-short-3.jpg",
+        "playlist": {
+          "id": "PLC83dOVs21fg",
+          "title": "Science Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "GIq4WPzWCFc",
+      "recording_date": "2026-11-05T00:00:00Z",
+      "keep_slot": "2026-11-16T23:00:00Z",
+      "problems": "0:00 What is the unit used to measure frequency?\n0:18 Energy can't be created or destroyed, only changed from one form to another. What is this law called?\n0:41 What type of energy does any moving object have?\n1:00 Which electromagnetic waves are used to see broken bones in hospital?\n1:22 What do we call sound that's too high-pitched for humans to hear?\n1:43 What is the force that slows down a sliding object?\n2:01 Does sound travel faster through air or through steel?",
+      "video_id": "vED7XVHqvHE",
+      "url": "https://youtube.com/shorts/vED7XVHqvHE",
+      "title": "Most people get these WRONG 😬 Science Quiz #11",
+      "description": "Sneak peek 👀 Most people get at least one of these wrong. Will you?\n\nThis is just a taste of this week's Science Quiz #11, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/O6IMzJuUPCY\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #science #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:17:45Z",
+      "questions": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/O6IMzJuUPCY.",
+        "Playlist: check it is in 'Science Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-16T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Mon 16 Nov 2026 18:00 EST",
+        "Sydney": "Tue 17 Nov 2026 10:00 AEDT"
+      }
+    },
+    "4": {
+      "short": 4,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-11-short-4.jpg",
+        "playlist": {
+          "id": "PLC83dOVs21fg",
+          "title": "Science Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "vMpUtGlqr_A",
+      "recording_date": "2026-11-05T00:00:00Z",
+      "keep_slot": "2026-11-17T13:00:00Z",
+      "problems": "0:00 What do we call the distance from one wave crest to the next?\n0:19 Which type of electromagnetic wave do most TV remotes use?\n0:39 'For every action, there is an equal and opposite reaction.' Which of Newton's laws is this?\n1:00 What does a sound wave's frequency decide: its pitch or its loudness?\n1:22 Roughly how long does sunlight take to reach Earth?\n1:42 What kind of energy is stored in a stretched rubber band?\n2:02 Speed in a particular direction is called what?",
+      "video_id": "1mAAzIWLQvg",
+      "url": "https://youtube.com/shorts/1mAAzIWLQvg",
+      "title": "How much do you REALLY know? 🤔 Science Quiz #11",
+      "description": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?\n\nThis is just a taste of this week's Science Quiz #11, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/O6IMzJuUPCY\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #science #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:17:53Z",
+      "questions": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/O6IMzJuUPCY.",
+        "Playlist: check it is in 'Science Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-17T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Tue 17 Nov 2026 08:00 EST",
+        "Sydney": "Wed 18 Nov 2026 00:00 AEDT"
+      }
+    },
+    "5": {
+      "short": 5,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-11-short-5.jpg",
+        "playlist": {
+          "id": "PLC83dOVs21fg",
+          "title": "Science Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "Js1IjOLFewQ",
+      "recording_date": "2026-11-08T00:00:00Z",
+      "keep_slot": "2026-11-17T23:00:00Z",
+      "problems": "0:00 Which electromagnetic waves have the highest energy?\n0:19 White light splits into a rainbow when it passes through which triangular glass object?\n0:40 What force pulls objects towards the centre of the Earth?\n0:58 Roughly how fast does sound travel through air?\n1:20 What is the unit of electric current?\n1:39 Without air resistance, which hits the ground first: a hammer or a feather dropped at the same time?\n2:04 What is the height of a wave from its rest position to its crest called?",
+      "video_id": "oiPQKfdWuns",
+      "url": "https://youtube.com/shorts/oiPQKfdWuns",
+      "title": "Can you beat the average score? 🧠 Science Quiz #11",
+      "description": "Sneak peek 👀 7 questions. Can you beat the average score?\n\nThis is just a taste of this week's Science Quiz #11, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/O6IMzJuUPCY\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #science #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:17:59Z",
+      "questions": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/O6IMzJuUPCY.",
+        "Playlist: check it is in 'Science Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-17T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Tue 17 Nov 2026 18:00 EST",
+        "Sydney": "Wed 18 Nov 2026 10:00 AEDT"
+      }
+    }
+  },
+  "replaced": [
+    {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
         "thumbnail": "not accepted (403)",
         "playlist": {
           "id": "PLC83dOVs21fg",
@@ -45,9 +297,11 @@
       "publish_at_local": {
         "US Eastern": "Sun 15 Nov 2026 18:00 EST",
         "Sydney": "Mon 16 Nov 2026 10:00 AEDT"
-      }
+      },
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-15T23:00:00Z"
     },
-    "2": {
+    {
       "short": 2,
       "status": "scheduled",
       "steps": {
@@ -91,9 +345,11 @@
       "publish_at_local": {
         "US Eastern": "Mon 16 Nov 2026 08:00 EST",
         "Sydney": "Tue 17 Nov 2026 00:00 AEDT"
-      }
+      },
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-16T13:00:00Z"
     },
-    "3": {
+    {
       "short": 3,
       "status": "scheduled",
       "steps": {
@@ -137,9 +393,11 @@
       "publish_at_local": {
         "US Eastern": "Mon 16 Nov 2026 18:00 EST",
         "Sydney": "Tue 17 Nov 2026 10:00 AEDT"
-      }
+      },
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-16T23:00:00Z"
     },
-    "4": {
+    {
       "short": 4,
       "status": "scheduled",
       "steps": {
@@ -183,9 +441,11 @@
       "publish_at_local": {
         "US Eastern": "Tue 17 Nov 2026 08:00 EST",
         "Sydney": "Wed 18 Nov 2026 00:00 AEDT"
-      }
+      },
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-17T13:00:00Z"
     },
-    "5": {
+    {
       "short": 5,
       "status": "scheduled",
       "steps": {
@@ -229,7 +489,9 @@
       "publish_at_local": {
         "US Eastern": "Tue 17 Nov 2026 18:00 EST",
         "Sydney": "Wed 18 Nov 2026 10:00 AEDT"
-      }
+      },
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": "2026-11-17T23:00:00Z"
     }
-  }
+  ]
 }
