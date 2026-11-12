@@ -3,6 +3,224 @@
   "shorts": {
     "1": {
       "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-12-short-1.jpg",
+        "playlist": {
+          "id": "PLBJv2_VDZUew",
+          "title": "Movie Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "rewCW8KuVDo",
+      "recording_date": "2026-11-06T00:00:00Z",
+      "problems": "0:00 In Finding Nemo, what kind of fish is Nemo?\n0:19 Which 1997 film about a doomed ocean liner won 11 Oscars?\n0:41 What is the name of the snowman in Frozen?\n0:56 In the 1939 film The Wizard of Oz, what colour are Dorothy's slippers?\n1:16 In Jaws, what kind of animal terrorises the beaches of Amity Island?\n1:39 In The Lion King, what does 'Hakuna Matata' mean?\n1:58 Which film's famous line is 'To infinity and beyond!'?",
+      "video_id": "LgA2fdUwMqg",
+      "url": "https://youtube.com/shorts/LgA2fdUwMqg",
+      "title": "Smart enough for a perfect 7/7? 👀 Movies Quiz #12",
+      "description": "Sneak peek 👀 Smart enough for a perfect 7/7?\n\nThis is just a taste of this week's Movies Quiz #12, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/7hV38jV8D-I\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #movies #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:34:02Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/7hV38jV8D-I.",
+        "Playlist: check it is in 'Movie Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-18T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Wed 18 Nov 2026 08:00 EST",
+        "Sydney": "Thu 19 Nov 2026 00:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "uploading",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-12-short-2.jpg",
+        "playlist": {
+          "id": "PLBJv2_VDZUew",
+          "title": "Movie Quizzes",
+          "created": false
+        }
+      },
+      "countdown_seconds": 5.0,
+      "replaces": "tiupNMkZMO0",
+      "recording_date": "2026-11-07T00:00:00Z",
+      "problems": "0:00 What is the name of the green ogre who lives in a swamp?\n0:18 In Despicable Me, what are Gru's small yellow helpers called?\n0:38 Which film series follows hobbits on a quest to destroy a powerful ring?\n0:57 In Up, what lifts Carl's house into the sky?\n1:16 In which film does an alien who wants to 'phone home' befriend a boy called Elliott?\n1:36 Which director made Jaws, E.T. and Jurassic Park?\n1:55 In Toy Story, what's the name of the cowboy doll?",
+      "video_id": "XKigAfhGHJ4",
+      "url": "https://youtube.com/shorts/XKigAfhGHJ4",
+      "title": "Most people get these WRONG 😬 Movies Quiz #12",
+      "description": "Sneak peek 👀 Most people get at least one of these wrong. Will you?\n\nThis is just a taste of this week's Movies Quiz #12, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/7hV38jV8D-I\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #movies #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:34:10Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/7hV38jV8D-I.",
+        "Playlist: check it is in 'Movie Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "old_unscheduled": "yes"
+    },
+    "3": {
+      "short": 3,
+      "status": "uploading",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-12-short-3.jpg",
+        "playlist": {
+          "id": "PLBJv2_VDZUew",
+          "title": "Movie Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-05T00:00:00Z",
+      "problems": "0:00 Which 2016 Disney film features the song 'How Far I'll Go'?\n0:18 In Finding Nemo, what's the name of the blue tang fish with short-term memory loss?\n0:37 Which country was The Lord of the Rings trilogy mainly filmed in?\n0:55 In Jurassic Park, scientists got dinosaur DNA from mosquitoes trapped in what?\n1:14 Which animated film features a rat who dreams of being a chef in Paris?\n1:32 In The Incredibles, what is the superhero family's surname?\n1:50 Which Pixar film takes place inside the mind of a girl called Riley?",
+      "video_id": "VtnIT4TBy6E",
+      "url": "https://youtube.com/shorts/VtnIT4TBy6E",
+      "title": "How much do you REALLY know? 🤔 Movies Quiz #12",
+      "description": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?\n\nThis is just a taste of this week's Movies Quiz #12, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/7hV38jV8D-I\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #movies #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:34:17Z",
+      "questions": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/7hV38jV8D-I.",
+        "Playlist: check it is in 'Movie Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ]
+    },
+    "4": {
+      "short": 4,
+      "status": "uploading",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-12-short-4.jpg",
+        "playlist": {
+          "id": "PLBJv2_VDZUew",
+          "title": "Movie Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-07T00:00:00Z",
+      "problems": "0:00 In Monsters, Inc., what powers the city of Monstropolis?\n0:19 In One Hundred and One Dalmatians, what's the name of the villain who wants a spotty coat?\n0:39 Which Pixar film has a little robot cleaning up an abandoned Earth?\n0:58 What kind of animal is Baloo in The Jungle Book?\n1:15 In Mary Poppins, a spoonful of sugar helps what go down?\n1:33 In The Chronicles of Narnia, what is the name of the great lion?\n1:51 Which country does Paddington Bear come from?",
+      "video_id": "4gFXpScezhU",
+      "url": "https://youtube.com/shorts/4gFXpScezhU",
+      "title": "Can you beat the average score? 🧠 Movies Quiz #12",
+      "description": "Sneak peek 👀 7 questions. Can you beat the average score?\n\nThis is just a taste of this week's Movies Quiz #12, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/7hV38jV8D-I\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #movies #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:34:23Z",
+      "questions": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/7hV38jV8D-I.",
+        "Playlist: check it is in 'Movie Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ]
+    },
+    "5": {
+      "short": 5,
+      "status": "uploading",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-12-short-5.jpg",
+        "playlist": {
+          "id": "PLBJv2_VDZUew",
+          "title": "Movie Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-06T00:00:00Z",
+      "problems": "0:00 In Kung Fu Panda, what's the name of the panda who becomes the Dragon Warrior?\n0:19 In Cars, what's the name of the red race car?\n0:35 Which 2008 film kicked off the Marvel Cinematic Universe?\n0:56 Which 2009 film is set on the moon Pandora, home of the blue Na'vi?\n1:17 In Ice Age, what's the name of the sabre-toothed squirrel who's obsessed with an acorn?\n1:36 What is the name of Thor's magical hammer?\n1:53 In Back to the Future, how fast must the DeLorean go to travel through time?",
+      "video_id": "Qi721cyABXM",
+      "url": "https://youtube.com/shorts/Qi721cyABXM",
+      "title": "No multiple choice. No hints. Can you get them all? 🧠 Movies Quiz #12",
+      "description": "Sneak peek 👀 No multiple choice, no hints, five seconds each. Can you get all 7?\n\nThis is just a taste of this week's Movies Quiz #12, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/7hV38jV8D-I\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #movies #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-12T23:34:29Z",
+      "questions": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/7hV38jV8D-I.",
+        "Playlist: check it is in 'Movie Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ]
+    }
+  },
+  "replaced": [
+    {
+      "short": 1,
       "status": "uploading",
       "steps": {
         "paid_promotion": "no",
@@ -39,9 +257,11 @@
         "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
-      ]
+      ],
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": null
     },
-    "2": {
+    {
       "short": 2,
       "status": "uploading",
       "steps": {
@@ -62,7 +282,9 @@
         12,
         13,
         14
-      ]
+      ],
+      "replaced_reason": "countdown changed to 5 s (Giulia, 13 Nov 2026)",
+      "keep_slot": null
     }
-  }
+  ]
 }
