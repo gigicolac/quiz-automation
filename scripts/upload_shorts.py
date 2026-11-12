@@ -180,12 +180,18 @@ def unschedule(token, vid, status_fields):
     body = {"id": vid, "status": {"privacyStatus": "private", **status_fields}}
     up.http("PUT", f"{up.API}/videos?part=status", token, json.dumps(body).encode(),
             {"Content-Type": "application/json"})
-    _, _, r = up.http("GET", f"{up.API}/videos?part=status&id={vid}", token)
-    items = r.get("items", [])
-    if not items:
-        return "not found"
-    st = items[0]["status"]
-    return "yes" if st.get("privacyStatus") == "private" and not st.get("publishAt") else f"no ({st})"
+    st = {}
+    for i in range(7):  # YouTube can report the old publishAt for a while after the change (quiz-10, 13 Nov)
+        if i:
+            time.sleep(10)
+        _, _, r = up.http("GET", f"{up.API}/videos?part=status&id={vid}", token)
+        items = r.get("items", [])
+        if not items:
+            return "not found"
+        st = items[0]["status"]
+        if st.get("privacyStatus") == "private" and not st.get("publishAt"):
+            return "yes"
+    return f"no ({st})"
 
 
 def main():
