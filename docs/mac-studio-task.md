@@ -52,6 +52,8 @@ In scope: records with a video_id whose status is "scheduled", or that are alrea
 
 Giulia, 11 Nov 2026: "For every short ALWAYS…". These six are defaults for EVERY Short, every time, unless she says otherwise. Check every Short in scope on every run, and fix any that is missing one, not only new ones.
 
+Only the entries under `"shorts"` in shorts-upload.json are live Shorts. Entries under `"replaced"` are old uploads that were swapped for a new version (e.g. the 5-second countdown, 13 Nov 2026); they are private with no publish time. Leave them alone and don't set anything on them.
+
 1. **Paid promotion:** "No, my video doesn't include paid promotion". The upload also sets it through the API (`paid_promotion` in the record); confirm the "No" button is selected in Studio.
 2. **Tags:** the quiz's researched tags (vidIQ/Apify; quiz.json `tags`) are set by the upload through the API, so check they're there. If a Short has only generic tags, run `shorts.yml` with `mode=defaults` for that quiz (cloud shell, `gh workflow run shorts.yml --ref main -f quiz=<quiz> -f mode=defaults`). If the quiz has no `tags` in quiz.json, say so under "Needs attention".
 3. **Video location:** Melbourne, VIC.

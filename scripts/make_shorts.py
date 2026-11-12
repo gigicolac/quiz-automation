@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Cut vertical YouTube Shorts (1080x1920) from a finished quiz video.
 
-Each Short: a hook header, then N questions. Per question: the question read out, about 5 seconds of
-countdown (the middle of the 10-second countdown is skipped when the reading is short), the buzzer,
-then the answer reveal. It ends on a card pointing to the full quiz.
+Each Short: a hook header, then N questions. Per question: the question read out (the timer held at 00:05),
+then the last 5 seconds of the 10-second countdown (00:05 to 00:00), the buzzer, then the answer reveal.
+It ends on a card pointing to the full quiz. Giulia, 13 Nov 2026: "reduce the counter on shorts from 10 seconds
+to 5 seconds" (config/shorts.json think_seconds).
 
 Layout from the 16:9 slide: question card on top, countdown/answer strip under it, picture card below,
 over a blurred copy of the slide.
@@ -122,13 +123,26 @@ def end_png(path, lines):
     img.save(path)
 
 
-def layout_filter(header):
-    def crop(r, name):
+def question_spans(t0, t_end, tv, think, countdown):
+    """Pieces of one question page for a Short, as (start, end, hold_timer, mute_until) in the full video.
+
+    The page's timer runs 00:10 -> 00:00 from t0 to t0 + countdown (the buzzer), while the question is read.
+    Piece 1 is the reading (t0 -> tv) with the timer strip held on the frame that shows `think` seconds left;
+    piece 2 is the real countdown from that moment to the end of the page. If the reading runs into piece 2,
+    piece 2's sound is muted until the reading would have ended (only the quiet music bed is lost) so the voice
+    isn't heard twice."""
+    b0 = max(t0, t0 + countdown - think)
+    tv = min(max(tv, t0 + 0.5), t_end)
+    return [(t0, tv, True, 0.0), (b0, t_end, False, round(max(0.0, tv - b0), 3))]
+
+
+def layout_filter(header, strip_input=0):
+    def crop(r, name, src=0):
         x, y, w, h = (round(v * SCALE / 2) * 2 for v in r)
         nh = round(r[3] * CARD_W / r[2] / 2) * 2
-        return f"[0:v]crop={w}:{h}:{x}:{y},scale={CARD_W}:{nh}[{name}]", nh
+        return f"[{src}:v]crop={w}:{h}:{x}:{y},scale={CARD_W}:{nh}[{name}]", nh
     fq, hq = crop(QCARD, "q")
-    fs, hs = crop(STRIP, "s")
+    fs, hs = crop(STRIP, "s", strip_input)
     fp, hp = crop(PCARD, "p")
     x = (W - CARD_W) // 2
     y1, y2, y3 = 300, 300 + hq + 18, 300 + hq + 18 + hs + 18
@@ -136,6 +150,14 @@ def layout_filter(header):
         f"[0:v]scale=-2:{H},crop={W}:{H},gblur=sigma=28,eq=brightness=-0.12[bg]", fq, fs, fp,
         f"[bg][q]overlay={x}:{y1}[b1]", f"[b1][s]overlay={x}:{y2}[b2]", f"[b2][p]overlay={x}:{y3}[b3]",
         f"[b3][1:v]overlay=0:0,fps=30,format=yuv420p[v]"])
+
+
+def countdown_length(hooks_path):
+    """Seconds from the start of a question page to the buzzer (config/video.json buzzer.at, 10 s)."""
+    try:
+        return float(json.loads((Path(hooks_path).parent / "video.json").read_text())["buzzer"]["at"])
+    except (OSError, KeyError, ValueError):
+        return 10.0
 
 
 def main():
@@ -146,7 +168,8 @@ def main():
     ap.add_argument("--quiz", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--per", type=int, default=7)
-    ap.add_argument("--think", type=float, default=5.0, help="seconds of countdown kept after the question is read")
+    ap.add_argument("--think", type=float, default=None,
+                    help="seconds of countdown shown (default config/shorts.json think_seconds, else 5)")
     ap.add_argument("--hooks", default=str(Path(__file__).resolve().parent.parent / "config" / "shorts.json"))
     ap.add_argument("--only", default="", help="comma-separated Short numbers to make, e.g. 2,3,4 (default all)")
     args = ap.parse_args()
@@ -168,6 +191,8 @@ def main():
     groups = [list(range(i, min(i + args.per, nq + 1))) for i in range(1, nq + 1, args.per)]
     groups = [g for g in groups if len(g) == args.per]  # leftovers stay in the long video
     cfg = json.loads(Path(args.hooks).read_text())
+    think = args.think if args.think is not None else float(cfg.get("think_seconds", 5))
+    countdown = countdown_length(args.hooks)
     if cfg.get("max_shorts_per_quiz"):  # 2 slots a day can't take 3 quizzes x 7 Shorts a week (Giulia, 10 Nov)
         groups = groups[:cfg["max_shorts_per_quiz"]]
     made = []
@@ -186,20 +211,25 @@ def main():
             t0, t_end = q["start"], q["start"] + q["dur"]
             spoken = [b for s_, b, _ in cues if t0 <= s_ < t_end]
             tv = (max(spoken) if spoken else t0 + 4) + 0.3
-            spans = [(t0, tv), (max(tv, t_end - args.think - 0.6), t_end)] if tv < t_end - args.think - 0.6 \
-                else [(t0, t_end)]
-            spans.append((a["start"], a["start"] + a["dur"]))
-            for a0, a1 in spans:
+            spans = question_spans(t0, t_end, tv, think, countdown)
+            # the strip as it looks with `think` seconds left (mid-second, so the digit is settled)
+            held = work / f"held{gi}_{n:02d}.png"
+            run("-ss", f"{spans[1][0] + 0.5:.3f}", "-i", args.video, "-frames:v", "1", held)
+            spans.append((a["start"], a["start"] + a["dur"], False, 0.0))
+            for a0, a1, hold, mute in spans:
                 p = work / f"s{gi}_{len(pieces):03d}.mp4"
                 d = a1 - a0
                 for c0, c1, text in cues:  # captions that fall inside this piece, moved to the Short's timeline
-                    if c1 > a0 and c0 < a1:
-                        subs.append((t_out + max(c0, a0) - a0, t_out + min(c1, a1) - a0, text))
+                    if c1 > a0 + mute and c0 < a1:
+                        subs.append((t_out + max(c0, a0 + mute) - a0, t_out + min(c1, a1) - a0, text))
                 t_out += d
-                run("-ss", f"{a0:.3f}", "-t", f"{d:.3f}", "-i", args.video, "-loop", "1", "-i", hdr,
-                    "-filter_complex", layout_filter(hdr), "-map", "[v]", "-map", "0:a",
-                    "-af", f"afade=t=in:d=0.03,afade=t=out:st={max(d - 0.04, 0):.3f}:d=0.04",
-                    "-t", f"{d:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19",
+                af = f"afade=t=in:d=0.03,afade=t=out:st={max(d - 0.04, 0):.3f}:d=0.04"
+                if mute > 0:
+                    af = f"afade=t=in:st={min(mute, d):.3f}:d=0.15,afade=t=out:st={max(d - 0.04, 0):.3f}:d=0.04"
+                extra = ["-loop", "1", "-i", held] if hold else []
+                run("-ss", f"{a0:.3f}", "-t", f"{d:.3f}", "-i", args.video, "-loop", "1", "-i", hdr, *extra,
+                    "-filter_complex", layout_filter(hdr, 2 if hold else 0), "-map", "[v]", "-map", "0:a",
+                    "-af", af, "-t", f"{d:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", p)
                 pieces.append(p)
         # end card on the last answer frame
@@ -227,7 +257,7 @@ def main():
         thumb = out / f"{quiz['id']}-short-{gi}.jpg"
         run("-ss", "3", "-i", final, "-frames:v", "1", "-q:v", "3", thumb)
         made.append({"short": gi, "file": final.name, "captions": srt.name, "thumbnail": thumb.name,
-                     "questions": qs, "question_starts": starts, "hook": hook})
+                     "questions": qs, "question_starts": starts, "hook": hook, "countdown_seconds": think})
     (out / "shorts.json").write_text(json.dumps(made, indent=2, ensure_ascii=False))
     print(json.dumps(made, indent=2, ensure_ascii=False))
 
