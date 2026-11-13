@@ -52,7 +52,7 @@
     },
     "2": {
       "short": 2,
-      "status": "uploading",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -92,11 +92,16 @@
         "Pin the score comment once it is posted."
       ],
       "processing": "succeeded",
-      "old_unscheduled": "yes"
+      "old_unscheduled": "yes",
+      "publish_at": "2026-11-18T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Wed 18 Nov 2026 18:00 EST",
+        "Sydney": "Thu 19 Nov 2026 10:00 AEDT"
+      }
     },
     "3": {
       "short": 3,
-      "status": "uploading",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -133,11 +138,17 @@
         "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
-      ]
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-19T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Thu 19 Nov 2026 08:00 EST",
+        "Sydney": "Fri 20 Nov 2026 00:00 AEDT"
+      }
     },
     "4": {
       "short": 4,
-      "status": "uploading",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -174,11 +185,17 @@
         "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
-      ]
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-19T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Thu 19 Nov 2026 18:00 EST",
+        "Sydney": "Fri 20 Nov 2026 10:00 AEDT"
+      }
     },
     "5": {
       "short": 5,
-      "status": "uploading",
+      "status": "scheduled",
       "steps": {
         "paid_promotion": "no",
         "captions": "uploaded",
@@ -215,7 +232,13 @@
         "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
         "Altered or synthetic content: No (it's Giulia's own voice).",
         "Pin the score comment once it is posted."
-      ]
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-20T13:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Fri 20 Nov 2026 08:00 EST",
+        "Sydney": "Sat 21 Nov 2026 00:00 AEDT"
+      }
     }
   },
   "replaced": [
