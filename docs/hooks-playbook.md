@@ -97,3 +97,5 @@ Rotate the hooks in `config/shorts.json`, using the patterns above. Keep each un
 | Week | Item | Pattern | Result |
 |---|---|---|---|
 | 9 Nov 2026 | Quiz #9 Short 1 "Most people get these WRONG 😬" | challenge / contrast | (pending) |
+| 16 Nov 2026 | Quiz #9 long-video title B "50 questions every dummy should know" | cheeky challenge | Led title A 59% to 41% on watch-time share (test still running). Now the default title B for new quizzes, with a score threshold ("Can you score 40+?") |
+| 16 Nov 2026 | Shorts | direct challenge | Best Shorts: "Think you're smart? Prove it in 7 questions" (310 views), "How much do you REALLY know?" (297), "Smart enough for a perfect 7/7?" (267) |

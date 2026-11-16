@@ -33,6 +33,7 @@ Release slots for the week the quizzes are written in: Thursday 3pm, Saturday 1p
    - **Education:** a Victorian Curriculum unit for one year level from 7 to 12.
    - **Family-friendly only.** If a topic could be sexual, violent, hateful or otherwise unsuitable, pick another.
 3. Read the latest weekly report email in Giulia's Gmail ("One More Quiz weekly report", sent by the Mac task that morning). Apply what it recommends: difficulty, thumbnail test (`config/youtube.json` `thumbnail_test`), hook wording, tags. Note what you changed for the next report.
+4. **Competitor research (every week; Giulia, 16 Nov 2026).** Follow docs/competitor-research.md: use vidIQ to find quiz videos with **1M+ views** for this week's categories, and copy what works from those in our format: topic, title formula, thumbnail layout, question types and format. Write every question, title and thumbnail in our own words (never copy a competitor's questions or images). Prefer a topic with proven 1M+ demand when the rotation allows it. Add a line to that file's log with the searches and what you applied.
 
 ## 2. Write each quiz (Monday)
 
@@ -43,11 +44,12 @@ One branch per quiz: `claude/quiz-NN` from current `origin/main`. Copy the shape
   - `review.questions`: decision `auto-approved`, with a note saying who wrote and fact-checked them and when.
   - `questions`: 50 of them, each with `n`, `question`, `answer` (short, with one emoji) and `reveal` (one fun sentence).
 - **Questions**
-  - 50 per quiz. Easy to hard across the quiz. Mostly medium; fandom quizzes are hard unless the report says otherwise.
+  - 50 per quiz, **medium overall, fandom included** (trial from 16 Nov 2026; Quiz #10 Disney, written hard, lost 60% of viewers by Q3). Q1–5 easy and widely known, so nobody leaves in the first minute. Q6–35 medium, Q36–50 the hardest. Fandom quizzes ask what a real fan knows, not obscure trivia.
+  - Question types from the 1M+ research: famous facts "everyone should know", with a picture people recognise on sight.
   - Each fact is checked against a reliable source; leave a question out if in doubt.
   - No trick wording, and no answers that are now out of date.
   - Movies: include well-known classics (for example Marvel, Pixar, Star Wars, Harry Potter) alongside others (Giulia, 10 Nov).
-- **Title** in the house style: "How Well Do You REALLY Know <Topic>? <emoji> 50 <Topic> Trivia Questions | <Series> Quiz #NN". Score the final 2–3 with vidIQ `score_title`. The second title for the A/B test comes from `config/youtube.json`.
+- **Title** in the house style: "How Well Do You REALLY Know <Topic>? <emoji> 50 <Topic> Trivia Questions | <Series> Quiz #NN", or a formula from this week's competitor research (score threshold, "Can you pass", "Everyone should know"). Score the final 2–3 with vidIQ `score_title`. The second title for the A/B test comes from `config/youtube.json` `title_variants`; make sure A and B use clearly different hooks so the test has something to learn.
 - **Thumbnail hook** (`thumbnail_tagline`) reads on from the heading as one sentence ("Disney Quiz #10 … Only REAL fans would know"). The defaults are in `config/youtube.json` `thumbnail_taglines`. See `docs/hooks-playbook.md`.
 - **Tags** come from vidIQ keyword research for the topic (search volume and competition), not guesses. Record the research in `tags_research`.
 - **`gif_queries.json`**: a question and an answer search per question, plus `match` words.

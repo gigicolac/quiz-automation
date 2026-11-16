@@ -39,14 +39,16 @@ In scope: records with a video_id whose status is "scheduled", or that are alrea
    - Problems = lines from the record's "problems", trimmed to 800 characters (whole lines, spread across the quiz).
    - Level = as the studio_tasks line says: the option closest to the quiz difficulty in quiz.json (fandom quizzes are hard).
    - Save.
-3. **A/B Testing** (if no test yet)
-   - quiz-10: leave it as it is. Giulia set a title-only test on purpose.
-   - Every other quiz (quiz-11 onwards): "Title and thumbnail".
+3. **A/B Testing: a Title and thumbnail test must always be running on every long video** (Giulia, 16 Nov 2026: "We should always be running thumbnail tests across all quiz videos."). Check every video in scope, every run:
+   - **No test, or a title-only test:** stop any title-only test and start "Title and thumbnail".
      - Row 1 = the current title and thumbnail A.
      - Row 2 = the second title from the record's studio_tasks and thumbnail B.
-   - Thumbnail B: download `https://github.com/gigicolac/quiz-automation/releases/download/thumbnails/<quiz>-thumbnail-b.jpg` with curl in device bash into `~/Pictures/One More Quiz thumbnails/` (create the folder if needed), then upload it from there in Studio. If it isn't on that release, download `thumbnail-b.jpg` from the quiz's own release (`release_tag` in upload.json).
-   - If thumbnail B truly can't be added, set a "Title only" test with the same two titles and say so under "Needs attention".
+   - **A test has finished:** YouTube keeps the winner. Start the next test straight away: the current title and thumbnail (the winner) against a new title B and the next thumbnail in the queue in config/youtube.json `thumbnail_test`. If the next thumbnail isn't on the `thumbnails` release yet, say so under "Needs attention" so the cloud task makes it.
+   - Thumbnail B: download `https://github.com/gigicolac/quiz-automation/releases/download/thumbnails/<quiz>-thumbnail-b.jpg` with curl in device bash into `~/Pictures/One More Quiz thumbnails/` (create the folder if needed), then upload it from there in Studio's file picker. If it isn't on that release, download `thumbnail-b.jpg` from the quiz's own release (`release_tag` in upload.json).
+   - **Never fall back to a title-only test.** If thumbnail B can't be uploaded, leave the video without a new test, say exactly why under "Needs attention", and try again next run.
 4. **Pin** (after release, once the record has comment_id): pin that comment (Studio > Comments, remove filters, ⋮ > Pin > Pin).
+   - **Check a pin on the public watch page**, not in Studio: open `https://www.youtube.com/watch?v=<video_id>`, scroll to the comments and look for "Pinned by @JustOneMoreQuiz" on the score comment. Studio's comment list can show a stale state for a while after a reload (on 16 Nov it showed Quiz #12 unpinned while it was pinned).
+   - Report a pin as missing only if the watch page doesn't show it on two runs in a row.
 
 ## 4. Each Short (shorts-upload.json): Giulia's standard settings
 
