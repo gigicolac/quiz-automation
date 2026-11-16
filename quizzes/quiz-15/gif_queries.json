@@ -1,0 +1,505 @@
+{
+  "allow_branded": false,
+  "queries": [
+    {
+      "n": 1,
+      "question_query": "pop star cartoon",
+      "answer_query": "white glove",
+      "match": [
+        "glove",
+        "pop",
+        "dance"
+      ]
+    },
+    {
+      "n": 2,
+      "question_query": "music notes",
+      "answer_query": "piano keys",
+      "match": [
+        "piano",
+        "keys",
+        "music"
+      ]
+    },
+    {
+      "n": 3,
+      "question_query": "vintage guitars",
+      "answer_query": "four guitars",
+      "match": [
+        "four",
+        "band",
+        "guitar"
+      ]
+    },
+    {
+      "n": 4,
+      "question_query": "golden crown",
+      "answer_query": "rock and roll",
+      "match": [
+        "rock",
+        "roll",
+        "dance"
+      ]
+    },
+    {
+      "n": 5,
+      "question_query": "dancing shoes",
+      "answer_query": "dance shoes cartoon",
+      "match": [
+        "moonwalk",
+        "moon",
+        "dance"
+      ]
+    },
+    {
+      "n": 6,
+      "question_query": "dancing queen",
+      "answer_query": "disco dance",
+      "match": [
+        "disco",
+        "dance",
+        "70s"
+      ]
+    },
+    {
+      "n": 7,
+      "question_query": "christmas tree",
+      "answer_query": "christmas singing",
+      "match": [
+        "christmas",
+        "singing",
+        "festive"
+      ]
+    },
+    {
+      "n": 8,
+      "question_query": "rock band cartoon",
+      "answer_query": "queen crown",
+      "match": [
+        "crown",
+        "rock",
+        "band"
+      ]
+    },
+    {
+      "n": 9,
+      "question_query": "acoustic guitar",
+      "answer_query": "guitar strings",
+      "match": [
+        "guitar",
+        "strings",
+        "strum"
+      ]
+    },
+    {
+      "n": 10,
+      "question_query": "dance floor",
+      "answer_query": "disco ball",
+      "match": [
+        "disco",
+        "ball",
+        "mirror"
+      ]
+    },
+    {
+      "n": 11,
+      "question_query": "k-pop cartoon",
+      "answer_query": "purple hearts",
+      "match": [
+        "purple",
+        "kpop",
+        "heart"
+      ]
+    },
+    {
+      "n": 12,
+      "question_query": "old telephone",
+      "answer_query": "golden microphone",
+      "match": [
+        "microphone",
+        "singer",
+        "hello"
+      ]
+    },
+    {
+      "n": 13,
+      "question_query": "acoustic guitar",
+      "answer_query": "guitar cartoon",
+      "match": [
+        "guitar",
+        "acoustic",
+        "strum"
+      ]
+    },
+    {
+      "n": 14,
+      "question_query": "girl power",
+      "answer_query": "fancy dress",
+      "match": [
+        "posh",
+        "fancy",
+        "dress"
+      ]
+    },
+    {
+      "n": 15,
+      "question_query": "friendship bracelets",
+      "answer_query": "sparkly guitar",
+      "match": [
+        "sparkle",
+        "guitar",
+        "glitter"
+      ]
+    },
+    {
+      "n": 16,
+      "question_query": "vinyl record",
+      "answer_query": "zombie dance",
+      "match": [
+        "zombie",
+        "dance",
+        "thriller"
+      ]
+    },
+    {
+      "n": 17,
+      "question_query": "golden trophy",
+      "answer_query": "gramophone",
+      "match": [
+        "gramophone",
+        "trophy",
+        "award"
+      ]
+    },
+    {
+      "n": 18,
+      "question_query": "hawaii beach",
+      "answer_query": "ukulele",
+      "match": [
+        "ukulele",
+        "hawaii",
+        "strum"
+      ]
+    },
+    {
+      "n": 19,
+      "question_query": "girl group cartoon",
+      "answer_query": "honey bee",
+      "match": [
+        "bee",
+        "queen",
+        "honey"
+      ]
+    },
+    {
+      "n": 20,
+      "question_query": "piano keys",
+      "answer_query": "lion roar",
+      "match": [
+        "lion",
+        "roar",
+        "cartoon"
+      ]
+    },
+    {
+      "n": 21,
+      "question_query": "submarine cartoon",
+      "answer_query": "yellow submarine",
+      "match": [
+        "yellow",
+        "submarine",
+        "sea"
+      ]
+    },
+    {
+      "n": 22,
+      "question_query": "song contest",
+      "answer_query": "flags waving",
+      "match": [
+        "flags",
+        "waving",
+        "song"
+      ]
+    },
+    {
+      "n": 23,
+      "question_query": "pop star cartoon",
+      "answer_query": "80s dance",
+      "match": [
+        "80s",
+        "dance",
+        "pop"
+      ]
+    },
+    {
+      "n": 24,
+      "question_query": "sparkle hand",
+      "answer_query": "white glove",
+      "match": [
+        "glove",
+        "sparkle",
+        "hand"
+      ]
+    },
+    {
+      "n": 25,
+      "question_query": "funky dance",
+      "answer_query": "funk dance",
+      "match": [
+        "funk",
+        "dance",
+        "groove"
+      ]
+    },
+    {
+      "n": 26,
+      "question_query": "mansion",
+      "answer_query": "memphis",
+      "match": [
+        "mansion",
+        "house",
+        "memphis"
+      ]
+    },
+    {
+      "n": 27,
+      "question_query": "marching band",
+      "answer_query": "trombone",
+      "match": [
+        "trombone",
+        "brass",
+        "slide"
+      ]
+    },
+    {
+      "n": 28,
+      "question_query": "stadium crowd",
+      "answer_query": "microphone stand",
+      "match": [
+        "microphone",
+        "stage",
+        "rock"
+      ]
+    },
+    {
+      "n": 29,
+      "question_query": "river ferry",
+      "answer_query": "liverpool docks",
+      "match": [
+        "liverpool",
+        "city",
+        "docks"
+      ]
+    },
+    {
+      "n": 30,
+      "question_query": "stadium crowd",
+      "answer_query": "clapping hands",
+      "match": [
+        "clap",
+        "stomp",
+        "crowd"
+      ]
+    },
+    {
+      "n": 31,
+      "question_query": "scoreboard",
+      "answer_query": "number twelve",
+      "match": [
+        "twelve",
+        "12",
+        "points"
+      ]
+    },
+    {
+      "n": 32,
+      "question_query": "trophy",
+      "answer_query": "sweden flag",
+      "match": [
+        "sweden",
+        "flag",
+        "swedish"
+      ]
+    },
+    {
+      "n": 33,
+      "question_query": "girl power",
+      "answer_query": "baby bottle",
+      "match": [
+        "baby",
+        "bottle",
+        "cute"
+      ]
+    },
+    {
+      "n": 34,
+      "question_query": "vinyl record",
+      "answer_query": "zebra crossing",
+      "match": [
+        "zebra",
+        "crossing",
+        "walk"
+      ]
+    },
+    {
+      "n": 35,
+      "question_query": "bug cartoon",
+      "answer_query": "beetle",
+      "match": [
+        "beetle",
+        "bug",
+        "insect"
+      ]
+    },
+    {
+      "n": 36,
+      "question_query": "light up floor",
+      "answer_query": "glowing pavement",
+      "match": [
+        "floor",
+        "light",
+        "dance"
+      ]
+    },
+    {
+      "n": 37,
+      "question_query": "play button",
+      "answer_query": "horse dance",
+      "match": [
+        "horse",
+        "dance",
+        "gallop"
+      ]
+    },
+    {
+      "n": 38,
+      "question_query": "concert crowd",
+      "answer_query": "friendship bracelets",
+      "match": [
+        "bracelet",
+        "friendship",
+        "concert"
+      ]
+    },
+    {
+      "n": 39,
+      "question_query": "number cartoon",
+      "answer_query": "birthday cake",
+      "match": [
+        "birthday",
+        "cake",
+        "candles"
+      ]
+    },
+    {
+      "n": 40,
+      "question_query": "maths symbols",
+      "answer_query": "division",
+      "match": [
+        "divide",
+        "math",
+        "calculator"
+      ]
+    },
+    {
+      "n": 41,
+      "question_query": "headphones music",
+      "answer_query": "shapes cartoon",
+      "match": [
+        "shapes",
+        "shape",
+        "triangle"
+      ]
+    },
+    {
+      "n": 42,
+      "question_query": "calendar pages",
+      "answer_query": "santa claus",
+      "match": [
+        "santa",
+        "christmas",
+        "2019"
+      ]
+    },
+    {
+      "n": 43,
+      "question_query": "winning trophy",
+      "answer_query": "swiss alps",
+      "match": [
+        "swiss",
+        "alps",
+        "switzerland"
+      ]
+    },
+    {
+      "n": 44,
+      "question_query": "love song",
+      "answer_query": "love hearts",
+      "match": [
+        "love",
+        "heart",
+        "hearts"
+      ]
+    },
+    {
+      "n": 45,
+      "question_query": "orchestra tuning",
+      "answer_query": "oboe",
+      "match": [
+        "oboe",
+        "woodwind",
+        "orchestra"
+      ]
+    },
+    {
+      "n": 46,
+      "question_query": "vinyl record",
+      "answer_query": "prism rainbow",
+      "match": [
+        "prism",
+        "rainbow",
+        "light"
+      ]
+    },
+    {
+      "n": 47,
+      "question_query": "talent show",
+      "answer_query": "golden star",
+      "match": [
+        "star",
+        "stage",
+        "talent"
+      ]
+    },
+    {
+      "n": 48,
+      "question_query": "alphabet letters",
+      "answer_query": "name tags",
+      "match": [
+        "letters",
+        "alphabet",
+        "name"
+      ]
+    },
+    {
+      "n": 49,
+      "question_query": "girl power",
+      "answer_query": "sports backflip",
+      "match": [
+        "sporty",
+        "backflip",
+        "sport"
+      ]
+    },
+    {
+      "n": 50,
+      "question_query": "marching band",
+      "answer_query": "bass drum",
+      "match": [
+        "drum",
+        "band",
+        "marching"
+      ]
+    }
+  ]
+}
