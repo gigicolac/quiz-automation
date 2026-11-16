@@ -81,12 +81,12 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "CJ3PRGEzpTzVK",
-   "user": "",
-   "title": "harry potter owl GIF",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1amRmN3RpdWx4YnVnNXAzZmJpa3QxODYwOWV0Z2dnMjE2bXVzMWg1MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CJ3PRGEzpTzVK/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/CJ3PRGEzpTzVK/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1amRmN3RpdWx4YnVnNXAzZmJpa3QxODYwOWV0Z2dnMjE2bXVzMWg1MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CJ3PRGEzpTzVK/giphy_s.gif"
+   "id": "W0I3epucnTjCYzRnKv",
+   "user": "korkeasaari",
+   "title": "Snowy Owl Birds GIF by Korkeasaari Zoo",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1amRmN3RpdWx4YnVnNXAzZmJpa3QxODYwOWV0Z2dnMjE2bXVzMWg1MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W0I3epucnTjCYzRnKv/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/W0I3epucnTjCYzRnKv/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1amRmN3RpdWx4YnVnNXAzZmJpa3QxODYwOWV0Z2dnMjE2bXVzMWg1MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W0I3epucnTjCYzRnKv/giphy_s.gif"
   }
  },
  {
@@ -328,14 +328,12 @@
    "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z3V3YXllZ213YnFtaGptcnN1MWdudTV6NmRzdnlzNGNmM2poYzZ3dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ffU2nTCOUfWnSUVc6O/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "Hv7hX2wQArwkKPrJpf",
-   "user": "coreytonge",
-   "title": "Gamer Sims GIF",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aGMyY21ybmIwdXkxZWl0dWZoYjB0dW51YzB5MWFvbWFjaTlzbnVhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Hv7hX2wQArwkKPrJpf/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/Hv7hX2wQArwkKPrJpf/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1aGMyY21ybmIwdXkxZWl0dWZoYjB0dW51YzB5MWFvbWFjaTlzbnVhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Hv7hX2wQArwkKPrJpf/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "KB8Nbefy94rneO3A3n",
+   "user": "thesims",
+   "title": "Tiny House GIF by The Sims",
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1aGMyY21ybmIwdXkxZWl0dWZoYjB0dW51YzB5MWFvbWFjaTlzbnVhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KB8Nbefy94rneO3A3n/giphy_s.gif"
   }
  },
  {
@@ -362,14 +360,12 @@
  {
   "n": 17,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "d2Z7NqwF3yImFNHW",
+   "source": "giphy_still",
+   "type": "image",
+   "id": "901ojwtVHZAze",
    "user": "",
-   "title": "Video Games 90S GIF",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ajVmNGk1aTZ5dmgwNmsxbGFvbXd3bWZiZzY5YzY5eDBjczlwN3g3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/d2Z7NqwF3yImFNHW/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/d2Z7NqwF3yImFNHW/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1ajVmNGk1aTZ5dmgwNmsxbGFvbXd3bWZiZzY5YzY5eDBjczlwN3g3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/d2Z7NqwF3yImFNHW/giphy_s.gif"
+   "title": "Video Game Controller GIF",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ajVmNGk1aTZ5dmgwNmsxbGFvbXd3bWZiZzY5YzY5eDBjczlwN3g3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/901ojwtVHZAze/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -665,12 +661,12 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "4HvvtdXIaUJgbG4shG",
-   "user": "bunchgames",
-   "title": "Animated GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1MDF3dXczN3ZkYnN0YWVjZWoxbWN3dmRubXh1eWhpdXA5a2w0dHdsbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4HvvtdXIaUJgbG4shG/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/4HvvtdXIaUJgbG4shG/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1MDF3dXczN3ZkYnN0YWVjZWoxbWN3dmRubXh1eWhpdXA5a2w0dHdsbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4HvvtdXIaUJgbG4shG/giphy_s.gif"
+   "id": "3ilAlREEGJED7eaB49",
+   "user": "intoaction",
+   "title": "Phone Tech GIF by INTO ACTION",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MDF3dXczN3ZkYnN0YWVjZWoxbWN3dmRubXh1eWhpdXA5a2w0dHdsbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ilAlREEGJED7eaB49/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/3ilAlREEGJED7eaB49/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MDF3dXczN3ZkYnN0YWVjZWoxbWN3dmRubXh1eWhpdXA5a2w0dHdsbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ilAlREEGJED7eaB49/giphy_s.gif"
   }
  },
  {
@@ -688,12 +684,12 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "vaBFRW5Saq9aw",
-   "user": "beeldengeluid",
-   "title": "Puzzle Crossword GIF by Beeld en Geluid",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHl3bXIwdmM5eXd2aGdtOGN2ejZnemV0OTNsY2FkejY5eGxla3V5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vaBFRW5Saq9aw/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/vaBFRW5Saq9aw/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHl3bXIwdmM5eXd2aGdtOGN2ejZnemV0OTNsY2FkejY5eGxla3V5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vaBFRW5Saq9aw/giphy_s.gif"
+   "id": "17EUIjkxrxeIo",
+   "user": "",
+   "title": "Art Design Puzzle GIF",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHl3bXIwdmM5eXd2aGdtOGN2ejZnemV0OTNsY2FkejY5eGxla3V5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/17EUIjkxrxeIo/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/17EUIjkxrxeIo/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eHl3bXIwdmM5eXd2aGdtOGN2ejZnemV0OTNsY2FkejY5eGxla3V5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/17EUIjkxrxeIo/giphy_s.gif"
   }
  },
  {
