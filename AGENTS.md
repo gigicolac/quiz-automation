@@ -116,7 +116,9 @@ this workflow. You need to be fully autonomous."
 - GitHub repository secrets and variables affect multiple branches. Coordinate
   changes and describe their effect; a task branch does not isolate settings.
 - Never commit credentials, refresh tokens, client_secret.json, private setup
-  output, or generated media. Stage intended files explicitly and inspect the
+  output, or generated media. One exception: the `studio-thumbnails` branch holds
+  copies of the A/B thumbnail JPEGs (and nothing else) so YouTube Studio can load
+  them; scripts/publish_studio_thumbnails.sh writes it. Stage intended files explicitly and inspect the
   staged diff before committing. Keep credentials out of logs and chat.
 - Preserve source media, quiz files and their metadata. Do not mark a quiz,
   question, GIF or voice take approved without actual review evidence.
