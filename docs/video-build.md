@@ -24,7 +24,7 @@ The slides come from Canva. Everything you hear is added in GitHub by `.github/w
    - **Intro and "Drop your score" slides** are held on their last frame until their lines finish.
    - **Ending slide:** the hooray plays at the start, then four outro lines are timed to the slide's animation (set in `config/video.json`): "How did you go?" at 1.8 s, "Drop your score…" at 4.9 s, "like and subscribe" at 8.2 s and "One more quiz?…" at 14.7 s. The slide plays in full, about 26 s.
 7. Mixes the audio:
-   - Canva's own audio is dropped, apart from the buzzer: the countdown's "time's up" buzzer (10 s into each question page) is kept, levelled to about −19 dBFS.
+   - Canva's own audio is dropped, apart from the buzzer: the countdown's "time's up" buzzer (10 s into each question page) is kept, levelled to about −19 dBFS. If a page has no buzzer in Canva's audio (Quiz #13's export was quiet from Q38 on), the nearest earlier buzzer is reused and the build report notes it ("no buzzer in the Canva audio; reused q37's"); that note is not a fault.
    - Music runs under the whole video at about 13 dB below the voice. It dips a further 6 dB while someone is speaking and fades in and out over 3 s.
 8. Writes captions (`.srt`) from the voiceover timings.
 9. Uploads the video, captions, `voiceover.json` and `build_report.json` to a **draft** release `<quiz>-preview-<run>`. Drafts are visible only to repo collaborators.
