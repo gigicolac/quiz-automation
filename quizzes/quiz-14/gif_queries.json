@@ -1,0 +1,565 @@
+{
+  "allow_branded": true,
+  "queries": [
+    {
+      "n": 1,
+      "question_query": "spongebob squarepants",
+      "answer_query": "spongebob pineapple",
+      "match": [
+        "spongebob",
+        "pineapple",
+        "squarepants"
+      ],
+      "film": "SpongeBob SquarePants"
+    },
+    {
+      "n": 2,
+      "question_query": "tom cat cartoon",
+      "answer_query": "jerry mouse",
+      "match": [
+        "tom",
+        "jerry",
+        "mouse"
+      ],
+      "film": "Tom and Jerry"
+    },
+    {
+      "n": 3,
+      "question_query": "bugs bunny carrot",
+      "answer_query": "whats up doc",
+      "match": [
+        "bugs",
+        "bunny",
+        "doc"
+      ],
+      "film": "Looney Tunes"
+    },
+    {
+      "n": 4,
+      "question_query": "pokemon ash",
+      "answer_query": "pikachu",
+      "match": [
+        "pikachu",
+        "pokemon",
+        "ash"
+      ],
+      "film": "Pokémon"
+    },
+    {
+      "n": 5,
+      "question_query": "peppa pig",
+      "answer_query": "george pig dinosaur",
+      "match": [
+        "peppa",
+        "george",
+        "pig"
+      ],
+      "film": "Peppa Pig"
+    },
+    {
+      "n": 6,
+      "question_query": "scooby doo",
+      "answer_query": "great dane",
+      "match": [
+        "scooby",
+        "doo",
+        "dog"
+      ],
+      "film": "Scooby-Doo"
+    },
+    {
+      "n": 7,
+      "question_query": "ninja turtles",
+      "answer_query": "ninja turtles pizza",
+      "match": [
+        "ninja",
+        "turtles",
+        "pizza",
+        "tmnt"
+      ],
+      "film": "Teenage Mutant Ninja Turtles"
+    },
+    {
+      "n": 8,
+      "question_query": "the simpsons",
+      "answer_query": "springfield simpsons",
+      "match": [
+        "simpsons",
+        "springfield",
+        "homer"
+      ],
+      "film": "The Simpsons"
+    },
+    {
+      "n": 9,
+      "question_query": "garfield cat",
+      "answer_query": "garfield monday",
+      "match": [
+        "garfield",
+        "monday",
+        "cat"
+      ],
+      "film": "Garfield and Friends"
+    },
+    {
+      "n": 10,
+      "question_query": "popeye sailor",
+      "answer_query": "popeye spinach",
+      "match": [
+        "popeye",
+        "spinach",
+        "sailor"
+      ],
+      "film": "Popeye"
+    },
+    {
+      "n": 11,
+      "question_query": "puppy dog cartoon",
+      "answer_query": "bluey",
+      "match": [
+        "bluey",
+        "bingo",
+        "heeler"
+      ],
+      "film": "Bluey"
+    },
+    {
+      "n": 12,
+      "question_query": "scooby doo gang",
+      "answer_query": "mystery machine",
+      "match": [
+        "scooby",
+        "mystery",
+        "machine",
+        "van"
+      ],
+      "film": "Scooby-Doo"
+    },
+    {
+      "n": 13,
+      "question_query": "flintstones",
+      "answer_query": "bedrock flintstones",
+      "match": [
+        "flintstones",
+        "bedrock",
+        "fred"
+      ],
+      "film": "The Flintstones"
+    },
+    {
+      "n": 14,
+      "question_query": "tweety bird",
+      "answer_query": "sylvester cat",
+      "match": [
+        "sylvester",
+        "tweety",
+        "looney"
+      ],
+      "film": "Looney Tunes"
+    },
+    {
+      "n": 15,
+      "question_query": "paw patrol",
+      "answer_query": "paw patrol ryder",
+      "match": [
+        "paw",
+        "patrol",
+        "ryder"
+      ],
+      "film": "Paw Patrol"
+    },
+    {
+      "n": 16,
+      "question_query": "dora explorer",
+      "answer_query": "dora boots monkey",
+      "match": [
+        "dora",
+        "boots",
+        "explorer"
+      ],
+      "film": "Dora the Explorer"
+    },
+    {
+      "n": 17,
+      "question_query": "spongebob pet",
+      "answer_query": "gary snail",
+      "match": [
+        "spongebob",
+        "gary",
+        "snail"
+      ],
+      "film": "SpongeBob SquarePants"
+    },
+    {
+      "n": 18,
+      "question_query": "lisa simpson",
+      "answer_query": "lisa saxophone",
+      "match": [
+        "lisa",
+        "simpson",
+        "saxophone"
+      ],
+      "film": "The Simpsons"
+    },
+    {
+      "n": 19,
+      "question_query": "train station cartoon",
+      "answer_query": "thomas tank engine",
+      "match": [
+        "thomas",
+        "tank",
+        "engine",
+        "train"
+      ],
+      "film": "Thomas & Friends"
+    },
+    {
+      "n": 20,
+      "question_query": "ninja turtles",
+      "answer_query": "leonardo ninja turtle",
+      "match": [
+        "leonardo",
+        "ninja",
+        "turtles",
+        "tmnt"
+      ],
+      "film": "Teenage Mutant Ninja Turtles"
+    },
+    {
+      "n": 21,
+      "question_query": "ninja turtles sensei",
+      "answer_query": "splinter rat",
+      "match": [
+        "splinter",
+        "ninja",
+        "turtles"
+      ],
+      "film": "Teenage Mutant Ninja Turtles"
+    },
+    {
+      "n": 22,
+      "question_query": "road runner",
+      "answer_query": "beep beep",
+      "match": [
+        "road",
+        "runner",
+        "beep",
+        "coyote"
+      ],
+      "film": "Looney Tunes"
+    },
+    {
+      "n": 23,
+      "question_query": "scooby doo glasses",
+      "answer_query": "velma scooby",
+      "match": [
+        "velma",
+        "scooby",
+        "jinkies"
+      ],
+      "film": "Scooby-Doo"
+    },
+    {
+      "n": 24,
+      "question_query": "the jetsons",
+      "answer_query": "astro jetsons",
+      "match": [
+        "jetsons",
+        "astro",
+        "dog"
+      ],
+      "film": "The Jetsons"
+    },
+    {
+      "n": 25,
+      "question_query": "reading book cartoon",
+      "answer_query": "arthur aardvark",
+      "match": [
+        "arthur",
+        "aardvark",
+        "read"
+      ],
+      "film": "Arthur"
+    },
+    {
+      "n": 26,
+      "question_query": "flintstones fred",
+      "answer_query": "dino flintstones",
+      "match": [
+        "dino",
+        "flintstones",
+        "fred"
+      ],
+      "film": "The Flintstones"
+    },
+    {
+      "n": 27,
+      "question_query": "clarinet",
+      "answer_query": "squidward",
+      "match": [
+        "squidward",
+        "spongebob",
+        "clarinet"
+      ],
+      "film": "SpongeBob SquarePants"
+    },
+    {
+      "n": 28,
+      "question_query": "phineas and ferb",
+      "answer_query": "perry platypus",
+      "match": [
+        "perry",
+        "platypus",
+        "phineas",
+        "ferb"
+      ],
+      "film": "Phineas and Ferb"
+    },
+    {
+      "n": 29,
+      "question_query": "powerpuff girls",
+      "answer_query": "bubbles powerpuff",
+      "match": [
+        "powerpuff",
+        "bubbles",
+        "girls"
+      ],
+      "film": "The Powerpuff Girls"
+    },
+    {
+      "n": 30,
+      "question_query": "rugrats",
+      "answer_query": "angelica rugrats",
+      "match": [
+        "rugrats",
+        "angelica",
+        "tommy"
+      ],
+      "film": "Rugrats"
+    },
+    {
+      "n": 31,
+      "question_query": "avatar aang",
+      "answer_query": "appa bison",
+      "match": [
+        "appa",
+        "avatar",
+        "aang"
+      ],
+      "film": "Avatar: The Last Airbender"
+    },
+    {
+      "n": 32,
+      "question_query": "avatar katara",
+      "answer_query": "waterbending",
+      "match": [
+        "katara",
+        "avatar",
+        "water"
+      ],
+      "film": "Avatar: The Last Airbender"
+    },
+    {
+      "n": 33,
+      "question_query": "simpsons neighbour",
+      "answer_query": "ned flanders",
+      "match": [
+        "ned",
+        "flanders",
+        "simpsons"
+      ],
+      "film": "The Simpsons"
+    },
+    {
+      "n": 34,
+      "question_query": "tornado spin",
+      "answer_query": "taz looney tunes",
+      "match": [
+        "taz",
+        "tasmanian",
+        "devil",
+        "looney"
+      ],
+      "film": "Looney Tunes"
+    },
+    {
+      "n": 35,
+      "question_query": "picnic basket",
+      "answer_query": "yogi bear",
+      "match": [
+        "yogi",
+        "bear",
+        "jellystone"
+      ],
+      "film": "Yogi Bear"
+    },
+    {
+      "n": 36,
+      "question_query": "bugs bunny",
+      "answer_query": "elmer fudd",
+      "match": [
+        "elmer",
+        "fudd",
+        "bugs"
+      ],
+      "film": "Looney Tunes"
+    },
+    {
+      "n": 37,
+      "question_query": "team rocket",
+      "answer_query": "meowth",
+      "match": [
+        "meowth",
+        "team",
+        "rocket",
+        "pokemon"
+      ],
+      "film": "Pokémon"
+    },
+    {
+      "n": 38,
+      "question_query": "dexters laboratory",
+      "answer_query": "dee dee dexter",
+      "match": [
+        "dexter",
+        "dee",
+        "laboratory"
+      ],
+      "film": "Dexter's Laboratory"
+    },
+    {
+      "n": 39,
+      "question_query": "the smurfs",
+      "answer_query": "gargamel",
+      "match": [
+        "smurfs",
+        "gargamel",
+        "smurf"
+      ],
+      "film": "The Smurfs"
+    },
+    {
+      "n": 40,
+      "question_query": "bluey bingo",
+      "answer_query": "bandit bluey",
+      "match": [
+        "bluey",
+        "bandit",
+        "heeler"
+      ],
+      "film": "Bluey"
+    },
+    {
+      "n": 41,
+      "question_query": "hey arnold",
+      "answer_query": "american football",
+      "match": [
+        "arnold",
+        "hey",
+        "football"
+      ],
+      "film": "Hey Arnold!"
+    },
+    {
+      "n": 42,
+      "question_query": "perry agent p",
+      "answer_query": "doofenshmirtz",
+      "match": [
+        "doofenshmirtz",
+        "perry",
+        "phineas"
+      ],
+      "film": "Phineas and Ferb"
+    },
+    {
+      "n": 43,
+      "question_query": "powerpuff girls flying",
+      "answer_query": "townsville",
+      "match": [
+        "powerpuff",
+        "townsville",
+        "girls"
+      ],
+      "film": "The Powerpuff Girls"
+    },
+    {
+      "n": 44,
+      "question_query": "simpsons dog",
+      "answer_query": "santas little helper",
+      "match": [
+        "santa",
+        "helper",
+        "simpsons",
+        "dog"
+      ],
+      "film": "The Simpsons"
+    },
+    {
+      "n": 45,
+      "question_query": "sandy cheeks",
+      "answer_query": "texas cowboy",
+      "match": [
+        "sandy",
+        "cheeks",
+        "spongebob",
+        "texas"
+      ],
+      "film": "SpongeBob SquarePants"
+    },
+    {
+      "n": 46,
+      "question_query": "pokedex",
+      "answer_query": "bulbasaur",
+      "match": [
+        "bulbasaur",
+        "pokemon"
+      ],
+      "film": "Pokémon"
+    },
+    {
+      "n": 47,
+      "question_query": "jetsons",
+      "answer_query": "rosie robot jetsons",
+      "match": [
+        "rosie",
+        "robot",
+        "jetsons"
+      ],
+      "film": "The Jetsons"
+    },
+    {
+      "n": 48,
+      "question_query": "shaggy scooby",
+      "answer_query": "shaggy rogers",
+      "match": [
+        "shaggy",
+        "scooby",
+        "norville"
+      ],
+      "film": "Scooby-Doo"
+    },
+    {
+      "n": 49,
+      "question_query": "rugrats tommy",
+      "answer_query": "screwdriver",
+      "match": [
+        "rugrats",
+        "tommy",
+        "screwdriver"
+      ],
+      "film": "Rugrats"
+    },
+    {
+      "n": 50,
+      "question_query": "adventure time",
+      "answer_query": "candy kingdom",
+      "match": [
+        "adventure",
+        "time",
+        "finn",
+        "jake"
+      ],
+      "film": "Adventure Time"
+    }
+  ]
+}

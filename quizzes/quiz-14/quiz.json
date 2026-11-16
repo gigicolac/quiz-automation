@@ -1,0 +1,333 @@
+{
+ "id": "quiz-14",
+ "number": 14,
+ "series": "TV",
+ "category": "TV",
+ "topic": "Cartoons (animated TV series)",
+ "difficulty": "medium",
+ "title": "How Well Do You REALLY Know Cartoons? 📺 50 Cartoon Trivia Questions | TV Quiz #14",
+ "description_hook": "📺 From Bikini Bottom to Bedrock: 50 cartoon questions that'll sort the Saturday-morning superfans from the channel-surfers.",
+ "thumbnail_tagline": "Only REAL cartoon fans would know",
+ "tags": [
+  "cartoon quiz",
+  "cartoon character quiz",
+  "cartoon trivia",
+  "tv show quiz",
+  "tv quiz",
+  "tv series quiz",
+  "2000s cartoon quiz",
+  "spongebob quiz",
+  "scooby doo quiz",
+  "nostalgia quiz"
+ ],
+ "status": "questions_written",
+ "review": {
+  "questions": {
+   "decision": "auto-approved",
+   "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 16 Nov 2026 (weekly run), web-checked where unsure. Medium difficulty trial (Q1-5 easy, hardest Q36-50). Family-friendly; GIF searches avoid real people's faces."
+  }
+ },
+ "tags_research": "vidIQ keyword research 16 Nov 2026: 'cartoon quiz' ~18.4k searches/month (competition 26), 'cartoon character quiz' ~4.6k (45), '2000s cartoon quiz' low volume (15); weekly report 16 Nov: 'tv show quiz' ~12k (32), 'tv quiz' ~4.6k, 'tv series quiz' ~4.1k (24). Cartoons chosen for TV so the GIFs show animated characters, not real faces. vidIQ score_title 95.",
+ "questions": [
+  {
+   "n": 1,
+   "question": "What kind of house does SpongeBob SquarePants live in, under the sea?",
+   "answer": "A pineapple! 🍍",
+   "reveal": "SpongeBob's pineapple home sits in the undersea town of Bikini Bottom."
+  },
+  {
+   "n": 2,
+   "question": "In Tom and Jerry, what kind of animal is Jerry?",
+   "answer": "A mouse! 🐭",
+   "reveal": "Tom and Jerry first appeared in 1940, in a cartoon called Puss Gets the Boot."
+  },
+  {
+   "n": 3,
+   "question": "Which famous question does Bugs Bunny ask while munching a carrot?",
+   "answer": "\"What's up, Doc?\" 🥕",
+   "reveal": "Bugs first said his famous line in the 1940 cartoon A Wild Hare."
+  },
+  {
+   "n": 4,
+   "question": "What is the name of Ash's yellow electric Pokémon best friend?",
+   "answer": "Pikachu! ⚡",
+   "reveal": "Pikachu is number 25 in the National Pokédex."
+  },
+  {
+   "n": 5,
+   "question": "In Peppa Pig, what is the name of Peppa's little brother?",
+   "answer": "George! 🦖",
+   "reveal": "George loves his toy dinosaur and proudly shouts \"Dine-saw! Grrr!\""
+  },
+  {
+   "n": 6,
+   "question": "What breed of dog is Scooby-Doo?",
+   "answer": "A Great Dane! 🐕",
+   "reveal": "Scooby-Doo, Where Are You! first aired in 1969."
+  },
+  {
+   "n": 7,
+   "question": "What is the Teenage Mutant Ninja Turtles' favourite food?",
+   "answer": "Pizza! 🍕",
+   "reveal": "The turtles live in the sewers under New York City."
+  },
+  {
+   "n": 8,
+   "question": "In which town do The Simpsons live?",
+   "answer": "Springfield! 🍩",
+   "reveal": "The show never says which US state Springfield is in."
+  },
+  {
+   "n": 9,
+   "question": "Which day of the week does Garfield the cat famously hate?",
+   "answer": "Mondays! 📅",
+   "reveal": "Garfield also adores lasagne and hates diets."
+  },
+  {
+   "n": 10,
+   "question": "What does Popeye the Sailor eat to become super strong?",
+   "answer": "Spinach! 🥬",
+   "reveal": "Popeye first appeared in a newspaper comic strip called Thimble Theatre in 1929."
+  },
+  {
+   "n": 11,
+   "question": "Which Australian cartoon follows a Blue Heeler puppy and her little sister, Bingo?",
+   "answer": "Bluey! 💙",
+   "reveal": "Bluey is made by Ludo Studio in Brisbane, Queensland."
+  },
+  {
+   "n": 12,
+   "question": "What is the name of the Scooby-Doo gang's colourful van?",
+   "answer": "The Mystery Machine! 🚐",
+   "reveal": "The gang call themselves Mystery Incorporated."
+  },
+  {
+   "n": 13,
+   "question": "What is the name of the Flintstones' Stone Age hometown?",
+   "answer": "Bedrock! 🪨",
+   "reveal": "In 1960, The Flintstones became the first animated series shown in US prime time."
+  },
+  {
+   "n": 14,
+   "question": "Which Looney Tunes cat is forever trying to catch Tweety Bird?",
+   "answer": "Sylvester! 🐱",
+   "reveal": "Tweety's catchphrase is \"I tawt I taw a puddy tat!\""
+  },
+  {
+   "n": 15,
+   "question": "In Paw Patrol, what is the name of the boy who leads the pups?",
+   "answer": "Ryder! 🐾",
+   "reveal": "Paw Patrol is set in a seaside town called Adventure Bay."
+  },
+  {
+   "n": 16,
+   "question": "In Dora the Explorer, what is the name of Dora's monkey friend?",
+   "answer": "Boots! 🐒",
+   "reveal": "Boots is named after the red boots he loves to wear."
+  },
+  {
+   "n": 17,
+   "question": "What is the name of SpongeBob's pet snail?",
+   "answer": "Gary! 🐌",
+   "reveal": "Gary the snail meows just like a cat."
+  },
+  {
+   "n": 18,
+   "question": "Which musical instrument does Lisa Simpson play?",
+   "answer": "The saxophone! 🎷",
+   "reveal": "Lisa is the brainiest Simpson and is also a vegetarian."
+  },
+  {
+   "n": 19,
+   "question": "What colour is Thomas the Tank Engine?",
+   "answer": "Blue! 🚂",
+   "reveal": "Thomas has the number 1 painted on his side."
+  },
+  {
+   "n": 20,
+   "question": "Which Ninja Turtle wears a blue mask and fights with two swords?",
+   "answer": "Leonardo! 🐢",
+   "reveal": "All four turtles are named after Italian Renaissance artists."
+  },
+  {
+   "n": 21,
+   "question": "What kind of animal is Splinter, the Ninja Turtles' wise old teacher?",
+   "answer": "A rat! 🐀",
+   "reveal": "Splinter teaches the turtles the martial art of ninjutsu."
+  },
+  {
+   "n": 22,
+   "question": "What sound does the Road Runner make as he speeds away?",
+   "answer": "\"Beep beep!\" 🐦",
+   "reveal": "Wile E. Coyote buys his gadgets from the Acme Corporation."
+  },
+  {
+   "n": 23,
+   "question": "Which Scooby-Doo character with glasses always cries \"Jinkies!\"?",
+   "answer": "Velma! 👓",
+   "reveal": "Velma is the brains of the gang and is always losing her glasses."
+  },
+  {
+   "n": 24,
+   "question": "What is the name of The Jetsons' pet dog?",
+   "answer": "Astro! 🐶",
+   "reveal": "Astro was voiced by Don Messick, who also voiced Scooby-Doo."
+  },
+  {
+   "n": 25,
+   "question": "In the cartoon Arthur, what kind of animal is Arthur?",
+   "answer": "An aardvark! 📚",
+   "reveal": "Arthur is based on books by Marc Brown, starting with Arthur's Nose in 1976."
+  },
+  {
+   "n": 26,
+   "question": "What is the name of the Flintstones' purple pet dinosaur?",
+   "answer": "Dino! 🦕",
+   "reveal": "Dino barks and behaves just like a pet dog."
+  },
+  {
+   "n": 27,
+   "question": "Who is SpongeBob's grumpy next-door neighbour who plays the clarinet?",
+   "answer": "Squidward! 🦑",
+   "reveal": "Squidward lives in a house shaped like an Easter Island head."
+  },
+  {
+   "n": 28,
+   "question": "In Phineas and Ferb, what kind of animal is Perry the secret agent?",
+   "answer": "A platypus! 🎩",
+   "reveal": "When he's on a mission, Perry is known as Agent P."
+  },
+  {
+   "n": 29,
+   "question": "Which Powerpuff Girl has blonde pigtails and wears blue?",
+   "answer": "Bubbles! 🫧",
+   "reveal": "The girls were made from sugar, spice, everything nice and Chemical X."
+  },
+  {
+   "n": 30,
+   "question": "In Rugrats, what is the name of Tommy Pickles' bossy older cousin?",
+   "answer": "Angelica! 👑",
+   "reveal": "Angelica's favourite doll is called Cynthia."
+  },
+  {
+   "n": 31,
+   "question": "In Avatar: The Last Airbender, what is the name of Aang's flying bison?",
+   "answer": "Appa! 🦬",
+   "reveal": "Appa the sky bison has six legs."
+  },
+  {
+   "n": 32,
+   "question": "In Avatar: The Last Airbender, which element can Katara bend?",
+   "answer": "Water! 💧",
+   "reveal": "Katara and her brother Sokka are from the Southern Water Tribe."
+  },
+  {
+   "n": 33,
+   "question": "What is the name of the Simpsons' cheerful neighbour who says \"Hi-diddly-ho!\"?",
+   "answer": "Ned Flanders! 🏠",
+   "reveal": "Ned runs a shop for left-handed people called the Leftorium."
+  },
+  {
+   "n": 34,
+   "question": "What is the nickname of the spinning Looney Tunes Tasmanian Devil?",
+   "answer": "Taz! 🌪️",
+   "reveal": "Real Tasmanian devils are the world's largest meat-eating marsupials."
+  },
+  {
+   "n": 35,
+   "question": "Which cartoon bear lives in Jellystone Park and loves pic-a-nic baskets?",
+   "answer": "Yogi Bear! 🐻",
+   "reveal": "Yogi's little sidekick is a bear cub called Boo-Boo."
+  },
+  {
+   "n": 36,
+   "question": "Which Looney Tunes hunter is always trying to catch Bugs Bunny?",
+   "answer": "Elmer Fudd! 🤫",
+   "reveal": "Elmer famously whispers \"Be vewy, vewy quiet, I'm hunting wabbits!\""
+  },
+  {
+   "n": 37,
+   "question": "What is the name of Team Rocket's talking cat Pokémon?",
+   "answer": "Meowth! 😼",
+   "reveal": "Meowth's partners in Team Rocket are Jessie and James."
+  },
+  {
+   "n": 38,
+   "question": "What is the name of Dexter's annoying ballet-loving big sister in Dexter's Laboratory?",
+   "answer": "Dee Dee! 🩰",
+   "reveal": "Dexter keeps his giant laboratory a secret from his parents."
+  },
+  {
+   "n": 39,
+   "question": "What is the name of the evil wizard who's always chasing The Smurfs?",
+   "answer": "Gargamel! 🧙",
+   "reveal": "Gargamel's grumpy pet cat is called Azrael."
+  },
+  {
+   "n": 40,
+   "question": "In Bluey, what is the name of Bluey's dad?",
+   "answer": "Bandit! 🦴",
+   "reveal": "Bandit works as an archaeologist, and mum Chilli works in airport security."
+  },
+  {
+   "n": 41,
+   "question": "In Hey Arnold!, what shape is Arnold's head said to be?",
+   "answer": "A football! 🏈",
+   "reveal": "Arnold lives with his grandparents in a boarding house called the Sunset Arms."
+  },
+  {
+   "n": 42,
+   "question": "Who is the evil scientist that Perry the Platypus battles in Phineas and Ferb?",
+   "answer": "Doofenshmirtz! 🧪",
+   "reveal": "Doofenshmirtz's company is called Doofenshmirtz Evil Incorporated."
+  },
+  {
+   "n": 43,
+   "question": "Which city do the Powerpuff Girls protect?",
+   "answer": "Townsville! 🏙️",
+   "reveal": "The girls live with their creator, Professor Utonium."
+  },
+  {
+   "n": 44,
+   "question": "What is the name of the Simpsons' pet greyhound?",
+   "answer": "Santa's Little Helper! 🎅",
+   "reveal": "Homer and Bart adopted him after he lost a race in the very first full episode."
+  },
+  {
+   "n": 45,
+   "question": "Sandy Cheeks the squirrel comes from which US state?",
+   "answer": "Texas! 🤠",
+   "reveal": "Sandy wears an air helmet so she can breathe underwater in Bikini Bottom."
+  },
+  {
+   "n": 46,
+   "question": "Which grass-type Pokémon is number 1 in the National Pokédex?",
+   "answer": "Bulbasaur! 🌱",
+   "reveal": "Bulbasaur evolves into Ivysaur and then Venusaur."
+  },
+  {
+   "n": 47,
+   "question": "What is the name of The Jetsons' robot maid?",
+   "answer": "Rosie! 🤖",
+   "reveal": "The Jetsons first aired in 1962 and imagined life in the space age."
+  },
+  {
+   "n": 48,
+   "question": "What is Shaggy's real first name in Scooby-Doo?",
+   "answer": "Norville! 🥪",
+   "reveal": "His full name is Norville Rogers, but everyone calls him Shaggy."
+  },
+  {
+   "n": 49,
+   "question": "What toy tool does Tommy Pickles use to escape his playpen in Rugrats?",
+   "answer": "A screwdriver! 🪛",
+   "reveal": "Tommy still carries his trusty toy screwdriver in the spin-off All Grown Up!"
+  },
+  {
+   "n": 50,
+   "question": "In Adventure Time, what is the name of the magical land where Finn and Jake live?",
+   "answer": "The Land of Ooo! 🍭",
+   "reveal": "Finn's best friend Jake is a magical dog who can stretch into almost any shape."
+  }
+ ]
+}
