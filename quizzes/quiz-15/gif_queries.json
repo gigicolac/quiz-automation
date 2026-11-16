@@ -3,8 +3,8 @@
   "queries": [
     {
       "n": 1,
-      "question_query": "pop star cartoon",
-      "answer_query": "white glove",
+      "question_query": "music notes animation",
+      "answer_query": "golden crown animation",
       "match": [
         "glove",
         "pop",
@@ -23,8 +23,8 @@
     },
     {
       "n": 3,
-      "question_query": "vintage guitars",
-      "answer_query": "four guitars",
+      "question_query": "guitar illustration",
+      "answer_query": "number 4 animation",
       "match": [
         "four",
         "band",
@@ -33,8 +33,8 @@
     },
     {
       "n": 4,
-      "question_query": "golden crown",
-      "answer_query": "rock and roll",
+      "question_query": "crown cartoon",
+      "answer_query": "jukebox",
       "match": [
         "rock",
         "roll",
@@ -43,8 +43,8 @@
     },
     {
       "n": 5,
-      "question_query": "dancing shoes",
-      "answer_query": "dance shoes cartoon",
+      "question_query": "dancing shoes cartoon",
+      "answer_query": "moon cartoon",
       "match": [
         "moonwalk",
         "moon",
@@ -53,8 +53,8 @@
     },
     {
       "n": 6,
-      "question_query": "dancing queen",
-      "answer_query": "disco dance",
+      "question_query": "disco animation",
+      "answer_query": "70s disco cartoon",
       "match": [
         "disco",
         "dance",
@@ -64,7 +64,7 @@
     {
       "n": 7,
       "question_query": "christmas tree",
-      "answer_query": "christmas singing",
+      "answer_query": "christmas bells animation",
       "match": [
         "christmas",
         "singing",
@@ -83,7 +83,7 @@
     },
     {
       "n": 9,
-      "question_query": "acoustic guitar",
+      "question_query": "acoustic guitar illustration",
       "answer_query": "guitar strings",
       "match": [
         "guitar",
@@ -93,7 +93,7 @@
     },
     {
       "n": 10,
-      "question_query": "dance floor",
+      "question_query": "dance floor animation",
       "answer_query": "disco ball",
       "match": [
         "disco",
@@ -103,7 +103,7 @@
     },
     {
       "n": 11,
-      "question_query": "k-pop cartoon",
+      "question_query": "korea flag animation",
       "answer_query": "purple hearts",
       "match": [
         "purple",
@@ -114,7 +114,7 @@
     {
       "n": 12,
       "question_query": "old telephone",
-      "answer_query": "golden microphone",
+      "answer_query": "microphone illustration",
       "match": [
         "microphone",
         "singer",
@@ -123,7 +123,7 @@
     },
     {
       "n": 13,
-      "question_query": "acoustic guitar",
+      "question_query": "guitar cartoon",
       "answer_query": "guitar cartoon",
       "match": [
         "guitar",
@@ -133,8 +133,8 @@
     },
     {
       "n": 14,
-      "question_query": "girl power",
-      "answer_query": "fancy dress",
+      "question_query": "girl power cartoon",
+      "answer_query": "designer handbag",
       "match": [
         "posh",
         "fancy",
@@ -143,8 +143,8 @@
     },
     {
       "n": 15,
-      "question_query": "friendship bracelets",
-      "answer_query": "sparkly guitar",
+      "question_query": "friendship bracelet beads",
+      "answer_query": "sparkly guitar cartoon",
       "match": [
         "sparkle",
         "guitar",
@@ -153,8 +153,8 @@
     },
     {
       "n": 16,
-      "question_query": "vinyl record",
-      "answer_query": "zombie dance",
+      "question_query": "vinyl record spinning animation",
+      "answer_query": "gold record award",
       "match": [
         "zombie",
         "dance",
@@ -163,7 +163,7 @@
     },
     {
       "n": 17,
-      "question_query": "golden trophy",
+      "question_query": "golden trophy animation",
       "answer_query": "gramophone",
       "match": [
         "gramophone",
@@ -173,8 +173,8 @@
     },
     {
       "n": 18,
-      "question_query": "hawaii beach",
-      "answer_query": "ukulele",
+      "question_query": "hawaii beach animation",
+      "answer_query": "ukulele cartoon",
       "match": [
         "ukulele",
         "hawaii",
@@ -183,7 +183,7 @@
     },
     {
       "n": 19,
-      "question_query": "girl group cartoon",
+      "question_query": "microphone cartoon",
       "answer_query": "honey bee",
       "match": [
         "bee",
@@ -193,8 +193,8 @@
     },
     {
       "n": 20,
-      "question_query": "piano keys",
-      "answer_query": "lion roar",
+      "question_query": "piano cartoon",
+      "answer_query": "lion cartoon",
       "match": [
         "lion",
         "roar",
@@ -203,8 +203,8 @@
     },
     {
       "n": 21,
-      "question_query": "submarine cartoon",
-      "answer_query": "yellow submarine",
+      "question_query": "submarine animation",
+      "answer_query": "yellow submarine cartoon",
       "match": [
         "yellow",
         "submarine",
@@ -213,8 +213,8 @@
     },
     {
       "n": 22,
-      "question_query": "song contest",
-      "answer_query": "flags waving",
+      "question_query": "world flags animation",
+      "answer_query": "europe map animation",
       "match": [
         "flags",
         "waving",
@@ -223,8 +223,8 @@
     },
     {
       "n": 23,
-      "question_query": "pop star cartoon",
-      "answer_query": "80s dance",
+      "question_query": "80s cassette tape",
+      "answer_query": "80s neon animation",
       "match": [
         "80s",
         "dance",
@@ -233,8 +233,8 @@
     },
     {
       "n": 24,
-      "question_query": "sparkle hand",
-      "answer_query": "white glove",
+      "question_query": "sparkle animation",
+      "answer_query": "white glove cartoon",
       "match": [
         "glove",
         "sparkle",
@@ -243,8 +243,8 @@
     },
     {
       "n": 25,
-      "question_query": "funky dance",
-      "answer_query": "funk dance",
+      "question_query": "funky animation",
+      "answer_query": "dancing cartoon character",
       "match": [
         "funk",
         "dance",
@@ -253,8 +253,8 @@
     },
     {
       "n": 26,
-      "question_query": "mansion",
-      "answer_query": "memphis",
+      "question_query": "mansion animation",
+      "answer_query": "rock and roll cartoon",
       "match": [
         "mansion",
         "house",
@@ -263,8 +263,8 @@
     },
     {
       "n": 27,
-      "question_query": "marching band",
-      "answer_query": "trombone",
+      "question_query": "brass instruments cartoon",
+      "answer_query": "trombone cartoon",
       "match": [
         "trombone",
         "brass",
@@ -273,8 +273,8 @@
     },
     {
       "n": 28,
-      "question_query": "stadium crowd",
-      "answer_query": "microphone stand",
+      "question_query": "stadium lights",
+      "answer_query": "microphone stand cartoon",
       "match": [
         "microphone",
         "stage",
@@ -283,8 +283,8 @@
     },
     {
       "n": 29,
-      "question_query": "river ferry",
-      "answer_query": "liverpool docks",
+      "question_query": "river ferry animation",
+      "answer_query": "liverpool illustration",
       "match": [
         "liverpool",
         "city",
@@ -293,8 +293,8 @@
     },
     {
       "n": 30,
-      "question_query": "stadium crowd",
-      "answer_query": "clapping hands",
+      "question_query": "stomping feet cartoon",
+      "answer_query": "clapping hands cartoon",
       "match": [
         "clap",
         "stomp",
@@ -303,8 +303,8 @@
     },
     {
       "n": 31,
-      "question_query": "scoreboard",
-      "answer_query": "number twelve",
+      "question_query": "scoreboard animation",
+      "answer_query": "number 12 animation",
       "match": [
         "twelve",
         "12",
@@ -313,7 +313,7 @@
     },
     {
       "n": 32,
-      "question_query": "trophy",
+      "question_query": "trophy cup animation",
       "answer_query": "sweden flag",
       "match": [
         "sweden",
@@ -323,8 +323,8 @@
     },
     {
       "n": 33,
-      "question_query": "girl power",
-      "answer_query": "baby bottle",
+      "question_query": "pink sparkle animation",
+      "answer_query": "baby bottle cartoon",
       "match": [
         "baby",
         "bottle",
@@ -333,8 +333,8 @@
     },
     {
       "n": 34,
-      "question_query": "vinyl record",
-      "answer_query": "zebra crossing",
+      "question_query": "vinyl animation",
+      "answer_query": "zebra crossing cartoon",
       "match": [
         "zebra",
         "crossing",
@@ -354,7 +354,7 @@
     {
       "n": 36,
       "question_query": "light up floor",
-      "answer_query": "glowing pavement",
+      "answer_query": "light up floor animation",
       "match": [
         "floor",
         "light",
@@ -373,8 +373,8 @@
     },
     {
       "n": 38,
-      "question_query": "concert crowd",
-      "answer_query": "friendship bracelets",
+      "question_query": "concert lights animation",
+      "answer_query": "friendship bracelet cartoon",
       "match": [
         "bracelet",
         "friendship",
@@ -384,7 +384,7 @@
     {
       "n": 39,
       "question_query": "number cartoon",
-      "answer_query": "birthday cake",
+      "answer_query": "birthday cake animation",
       "match": [
         "birthday",
         "cake",
@@ -393,8 +393,8 @@
     },
     {
       "n": 40,
-      "question_query": "maths symbols",
-      "answer_query": "division",
+      "question_query": "maths symbols animation",
+      "answer_query": "division sign",
       "match": [
         "divide",
         "math",
@@ -403,8 +403,8 @@
     },
     {
       "n": 41,
-      "question_query": "headphones music",
-      "answer_query": "shapes cartoon",
+      "question_query": "headphones animation",
+      "answer_query": "shapes animation",
       "match": [
         "shapes",
         "shape",
@@ -423,7 +423,7 @@
     },
     {
       "n": 43,
-      "question_query": "winning trophy",
+      "question_query": "microphone trophy animation",
       "answer_query": "swiss alps",
       "match": [
         "swiss",
@@ -444,7 +444,7 @@
     {
       "n": 45,
       "question_query": "orchestra tuning",
-      "answer_query": "oboe",
+      "answer_query": "oboe cartoon",
       "match": [
         "oboe",
         "woodwind",
@@ -453,7 +453,7 @@
     },
     {
       "n": 46,
-      "question_query": "vinyl record",
+      "question_query": "vinyl record cartoon",
       "answer_query": "prism rainbow",
       "match": [
         "prism",
@@ -463,7 +463,7 @@
     },
     {
       "n": 47,
-      "question_query": "talent show",
+      "question_query": "talent show stage animation",
       "answer_query": "golden star",
       "match": [
         "star",
@@ -474,7 +474,7 @@
     {
       "n": 48,
       "question_query": "alphabet letters",
-      "answer_query": "name tags",
+      "answer_query": "name tag cartoon",
       "match": [
         "letters",
         "alphabet",
@@ -483,8 +483,8 @@
     },
     {
       "n": 49,
-      "question_query": "girl power",
-      "answer_query": "sports backflip",
+      "question_query": "football cartoon",
+      "answer_query": "backflip cartoon",
       "match": [
         "sporty",
         "backflip",
@@ -493,8 +493,8 @@
     },
     {
       "n": 50,
-      "question_query": "marching band",
-      "answer_query": "bass drum",
+      "question_query": "drum cartoon",
+      "answer_query": "marching band cartoon",
       "match": [
         "drum",
         "band",
