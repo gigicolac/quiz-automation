@@ -44,7 +44,15 @@ In scope: records with a video_id whose status is "scheduled", or that are alrea
      - Row 1 = the current title and thumbnail A.
      - Row 2 = the second title from the record's studio_tasks and thumbnail B.
    - **A test has finished:** YouTube keeps the winner. Start the next test straight away: the current title and thumbnail (the winner) against a new title B and the next thumbnail in the queue in config/youtube.json `thumbnail_test`. If the next thumbnail isn't on the `thumbnails` release yet, say so under "Needs attention" so the cloud task makes it.
-   - Thumbnail B: download `https://github.com/gigicolac/quiz-automation/releases/download/thumbnails/<quiz>-thumbnail-b.jpg` with curl in device bash into `~/Pictures/One More Quiz thumbnails/` (create the folder if needed), then upload it from there in Studio's file picker. If it isn't on that release, download `thumbnail-b.jpg` from the quiz's own release (`release_tag` in upload.json).
+   - **Thumbnail B, uploaded without a file picker** (the built-in browser has none; worked out 16 Nov 2026): the build copies every quiz's thumbnails to the `studio-thumbnails` branch, which Studio's page can fetch. In the A/B test dialog, find the thumbnail upload input (`input[type=file]` with `accept` containing `image/jpeg`, inside the test dialog's B row; search shadow roots), then run in the page:
+     ```js
+     const r = await fetch('https://raw.githubusercontent.com/gigicolac/quiz-automation/studio-thumbnails/<quiz>-thumbnail-b.jpg');
+     const f = new File([await r.blob()], '<quiz>-thumbnail-b.jpg', {type: 'image/jpeg'});
+     const dt = new DataTransfer(); dt.items.add(f); input.files = dt.files;
+     input.dispatchEvent(new Event('change', {bubbles: true, composed: true}));
+     ```
+     Check the B row then shows the new picture before saving. If the file isn't on the branch, fall back to downloading it from the `thumbnails` release into `~/Pictures/One More Quiz thumbnails/` and using the file picker with computer use.
+   - Studio's A/B dialogs only draw while the browser pane is showing. If they don't appear, say so under "Needs attention" ("show the browser pane").
    - **Never fall back to a title-only test.** If thumbnail B can't be uploaded, leave the video without a new test, say exactly why under "Needs attention", and try again next run.
 4. **Pin** (after release, once the record has comment_id): pin that comment (Studio > Comments, remove filters, ⋮ > Pin > Pin).
    - **Check a pin on the public watch page**, not in Studio: open `https://www.youtube.com/watch?v=<video_id>`, scroll to the comments and look for "Pinned by @JustOneMoreQuiz" on the score comment. Studio's comment list can show a stale state for a while after a reload (on 16 Nov it showed Quiz #12 unpinned while it was pinned).

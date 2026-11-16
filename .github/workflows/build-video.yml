@@ -238,6 +238,7 @@ jobs:
           gh release view thumbnails >/dev/null 2>&1 || gh release create thumbnails --prerelease --target main \
             --title "Thumbnails" --notes "Thumbnail A and B for each quiz (<quiz>-thumbnail-a.jpg / -b.jpg), for the YouTube Studio A/B test."
           gh release upload thumbnails "$RUNNER_TEMP/thumbs/$QUIZ-thumbnail-a.jpg" "$RUNNER_TEMP/thumbs/$QUIZ-thumbnail-b.jpg" --clobber
+          bash scripts/publish_studio_thumbnails.sh "$QUIZ" "$RUNNER_TEMP/thumbs" || echo "::warning::studio-thumbnails not updated"
 
       - name: Record result
         if: always() && env.QUIZ != ''
