@@ -556,8 +556,8 @@ def main():
     bcfg = cfg.get("buzzer", {})
     if bcfg.get("enabled", True):
         canva = load_audio(args.slides)
-        pages = [(sg["name"], sg["page_start"]) for sg in segs if "page_start" in sg]
-        for name, clip, note in find_buzzers(canva, pages, bcfg, SR):
+        q_pages = [(sg["name"], sg["page_start"]) for sg in segs if "page_start" in sg]
+        for name, clip, note in find_buzzers(canva, q_pages, bcfg, SR):
             if note:
                 warnings.append(f"{name}: {note}")
             if clip is None:
