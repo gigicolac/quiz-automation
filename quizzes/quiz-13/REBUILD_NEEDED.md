@@ -20,3 +20,10 @@ started 16 Nov 10:41 UTC), run `gh workflow run build-video.yml --ref claude/qui
 On success: check the report has no bare "no buzzer found" warning, listen/measure Q38-Q50 buzzers, check
 all GIFs again, then merge PR #39 first, merge main into this branch, and approve. Delete this file in
 the approval commit.
+
+**17 Nov progress run:** rebuild 43910523670 (quiz-13-preview-28) fixed the buzzers (Q38-Q50 now peak -3 to -14 dB at
+the countdown end, same as Q30-Q37; PR #39 merged). Full GIF check of that build: 99 of 100 slots fine (the five
+hand picks for Q17, A04, A15, A30, A31 are an object/cartoon/owl/Sims house/hands), but **A27's hand pick
+O8mLgjaAIqxdsMFwjj ("Apple Iphone GIF", rvmendozaonyourphone) is a man's face**. Replaced with
+ig9frFqBku3wO1Xvze ("Phone App GIF by Meesho Tech", from row 27's question candidates), chosen by title. Next run:
+check A27 in the new build closely, then approve.
