@@ -51,8 +51,14 @@ In scope: records with a video_id whose status is "scheduled", or that are alrea
      const dt = new DataTransfer(); dt.items.add(f); input.files = dt.files;
      input.dispatchEvent(new Event('change', {bubbles: true, composed: true}));
      ```
-     Check the B row then shows the new picture before saving. If the file isn't on the branch, fall back to downloading it from the `thumbnails` release into `~/Pictures/One More Quiz thumbnails/` and using the file picker with computer use.
-   - Studio's A/B dialogs only draw while the browser pane is showing. If they don't appear, say so under "Needs attention" ("show the browser pane").
+     Check the B row then shows the new picture (an `img` with a `data:image/jpeg` source) before setting the test. If the file isn't on the branch, fall back to downloading it from the `thumbnails` release into `~/Pictures/One More Quiz thumbnails/` and using the file picker with computer use.
+   - **Steps that worked (Quiz #11, 16 Nov 2026)**, all by JavaScript with a shadow-root search:
+     1. Running test: button `aria-label="View test report"` → in the report dialog, **New test** → in `ytcp-creator-experiment-delete-confirmation-dialog`, **Continue**. (No test yet: the **A/B Testing** button, `#select-button` inside `ytcp-thumbnails-experiment-editor`.)
+     2. The `ytcp-dialog` containing "Test and compare" opens. Check the **Title and thumbnail** radio. Row 1 already holds the current title and thumbnail.
+     3. Load thumbnail B into the second `ytcp-thumbnail-uploader`'s file input (above). Type title B into the second `#textbox` (focus, `document.execCommand('selectAll')`, then `document.execCommand('insertText', false, title)`).
+     4. **Set test**, then the page's **Save** (`#save`). Deleting the old test only takes effect on Save, so leaving the page without saving changes nothing.
+     5. Reload, open **View test report** and check it says "Title and thumbnail" with two custom thumbnails.
+   - **When the browser pane is hidden** the page's timers are throttled, so long scripts with `await`/`setTimeout` stall and dialogs can fail to open. Use short synchronous calls with a `wait` between them. If the A/B dialog still won't open, say "show the browser pane" under "Needs attention" and try again next run.
    - **Never fall back to a title-only test.** If thumbnail B can't be uploaded, leave the video without a new test, say exactly why under "Needs attention", and try again next run.
 4. **Pin** (after release, once the record has comment_id): pin that comment (Studio > Comments, remove filters, ⋮ > Pin > Pin).
    - **Check a pin on the public watch page**, not in Studio: open `https://www.youtube.com/watch?v=<video_id>`, scroll to the comments and look for "Pinned by @JustOneMoreQuiz" on the score comment. Studio's comment list can show a stale state for a while after a reload (on 16 Nov it showed Quiz #12 unpinned while it was pinned).
