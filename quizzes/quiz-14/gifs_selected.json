@@ -56,14 +56,12 @@
    "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1aWU0czh6Mmh0Z3M0aHd2N2RkMXhteTZxdjJxdWllODA3c3ppcXlzYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/P3eMypHE33Mc/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "iXf5ttnmLGZkk",
-   "user": "",
-   "title": "doc GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHpzMHRkbnNndjA2bnBnajM3dGt6YWt2ZHY5ZGk2N2h5eGw2bmYwdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iXf5ttnmLGZkk/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/iXf5ttnmLGZkk/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHpzMHRkbnNndjA2bnBnajM3dGt6YWt2ZHY5ZGk2N2h5eGw2bmYwdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iXf5ttnmLGZkk/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "3oFzlZzyoQZdNekCas",
+   "user": "looneytunes",
+   "title": "Bugs Bunny Love GIF by Looney Tunes",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHpzMHRkbnNndjA2bnBnajM3dGt6YWt2ZHY5ZGk2N2h5eGw2bmYwdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oFzlZzyoQZdNekCas/giphy_s.gif"
   }
  },
  {
@@ -81,10 +79,10 @@
   "answer_gif": {
    "source": "giphy_still",
    "type": "image",
-   "id": "aKXDG5s2Fuzra",
-   "user": "",
-   "title": "Ash Ketchum Pokemon GIF",
-   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1bTl6Y3RraHU3enhxYjdqeDkxYmJsY3poY3l5NWFnZW11bm8wcjdydCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aKXDG5s2Fuzra/giphy_s.gif"
+   "id": "dzIrXQiyqgsSbGGpZR",
+   "user": "pokemon",
+   "title": "Cute GIF by Pok\u00e9mon",
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZHhyaWhuemo3OGY3dTFjMGJzenM0NjZic2p5MHkzbGYxMXUyeWdkdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dzIrXQiyqgsSbGGpZR/giphy_s.gif"
   }
  },
  {
@@ -192,14 +190,12 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1eDZ1dDdveXVueXpzMTFtZnpqZHJ0cWF3cXV4bng1emZiZ2x1bnFzNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5t235Nf4wo3rhLSMVy/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "RznOgiCuf4zUuRnfBr",
-   "user": "nehumanesociety",
-   "title": "I Hate Mondays Cat GIF by Nebraska Humane Society",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1MWNsdjd1emd6dG8wNm1wZGFwZXYwbGltaThreGJwbG56c3czejY5MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RznOgiCuf4zUuRnfBr/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/RznOgiCuf4zUuRnfBr/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1MWNsdjd1emd6dG8wNm1wZGFwZXYwbGltaThreGJwbG56c3czejY5MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RznOgiCuf4zUuRnfBr/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "Y0OSl8S0vuwsdQM9WD",
+   "user": "lightintheattic",
+   "title": "Garfield Mondays GIF by Light In The Attic",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1MWNsdjd1emd6dG8wNm1wZGFwZXYwbGltaThreGJwbG56c3czejY5MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y0OSl8S0vuwsdQM9WD/giphy_s.gif"
   }
  },
  {
