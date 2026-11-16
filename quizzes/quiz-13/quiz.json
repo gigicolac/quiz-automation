@@ -1,0 +1,342 @@
+{
+ "id": "quiz-13",
+ "number": 13,
+ "series": "Pop Culture",
+ "category": "Pop Culture",
+ "topic": "2000s pop culture",
+ "difficulty": "medium",
+ "title": "Can You Pass This 2000s Quiz? 📱 50 Pop Culture Trivia Questions | Pop Culture Quiz #13",
+ "description_hook": "📱 Flip phones, Shrek and Club Penguin: can you pass this 2000s quiz? 50 questions that'll sort the true 2000s kids from the lucky guessers.",
+ "thumbnail_tagline": "Only 2000s kids would know",
+ "tags": [
+  "2000s quiz",
+  "2000s trivia",
+  "2000s pop culture quiz",
+  "pop culture quiz",
+  "pop culture trivia",
+  "early 2000s quiz",
+  "2000s nostalgia quiz",
+  "2000s movies quiz",
+  "nostalgia quiz",
+  "throwback quiz"
+ ],
+ "status": "questions_written",
+ "review": {
+  "questions": {
+   "decision": "auto-approved",
+   "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 16 Nov 2026 (weekly run), web-checked where unsure. Medium difficulty trial (Q1-5 easy, hardest Q36-50). Family-friendly; GIF searches avoid real people's faces."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-17",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 43943304850 succeeded (rebuild after replacing A27): 4K 3840x2160, 986.1 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -36.6 dB, peak -0.3 dB; warnings only outro2 starts 0.1 s late and Q38-Q50 'no buzzer in the Canva audio; reused q37's' (no bare 'no buzzer found'). Buzzer peaks at the countdown end measured with volumedetect: Q30 -14.1, Q36 -16.8, Q37 -14.3, Q38 -14.5, Q42 -15.6, Q46 -14.6, Q50 -14.4 dB, so Q38-Q50 match the earlier questions. Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: cartoons, animation, CGI/claymation, animals, objects, or faceless/costumed figures; no real people's faces or unsuitable content. New A27 pick (Meesho phone app) shows only hands holding a phone; earlier hand picks Q17, A04, A15, A30, A31 fine; Q21 prosthetic alien and Q16/Q33 (no face) as before. Spot-checked full frames: intro, Q25/A25, Q50 and outro; text fits its boxes. Thumbnails A (red band) and B (blue band) checked: heading 'Pop Culture Quiz #13' and hook 'Only 2000s kids would know' full width in Nunito Sans Bold / Tinos Italic, cartoon/object collage suitable.",
+   "source_commit": "7787661",
+   "duration_s": 986.1,
+   "release_tag": "quiz-13-preview-29"
+  }
+ },
+ "tags_research": "vidIQ keyword research 16 Nov 2026: '2000s quiz' ~7.7k searches/month (competition 20), '2000s movies quiz' ~5.2k (21), '2000s music quiz' ~4.7k; weekly report 16 Nov: 'pop culture quiz' ~10k (40), 'pop culture trivia' ~4.3k (24); 'trivia quiz' searches down 32%, so topic tags lead. Competitor research (vidIQ outliers, 1M+ views, 16 Nov): 'Can You Pass This General Knowledge Quiz?' (Quiz Blitz, QTg9gUYjtGE, 844k) and 'Can You Pass the U.S. Citizenship Test?' (Trivia Square, LvmaZmry60s, 2.8M) -> 'Can you pass' title formula. vidIQ score_title: 'Can You Pass This 2000s Quiz?' 95 vs 'How Well Do You REALLY Know the 2000s?' 93.",
+ "questions": [
+  {
+   "n": 1,
+   "question": "In the 2001 film, what colour is the grumpy swamp-dwelling ogre Shrek?",
+   "answer": "Green! 🟢",
+   "reveal": "Shrek won the very first Oscar for Best Animated Feature, in 2002."
+  },
+  {
+   "n": 2,
+   "question": "In Shrek (2001), what kind of animal is Shrek's chatty best friend?",
+   "answer": "A donkey! 🐴",
+   "reveal": "He never stops talking, and later marries the Dragon!"
+  },
+  {
+   "n": 3,
+   "question": "Which giant London observation wheel opened to the public in 2000?",
+   "answer": "The London Eye! 🎡",
+   "reveal": "It was built to celebrate the new millennium, beside the River Thames."
+  },
+  {
+   "n": 4,
+   "question": "In the Harry Potter films, what is the name of Harry's snowy white owl?",
+   "answer": "Hedwig! 🦉",
+   "reveal": "Several owls played Hedwig, and the main one was called Gizmo."
+  },
+  {
+   "n": 5,
+   "question": "Which Nintendo console of 2006 had a motion remote you could swing like a tennis racket?",
+   "answer": "The Wii! 🎾",
+   "reveal": "Wii Sports came bundled with the console in most countries."
+  },
+  {
+   "n": 6,
+   "question": "What was the name of Apple's pocket music player, first launched in 2001?",
+   "answer": "The iPod! 🎧",
+   "reveal": "The first model held about 1,000 songs on a 5 GB hard drive."
+  },
+  {
+   "n": 7,
+   "question": "In High School Musical (2006), which sport does Troy Bolton play for East High?",
+   "answer": "Basketball! 🏀",
+   "reveal": "The film was shot at a real school, East High in Salt Lake City, Utah."
+  },
+  {
+   "n": 8,
+   "question": "Which sword-fighting cat in a feathered hat first appeared in Shrek 2 (2004)?",
+   "answer": "Puss in Boots! 🐱",
+   "reveal": "Puss was so popular that he got his own film in 2011."
+  },
+  {
+   "n": 9,
+   "question": "In Pirates of the Caribbean, what is the name of Captain Jack Sparrow's ship?",
+   "answer": "The Black Pearl! ⚓",
+   "reveal": "The first film, The Curse of the Black Pearl, sailed into cinemas in 2003."
+  },
+  {
+   "n": 10,
+   "question": "In Finding Nemo (2003), what kind of animal is Crush, the surfer dude who rides the current?",
+   "answer": "A sea turtle! 🐢",
+   "reveal": "Crush says he is 150 years old, and still young!"
+  },
+  {
+   "n": 11,
+   "question": "In The Lord of the Rings films, which creature calls the One Ring 'my precious'?",
+   "answer": "Gollum! 💍",
+   "reveal": "The Return of the King won 11 Oscars in 2004, including Best Picture."
+  },
+  {
+   "n": 12,
+   "question": "In the 2005 film Madagascar, what kind of animal is Marty?",
+   "answer": "A zebra! 🦓",
+   "reveal": "Marty and his friends escape from New York's Central Park Zoo."
+  },
+  {
+   "n": 13,
+   "question": "In Ice Age (2002), what kind of animal is Manny?",
+   "answer": "A woolly mammoth! 🦣",
+   "reveal": "His herd-mates are Sid the sloth and Diego the sabre-toothed tiger."
+  },
+  {
+   "n": 14,
+   "question": "In Monsters, Inc. (2001), what nickname is given to the girl who sneaks into Monstropolis?",
+   "answer": "Boo! 👻",
+   "reveal": "Boo has her own nickname for big blue Sulley: 'Kitty'!"
+  },
+  {
+   "n": 15,
+   "question": "Which 2000 computer game let you build houses and control the lives of little virtual people?",
+   "answer": "The Sims! 🏠",
+   "reveal": "Sims chat in their own made-up language, called Simlish."
+  },
+  {
+   "n": 16,
+   "question": "Which 2005 video game had players strumming a plastic guitar with coloured fret buttons?",
+   "answer": "Guitar Hero! 🎸",
+   "reveal": "The original controller had five coloured buttons: green, red, yellow, blue and orange."
+  },
+  {
+   "n": 17,
+   "question": "Which Sony games console, launched in 2000, could also play DVDs?",
+   "answer": "PlayStation 2! 🕹️",
+   "reveal": "It became one of the best-selling games consoles ever made."
+  },
+  {
+   "n": 18,
+   "question": "Which trainers of the 2000s had a wheel hidden in the heel so you could glide along?",
+   "answer": "Heelys! 👟",
+   "reveal": "Heelys first rolled into shops in 2000 and sold millions of pairs."
+  },
+  {
+   "n": 19,
+   "question": "From which platform at King's Cross does the Hogwarts Express leave in Harry Potter?",
+   "answer": "Platform 9¾! 🚂",
+   "reveal": "King's Cross now has a luggage trolley 'disappearing' into the wall for photos."
+  },
+  {
+   "n": 20,
+   "question": "Which video website, launched in 2005, had a first clip called 'Me at the zoo'?",
+   "answer": "YouTube! 📺",
+   "reveal": "That first video was filmed at San Diego Zoo and lasts under 20 seconds."
+  },
+  {
+   "n": 21,
+   "question": "Which Nintendo handheld of 2004 had two screens, with a touch screen on the bottom?",
+   "answer": "The Nintendo DS! 🎮",
+   "reveal": "DS stands for 'Dual Screen'."
+  },
+  {
+   "n": 22,
+   "question": "Which 2003 Christmas film follows a human raised by elves at the North Pole?",
+   "answer": "Elf! 🎄",
+   "reveal": "He travels to New York to find his real dad, eating spaghetti with syrup!"
+  },
+  {
+   "n": 23,
+   "question": "On Who Wants to Be a Millionaire?, which lifeline took away two wrong answers?",
+   "answer": "50:50! ✂️",
+   "reveal": "The other two original lifelines were Phone a Friend and Ask the Audience."
+  },
+  {
+   "n": 24,
+   "question": "Which big-eyed fashion dolls were launched in 2001 as a rival to Barbie?",
+   "answer": "Bratz! 💄",
+   "reveal": "The four original Bratz dolls were Cloe, Yasmin, Sasha and Jade."
+  },
+  {
+   "n": 25,
+   "question": "In Hannah Montana (2006), what is the real name of the girl secretly living as a pop star?",
+   "answer": "Miley Stewart! 🎤",
+   "reveal": "She hides her pop-star life by wearing a long blonde wig."
+  },
+  {
+   "n": 26,
+   "question": "Which animated ringtone character went to No. 1 in the UK in 2005 with 'Axel F'?",
+   "answer": "Crazy Frog! 🐸",
+   "reveal": "The catchy tune was first written by Harold Faltermeyer in 1984."
+  },
+  {
+   "n": 27,
+   "question": "In which year did Apple's first iPhone go on sale?",
+   "answer": "2007! 📱",
+   "reveal": "It went on sale in the USA on 29 June 2007."
+  },
+  {
+   "n": 28,
+   "question": "In 2006, which planet was reclassified as a 'dwarf planet' by astronomers?",
+   "answer": "Pluto! 🪐",
+   "reveal": "The decision was made by the International Astronomical Union in Prague."
+  },
+  {
+   "n": 29,
+   "question": "Which phone with a mini keyboard, made by a Canadian company, was named after a fruit?",
+   "answer": "BlackBerry! 📱",
+   "reveal": "BlackBerry phones were made by a company called Research In Motion."
+  },
+  {
+   "n": 30,
+   "question": "Which social network of the 2000s let you choose a 'Top 8' friends on your profile page?",
+   "answer": "MySpace! 👥",
+   "reveal": "MySpace launched in 2003, and every new user's first friend was 'Tom'."
+  },
+  {
+   "n": 31,
+   "question": "Which number puzzle, played on a 9×9 grid, became a newspaper craze in 2005?",
+   "answer": "Sudoku! 🔢",
+   "reveal": "The name comes from Japanese and roughly means 'single number'."
+  },
+  {
+   "n": 32,
+   "question": "In Happy Feet (2006), what kind of penguin is Mumble, who can't sing but loves to tap dance?",
+   "answer": "An emperor penguin! 🐧",
+   "reveal": "Happy Feet won the Oscar for Best Animated Feature in 2007."
+  },
+  {
+   "n": 33,
+   "question": "In Bob the Builder, what do the team shout after 'Can we fix it?'",
+   "answer": "Yes, we can! 🔨",
+   "reveal": "The theme song 'Can We Fix It?' was the UK's Christmas No. 1 in 2000."
+  },
+  {
+   "n": 34,
+   "question": "In which online game, launched in 2005, did kids waddle around a snowy island as penguins?",
+   "answer": "Club Penguin! ❄️",
+   "reveal": "Players could adopt fluffy pets called Puffles."
+  },
+  {
+   "n": 35,
+   "question": "Which website, launched in 2001, is a free online encyclopedia that anyone can edit?",
+   "answer": "Wikipedia! 📚",
+   "reveal": "Wikipedia went live on 15 January 2001."
+  },
+  {
+   "n": 36,
+   "question": "In Pirates of the Caribbean, who is the octopus-faced captain of the Flying Dutchman?",
+   "answer": "Davy Jones! 🐙",
+   "reveal": "He first appeared in Dead Man's Chest, which came out in 2006."
+  },
+  {
+   "n": 37,
+   "question": "Which computer problem, also called the Millennium Bug, worried the world as 2000 approached?",
+   "answer": "The Y2K bug! 💻",
+   "reveal": "Y2K means 'Year 2000': the K stands for kilo, meaning one thousand."
+  },
+  {
+   "n": 38,
+   "question": "In Up (2009), what name does Russell give to the giant, colourful bird?",
+   "answer": "Kevin! 🐦",
+   "reveal": "Up was the first animated film ever to open the Cannes Film Festival."
+  },
+  {
+   "n": 39,
+   "question": "In Night at the Museum (2006), what giant skeleton comes alive and plays fetch?",
+   "answer": "A T. rex! 🦖",
+   "reveal": "The film is set in New York's American Museum of Natural History."
+  },
+  {
+   "n": 40,
+   "question": "In The Lord of the Rings, how many members make up the Fellowship of the Ring?",
+   "answer": "Nine! 9️⃣",
+   "reveal": "Four hobbits, two men, a wizard, an elf and a dwarf."
+  },
+  {
+   "n": 41,
+   "question": "In the cartoon Ben 10 (2005), what is the name of the watch that turns Ben into aliens?",
+   "answer": "The Omnitrix! ⌚",
+   "reveal": "At first, the watch let Ben turn into ten different aliens."
+  },
+  {
+   "n": 42,
+   "question": "Which social network added its famous 'Like' button in February 2009?",
+   "answer": "Facebook! 👍",
+   "reveal": "Facebook started in 2004 as a site for Harvard students only."
+  },
+  {
+   "n": 43,
+   "question": "What nickname was given to the main stadium of the 2008 Beijing Olympics?",
+   "answer": "The Bird's Nest! 🐦",
+   "reveal": "Its official name is the Beijing National Stadium."
+  },
+  {
+   "n": 44,
+   "question": "In Wallace & Gromit's 2005 film, what giant creature is gobbling the town's vegetables?",
+   "answer": "A were-rabbit! 🐰",
+   "reveal": "The Curse of the Were-Rabbit won the Oscar for Best Animated Feature in 2006."
+  },
+  {
+   "n": 45,
+   "question": "In Harry Potter and the Prisoner of Azkaban (2004), what is the hippogriff called?",
+   "answer": "Buckbeak! 🦅",
+   "reveal": "A hippogriff is half eagle, half horse."
+  },
+  {
+   "n": 46,
+   "question": "Which free email service did Google launch in 2004, which many people thought was a joke?",
+   "answer": "Gmail! 📧",
+   "reveal": "It launched on 1 April, April Fools' Day, with a then-huge 1 GB of storage."
+  },
+  {
+   "n": 47,
+   "question": "Which Nintendo console of 2001 was shaped like a small cube with a handle?",
+   "answer": "The GameCube! 🧊",
+   "reveal": "It used small 8 cm discs instead of full-size DVDs."
+  },
+  {
+   "n": 48,
+   "question": "Which Studio Ghibli film won the Oscar for Best Animated Feature in 2003?",
+   "answer": "Spirited Away! 🐉",
+   "reveal": "It was the first anime film ever to win that Oscar."
+  },
+  {
+   "n": 49,
+   "question": "Which pair of Pokémon games, first released in 2006, introduced the Sinnoh region?",
+   "answer": "Diamond and Pearl! 💎",
+   "reveal": "They came out on the Nintendo DS and starred legendaries Dialga and Palkia."
+  },
+  {
+   "n": 50,
+   "question": "In Kim Possible (2002), what kind of animal is Ron Stoppable's pet, Rufus?",
+   "answer": "A naked mole-rat! 🐀",
+   "reveal": "Rufus usually rides around in Ron's trouser pocket."
+  }
+ ]
+}

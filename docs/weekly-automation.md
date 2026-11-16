@@ -85,7 +85,7 @@ When a build succeeds:
 1. **Report:** download `build_report.json` from the build's draft release (`gh api .../releases`, tag `quiz-NN-preview-<run number>`). Check:
    - 50 `qNN` and 50 `aNN` segments plus the intro and outro
    - voice about -20 dB RMS, music about -36 dB, peak no higher than -0.3 dB
-   - warnings are only minor timing notes (under 1 s)
+   - warnings are only minor timing notes (under 1 s) or "reused qNN's" buzzer notes. A bare "no buzzer found" means questions are missing their buzzer: rebuild.
 2. **Frames:** extract frames straight from the release asset with ffmpeg. Get the asset URL with `curl -sS -o /dev/null -w '%{redirect_url}' -H "Authorization: Bearer $(gh auth token)" -H "Accept: application/octet-stream" https://api.github.com/repos/gigicolac/quiz-automation/releases/assets/<id>`, then run `ffmpeg -ss <s> -i "$url" -frames:v 1`. Use the segment start times in the report.
    - **What to look at:** the intro, a question and its answer, one more question near the middle, and the outro.
    - **What to check:** text fits its box, the GIF matches the question, there are no real people's faces and nothing unsuitable, and the video is 3840×2160.
