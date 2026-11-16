@@ -500,14 +500,12 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1Zjd1aHpua2pseXpzaHA5ZXY1OXN0dnN2NDYyYnYzOGQ3NjluMnU2ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qymIjJYQn2EJq/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "AF6CpZ9wTgCnC",
-   "user": "",
-   "title": "Scooby Doo Velma Glasses GIF",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MmQ5aGEyZnYzNDYwdmhiajZvdGZkN29majk0OTYzNndvdXQ2NjE2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/AF6CpZ9wTgCnC/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/AF6CpZ9wTgCnC/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1MmQ5aGEyZnYzNDYwdmhiajZvdGZkN29majk0OTYzNndvdXQ2NjE2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/AF6CpZ9wTgCnC/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "gTXL4SpE36GnzH10v8",
+   "user": "scoobydoo",
+   "title": "Surprised Velma Dinkley GIF by Scooby-Doo",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1MmQ5aGEyZnYzNDYwdmhiajZvdGZkN29majk0OTYzNndvdXQ2NjE2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gTXL4SpE36GnzH10v8/giphy_s.gif"
   }
  },
  {
@@ -724,14 +722,12 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1NTNsOXQ3bjBvMmFpbWkwYnlxbWd2Mnl1dmlvM2F0bDV0bmFldGRpZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7t5yPjS7NDsI3uuLBY/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "Bm57WGNYHSb0k",
-   "user": "",
-   "title": "Ned Flanders People GIF",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dDdrN3Y0eXd2YThhZjQ4cjFubWxpOGcwdGg3N3VjeWg3d2V6MjlpZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Bm57WGNYHSb0k/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/Bm57WGNYHSb0k/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dDdrN3Y0eXd2YThhZjQ4cjFubWxpOGcwdGg3N3VjeWg3d2V6MjlpZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Bm57WGNYHSb0k/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "v4ir5SlpRQmw04BhNL",
+   "user": "fortnite",
+   "title": "Simpsons Ned Flanders GIF by Fortnite",
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dDdrN3Y0eXd2YThhZjQ4cjFubWxpOGcwdGg3N3VjeWg3d2V6MjlpZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/v4ir5SlpRQmw04BhNL/giphy_s.gif"
   }
  },
  {
