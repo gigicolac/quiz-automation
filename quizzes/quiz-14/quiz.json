@@ -25,6 +25,15 @@
   "questions": {
    "decision": "auto-approved",
    "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 16 Nov 2026 (weekly run), web-checked where unsure. Medium difficulty trial (Q1-5 easy, hardest Q36-50). Family-friendly; GIF searches avoid real people's faces."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-17",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 43851205230 succeeded (rebuild after replacing A23 and A33): 4K 3840x2160, 964.5 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -36.0 dB, peak -0.3 dB; one minor warning (outro2 starts 0.4 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: all cartoons/animation, puppets or animals, no real people's faces or unsuitable content; new A23 (animated Velma) and A33 (Ned Flanders) fine. Q07, Q20 and A07 (live-action TMNT/Splinter costumes), Q21, A39 (animated Gargamel) and A48 (animated Shaggy/Scooby) confirmed with continuous 1 fps strips. Spot-checked full frames: intro, Q01/A01, Q25/A25, Q50 and outro; text fits its boxes. Thumbnails A (red band) and B (blue band) checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, cartoon collage suitable.",
+   "source_commit": "25b4dc2",
+   "duration_s": 964.5,
+   "release_tag": "quiz-14-preview-26"
   }
  },
  "tags_research": "vidIQ keyword research 16 Nov 2026: 'cartoon quiz' ~18.4k searches/month (competition 26), 'cartoon character quiz' ~4.6k (45), '2000s cartoon quiz' low volume (15); weekly report 16 Nov: 'tv show quiz' ~12k (32), 'tv quiz' ~4.6k, 'tv series quiz' ~4.1k (24). Cartoons chosen for TV so the GIFs show animated characters, not real faces. vidIQ score_title 95.",
