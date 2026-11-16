@@ -42,7 +42,8 @@
         "hedwig",
         "owl"
       ],
-      "film": "Harry Potter"
+      "film": "Harry Potter",
+      "answer_pick": "W0I3epucnTjCYzRnKv"
     },
     {
       "n": 5,
@@ -163,7 +164,8 @@
         "sims",
         "simlish"
       ],
-      "question_pick": "ffU2nTCOUfWnSUVc6O"
+      "question_pick": "ffU2nTCOUfWnSUVc6O",
+      "answer_pick": "KB8Nbefy94rneO3A3n"
     },
     {
       "n": 16,
@@ -183,7 +185,8 @@
         "console",
         "playstation",
         "gaming"
-      ]
+      ],
+      "question_pick": "901ojwtVHZAze"
     },
     {
       "n": 18,
@@ -289,7 +292,8 @@
       "match": [
         "iphone",
         "phone"
-      ]
+      ],
+      "answer_pick": "O8mLgjaAIqxdsMFwjj"
     },
     {
       "n": 28,
@@ -320,7 +324,7 @@
         "online",
         "myspace"
       ],
-      "answer_pick": "4HvvtdXIaUJgbG4shG"
+      "answer_pick": "3ilAlREEGJED7eaB49"
     },
     {
       "n": 31,
@@ -329,7 +333,8 @@
       "match": [
         "sudoku",
         "puzzle"
-      ]
+      ],
+      "answer_pick": "17EUIjkxrxeIo"
     },
     {
       "n": 32,
