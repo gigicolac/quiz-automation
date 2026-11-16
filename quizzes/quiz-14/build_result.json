@@ -1,0 +1,1040 @@
+{
+  "status": "success",
+  "release_tag": "quiz-14-preview-24",
+  "source_commit": "3d1016d0ba8abf738a533ffec9f108b8260216d3",
+  "run_id": "43796125808",
+  "tts": "chatterbox",
+  "report": {
+    "quiz": "quiz-14",
+    "tts": "chatterbox",
+    "duration_s": 964.5,
+    "segments": [
+      {
+        "name": "intro",
+        "start": 0.0,
+        "dur": 11.03
+      },
+      {
+        "name": "rules",
+        "start": 11.03,
+        "dur": 8.1
+      },
+      {
+        "name": "q01",
+        "start": 19.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a01",
+        "start": 29.73,
+        "dur": 8.67
+      },
+      {
+        "name": "q02",
+        "start": 38.4,
+        "dur": 10.6
+      },
+      {
+        "name": "a02",
+        "start": 49.0,
+        "dur": 9.67
+      },
+      {
+        "name": "q03",
+        "start": 58.67,
+        "dur": 10.6
+      },
+      {
+        "name": "a03",
+        "start": 69.27,
+        "dur": 8.57
+      },
+      {
+        "name": "q04",
+        "start": 77.83,
+        "dur": 10.6
+      },
+      {
+        "name": "a04",
+        "start": 88.43,
+        "dur": 7.23
+      },
+      {
+        "name": "q05",
+        "start": 95.67,
+        "dur": 10.6
+      },
+      {
+        "name": "a05",
+        "start": 106.27,
+        "dur": 8.33
+      },
+      {
+        "name": "q06",
+        "start": 114.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a06",
+        "start": 125.2,
+        "dur": 8.07
+      },
+      {
+        "name": "q07",
+        "start": 133.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a07",
+        "start": 143.87,
+        "dur": 6.73
+      },
+      {
+        "name": "q08",
+        "start": 150.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a08",
+        "start": 161.2,
+        "dur": 7.27
+      },
+      {
+        "name": "q09",
+        "start": 168.47,
+        "dur": 10.6
+      },
+      {
+        "name": "a09",
+        "start": 179.07,
+        "dur": 7.2
+      },
+      {
+        "name": "q10",
+        "start": 186.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a10",
+        "start": 196.87,
+        "dur": 9.27
+      },
+      {
+        "name": "q11",
+        "start": 206.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a11",
+        "start": 216.73,
+        "dur": 7.27
+      },
+      {
+        "name": "q12",
+        "start": 224.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a12",
+        "start": 234.6,
+        "dur": 7.3
+      },
+      {
+        "name": "q13",
+        "start": 241.9,
+        "dur": 10.6
+      },
+      {
+        "name": "a13",
+        "start": 252.5,
+        "dur": 9.63
+      },
+      {
+        "name": "q14",
+        "start": 262.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a14",
+        "start": 272.73,
+        "dur": 7.2
+      },
+      {
+        "name": "q15",
+        "start": 279.93,
+        "dur": 10.6
+      },
+      {
+        "name": "a15",
+        "start": 290.53,
+        "dur": 7.53
+      },
+      {
+        "name": "q16",
+        "start": 298.07,
+        "dur": 10.6
+      },
+      {
+        "name": "a16",
+        "start": 308.67,
+        "dur": 6.77
+      },
+      {
+        "name": "q17",
+        "start": 315.43,
+        "dur": 10.6
+      },
+      {
+        "name": "a17",
+        "start": 326.03,
+        "dur": 5.97
+      },
+      {
+        "name": "q18",
+        "start": 332.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a18",
+        "start": 342.6,
+        "dur": 8.13
+      },
+      {
+        "name": "q19",
+        "start": 350.73,
+        "dur": 10.6
+      },
+      {
+        "name": "a19",
+        "start": 361.33,
+        "dur": 5.87
+      },
+      {
+        "name": "q20",
+        "start": 367.2,
+        "dur": 10.6
+      },
+      {
+        "name": "a20",
+        "start": 377.8,
+        "dur": 7.47
+      },
+      {
+        "name": "q21",
+        "start": 385.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a21",
+        "start": 395.87,
+        "dur": 7.37
+      },
+      {
+        "name": "q22",
+        "start": 403.23,
+        "dur": 10.6
+      },
+      {
+        "name": "a22",
+        "start": 413.83,
+        "dur": 7.5
+      },
+      {
+        "name": "q23",
+        "start": 421.33,
+        "dur": 10.6
+      },
+      {
+        "name": "a23",
+        "start": 431.93,
+        "dur": 7.77
+      },
+      {
+        "name": "q24",
+        "start": 439.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a24",
+        "start": 450.3,
+        "dur": 7.47
+      },
+      {
+        "name": "q25",
+        "start": 457.76,
+        "dur": 10.6
+      },
+      {
+        "name": "a25",
+        "start": 468.36,
+        "dur": 9.93
+      },
+      {
+        "name": "q26",
+        "start": 478.3,
+        "dur": 10.6
+      },
+      {
+        "name": "a26",
+        "start": 488.9,
+        "dur": 6.5
+      },
+      {
+        "name": "q27",
+        "start": 495.4,
+        "dur": 10.6
+      },
+      {
+        "name": "a27",
+        "start": 506.0,
+        "dur": 6.93
+      },
+      {
+        "name": "q28",
+        "start": 512.93,
+        "dur": 10.6
+      },
+      {
+        "name": "a28",
+        "start": 523.53,
+        "dur": 8.03
+      },
+      {
+        "name": "q29",
+        "start": 531.56,
+        "dur": 10.6
+      },
+      {
+        "name": "a29",
+        "start": 542.16,
+        "dur": 8.17
+      },
+      {
+        "name": "q30",
+        "start": 550.33,
+        "dur": 10.6
+      },
+      {
+        "name": "a30",
+        "start": 560.93,
+        "dur": 6.07
+      },
+      {
+        "name": "q31",
+        "start": 567.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a31",
+        "start": 577.6,
+        "dur": 5.77
+      },
+      {
+        "name": "q32",
+        "start": 583.36,
+        "dur": 10.6
+      },
+      {
+        "name": "a32",
+        "start": 593.96,
+        "dur": 6.8
+      },
+      {
+        "name": "q33",
+        "start": 600.76,
+        "dur": 10.6
+      },
+      {
+        "name": "a33",
+        "start": 611.36,
+        "dur": 8.43
+      },
+      {
+        "name": "q34",
+        "start": 619.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a34",
+        "start": 630.4,
+        "dur": 8.2
+      },
+      {
+        "name": "q35",
+        "start": 638.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a35",
+        "start": 649.2,
+        "dur": 7.27
+      },
+      {
+        "name": "q36",
+        "start": 656.46,
+        "dur": 10.6
+      },
+      {
+        "name": "a36",
+        "start": 667.06,
+        "dur": 9.2
+      },
+      {
+        "name": "q37",
+        "start": 676.26,
+        "dur": 10.6
+      },
+      {
+        "name": "a37",
+        "start": 686.86,
+        "dur": 7.53
+      },
+      {
+        "name": "q38",
+        "start": 694.4,
+        "dur": 10.6
+      },
+      {
+        "name": "a38",
+        "start": 705.0,
+        "dur": 7.43
+      },
+      {
+        "name": "q39",
+        "start": 712.43,
+        "dur": 10.6
+      },
+      {
+        "name": "a39",
+        "start": 723.03,
+        "dur": 6.9
+      },
+      {
+        "name": "q40",
+        "start": 729.93,
+        "dur": 10.6
+      },
+      {
+        "name": "a40",
+        "start": 740.53,
+        "dur": 8.33
+      },
+      {
+        "name": "q41",
+        "start": 748.86,
+        "dur": 10.6
+      },
+      {
+        "name": "a41",
+        "start": 759.46,
+        "dur": 8.2
+      },
+      {
+        "name": "q42",
+        "start": 767.66,
+        "dur": 10.6
+      },
+      {
+        "name": "a42",
+        "start": 778.26,
+        "dur": 8.8
+      },
+      {
+        "name": "q43",
+        "start": 787.06,
+        "dur": 10.6
+      },
+      {
+        "name": "a43",
+        "start": 797.66,
+        "dur": 6.6
+      },
+      {
+        "name": "q44",
+        "start": 804.26,
+        "dur": 10.6
+      },
+      {
+        "name": "a44",
+        "start": 814.86,
+        "dur": 9.13
+      },
+      {
+        "name": "q45",
+        "start": 824.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a45",
+        "start": 834.6,
+        "dur": 8.07
+      },
+      {
+        "name": "q46",
+        "start": 842.66,
+        "dur": 10.6
+      },
+      {
+        "name": "a46",
+        "start": 853.26,
+        "dur": 7.97
+      },
+      {
+        "name": "q47",
+        "start": 861.23,
+        "dur": 10.6
+      },
+      {
+        "name": "a47",
+        "start": 871.83,
+        "dur": 8.33
+      },
+      {
+        "name": "q48",
+        "start": 880.16,
+        "dur": 10.6
+      },
+      {
+        "name": "a48",
+        "start": 890.76,
+        "dur": 8.0
+      },
+      {
+        "name": "q49",
+        "start": 898.76,
+        "dur": 10.6
+      },
+      {
+        "name": "a49",
+        "start": 909.36,
+        "dur": 9.07
+      },
+      {
+        "name": "q50",
+        "start": 918.43,
+        "dur": 10.6
+      },
+      {
+        "name": "a50",
+        "start": 929.03,
+        "dur": 9.5
+      },
+      {
+        "name": "outro",
+        "start": 938.53,
+        "dur": 25.97
+      }
+    ],
+    "slide_pages": [
+      {
+        "kind": "Q",
+        "start": 0.0,
+        "end": 11.07
+      },
+      {
+        "kind": "A",
+        "start": 11.07,
+        "end": 16.07
+      },
+      {
+        "kind": "Q",
+        "start": 16.07,
+        "end": 27.1
+      },
+      {
+        "kind": "A",
+        "start": 27.1,
+        "end": 33.5
+      },
+      {
+        "kind": "Q",
+        "start": 33.5,
+        "end": 44.53
+      },
+      {
+        "kind": "A",
+        "start": 44.53,
+        "end": 49.57
+      },
+      {
+        "kind": "Q",
+        "start": 49.57,
+        "end": 60.6
+      },
+      {
+        "kind": "A",
+        "start": 60.6,
+        "end": 65.6
+      },
+      {
+        "kind": "Q",
+        "start": 65.6,
+        "end": 76.63
+      },
+      {
+        "kind": "A",
+        "start": 76.63,
+        "end": 79.77
+      },
+      {
+        "kind": "Q",
+        "start": 79.77,
+        "end": 90.8
+      },
+      {
+        "kind": "A",
+        "start": 90.8,
+        "end": 102.87
+      },
+      {
+        "kind": "Q",
+        "start": 102.87,
+        "end": 113.9
+      },
+      {
+        "kind": "A",
+        "start": 113.9,
+        "end": 116.4
+      },
+      {
+        "kind": "Q",
+        "start": 116.4,
+        "end": 127.43
+      },
+      {
+        "kind": "A",
+        "start": 127.43,
+        "end": 132.07
+      },
+      {
+        "kind": "Q",
+        "start": 132.07,
+        "end": 143.1
+      },
+      {
+        "kind": "A",
+        "start": 143.1,
+        "end": 148.1
+      },
+      {
+        "kind": "Q",
+        "start": 148.1,
+        "end": 159.13
+      },
+      {
+        "kind": "A",
+        "start": 159.13,
+        "end": 161.4
+      },
+      {
+        "kind": "Q",
+        "start": 161.4,
+        "end": 172.43
+      },
+      {
+        "kind": "A",
+        "start": 172.43,
+        "end": 175.17
+      },
+      {
+        "kind": "Q",
+        "start": 175.17,
+        "end": 186.2
+      },
+      {
+        "kind": "A",
+        "start": 186.2,
+        "end": 191.23
+      },
+      {
+        "kind": "Q",
+        "start": 191.23,
+        "end": 202.27
+      },
+      {
+        "kind": "A",
+        "start": 202.27,
+        "end": 204.77
+      },
+      {
+        "kind": "Q",
+        "start": 204.77,
+        "end": 215.8
+      },
+      {
+        "kind": "A",
+        "start": 215.8,
+        "end": 218.23
+      },
+      {
+        "kind": "Q",
+        "start": 218.23,
+        "end": 229.27
+      },
+      {
+        "kind": "A",
+        "start": 229.27,
+        "end": 231.53
+      },
+      {
+        "kind": "Q",
+        "start": 231.53,
+        "end": 242.57
+      },
+      {
+        "kind": "A",
+        "start": 242.57,
+        "end": 244.83
+      },
+      {
+        "kind": "Q",
+        "start": 244.83,
+        "end": 255.87
+      },
+      {
+        "kind": "A",
+        "start": 255.87,
+        "end": 258.1
+      },
+      {
+        "kind": "Q",
+        "start": 258.1,
+        "end": 269.13
+      },
+      {
+        "kind": "A",
+        "start": 269.13,
+        "end": 274.53
+      },
+      {
+        "kind": "Q",
+        "start": 274.53,
+        "end": 285.57
+      },
+      {
+        "kind": "A",
+        "start": 285.57,
+        "end": 290.77
+      },
+      {
+        "kind": "Q",
+        "start": 290.77,
+        "end": 301.8
+      },
+      {
+        "kind": "A",
+        "start": 301.8,
+        "end": 306.8
+      },
+      {
+        "kind": "Q",
+        "start": 306.8,
+        "end": 317.83
+      },
+      {
+        "kind": "A",
+        "start": 317.83,
+        "end": 322.87
+      },
+      {
+        "kind": "Q",
+        "start": 322.87,
+        "end": 333.9
+      },
+      {
+        "kind": "A",
+        "start": 333.9,
+        "end": 343.4
+      },
+      {
+        "kind": "Q",
+        "start": 343.4,
+        "end": 354.43
+      },
+      {
+        "kind": "A",
+        "start": 354.43,
+        "end": 357.03
+      },
+      {
+        "kind": "Q",
+        "start": 357.03,
+        "end": 368.07
+      },
+      {
+        "kind": "A",
+        "start": 368.07,
+        "end": 371.67
+      },
+      {
+        "kind": "Q",
+        "start": 371.67,
+        "end": 382.7
+      },
+      {
+        "kind": "A",
+        "start": 382.7,
+        "end": 386.23
+      },
+      {
+        "kind": "Q",
+        "start": 386.23,
+        "end": 397.27
+      },
+      {
+        "kind": "A",
+        "start": 397.27,
+        "end": 399.8
+      },
+      {
+        "kind": "Q",
+        "start": 399.8,
+        "end": 410.83
+      },
+      {
+        "kind": "A",
+        "start": 410.83,
+        "end": 417.53
+      },
+      {
+        "kind": "Q",
+        "start": 417.53,
+        "end": 428.57
+      },
+      {
+        "kind": "A",
+        "start": 428.57,
+        "end": 432.4
+      },
+      {
+        "kind": "Q",
+        "start": 432.4,
+        "end": 443.43
+      },
+      {
+        "kind": "A",
+        "start": 443.43,
+        "end": 448.43
+      },
+      {
+        "kind": "Q",
+        "start": 448.43,
+        "end": 459.47
+      },
+      {
+        "kind": "A",
+        "start": 459.47,
+        "end": 465.77
+      },
+      {
+        "kind": "Q",
+        "start": 465.77,
+        "end": 476.8
+      },
+      {
+        "kind": "A",
+        "start": 476.8,
+        "end": 491.8
+      },
+      {
+        "kind": "Q",
+        "start": 491.8,
+        "end": 502.83
+      },
+      {
+        "kind": "A",
+        "start": 502.83,
+        "end": 505.2
+      },
+      {
+        "kind": "Q",
+        "start": 505.2,
+        "end": 516.23
+      },
+      {
+        "kind": "A",
+        "start": 516.23,
+        "end": 518.87
+      },
+      {
+        "kind": "Q",
+        "start": 518.87,
+        "end": 529.9
+      },
+      {
+        "kind": "A",
+        "start": 529.9,
+        "end": 531.93
+      },
+      {
+        "kind": "Q",
+        "start": 531.93,
+        "end": 542.97
+      },
+      {
+        "kind": "A",
+        "start": 542.97,
+        "end": 545.37
+      },
+      {
+        "kind": "Q",
+        "start": 545.37,
+        "end": 556.4
+      },
+      {
+        "kind": "A",
+        "start": 556.4,
+        "end": 559.9
+      },
+      {
+        "kind": "Q",
+        "start": 559.9,
+        "end": 570.93
+      },
+      {
+        "kind": "A",
+        "start": 570.93,
+        "end": 573.13
+      },
+      {
+        "kind": "Q",
+        "start": 573.13,
+        "end": 584.17
+      },
+      {
+        "kind": "A",
+        "start": 584.17,
+        "end": 586.57
+      },
+      {
+        "kind": "Q",
+        "start": 586.57,
+        "end": 597.6
+      },
+      {
+        "kind": "A",
+        "start": 597.6,
+        "end": 601.87
+      },
+      {
+        "kind": "Q",
+        "start": 601.87,
+        "end": 612.9
+      },
+      {
+        "kind": "A",
+        "start": 612.9,
+        "end": 615.77
+      },
+      {
+        "kind": "Q",
+        "start": 615.77,
+        "end": 626.8
+      },
+      {
+        "kind": "A",
+        "start": 626.8,
+        "end": 631.83
+      },
+      {
+        "kind": "Q",
+        "start": 631.83,
+        "end": 642.87
+      },
+      {
+        "kind": "A",
+        "start": 642.87,
+        "end": 645.3
+      },
+      {
+        "kind": "Q",
+        "start": 645.3,
+        "end": 656.33
+      },
+      {
+        "kind": "A",
+        "start": 656.33,
+        "end": 661.37
+      },
+      {
+        "kind": "Q",
+        "start": 661.37,
+        "end": 672.4
+      },
+      {
+        "kind": "A",
+        "start": 672.4,
+        "end": 675.3
+      },
+      {
+        "kind": "Q",
+        "start": 675.3,
+        "end": 686.33
+      },
+      {
+        "kind": "A",
+        "start": 686.33,
+        "end": 689.47
+      },
+      {
+        "kind": "Q",
+        "start": 689.47,
+        "end": 700.5
+      },
+      {
+        "kind": "A",
+        "start": 700.5,
+        "end": 704.03
+      },
+      {
+        "kind": "Q",
+        "start": 704.03,
+        "end": 715.07
+      },
+      {
+        "kind": "A",
+        "start": 715.07,
+        "end": 717.63
+      },
+      {
+        "kind": "Q",
+        "start": 717.63,
+        "end": 728.67
+      },
+      {
+        "kind": "A",
+        "start": 728.67,
+        "end": 732.77
+      },
+      {
+        "kind": "Q",
+        "start": 732.77,
+        "end": 743.8
+      },
+      {
+        "kind": "A",
+        "start": 743.8,
+        "end": 748.8
+      },
+      {
+        "kind": "Q",
+        "start": 748.8,
+        "end": 759.83
+      },
+      {
+        "kind": "A",
+        "start": 759.83,
+        "end": 764.83
+      }
+    ],
+    "levels_db": {
+      "voice_rms": -20.0,
+      "music_rms": -36.0,
+      "mix_peak": -0.3
+    },
+    "warnings": [
+      "outro2: starts 0.4 s late (previous line ran long)"
+    ]
+  },
+  "log_tail": "     | 0/1000 [00:00<?, ?it/s]\rSampling:   0%|          | 1/1000 [00:00<02:44,  6.06it/s]\rSampling:   0%|          | 2/1000 [00:00<02:44,  6.07it/s]\rSampling:   0%|          | 3/1000 [00:00<02:42,  6.12it/s]\rSampling:   0%|          | 4/1000 [00:00<02:43,  6.09it/s]\rSampling:   0%|          | 5/1000 [00:00<02:51,  5.80it/s]\rSampling:   1%|          | 6/1000 [00:01<02:49,  5.87it/s]\rSampling:   1%|          | 7/1000 [00:01<02:48,  5.91it/s]\rSampling:   1%|          | 8/1000 [00:01<02:46,  5.96it/s]\rSampling:   1%|          | 9/1000 [00:01<02:44,  6.01it/s]\rSampling:   1%|          | 10/1000 [00:01<02:44,  6.02it/s]\rSampling:   1%|          | 11/1000 [00:01<02:44,  6.02it/s]\rSampling:   1%|          | 12/1000 [00:02<02:49,  5.83it/s]\rSampling:   1%|▏         | 13/1000 [00:02<02:55,  5.63it/s]\rSampling:   1%|▏         | 14/1000 [00:02<02:52,  5.71it/s]\rSampling:   2%|▏         | 15/1000 [00:02<02:51,  5.76it/s]\rSampling:   2%|▏         | 16/1000 [00:02<02:50,  5.77it/s]\rSampling:   2%|▏         | 17/1000 [00:02<02:48,  5.85it/s]\rSampling:   2%|▏         | 18/1000 [00:03<02:51,  5.73it/s]\rSampling:   2%|▏         | 19/1000 [00:03<02:49,  5.80it/s]\rSampling:   2%|▏         | 20/1000 [00:03<02:46,  5.87it/s]\rSampling:   2%|▏         | 21/1000 [00:03<02:46,  5.90it/s]\rSampling:   2%|▏         | 22/1000 [00:03<02:44,  5.95it/s]\rSampling:   2%|▏         | 23/1000 [00:03<02:43,  5.99it/s]\rSampling:   2%|▏         | 24/1000 [00:04<02:43,  5.97it/s]\rSampling:   2%|▎         | 25/1000 [00:04<02:43,  5.98it/s]\rSampling:   3%|▎         | 26/1000 [00:04<02:41,  6.02it/s]\rSampling:   3%|▎         | 27/1000 [00:04<02:40,  6.05it/s]\rSampling:   3%|▎         | 28/1000 [00:04<02:40,  6.04it/s]\rSampling:   3%|▎         | 29/1000 [00:04<02:40,  6.04it/s]\rSampling:   3%|▎         | 30/1000 [00:05<02:40,  6.04it/s]\rSampling:   3%|▎         | 31/1000 [00:05<02:40,  6.05it/s]\rSampling:   3%|▎         | 32/1000 [00:05<02:39,  6.05it/s]\rSampling:   3%|▎         | 33/1000 [00:05<02:40,  6.02it/s]\rSampling:   3%|▎         | 34/1000 [00:05<02:40,  6.01it/s]\rSampling:   4%|▎         | 35/1000 [00:05<02:40,  6.01it/s]\rSampling:   4%|▎         | 36/1000 [00:06<02:40,  6.02it/s]\rSampling:   4%|▎         | 37/1000 [00:06<02:39,  6.02it/s]\rSampling:   4%|▍         | 38/1000 [00:06<02:42,  5.92it/s]\rSampling:   4%|▍         | 39/1000 [00:06<02:44,  5.83it/s]\rSampling:   4%|▍         | 40/1000 [00:06<02:42,  5.90it/s]\rSampling:   4%|▍         | 41/1000 [00:06<02:41,  5.93it/s]\rSampling:   4%|▍         | 42/1000 [00:07<02:41,  5.95it/s]\rSampling:   4%|▍         | 43/1000 [00:07<02:40,  5.97it/s]\rSampling:   4%|▍         | 44/1000 [00:07<02:39,  5.99it/s]\rSampling:   4%|▍         | 45/1000 [00:07<02:42,  5.88it/s]\rSampling:   5%|▍         | 46/1000 [00:07<02:42,  5.86it/s]\rSampling:   5%|▍         | 47/1000 [00:07<02:42,  5.87it/s]\rSampling:   5%|▍         | 48/1000 [00:08<02:41,  5.89it/s]\rSampling:   5%|▍         | 49/1000 [00:08<02:40,  5.91it/s]\rSampling:   5%|▌         | 50/1000 [00:08<02:39,  5.95it/s]\rSampling:   5%|▌         | 51/1000 [00:08<02:38,  5.98it/s]\rSampling:   5%|▌         | 52/1000 [00:08<02:38,  5.96it/s]\rSampling:   5%|▌         | 53/1000 [00:08<02:38,  5.97it/s]\rSampling:   5%|▌         | 54/1000 [00:09<02:37,  5.99it/s]\rSampling:   6%|▌         | 55/1000 [00:09<02:37,  5.99it/s]\rSampling:   6%|▌         | 56/1000 [00:09<02:37,  6.00it/s]\rSampling:   6%|▌         | 57/1000 [00:09<02:37,  5.99it/s]\rSampling:   6%|▌         | 57/1000 [00:09<02:38,  5.94it/s]\n  voice 105/106 outro3: If you enjoyed it, give this video a like and hit subscribe \n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.\n  self.gen = func(*args, **kwds)\n\rSampling:   0%|          | 0/1000 [00:00<?, ?it/s]\rSampling:   0%|          | 1/1000 [00:00<02:38,  6.30it/s]\rSampling:   0%|          | 2/1000 [00:00<02:37,  6.32it/s]\rSampling:   0%|          | 3/1000 [00:00<02:38,  6.31it/s]\rSampling:   0%|          | 4/1000 [00:00<02:38,  6.30it/s]\rSampling:   0%|          | 5/1000 [00:00<02:39,  6.25it/s]\rSampling:   1%|          | 6/1000 [00:00<02:43,  6.10it/s]\rSampling:   1%|          | 7/1000 [00:01<02:43,  6.06it/s]\rSampling:   1%|          | 8/1000 [00:01<02:42,  6.12it/s]\rSampling:   1%|          | 9/1000 [00:01<02:40,  6.18it/s]\rSampling:   1%|          | 10/1000 [00:01<02:39,  6.19it/s]\rSampling:   1%|          | 11/1000 [00:01<02:40,  6.16it/s]\rSampling:   1%|          | 12/1000 [00:01<02:40,  6.17it/s]\rSampling:   1%|▏         | 13/1000 [00:02<02:44,  5.99it/s]\rSampling:   1%|▏         | 14/1000 [00:02<02:45,  5.97it/s]\rSampling:   2%|▏         | 15/1000 [00:02<02:43,  6.01it/s]\rSampling:   2%|▏         | 16/1000 [00:02<02:42,  6.06it/s]\rSampling:   2%|▏         | 17/1000 [00:02<02:41,  6.10it/s]\rSampling:   2%|▏         | 18/1000 [00:02<02:39,  6.16it/s]\rSampling:   2%|▏         | 19/1000 [00:03<02:38,  6.19it/s]\rSampling:   2%|▏         | 20/1000 [00:03<02:38,  6.18it/s]\rSampling:   2%|▏         | 21/1000 [00:03<02:37,  6.21it/s]\rSampling:   2%|▏         | 22/1000 [00:03<02:36,  6.24it/s]\rSampling:   2%|▏         | 23/1000 [00:03<02:35,  6.26it/s]\rSampling:   2%|▏         | 24/1000 [00:03<02:35,  6.30it/s]\rSampling:   2%|▎         | 25/1000 [00:04<02:34,  6.30it/s]\rSampling:   3%|▎         | 26/1000 [00:04<02:33,  6.33it/s]\rSampling:   3%|▎         | 27/1000 [00:04<02:35,  6.24it/s]\rSampling:   3%|▎         | 28/1000 [00:04<02:38,  6.15it/s]\rSampling:   3%|▎         | 29/1000 [00:04<02:36,  6.21it/s]\rSampling:   3%|▎         | 30/1000 [00:04<02:35,  6.25it/s]\rSampling:   3%|▎         | 31/1000 [00:05<02:34,  6.29it/s]\rSampling:   3%|▎         | 32/1000 [00:05<02:33,  6.31it/s]\rSampling:   3%|▎         | 33/1000 [00:05<02:32,  6.33it/s]\rSampling:   3%|▎         | 34/1000 [00:05<02:34,  6.25it/s]\rSampling:   4%|▎         | 35/1000 [00:05<02:38,  6.10it/s]\rSampling:   4%|▎         | 36/1000 [00:05<02:36,  6.16it/s]\rSampling:   4%|▎         | 37/1000 [00:05<02:35,  6.21it/s]\rSampling:   4%|▍         | 38/1000 [00:06<02:34,  6.24it/s]\rSampling:   4%|▍         | 39/1000 [00:06<02:33,  6.26it/s]\rSampling:   4%|▍         | 40/1000 [00:06<02:32,  6.29it/s]\rSampling:   4%|▍         | 41/1000 [00:06<02:32,  6.30it/s]\rSampling:   4%|▍         | 42/1000 [00:06<02:32,  6.29it/s]\rSampling:   4%|▍         | 43/1000 [00:06<02:32,  6.29it/s]\rSampling:   4%|▍         | 44/1000 [00:07<02:31,  6.30it/s]\rSampling:   4%|▍         | 45/1000 [00:07<02:32,  6.25it/s]\rSampling:   5%|▍         | 46/1000 [00:07<02:31,  6.29it/s]\rSampling:   5%|▍         | 47/1000 [00:07<02:30,  6.32it/s]\rSampling:   5%|▍         | 48/1000 [00:07<02:30,  6.31it/s]\rSampling:   5%|▍         | 49/1000 [00:07<02:32,  6.24it/s]\rSampling:   5%|▌         | 50/1000 [00:08<02:31,  6.26it/s]\rSampling:   5%|▌         | 51/1000 [00:08<02:31,  6.25it/s]\rSampling:   5%|▌         | 52/1000 [00:08<02:31,  6.24it/s]\rSampling:   5%|▌         | 53/1000 [00:08<02:31,  6.26it/s]\rSampling:   5%|▌         | 54/1000 [00:08<02:31,  6.26it/s]\rSampling:   6%|▌         | 55/1000 [00:08<02:30,  6.27it/s]\rSampling:   6%|▌         | 56/1000 [00:09<02:30,  6.26it/s]\rSampling:   6%|▌         | 57/1000 [00:09<02:30,  6.26it/s]\rSampling:   6%|▌         | 58/1000 [00:09<02:30,  6.26it/s]\rSampling:   6%|▌         | 59/1000 [00:09<02:30,  6.26it/s]\rSampling:   6%|▌         | 60/1000 [00:09<02:29,  6.28it/s]\rSampling:   6%|▌         | 61/1000 [00:09<02:29,  6.30it/s]\rSampling:   6%|▌         | 62/1000 [00:09<02:28,  6.33it/s]\rSampling:   6%|▋         | 63/1000 [00:10<02:29,  6.28it/s]\rSampling:   6%|▋         | 64/1000 [00:10<02:30,  6.22it/s]\rSampling:   6%|▋         | 65/1000 [00:10<02:30,  6.23it/s]\rSampling:   7%|▋         | 66/1000 [00:10<02:29,  6.23it/s]\rSampling:   7%|▋         | 67/1000 [00:10<02:30,  6.22it/s]\rSampling:   7%|▋         | 68/1000 [00:10<02:28,  6.26it/s]\rSampling:   7%|▋         | 69/1000 [00:11<02:28,  6.27it/s]\rSampling:   7%|▋         | 70/1000 [00:11<02:31,  6.14it/s]\rSampling:   7%|▋         | 71/1000 [00:11<02:32,  6.10it/s]\rSampling:   7%|▋         | 72/1000 [00:11<02:30,  6.16it/s]\rSampling:   7%|▋         | 73/1000 [00:11<02:29,  6.19it/s]\rSampling:   7%|▋         | 74/1000 [00:11<02:28,  6.23it/s]\rSampling:   8%|▊         | 75/1000 [00:12<02:27,  6.26it/s]\rSampling:   8%|▊         | 76/1000 [00:12<02:27,  6.26it/s]\rSampling:   8%|▊         | 77/1000 [00:12<02:29,  6.17it/s]\rSampling:   8%|▊         | 78/1000 [00:12<02:31,  6.07it/s]\rSampling:   8%|▊         | 79/1000 [00:12<02:30,  6.10it/s]\rSampling:   8%|▊         | 80/1000 [00:12<02:29,  6.15it/s]\rSampling:   8%|▊         | 81/1000 [00:13<02:29,  6.16it/s]\rSampling:   8%|▊         | 82/1000 [00:13<02:28,  6.17it/s]\rSampling:   8%|▊         | 83/1000 [00:13<02:27,  6.22it/s]\rSampling:   8%|▊         | 84/1000 [00:13<02:27,  6.23it/s]\rSampling:   8%|▊         | 85/1000 [00:13<02:26,  6.24it/s]\rSampling:   9%|▊         | 86/1000 [00:13<02:26,  6.26it/s]\rSampling:   9%|▊         | 87/1000 [00:13<02:25,  6.27it/s]\rSampling:   9%|▉         | 88/1000 [00:14<02:24,  6.29it/s]\rSampling:   9%|▉         | 89/1000 [00:14<02:24,  6.29it/s]\rSampling:   9%|▉         | 90/1000 [00:14<02:24,  6.29it/s]\rSampling:   9%|▉         | 91/1000 [00:14<02:24,  6.29it/s]\rSampling:   9%|▉         | 92/1000 [00:14<02:25,  6.26it/s]\rSampling:   9%|▉         | 93/1000 [00:14<02:24,  6.26it/s]\rSampling:   9%|▉         | 94/1000 [00:15<02:24,  6.26it/s]\rSampling:  10%|▉         | 95/1000 [00:15<02:24,  6.25it/s]\rSampling:  10%|▉         | 96/1000 [00:15<02:24,  6.24it/s]\rSampling:  10%|▉         | 97/1000 [00:15<02:26,  6.17it/s]\rSampling:  10%|▉         | 98/1000 [00:15<02:27,  6.11it/s]\rSampling:  10%|▉         | 99/1000 [00:15<02:33,  5.86it/s]\rSampling:  10%|█         | 100/1000 [00:16<02:30,  5.96it/s]\rSampling:  10%|█         | 101/1000 [00:16<02:28,  6.05it/s]\rSampling:  10%|█         | 102/1000 [00:16<02:27,  6.09it/s]\rSampling:  10%|█         | 103/1000 [00:16<02:27,  6.10it/s]\rSampling:  10%|█         | 104/1000 [00:16<02:26,  6.10it/s]\rSampling:  10%|█         | 105/1000 [00:16<02:27,  6.09it/s]\rSampling:  11%|█         | 106/1000 [00:17<02:27,  6.08it/s]\rSampling:  11%|█         | 107/1000 [00:17<02:26,  6.09it/s]\rSampling:  11%|█         | 108/1000 [00:17<02:26,  6.07it/s]\rSampling:  11%|█         | 109/1000 [00:17<02:26,  6.07it/s]\rSampling:  11%|█         | 110/1000 [00:17<02:27,  6.04it/s]\rSampling:  11%|█         | 111/1000 [00:17<02:26,  6.05it/s]\rSampling:  11%|█         | 112/1000 [00:18<02:26,  6.07it/s]\rSampling:  11%|█▏        | 113/1000 [00:18<02:43,  5.44it/s]\rSampling:  11%|█▏        | 114/1000 [00:18<02:36,  5.66it/s]\rSampling:  12%|█▏        | 115/1000 [00:18<02:31,  5.83it/s]\rSampling:  12%|█▏        | 116/1000 [00:18<02:28,  5.96it/s]\rSampling:  12%|█▏        | 117/1000 [00:18<02:26,  6.03it/s]\rSampling:  12%|█▏        | 118/1000 [00:19<02:24,  6.08it/s]\rSampling:  12%|█▏        | 119/1000 [00:19<02:24,  6.09it/s]\rSampling:  12%|█▏        | 120/1000 [00:19<02:23,  6.12it/s]\rSampling:  12%|█▏        | 121/1000 [00:19<02:22,  6.17it/s]\rSampling:  12%|█▏        | 122/1000 [00:19<02:22,  6.17it/s]\rSampling:  12%|█▏        | 123/1000 [00:19<02:22,  6.16it/s]\rSampling:  12%|█▏        | 124/1000 [00:20<02:25,  6.03it/s]\rSampling:  12%|█▎        | 125/1000 [00:20<02:25,  6.00it/s]\rSampling:  13%|█▎        | 126/1000 [00:20<02:25,  6.00it/s]\rSampling:  13%|█▎        | 127/1000 [00:20<02:24,  6.03it/s]\rSampling:  13%|█▎        | 128/1000 [00:20<02:23,  6.07it/s]\rSampling:  13%|█▎        | 129/1000 [00:20<02:22,  6.12it/s]\rSampling:  13%|█▎        | 130/1000 [00:21<02:21,  6.15it/s]\rSampling:  13%|█▎        | 131/1000 [00:21<02:20,  6.18it/s]\rSampling:  13%|█▎        | 132/1000 [00:21<02:19,  6.20it/s]\rSampling:  13%|█▎        | 133/1000 [00:21<02:20,  6.17it/s]\rSampling:  13%|█▎        | 134/1000 [00:21<02:21,  6.14it/s]\rSampling:  14%|█▎        | 135/1000 [00:21<02:21,  6.09it/s]\rSampling:  14%|█▎        | 136/1000 [00:22<02:21,  6.12it/s]\rSampling:  14%|█▎        | 137/1000 [00:22<02:22,  6.06it/s]\rSampling:  14%|█▍        | 138/1000 [00:22<02:22,  6.04it/s]\rSampling:  14%|█▍        | 139/1000 [00:22<02:22,  6.06it/s]\rSampling:  14%|█▍        | 140/1000 [00:22<02:22,  6.03it/s]\rSampling:  14%|█▍        | 141/1000 [00:22<02:21,  6.08it/s]\rSampling:  14%|█▍        | 142/1000 [00:23<02:20,  6.09it/s]\rSampling:  14%|█▍        | 143/1000 [00:23<02:20,  6.09it/s]\rSampling:  14%|█▍        | 143/1000 [00:23<02:19,  6.16it/s]\n  voice 106/106 outro4: Want one more quiz? Check out one of our other videos!\n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.\n  self.gen = func(*args, **kwds)\n\rSampling:   0%|          | 0/1000 [00:00<?, ?it/s]\rSampling:   0%|          | 1/1000 [00:00<02:33,  6.49it/s]\rSampling:   0%|          | 2/1000 [00:00<02:35,  6.40it/s]\rSampling:   0%|          | 3/1000 [00:00<02:36,  6.36it/s]\rSampling:   0%|          | 4/1000 [00:00<02:38,  6.30it/s]\rSampling:   0%|          | 5/1000 [00:00<02:38,  6.27it/s]\rSampling:   1%|          | 6/1000 [00:00<02:44,  6.05it/s]\rSampling:   1%|          | 7/1000 [00:01<02:45,  6.02it/s]\rSampling:   1%|          | 8/1000 [00:01<02:41,  6.14it/s]\rSampling:   1%|          | 9/1000 [00:01<02:40,  6.17it/s]\rSampling:   1%|          | 10/1000 [00:01<02:39,  6.20it/s]\rSampling:   1%|          | 11/1000 [00:01<02:39,  6.21it/s]\rSampling:   1%|          | 12/1000 [00:01<02:38,  6.24it/s]\rSampling:   1%|▏         | 13/1000 [00:02<02:38,  6.21it/s]\rSampling:   1%|▏         | 14/1000 [00:02<02:40,  6.14it/s]\rSampling:   2%|▏         | 15/1000 [00:02<02:38,  6.21it/s]\rSampling:   2%|▏         | 16/1000 [00:02<02:36,  6.29it/s]\rSampling:   2%|▏         | 17/1000 [00:02<02:35,  6.31it/s]\rSampling:   2%|▏         | 18/1000 [00:02<02:34,  6.35it/s]\rSampling:   2%|▏         | 19/1000 [00:03<02:35,  6.30it/s]\rSampling:   2%|▏         | 20/1000 [00:03<02:37,  6.23it/s]\rSampling:   2%|▏         | 21/1000 [00:03<02:40,  6.09it/s]\rSampling:   2%|▏         | 22/1000 [00:03<02:38,  6.15it/s]\rSampling:   2%|▏         | 23/1000 [00:03<02:36,  6.23it/s]\rSampling:   2%|▏         | 24/1000 [00:03<02:35,  6.29it/s]\rSampling:   2%|▎         | 25/1000 [00:04<02:34,  6.31it/s]\rSampling:   3%|▎         | 26/1000 [00:04<02:34,  6.32it/s]\rSampling:   3%|▎         | 27/1000 [00:04<02:34,  6.31it/s]\rSampling:   3%|▎         | 28/1000 [00:04<02:39,  6.11it/s]\rSampling:   3%|▎         | 29/1000 [00:04<02:37,  6.17it/s]\rSampling:   3%|▎         | 30/1000 [00:04<02:38,  6.12it/s]\rSampling:   3%|▎         | 31/1000 [00:04<02:36,  6.17it/s]\rSampling:   3%|▎         | 32/1000 [00:05<02:36,  6.18it/s]\rSampling:   3%|▎         | 33/1000 [00:05<02:37,  6.14it/s]\rSampling:   3%|▎         | 34/1000 [00:05<02:38,  6.08it/s]\rSampling:   4%|▎         | 35/1000 [00:05<02:43,  5.90it/s]\rSampling:   4%|▎         | 36/1000 [00:05<02:41,  5.96it/s]\rSampling:   4%|▎         | 37/1000 [00:05<02:40,  6.00it/s]\rSampling:   4%|▍         | 38/1000 [00:06<02:38,  6.09it/s]\rSampling:   4%|▍         | 39/1000 [00:06<02:35,  6.16it/s]\rSampling:   4%|▍         | 40/1000 [00:06<02:34,  6.21it/s]\rSampling:   4%|▍         | 41/1000 [00:06<02:34,  6.20it/s]\rSampling:   4%|▍         | 42/1000 [00:06<02:54,  5.50it/s]\rSampling:   4%|▍         | 43/1000 [00:07<02:46,  5.75it/s]\rSampling:   4%|▍         | 44/1000 [00:07<02:41,  5.91it/s]\rSampling:   4%|▍         | 45/1000 [00:07<02:38,  6.04it/s]\rSampling:   5%|▍         | 46/1000 [00:07<02:35,  6.15it/s]\rSampling:   5%|▍         | 47/1000 [00:07<02:32,  6.24it/s]\rSampling:   5%|▍         | 48/1000 [00:07<02:31,  6.28it/s]\rSampling:   5%|▍         | 49/1000 [00:07<02:32,  6.25it/s]\rSampling:   5%|▌         | 50/1000 [00:08<02:31,  6.29it/s]\rSampling:   5%|▌         | 51/1000 [00:08<02:31,  6.26it/s]\rSampling:   5%|▌         | 52/1000 [00:08<02:31,  6.26it/s]\rSampling:   5%|▌         | 53/1000 [00:08<02:30,  6.30it/s]\rSampling:   5%|▌         | 54/1000 [00:08<02:29,  6.32it/s]\rSampling:   6%|▌         | 55/1000 [00:08<02:29,  6.31it/s]\rSampling:   6%|▌         | 56/1000 [00:09<02:33,  6.14it/s]\rSampling:   6%|▌         | 57/1000 [00:09<02:34,  6.11it/s]\rSampling:   6%|▌         | 58/1000 [00:09<02:33,  6.16it/s]\rSampling:   6%|▌         | 59/1000 [00:09<02:32,  6.18it/s]\rSampling:   6%|▌         | 60/1000 [00:09<02:30,  6.25it/s]\rSampling:   6%|▌         | 61/1000 [00:09<02:28,  6.30it/s]\rSampling:   6%|▌         | 62/1000 [00:10<02:27,  6.35it/s]\rSampling:   6%|▋         | 63/1000 [00:10<02:31,  6.17it/s]\rSampling:   6%|▋         | 64/1000 [00:10<02:31,  6.17it/s]\rSampling:   6%|▋         | 65/1000 [00:10<02:30,  6.22it/s]\rSampling:   7%|▋         | 66/1000 [00:10<02:31,  6.18it/s]\rSampling:   7%|▋         | 67/1000 [00:10<02:31,  6.15it/s]\rSampling:   7%|▋         | 68/1000 [00:11<02:29,  6.21it/s]\rSampling:   7%|▋         | 69/1000 [00:11<02:30,  6.19it/s]\rSampling:   7%|▋         | 70/1000 [00:11<02:30,  6.17it/s]\rSampling:   7%|▋         | 71/1000 [00:11<02:29,  6.20it/s]\rSampling:   7%|▋         | 72/1000 [00:11<02:28,  6.24it/s]\rSampling:   7%|▋         | 73/1000 [00:11<02:29,  6.22it/s]\rSampling:   7%|▋         | 74/1000 [00:11<02:28,  6.24it/s]\rSampling:   8%|▊         | 75/1000 [00:12<02:28,  6.24it/s]\rSampling:   8%|▊         | 76/1000 [00:12<02:27,  6.25it/s]\rSampling:   8%|▊         | 77/1000 [00:12<02:29,  6.19it/s]\rSampling:   8%|▊         | 78/1000 [00:12<02:28,  6.21it/s]\rSampling:   8%|▊         | 79/1000 [00:12<02:28,  6.20it/s]\rSampling:   8%|▊         | 80/1000 [00:12<02:27,  6.22it/s]\rSampling:   8%|▊         | 81/1000 [00:13<02:27,  6.24it/s]\rSampling:   8%|▊         | 82/1000 [00:13<02:27,  6.23it/s]\rSampling:   8%|▊         | 83/1000 [00:13<02:27,  6.20it/s]\rSampling:   8%|▊         | 84/1000 [00:13<02:27,  6.20it/s]\rSampling:   8%|▊         | 85/1000 [00:13<02:29,  6.13it/s]\rSampling:   9%|▊         | 86/1000 [00:13<02:30,  6.08it/s]\rSampling:   9%|▊         | 87/1000 [00:14<02:29,  6.09it/s]\rSampling:   9%|▉         | 88/1000 [00:14<02:30,  6.07it/s]\rSampling:   9%|▉         | 89/1000 [00:14<02:29,  6.08it/s]\rSampling:   9%|▉         | 90/1000 [00:14<02:29,  6.07it/s]\rSampling:   9%|▉         | 91/1000 [00:14<02:29,  6.07it/s]\rSampling:   9%|▉         | 92/1000 [00:14<02:29,  6.07it/s]\rSampling:   9%|▉         | 93/1000 [00:15<02:28,  6.10it/s]\rSampling:   9%|▉         | 94/1000 [00:15<02:29,  6.06it/s]\rSampling:   9%|▉         | 94/1000 [00:15<02:26,  6.17it/s]\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-14.mp4 (16.1 min), 1 warning(s)\n  ! outro2: starts 0.4 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-79775cf6baf707b1f4c5\n== __run_11\n-rw-r--r--+ 1 root root 113328 Nov 16 05:09 /usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf\n-rw-r--r--+ 1 root root 549824 Nov 16 05:09 /usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf\nthumbnail-a.jpg: 2560x1440, JPEG quality 95, 1.31 MB, band red\nthumbnail-b.jpg: 2560x1440, JPEG quality 95, 1.30 MB, band blue\nstudio-thumbnails: quiz-14 published\n"
+}
