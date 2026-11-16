@@ -113,7 +113,7 @@ def studio_tasks(quiz, cfg, playlist):
     titles = title_variants(quiz, cfg)
     return [
         f"End screen: {es.get('note', '')} Left = {es.get('left', '')}; right = {es.get('right', '').format(playlist=playlist)}.",
-        "Test & Compare (A/B), Title and thumbnail (BOTH, every quiz from #11; Giulia 10 Nov): " + " | ".join(
+        "Test & Compare (A/B), Title and thumbnail, always running on every quiz (Giulia, 16 Nov; never title-only): " + " | ".join(
             f"{t} + thumbnail {chr(65 + i)}" for i, t in enumerate(titles)) + ". Thumbnails A and B are "
         "thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
         f"Video location: {cfg.get('studio', {}).get('location', 'Melbourne, VIC')}.",

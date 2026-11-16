@@ -3,10 +3,14 @@
 The Monday run reads this file and covers each open item in the report emailed to Giulia and Shoma. Tick items off (move them to "Done") once reported.
 
 ## Open
-- **Quiz #10 (Disney, hard): title-only A/B test.** Giulia set it to test titles only (10 Nov). Report which title won (watch-time share), with views, impressions and click-through rate at the same age as other quizzes.
-- **Quiz #10 difficulty.** Giulia found the questions hard and is worried we may lose viewers. Report audience retention (where people drop off, especially early questions), average view duration and comments about difficulty, compared with Quiz #9 (General Knowledge). Recommend whether fandom quizzes stay "hard" or move to "medium".
-- **Quiz #10 thumbnail.** Giulia rated the first version a really bad thumbnail (heading too small, weak hook "REAL fans only", not sharp). Replaced on 10 Nov with the code-made version ("Disney Quiz #10" full width, "Only REAL fans would know", 2560x1440, the original Canva fonts). Note any change in click-through rate after the swap.
-- **From Quiz #11: thumbnail A/B every quiz.** Report the thumbnail result each week and propose the next single change to test (band colour, hook wording, heading style, fonts).
-- **Tags.** Quiz #10 tags re-done from vidIQ keyword research on 10 Nov. Each week, check tags against vidIQ for every new quiz.
+- **Fandom difficulty trial (from 16 Nov 2026).** Every quiz is now medium, with 5 easy openers and the hardest questions last. Compare the share of viewers still watching at Q3, Q10, halfway and the end with Quiz #9 (medium, 65% / 50% / 33% / 20%) and Quiz #10 (Disney, hard, 40% / 30% / ~25% / 15%). Recommend keeping or changing it.
+- **Thumbnail tests on every quiz, always** (Giulia, 16 Nov 2026). Report every running test: which variant leads on watch-time share, how long is left, and what will be tested next. Say which videos have no thumbnail test and why.
+- **A/B results in context.** Watch-time share compares A and B on the same video; a share far from 50% means one variant clearly beat the other. Report it next to each video's click-through rate and average view duration, which are the numbers we're trying to raise (Quiz #9: 2.8% CTR and 5:52 average viewing on 16 Nov).
+- **Pins.** Check pins on the public watch page (docs/mac-studio-task.md, section 3 step 4).
+- **Competitor research.** Note which 1M+ patterns this week's quizzes used (docs/competitor-research.md) and how they performed.
+- **Tags.** Each week, check tags against vidIQ for every new quiz.
 
 ## Done
+- Quiz #10 difficulty and retention: reported 16 Nov (40% left at Q3 vs 65% for #9). Giulia agreed to trial medium (16 Nov).
+- Quiz #9 title and thumbnail test: B ("every dummy should know") led 59% to 41% on 16 Nov; the pattern is now title B for new quizzes.
+- Quiz #10 thumbnail swap: no "before" click-through rate to compare (swapped before release).

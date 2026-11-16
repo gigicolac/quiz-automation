@@ -63,7 +63,7 @@
   },
   "title_variants": [
     "{title}",
-    "Can You Pass This {series} Quiz? 🧠 {count} Trivia Questions | Quiz #{number}"
+    "{count} {series} Questions Every Dummy Should Know 🧠 Can You Score 40+? | Quiz #{number}"
   ],
   "end_screen": {
     "left": "Video: Most recent upload",
@@ -153,7 +153,7 @@
       "movie quiz"
     ]
   },
-  "_title_variants": "A/B: current title vs a research-based one (vidIQ outliers 6 Nov 2026: 'Can you pass…' challenge titles break out; vidIQ title score 91). The Monday run updates this from results.",
+  "_title_variants": "A/B title B (16 Nov 2026): a cheeky score-threshold challenge. Quiz #9's B title '50 questions every dummy should know' led 59% to 41%, and 1M+ quiz videos use score thresholds ('Score at least 4/10', 'IQ above average if you get 45+ right', '35 right to pass'; docs/competitor-research.md). Monday run updates this from results; the claim must stay light, never a fake statistic presented as fact.",
   "studio_education": {
     "type": "Activity",
     "problems": "one line per question: timecode then the question"
@@ -173,7 +173,7 @@
     "Fandom": "Only REAL fans would know"
   },
   "thumbnail_test": {
-    "_comment": "Thumbnail A/B (Test & Compare) changes ONE thing at a time. Next ideas: band colour, tagline wording, heading style. Update from the weekly results.",
+    "_comment": "Giulia, 16 Nov 2026: 'We should always be running thumbnail tests across all quiz videos.' Every long video has a Title and thumbnail test; A and B change ONE thing, and each change should be big enough to move click-through rate. Queue: band colour (red vs blue), then hook wording, then a big '50 QUESTIONS' number + 4-picture grid (1M+ style), then a single question on the thumbnail. Update from the weekly results.",
     "a": {
       "band": "red"
     },
