@@ -401,6 +401,47 @@ def write_srt(cues, path):
 
 # ---------------------------------------------------------------- main
 
+def find_buzzers(canva, pages, bcfg, sr):
+    """Find the countdown buzzer in the Canva audio for each question page.
+
+    pages: [(segment name, page start in the slides video)]. Yields (name, clip or None, note).
+    The slides' audio can drift a little from the picture (chunked exports), so the buzzer's onset
+    is searched for near the end of the countdown instead of trusting the clock. If a page has no
+    buzzer (Quiz #13: the Canva audio was quiet for Q38-Q50), the nearest earlier buzzer found is
+    reused so every question still gets one; with none found at all, the page gets no buzzer.
+    """
+    blk = int(0.02 * sr)
+    found = []
+    for name, start in pages:
+        w0 = max(0, int((start + bcfg["search_from"]) * sr))
+        w1 = int((start + bcfg["search_to"]) * sr)
+        win = canva[w0:w1]
+        clip = None
+        if len(win) >= blk:
+            nb = len(win) // blk
+            lvl = 20 * np.log10(np.sqrt((win[: nb * blk].reshape(nb, blk) ** 2).mean(axis=1)) + 1e-12)
+            loud = np.nonzero(lvl > bcfg["onset_db"])[0]
+            if len(loud):
+                on = w0 + loud[0] * blk
+                clip = canva[on:on + int(bcfg["length"] * sr)].copy()
+                clip = set_rms(clip, bcfg["rms_db"])
+                ramp = min(len(clip), int(0.05 * sr))
+                clip[-ramp:] *= np.linspace(1, 0, ramp)
+        found.append((name, clip))
+    first = next((f for f in found if f[1] is not None), None)
+    prev = None
+    for name, clip in found:
+        if clip is not None:
+            prev = (name, clip)
+            yield name, clip, None
+            continue
+        src = prev or first
+        if src is None:
+            yield name, None, "no buzzer found in the Canva audio"
+        else:
+            yield name, src[1].copy(), f"no buzzer in the Canva audio; reused {src[0]}'s"
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--quiz", required=True, help="quiz folder, e.g. quizzes/quiz-09")
@@ -515,29 +556,13 @@ def main():
     bcfg = cfg.get("buzzer", {})
     if bcfg.get("enabled", True):
         canva = load_audio(args.slides)
-        for sg in segs:
-            if "page_start" not in sg:
+        q_pages = [(sg["name"], sg["page_start"]) for sg in segs if "page_start" in sg]
+        for name, clip, note in find_buzzers(canva, q_pages, bcfg, SR):
+            if note:
+                warnings.append(f"{name}: {note}")
+            if clip is None:
                 continue
-            # the slides' audio can drift a little from the picture (chunked exports), so find the
-            # buzzer's onset near the end of the countdown instead of trusting the clock
-            w0 = int((sg["page_start"] + bcfg["search_from"]) * SR)
-            w1 = int((sg["page_start"] + bcfg["search_to"]) * SR)
-            win = canva[w0:w1]
-            blk = int(0.02 * SR)
-            if len(win) < blk:
-                warnings.append(f"{sg['name']}: no buzzer found in the Canva audio")
-                continue
-            nb = len(win) // blk
-            lvl = 20 * np.log10(np.sqrt((win[: nb * blk].reshape(nb, blk) ** 2).mean(axis=1)) + 1e-12)
-            loud = np.nonzero(lvl > bcfg["onset_db"])[0]
-            if len(loud) == 0:
-                warnings.append(f"{sg['name']}: no buzzer found in the Canva audio")
-                continue
-            on = w0 + loud[0] * blk
-            clip = canva[on:on + int(bcfg["length"] * SR)].copy()
-            clip = set_rms(clip, bcfg["rms_db"])
-            ramp = min(len(clip), int(0.05 * SR))
-            clip[-ramp:] *= np.linspace(1, 0, ramp)
+            sg = next(x for x in segs if x["name"] == name)
             a = int((sg["start"] + bcfg["at"]) * SR)
             fx[a:a + len(clip)] += clip[: n - a]
 

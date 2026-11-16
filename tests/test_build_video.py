@@ -69,3 +69,31 @@ class AudioTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BuzzerTests(unittest.TestCase):
+    CFG = {"search_from": 9.0, "search_to": 12.5, "onset_db": -20.0, "length": 0.8, "rms_db": -19.0}
+
+    def test_missing_buzzers_reuse_the_nearest_earlier_one(self):
+        import numpy as np
+        sr = 1000
+        canva = np.zeros(60 * sr, np.float32)
+        canva[10 * sr:int(10.8 * sr)] = 0.5      # q01 buzzer at 10 s; q02 (page at 20 s) and q03 (40 s) quiet
+        pages = [("q01", 0.0), ("q02", 20.0), ("q03", 55.0)]  # q03's window runs past the end of the audio
+        out = list(bv.find_buzzers(canva, pages, self.CFG, sr))
+        self.assertEqual([o[0] for o in out], ["q01", "q02", "q03"])
+        self.assertIsNone(out[0][2])
+        self.assertEqual(out[1][2], "no buzzer in the Canva audio; reused q01's")
+        self.assertEqual(out[2][2], "no buzzer in the Canva audio; reused q01's")
+        self.assertTrue(all(o[1] is not None and len(o[1]) == int(0.8 * sr) for o in out))
+
+    def test_leading_gap_uses_first_found_and_none_found_warns(self):
+        import numpy as np
+        sr = 1000
+        canva = np.zeros(40 * sr, np.float32)
+        canva[30 * sr:int(30.8 * sr)] = 0.5
+        out = list(bv.find_buzzers(canva, [("q01", 0.0), ("q02", 20.0)], self.CFG, sr))
+        self.assertEqual(out[0][2], "no buzzer in the Canva audio; reused q02's")
+        self.assertIsNone(out[1][2])
+        none = list(bv.find_buzzers(np.zeros(40 * sr, np.float32), [("q01", 0.0)], self.CFG, sr))
+        self.assertEqual(none, [("q01", None, "no buzzer found in the Canva audio")])
