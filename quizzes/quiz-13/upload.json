@@ -1,0 +1,52 @@
+{
+  "quiz": "quiz-13",
+  "channel": {
+    "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+    "title": "One More Quiz!"
+  },
+  "status": "scheduled",
+  "started_at": "2026-11-17T03:25:58.887220+00:00",
+  "title": "Can You Pass This 2000s Quiz? 📱 50 Pop Culture Trivia Questions | Pop Culture Quiz #13",
+  "intended_publish_at": "2026-11-19T20:00:00Z",
+  "publish_at_local": {
+    "US Eastern": "Thu 19 Nov 2026 15:00 EST",
+    "Sydney": "Fri 20 Nov 2026 07:00 AEDT"
+  },
+  "release_tag": "quiz-13-preview-29",
+  "playlist": "Pop Culture Quizzes",
+  "problems": "0:18 In the 2001 film, what colour is the grumpy swamp-dwelling ogre Shrek?\n0:37 In Shrek (2001), what kind of animal is Shrek's chatty best friend?\n0:56 Which giant London observation wheel opened to the public in 2000?\n1:14 In the Harry Potter films, what is the name of Harry's snowy white owl?\n1:32 Which Nintendo console of 2006 had a motion remote you could swing like a tennis racket?\n1:50 What was the name of Apple's pocket music player, first launched in 2001?\n2:09 In High School Musical (2006), which sport does Troy Bolton play for East High?\n2:28 Which sword-fighting cat in a feathered hat first appeared in Shrek 2 (2004)?\n2:46 In Pirates of the Caribbean, what is the name of Captain Jack Sparrow's ship?\n3:06 In Finding Nemo (2003), what kind of animal is Crush, the surfer dude who rides the current?\n3:25 In The Lord of the Rings films, which creature calls the One Ring 'my precious'?\n3:44 In the 2005 film Madagascar, what kind of animal is Marty?\n4:03 In Ice Age (2002), what kind of animal is Manny?\n4:22 In Monsters, Inc. (2001), what nickname is given to the girl who sneaks into Monstropolis?\n4:40 Which 2000 computer game let you build houses and control the lives of little virtual people?\n4:58 Which 2005 video game had players strumming a plastic guitar with coloured fret buttons?\n5:19 Which Sony games console, launched in 2000, could also play DVDs?\n5:37 Which trainers of the 2000s had a wheel hidden in the heel so you could glide along?\n5:56 From which platform at King's Cross does the Hogwarts Express leave in Harry Potter?\n6:16 Which video website, launched in 2005, had a first clip called 'Me at the zoo'?\n6:35 Which Nintendo handheld of 2004 had two screens, with a touch screen on the bottom?\n6:53 Which 2003 Christmas film follows a human raised by elves at the North Pole?\n7:12 On Who Wants to Be a Millionaire?, which lifeline took away two wrong answers?\n7:31 Which big-eyed fashion dolls were launched in 2001 as a rival to Barbie?\n7:49 In Hannah Montana (2006), what is the real name of the girl secretly living as a pop star?\n8:07 Which animated ringtone character went to No. 1 in the UK in 2005 with 'Axel F'?\n8:26 In which year did Apple's first iPhone go on sale?\n8:46 In 2006, which planet was reclassified as a 'dwarf planet' by astronomers?\n9:04 Which phone with a mini keyboard, made by a Canadian company, was named after a fruit?\n9:22 Which social network of the 2000s let you choose a 'Top 8' friends on your profile page?\n9:42 Which number puzzle, played on a 9×9 grid, became a newspaper craze in 2005?\n10:00 In Happy Feet (2006), what kind of penguin is Mumble, who can't sing but loves to tap dance?\n10:20 In Bob the Builder, what do the team shout after 'Can we fix it?'\n10:40 In which online game, launched in 2005, did kids waddle around a snowy island as penguins?\n10:57 Which website, launched in 2001, is a free online encyclopedia that anyone can edit?\n11:16 In Pirates of the Caribbean, who is the octopus-faced captain of the Flying Dutchman?\n11:35 Which computer problem, also called the Millennium Bug, worried the world as 2000 approached?\n11:56 In Up (2009), what name does Russell give to the giant, colourful bird?\n12:15 In Night at the Museum (2006), what giant skeleton comes alive and plays fetch?\n12:33 In The Lord of the Rings, how many members make up the Fellowship of the Ring?\n12:52 In the cartoon Ben 10 (2005), what is the name of the watch that turns Ben into aliens?\n13:10 Which social network added its famous 'Like' button in February 2009?\n13:30 What nickname was given to the main stadium of the 2008 Beijing Olympics?\n13:47 In Wallace & Gromit's 2005 film, what giant creature is gobbling the town's vegetables?\n14:08 In Harry Potter and the Prisoner of Azkaban (2004), what is the hippogriff called?\n14:25 Which free email service did Google launch in 2004, which many people thought was a joke?\n14:44 Which Nintendo console of 2001 was shaped like a small cube with a handle?\n15:03 Which Studio Ghibli film won the Oscar for Best Animated Feature in 2003?\n15:20 Which pair of Pokémon games, first released in 2006, introduced the Sinnoh region?\n15:41 In Kim Possible (2002), what kind of animal is Ron Stoppable's pet, Rufus?",
+  "steps": {
+    "captions": "uploaded",
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PLeE90_PazNK8",
+      "title": "Pop Culture Quizzes",
+      "created": true
+    }
+  },
+  "video_id": "X4rWCsULhvA",
+  "url": "https://youtu.be/X4rWCsULhvA",
+  "upload_completed_at": "2026-11-17T03:26:17Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: Pop Culture Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail, always running on every quiz (Giulia, 16 Nov; never title-only): Can You Pass This 2000s Quiz? 📱 50 Pop Culture Trivia Questions | Pop Culture Quiz #13 + thumbnail A | 50 Pop Culture Questions Every Dummy Should Know 🧠 Can You Score 40+? | Quiz #13 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-19T20:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-19T20:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-17T03:27:57Z"
+}
