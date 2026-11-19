@@ -1,0 +1,342 @@
+{
+ "id": "quiz-15",
+ "number": 15,
+ "series": "Music",
+ "category": "Music",
+ "topic": "Music legends and hits (all decades)",
+ "difficulty": "medium",
+ "title": "How Well Do You REALLY Know Music? 🎵 50 Music Trivia Questions | Music Quiz #15",
+ "description_hook": "🎵 From the King of Pop to the Eras Tour: 50 music questions that'll sort the true fans from the shuffle-players.",
+ "thumbnail_tagline": "Only REAL music fans would know",
+ "tags": [
+  "music quiz",
+  "music trivia",
+  "music trivia quiz",
+  "pop music quiz",
+  "michael jackson quiz",
+  "the beatles quiz",
+  "80s music quiz",
+  "2000s music quiz",
+  "taylor swift quiz",
+  "eurovision quiz"
+ ],
+ "status": "questions_written",
+ "review": {
+  "questions": {
+   "decision": "auto-approved",
+   "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 16 Nov 2026 (weekly run), web-checked where unsure. Medium difficulty trial (Q1-5 easy, hardest Q36-50). Family-friendly; GIF searches avoid real people's faces."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-19",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 43998375618 succeeded: 4K 3840x2160, 965.2 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -36.2 dB, peak -0.3 dB; one minor warning (outro2 starts 0.6 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: cartoons/animation, objects, animals, CGI or costumed characters, no clear real people's faces or unsuitable content. Q12 (hands dialling a phone), A09 (hand silhouette in a guitar soundhole) and A15 (hand with bubble wand) show hands only; A42 (dancing Santa in full beard, wig and sunglasses) is a costumed character, confirmed with a 2 fps strip. A40's middle grab showed Q41's GIF; a continuous 1 fps strip from 745 s confirmed A40 plays correctly. Spot-checked full frames: intro, Q01/A01, Q25/A25, Q50 and outro; text fits its boxes. Thumbnails A (red band) and B (blue band) checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage suitable.",
+   "source_commit": "10125b7",
+   "duration_s": 965.19,
+   "release_tag": "quiz-15-preview-32"
+  }
+ },
+ "tags_research": "Weekly report 16 Nov 2026 (vidIQ): 'music quiz' ~65k searches/month (competition 46), '80s music quiz' ~4.7k, '2000s music quiz' ~4.7k. 'guess the song' left out: not our format. Competitor research (vidIQ outliers, 16 Nov): Michael Jackson quizzes at 1M+ views ('How Well Do You Know Michael Jackson?', WhizQuizz, 48j1845B3Zo, 1.2M; 'Guess 25 Michael Jackson Songs', TIM QUIZ, WCbCp41kqjk, 1.3M), so 5 family-friendly MJ questions are included. vidIQ score_title 90.",
+ "questions": [
+  {
+   "n": 1,
+   "question": "Which pop star is known around the world as the 'King of Pop'?",
+   "answer": "Michael Jackson! 🌟",
+   "reveal": "He had 13 solo No. 1 singles on the US Billboard Hot 100."
+  },
+  {
+   "n": 2,
+   "question": "Which instrument has rows of black and white keys?",
+   "answer": "The piano! 🎹",
+   "reveal": "A standard modern piano has 88 keys: 52 white and 36 black."
+  },
+  {
+   "n": 3,
+   "question": "How many members were in The Beatles?",
+   "answer": "Four! 🎸",
+   "reveal": "John, Paul, George and Ringo were nicknamed the Fab Four."
+  },
+  {
+   "n": 4,
+   "question": "Elvis Presley is often called 'the King of' what?",
+   "answer": "Rock and roll! 👑",
+   "reveal": "His first US No. 1 was 'Heartbreak Hotel' in 1956."
+  },
+  {
+   "n": 5,
+   "question": "What is Michael Jackson's famous dance move that looks like gliding backwards?",
+   "answer": "The moonwalk! 🌙",
+   "reveal": "He first showed it on TV in 1983, on the Motown 25 TV special."
+  },
+  {
+   "n": 6,
+   "question": "Which Swedish group sang 'Dancing Queen' and 'Mamma Mia'?",
+   "answer": "ABBA! 💃",
+   "reveal": "Their songs became the hit stage musical Mamma Mia! in 1999."
+  },
+  {
+   "n": 7,
+   "question": "Which singer released 'All I Want for Christmas Is You' in 1994?",
+   "answer": "Mariah Carey! 🎄",
+   "reveal": "The song climbs back up the charts almost every December."
+  },
+  {
+   "n": 8,
+   "question": "Which British band recorded 'Bohemian Rhapsody'?",
+   "answer": "Queen! 🎤",
+   "reveal": "The song is nearly six minutes long and has no chorus."
+  },
+  {
+   "n": 9,
+   "question": "How many strings does a standard guitar have?",
+   "answer": "Six! 🎶",
+   "reveal": "A bass guitar usually has just four strings."
+  },
+  {
+   "n": 10,
+   "question": "What spinning ball, covered in tiny mirrors, hangs above dance floors?",
+   "answer": "A disco ball! 🪩",
+   "reveal": "Mirror balls became the symbol of 1970s disco, but are much older."
+  },
+  {
+   "n": 11,
+   "question": "Which K-pop group got their first US No. 1 with 'Dynamite' in 2020?",
+   "answer": "BTS! 💜",
+   "reveal": "The group has seven members, and their fans are called ARMY."
+  },
+  {
+   "n": 12,
+   "question": "Which singer had huge hits with 'Hello' and 'Rolling in the Deep'?",
+   "answer": "Adele! 🎙️",
+   "reveal": "'Hello' was the first song to sell a million US downloads in a week."
+  },
+  {
+   "n": 13,
+   "question": "Which singer-songwriter had hits with 'Perfect' and 'Thinking Out Loud'?",
+   "answer": "Ed Sheeran! 🎶",
+   "reveal": "He often performs alone on stage with a guitar and a loop pedal."
+  },
+  {
+   "n": 14,
+   "question": "What was Victoria Beckham's nickname in the Spice Girls?",
+   "answer": "Posh Spice! 👗",
+   "reveal": "Their first single 'Wannabe' spent seven weeks at No. 1 in the UK."
+  },
+  {
+   "n": 15,
+   "question": "Which singer-songwriter had hits with 'Shake It Off' and 'Love Story'?",
+   "answer": "Taylor Swift! ✨",
+   "reveal": "She started out as a teenage country singer in Nashville."
+  },
+  {
+   "n": 16,
+   "question": "Which Michael Jackson album is the best-selling album of all time?",
+   "answer": "Thriller! 🧟",
+   "reveal": "Released in 1982, it has sold an estimated 70 million copies."
+  },
+  {
+   "n": 17,
+   "question": "Which music award is shaped like a little golden gramophone?",
+   "answer": "The Grammy! 🏆",
+   "reveal": "Its name comes from 'gramophone', an early kind of record player."
+  },
+  {
+   "n": 18,
+   "question": "Which Hawaiian instrument looks like a small guitar with four strings?",
+   "answer": "The ukulele! 🌺",
+   "reveal": "Its name is often translated as 'jumping flea' in Hawaiian."
+  },
+  {
+   "n": 19,
+   "question": "Which singer, who began in Destiny's Child, had a solo hit with 'Crazy in Love'?",
+   "answer": "Beyoncé! 🐝",
+   "reveal": "'Crazy in Love' topped the US chart for eight weeks in 2003."
+  },
+  {
+   "n": 20,
+   "question": "Elton John wrote songs like 'Circle of Life' for which 1994 Disney film?",
+   "answer": "The Lion King! 🦁",
+   "reveal": "His 'Can You Feel the Love Tonight' won the Oscar for Best Original Song."
+  },
+  {
+   "n": 21,
+   "question": "In The Beatles' song, what colour is the submarine?",
+   "answer": "Yellow! 💛",
+   "reveal": "Drummer Ringo Starr sang the lead vocal on 'Yellow Submarine' in 1966."
+  },
+  {
+   "n": 22,
+   "question": "What is the name of the singing contest between countries held every year since 1956?",
+   "answer": "Eurovision! 🌍",
+   "reveal": "The very first contest in 1956 had just seven countries taking part."
+  },
+  {
+   "n": 23,
+   "question": "Which singer had hits with 'Material Girl', 'Holiday' and 'Like a Prayer'?",
+   "answer": "Madonna! 💃",
+   "reveal": "She is often called the 'Queen of Pop'."
+  },
+  {
+   "n": 24,
+   "question": "Michael Jackson famously wore one sparkly white what on one hand?",
+   "answer": "A glove! 🧤",
+   "reveal": "His single rhinestone glove became one of pop's most famous looks."
+  },
+  {
+   "n": 25,
+   "question": "Which Mark Ronson song featuring Bruno Mars spent 14 weeks at No. 1 in the US?",
+   "answer": "Uptown Funk! 🕺",
+   "reveal": "It won Record of the Year at the 2016 Grammy Awards."
+  },
+  {
+   "n": 26,
+   "question": "What is the name of Elvis Presley's famous home in Memphis?",
+   "answer": "Graceland! 🏡",
+   "reveal": "It opened to the public as a museum in 1982."
+  },
+  {
+   "n": 27,
+   "question": "Which brass instrument changes its notes with a long sliding tube?",
+   "answer": "The trombone! 🎺",
+   "reveal": "Its name means 'big trumpet' in Italian."
+  },
+  {
+   "n": 28,
+   "question": "Who was the legendary lead singer of Queen?",
+   "answer": "Freddie Mercury! 🎙️",
+   "reveal": "He was born Farrokh Bulsara on the island of Zanzibar in 1946."
+  },
+  {
+   "n": 29,
+   "question": "Which English city did The Beatles come from?",
+   "answer": "Liverpool! ⚓",
+   "reveal": "They played nearly 300 times at the city's Cavern Club."
+  },
+  {
+   "n": 30,
+   "question": "Which Queen anthem is famous for its stomp-stomp-clap beat at sports games?",
+   "answer": "We Will Rock You! 👏",
+   "reveal": "Guitarist Brian May wrote it in 1977."
+  },
+  {
+   "n": 31,
+   "question": "At Eurovision, how many points is 'douze points'?",
+   "answer": "Twelve! 🔢",
+   "reveal": "Twelve points is the top score a country can give one song."
+  },
+  {
+   "n": 32,
+   "question": "With which song did ABBA win Eurovision in 1974?",
+   "answer": "Waterloo! 🇸🇪",
+   "reveal": "In 2005 it was voted the best Eurovision song of the contest's first 50 years."
+  },
+  {
+   "n": 33,
+   "question": "What was Emma Bunton's nickname in the Spice Girls?",
+   "answer": "Baby Spice! 🍼",
+   "reveal": "She was the youngest member of the group."
+  },
+  {
+   "n": 34,
+   "question": "Which Beatles album cover shows them walking over a zebra crossing?",
+   "answer": "Abbey Road! 🦓",
+   "reveal": "The crossing in London became a protected listed site in 2010."
+  },
+  {
+   "n": 35,
+   "question": "The Beatles' name is a pun on which kind of insect?",
+   "answer": "Beetles! 🐞",
+   "reveal": "It mixes 'beetles' with 'beat', as in beat music."
+  },
+  {
+   "n": 36,
+   "question": "Michael Jackson first moonwalked on TV in 1983 while singing which of his songs?",
+   "answer": "Billie Jean! 🕴️",
+   "reveal": "It spent seven weeks at No. 1 in the US in 1983."
+  },
+  {
+   "n": 37,
+   "question": "Which 2012 K-pop song was the first YouTube video to reach one billion views?",
+   "answer": "Gangnam Style! 🐎",
+   "reveal": "Its horse-riding dance was copied by millions around the world."
+  },
+  {
+   "n": 38,
+   "question": "Which Taylor Swift tour, from 2023 to 2024, was the first ever to earn over $2 billion?",
+   "answer": "The Eras Tour! 🎟️",
+   "reveal": "It ran for 149 shows across five continents."
+  },
+  {
+   "n": 39,
+   "question": "Adele's albums '19', '21', '25' and '30' are named after what?",
+   "answer": "Her age! 🎂",
+   "reveal": "'21' was the world's best-selling album of both 2011 and 2012."
+  },
+  {
+   "n": 40,
+   "question": "Ed Sheeran's albums are named after maths symbols. What is the '÷' album called?",
+   "answer": "Divide! ➗",
+   "reveal": "His other albums include + (Plus), × (Multiply) and = (Equals)."
+  },
+  {
+   "n": 41,
+   "question": "In 2021, which Ed Sheeran song became the first to reach 3 billion Spotify streams?",
+   "answer": "Shape of You! 🔷",
+   "reveal": "It was the UK's biggest-selling single of 2017."
+  },
+  {
+   "n": 42,
+   "question": "In which year did 'All I Want for Christmas Is You' first reach No. 1 in the US?",
+   "answer": "2019! 🎅",
+   "reveal": "It took 25 years after its 1994 release to get there."
+  },
+  {
+   "n": 43,
+   "question": "Céline Dion won Eurovision in 1988 representing which country?",
+   "answer": "Switzerland! 🇨🇭",
+   "reveal": "She won by just one point, singing in French."
+  },
+  {
+   "n": 44,
+   "question": "Which Dolly Parton song did Whitney Houston turn into a 1992 hit for The Bodyguard?",
+   "answer": "I Will Always Love You! 💖",
+   "reveal": "Whitney's version spent 14 weeks at No. 1 in the US."
+  },
+  {
+   "n": 45,
+   "question": "Which double-reed woodwind instrument usually plays the note an orchestra tunes to?",
+   "answer": "The oboe! 🎼",
+   "reveal": "It plays an A, and the rest of the orchestra matches it."
+  },
+  {
+   "n": 46,
+   "question": "Which Pink Floyd album's cover shows a beam of light passing through a prism?",
+   "answer": "Dark Side of the Moon! 🌈",
+   "reveal": "It spent more than 900 weeks on the US Billboard 200 album chart."
+  },
+  {
+   "n": 47,
+   "question": "On which TV talent show was One Direction formed in 2010?",
+   "answer": "The X Factor! ⭐",
+   "reveal": "They finished third on the show, then became a worldwide hit."
+  },
+  {
+   "n": 48,
+   "question": "What do the four letters in ABBA stand for?",
+   "answer": "Their first names! 🔤",
+   "reveal": "Agnetha, Björn, Benny and Anni-Frid."
+  },
+  {
+   "n": 49,
+   "question": "What was Mel C's nickname in the Spice Girls?",
+   "answer": "Sporty Spice! ⚽",
+   "reveal": "She was famous for doing backflips on stage."
+  },
+  {
+   "n": 50,
+   "question": "Which 1967 Beatles album's full title ends with 'Lonely Hearts Club Band'?",
+   "answer": "Sgt. Pepper's! 🥁",
+   "reveal": "It won the Grammy for Album of the Year in 1968."
+  }
+ ]
+}

@@ -1,0 +1,539 @@
+{
+  "allow_branded": false,
+  "queries": [
+    {
+      "n": 1,
+      "question_query": "music notes animation",
+      "answer_query": "golden crown animation",
+      "match": [
+        "glove",
+        "pop",
+        "dance"
+      ],
+      "question_pick": "iDDYMnbYnxn61H6xwE"
+    },
+    {
+      "n": 2,
+      "question_query": "music notes",
+      "answer_query": "piano keys",
+      "match": [
+        "piano",
+        "keys",
+        "music"
+      ]
+    },
+    {
+      "n": 3,
+      "question_query": "guitar illustration",
+      "answer_query": "number 4 animation",
+      "match": [
+        "four",
+        "band",
+        "guitar"
+      ]
+    },
+    {
+      "n": 4,
+      "question_query": "crown cartoon",
+      "answer_query": "jukebox",
+      "match": [
+        "rock",
+        "roll",
+        "dance"
+      ]
+    },
+    {
+      "n": 5,
+      "question_query": "dancing shoes cartoon",
+      "answer_query": "moon cartoon",
+      "match": [
+        "moonwalk",
+        "moon",
+        "dance"
+      ]
+    },
+    {
+      "n": 6,
+      "question_query": "disco animation",
+      "answer_query": "70s disco cartoon",
+      "match": [
+        "disco",
+        "dance",
+        "70s"
+      ],
+      "answer_pick": "D3J4TepH87jxUdrTNS"
+    },
+    {
+      "n": 7,
+      "question_query": "christmas tree",
+      "answer_query": "christmas bells animation",
+      "match": [
+        "christmas",
+        "singing",
+        "festive"
+      ],
+      "question_pick": "t0cJtM8YKIZRjzxGEb"
+    },
+    {
+      "n": 8,
+      "question_query": "rock band cartoon",
+      "answer_query": "queen crown",
+      "match": [
+        "crown",
+        "rock",
+        "band"
+      ],
+      "answer_pick": "1QbCbYdNIO40y3bzii"
+    },
+    {
+      "n": 9,
+      "question_query": "acoustic guitar illustration",
+      "answer_query": "guitar strings",
+      "match": [
+        "guitar",
+        "strings",
+        "strum"
+      ]
+    },
+    {
+      "n": 10,
+      "question_query": "dance floor animation",
+      "answer_query": "disco ball",
+      "match": [
+        "disco",
+        "ball",
+        "mirror"
+      ]
+    },
+    {
+      "n": 11,
+      "question_query": "korea flag animation",
+      "answer_query": "purple hearts",
+      "match": [
+        "purple",
+        "kpop",
+        "heart"
+      ],
+      "question_pick": "39yUUvwqbobyKO4K71"
+    },
+    {
+      "n": 12,
+      "question_query": "old telephone",
+      "answer_query": "microphone illustration",
+      "match": [
+        "microphone",
+        "singer",
+        "hello"
+      ]
+    },
+    {
+      "n": 13,
+      "question_query": "guitar cartoon",
+      "answer_query": "guitar cartoon",
+      "match": [
+        "guitar",
+        "acoustic",
+        "strum"
+      ]
+    },
+    {
+      "n": 14,
+      "question_query": "girl power cartoon",
+      "answer_query": "designer handbag",
+      "match": [
+        "posh",
+        "fancy",
+        "dress"
+      ],
+      "question_pick": "uM87K8JyYf9U4"
+    },
+    {
+      "n": 15,
+      "question_query": "friendship bracelet beads",
+      "answer_query": "sparkly guitar cartoon",
+      "match": [
+        "sparkle",
+        "guitar",
+        "glitter"
+      ]
+    },
+    {
+      "n": 16,
+      "question_query": "vinyl record spinning animation",
+      "answer_query": "gold record award",
+      "match": [
+        "zombie",
+        "dance",
+        "thriller"
+      ],
+      "question_pick": "1vLHnnIiwUN7a",
+      "answer_pick": "52FlUCWOQkJbFiHggS"
+    },
+    {
+      "n": 17,
+      "question_query": "golden trophy animation",
+      "answer_query": "gramophone",
+      "match": [
+        "gramophone",
+        "trophy",
+        "award"
+      ]
+    },
+    {
+      "n": 18,
+      "question_query": "hawaii beach animation",
+      "answer_query": "ukulele cartoon",
+      "match": [
+        "ukulele",
+        "hawaii",
+        "strum"
+      ],
+      "question_pick": "1EB75TYU6cANi",
+      "answer_pick": "j2rCxv6luaLq8"
+    },
+    {
+      "n": 19,
+      "question_query": "microphone cartoon",
+      "answer_query": "honey bee",
+      "match": [
+        "bee",
+        "queen",
+        "honey"
+      ]
+    },
+    {
+      "n": 20,
+      "question_query": "piano cartoon",
+      "answer_query": "lion cartoon",
+      "match": [
+        "lion",
+        "roar",
+        "cartoon"
+      ]
+    },
+    {
+      "n": 21,
+      "question_query": "submarine animation",
+      "answer_query": "yellow submarine cartoon",
+      "match": [
+        "yellow",
+        "submarine",
+        "sea"
+      ],
+      "question_pick": "t2UNrEFEZ6oUEOJYmi",
+      "answer_pick": "l396USCocKAGZ7vSo"
+    },
+    {
+      "n": 22,
+      "question_query": "world flags animation",
+      "answer_query": "europe map animation",
+      "match": [
+        "flags",
+        "waving",
+        "song"
+      ],
+      "question_pick": "iOklTMzdC0xTViILue"
+    },
+    {
+      "n": 23,
+      "question_query": "80s cassette tape",
+      "answer_query": "80s neon animation",
+      "match": [
+        "80s",
+        "dance",
+        "pop"
+      ],
+      "question_pick": "LdazE8bLAGdtLqccBe",
+      "answer_pick": "T0t0XcsnJsRhHvZMOa"
+    },
+    {
+      "n": 24,
+      "question_query": "sparkle animation",
+      "answer_query": "white glove cartoon",
+      "match": [
+        "glove",
+        "sparkle",
+        "hand"
+      ]
+    },
+    {
+      "n": 25,
+      "question_query": "funky animation",
+      "answer_query": "dancing cartoon character",
+      "match": [
+        "funk",
+        "dance",
+        "groove"
+      ],
+      "answer_pick": "fuJwNtNL25MqWQk0hN"
+    },
+    {
+      "n": 26,
+      "question_query": "mansion animation",
+      "answer_query": "rock and roll cartoon",
+      "match": [
+        "mansion",
+        "house",
+        "memphis"
+      ],
+      "answer_pick": "auAO0XVhtnNz2n7sZn"
+    },
+    {
+      "n": 27,
+      "question_query": "brass instruments cartoon",
+      "answer_query": "trombone cartoon",
+      "match": [
+        "trombone",
+        "brass",
+        "slide"
+      ],
+      "answer_pick": "xT8qBosjQbmMTHGTni"
+    },
+    {
+      "n": 28,
+      "question_query": "stadium lights",
+      "answer_query": "microphone stand cartoon",
+      "match": [
+        "microphone",
+        "stage",
+        "rock"
+      ],
+      "question_pick": "YtQqKLb4wYPJOOa05w",
+      "answer_pick": "j18V1OWjp4eXfJEDF3"
+    },
+    {
+      "n": 29,
+      "question_query": "river ferry animation",
+      "answer_query": "liverpool illustration",
+      "match": [
+        "liverpool",
+        "city",
+        "docks"
+      ],
+      "answer_pick": "izbrBEvbDhqNETg2SY"
+    },
+    {
+      "n": 30,
+      "question_query": "stomping feet cartoon",
+      "answer_query": "clapping hands cartoon",
+      "match": [
+        "clap",
+        "stomp",
+        "crowd"
+      ],
+      "question_pick": "I2BbRmwzI1bbatolkK"
+    },
+    {
+      "n": 31,
+      "question_query": "scoreboard animation",
+      "answer_query": "number 12 animation",
+      "match": [
+        "twelve",
+        "12",
+        "points"
+      ],
+      "question_pick": "UW48VOsQ6pgEr1S74B"
+    },
+    {
+      "n": 32,
+      "question_query": "trophy cup animation",
+      "answer_query": "sweden flag",
+      "match": [
+        "sweden",
+        "flag",
+        "swedish"
+      ],
+      "question_pick": "fI5pB1CQqVMJ2"
+    },
+    {
+      "n": 33,
+      "question_query": "pink sparkle animation",
+      "answer_query": "baby bottle cartoon",
+      "match": [
+        "baby",
+        "bottle",
+        "cute"
+      ]
+    },
+    {
+      "n": 34,
+      "question_query": "vinyl animation",
+      "answer_query": "zebra crossing cartoon",
+      "match": [
+        "zebra",
+        "crossing",
+        "walk"
+      ],
+      "answer_pick": "2A60DDxPdObbQso3Y7"
+    },
+    {
+      "n": 35,
+      "question_query": "bug cartoon",
+      "answer_query": "beetle",
+      "match": [
+        "beetle",
+        "bug",
+        "insect"
+      ]
+    },
+    {
+      "n": 36,
+      "question_query": "light up floor",
+      "answer_query": "light up floor animation",
+      "match": [
+        "floor",
+        "light",
+        "dance"
+      ]
+    },
+    {
+      "n": 37,
+      "question_query": "play button",
+      "answer_query": "horse dance",
+      "match": [
+        "horse",
+        "dance",
+        "gallop"
+      ]
+    },
+    {
+      "n": 38,
+      "question_query": "concert lights animation",
+      "answer_query": "friendship bracelet cartoon",
+      "match": [
+        "bracelet",
+        "friendship",
+        "concert"
+      ],
+      "question_pick": "3oEjHFgTFPAkeLbfAQ",
+      "answer_pick": "5tmS2QLd10VojTYWIV"
+    },
+    {
+      "n": 39,
+      "question_query": "number cartoon",
+      "answer_query": "birthday cake animation",
+      "match": [
+        "birthday",
+        "cake",
+        "candles"
+      ],
+      "answer_pick": "TBHPo9o6OY5kk"
+    },
+    {
+      "n": 40,
+      "question_query": "maths symbols animation",
+      "answer_query": "division sign",
+      "match": [
+        "divide",
+        "math",
+        "calculator"
+      ],
+      "question_pick": "On3iJcI4oJkdqv3jNP",
+      "answer_pick": "xT1Ra5h24Eliux3UVq"
+    },
+    {
+      "n": 41,
+      "question_query": "headphones animation",
+      "answer_query": "shapes animation",
+      "match": [
+        "shapes",
+        "shape",
+        "triangle"
+      ],
+      "question_pick": "3o7TKwShF4CSpFSLoQ"
+    },
+    {
+      "n": 42,
+      "question_query": "calendar pages",
+      "answer_query": "santa claus",
+      "match": [
+        "santa",
+        "christmas",
+        "2019"
+      ]
+    },
+    {
+      "n": 43,
+      "question_query": "microphone trophy animation",
+      "answer_query": "swiss alps",
+      "match": [
+        "swiss",
+        "alps",
+        "switzerland"
+      ]
+    },
+    {
+      "n": 44,
+      "question_query": "love song",
+      "answer_query": "love hearts",
+      "match": [
+        "love",
+        "heart",
+        "hearts"
+      ]
+    },
+    {
+      "n": 45,
+      "question_query": "orchestra tuning",
+      "answer_query": "oboe cartoon",
+      "match": [
+        "oboe",
+        "woodwind",
+        "orchestra"
+      ]
+    },
+    {
+      "n": 46,
+      "question_query": "vinyl record cartoon",
+      "answer_query": "prism rainbow",
+      "match": [
+        "prism",
+        "rainbow",
+        "light"
+      ]
+    },
+    {
+      "n": 47,
+      "question_query": "talent show stage animation",
+      "answer_query": "golden star",
+      "match": [
+        "star",
+        "stage",
+        "talent"
+      ],
+      "question_pick": "c6VwG4CwS6WBcRqFhH"
+    },
+    {
+      "n": 48,
+      "question_query": "alphabet letters",
+      "answer_query": "name tag cartoon",
+      "match": [
+        "letters",
+        "alphabet",
+        "name"
+      ],
+      "answer_pick": "Tmp7M74UeF64vqHwG6"
+    },
+    {
+      "n": 49,
+      "question_query": "football cartoon",
+      "answer_query": "backflip cartoon",
+      "match": [
+        "sporty",
+        "backflip",
+        "sport"
+      ],
+      "question_pick": "Ou18ZgE49Fss0"
+    },
+    {
+      "n": 50,
+      "question_query": "drum cartoon",
+      "answer_query": "marching band cartoon",
+      "match": [
+        "drum",
+        "band",
+        "marching"
+      ]
+    }
+  ]
+}
