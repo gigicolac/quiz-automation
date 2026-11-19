@@ -25,6 +25,15 @@
   "questions": {
    "decision": "auto-approved",
    "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 16 Nov 2026 (weekly run), web-checked where unsure. Medium difficulty trial (Q1-5 easy, hardest Q36-50). Family-friendly; GIF searches avoid real people's faces."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-19",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 43998375618 succeeded: 4K 3840x2160, 965.2 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -36.2 dB, peak -0.3 dB; one minor warning (outro2 starts 0.6 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: cartoons/animation, objects, animals, CGI or costumed characters, no clear real people's faces or unsuitable content. Q12 (hands dialling a phone), A09 (hand silhouette in a guitar soundhole) and A15 (hand with bubble wand) show hands only; A42 (dancing Santa in full beard, wig and sunglasses) is a costumed character, confirmed with a 2 fps strip. A40's middle grab showed Q41's GIF; a continuous 1 fps strip from 745 s confirmed A40 plays correctly. Spot-checked full frames: intro, Q01/A01, Q25/A25, Q50 and outro; text fits its boxes. Thumbnails A (red band) and B (blue band) checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage suitable.",
+   "source_commit": "10125b7",
+   "duration_s": 965.19,
+   "release_tag": "quiz-15-preview-32"
   }
  },
  "tags_research": "Weekly report 16 Nov 2026 (vidIQ): 'music quiz' ~65k searches/month (competition 46), '80s music quiz' ~4.7k, '2000s music quiz' ~4.7k. 'guess the song' left out: not our format. Competitor research (vidIQ outliers, 16 Nov): Michael Jackson quizzes at 1M+ views ('How Well Do You Know Michael Jackson?', WhizQuizz, 48j1845B3Zo, 1.2M; 'Guess 25 Michael Jackson Songs', TIM QUIZ, WCbCp41kqjk, 1.3M), so 5 family-friendly MJ questions are included. vidIQ score_title 90.",
