@@ -1,0 +1,52 @@
+{
+  "quiz": "quiz-15",
+  "channel": {
+    "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+    "title": "One More Quiz!"
+  },
+  "status": "scheduled",
+  "started_at": "2026-11-20T02:01:54.524245+00:00",
+  "title": "How Well Do You REALLY Know Music? 🎵 50 Music Trivia Questions | Music Quiz #15",
+  "intended_publish_at": "2026-11-22T18:00:00Z",
+  "publish_at_local": {
+    "US Eastern": "Sun 22 Nov 2026 13:00 EST",
+    "Sydney": "Mon 23 Nov 2026 05:00 AEDT"
+  },
+  "release_tag": "quiz-15-preview-32",
+  "playlist": "Music Quizzes",
+  "problems": "0:19 Which pop star is known around the world as the 'King of Pop'?\n0:38 Which instrument has rows of black and white keys?\n0:58 How many members were in The Beatles?\n1:16 Elvis Presley is often called 'the King of' what?\n1:35 What is Michael Jackson's famous dance move that looks like gliding backwards?\n1:55 Which Swedish group sang 'Dancing Queen' and 'Mamma Mia'?\n2:14 Which singer released 'All I Want for Christmas Is You' in 1994?\n2:32 Which British band recorded 'Bohemian Rhapsody'?\n2:50 How many strings does a standard guitar have?\n3:07 What spinning ball, covered in tiny mirrors, hangs above dance floors?\n3:26 Which K-pop group got their first US No. 1 with 'Dynamite' in 2020?\n3:44 Which singer had huge hits with 'Hello' and 'Rolling in the Deep'?\n4:02 Which singer-songwriter had hits with 'Perfect' and 'Thinking Out Loud'?\n4:20 What was Victoria Beckham's nickname in the Spice Girls?\n4:39 Which singer-songwriter had hits with 'Shake It Off' and 'Love Story'?\n4:57 Which Michael Jackson album is the best-selling album of all time?\n5:16 Which music award is shaped like a little golden gramophone?\n5:34 Which Hawaiian instrument looks like a small guitar with four strings?\n5:52 Which singer, who began in Destiny's Child, had a solo hit with 'Crazy in Love'?\n6:11 Elton John wrote songs like 'Circle of Life' for which 1994 Disney film?\n6:31 In The Beatles' song, what colour is the submarine?\n6:51 What is the name of the singing contest between countries held every year since 1956?\n7:10 Which singer had hits with 'Material Girl', 'Holiday' and 'Like a Prayer'?\n7:27 Michael Jackson famously wore one sparkly white what on one hand?\n7:45 Which Mark Ronson song featuring Bruno Mars spent 14 weeks at No. 1 in the US?\n8:04 What is the name of Elvis Presley's famous home in Memphis?\n8:21 Which brass instrument changes its notes with a long sliding tube?\n8:38 Who was the legendary lead singer of Queen?\n8:57 Which English city did The Beatles come from?\n9:15 Which Queen anthem is famous for its stomp-stomp-clap beat at sports games?\n9:33 At Eurovision, how many points is 'douze points'?\n9:50 With which song did ABBA win Eurovision in 1974?\n10:10 What was Emma Bunton's nickname in the Spice Girls?\n10:27 Which Beatles album cover shows them walking over a zebra crossing?\n10:45 The Beatles' name is a pun on which kind of insect?\n11:03 Michael Jackson first moonwalked on TV in 1983 while singing which of his songs?\n11:21 Which 2012 K-pop song was the first YouTube video to reach one billion views?\n11:39 Which Taylor Swift tour, from 2023 to 2024, was the first ever to earn over $2 billion?\n11:57 Adele's albums '19', '21', '25' and '30' are named after what?\n12:17 Ed Sheeran's albums are named after maths symbols. What is the '÷' album called?\n12:37 In 2021, which Ed Sheeran song became the first to reach 3 billion Spotify streams?\n12:55 In which year did 'All I Want for Christmas Is You' first reach No. 1 in the US?\n13:14 Céline Dion won Eurovision in 1988 representing which country?\n13:31 Which Dolly Parton song did Whitney Houston turn into a 1992 hit for The Bodyguard?\n13:50 Which double-reed woodwind instrument usually plays the note an orchestra tunes to?\n14:08 Which Pink Floyd album's cover shows a beam of light passing through a prism?\n14:28 On which TV talent show was One Direction formed in 2010?\n14:46 What do the four letters in ABBA stand for?\n15:03 What was Mel C's nickname in the Spice Girls?\n15:21 Which 1967 Beatles album's full title ends with 'Lonely Hearts Club Band'?",
+  "steps": {
+    "captions": "uploaded",
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PLWMwCKOBUjSk",
+      "title": "Music Quizzes",
+      "created": true
+    }
+  },
+  "video_id": "35SpyRfbR1E",
+  "url": "https://youtu.be/35SpyRfbR1E",
+  "upload_completed_at": "2026-11-20T02:01:59Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: Music Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail, always running on every quiz (Giulia, 16 Nov; never title-only): How Well Do You REALLY Know Music? 🎵 50 Music Trivia Questions | Music Quiz #15 + thumbnail A | 50 Music Questions Every Dummy Should Know 🧠 Can You Score 40+? | Quiz #15 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-22T18:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-22T18:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-20T02:03:05Z"
+}
