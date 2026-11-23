@@ -59,3 +59,25 @@ class ReplaceUnpostedShorts(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MovieShorts(unittest.TestCase):
+    def quiz(self, movie_ns):
+        return {"questions": [{"n": n, "movie": n in movie_ns} for n in range(1, 51)]}
+
+    def groups(self):
+        return [list(range(i, i + 7)) for i in range(1, 50, 7) if i + 6 <= 50]
+
+    def test_movie_short_first_then_block_with_most_movies(self):
+        movies = [3, 9, 16, 23, 30, 37, 44, 45]
+        out = ms.choose_groups(self.groups(), self.quiz(movies), 7, {"max_shorts_per_quiz": 2})
+        self.assertEqual(out[0], movies[:7])
+        self.assertEqual(out[1], list(range(43, 50)))  # the block holding 44 and 45 (two movie questions)
+
+    def test_without_movie_flags_keeps_quiz_order(self):
+        out = ms.choose_groups(self.groups(), self.quiz([]), 7, {"max_shorts_per_quiz": 2})
+        self.assertEqual(out, [list(range(1, 8)), list(range(8, 15))])
+
+    def test_few_movie_questions_prefer_their_block(self):
+        out = ms.choose_groups(self.groups(), self.quiz([20, 30]), 7, {"max_shorts_per_quiz": 2})
+        self.assertEqual(out, [list(range(15, 22)), list(range(29, 36))])

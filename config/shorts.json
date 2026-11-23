@@ -12,12 +12,11 @@
   "per_short": 7,
   "think_seconds": 5,
   "times_us_eastern": [
-    "08:00",
     "18:00"
   ],
   "description": "{opening}\n\nThis is just a taste of this week's {series} Quiz #{number}, with {count} questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: {full_quiz_link}\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #{series_tag} #trivia #quiztime #brainteaser #justonemorequiz",
   "default_opening": "Sneak peek 👀 How many can you get right before the timer runs out?",
-  "comment": "What did you score out of {n}? Tell us below 👇",
+  "comment": "Which question got you? 🤔 Comment your score out of {n} 👇",
   "tags": [
     "quiz shorts",
     "trivia quiz",
@@ -48,7 +47,7 @@
     },
     "paid_promotion": "No"
   },
-  "max_shorts_per_quiz": 5,
+  "max_shorts_per_quiz": 2,
   "_comment_titles": "Default Shorts titles/openings when quizzes/<quiz>/shorts.json isn't written by hand (patterns from Quiz #9, Giulia 9 Nov: challenge hook first, then make the quiz clear). {n} = questions in the Short. The weekly run may write a quiz's own shorts.json instead, following the hooks playbook.",
   "title_hooks": [
     "How much do you REALLY know? 🤔",
@@ -67,5 +66,8 @@
     "Sneak peek 👀 {n} questions, five seconds each, no warm-up. Can you keep up?",
     "Sneak peek 👀 Smart enough for a perfect {n}/{n}?",
     "Sneak peek 👀 Most people get at least one of these wrong. Will you?"
-  ]
+  ],
+  "movie_short": true,
+  "_comment_schedule": "Giulia, 23 Nov 2026: fewer Shorts (one a day, 6pm US Eastern) and weave in movie questions (movie Shorts get the most views). Each quiz gives 2 Shorts: the first is all movie questions when the quiz flags 7+ (quiz.json \"movie\": true), otherwise the 7-question block with the most movie questions. 3 quizzes x 2 = 6 a week.",
+  "_comment_engagement": "Giulia, 23 Nov: no comments on Shorts. Every Short asks one specific question viewers can answer in a word (end card 'Which one got you?', pinned comment asking which question beat them), the title/opening dares the viewer, and the Mac task replies to every Short comment within its next run."
 }
