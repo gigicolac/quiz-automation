@@ -29,6 +29,15 @@
   "questions": {
    "decision": "auto-approved",
    "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Medium, what a real fan knows; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led; Q1 near-certain (Pikachu), Q2 famous with a fun reveal (Poké Ball / Master Ball), Q3 a 'did you know?' twist (Bulbasaur is #1 but Rhydon was designed first). Most recognisable picture at Q10 (Snorlax). Movie questions Q20 (Mewtwo) and Q24 (Detective Pikachu). All GIFs anime/game characters, so no real faces expected; Q24 still to be checked for live-action actors."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-24",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 45186758093 (rebuild after the 23 Nov GIF fixes for Q3, Q23, A28, A32 and Q48) succeeded: 4K 3840x2160, 927.0 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -35.7 dB, peak -0.3 dB; three minor warnings (outro2 starts 0.6 s late, outro3 and outro4 0.1 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: anime, game renders, trading cards, cartoons and one real squirrel (A48); no clear real people's faces or unsuitable content. Q24 (Detective Pikachu) shows only the CGI Pikachu, no live-action actors. A32 is a Simpsons cartoon clip; Q41 and A40 are Pokemon game character renders. A40's last grab was white and Q28's frames were red and dark; continuous 1 fps strips from 716 s and 496 s confirmed the Mega Evolution flash and the Eternatus animation, and the answer and next question slides follow correctly. Spot-checked full frames: intro, Q01/A01, Q25/A25 and outro; text fits its boxes. Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage of anime and game characters suitable.",
+   "source_commit": "a8fb58d",
+   "duration_s": 927.0,
+   "release_tag": "quiz-17-preview-37"
   }
  },
  "questions": [
