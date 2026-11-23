@@ -1,0 +1,345 @@
+{
+ "id": "quiz-17",
+ "number": 17,
+ "series": "Pokémon",
+ "category": "Fandom",
+ "topic": "Pokémon",
+ "difficulty": "medium",
+ "title": "How Well Do You REALLY Know Pokémon? ⚡ 50 Pokémon Trivia Questions | Pokémon Quiz #17",
+ "title_b_variant": "Think You REALLY Know {series}? 🤔 Prove It in {count} Questions | Quiz #{number}",
+ "description_hook": "⚡ From Pallet Town to Paldea: 50 Pokémon questions that'll sort the Pokémon Masters from the rookie trainers.",
+ "thumbnail_tagline": "Only REAL fans would know",
+ "tags": [
+  "pokemon quiz",
+  "pokemon trivia",
+  "pokemon quizzes",
+  "pokemon quiz hard",
+  "pokemon quiz game",
+  "pokemon trivia questions",
+  "how well do you know pokemon",
+  "pokemon questions",
+  "pikachu",
+  "pokemon fan quiz",
+  "anime quiz",
+  "fandom quiz"
+ ],
+ "tags_research": "23 Nov 2026: vidIQ out of credits (4 left), and the Google suggest endpoint is blocked from the cloud shell, so YouTube autocomplete via TubeAlfred for 'pokemon quiz' (quizzes, quiz show, hard, game; the 'wrong answers' variants left out, not our format) plus a TubeAlfred search: Pokémon quiz videos with 1M+ views (Jaiden 4.1M, MandJTV 2.5M, Nokimon 1.1-1.8M).",
+ "status": "questions_written",
+ "review": {
+  "questions": {
+   "decision": "auto-approved",
+   "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Medium, what a real fan knows; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led; Q1 near-certain (Pikachu), Q2 famous with a fun reveal (Poké Ball / Master Ball), Q3 a 'did you know?' twist (Bulbasaur is #1 but Rhydon was designed first). Most recognisable picture at Q10 (Snorlax). Movie questions Q20 (Mewtwo) and Q24 (Detective Pikachu). All GIFs anime/game characters, so no real faces expected; Q24 still to be checked for live-action actors."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-24",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 45186758093 (rebuild after the 23 Nov GIF fixes for Q3, Q23, A28, A32 and Q48) succeeded: 4K 3840x2160, 927.0 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -35.7 dB, peak -0.3 dB; three minor warnings (outro2 starts 0.6 s late, outro3 and outro4 0.1 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: anime, game renders, trading cards, cartoons and one real squirrel (A48); no clear real people's faces or unsuitable content. Q24 (Detective Pikachu) shows only the CGI Pikachu, no live-action actors. A32 is a Simpsons cartoon clip; Q41 and A40 are Pokemon game character renders. A40's last grab was white and Q28's frames were red and dark; continuous 1 fps strips from 716 s and 496 s confirmed the Mega Evolution flash and the Eternatus animation, and the answer and next question slides follow correctly. Spot-checked full frames: intro, Q01/A01, Q25/A25 and outro; text fits its boxes. Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage of anime and game characters suitable.",
+   "source_commit": "a8fb58d",
+   "duration_s": 927.0,
+   "release_tag": "quiz-17-preview-37"
+  }
+ },
+ "questions": [
+  {
+   "n": 1,
+   "question": "What is the name of Ash's famous yellow Pokémon?",
+   "answer": "Pikachu! ⚡",
+   "reveal": "Pikachu refused to go in its Poké Ball in the very first episode."
+  },
+  {
+   "n": 2,
+   "question": "Which ball do trainers throw to catch Pokémon?",
+   "answer": "A Poké Ball! 🔴",
+   "reveal": "The Master Ball catches any wild Pokémon without fail."
+  },
+  {
+   "n": 3,
+   "question": "Which Pokémon is number 1 in the Pokédex?",
+   "answer": "Bulbasaur! 🌱",
+   "reveal": "But it wasn't the first designed: that was Rhydon."
+  },
+  {
+   "n": 4,
+   "question": "What type of Pokémon is Charmander?",
+   "answer": "Fire! 🔥",
+   "reveal": "The flame on its tail shows how strong its life force is."
+  },
+  {
+   "n": 5,
+   "question": "What does Pikachu evolve into?",
+   "answer": "Raichu! ⚡",
+   "reveal": "It needs a Thunder Stone to evolve."
+  },
+  {
+   "n": 6,
+   "question": "Which pink Pokémon sings everyone to sleep?",
+   "answer": "Jigglypuff! 🎤",
+   "reveal": "In the anime, it draws on the faces of anyone who falls asleep."
+  },
+  {
+   "n": 7,
+   "question": "What is the name of Team Rocket's talking cat Pokémon?",
+   "answer": "Meowth! 🐱",
+   "reveal": "In the anime, it taught itself to talk to impress another Meowth."
+  },
+  {
+   "n": 8,
+   "question": "Which Water-type starter is a small blue turtle?",
+   "answer": "Squirtle! 🐢",
+   "reveal": "Ash's Squirtle once led a gang called the Squirtle Squad."
+  },
+  {
+   "n": 9,
+   "question": "What colour is a shiny Charizard?",
+   "answer": "Black! 🖤",
+   "reveal": "Its wings and tail flame stay red."
+  },
+  {
+   "n": 10,
+   "question": "Which sleepy giant Pokémon blocks the road in Pokémon Red and Blue?",
+   "answer": "Snorlax! 😴",
+   "reveal": "You need the Poké Flute to wake it up."
+  },
+  {
+   "n": 11,
+   "question": "How many Pokémon were there in the original games?",
+   "answer": "151! 📕",
+   "reveal": "Mew, number 151, was secretly added at the last minute by programmer Shigeru Morimoto."
+  },
+  {
+   "n": 12,
+   "question": "Which Pokémon evolves into Gyarados?",
+   "answer": "Magikarp! 🐟",
+   "reveal": "Its first move is Splash, which does absolutely nothing."
+  },
+  {
+   "n": 13,
+   "question": "What is the name of Ash's hometown?",
+   "answer": "Pallet Town! 🏡",
+   "reveal": "Pallet Town is also where Professor Oak's lab is."
+  },
+  {
+   "n": 14,
+   "question": "Which professor gives Ash his first Pokémon?",
+   "answer": "Professor Oak! 🌳",
+   "reveal": "Ash was late and only Pikachu was left."
+  },
+  {
+   "n": 15,
+   "question": "What is the word 'Pokémon' short for?",
+   "answer": "Pocket Monsters! 🎒",
+   "reveal": "The games launched in Japan as Pocket Monsters in 1996."
+  },
+  {
+   "n": 16,
+   "question": "Name a type that's super effective against Water.",
+   "answer": "Electric or Grass! ⚡",
+   "reveal": "Both do double damage to Water-type Pokémon."
+  },
+  {
+   "n": 17,
+   "question": "Which Pokémon does Eevee become with a Water Stone?",
+   "answer": "Vaporeon! 💧",
+   "reveal": "Vaporeon can melt into water and become invisible, says the Pokédex."
+  },
+  {
+   "n": 18,
+   "question": "Which legendary Pokémon is on the cover of Pokémon Silver?",
+   "answer": "Lugia! 🌊",
+   "reveal": "Ho-Oh is on the cover of Pokémon Gold."
+  },
+  {
+   "n": 19,
+   "question": "What is the name of Ash's first rival in the anime?",
+   "answer": "Gary Oak! 😏",
+   "reveal": "He's Professor Oak's grandson."
+  },
+  {
+   "n": 20,
+   "question": "Which psychic Pokémon is the villain of the first Pokémon film?",
+   "answer": "Mewtwo! 🧬",
+   "reveal": "It was created from the DNA of Mew."
+  },
+  {
+   "n": 21,
+   "question": "Which grinning purple Pokémon is a Ghost and Poison type?",
+   "answer": "Gengar! 👻",
+   "reveal": "The Pokédex says the air goes cold when Gengar is nearby."
+  },
+  {
+   "n": 22,
+   "question": "Who runs the Pokémon Centers in the anime?",
+   "answer": "Nurse Joy! 🏥",
+   "reveal": "Almost every town has a Nurse Joy, and they're all relatives who look the same."
+  },
+  {
+   "n": 23,
+   "question": "What is the name of Ash's talking Pokédex in the English dub?",
+   "answer": "Dexter! 📕",
+   "reveal": "Dexter describes every new Pokémon Ash meets."
+  },
+  {
+   "n": 24,
+   "question": "In the 2019 film Detective Pikachu, what does Pikachu wear?",
+   "answer": "A deerstalker hat! 🕵️",
+   "reveal": "It's the same style of hat Sherlock Holmes wears."
+  },
+  {
+   "n": 25,
+   "question": "What does Charmeleon evolve into?",
+   "answer": "Charizard! 🐉",
+   "reveal": "It looks like a dragon, but it's Fire and Flying, not Dragon type."
+  },
+  {
+   "n": 26,
+   "question": "How many Gym Badges do you need to enter the Pokémon League?",
+   "answer": "Eight! 🏅",
+   "reveal": "Ash earned his first one, the Boulder Badge, from Brock."
+  },
+  {
+   "n": 27,
+   "question": "What does Psyduck constantly suffer from?",
+   "answer": "Headaches! 🤕",
+   "reveal": "When the pain gets bad, it unleashes psychic powers."
+  },
+  {
+   "n": 28,
+   "question": "The Galar region is based on which country?",
+   "answer": "The United Kingdom! 🇬🇧",
+   "reveal": "Its biggest city, Wyndon, is based on London."
+  },
+  {
+   "n": 29,
+   "question": "Which Pokémon wears a skull and carries a bone?",
+   "answer": "Cubone! 🦴",
+   "reveal": "It's known as the Lonely Pokémon."
+  },
+  {
+   "n": 30,
+   "question": "What does Bulbasaur evolve into?",
+   "answer": "Ivysaur! 🌸",
+   "reveal": "Ivysaur's bud blooms when it evolves into Venusaur."
+  },
+  {
+   "n": 31,
+   "question": "Which Electric move is Ash's Pikachu most famous for?",
+   "answer": "Thunderbolt! ⚡",
+   "reveal": "It's Pikachu's signature attack all through the anime."
+  },
+  {
+   "n": 32,
+   "question": "In which year did the mobile game Pokémon GO come out?",
+   "answer": "2016! 📱",
+   "reveal": "It was downloaded more than 500 million times within months."
+  },
+  {
+   "n": 33,
+   "question": "What is Eevee's Electric-type evolution called?",
+   "answer": "Jolteon! ⚡",
+   "reveal": "Its fur stands up like needles when it's charged."
+  },
+  {
+   "n": 34,
+   "question": "Which Fire starter from Pokémon Gold and Silver has flames on its back?",
+   "answer": "Cyndaquil! 🔥",
+   "reveal": "It's a shy fire mouse that flares up when it's frightened."
+  },
+  {
+   "n": 35,
+   "question": "Which two Team Rocket members travel with Meowth?",
+   "answer": "Jessie and James! 🚀",
+   "reveal": "Their motto begins: 'Prepare for trouble!'"
+  },
+  {
+   "n": 36,
+   "question": "What is Pikachu's Pokédex number?",
+   "answer": "25! ⚡",
+   "reveal": "Pichu, its baby form, is number 172."
+  },
+  {
+   "n": 37,
+   "question": "Which pink Pokémon can transform into any other Pokémon?",
+   "answer": "Ditto! 🟣",
+   "reveal": "It copies the Pokémon it sees, moves and all."
+  },
+  {
+   "n": 38,
+   "question": "Name the three legendary birds of Kanto.",
+   "answer": "Articuno, Zapdos, Moltres! 🐦",
+   "reveal": "Ice, Electric and Fire, each part Flying type."
+  },
+  {
+   "n": 39,
+   "question": "What is Eevee's Ice-type evolution called?",
+   "answer": "Glaceon! ❄️",
+   "reveal": "It arrived with Pokémon Diamond and Pearl."
+  },
+  {
+   "n": 40,
+   "question": "What item does a Pokémon hold to Mega Evolve?",
+   "answer": "A Mega Stone! 💎",
+   "reveal": "Its trainer also needs a Key Stone."
+  },
+  {
+   "n": 41,
+   "question": "What is the region in Pokémon Scarlet and Violet called?",
+   "answer": "Paldea! 🍊",
+   "reveal": "It's inspired by Spain and Portugal."
+  },
+  {
+   "n": 42,
+   "question": "Which legendary Pokémon did Ash see in the very first episode?",
+   "answer": "Ho-Oh! 🌈",
+   "reveal": "It flew over a rainbow as Ash and Pikachu watched."
+  },
+  {
+   "n": 43,
+   "question": "Which professor gives you your starter in Pokémon Sun and Moon?",
+   "answer": "Professor Kukui! 🌺",
+   "reveal": "The games are set in Alola, based on Hawaii."
+  },
+  {
+   "n": 44,
+   "question": "Which type was added in Pokémon X and Y?",
+   "answer": "Fairy! 🧚",
+   "reveal": "It was added to balance out powerful Dragon types."
+  },
+  {
+   "n": 45,
+   "question": "What two types is Gyarados?",
+   "answer": "Water and Flying! 🌊",
+   "reveal": "Even though it has no wings!"
+  },
+  {
+   "n": 46,
+   "question": "Which Pokémon has the most different evolutions?",
+   "answer": "Eevee! 🦊",
+   "reveal": "It has eight, nicknamed the Eeveelutions."
+  },
+  {
+   "n": 47,
+   "question": "Which professor hands out starters in Pokémon X and Y?",
+   "answer": "Professor Sycamore! 🌳",
+   "reveal": "Sycamore is a tree, just like Oak, Elm and Rowan."
+  },
+  {
+   "n": 48,
+   "question": "Which Electric-type squirrel comes from Diamond and Pearl?",
+   "answer": "Pachirisu! 🐿️",
+   "reveal": "Dawn's Pachirisu loves to show off in Contests."
+  },
+  {
+   "n": 49,
+   "question": "Which Mythical Pokémon from Gen 2 can travel through time?",
+   "answer": "Celebi! 🍃",
+   "reveal": "It's known as the guardian of the forest."
+  },
+  {
+   "n": 50,
+   "question": "Which Pokémon was the first one ever designed?",
+   "answer": "Rhydon! 🦏",
+   "reveal": "It's number 112 in the Pokédex, but Game Freak drew it before any other."
+  }
+ ]
+}
