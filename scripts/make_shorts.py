@@ -117,7 +117,7 @@ def header_png(path, hook, sub):
 
 
 def end_png(path, lines):
-    img = Image.new("RGBA", (W, H), (10, 5, 30, 150))
+    img = Image.new("RGBA", (W, H), (10, 5, 30, 215))  # dark enough that the answer behind doesn't fight the text
     t = text_image(lines, W - 100)
     img.alpha_composite(t, ((W - t.width) // 2, (H - t.height) // 2))
     img.save(path)
@@ -150,6 +150,25 @@ def layout_filter(header, strip_input=0):
         f"[0:v]scale=-2:{H},crop={W}:{H},gblur=sigma=28,eq=brightness=-0.12[bg]", fq, fs, fp,
         f"[bg][q]overlay={x}:{y1}[b1]", f"[b1][s]overlay={x}:{y2}[b2]", f"[b2][p]overlay={x}:{y3}[b3]",
         f"[b3][1:v]overlay=0:0,fps=30,format=yuv420p[v]"])
+
+
+def movie_questions(quiz):
+    """Question numbers flagged as movie questions in quiz.json ("movie": true)."""
+    qs = quiz.get("questions", [])
+    return [q["n"] for q in qs if isinstance(q, dict) and q.get("movie")]
+
+
+def choose_groups(groups, quiz, per, cfg):
+    """Which Shorts to make (Giulia, 23 Nov 2026: fewer Shorts, weave in movie questions; movie Shorts do best).
+    With 7+ flagged movie questions, the first Short is all movie questions; the rest are the 7-question blocks
+    with the most movie questions, kept in quiz order. At most max_shorts_per_quiz in all."""
+    limit = cfg.get("max_shorts_per_quiz") or len(groups)
+    movies = movie_questions(quiz)
+    head = [movies[:per]] if cfg.get("movie_short", True) and len(movies) >= per else []
+    # the other Shorts: whole 7-question blocks with the most movie questions (a question may also be in the
+    # movie Short), shown in quiz order; sorted() is stable, so ties keep quiz order
+    blocks = sorted(groups, key=lambda g: -len(set(g) & set(movies)))[:max(0, limit - len(head))]
+    return head + sorted(blocks, key=lambda g: g[0])
 
 
 def countdown_length(hooks_path):
@@ -193,8 +212,7 @@ def main():
     cfg = json.loads(Path(args.hooks).read_text())
     think = args.think if args.think is not None else float(cfg.get("think_seconds", 5))
     countdown = countdown_length(args.hooks)
-    if cfg.get("max_shorts_per_quiz"):  # 2 slots a day can't take 3 quizzes x 7 Shorts a week (Giulia, 10 Nov)
-        groups = groups[:cfg["max_shorts_per_quiz"]]
+    groups = choose_groups(groups, quiz, args.per, cfg)
     made = []
     for gi, qs in enumerate(groups, 1):
         if only and gi not in only:
@@ -235,7 +253,7 @@ def main():
         # end card on the last answer frame
         endimg = work / f"e{gi}.png"
         end_png(endimg, [("Full 50-question quiz", 70), ("on our channel 👉", 70), ("@JustOneMoreQuiz", 64),
-                         ("", 30), ("Comment your score! 👇", 62)])
+                         ("", 30), ("Which one got you? 👇", 62), ("Comment your score!", 62)])
         last = segs[f"a{qs[-1]:02d}"]
         still = work / f"still{gi}.png"
         run("-ss", f"{last['start'] + last['dur'] - 0.1:.3f}", "-i", args.video, "-frames:v", "1", still)

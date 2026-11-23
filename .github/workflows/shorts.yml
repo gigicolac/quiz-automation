@@ -83,7 +83,7 @@ jobs:
           sudo mkdir -p /usr/share/fonts/truetype/google-fonts
           sudo curl -fsSL -o /usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf \
             https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf
-          pip install -q pillow==11.0.0
+          pip install -q "pillow>=11.3"  # 11.0.0 has no wheel for the runner's Python 3.14 (Shorts failed 17-23 Nov)
 
       - name: Download the final video
         if: env.QUIZ != ''

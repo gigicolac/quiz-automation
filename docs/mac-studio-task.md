@@ -85,6 +85,7 @@ Also:
 - **Shorts remixing:** allowed.
 - **Save** after the changes, then reload once to confirm they stuck.
 - **Pin** the score comment after release, once the record has comment_id.
+- **Reply to every new comment on a Short** (Giulia, 23 Nov 2026: no comments or engagement on Shorts). Reply warmly in one short line, about their score or the question they mention, ending with a nudge to the full quiz ("7/7! Try the full 50 👉 link in the related video"). Never argue, never reply to spam or anything unkind (leave those for Giulia), never ask for likes.
 
 ## 5. Mondays only: weekly report (after the Studio steps)
 
@@ -95,9 +96,19 @@ Giulia asked on 10 Nov 2026 for a weekly report, emailed to her and Shoma.
    - the audience retention curve: where viewers drop off, e.g. "40% left by question 5"
    - each A/B test's result (Studio > the video > A/B Testing): winner, watch-time share, status
    - comments that mention difficulty
-2. **Read docs/weekly-report-notes.md** and cover every "Open" item.
+   - **channel click-through rate for the last 7 days and the 7 days before** (Studio > Analytics > Content > Videos, "Impressions click-through rate"; the Analytics API can't give CTR)
+2. **Read docs/weekly-report-notes.md** and cover every "Open" item. Read `reports/channel-stats.json` on main (written by the Stats workflow at 6am every Monday).
 3. **Check tags** for the coming week's topics with vidIQ keyword research (vidIQ connector, load with ToolSearch).
 4. **Write the report**: short, with dot points. Make clear what is measured and what is a recommendation.
+   - **Start with the KPI table** (Giulia, 23 Nov 2026). Three rows, from the last entry of `weeks` in `reports/channel-stats.json`, plus CTR from Studio:
+
+     | | This week | Change vs last week | Target now | On track? |
+     |---|---|---|---|---|
+     | Total subscribers | `subs_at_end` | `subs_net` (gained `subs_gained`, lost `subs_lost`), and that against the week before (`subs_net_change`) | `target_subs` | yes / no, and the gap |
+     | Watch hours | `watch_hours` this week; `watch_hours_12m_at_end` over 12 months | `watch_hours_change` | `target_watch_hours_12m` (12-month) | yes / no, and the gap |
+     | Click-through rate | channel CTR, last 7 days (Studio) | against the 7 days before | 4.0% | yes / no, and the gap |
+
+   - **Then a 2–3 line summary** of how the channel is tracking against the forecast targets. If any row is behind, say plainly what will change next week to close the gap (one or two specific actions, e.g. which test, which topic, which retention fix) and when we expect to see it in the numbers. Don't invent or round numbers in our favour.
    - Headline numbers per video and Short.
    - Each A/B result (Quiz #10 = title-only test; Quiz #11 onwards = title and thumbnail), with what won and by how much.
    - Difficulty and retention, with a recommendation: keep or change (e.g. fandom quizzes hard vs medium).
@@ -108,6 +119,16 @@ Giulia asked on 10 Nov 2026 for a weekly report, emailed to her and Shoma.
    - To giuliacolaci97@gmail.com, CC shoma.ike97@gmail.com.
    - Subject: "One More Quiz weekly report – <date>".
    - Nobody else.
+
+## 6. First Monday of each month: forecast sheet
+
+Giulia's forecast model (config/targets.json `sheet`, tab "P-Tracker FY27 - OMQ") holds one row per month (row 8 = Oct 26, row 9 = Nov 26 ... row 16 = Jun 27). On the first Monday of the month, after the report, update the row for the month that just ended with the Google Sheets connector:
+- column C actual subscribers: `months["YYYY-MM"].subs_at_end` from `reports/channel-stats.json`
+- column E actual 12-month watch hours: `months["YYYY-MM"].watch_hours_12m`
+- column G actual CTR, as a fraction (0.031 for 3.1%): the month's channel CTR from Studio (Analytics, Content, that calendar month)
+- column H: a short note saying where each number came from and anything unusual
+- Never change columns A, B, D or F (targets and formulas). Also refresh the current month's row with month-to-date figures, marked "month to date" in column H.
+- Say in the report that the sheet was updated.
 
 ## Email
 

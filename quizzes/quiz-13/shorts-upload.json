@@ -1,0 +1,99 @@
+{
+  "quiz": "quiz-13",
+  "shorts": {
+    "1": {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-13-short-1.jpg",
+        "playlist": {
+          "id": "PLeE90_PazNK8",
+          "title": "Pop Culture Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-19T00:00:00Z",
+      "problems": "0:00 In the 2001 film, what colour is the grumpy swamp-dwelling ogre Shrek?\n0:21 In Shrek (2001), what kind of animal is Shrek's chatty best friend?\n0:42 Which giant London observation wheel opened to the public in 2000?\n1:01 In the Harry Potter films, what is the name of Harry's snowy white owl?\n1:21 Which Nintendo console of 2006 had a motion remote you could swing like a tennis racket?\n1:42 What was the name of Apple's pocket music player, first launched in 2001?\n2:04 In High School Musical (2006), which sport does Troy Bolton play for East High?",
+      "video_id": "Ssokv8Ley8o",
+      "url": "https://youtube.com/shorts/Ssokv8Ley8o",
+      "title": "Most people get these WRONG 😬 Pop Culture Quiz #13",
+      "description": "Sneak peek 👀 Most people get at least one of these wrong. Will you?\n\nThis is just a taste of this week's Pop Culture Quiz #13, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/X4rWCsULhvA\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #popculture #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-23T04:45:15Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/X4rWCsULhvA.",
+        "Playlist: check it is in 'Pop Culture Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-24T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Tue 24 Nov 2026 18:00 EST",
+        "Sydney": "Wed 25 Nov 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-13-short-2.jpg",
+        "playlist": {
+          "id": "PLeE90_PazNK8",
+          "title": "Pop Culture Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-19T00:00:00Z",
+      "problems": "0:00 Which sword-fighting cat in a feathered hat first appeared in Shrek 2 (2004)?\n0:20 In Pirates of the Caribbean, what is the name of Captain Jack Sparrow's ship?\n0:42 In Finding Nemo (2003), what kind of animal is Crush, the surfer dude who rides the current?\n1:05 In The Lord of the Rings films, which creature calls the One Ring 'my precious'?\n1:26 In the 2005 film Madagascar, what kind of animal is Marty?\n1:46 In Ice Age (2002), what kind of animal is Manny?\n2:08 In Monsters, Inc. (2001), what nickname is given to the girl who sneaks into Monstropolis?",
+      "video_id": "GW7MKafpFXs",
+      "url": "https://youtube.com/shorts/GW7MKafpFXs",
+      "title": "How much do you REALLY know? 🤔 Pop Culture Quiz #13",
+      "description": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?\n\nThis is just a taste of this week's Pop Culture Quiz #13, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/X4rWCsULhvA\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #popculture #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-23T04:45:21Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/X4rWCsULhvA.",
+        "Playlist: check it is in 'Pop Culture Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-25T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Wed 25 Nov 2026 18:00 EST",
+        "Sydney": "Thu 26 Nov 2026 10:00 AEDT"
+      }
+    }
+  }
+}

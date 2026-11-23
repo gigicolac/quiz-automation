@@ -33,8 +33,8 @@ class DefaultShortsMeta(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 us.default_meta(self.quiz, Path(d), self.scfg, self.made)
 
-    def test_cap_is_five_per_quiz(self):
-        self.assertEqual(self.scfg["max_shorts_per_quiz"], 5)
+    def test_cap_per_quiz(self):
+        self.assertEqual(self.scfg["max_shorts_per_quiz"], 2)  # Giulia, 23 Nov: fewer Shorts
 
 
 if __name__ == "__main__":

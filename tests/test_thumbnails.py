@@ -36,3 +36,7 @@ class Thumbnails(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_old_picks_without_still_use_giphy_still(self):
+        gifs = [{"n": 1, "question_gif": {"source": "giphy", "id": "abc"}, "answer_gif": {"source": "giphy", "id": "def", "still": "https://x/s.gif"}}]
+        self.assertEqual(mt.tile_sources(gifs), ["https://x/s.gif", "https://media.giphy.com/media/abc/giphy_s.gif"])
