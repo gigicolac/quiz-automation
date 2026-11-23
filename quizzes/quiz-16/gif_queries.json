@@ -136,7 +136,7 @@
     {
       "n": 21,
       "question_query": "desert sand dunes",
-      "answer_query": "camel desert",
+      "answer_query": "camel cartoon",
       "match": [],
       "question_pick": "FPZwgxWnW5FYY"
     },
@@ -157,7 +157,7 @@
     },
     {
       "n": 24,
-      "question_query": "toys",
+      "question_query": "toy box animation",
       "answer_query": "cowboy hat",
       "match": [],
       "answer_pick": "xT0GqsTvDBxFnVi3xm"
@@ -186,7 +186,7 @@
     {
       "n": 28,
       "question_query": "canada flag",
-      "answer_query": "ottawa",
+      "answer_query": "maple leaf animation",
       "match": [],
       "question_pick": "1gTRNR33zQmi4gsbYN"
     },
@@ -242,10 +242,9 @@
     {
       "n": 36,
       "question_query": "egypt pyramids",
-      "answer_query": "pyramid",
+      "answer_query": "pyramid animation",
       "match": [],
-      "question_pick": "l3g00p6L9P1CEVX5C",
-      "answer_pick": "07ewApdasSJLEvVljY"
+      "question_pick": "l3g00p6L9P1CEVX5C"
     },
     {
       "n": 37,
