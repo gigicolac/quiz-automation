@@ -111,7 +111,14 @@ def cover(im, w, h):
 def tile_sources(gifs, count=12):
     """Up to `count` picture URLs spread evenly across the quiz, answer pictures first."""
     def still(m):
-        return m.get("still") if m.get("type", "gif") == "gif" else m.get("url")
+        if m.get("type", "gif") != "gif":
+            return m.get("url")
+        if m.get("still"):
+            return m["still"]
+        # older picks (Quiz #9 to #12) have no "still": GIPHY serves a first-frame still for every id
+        if m.get("source") == "giphy" and m.get("id"):
+            return f"https://media.giphy.com/media/{m['id']}/giphy_s.gif"
+        return None
     pool = [still(g[s]) for s in ("answer_gif", "question_gif") for g in gifs if g.get(s) and still(g[s])]
     step = max(1, len(gifs) // count)
     seen, out = set(), []
