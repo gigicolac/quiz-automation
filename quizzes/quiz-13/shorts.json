@@ -1,0 +1,17 @@
+{
+  "_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+  "full_quiz_video_id": "X4rWCsULhvA",
+  "series_tag": "popculture",
+  "shorts": {
+    "1": {
+      "title": "Most people get these WRONG 😬 Pop Culture Quiz #13",
+      "opening": "Sneak peek 👀 Most people get at least one of these wrong. Will you?",
+      "pattern": "config default"
+    },
+    "2": {
+      "title": "How much do you REALLY know? 🤔 Pop Culture Quiz #13",
+      "opening": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?",
+      "pattern": "config default"
+    }
+  }
+}

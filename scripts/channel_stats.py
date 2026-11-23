@@ -58,6 +58,22 @@ def summarise(rows):
     return out
 
 
+def month_end(key):
+    y, m = map(int, key.split("-"))
+    return dt.date(y + m // 12, m % 12 + 1, 1) - dt.timedelta(days=1)
+
+
+def target_at(day, targets):
+    """Target subscribers and 12-month watch hours on `day`, straight-line between the month-end targets
+    (config/targets.json). None before the first month or after the last."""
+    pts = sorted((month_end(k), v) for k, v in targets.get("months", {}).items())
+    for (d0, v0), (d1, v1) in zip(pts, pts[1:]):
+        if d0 <= day <= d1:
+            f = (day - d0).days / (d1 - d0).days
+            return {k: round(v0[k] + f * (v1[k] - v0[k]), 1) for k in ("subs", "watch_hours_12m")}
+    return None
+
+
 def main():
     token = up.access_token()
     _, _, ch = up.http("GET", f"{up.API}/channels?part=statistics,snippet&mine=true", token)
@@ -103,6 +119,17 @@ def main():
     for wk in weeks:
         wk["subs_at_end"] = subs_now - sum(int(r.get("subscribersGained", 0)) - int(r.get("subscribersLost", 0))
                                                      for r in rows if r["day"] > wk["week"][-10:])
+    tpath = ROOT / "config" / "targets.json"
+    targets = json.loads(tpath.read_text()) if tpath.exists() else {}
+    for wk in weeks:
+        e = dt.date.fromisoformat(wk["week"][-10:])
+        wk["watch_hours_12m_at_end"] = round(sum(float(r.get("estimatedMinutesWatched", 0)) for r in rows
+                                                 if (e - dt.timedelta(days=364)).isoformat() <= r["day"] <= e.isoformat()) / 60, 1)
+        t = target_at(e, targets)
+        if t:
+            wk["target_subs"], wk["target_watch_hours_12m"] = t["subs"], t["watch_hours_12m"]
+        if targets.get("ctr"):
+            wk["target_ctr"] = targets["ctr"]
     out = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
            "channel": {"title": item["snippet"]["title"], "subscribers": subs_now,
                        "views": int(stats.get("viewCount", 0)), "videos": int(stats.get("videoCount", 0))},
