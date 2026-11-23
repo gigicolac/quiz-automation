@@ -79,6 +79,14 @@
    "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dm5hNXQ0dzE4Y2Fvc2c3Z3lxZmRzZGZ0aXBjb3BtdW53ZnM4cWdreCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/imoIuptU6lelW/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/imoIuptU6lelW/giphy.mp4",
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1dm5hNXQ0dzE4Y2Fvc2c3Z3lxZmRzZGZ0aXBjb3BtdW53ZnM4cWdreCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/imoIuptU6lelW/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "3VQDfP4q4ZYyY",
+   "user": "",
+   "title": "Dancing Charmander GIF",
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1dm5hNXQ0dzE4Y2Fvc2c3Z3lxZmRzZGZ0aXBjb3BtdW53ZnM4cWdreCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3VQDfP4q4ZYyY/giphy_s.gif"
   }
  },
  {
@@ -161,6 +169,14 @@
    "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWU0M3I0eGtldXkyaGg3ZnZ1M2psbTFrMDc0bjYzMnhuZGE1bG9ndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5fQyd7jM58m5y/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/5fQyd7jM58m5y/giphy.mp4",
    "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWU0M3I0eGtldXkyaGg3ZnZ1M2psbTFrMDc0bjYzMnhuZGE1bG9ndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5fQyd7jM58m5y/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "TL0h9l7hdotF1O3pCv",
+   "user": "",
+   "title": "Pokemon Squirtle GIF by giphydiscovery",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1OWU0M3I0eGtldXkyaGg3ZnZ1M2psbTFrMDc0bjYzMnhuZGE1bG9ndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TL0h9l7hdotF1O3pCv/giphy_s.gif"
   }
  },
  {
@@ -187,7 +203,25 @@
   }
  },
  {
-  "n": 10
+  "n": 10,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "qdFCb59rXKZ1K",
+   "user": "",
+   "title": "Pokemon Lunch GIF",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZjBjYmM4MWtwZDlzYXZlMjB3czcxMmg3YThxejh4ZjAwaHV5eW8yNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qdFCb59rXKZ1K/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/qdFCb59rXKZ1K/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZjBjYmM4MWtwZDlzYXZlMjB3czcxMmg3YThxejh4ZjAwaHV5eW8yNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qdFCb59rXKZ1K/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "5RxNQCK01NdAc",
+   "user": "",
+   "title": "Pokemon Sleeping GIF",
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1czhhMWhlcnR6ZHlhYmt2Z2prb3VnbWFkbjdjZTRwOWhtcGh4dWlwYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5RxNQCK01NdAc/giphy_s.gif"
+  }
  },
  {
   "n": 11,
@@ -223,6 +257,16 @@
    "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZnFxN3R3MGd0M253aG41N29kbzU3d2dncWhweTBwZTZ6em44dGZsMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W3fhYSziHB4Vq/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/W3fhYSziHB4Vq/giphy.mp4",
    "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZnFxN3R3MGd0M253aG41N29kbzU3d2dncWhweTBwZTZ6em44dGZsMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W3fhYSziHB4Vq/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "xeCQqafhBdVXoDusPq",
+   "user": "pokemon",
+   "title": "Pokemon Generations Swimming GIF by Pok\u00e9mon",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1d2s4ZXV0dWQ2MzlnNm1iMHh4aDBjOHg5ZHZ3enQ5cmowZjR5c2xraCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xeCQqafhBdVXoDusPq/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/xeCQqafhBdVXoDusPq/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1d2s4ZXV0dWQ2MzlnNm1iMHh4aDBjOHg5ZHZ3enQ5cmowZjR5c2xraCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xeCQqafhBdVXoDusPq/giphy_s.gif"
   }
  },
  {
@@ -305,6 +349,16 @@
    "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzhhOWpiOXhleHd6b2ZpcjV6eHZxOWEwMDd4bWt2dXltcW11Zm96YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JJwVI4SrMfyRtxnuJ5/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/JJwVI4SrMfyRtxnuJ5/giphy.mp4",
    "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1dzhhOWpiOXhleHd6b2ZpcjV6eHZxOWEwMDd4bWt2dXltcW11Zm96YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JJwVI4SrMfyRtxnuJ5/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "tM77LKMjQ3MaQAXUA8",
+   "user": "pokemon",
+   "title": "Thunderbolt GIF by Pok\u00e9mon",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZmR2Y3RjcjFhaG93NmZtY2plazkwbWpwOHJyNjA3dHQ4eG5wZ2hwYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tM77LKMjQ3MaQAXUA8/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/tM77LKMjQ3MaQAXUA8/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZmR2Y3RjcjFhaG93NmZtY2plazkwbWpwOHJyNjA3dHQ4eG5wZ2hwYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tM77LKMjQ3MaQAXUA8/giphy_s.gif"
   }
  },
  {
@@ -318,6 +372,14 @@
    "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cmVqN2R6aTBoN2RmeWhkYXFleWo4Z3IxY3Z6enU5eHp6dnUxcWc3NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/102u5uX2Zk6wBq/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/102u5uX2Zk6wBq/giphy.mp4",
    "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cmVqN2R6aTBoN2RmeWhkYXFleWo4Z3IxY3Z6enU5eHp6dnUxcWc3NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/102u5uX2Zk6wBq/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "PWibrynSQfUhW",
+   "user": "",
+   "title": "Pokemon Vaporeon GIF",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1bnZhYnR4NmY0NTRramZ6dDF3YTUyenh2aWh5OHp4bGU2cm93YjUzOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PWibrynSQfUhW/giphy_s.gif"
   }
  },
  {
@@ -390,7 +452,25 @@
   }
  },
  {
-  "n": 21
+  "n": 21,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "nHaF5cJanabVk86MLJ",
+   "user": "jacdesigns",
+   "title": "Pokemon Ghost GIF by IamJac",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzBzeXlpaDg4Z2pjd2ZzdHl3bml6dWtsM3lxbjcxNDc5d3Y4Y2thNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nHaF5cJanabVk86MLJ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/nHaF5cJanabVk86MLJ/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzBzeXlpaDg4Z2pjd2ZzdHl3bml6dWtsM3lxbjcxNDc5d3Y4Y2thNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nHaF5cJanabVk86MLJ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "oKXaUOOwStqnDddLnA",
+   "user": "pokemon",
+   "title": "Gengar GIF by Pok\u00e9mon",
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1bzBzeXlpaDg4Z2pjd2ZzdHl3bml6dWtsM3lxbjcxNDc5d3Y4Y2thNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/oKXaUOOwStqnDddLnA/giphy_s.gif"
+  }
  },
  {
   "n": 22,
@@ -453,16 +533,24 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "NS7gPxeumewkWDOIxi",
-   "user": "detectivepikachumovie",
-   "title": "3D Looking GIF by POK\u00c9MON Detective Pikachu",
-   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3NiNTM4MTM1bGh2MWJ2YmFlMjJwNmFwcGw0MGEwMHoxZ2Q1OXp1ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NS7gPxeumewkWDOIxi/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/NS7gPxeumewkWDOIxi/giphy.mp4",
-   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3NiNTM4MTM1bGh2MWJ2YmFlMjJwNmFwcGw0MGEwMHoxZ2Q1OXp1ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NS7gPxeumewkWDOIxi/giphy_s.gif"
+   "id": "8rgpBgyArqW6Gi8Cmw",
+   "user": "abitan",
+   "title": "Detective Cat Wow GIF by Abitan",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3NiNTM4MTM1bGh2MWJ2YmFlMjJwNmFwcGw0MGEwMHoxZ2Q1OXp1ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8rgpBgyArqW6Gi8Cmw/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/8rgpBgyArqW6Gi8Cmw/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1d3NiNTM4MTM1bGh2MWJ2YmFlMjJwNmFwcGw0MGEwMHoxZ2Q1OXp1ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8rgpBgyArqW6Gi8Cmw/giphy_s.gif"
   }
  },
  {
   "n": 25,
+  "question_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "ZujhQwFq8YiWc",
+   "user": "",
+   "title": "Evolution GIF",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ejk0OGZjZ2Nsa25kcmN1ZDQ2MnV1aDRjZXl1dXJyaHhjd2tsaTN5eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZujhQwFq8YiWc/giphy_s.gif"
+  },
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
@@ -512,12 +600,12 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "xTv6kG7GUXfj2",
+   "id": "sG9m1ps4IuM1O",
    "user": "",
-   "title": "Psyduck GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHBjNDhzY253MzBldnNvZTQ1am5hdnlsOWdzZ3R4MGx5YTkwYWIzZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xTv6kG7GUXfj2/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/xTv6kG7GUXfj2/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHBjNDhzY253MzBldnNvZTQ1am5hdnlsOWdzZ3R4MGx5YTkwYWIzZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xTv6kG7GUXfj2/giphy_s.gif"
+   "title": "Confused Pokemon GIF",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHBjNDhzY253MzBldnNvZTQ1am5hdnlsOWdzZ3R4MGx5YTkwYWIzZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sG9m1ps4IuM1O/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/sG9m1ps4IuM1O/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dHBjNDhzY253MzBldnNvZTQ1am5hdnlsOWdzZ3R4MGx5YTkwYWIzZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sG9m1ps4IuM1O/giphy_s.gif"
   }
  },
  {
@@ -531,10 +619,36 @@
    "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eTFrMG1tcjQyemtkdno3NXllMG5udTNwdWR2cGQybWhsM2tmYmcwbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8WeYqvmJwaLAgf6RTu/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/8WeYqvmJwaLAgf6RTu/giphy.mp4",
    "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1eTFrMG1tcjQyemtkdno3NXllMG5udTNwdWR2cGQybWhsM2tmYmcwbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8WeYqvmJwaLAgf6RTu/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "KAdgAmGYjI8oscL7Yi",
+   "user": "battlefin",
+   "title": "London Red Phone Booth GIF by BattleFin",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXl2M2E0aDZ5NHRzbGNxd2VwdDdhNWo0aDZmMTZpeXQ1ZGZrcmdobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KAdgAmGYjI8oscL7Yi/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/KAdgAmGYjI8oscL7Yi/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXl2M2E0aDZ5NHRzbGNxd2VwdDdhNWo0aDZmMTZpeXQ1ZGZrcmdobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KAdgAmGYjI8oscL7Yi/giphy_s.gif"
   }
  },
  {
-  "n": 29
+  "n": 29,
+  "question_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "3oGRFpyCfVzfKiAAwM",
+   "user": "",
+   "title": "Crying Pokemon GIF by The Story Room",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1ODJ0bWdoOHFyNmp6MzJvYmRzZ3Fua3ZieWk0MnJwN3Jsd3N0c3Q4diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oGRFpyCfVzfKiAAwM/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "RSW0FurWXPYaBp4XUR",
+   "user": "pokemon",
+   "title": "Cubone GIF by Pok\u00e9mon",
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ODJ0bWdoOHFyNmp6MzJvYmRzZ3Fua3ZieWk0MnJwN3Jsd3N0c3Q4diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RSW0FurWXPYaBp4XUR/giphy_s.gif"
+  }
  },
  {
   "n": 30,
@@ -547,6 +661,16 @@
    "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z29zdWlkdTBtdHpyZmsyY2t2djBqM3lycXJwNWs5amZ3cWdqN3licyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bydFUUUS40XgBhDNmu/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/bydFUUUS40XgBhDNmu/giphy.mp4",
    "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z29zdWlkdTBtdHpyZmsyY2t2djBqM3lycXJwNWs5amZ3cWdqN3licyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bydFUUUS40XgBhDNmu/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "LQNctmRkdaGWc",
+   "user": "",
+   "title": "Original Series Pokemon GIF",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z29zdWlkdTBtdHpyZmsyY2t2djBqM3lycXJwNWs5amZ3cWdqN3licyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LQNctmRkdaGWc/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/LQNctmRkdaGWc/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Z29zdWlkdTBtdHpyZmsyY2t2djBqM3lycXJwNWs5amZ3cWdqN3licyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LQNctmRkdaGWc/giphy_s.gif"
   }
  },
  {
@@ -560,6 +684,14 @@
    "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1b3RvMzJyamw2MnRtdjV2ZHYyMWUxYjE5djhrdWwwdmtwMTJ1OWwzNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gaS0ex2BtbyvnhRW1s/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/gaS0ex2BtbyvnhRW1s/giphy.mp4",
    "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1b3RvMzJyamw2MnRtdjV2ZHYyMWUxYjE5djhrdWwwdmtwMTJ1OWwzNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gaS0ex2BtbyvnhRW1s/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "ZofCGn3c0VK9y",
+   "user": "",
+   "title": "Pokemon Pikachu Electrocute GIF",
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZmR2Y3RjcjFhaG93NmZtY2plazkwbWpwOHJyNjA3dHQ4eG5wZ2hwYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZofCGn3c0VK9y/giphy_s.gif"
   }
  },
  {
@@ -610,6 +742,16 @@
  },
  {
   "n": 34,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "adC9JYksUw8J3ZIITj",
+   "user": "pokemon",
+   "title": "Pokemon Anime Starters GIF by Pok\u00e9mon",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ODN5dGgxY2pkYmhyN3A1a3M3M3VoeHl0bndwb3BleWIyenNndHB3YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/adC9JYksUw8J3ZIITj/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/adC9JYksUw8J3ZIITj/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ODN5dGgxY2pkYmhyN3A1a3M3M3VoeHl0bndwb3BleWIyenNndHB3YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/adC9JYksUw8J3ZIITj/giphy_s.gif"
+  },
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
@@ -646,6 +788,14 @@
  },
  {
   "n": 36,
+  "question_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "W04QVzelTHsNW",
+   "user": "",
+   "title": "Gotta Catch Em All 90S GIF",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2drM2twbTVjZ3Q2bGtpcG10cmhtcTFqaWQ3NDVnampodTJvZXNvOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W04QVzelTHsNW/giphy_s.gif"
+  },
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
@@ -714,6 +864,14 @@
    "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cmVqN2R6aTBoN2RmeWhkYXFleWo4Z3IxY3Z6enU5eHp6dnUxcWc3NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/102u5uX2Zk6wBq/giphy.mp4",
    "clean_mp4": "https://media.giphy.com/media/102u5uX2Zk6wBq/giphy.mp4",
    "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1cmVqN2R6aTBoN2RmeWhkYXFleWo4Z3IxY3Z6enU5eHp6dnUxcWc3NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/102u5uX2Zk6wBq/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "l8figLMATE0o",
+   "user": "",
+   "title": "glaceon GIF",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1d2N6bnVxazN6OG1zejJneDhmc2o5YmJ3NjV0bTVja29lMjduenJ2dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l8figLMATE0o/giphy_s.gif"
   }
  },
  {
@@ -764,6 +922,16 @@
  },
  {
   "n": 42,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "XN88vs2jKnmdW",
+   "user": "",
+   "title": "Pokemon Ash GIF",
+   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZjBjYmM4MWtwZDlzYXZlMjB3czcxMmg3YThxejh4ZjAwaHV5eW8yNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XN88vs2jKnmdW/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/XN88vs2jKnmdW/giphy.mp4",
+   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1ZjBjYmM4MWtwZDlzYXZlMjB3czcxMmg3YThxejh4ZjAwaHV5eW8yNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XN88vs2jKnmdW/giphy_s.gif"
+  },
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
@@ -811,18 +979,32 @@
    "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cXdwOWo2bXp0aHE4bW9iemszMWY1YmJzb3Z4dDh4dWtxY2dudjlpdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NLGuUSvm6oVag/giphy_s.gif"
   },
   "answer_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "133cAiXr4T1te",
-   "user": "",
-   "title": "Pokemon Coachella GIF",
-   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1azg2NjM3NjFtdjUzb3pqcWFybmwwbW03M2I4Y3Y2ODd1ODY4b292MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/133cAiXr4T1te/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/133cAiXr4T1te/giphy.mp4",
-   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1azg2NjM3NjFtdjUzb3pqcWFybmwwbW03M2I4Y3Y2ODd1ODY4b292MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/133cAiXr4T1te/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "RiYQzYxlvN2ojU00gq",
+   "user": "pokemon",
+   "title": "Happy Cute Sylveon GIF by Pok\u00e9mon",
+   "url": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1azg2NjM3NjFtdjUzb3pqcWFybmwwbW03M2I4Y3Y2ODd1ODY4b292MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RiYQzYxlvN2ojU00gq/giphy_s.gif"
   }
  },
  {
-  "n": 45
+  "n": 45,
+  "question_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "3vEJiMNgR6cik",
+   "user": "",
+   "title": "Pokemon Black GIF",
+   "url": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1d2s4ZXV0dWQ2MzlnNm1iMHh4aDBjOHg5ZHZ3enQ5cmowZjR5c2xraCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3vEJiMNgR6cik/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "eLDyQRJbX5TwnREgHf",
+   "user": "pokemon",
+   "title": "Night Sky GIF by Pok\u00e9mon",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1d2s4ZXV0dWQ2MzlnNm1iMHh4aDBjOHg5ZHZ3enQ5cmowZjR5c2xraCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eLDyQRJbX5TwnREgHf/giphy_s.gif"
+  }
  },
  {
   "n": 46,
@@ -871,12 +1053,70 @@
   }
  },
  {
-  "n": 48
+  "n": 48,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "iyBLuTcECrNv7Kw5Qm",
+   "user": "sincapscooter",
+   "title": "Cartoon Squirrel GIF by Sincap Scooter",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnBhcTJma3dpa2VtcGprcW5nbThsdTF0NjcydGZ3OTBzN3c1aDVzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iyBLuTcECrNv7Kw5Qm/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/iyBLuTcECrNv7Kw5Qm/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnBhcTJma3dpa2VtcGprcW5nbThsdTF0NjcydGZ3OTBzN3c1aDVzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iyBLuTcECrNv7Kw5Qm/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "WYG4J5W85ddwXL3WxG",
+   "user": "pokemon",
+   "title": "Sinnoh GIF by Pok\u00e9mon",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1a20ycmVnbjZzcmVyc3B0a3J3YzdqMjEweWFzd2psY2RvMjZrbWllbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WYG4J5W85ddwXL3WxG/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/WYG4J5W85ddwXL3WxG/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1a20ycmVnbjZzcmVyc3B0a3J3YzdqMjEweWFzd2psY2RvMjZrbWllbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WYG4J5W85ddwXL3WxG/giphy_s.gif"
+  }
  },
  {
-  "n": 49
+  "n": 49,
+  "question_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "airM5xYa5HxAfDzFyZ",
+   "user": "pokemon",
+   "title": "Flying In The Air GIF by Pok\u00e9mon",
+   "mp4": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1amIzNzZoNTB4Z3BkcTR3dWYycGd2cTZjYXRvOHU5bjZrbmw0dmZwNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/airM5xYa5HxAfDzFyZ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/airM5xYa5HxAfDzFyZ/giphy.mp4",
+   "still": "https://media4.giphy.com/media/v1.Y2lkPTJjZWFhODE1amIzNzZoNTB4Z3BkcTR3dWYycGd2cTZjYXRvOHU5bjZrbmw0dmZwNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/airM5xYa5HxAfDzFyZ/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "RfTWUISwDxHbPKhGv1",
+   "user": "pokemon",
+   "title": "Looking Pokemon Anime GIF by Pok\u00e9mon",
+   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cWZjNXhjdWtkN3J5Y2F6OXpzZngzbXlmd3IybGQ2dW04ZGsxYXRkaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RfTWUISwDxHbPKhGv1/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/RfTWUISwDxHbPKhGv1/giphy.mp4",
+   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1cWZjNXhjdWtkN3J5Y2F6OXpzZngzbXlmd3IybGQ2dW04ZGsxYXRkaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RfTWUISwDxHbPKhGv1/giphy_s.gif"
+  }
  },
  {
-  "n": 50
+  "n": 50,
+  "question_gif": {
+   "source": "giphy_still",
+   "type": "image",
+   "id": "jXOxSiAx5UVnq",
+   "user": "",
+   "title": "Funny Pokemon GIF",
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1Mm50YWltcDJ0a3hvYWprbXhwNjl3aHc4Z2syZHNpeWp6cjBlZHdyMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jXOxSiAx5UVnq/giphy_s.gif"
+  },
+  "answer_gif": {
+   "source": "giphy",
+   "type": "gif",
+   "id": "zdfBINGJMEqfmmJmok",
+   "user": "pokemon",
+   "title": "Flex Show Off GIF by Pok\u00e9mon",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MmR6eDRxdDVsZGFvdHU4dzcxcXlwY2E4cHQ3bm5qa2Z0eGVlaGdxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zdfBINGJMEqfmmJmok/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/zdfBINGJMEqfmmJmok/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1MmR6eDRxdDVsZGFvdHU4dzcxcXlwY2E4cHQ3bm5qa2Z0eGVlaGdxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zdfBINGJMEqfmmJmok/giphy_s.gif"
+  }
  }
 ]
