@@ -6,7 +6,8 @@
       "question_query": "pikachu",
       "answer_query": "pikachu happy",
       "match": [
-        "pikachu"
+        "pikachu",
+        "pokemon"
       ]
     },
     {
@@ -34,8 +35,10 @@
       "question_query": "charmander",
       "answer_query": "charmander fire",
       "match": [
-        "charmander"
-      ]
+        "charmander",
+        "pokemon"
+      ],
+      "answer_pick": "3VQDfP4q4ZYyY"
     },
     {
       "n": 5,
@@ -43,7 +46,8 @@
       "answer_query": "raichu",
       "match": [
         "raichu",
-        "pikachu"
+        "pikachu",
+        "pokemon"
       ]
     },
     {
@@ -51,7 +55,8 @@
       "question_query": "jigglypuff",
       "answer_query": "jigglypuff sing",
       "match": [
-        "jigglypuff"
+        "jigglypuff",
+        "pokemon"
       ]
     },
     {
@@ -60,7 +65,8 @@
       "answer_query": "meowth",
       "match": [
         "meowth",
-        "team rocket"
+        "team rocket",
+        "pokemon"
       ]
     },
     {
@@ -68,15 +74,18 @@
       "question_query": "squirtle",
       "answer_query": "squirtle squad",
       "match": [
-        "squirtle"
-      ]
+        "squirtle",
+        "pokemon"
+      ],
+      "answer_pick": "TL0h9l7hdotF1O3pCv"
     },
     {
       "n": 9,
       "question_query": "charizard",
       "answer_query": "shiny charizard",
       "match": [
-        "charizard"
+        "charizard",
+        "pokemon"
       ]
     },
     {
@@ -84,8 +93,11 @@
       "question_query": "snorlax",
       "answer_query": "snorlax sleeping",
       "match": [
-        "snorlax"
-      ]
+        "snorlax",
+        "pokemon"
+      ],
+      "question_pick": "qdFCb59rXKZ1K",
+      "answer_pick": "5RxNQCK01NdAc"
     },
     {
       "n": 11,
@@ -102,8 +114,10 @@
       "answer_query": "gyarados",
       "match": [
         "gyarados",
-        "magikarp"
-      ]
+        "magikarp",
+        "pokemon"
+      ],
+      "answer_pick": "xeCQqafhBdVXoDusPq"
     },
     {
       "n": 13,
@@ -139,7 +153,8 @@
         "pokemon",
         "pikachu",
         "squirtle"
-      ]
+      ],
+      "answer_pick": "tM77LKMjQ3MaQAXUA8"
     },
     {
       "n": 17,
@@ -147,8 +162,10 @@
       "answer_query": "vaporeon",
       "match": [
         "vaporeon",
-        "eevee"
-      ]
+        "eevee",
+        "pokemon"
+      ],
+      "answer_pick": "PWibrynSQfUhW"
     },
     {
       "n": 18,
@@ -173,7 +190,8 @@
       "question_query": "mewtwo",
       "answer_query": "mewtwo psychic",
       "match": [
-        "mewtwo"
+        "mewtwo",
+        "pokemon"
       ]
     },
     {
@@ -181,8 +199,11 @@
       "question_query": "gengar",
       "answer_query": "gengar smile",
       "match": [
-        "gengar"
-      ]
+        "gengar",
+        "pokemon"
+      ],
+      "question_pick": "nHaF5cJanabVk86MLJ",
+      "answer_pick": "oKXaUOOwStqnDddLnA"
     },
     {
       "n": 22,
@@ -209,8 +230,10 @@
       "answer_query": "detective hat",
       "match": [
         "detective pikachu",
-        "pikachu"
-      ]
+        "pikachu",
+        "pokemon"
+      ],
+      "answer_pick": "8rgpBgyArqW6Gi8Cmw"
     },
     {
       "n": 25,
@@ -218,8 +241,10 @@
       "answer_query": "charizard",
       "match": [
         "charizard",
-        "charmeleon"
-      ]
+        "charmeleon",
+        "pokemon"
+      ],
+      "question_pick": "ZujhQwFq8YiWc"
     },
     {
       "n": 26,
@@ -235,7 +260,8 @@
       "question_query": "psyduck",
       "answer_query": "psyduck confused",
       "match": [
-        "psyduck"
+        "psyduck",
+        "pokemon"
       ]
     },
     {
@@ -245,15 +271,19 @@
       "match": [
         "galar",
         "pokemon"
-      ]
+      ],
+      "answer_pick": "KAdgAmGYjI8oscL7Yi"
     },
     {
       "n": 29,
       "question_query": "cubone",
       "answer_query": "cubone pokemon",
       "match": [
-        "cubone"
-      ]
+        "cubone",
+        "pokemon"
+      ],
+      "question_pick": "3oGRFpyCfVzfKiAAwM",
+      "answer_pick": "RSW0FurWXPYaBp4XUR"
     },
     {
       "n": 30,
@@ -261,16 +291,20 @@
       "answer_query": "ivysaur",
       "match": [
         "ivysaur",
-        "bulbasaur"
-      ]
+        "bulbasaur",
+        "pokemon"
+      ],
+      "answer_pick": "LQNctmRkdaGWc"
     },
     {
       "n": 31,
       "question_query": "pikachu",
       "answer_query": "pikachu thunderbolt",
       "match": [
-        "pikachu"
-      ]
+        "pikachu",
+        "pokemon"
+      ],
+      "answer_pick": "ZofCGn3c0VK9y"
     },
     {
       "n": 32,
@@ -287,7 +321,8 @@
       "answer_query": "jolteon",
       "match": [
         "jolteon",
-        "eevee"
+        "eevee",
+        "pokemon"
       ]
     },
     {
@@ -295,8 +330,10 @@
       "question_query": "pokemon starters",
       "answer_query": "cyndaquil",
       "match": [
-        "cyndaquil"
-      ]
+        "cyndaquil",
+        "pokemon"
+      ],
+      "question_pick": "adC9JYksUw8J3ZIITj"
     },
     {
       "n": 35,
@@ -305,7 +342,8 @@
       "match": [
         "team rocket",
         "jessie",
-        "james"
+        "james",
+        "pokemon"
       ]
     },
     {
@@ -314,15 +352,18 @@
       "answer_query": "pikachu",
       "match": [
         "pikachu",
-        "pokedex"
-      ]
+        "pokedex",
+        "pokemon"
+      ],
+      "question_pick": "W04QVzelTHsNW"
     },
     {
       "n": 37,
       "question_query": "ditto",
       "answer_query": "ditto pokemon",
       "match": [
-        "ditto"
+        "ditto",
+        "pokemon"
       ]
     },
     {
@@ -342,8 +383,10 @@
       "answer_query": "glaceon",
       "match": [
         "glaceon",
-        "eevee"
-      ]
+        "eevee",
+        "pokemon"
+      ],
+      "answer_pick": "l8figLMATE0o"
     },
     {
       "n": 40,
@@ -372,7 +415,8 @@
         "ho-oh",
         "ho oh",
         "pokemon"
-      ]
+      ],
+      "question_pick": "XN88vs2jKnmdW"
     },
     {
       "n": 43,
@@ -392,22 +436,27 @@
         "fairy",
         "sylveon",
         "pokemon"
-      ]
+      ],
+      "answer_pick": "RiYQzYxlvN2ojU00gq"
     },
     {
       "n": 45,
       "question_query": "gyarados",
       "answer_query": "gyarados roar",
       "match": [
-        "gyarados"
-      ]
+        "gyarados",
+        "pokemon"
+      ],
+      "question_pick": "3vEJiMNgR6cik",
+      "answer_pick": "eLDyQRJbX5TwnREgHf"
     },
     {
       "n": 46,
       "question_query": "eevee",
       "answer_query": "eeveelutions",
       "match": [
-        "eevee"
+        "eevee",
+        "pokemon"
       ]
     },
     {
@@ -425,24 +474,33 @@
       "question_query": "electric squirrel",
       "answer_query": "pachirisu",
       "match": [
-        "pachirisu"
-      ]
+        "pachirisu",
+        "pokemon"
+      ],
+      "question_pick": "iyBLuTcECrNv7Kw5Qm",
+      "answer_pick": "WYG4J5W85ddwXL3WxG"
     },
     {
       "n": 49,
       "question_query": "celebi",
       "answer_query": "celebi pokemon",
       "match": [
-        "celebi"
-      ]
+        "celebi",
+        "pokemon"
+      ],
+      "question_pick": "airM5xYa5HxAfDzFyZ",
+      "answer_pick": "RfTWUISwDxHbPKhGv1"
     },
     {
       "n": 50,
       "question_query": "pokemon",
       "answer_query": "rhydon",
       "match": [
-        "rhydon"
-      ]
+        "rhydon",
+        "pokemon"
+      ],
+      "question_pick": "jXOxSiAx5UVnq",
+      "answer_pick": "zdfBINGJMEqfmmJmok"
     }
   ]
 }
