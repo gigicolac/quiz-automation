@@ -1,0 +1,1040 @@
+{
+  "status": "success",
+  "release_tag": "quiz-16-preview-36",
+  "source_commit": "bf3fd9b4a5aae990a072c058e8fcccd4a2d52c48",
+  "run_id": "45158668890",
+  "tts": "chatterbox",
+  "report": {
+    "quiz": "quiz-16",
+    "tts": "chatterbox",
+    "duration_s": 935.9,
+    "segments": [
+      {
+        "name": "intro",
+        "start": 0.0,
+        "dur": 11.5
+      },
+      {
+        "name": "rules",
+        "start": 11.5,
+        "dur": 8.1
+      },
+      {
+        "name": "q01",
+        "start": 19.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a01",
+        "start": 30.2,
+        "dur": 9.2
+      },
+      {
+        "name": "q02",
+        "start": 39.4,
+        "dur": 10.6
+      },
+      {
+        "name": "a02",
+        "start": 50.0,
+        "dur": 8.17
+      },
+      {
+        "name": "q03",
+        "start": 58.17,
+        "dur": 10.6
+      },
+      {
+        "name": "a03",
+        "start": 68.77,
+        "dur": 7.27
+      },
+      {
+        "name": "q04",
+        "start": 76.03,
+        "dur": 10.6
+      },
+      {
+        "name": "a04",
+        "start": 86.63,
+        "dur": 6.07
+      },
+      {
+        "name": "q05",
+        "start": 92.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a05",
+        "start": 103.3,
+        "dur": 6.3
+      },
+      {
+        "name": "q06",
+        "start": 109.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a06",
+        "start": 120.2,
+        "dur": 8.5
+      },
+      {
+        "name": "q07",
+        "start": 128.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a07",
+        "start": 139.3,
+        "dur": 9.4
+      },
+      {
+        "name": "q08",
+        "start": 148.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a08",
+        "start": 159.3,
+        "dur": 8.07
+      },
+      {
+        "name": "q09",
+        "start": 167.37,
+        "dur": 10.6
+      },
+      {
+        "name": "a09",
+        "start": 177.97,
+        "dur": 8.3
+      },
+      {
+        "name": "q10",
+        "start": 186.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a10",
+        "start": 196.87,
+        "dur": 7.5
+      },
+      {
+        "name": "q11",
+        "start": 204.37,
+        "dur": 10.6
+      },
+      {
+        "name": "a11",
+        "start": 214.97,
+        "dur": 6.8
+      },
+      {
+        "name": "q12",
+        "start": 221.77,
+        "dur": 10.6
+      },
+      {
+        "name": "a12",
+        "start": 232.37,
+        "dur": 6.6
+      },
+      {
+        "name": "q13",
+        "start": 238.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a13",
+        "start": 249.57,
+        "dur": 8.77
+      },
+      {
+        "name": "q14",
+        "start": 258.33,
+        "dur": 10.6
+      },
+      {
+        "name": "a14",
+        "start": 268.93,
+        "dur": 4.2
+      },
+      {
+        "name": "q15",
+        "start": 273.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a15",
+        "start": 283.73,
+        "dur": 6.87
+      },
+      {
+        "name": "q16",
+        "start": 290.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a16",
+        "start": 301.2,
+        "dur": 7.33
+      },
+      {
+        "name": "q17",
+        "start": 308.53,
+        "dur": 10.6
+      },
+      {
+        "name": "a17",
+        "start": 319.13,
+        "dur": 5.83
+      },
+      {
+        "name": "q18",
+        "start": 324.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a18",
+        "start": 335.57,
+        "dur": 8.47
+      },
+      {
+        "name": "q19",
+        "start": 344.03,
+        "dur": 10.6
+      },
+      {
+        "name": "a19",
+        "start": 354.63,
+        "dur": 7.1
+      },
+      {
+        "name": "q20",
+        "start": 361.73,
+        "dur": 10.6
+      },
+      {
+        "name": "a20",
+        "start": 372.33,
+        "dur": 7.8
+      },
+      {
+        "name": "q21",
+        "start": 380.13,
+        "dur": 10.6
+      },
+      {
+        "name": "a21",
+        "start": 390.73,
+        "dur": 6.03
+      },
+      {
+        "name": "q22",
+        "start": 396.77,
+        "dur": 10.6
+      },
+      {
+        "name": "a22",
+        "start": 407.37,
+        "dur": 8.67
+      },
+      {
+        "name": "q23",
+        "start": 416.03,
+        "dur": 10.6
+      },
+      {
+        "name": "a23",
+        "start": 426.63,
+        "dur": 8.13
+      },
+      {
+        "name": "q24",
+        "start": 434.77,
+        "dur": 10.6
+      },
+      {
+        "name": "a24",
+        "start": 445.37,
+        "dur": 8.7
+      },
+      {
+        "name": "q25",
+        "start": 454.07,
+        "dur": 10.6
+      },
+      {
+        "name": "a25",
+        "start": 464.67,
+        "dur": 5.93
+      },
+      {
+        "name": "q26",
+        "start": 470.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a26",
+        "start": 481.2,
+        "dur": 6.3
+      },
+      {
+        "name": "q27",
+        "start": 487.5,
+        "dur": 10.6
+      },
+      {
+        "name": "a27",
+        "start": 498.1,
+        "dur": 5.97
+      },
+      {
+        "name": "q28",
+        "start": 504.07,
+        "dur": 10.6
+      },
+      {
+        "name": "a28",
+        "start": 514.67,
+        "dur": 7.13
+      },
+      {
+        "name": "q29",
+        "start": 521.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a29",
+        "start": 532.4,
+        "dur": 7.27
+      },
+      {
+        "name": "q30",
+        "start": 539.67,
+        "dur": 10.6
+      },
+      {
+        "name": "a30",
+        "start": 550.27,
+        "dur": 8.63
+      },
+      {
+        "name": "q31",
+        "start": 558.9,
+        "dur": 10.6
+      },
+      {
+        "name": "a31",
+        "start": 569.5,
+        "dur": 7.5
+      },
+      {
+        "name": "q32",
+        "start": 577.0,
+        "dur": 10.6
+      },
+      {
+        "name": "a32",
+        "start": 587.6,
+        "dur": 5.67
+      },
+      {
+        "name": "q33",
+        "start": 593.27,
+        "dur": 10.6
+      },
+      {
+        "name": "a33",
+        "start": 603.87,
+        "dur": 5.7
+      },
+      {
+        "name": "q34",
+        "start": 609.57,
+        "dur": 10.6
+      },
+      {
+        "name": "a34",
+        "start": 620.17,
+        "dur": 5.53
+      },
+      {
+        "name": "q35",
+        "start": 625.7,
+        "dur": 10.6
+      },
+      {
+        "name": "a35",
+        "start": 636.3,
+        "dur": 6.93
+      },
+      {
+        "name": "q36",
+        "start": 643.23,
+        "dur": 10.6
+      },
+      {
+        "name": "a36",
+        "start": 653.83,
+        "dur": 8.47
+      },
+      {
+        "name": "q37",
+        "start": 662.3,
+        "dur": 10.6
+      },
+      {
+        "name": "a37",
+        "start": 672.9,
+        "dur": 6.47
+      },
+      {
+        "name": "q38",
+        "start": 679.37,
+        "dur": 10.6
+      },
+      {
+        "name": "a38",
+        "start": 689.97,
+        "dur": 7.63
+      },
+      {
+        "name": "q39",
+        "start": 697.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a39",
+        "start": 708.2,
+        "dur": 5.77
+      },
+      {
+        "name": "q40",
+        "start": 713.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a40",
+        "start": 724.57,
+        "dur": 7.93
+      },
+      {
+        "name": "q41",
+        "start": 732.5,
+        "dur": 10.6
+      },
+      {
+        "name": "a41",
+        "start": 743.1,
+        "dur": 6.53
+      },
+      {
+        "name": "q42",
+        "start": 749.63,
+        "dur": 10.6
+      },
+      {
+        "name": "a42",
+        "start": 760.23,
+        "dur": 8.17
+      },
+      {
+        "name": "q43",
+        "start": 768.4,
+        "dur": 10.6
+      },
+      {
+        "name": "a43",
+        "start": 779.0,
+        "dur": 8.8
+      },
+      {
+        "name": "q44",
+        "start": 787.8,
+        "dur": 10.6
+      },
+      {
+        "name": "a44",
+        "start": 798.4,
+        "dur": 7.13
+      },
+      {
+        "name": "q45",
+        "start": 805.53,
+        "dur": 10.6
+      },
+      {
+        "name": "a45",
+        "start": 816.13,
+        "dur": 6.83
+      },
+      {
+        "name": "q46",
+        "start": 822.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a46",
+        "start": 833.57,
+        "dur": 6.77
+      },
+      {
+        "name": "q47",
+        "start": 840.33,
+        "dur": 10.6
+      },
+      {
+        "name": "a47",
+        "start": 850.93,
+        "dur": 7.67
+      },
+      {
+        "name": "q48",
+        "start": 858.6,
+        "dur": 10.6
+      },
+      {
+        "name": "a48",
+        "start": 869.2,
+        "dur": 7.37
+      },
+      {
+        "name": "q49",
+        "start": 876.57,
+        "dur": 10.6
+      },
+      {
+        "name": "a49",
+        "start": 887.17,
+        "dur": 5.8
+      },
+      {
+        "name": "q50",
+        "start": 892.97,
+        "dur": 10.6
+      },
+      {
+        "name": "a50",
+        "start": 903.57,
+        "dur": 6.37
+      },
+      {
+        "name": "outro",
+        "start": 909.93,
+        "dur": 25.97
+      }
+    ],
+    "slide_pages": [
+      {
+        "kind": "Q",
+        "start": 0.0,
+        "end": 11.07
+      },
+      {
+        "kind": "A",
+        "start": 11.07,
+        "end": 14.93
+      },
+      {
+        "kind": "Q",
+        "start": 14.93,
+        "end": 25.97
+      },
+      {
+        "kind": "A",
+        "start": 25.97,
+        "end": 30.9
+      },
+      {
+        "kind": "Q",
+        "start": 30.9,
+        "end": 41.93
+      },
+      {
+        "kind": "A",
+        "start": 41.93,
+        "end": 50.33
+      },
+      {
+        "kind": "Q",
+        "start": 50.33,
+        "end": 61.37
+      },
+      {
+        "kind": "A",
+        "start": 61.37,
+        "end": 65.17
+      },
+      {
+        "kind": "Q",
+        "start": 65.17,
+        "end": 76.2
+      },
+      {
+        "kind": "A",
+        "start": 76.2,
+        "end": 87.97
+      },
+      {
+        "kind": "Q",
+        "start": 87.97,
+        "end": 99.0
+      },
+      {
+        "kind": "A",
+        "start": 99.0,
+        "end": 104.5
+      },
+      {
+        "kind": "Q",
+        "start": 104.5,
+        "end": 115.53
+      },
+      {
+        "kind": "A",
+        "start": 115.53,
+        "end": 117.9
+      },
+      {
+        "kind": "Q",
+        "start": 117.9,
+        "end": 128.93
+      },
+      {
+        "kind": "A",
+        "start": 128.93,
+        "end": 133.93
+      },
+      {
+        "kind": "Q",
+        "start": 133.93,
+        "end": 144.97
+      },
+      {
+        "kind": "A",
+        "start": 144.97,
+        "end": 147.97
+      },
+      {
+        "kind": "Q",
+        "start": 147.97,
+        "end": 159.0
+      },
+      {
+        "kind": "A",
+        "start": 159.0,
+        "end": 179.8
+      },
+      {
+        "kind": "Q",
+        "start": 179.8,
+        "end": 190.83
+      },
+      {
+        "kind": "A",
+        "start": 190.83,
+        "end": 203.23
+      },
+      {
+        "kind": "Q",
+        "start": 203.23,
+        "end": 214.27
+      },
+      {
+        "kind": "A",
+        "start": 214.27,
+        "end": 217.23
+      },
+      {
+        "kind": "Q",
+        "start": 217.23,
+        "end": 228.27
+      },
+      {
+        "kind": "A",
+        "start": 228.27,
+        "end": 237.27
+      },
+      {
+        "kind": "Q",
+        "start": 237.27,
+        "end": 248.3
+      },
+      {
+        "kind": "A",
+        "start": 248.3,
+        "end": 252.3
+      },
+      {
+        "kind": "Q",
+        "start": 252.3,
+        "end": 263.33
+      },
+      {
+        "kind": "A",
+        "start": 263.33,
+        "end": 268.37
+      },
+      {
+        "kind": "Q",
+        "start": 268.37,
+        "end": 281.43
+      },
+      {
+        "kind": "A",
+        "start": 281.43,
+        "end": 290.43
+      },
+      {
+        "kind": "Q",
+        "start": 290.43,
+        "end": 301.47
+      },
+      {
+        "kind": "A",
+        "start": 301.47,
+        "end": 303.5
+      },
+      {
+        "kind": "Q",
+        "start": 303.5,
+        "end": 314.53
+      },
+      {
+        "kind": "A",
+        "start": 314.53,
+        "end": 318.6
+      },
+      {
+        "kind": "Q",
+        "start": 318.6,
+        "end": 329.63
+      },
+      {
+        "kind": "A",
+        "start": 329.63,
+        "end": 334.63
+      },
+      {
+        "kind": "Q",
+        "start": 334.63,
+        "end": 345.67
+      },
+      {
+        "kind": "A",
+        "start": 345.67,
+        "end": 352.17
+      },
+      {
+        "kind": "Q",
+        "start": 352.17,
+        "end": 363.2
+      },
+      {
+        "kind": "A",
+        "start": 363.2,
+        "end": 368.2
+      },
+      {
+        "kind": "Q",
+        "start": 368.2,
+        "end": 379.23
+      },
+      {
+        "kind": "A",
+        "start": 379.23,
+        "end": 384.23
+      },
+      {
+        "kind": "Q",
+        "start": 384.23,
+        "end": 395.27
+      },
+      {
+        "kind": "A",
+        "start": 395.27,
+        "end": 399.83
+      },
+      {
+        "kind": "Q",
+        "start": 399.83,
+        "end": 410.87
+      },
+      {
+        "kind": "A",
+        "start": 410.87,
+        "end": 415.87
+      },
+      {
+        "kind": "Q",
+        "start": 415.87,
+        "end": 426.9
+      },
+      {
+        "kind": "A",
+        "start": 426.9,
+        "end": 437.27
+      },
+      {
+        "kind": "Q",
+        "start": 437.27,
+        "end": 448.3
+      },
+      {
+        "kind": "A",
+        "start": 448.3,
+        "end": 461.23
+      },
+      {
+        "kind": "Q",
+        "start": 461.23,
+        "end": 472.27
+      },
+      {
+        "kind": "A",
+        "start": 472.27,
+        "end": 487.33
+      },
+      {
+        "kind": "Q",
+        "start": 487.33,
+        "end": 498.37
+      },
+      {
+        "kind": "A",
+        "start": 498.37,
+        "end": 503.37
+      },
+      {
+        "kind": "Q",
+        "start": 503.37,
+        "end": 514.4
+      },
+      {
+        "kind": "A",
+        "start": 514.4,
+        "end": 517.2
+      },
+      {
+        "kind": "Q",
+        "start": 517.2,
+        "end": 528.23
+      },
+      {
+        "kind": "A",
+        "start": 528.23,
+        "end": 530.77
+      },
+      {
+        "kind": "Q",
+        "start": 530.77,
+        "end": 541.8
+      },
+      {
+        "kind": "A",
+        "start": 541.8,
+        "end": 543.83
+      },
+      {
+        "kind": "Q",
+        "start": 543.83,
+        "end": 554.87
+      },
+      {
+        "kind": "A",
+        "start": 554.87,
+        "end": 559.87
+      },
+      {
+        "kind": "Q",
+        "start": 559.87,
+        "end": 570.9
+      },
+      {
+        "kind": "A",
+        "start": 570.9,
+        "end": 574.5
+      },
+      {
+        "kind": "Q",
+        "start": 574.5,
+        "end": 585.53
+      },
+      {
+        "kind": "A",
+        "start": 585.53,
+        "end": 590.53
+      },
+      {
+        "kind": "Q",
+        "start": 590.53,
+        "end": 601.57
+      },
+      {
+        "kind": "A",
+        "start": 601.57,
+        "end": 607.6
+      },
+      {
+        "kind": "Q",
+        "start": 607.6,
+        "end": 618.63
+      },
+      {
+        "kind": "A",
+        "start": 618.63,
+        "end": 623.63
+      },
+      {
+        "kind": "Q",
+        "start": 623.63,
+        "end": 636.43
+      },
+      {
+        "kind": "A",
+        "start": 636.43,
+        "end": 639.13
+      },
+      {
+        "kind": "Q",
+        "start": 639.13,
+        "end": 650.17
+      },
+      {
+        "kind": "A",
+        "start": 650.17,
+        "end": 654.07
+      },
+      {
+        "kind": "Q",
+        "start": 654.07,
+        "end": 665.1
+      },
+      {
+        "kind": "A",
+        "start": 665.1,
+        "end": 667.5
+      },
+      {
+        "kind": "Q",
+        "start": 667.5,
+        "end": 678.53
+      },
+      {
+        "kind": "A",
+        "start": 678.53,
+        "end": 692.93
+      },
+      {
+        "kind": "Q",
+        "start": 692.93,
+        "end": 703.97
+      },
+      {
+        "kind": "A",
+        "start": 703.97,
+        "end": 707.7
+      },
+      {
+        "kind": "Q",
+        "start": 707.7,
+        "end": 722.83
+      },
+      {
+        "kind": "A",
+        "start": 722.83,
+        "end": 726.83
+      },
+      {
+        "kind": "Q",
+        "start": 726.83,
+        "end": 737.87
+      },
+      {
+        "kind": "A",
+        "start": 737.87,
+        "end": 740.9
+      },
+      {
+        "kind": "Q",
+        "start": 740.9,
+        "end": 751.93
+      },
+      {
+        "kind": "A",
+        "start": 751.93,
+        "end": 755.13
+      },
+      {
+        "kind": "Q",
+        "start": 755.13,
+        "end": 766.17
+      },
+      {
+        "kind": "A",
+        "start": 766.17,
+        "end": 771.23
+      },
+      {
+        "kind": "Q",
+        "start": 771.23,
+        "end": 782.27
+      },
+      {
+        "kind": "A",
+        "start": 782.27,
+        "end": 791.03
+      },
+      {
+        "kind": "Q",
+        "start": 791.03,
+        "end": 802.07
+      },
+      {
+        "kind": "A",
+        "start": 802.07,
+        "end": 817.07
+      },
+      {
+        "kind": "Q",
+        "start": 817.07,
+        "end": 828.1
+      },
+      {
+        "kind": "A",
+        "start": 828.1,
+        "end": 831.13
+      },
+      {
+        "kind": "Q",
+        "start": 831.13,
+        "end": 842.17
+      },
+      {
+        "kind": "A",
+        "start": 842.17,
+        "end": 847.17
+      },
+      {
+        "kind": "Q",
+        "start": 847.17,
+        "end": 858.2
+      },
+      {
+        "kind": "A",
+        "start": 858.2,
+        "end": 862.67
+      }
+    ],
+    "levels_db": {
+      "voice_rms": -20.0,
+      "music_rms": -35.7,
+      "mix_peak": -0.3
+    },
+    "warnings": [
+      "outro2: starts 0.2 s late (previous line ran long)"
+    ]
+  },
+  "log_tail": "Exported DAHbuiV9_yM pages 1-2 (horizontal_4k) in 71s\nExported DAHbuiWG494 pages 1-2 (horizontal_4k) in 81s\nExported DAHbug9YWsI pages 1-2 (horizontal_4k) in 61s\nExported DAHbujDwi9g pages 1-2 (horizontal_4k) in 51s\nExported DAHbujcSdDo pages 1-2 (horizontal_4k) in 50s\nExported DAHbuuFx-hs pages 1-2 (horizontal_4k) in 50s\nExported DAHbuhsQAmU pages 1-2 (horizontal_4k) in 71s\nExported DAHbugDLiGs pages 1-2 (horizontal_4k) in 61s\nExported DAHbugrSvcg pages 1-2 (horizontal_4k) in 61s\nExported DAHbunNexO4 pages 1-2 (horizontal_4k) in 71s\nExported DAHbuoQiLuw pages 1-2 (horizontal_4k) in 81s\nExported DAHburtmGIY pages 1-2 (horizontal_4k) in 71s\nExported DAHbur_Ot-s pages 1-2 (horizontal_4k) in 101s\nExported DAHbuqc3Nts pages 1-2 (horizontal_4k) in 81s\nExported DAHbuk0Abq8 pages 1-2 (horizontal_4k) in 81s\nExported DAHbunhkJFo pages 1-2 (horizontal_4k) in 70s\nExported DAHbusJYHCw pages 1-2 (horizontal_4k) in 71s\nExported DAHbupg53H4 pages 1-2 (horizontal_4k) in 81s\nExported DAHbuo49AuM pages 1-2 (horizontal_4k) in 71s\nExported DAHbuvwpjXA pages 1-2 (horizontal_4k) in 81s\nExported DAHbut9asaI pages 1-2 (horizontal_4k) in 60s\nExported DAHbuh_wM-k pages 1-2 (horizontal_4k) in 50s\nExported DAHbutJd8Vo pages 1-2 (horizontal_4k) in 61s\nslides.mp4 from 50 pairs\nExported DAHbu1xUVfY pages 1-1 (horizontal_4k) in 30s\nExported DAHbu1xUVfY pages 2-2 (horizontal_4k) in 30s\nExported DAHbu1xUVfY pages 3-3 (horizontal_4k) in 41s\nintro/rules/outro from DAHbu1xUVfY\ntotal 401528\ndrwxr-xr-x 3 runner runner      4096 Nov 23 11:03 .\ndrwxr-xr-x 5 runner runner      4096 Nov 23 10:43 ..\n-rw-r--r-- 1 runner runner      8725 Nov 23 11:02 canva_state.json\n-rw-r--r-- 1 runner runner   2253663 Nov 23 11:02 intro.mp4\n-rw-r--r-- 1 runner runner  15597032 Nov 23 11:03 outro.mp4\ndrwxr-xr-x 2 runner runner      4096 Nov 23 11:03 pairs\n-rw-r--r-- 1 runner runner   3016439 Nov 23 11:03 rules.mp4\n-rw-r--r-- 1 runner runner 390249424 Nov 23 11:01 slides.mp4\n-rw-r--r-- 1 runner runner      2550 Nov 23 11:01 slides.txt\n-rw-r--r-- 1 runner runner        17 Nov 23 11:03 source.sha\n-rw-r--r-- 1 runner runner        17 Nov 23 10:43 stored.sha\n== __run_6\n== __run_7\n== __run_8\nScript: 106 lines\nLoading Chatterbox (CPU)…\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.\n  deprecate(\"LoRACompatibleLinear\", \"1.0.0\", deprecation_message)\nloaded PerthNet (Implicit) at step 250,000\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-16.mp4 (15.6 min), 1 warning(s)\n  ! outro2: starts 0.2 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-4d341d0cbb5218c6ecac\n== __run_11\n-rw-r--r--+ 1 root root 113328 Nov 23 11:31 /usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf\n-rw-r--r--+ 1 root root 549824 Nov 23 11:31 /usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf\nthumbnail-a.jpg: 2560x1440, JPEG quality 95, 0.99 MB, band red\nthumbnail-b.jpg: 2560x1440, JPEG quality 95, 0.99 MB, band red\nstudio-thumbnails: quiz-16 published\n"
+}
