@@ -56,7 +56,7 @@ One branch per quiz: `claude/quiz-NN` from current `origin/main`. Copy the shape
     - **short**: under 12 words each, so the countdown starts fast.
     - What held best so far: #9's opener (general knowledge, 60% still watching at Q3) vs #13's (2000s pop culture, 50%) and #10's (hard Disney, 33%). Note in `quiz.json` `review.questions` how Q1–3 follow these rules.
   - **Keep people watching past 6 minutes** (Giulia's goal: average viewing of at least 6 minutes). Around Q8–12 put the most recognisable picture question of the quiz, and spread "wow" reveals evenly so no stretch of 5 questions is all hard. A score-checkpoint card every 10 questions is being added to the build (Giulia approved it on 23 Nov); her approval of the first video with it comes before that quiz is uploaded.
-  - **Movie questions in every quiz** (Giulia, 23 Nov: movie Shorts perform best). General Knowledge and Pop Culture quizzes include 6–8 movie questions spread through the 50 (one in most groups of 7), so every Short has at least one.
+  - **Movie questions in every quiz** (Giulia, 23 Nov: movie Shorts perform best). General Knowledge and Pop Culture quizzes include 7–8 movie questions spread through the 50, each marked `"movie": true` in quiz.json. With 7 or more, the first Short of that quiz is all movie questions; the other Short is the block of 7 with the most of them (scripts/make_shorts.py).
   - Question types from the 1M+ research: famous facts "everyone should know", with a picture people recognise on sight.
   - Each fact is checked against a reliable source; leave a question out if in doubt.
   - No trick wording, and no answers that are now out of date.
