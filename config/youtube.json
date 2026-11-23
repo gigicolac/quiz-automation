@@ -173,12 +173,13 @@
     "Fandom": "Only REAL fans would know"
   },
   "thumbnail_test": {
-    "_comment": "Giulia, 16 Nov 2026: 'We should always be running thumbnail tests across all quiz videos.' Every long video has a Title and thumbnail test; A and B change ONE thing, and each change should be big enough to move click-through rate. Queue: band colour (red vs blue), then hook wording, then a big '50 QUESTIONS' number + 4-picture grid (1M+ style), then a single question on the thumbnail. Update from the weekly results.",
+    "_comment": "Giulia, 16 Nov 2026: 'We should always be running thumbnail tests across all quiz videos.' Every long video has a Title and thumbnail test; A and B change ONE thing, and each change should be big enough to move click-through rate. Queue: band colour (red vs blue; done, red led 57/43 on #14), now hook wording (from 23 Nov: A = the quiz's own hook, e.g. 'Only REAL fans would know', B = score threshold 'Can you score 40+?', both red), then a big '50 QUESTIONS' number + 4-picture grid (1M+ style), then a single question on the thumbnail. Update from the weekly results.",
     "a": {
       "band": "red"
     },
     "b": {
-      "band": "blue"
+      "band": "red",
+      "tagline": "Can you score 40+?"
     }
   },
   "studio": {
