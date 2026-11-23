@@ -10,6 +10,7 @@
     "Difficulty (trial from 16 Nov 2026, Giulia: \"let's trial your recommendation\"; Quiz #10 Disney lost 60% of viewers by Q3 vs 35% for Quiz #9): every quiz, fandom included, is medium. Questions 1-5 are easy and well known, the middle builds, and the hardest come in the second half (Q36-50). Fandom quizzes ask what a real fan knows, not obscure trivia.",
     "Topics: start from the competitor research step (docs/weekly-automation.md section 1, docs/competitor-research.md): prefer topics, title styles, thumbnail styles and question types proven by quiz videos with 1M+ views, written in our own words."
   ],
+  "performance_rank": {"_comment": "Re-ranked every Monday from the weekly report (first-week views, then average view duration, then CTR). General Knowledge is fixed as quiz 1 each week; quizzes 2 and 3 cycle through the top 3 below (Giulia, 23 Nov 2026).", "as_of": "2026-11-23", "rank": ["Fandom", "Pop Culture", "Movies", "Science", "TV", "Music"], "evidence": {"Fandom": "#10 Disney: 121 views in its second week, 3.8% CTR, 2:52 average viewing", "Pop Culture": "#13 2000s: 115 views in 3 days, 3.1% CTR, 3:02", "Movies": "#12: 22 views, 2.3% CTR, but the top Shorts (430 and 208 views)", "Science": "#11: 4.6% CTR on 66 impressions, 4:35, only 12 views", "TV": "#14 Cartoons: 1.1% CTR on ~4.6K impressions, 2:32", "Music": "#15: no data yet"}},
   "topic_repeat_days": 365,
   "history": [
     {"quiz": "quiz-01..05", "category": "General Knowledge", "topic": "General knowledge", "released": "2026-07 (approx.)"},

@@ -28,7 +28,11 @@ Release slots for the week the quizzes are written in: Thursday 3pm, Saturday 1p
 ## 1. Plan (Monday)
 
 1. Read `config/categories.json` and every `quizzes/*/quiz.json` (`category`, `topic`) on main and on open `claude/quiz-NN` branches. The next quiz number is one more than the highest `quizzes/quiz-NN`, counting any open `claude/quiz-NN` branches too.
-2. Pick 3 categories by going round `rotation` in order from the most recent quiz's category. Never use the same category twice in a row. Follow every line of `rules`.
+2. **Pick the week's 3 quizzes by performance** (Giulia, 23 Nov 2026: "aim to create 1x general knowledge quiz each week - and then rotate the other categories for the other two depending on performance. Let's go best performed topic, second best, third best and see how that performs").
+   - **Quiz 1 is always General Knowledge** (our best performer: #9 has the most views and 6:38 average viewing in its second week).
+   - **Quizzes 2 and 3** come from the top 3 other categories in `config/categories.json` `performance_rank`. Take them in turn: week 1 = 1st + 2nd, week 2 = 3rd + 1st, week 3 = 2nd + 3rd, then repeat. The last two weeks' categories show where you are.
+   - Re-rank each Monday from the weekly report: first-week views, then average view duration, then click-through rate. Update `performance_rank` through a small PR (not the quiz PRs) and say what moved.
+   - A topic is still never repeated within 365 days. Follow every line of `rules`.
    - **Fandom:** research what people love and search for right now: vidIQ keyword research and outliers, YouTube trending. Pick a franchise not quizzed in the last 365 days (`history` plus quiz.json `topic`s).
    - **Education:** a Victorian Curriculum unit for one year level from 7 to 12.
    - **Family-friendly only.** If a topic could be sexual, violent, hateful or otherwise unsuitable, pick another.
@@ -44,14 +48,23 @@ One branch per quiz: `claude/quiz-NN` from current `origin/main`. Copy the shape
   - `review.questions`: decision `auto-approved`, with a note saying who wrote and fact-checked them and when.
   - `questions`: 50 of them, each with `n`, `question`, `answer` (short, with one emoji) and `reveal` (one fun sentence).
 - **Questions**
-  - 50 per quiz, **medium overall, fandom included** (trial from 16 Nov 2026; Quiz #10 Disney, written hard, lost 60% of viewers by Q3). Q1–5 easy and widely known, so nobody leaves in the first minute. Q6–35 medium, Q36–50 the hardest. Fandom quizzes ask what a real fan knows, not obscure trivia.
+  - 50 per quiz, **medium overall, fandom included** (trial from 16 Nov 2026; Quiz #10 Disney, written hard, lost 60% of viewers by Q3). Q6–35 medium, Q36–50 the hardest. Fandom quizzes ask what a real fan knows, not obscure trivia.
+  - **The first 3 questions decide whether people stay** (Giulia, 23 Nov: Movies and Pop Culture lost half their viewers by Q3). They must be:
+    - **instantly answerable but satisfying**: the topic's most famous characters, scenes or facts, so a casual viewer thinks "I know this!" (not so easy it feels like a kids' quiz);
+    - **picture-led**: an iconic, recognisable GIF for both question and answer;
+    - **varied**: Q1 a near-certain "yes!", Q2 a famous one with a fun reveal, Q3 a "did you know?" twist that makes people want the next answer;
+    - **short**: under 12 words each, so the countdown starts fast.
+    - What held best so far: #9's opener (general knowledge, 60% still watching at Q3) vs #13's (2000s pop culture, 50%) and #10's (hard Disney, 33%). Note in `quiz.json` `review.questions` how Q1–3 follow these rules.
+  - **Keep people watching past 6 minutes** (Giulia's goal: average viewing of at least 6 minutes). Around Q8–12 put the most recognisable picture question of the quiz, and spread "wow" reveals evenly so no stretch of 5 questions is all hard. A score-checkpoint card every 10 questions is being added to the build (Giulia approved it on 23 Nov); her approval of the first video with it comes before that quiz is uploaded.
+  - **Movie questions in every quiz** (Giulia, 23 Nov: movie Shorts perform best). General Knowledge and Pop Culture quizzes include 6–8 movie questions spread through the 50 (one in most groups of 7), so every Short has at least one.
   - Question types from the 1M+ research: famous facts "everyone should know", with a picture people recognise on sight.
   - Each fact is checked against a reliable source; leave a question out if in doubt.
   - No trick wording, and no answers that are now out of date.
   - Movies: include well-known classics (for example Marvel, Pixar, Star Wars, Harry Potter) alongside others (Giulia, 10 Nov).
-- **Title** in the house style: "How Well Do You REALLY Know <Topic>? <emoji> 50 <Topic> Trivia Questions | <Series> Quiz #NN", or a formula from this week's competitor research (score threshold, "Can you pass", "Everyone should know"). Score the final 2–3 with vidIQ `score_title`. The second title for the A/B test comes from `config/youtube.json` `title_variants`; make sure A and B use clearly different hooks so the test has something to learn.
+- **Title A** in the house style that is winning its tests: "How Well Do You REALLY Know <Topic>? <emoji> 50 <Topic> Trivia Questions | <Series> Quiz #NN" (Cartoons #14 A beat the "every dummy" B 57% to 43%; Giulia, 23 Nov: "refine the best performing titles … try different variations playing on this problem statement"). Score the final 2–3 with vidIQ `score_title` when credits allow.
+- **Title B** is a *variation of that problem statement*, from `config/youtube.json` `title_variants` (the next unused one in `title_b_queue`), so each test teaches us which wording of "do you really know X?" works best. Record which variation each quiz used in `quiz.json` `title_b_variant`.
 - **Thumbnail hook** (`thumbnail_tagline`) reads on from the heading as one sentence ("Disney Quiz #10 … Only REAL fans would know"). The defaults are in `config/youtube.json` `thumbnail_taglines`. See `docs/hooks-playbook.md`.
-- **Tags** come from vidIQ keyword research for the topic (search volume and competition), not guesses. Record the research in `tags_research`.
+- **Tags** come from vidIQ keyword research for the topic (search volume and competition), not guesses. **If vidIQ has no credits** (Giulia, 23 Nov: "make sure you are adding relevant tags for now or use google tag search"), use free autocomplete instead: `https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=<topic> quiz` (YouTube suggestions) and the same without `ds=yt` (Google). Take the suggestions people actually type for the topic and quiz/trivia, 10–15 tags under 500 characters. Record the source and date in `tags_research`.
 - **`gif_queries.json`**: a question and an answer search per question, plus `match` words.
   - Never use real people's faces: actors, celebrities, sports stars, politicians. Prefer animated characters, objects and scenes.
   - Hand-pick (`question_pick` / `answer_pick`) where the default search would show a real person.

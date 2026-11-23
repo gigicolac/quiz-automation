@@ -73,7 +73,7 @@ class PlaylistTests(unittest.TestCase):
         self.assertEqual(up.playlist_title({**self.quiz, "series": "Space"}, CFG), "Space Quizzes")
         tasks = up.studio_tasks(self.quiz, CFG, "General Knowledge Quizzes")
         self.assertIn("Left = Video: Most recent upload; right = Playlist: General Knowledge Quizzes", tasks[0])
-        self.assertIn("50 General Knowledge Questions Every Dummy Should Know 🧠 Can You Score 40+? | Quiz #9 + thumbnail B", tasks[1])
+        self.assertIn("Think You REALLY Know General Knowledge? 🤔 Prove It in 50 Questions | Quiz #9 + thumbnail B", tasks[1])
         self.assertTrue(any("Type = Activity" in t for t in tasks))
 
 
