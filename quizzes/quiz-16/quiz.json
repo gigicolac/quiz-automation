@@ -1,344 +1,344 @@
 {
-  "id": "quiz-16",
-  "number": 16,
-  "series": "General Knowledge",
-  "category": "General Knowledge",
-  "topic": "General knowledge (with an animal picture run)",
-  "difficulty": "medium",
-  "title": "How Well Do You REALLY Know General Knowledge? 🧠 50 Questions Everyone Should Know | Quiz #16",
-  "title_b_variant": "Think You REALLY Know {series}? 🤔 Prove It in {count} Questions | Quiz #{number}",
-  "description_hook": "🧠 From flying mammals to an ogre in a swamp: 50 general knowledge questions everyone should know. How many can you get right?",
-  "thumbnail_tagline": "Everyone should know these",
-  "tags": [
-    "general knowledge quiz",
-    "general knowledge questions",
-    "general knowledge questions and answers",
-    "general knowledge quiz not multiple choice",
-    "general knowledge quiz hard",
-    "general knowledge trivia",
-    "50 questions everyone should know",
-    "trivia quiz",
-    "animal quiz",
-    "how well do you know",
-    "pub quiz questions",
-    "quiz for adults"
-  ],
-  "tags_research": "23 Nov 2026: vidIQ out of credits (4 left), and the Google suggest endpoint is blocked from the cloud shell, so YouTube autocomplete via TubeAlfred for 'general knowledge quiz' (hard, for kids, 100 questions, multiple choice, not multiple choice). Kept the GK series tags from config/youtube.json; added 'not multiple choice' (true of our format) and 'animal quiz' (Quiz Dino 'How Well Do You Know Animals?' 874k in 2 months).",
-  "status": "questions_written",
-  "review": {
-    "questions": {
-      "decision": "auto-approved",
-      "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Medium; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led animals; Q1 near-certain (lion), Q2 famous with a fun reveal (panda, 10-16 hours eating), Q3 a 'did you know?' twist (polar bear skin is black). Most recognisable picture at Q10 (Statue of Liberty). 8 movie questions spread through (Q6, 12, 18, 24, 29, 35, 40, 48). Weekly report 23 Nov applied: medium kept, hook test (thumbnail B 'Can you score 40+?'). GIF searches avoid real people's faces; movie rows use objects."
-    }
+ "id": "quiz-16",
+ "number": 16,
+ "series": "General Knowledge",
+ "category": "General Knowledge",
+ "topic": "General knowledge (with an animal picture run)",
+ "difficulty": "medium",
+ "title": "How Well Do You REALLY Know General Knowledge? 🧠 50 Questions Everyone Should Know | Quiz #16",
+ "title_b_variant": "Think You REALLY Know {series}? 🤔 Prove It in {count} Questions | Quiz #{number}",
+ "description_hook": "🧠 From flying mammals to an ogre in a swamp: 50 general knowledge questions everyone should know. How many can you get right?",
+ "thumbnail_tagline": "Everyone should know these",
+ "tags": [
+  "general knowledge quiz",
+  "general knowledge questions",
+  "general knowledge questions and answers",
+  "general knowledge quiz not multiple choice",
+  "general knowledge quiz hard",
+  "general knowledge trivia",
+  "50 questions everyone should know",
+  "trivia quiz",
+  "animal quiz",
+  "how well do you know",
+  "pub quiz questions",
+  "quiz for adults"
+ ],
+ "tags_research": "23 Nov 2026: vidIQ out of credits (4 left), and the Google suggest endpoint is blocked from the cloud shell, so YouTube autocomplete via TubeAlfred for 'general knowledge quiz' (hard, for kids, 100 questions, multiple choice, not multiple choice). Kept the GK series tags from config/youtube.json; added 'not multiple choice' (true of our format) and 'animal quiz' (Quiz Dino 'How Well Do You Know Animals?' 874k in 2 months).",
+ "status": "questions_written",
+ "review": {
+  "questions": {
+   "decision": "auto-approved",
+   "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Medium; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led animals; Q1 near-certain (lion), Q2 famous with a fun reveal (panda, 10-16 hours eating), Q3 a 'did you know?' twist (polar bear skin is black). Most recognisable picture at Q10 (Statue of Liberty). 8 movie questions spread through (Q6, 12, 18, 24, 29, 35, 40, 48). Weekly report 23 Nov applied: medium kept, hook test (thumbnail B 'Can you score 40+?'). GIF searches avoid real people's faces; movie rows use objects."
+  }
+ },
+ "questions": [
+  {
+   "n": 1,
+   "question": "Which animal is known as the King of the Jungle?",
+   "answer": "The lion! 🦁",
+   "reveal": "Funny thing: lions don't live in jungles, but on grasslands and savannahs."
   },
-  "questions": [
-    {
-      "n": 1,
-      "question": "Which animal is known as the King of the Jungle?",
-      "answer": "The lion! 🦁",
-      "reveal": "Funny thing: lions don't live in jungles, but on grasslands and savannahs."
-    },
-    {
-      "n": 2,
-      "question": "What do pandas spend most of their day eating?",
-      "answer": "Bamboo! 🎋",
-      "reveal": "A giant panda can spend 10 to 16 hours a day eating it."
-    },
-    {
-      "n": 3,
-      "question": "What colour is a polar bear's skin?",
-      "answer": "Black! 🐻‍❄️",
-      "reveal": "Its fur isn't really white either: each hair is clear and hollow."
-    },
-    {
-      "n": 4,
-      "question": "How many sides does a hexagon have?",
-      "answer": "Six! 🐝",
-      "reveal": "Bees build their honeycomb cells as hexagons."
-    },
-    {
-      "n": 5,
-      "question": "What is the largest ocean on Earth?",
-      "answer": "The Pacific Ocean! 🌊",
-      "reveal": "It covers about a third of Earth's whole surface."
-    },
-    {
-      "n": 6,
-      "question": "Which movie features a clownfish searching for his lost son?",
-      "answer": "Finding Nemo! 🐠",
-      "reveal": "Pixar released it in 2003, and Nemo's dad is called Marlin.",
-      "movie": true
-    },
-    {
-      "n": 7,
-      "question": "Which famous tower in Paris was finished in 1889?",
-      "answer": "The Eiffel Tower! 🗼",
-      "reveal": "It was built for the 1889 World's Fair and was only meant to stand for 20 years."
-    },
-    {
-      "n": 8,
-      "question": "What is the only mammal that can truly fly?",
-      "answer": "The bat! 🦇",
-      "reveal": "Flying squirrels only glide. Bats flap their wings like birds."
-    },
-    {
-      "n": 9,
-      "question": "How many colours are in a rainbow?",
-      "answer": "Seven! 🌈",
-      "reveal": "Red, orange, yellow, green, blue, indigo and violet."
-    },
-    {
-      "n": 10,
-      "question": "Which country gave the Statue of Liberty to the USA?",
-      "answer": "France! 🗽",
-      "reveal": "Its copper skin started out brown and has turned green with age."
-    },
-    {
-      "n": 11,
-      "question": "What is the hardest natural substance on Earth?",
-      "answer": "Diamond! 💎",
-      "reveal": "It's pure carbon, just like the graphite in your pencil."
-    },
-    {
-      "n": 12,
-      "question": "Which green ogre lives in a swamp in a 2001 film?",
-      "answer": "Shrek! 🧅",
-      "reveal": "Shrek won the first-ever Oscar for Best Animated Feature.",
-      "movie": true
-    },
-    {
-      "n": 13,
-      "question": "What is the capital city of Japan?",
-      "answer": "Tokyo! 🗾",
-      "reveal": "It became Japan's capital in 1868, when Edo was renamed Tokyo."
-    },
-    {
-      "n": 14,
-      "question": "How many hearts does an octopus have?",
-      "answer": "Three! 🐙",
-      "reveal": "And its blood is blue."
-    },
-    {
-      "n": 15,
-      "question": "What is the chemical symbol for gold?",
-      "answer": "Au! 🥇",
-      "reveal": "It comes from aurum, the Latin word for gold."
-    },
-    {
-      "n": 16,
-      "question": "What is the largest planet in our solar system?",
-      "answer": "Jupiter! 🪐",
-      "reveal": "More than 1,300 Earths could fit inside it."
-    },
-    {
-      "n": 17,
-      "question": "How many players does a soccer team have on the field?",
-      "answer": "Eleven! ⚽",
-      "reveal": "That includes the goalkeeper."
-    },
-    {
-      "n": 18,
-      "question": "In the 1982 film E.T., what does E.T. want to do?",
-      "answer": "Phone home! 📞",
-      "reveal": "Steven Spielberg directed it, and E.T. loved Reese's Pieces.",
-      "movie": true
-    },
-    {
-      "n": 19,
-      "question": "What is the national animal of Scotland?",
-      "answer": "The unicorn! 🦄",
-      "reveal": "It has been on Scotland's royal coat of arms for centuries."
-    },
-    {
-      "n": 20,
-      "question": "Which planet is known as the Red Planet?",
-      "answer": "Mars! 🔴",
-      "reveal": "Its red colour comes from iron oxide, or rust, in its dust."
-    },
-    {
-      "n": 21,
-      "question": "What is the largest hot desert in the world?",
-      "answer": "The Sahara! 🐪",
-      "reveal": "It's almost as big as the whole of the USA."
-    },
-    {
-      "n": 22,
-      "question": "How many bones are in the adult human body?",
-      "answer": "206! 🦴",
-      "reveal": "Babies are born with around 300; some fuse together as we grow."
-    },
-    {
-      "n": 23,
-      "question": "In which country did the Olympic Games begin?",
-      "answer": "Greece! 🏛️",
-      "reveal": "The ancient Games began at Olympia in 776 BC."
-    },
-    {
-      "n": 24,
-      "question": "In Toy Story, what is the name of the cowboy?",
-      "answer": "Woody! 🤠",
-      "reveal": "Toy Story (1995) was the first fully computer-animated feature film.",
-      "movie": true
-    },
-    {
-      "n": 25,
-      "question": "Which bird is a symbol of peace?",
-      "answer": "The dove! 🕊️",
-      "reveal": "It's often shown carrying an olive branch."
-    },
-    {
-      "n": 26,
-      "question": "What is the tallest animal in the world?",
-      "answer": "The giraffe! 🦒",
-      "reveal": "Its tongue can be about 50 centimetres long."
-    },
-    {
-      "n": 27,
-      "question": "How many strings does a standard guitar have?",
-      "answer": "Six! 🎸",
-      "reveal": "A bass guitar usually has four."
-    },
-    {
-      "n": 28,
-      "question": "What is the capital city of Canada?",
-      "answer": "Ottawa! 🇨🇦",
-      "reveal": "Not Toronto, which is Canada's biggest city."
-    },
-    {
-      "n": 29,
-      "question": "Which film series features a spaceship called the Millennium Falcon?",
-      "answer": "Star Wars! 🚀",
-      "reveal": "It made the Kessel Run in less than 12 parsecs.",
-      "movie": true
-    },
-    {
-      "n": 30,
-      "question": "What is the fastest land animal?",
-      "answer": "The cheetah! 🐆",
-      "reveal": "It can reach around 100 km/h in short bursts."
-    },
-    {
-      "n": 31,
-      "question": "What do bees collect from flowers to make honey?",
-      "answer": "Nectar! 🍯",
-      "reveal": "A bee makes only about a twelfth of a teaspoon of honey in its life."
-    },
-    {
-      "n": 32,
-      "question": "Which metal is a liquid at room temperature?",
-      "answer": "Mercury! 🌡️",
-      "reveal": "It was once used in most thermometers."
-    },
-    {
-      "n": 33,
-      "question": "What is the imaginary line around the middle of the Earth?",
-      "answer": "The equator! 🌍",
-      "reveal": "It's about 40,000 kilometres long."
-    },
-    {
-      "n": 34,
-      "question": "How many teeth does an adult usually have?",
-      "answer": "32! 🦷",
-      "reveal": "That includes the four wisdom teeth."
-    },
-    {
-      "n": 35,
-      "question": "In which film does a rat named Remy become a chef in Paris?",
-      "answer": "Ratatouille! 🐀",
-      "reveal": "The dish ratatouille comes from Provence in the south of France.",
-      "movie": true
-    },
-    {
-      "n": 36,
-      "question": "Which country has more pyramids than Egypt?",
-      "answer": "Sudan! 🔺",
-      "reveal": "It has over 200, many of them at the ancient city of Meroë."
-    },
-    {
-      "n": 37,
-      "question": "Which is the only continent with no native ants?",
-      "answer": "Antarctica! 🐜",
-      "reveal": "It's too cold for ants to survive there."
-    },
-    {
-      "n": 38,
-      "question": "Which planet spins on its side?",
-      "answer": "Uranus! 🪐",
-      "reveal": "It's tilted at about 98 degrees, so it rolls around the Sun."
-    },
-    {
-      "n": 39,
-      "question": "What is the longest bone in the human body?",
-      "answer": "The femur! 🦴",
-      "reveal": "Your thigh bone is roughly a quarter of your height."
-    },
-    {
-      "n": 40,
-      "question": "Which 1997 film won 11 Oscars, a record shared with Ben-Hur?",
-      "answer": "Titanic! 🚢",
-      "reveal": "The Lord of the Rings: The Return of the King later won 11 too.",
-      "movie": true
-    },
-    {
-      "n": 41,
-      "question": "What is the smallest country in the world?",
-      "answer": "Vatican City! 🇻🇦",
-      "reveal": "It covers less than half a square kilometre."
-    },
-    {
-      "n": 42,
-      "question": "Which element has the chemical symbol K?",
-      "answer": "Potassium! 🍌",
-      "reveal": "K comes from kalium. Bananas are famous for it."
-    },
-    {
-      "n": 43,
-      "question": "Which language has the most native speakers?",
-      "answer": "Mandarin Chinese! 🇨🇳",
-      "reveal": "More than 900 million people speak it as their first language."
-    },
-    {
-      "n": 44,
-      "question": "Roughly how long does sunlight take to reach Earth?",
-      "answer": "About 8 minutes! ☀️",
-      "reveal": "On average it's 8 minutes and 20 seconds."
-    },
-    {
-      "n": 45,
-      "question": "Which animal has fingerprints almost identical to ours?",
-      "answer": "The koala! 🐨",
-      "reveal": "Even under a microscope they're hard to tell apart."
-    },
-    {
-      "n": 46,
-      "question": "What is the capital city of New Zealand?",
-      "answer": "Wellington! 🇳🇿",
-      "reveal": "It's the southernmost capital city of any country."
-    },
-    {
-      "n": 47,
-      "question": "Which Wonder of the Ancient World still stands?",
-      "answer": "The Great Pyramid! 🔺",
-      "reveal": "The Great Pyramid of Giza is the only one of the seven left."
-    },
-    {
-      "n": 48,
-      "question": "What was Disney's first feature-length animated film?",
-      "answer": "Snow White! 🍎",
-      "reveal": "Snow White and the Seven Dwarfs premiered in 1937.",
-      "movie": true
-    },
-    {
-      "n": 49,
-      "question": "How many time zones does Russia have?",
-      "answer": "Eleven! 🕰️",
-      "reveal": "More than any other country's mainland."
-    },
-    {
-      "n": 50,
-      "question": "Which letter doesn't appear in any US state's name?",
-      "answer": "Q! 🔤",
-      "reveal": "Every other letter of the alphabet appears at least once."
-    }
-  ]
+  {
+   "n": 2,
+   "question": "What do pandas spend most of their day eating?",
+   "answer": "Bamboo! 🎋",
+   "reveal": "A giant panda can spend 10 to 16 hours a day eating it."
+  },
+  {
+   "n": 3,
+   "question": "What colour is a polar bear's skin?",
+   "answer": "Black! 🐻‍❄️",
+   "reveal": "Its fur isn't really white either: each hair is clear and hollow."
+  },
+  {
+   "n": 4,
+   "question": "How many sides does a hexagon have?",
+   "answer": "Six! 🐝",
+   "reveal": "Bees build their honeycomb cells as hexagons."
+  },
+  {
+   "n": 5,
+   "question": "What is the largest ocean on Earth?",
+   "answer": "The Pacific Ocean! 🌊",
+   "reveal": "It covers about a third of Earth's whole surface."
+  },
+  {
+   "n": 6,
+   "question": "Which movie features a clownfish searching for his lost son?",
+   "answer": "Finding Nemo! 🐠",
+   "reveal": "Pixar released it in 2003, and Nemo's dad is called Marlin.",
+   "movie": true
+  },
+  {
+   "n": 7,
+   "question": "Which famous tower in Paris was finished in 1889?",
+   "answer": "The Eiffel Tower! 🗼",
+   "reveal": "It was built for the 1889 World's Fair and was only meant to stand for 20 years."
+  },
+  {
+   "n": 8,
+   "question": "What is the only mammal that can truly fly?",
+   "answer": "The bat! 🦇",
+   "reveal": "Flying squirrels only glide. Bats flap their wings like birds."
+  },
+  {
+   "n": 9,
+   "question": "How many colours are in a rainbow?",
+   "answer": "Seven! 🌈",
+   "reveal": "Red, orange, yellow, green, blue, indigo and violet."
+  },
+  {
+   "n": 10,
+   "question": "Which country gave the Statue of Liberty to the USA?",
+   "answer": "France! 🗽",
+   "reveal": "Its copper skin started out brown and has turned green with age."
+  },
+  {
+   "n": 11,
+   "question": "What is the hardest natural substance on Earth?",
+   "answer": "Diamond! 💎",
+   "reveal": "It's pure carbon, just like the graphite in your pencil."
+  },
+  {
+   "n": 12,
+   "question": "Which green ogre lives in a swamp in a 2001 film?",
+   "answer": "Shrek! 🧅",
+   "reveal": "Shrek won the first-ever Oscar for Best Animated Feature.",
+   "movie": true
+  },
+  {
+   "n": 13,
+   "question": "What is the capital city of Japan?",
+   "answer": "Tokyo! 🗾",
+   "reveal": "It became Japan's capital in 1868, when Edo was renamed Tokyo."
+  },
+  {
+   "n": 14,
+   "question": "How many hearts does an octopus have?",
+   "answer": "Three! 🐙",
+   "reveal": "And its blood is blue."
+  },
+  {
+   "n": 15,
+   "question": "What is the chemical symbol for gold?",
+   "answer": "Au! 🥇",
+   "reveal": "It comes from aurum, the Latin word for gold."
+  },
+  {
+   "n": 16,
+   "question": "What is the largest planet in our solar system?",
+   "answer": "Jupiter! 🪐",
+   "reveal": "More than 1,300 Earths could fit inside it."
+  },
+  {
+   "n": 17,
+   "question": "How many players does a soccer team have on the field?",
+   "answer": "Eleven! ⚽",
+   "reveal": "That includes the goalkeeper."
+  },
+  {
+   "n": 18,
+   "question": "In the 1982 film E.T., what does E.T. want to do?",
+   "answer": "Phone home! 📞",
+   "reveal": "Steven Spielberg directed it, and E.T. loved Reese's Pieces.",
+   "movie": true
+  },
+  {
+   "n": 19,
+   "question": "What is the national animal of Scotland?",
+   "answer": "The unicorn! 🦄",
+   "reveal": "It has been on Scotland's royal coat of arms for centuries."
+  },
+  {
+   "n": 20,
+   "question": "Which planet is known as the Red Planet?",
+   "answer": "Mars! 🔴",
+   "reveal": "Its red colour comes from iron oxide, or rust, in its dust."
+  },
+  {
+   "n": 21,
+   "question": "What is the largest hot desert in the world?",
+   "answer": "The Sahara! 🐪",
+   "reveal": "It's almost as big as the whole of the USA."
+  },
+  {
+   "n": 22,
+   "question": "How many bones are in the adult human body?",
+   "answer": "206! 🦴",
+   "reveal": "Babies are born with around 300; some fuse together as we grow."
+  },
+  {
+   "n": 23,
+   "question": "In which country did the Olympic Games begin?",
+   "answer": "Greece! 🏛️",
+   "reveal": "The ancient Games began at Olympia in 776 BC."
+  },
+  {
+   "n": 24,
+   "question": "In Toy Story, what is the name of the cowboy?",
+   "answer": "Woody! 🤠",
+   "reveal": "Toy Story (1995) was the first fully computer-animated feature film.",
+   "movie": true
+  },
+  {
+   "n": 25,
+   "question": "Which bird is a symbol of peace?",
+   "answer": "The dove! 🕊️",
+   "reveal": "It's often shown carrying an olive branch."
+  },
+  {
+   "n": 26,
+   "question": "What is the tallest animal in the world?",
+   "answer": "The giraffe! 🦒",
+   "reveal": "Its tongue can be about 50 centimetres long."
+  },
+  {
+   "n": 27,
+   "question": "How many strings does a standard guitar have?",
+   "answer": "Six! 🎸",
+   "reveal": "A bass guitar usually has four."
+  },
+  {
+   "n": 28,
+   "question": "What is the capital city of Canada?",
+   "answer": "Ottawa! 🇨🇦",
+   "reveal": "Not Toronto, which is Canada's biggest city."
+  },
+  {
+   "n": 29,
+   "question": "Which film series features a spaceship called the Millennium Falcon?",
+   "answer": "Star Wars! 🚀",
+   "reveal": "It made the Kessel Run in less than 12 parsecs.",
+   "movie": true
+  },
+  {
+   "n": 30,
+   "question": "What is the fastest land animal?",
+   "answer": "The cheetah! 🐆",
+   "reveal": "It can reach around 100 km/h in short bursts."
+  },
+  {
+   "n": 31,
+   "question": "What do bees collect from flowers to make honey?",
+   "answer": "Nectar! 🍯",
+   "reveal": "A bee makes only about a twelfth of a teaspoon of honey in its life."
+  },
+  {
+   "n": 32,
+   "question": "Which metal is a liquid at room temperature?",
+   "answer": "Mercury! 🌡️",
+   "reveal": "It was once used in most thermometers."
+  },
+  {
+   "n": 33,
+   "question": "What is the imaginary line around the middle of the Earth?",
+   "answer": "The equator! 🌍",
+   "reveal": "It's about 40,000 kilometres long."
+  },
+  {
+   "n": 34,
+   "question": "How many teeth does an adult usually have?",
+   "answer": "32! 🦷",
+   "reveal": "That includes the four wisdom teeth."
+  },
+  {
+   "n": 35,
+   "question": "In which film does a rat named Remy become a chef in Paris?",
+   "answer": "Ratatouille! 🐀",
+   "reveal": "The dish ratatouille comes from Provence in the south of France.",
+   "movie": true
+  },
+  {
+   "n": 36,
+   "question": "Which country has more pyramids than Egypt?",
+   "answer": "Sudan! 🔺",
+   "reveal": "It has over 200, many of them at the ancient city of Meroë."
+  },
+  {
+   "n": 37,
+   "question": "Which is the only continent with no native ants?",
+   "answer": "Antarctica! 🐜",
+   "reveal": "It's too cold for ants to survive there."
+  },
+  {
+   "n": 38,
+   "question": "Which planet spins on its side?",
+   "answer": "Uranus! 🪐",
+   "reveal": "It's tilted at about 98 degrees, so it rolls around the Sun."
+  },
+  {
+   "n": 39,
+   "question": "What is the longest bone in the human body?",
+   "answer": "The femur! 🦴",
+   "reveal": "Your thigh bone is roughly a quarter of your height."
+  },
+  {
+   "n": 40,
+   "question": "Which 1997 film won 11 Oscars, a record shared with Ben-Hur?",
+   "answer": "Titanic! 🚢",
+   "reveal": "The Lord of the Rings: The Return of the King later won 11 too.",
+   "movie": true
+  },
+  {
+   "n": 41,
+   "question": "What is the smallest country in the world?",
+   "answer": "Vatican City! 🇻🇦",
+   "reveal": "It covers less than half a square kilometre."
+  },
+  {
+   "n": 42,
+   "question": "Which element has the chemical symbol K?",
+   "answer": "Potassium! 🍌",
+   "reveal": "K comes from kalium. Bananas are famous for it."
+  },
+  {
+   "n": 43,
+   "question": "Which language has the most native speakers?",
+   "answer": "Mandarin Chinese! 🇨🇳",
+   "reveal": "More than 900 million people speak it as their first language."
+  },
+  {
+   "n": 44,
+   "question": "Roughly how long does sunlight take to reach Earth?",
+   "answer": "About 8 minutes! ☀️",
+   "reveal": "On average it's 8 minutes and 20 seconds."
+  },
+  {
+   "n": 45,
+   "question": "Which animal has fingerprints almost identical to ours?",
+   "answer": "The koala! 🐨",
+   "reveal": "Even under a microscope they're hard to tell apart."
+  },
+  {
+   "n": 46,
+   "question": "What is the capital city of New Zealand?",
+   "answer": "Wellington! 🇳🇿",
+   "reveal": "It's the southernmost capital city of any country."
+  },
+  {
+   "n": 47,
+   "question": "Which Wonder of the Ancient World still stands?",
+   "answer": "The Great Pyramid! 🔺",
+   "reveal": "The Great Pyramid of Giza is the only one of the seven left."
+  },
+  {
+   "n": 48,
+   "question": "What was Disney's first feature-length animated film?",
+   "answer": "Snow White! 🍎",
+   "reveal": "Snow White and the Seven Dwarfs premiered in 1937.",
+   "movie": true
+  },
+  {
+   "n": 49,
+   "question": "How many time zones does Russia have?",
+   "answer": "Eleven! 🕰️",
+   "reveal": "More than any other country's mainland."
+  },
+  {
+   "n": 50,
+   "question": "Which letter doesn't appear in any US state's name?",
+   "answer": "Q! 🔤",
+   "reveal": "Every other letter of the alphabet appears at least once."
+  }
+ ]
 }
