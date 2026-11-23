@@ -133,10 +133,11 @@ If a build fails: read the failing step's log, fix what's within the quiz folder
 ## 6. Weekly report (Monday)
 
 Giulia wants a report every Monday covering:
+- **KPI table first** (23 Nov 2026): total subscribers, watch hours and click-through rate, each with the change against the previous week and the forecast target (config/targets.json, interpolated per week in `reports/channel-stats.json`), then a short summary of how we're tracking. If behind, what we'll change to hit target. Format in docs/mac-studio-task.md section 5.
 - **Analytics** for the past week's videos and Shorts: views, impressions, click-through rate, average view duration and audience retention, and subscribers gained.
 - **Every A/B result:** title and thumbnail. Say which won, by how much, and the next single change to test (colour, format, style, fonts or hook).
 - **Difficulty and retention:** where viewers drop off, and whether the difficulty should change.
-- **Tags:** re-checked against vidIQ.
+- **Tags:** re-checked against vidIQ when it has credits; otherwise YouTube autocomplete suggestions (section 1).
 - **Open items** in `docs/weekly-report-notes.md`.
 
 Test & Compare results and retention exist only in YouTube Studio, so the **Mac Studio task writes and sends the report** on its Monday run, after its Studio steps:
