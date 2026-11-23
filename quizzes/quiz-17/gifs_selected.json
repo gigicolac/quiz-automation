@@ -48,14 +48,12 @@
  {
   "n": 3,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "vsyKKf1t22nmw",
-   "user": "",
-   "title": "Ash Ketchum Pokemon GIF",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXE3bm95Y2t4eG9mYTJ5c3BndDBqejAzMjg2MHp4N3ZqeTNydGRjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vsyKKf1t22nmw/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/vsyKKf1t22nmw/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXE3bm95Y2t4eG9mYTJ5c3BndDBqejAzMjg2MHp4N3ZqeTNydGRjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vsyKKf1t22nmw/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "E3PyIr93npNHPdscYH",
+   "user": "pokemon",
+   "title": "Trading Card Game Fighting GIF by Pok\u00e9mon",
+   "url": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXE3bm95Y2t4eG9mYTJ5c3BndDBqejAzMjg2MHp4N3ZqeTNydGRjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/E3PyIr93npNHPdscYH/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -498,14 +496,12 @@
  {
   "n": 23,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "vsyKKf1t22nmw",
+   "source": "giphy_still",
+   "type": "image",
+   "id": "W04QVzelTHsNW",
    "user": "",
-   "title": "Ash Ketchum Pokemon GIF",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXE3bm95Y2t4eG9mYTJ5c3BndDBqejAzMjg2MHp4N3ZqeTNydGRjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vsyKKf1t22nmw/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/vsyKKf1t22nmw/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1eXE3bm95Y2t4eG9mYTJ5c3BndDBqejAzMjg2MHp4N3ZqeTNydGRjMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vsyKKf1t22nmw/giphy_s.gif"
+   "title": "Gotta Catch Em All 90S GIF",
+   "url": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1N2drM2twbTVjZ3Q2bGtpcG10cmhtcTFqaWQ3NDVnampodTJvZXNvOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W04QVzelTHsNW/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
@@ -623,12 +619,12 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "KAdgAmGYjI8oscL7Yi",
-   "user": "battlefin",
-   "title": "London Red Phone Booth GIF by BattleFin",
-   "mp4": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXl2M2E0aDZ5NHRzbGNxd2VwdDdhNWo0aDZmMTZpeXQ1ZGZrcmdobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KAdgAmGYjI8oscL7Yi/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/KAdgAmGYjI8oscL7Yi/giphy.mp4",
-   "still": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXl2M2E0aDZ5NHRzbGNxd2VwdDdhNWo0aDZmMTZpeXQ1ZGZrcmdobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KAdgAmGYjI8oscL7Yi/giphy_s.gif"
+   "id": "l0Iygx9nLgAs0KEOQ",
+   "user": "alimac",
+   "title": "London Uk GIF by alimacdoodle",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXl2M2E0aDZ5NHRzbGNxd2VwdDdhNWo0aDZmMTZpeXQ1ZGZrcmdobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Iygx9nLgAs0KEOQ/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/l0Iygx9nLgAs0KEOQ/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1YXl2M2E0aDZ5NHRzbGNxd2VwdDdhNWo0aDZmMTZpeXQ1ZGZrcmdobiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Iygx9nLgAs0KEOQ/giphy_s.gif"
   }
  },
  {
@@ -709,12 +705,12 @@
   "answer_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "jQtDjYrci3Q6TmH0ba",
-   "user": "gavinthomas",
-   "title": "Pokemon Go Dog GIF by Gavin Thomas",
-   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cTl3ZjJ2Ym5vZjZjMXZjcTQzZ2dkbjlmNGl1dWlidDhqeGdpejkzcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jQtDjYrci3Q6TmH0ba/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/jQtDjYrci3Q6TmH0ba/giphy.mp4",
-   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1cTl3ZjJ2Ym5vZjZjMXZjcTQzZ2dkbjlmNGl1dWlidDhqeGdpejkzcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jQtDjYrci3Q6TmH0ba/giphy_s.gif"
+   "id": "3o7TKpubQ9YanErk9W",
+   "user": "",
+   "title": "Homer Simpson Playing With Phone GIF",
+   "mp4": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cTl3ZjJ2Ym5vZjZjMXZjcTQzZ2dkbjlmNGl1dWlidDhqeGdpejkzcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7TKpubQ9YanErk9W/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/3o7TKpubQ9YanErk9W/giphy.mp4",
+   "still": "https://media2.giphy.com/media/v1.Y2lkPTJjZWFhODE1cTl3ZjJ2Ym5vZjZjMXZjcTQzZ2dkbjlmNGl1dWlidDhqeGdpejkzcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7TKpubQ9YanErk9W/giphy_s.gif"
   }
  },
  {
@@ -1057,12 +1053,12 @@
   "question_gif": {
    "source": "giphy",
    "type": "gif",
-   "id": "iyBLuTcECrNv7Kw5Qm",
-   "user": "sincapscooter",
-   "title": "Cartoon Squirrel GIF by Sincap Scooter",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnBhcTJma3dpa2VtcGprcW5nbThsdTF0NjcydGZ3OTBzN3c1aDVzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iyBLuTcECrNv7Kw5Qm/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/iyBLuTcECrNv7Kw5Qm/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnBhcTJma3dpa2VtcGprcW5nbThsdTF0NjcydGZ3OTBzN3c1aDVzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iyBLuTcECrNv7Kw5Qm/giphy_s.gif"
+   "id": "9mRiwrFAk5B0k",
+   "user": "",
+   "title": "Squirrel Eating GIF",
+   "mp4": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnBhcTJma3dpa2VtcGprcW5nbThsdTF0NjcydGZ3OTBzN3c1aDVzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9mRiwrFAk5B0k/giphy.mp4",
+   "clean_mp4": "https://media.giphy.com/media/9mRiwrFAk5B0k/giphy.mp4",
+   "still": "https://media1.giphy.com/media/v1.Y2lkPTJjZWFhODE1dnBhcTJma3dpa2VtcGprcW5nbThsdTF0NjcydGZ3OTBzN3c1aDVzbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9mRiwrFAk5B0k/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy",
