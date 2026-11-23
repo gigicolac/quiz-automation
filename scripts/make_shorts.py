@@ -117,7 +117,7 @@ def header_png(path, hook, sub):
 
 
 def end_png(path, lines):
-    img = Image.new("RGBA", (W, H), (10, 5, 30, 150))
+    img = Image.new("RGBA", (W, H), (10, 5, 30, 215))  # dark enough that the answer behind doesn't fight the text
     t = text_image(lines, W - 100)
     img.alpha_composite(t, ((W - t.width) // 2, (H - t.height) // 2))
     img.save(path)
