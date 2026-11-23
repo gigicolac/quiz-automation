@@ -24,3 +24,13 @@ class Summarise(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TargetTests(unittest.TestCase):
+    def test_straight_line_between_month_ends(self):
+        import datetime as dt
+        t = {"months": {"2026-10": {"subs": 11, "watch_hours_12m": 47}, "2026-11": {"subs": 18, "watch_hours_12m": 88}}}
+        self.assertEqual(cs.target_at(dt.date(2026, 11, 30), t), {"subs": 18, "watch_hours_12m": 88})
+        mid = cs.target_at(dt.date(2026, 11, 22), t)
+        self.assertAlmostEqual(mid["subs"], 16.1, places=1)
+        self.assertIsNone(cs.target_at(dt.date(2026, 10, 1), t))
