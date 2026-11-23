@@ -85,6 +85,7 @@ Also:
 - **Shorts remixing:** allowed.
 - **Save** after the changes, then reload once to confirm they stuck.
 - **Pin** the score comment after release, once the record has comment_id.
+- **Reply to every new comment on a Short** (Giulia, 23 Nov 2026: no comments or engagement on Shorts). Reply warmly in one short line, about their score or the question they mention, ending with a nudge to the full quiz ("7/7! Try the full 50 👉 link in the related video"). Never argue, never reply to spam or anything unkind (leave those for Giulia), never ask for likes.
 
 ## 5. Mondays only: weekly report (after the Studio steps)
 
