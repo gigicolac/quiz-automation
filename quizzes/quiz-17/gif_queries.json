@@ -1,0 +1,448 @@
+{
+  "allow_branded": true,
+  "queries": [
+    {
+      "n": 1,
+      "question_query": "pikachu",
+      "answer_query": "pikachu happy",
+      "match": [
+        "pikachu"
+      ]
+    },
+    {
+      "n": 2,
+      "question_query": "pokemon catch",
+      "answer_query": "pokeball",
+      "match": [
+        "pokeball",
+        "poke ball",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 3,
+      "question_query": "pokedex",
+      "answer_query": "bulbasaur",
+      "match": [
+        "bulbasaur",
+        "pokedex",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 4,
+      "question_query": "charmander",
+      "answer_query": "charmander fire",
+      "match": [
+        "charmander"
+      ]
+    },
+    {
+      "n": 5,
+      "question_query": "pikachu",
+      "answer_query": "raichu",
+      "match": [
+        "raichu",
+        "pikachu"
+      ]
+    },
+    {
+      "n": 6,
+      "question_query": "jigglypuff",
+      "answer_query": "jigglypuff sing",
+      "match": [
+        "jigglypuff"
+      ]
+    },
+    {
+      "n": 7,
+      "question_query": "team rocket",
+      "answer_query": "meowth",
+      "match": [
+        "meowth",
+        "team rocket"
+      ]
+    },
+    {
+      "n": 8,
+      "question_query": "squirtle",
+      "answer_query": "squirtle squad",
+      "match": [
+        "squirtle"
+      ]
+    },
+    {
+      "n": 9,
+      "question_query": "charizard",
+      "answer_query": "shiny charizard",
+      "match": [
+        "charizard"
+      ]
+    },
+    {
+      "n": 10,
+      "question_query": "snorlax",
+      "answer_query": "snorlax sleeping",
+      "match": [
+        "snorlax"
+      ]
+    },
+    {
+      "n": 11,
+      "question_query": "pokemon",
+      "answer_query": "mew",
+      "match": [
+        "mew",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 12,
+      "question_query": "magikarp",
+      "answer_query": "gyarados",
+      "match": [
+        "gyarados",
+        "magikarp"
+      ]
+    },
+    {
+      "n": 13,
+      "question_query": "ash ketchum",
+      "answer_query": "pallet town",
+      "match": [
+        "pallet",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 14,
+      "question_query": "professor oak",
+      "answer_query": "professor oak pokemon",
+      "match": [
+        "oak",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 15,
+      "question_query": "pokemon",
+      "answer_query": "pokemon go",
+      "match": [
+        "pokemon"
+      ]
+    },
+    {
+      "n": 16,
+      "question_query": "squirtle water gun",
+      "answer_query": "pikachu thunderbolt",
+      "match": [
+        "pokemon",
+        "pikachu",
+        "squirtle"
+      ]
+    },
+    {
+      "n": 17,
+      "question_query": "eevee",
+      "answer_query": "vaporeon",
+      "match": [
+        "vaporeon",
+        "eevee"
+      ]
+    },
+    {
+      "n": 18,
+      "question_query": "pokemon legendary",
+      "answer_query": "lugia",
+      "match": [
+        "lugia",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 19,
+      "question_query": "pokemon rival",
+      "answer_query": "gary oak",
+      "match": [
+        "gary",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 20,
+      "question_query": "mewtwo",
+      "answer_query": "mewtwo psychic",
+      "match": [
+        "mewtwo"
+      ]
+    },
+    {
+      "n": 21,
+      "question_query": "gengar",
+      "answer_query": "gengar smile",
+      "match": [
+        "gengar"
+      ]
+    },
+    {
+      "n": 22,
+      "question_query": "pokemon center",
+      "answer_query": "chansey",
+      "match": [
+        "joy",
+        "chansey",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 23,
+      "question_query": "pokedex",
+      "answer_query": "pokedex pokemon",
+      "match": [
+        "pokedex",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 24,
+      "question_query": "detective pikachu",
+      "answer_query": "detective hat",
+      "match": [
+        "detective pikachu",
+        "pikachu"
+      ]
+    },
+    {
+      "n": 25,
+      "question_query": "charmeleon",
+      "answer_query": "charizard",
+      "match": [
+        "charizard",
+        "charmeleon"
+      ]
+    },
+    {
+      "n": 26,
+      "question_query": "pokemon badge",
+      "answer_query": "pokemon badges",
+      "match": [
+        "badge",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 27,
+      "question_query": "psyduck",
+      "answer_query": "psyduck confused",
+      "match": [
+        "psyduck"
+      ]
+    },
+    {
+      "n": 28,
+      "question_query": "pokemon sword shield",
+      "answer_query": "london",
+      "match": [
+        "galar",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 29,
+      "question_query": "cubone",
+      "answer_query": "cubone pokemon",
+      "match": [
+        "cubone"
+      ]
+    },
+    {
+      "n": 30,
+      "question_query": "bulbasaur",
+      "answer_query": "ivysaur",
+      "match": [
+        "ivysaur",
+        "bulbasaur"
+      ]
+    },
+    {
+      "n": 31,
+      "question_query": "pikachu",
+      "answer_query": "pikachu thunderbolt",
+      "match": [
+        "pikachu"
+      ]
+    },
+    {
+      "n": 32,
+      "question_query": "pokemon go",
+      "answer_query": "pokemon go phone",
+      "match": [
+        "pokemon go",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 33,
+      "question_query": "eevee",
+      "answer_query": "jolteon",
+      "match": [
+        "jolteon",
+        "eevee"
+      ]
+    },
+    {
+      "n": 34,
+      "question_query": "pokemon starters",
+      "answer_query": "cyndaquil",
+      "match": [
+        "cyndaquil"
+      ]
+    },
+    {
+      "n": 35,
+      "question_query": "team rocket",
+      "answer_query": "team rocket blasting off",
+      "match": [
+        "team rocket",
+        "jessie",
+        "james"
+      ]
+    },
+    {
+      "n": 36,
+      "question_query": "pokedex",
+      "answer_query": "pikachu",
+      "match": [
+        "pikachu",
+        "pokedex"
+      ]
+    },
+    {
+      "n": 37,
+      "question_query": "ditto",
+      "answer_query": "ditto pokemon",
+      "match": [
+        "ditto"
+      ]
+    },
+    {
+      "n": 38,
+      "question_query": "legendary birds",
+      "answer_query": "moltres",
+      "match": [
+        "articuno",
+        "zapdos",
+        "moltres",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 39,
+      "question_query": "eevee",
+      "answer_query": "glaceon",
+      "match": [
+        "glaceon",
+        "eevee"
+      ]
+    },
+    {
+      "n": 40,
+      "question_query": "mega evolution",
+      "answer_query": "mega stone",
+      "match": [
+        "mega",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 41,
+      "question_query": "pokemon scarlet violet",
+      "answer_query": "paldea",
+      "match": [
+        "paldea",
+        "scarlet",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 42,
+      "question_query": "pokemon episode 1",
+      "answer_query": "ho-oh",
+      "match": [
+        "ho-oh",
+        "ho oh",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 43,
+      "question_query": "pokemon sun moon",
+      "answer_query": "alola",
+      "match": [
+        "kukui",
+        "alola",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 44,
+      "question_query": "fairy pokemon",
+      "answer_query": "sylveon",
+      "match": [
+        "fairy",
+        "sylveon",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 45,
+      "question_query": "gyarados",
+      "answer_query": "gyarados roar",
+      "match": [
+        "gyarados"
+      ]
+    },
+    {
+      "n": 46,
+      "question_query": "eevee",
+      "answer_query": "eeveelutions",
+      "match": [
+        "eevee"
+      ]
+    },
+    {
+      "n": 47,
+      "question_query": "pokemon x y",
+      "answer_query": "kalos",
+      "match": [
+        "sycamore",
+        "kalos",
+        "pokemon"
+      ]
+    },
+    {
+      "n": 48,
+      "question_query": "electric squirrel",
+      "answer_query": "pachirisu",
+      "match": [
+        "pachirisu"
+      ]
+    },
+    {
+      "n": 49,
+      "question_query": "celebi",
+      "answer_query": "celebi pokemon",
+      "match": [
+        "celebi"
+      ]
+    },
+    {
+      "n": 50,
+      "question_query": "pokemon",
+      "answer_query": "rhydon",
+      "match": [
+        "rhydon"
+      ]
+    }
+  ]
+}
