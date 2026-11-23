@@ -1,0 +1,214 @@
+{
+  "generated": "2026-11-23T02:12:24+00:00",
+  "channel": {
+    "title": "One More Quiz!",
+    "subscribers": 14,
+    "views": 4711,
+    "videos": 37
+  },
+  "data_to": "2026-11-22",
+  "ctr_error": "GET https://youtubeanalytics.googleapis.com/v2/reports failed (400): {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The query is not supported. Check the documentation at https://developers.google.com/youtube/analytics/v2/available_reports for a list of supported queries.\",\n    \"errors\": [\n      {\n",
+  "months": {
+    "2025-11": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2025-12": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2026-01": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2026-02": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2026-03": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2026-04": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2026-05": {
+      "views": 0,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 0,
+      "watch_hours_12m": 0.0,
+      "complete": true
+    },
+    "2026-06": {
+      "views": 343,
+      "watch_hours": 15.5,
+      "subs_gained": 6,
+      "subs_lost": 0,
+      "subs_net": 6,
+      "subs_at_end": 6,
+      "watch_hours_12m": 15.5,
+      "complete": true
+    },
+    "2026-07": {
+      "views": 376,
+      "watch_hours": 14.4,
+      "subs_gained": 3,
+      "subs_lost": 0,
+      "subs_net": 3,
+      "subs_at_end": 9,
+      "watch_hours_12m": 29.9,
+      "complete": true
+    },
+    "2026-08": {
+      "views": 6,
+      "watch_hours": 0.1,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 9,
+      "watch_hours_12m": 30.0,
+      "complete": true
+    },
+    "2026-09": {
+      "views": 14,
+      "watch_hours": 0.3,
+      "subs_gained": 2,
+      "subs_lost": 1,
+      "subs_net": 1,
+      "subs_at_end": 10,
+      "watch_hours_12m": 30.3,
+      "complete": true
+    },
+    "2026-10": {
+      "views": 10,
+      "watch_hours": 0.1,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 10,
+      "watch_hours_12m": 30.4,
+      "complete": true
+    },
+    "2026-11": {
+      "views": 3773,
+      "watch_hours": 53.2,
+      "subs_gained": 6,
+      "subs_lost": 2,
+      "subs_net": 4,
+      "subs_at_end": 14,
+      "watch_hours_12m": 83.6,
+      "complete": false
+    }
+  },
+  "weeks": [
+    {
+      "week": "2026-10-12 to 2026-10-18",
+      "views": 1,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "subs_at_end": 10
+    },
+    {
+      "week": "2026-10-19 to 2026-10-25",
+      "views": 1,
+      "watch_hours": 0.0,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "views_change": 0,
+      "watch_hours_change": 0.0,
+      "subs_net_change": 0,
+      "subs_at_end": 10
+    },
+    {
+      "week": "2026-10-26 to 2026-11-01",
+      "views": 6,
+      "watch_hours": 0.1,
+      "subs_gained": 0,
+      "subs_lost": 0,
+      "subs_net": 0,
+      "views_change": 5,
+      "watch_hours_change": 0.1,
+      "subs_net_change": 0,
+      "subs_at_end": 10
+    },
+    {
+      "week": "2026-11-02 to 2026-11-08",
+      "views": 237,
+      "watch_hours": 4.7,
+      "subs_gained": 1,
+      "subs_lost": 1,
+      "subs_net": 0,
+      "views_change": 231,
+      "watch_hours_change": 4.6,
+      "subs_net_change": 0,
+      "subs_at_end": 10
+    },
+    {
+      "week": "2026-11-09 to 2026-11-15",
+      "views": 1855,
+      "watch_hours": 24.0,
+      "subs_gained": 2,
+      "subs_lost": 0,
+      "subs_net": 2,
+      "views_change": 1618,
+      "watch_hours_change": 19.3,
+      "subs_net_change": 2,
+      "subs_at_end": 12
+    },
+    {
+      "week": "2026-11-16 to 2026-11-22",
+      "views": 1681,
+      "watch_hours": 24.5,
+      "subs_gained": 3,
+      "subs_lost": 1,
+      "subs_net": 2,
+      "views_change": -174,
+      "watch_hours_change": 0.5,
+      "subs_net_change": 0,
+      "subs_at_end": 14
+    }
+  ]
+}
