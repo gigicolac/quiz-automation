@@ -1,8 +1,8 @@
 {
   "status": "success",
-  "release_tag": "quiz-16-preview-33",
-  "source_commit": "07900116e934d50a98987de3771f35ed2faff492",
-  "run_id": "45102898623",
+  "release_tag": "quiz-16-preview-36",
+  "source_commit": "bf3fd9b4a5aae990a072c058e8fcccd4a2d52c48",
+  "run_id": "45158668890",
   "tts": "chatterbox",
   "report": {
     "quiz": "quiz-16",
@@ -311,12 +311,12 @@
       },
       {
         "name": "q30",
-        "start": 539.66,
+        "start": 539.67,
         "dur": 10.6
       },
       {
         "name": "a30",
-        "start": 550.26,
+        "start": 550.27,
         "dur": 8.63
       },
       {
@@ -341,22 +341,22 @@
       },
       {
         "name": "q33",
-        "start": 593.26,
+        "start": 593.27,
         "dur": 10.6
       },
       {
         "name": "a33",
-        "start": 603.86,
+        "start": 603.87,
         "dur": 5.7
       },
       {
         "name": "q34",
-        "start": 609.56,
+        "start": 609.57,
         "dur": 10.6
       },
       {
         "name": "a34",
-        "start": 620.16,
+        "start": 620.17,
         "dur": 5.53
       },
       {
@@ -391,12 +391,12 @@
       },
       {
         "name": "q38",
-        "start": 679.36,
+        "start": 679.37,
         "dur": 10.6
       },
       {
         "name": "a38",
-        "start": 689.96,
+        "start": 689.97,
         "dur": 7.63
       },
       {
@@ -411,12 +411,12 @@
       },
       {
         "name": "q40",
-        "start": 713.96,
+        "start": 713.97,
         "dur": 10.6
       },
       {
         "name": "a40",
-        "start": 724.56,
+        "start": 724.57,
         "dur": 7.93
       },
       {
@@ -471,12 +471,12 @@
       },
       {
         "name": "q46",
-        "start": 822.96,
+        "start": 822.97,
         "dur": 10.6
       },
       {
         "name": "a46",
-        "start": 833.56,
+        "start": 833.57,
         "dur": 6.77
       },
       {
@@ -501,22 +501,22 @@
       },
       {
         "name": "q49",
-        "start": 876.56,
+        "start": 876.57,
         "dur": 10.6
       },
       {
         "name": "a49",
-        "start": 887.16,
+        "start": 887.17,
         "dur": 5.8
       },
       {
         "name": "q50",
-        "start": 892.96,
+        "start": 892.97,
         "dur": 10.6
       },
       {
         "name": "a50",
-        "start": 903.56,
+        "start": 903.57,
         "dur": 6.37
       },
       {
@@ -734,297 +734,297 @@
       {
         "kind": "A",
         "start": 363.2,
-        "end": 367.73
+        "end": 368.2
       },
       {
         "kind": "Q",
-        "start": 367.73,
-        "end": 378.77
+        "start": 368.2,
+        "end": 379.23
       },
       {
         "kind": "A",
-        "start": 378.77,
-        "end": 383.77
+        "start": 379.23,
+        "end": 384.23
       },
       {
         "kind": "Q",
-        "start": 383.77,
-        "end": 394.8
+        "start": 384.23,
+        "end": 395.27
       },
       {
         "kind": "A",
-        "start": 394.8,
-        "end": 399.37
+        "start": 395.27,
+        "end": 399.83
       },
       {
         "kind": "Q",
-        "start": 399.37,
-        "end": 410.4
+        "start": 399.83,
+        "end": 410.87
       },
       {
         "kind": "A",
-        "start": 410.4,
-        "end": 415.4
+        "start": 410.87,
+        "end": 415.87
       },
       {
         "kind": "Q",
-        "start": 415.4,
-        "end": 426.43
+        "start": 415.87,
+        "end": 426.9
       },
       {
         "kind": "A",
-        "start": 426.43,
-        "end": 436.8
+        "start": 426.9,
+        "end": 437.27
       },
       {
         "kind": "Q",
-        "start": 436.8,
-        "end": 447.83
+        "start": 437.27,
+        "end": 448.3
       },
       {
         "kind": "A",
-        "start": 447.83,
-        "end": 460.77
+        "start": 448.3,
+        "end": 461.23
       },
       {
         "kind": "Q",
-        "start": 460.77,
-        "end": 471.8
+        "start": 461.23,
+        "end": 472.27
       },
       {
         "kind": "A",
-        "start": 471.8,
-        "end": 486.87
+        "start": 472.27,
+        "end": 487.33
       },
       {
         "kind": "Q",
-        "start": 486.87,
-        "end": 497.9
+        "start": 487.33,
+        "end": 498.37
       },
       {
         "kind": "A",
-        "start": 497.9,
-        "end": 501.2
+        "start": 498.37,
+        "end": 503.37
       },
       {
         "kind": "Q",
-        "start": 501.2,
-        "end": 512.23
+        "start": 503.37,
+        "end": 514.4
       },
       {
         "kind": "A",
-        "start": 512.23,
-        "end": 515.07
+        "start": 514.4,
+        "end": 517.2
       },
       {
         "kind": "Q",
-        "start": 515.07,
-        "end": 526.1
+        "start": 517.2,
+        "end": 528.23
       },
       {
         "kind": "A",
-        "start": 526.1,
-        "end": 528.63
+        "start": 528.23,
+        "end": 530.77
       },
       {
         "kind": "Q",
-        "start": 528.63,
-        "end": 539.67
+        "start": 530.77,
+        "end": 541.8
       },
       {
         "kind": "A",
-        "start": 539.67,
-        "end": 541.67
+        "start": 541.8,
+        "end": 543.83
       },
       {
         "kind": "Q",
-        "start": 541.67,
-        "end": 552.7
+        "start": 543.83,
+        "end": 554.87
       },
       {
         "kind": "A",
-        "start": 552.7,
-        "end": 557.7
+        "start": 554.87,
+        "end": 559.87
       },
       {
         "kind": "Q",
-        "start": 557.7,
-        "end": 568.73
+        "start": 559.87,
+        "end": 570.9
       },
       {
         "kind": "A",
-        "start": 568.73,
-        "end": 572.33
+        "start": 570.9,
+        "end": 574.5
       },
       {
         "kind": "Q",
-        "start": 572.33,
-        "end": 583.37
+        "start": 574.5,
+        "end": 585.53
       },
       {
         "kind": "A",
-        "start": 583.37,
-        "end": 588.4
+        "start": 585.53,
+        "end": 590.53
       },
       {
         "kind": "Q",
-        "start": 588.4,
-        "end": 599.43
+        "start": 590.53,
+        "end": 601.57
       },
       {
         "kind": "A",
-        "start": 599.43,
-        "end": 605.43
+        "start": 601.57,
+        "end": 607.6
       },
       {
         "kind": "Q",
-        "start": 605.43,
-        "end": 616.47
+        "start": 607.6,
+        "end": 618.63
       },
       {
         "kind": "A",
-        "start": 616.47,
-        "end": 621.47
+        "start": 618.63,
+        "end": 623.63
       },
       {
         "kind": "Q",
-        "start": 621.47,
-        "end": 634.27
+        "start": 623.63,
+        "end": 636.43
       },
       {
         "kind": "A",
-        "start": 634.27,
-        "end": 636.97
+        "start": 636.43,
+        "end": 639.13
       },
       {
         "kind": "Q",
-        "start": 636.97,
-        "end": 648.0
+        "start": 639.13,
+        "end": 650.17
       },
       {
         "kind": "A",
-        "start": 648.0,
-        "end": 651.9
+        "start": 650.17,
+        "end": 654.07
       },
       {
         "kind": "Q",
-        "start": 651.9,
-        "end": 662.93
+        "start": 654.07,
+        "end": 665.1
       },
       {
         "kind": "A",
-        "start": 662.93,
-        "end": 665.33
+        "start": 665.1,
+        "end": 667.5
       },
       {
         "kind": "Q",
-        "start": 665.33,
-        "end": 676.37
+        "start": 667.5,
+        "end": 678.53
       },
       {
         "kind": "A",
-        "start": 676.37,
-        "end": 690.8
+        "start": 678.53,
+        "end": 692.93
       },
       {
         "kind": "Q",
-        "start": 690.8,
-        "end": 701.83
+        "start": 692.93,
+        "end": 703.97
       },
       {
         "kind": "A",
-        "start": 701.83,
-        "end": 705.53
+        "start": 703.97,
+        "end": 707.7
       },
       {
         "kind": "Q",
-        "start": 705.53,
-        "end": 720.7
+        "start": 707.7,
+        "end": 722.83
       },
       {
         "kind": "A",
-        "start": 720.7,
-        "end": 724.7
+        "start": 722.83,
+        "end": 726.83
       },
       {
         "kind": "Q",
-        "start": 724.7,
-        "end": 735.73
+        "start": 726.83,
+        "end": 737.87
       },
       {
         "kind": "A",
-        "start": 735.73,
-        "end": 738.73
+        "start": 737.87,
+        "end": 740.9
       },
       {
         "kind": "Q",
-        "start": 738.73,
-        "end": 749.77
+        "start": 740.9,
+        "end": 751.93
       },
       {
         "kind": "A",
-        "start": 749.77,
-        "end": 752.97
+        "start": 751.93,
+        "end": 755.13
       },
       {
         "kind": "Q",
-        "start": 752.97,
-        "end": 764.0
+        "start": 755.13,
+        "end": 766.17
       },
       {
         "kind": "A",
-        "start": 764.0,
-        "end": 769.07
+        "start": 766.17,
+        "end": 771.23
       },
       {
         "kind": "Q",
-        "start": 769.07,
-        "end": 780.1
+        "start": 771.23,
+        "end": 782.27
       },
       {
         "kind": "A",
-        "start": 780.1,
-        "end": 788.87
+        "start": 782.27,
+        "end": 791.03
       },
       {
         "kind": "Q",
-        "start": 788.87,
-        "end": 799.9
+        "start": 791.03,
+        "end": 802.07
       },
       {
         "kind": "A",
-        "start": 799.9,
-        "end": 814.9
+        "start": 802.07,
+        "end": 817.07
       },
       {
         "kind": "Q",
-        "start": 814.9,
-        "end": 825.93
+        "start": 817.07,
+        "end": 828.1
       },
       {
         "kind": "A",
-        "start": 825.93,
-        "end": 828.97
+        "start": 828.1,
+        "end": 831.13
       },
       {
         "kind": "Q",
-        "start": 828.97,
-        "end": 840.0
+        "start": 831.13,
+        "end": 842.17
       },
       {
         "kind": "A",
-        "start": 840.0,
-        "end": 845.0
+        "start": 842.17,
+        "end": 847.17
       },
       {
         "kind": "Q",
-        "start": 845.0,
-        "end": 856.03
+        "start": 847.17,
+        "end": 858.2
       },
       {
         "kind": "A",
-        "start": 856.03,
-        "end": 860.5
+        "start": 858.2,
+        "end": 862.67
       }
     ],
     "levels_db": {
@@ -1036,6 +1036,5 @@
       "outro2: starts 0.2 s late (previous line ran long)"
     ]
   },
-  "log_tail": "      | 22/1000 [00:05<03:50,  4.23it/s]\rSampling:   2%|▏         | 23/1000 [00:05<03:54,  4.16it/s]\rSampling:   2%|▏         | 24/1000 [00:05<03:49,  4.25it/s]\rSampling:   2%|▎         | 25/1000 [00:05<03:47,  4.28it/s]\rSampling:   3%|▎         | 26/1000 [00:06<03:46,  4.31it/s]\rSampling:   3%|▎         | 27/1000 [00:06<03:45,  4.31it/s]\rSampling:   3%|▎         | 28/1000 [00:06<03:51,  4.19it/s]\rSampling:   3%|▎         | 29/1000 [00:06<03:51,  4.20it/s]\rSampling:   3%|▎         | 30/1000 [00:07<03:52,  4.18it/s]\rSampling:   3%|▎         | 31/1000 [00:07<03:53,  4.15it/s]\rSampling:   3%|▎         | 32/1000 [00:07<03:53,  4.14it/s]\rSampling:   3%|▎         | 33/1000 [00:07<03:54,  4.12it/s]\rSampling:   3%|▎         | 34/1000 [00:08<03:53,  4.14it/s]\rSampling:   4%|▎         | 35/1000 [00:08<03:51,  4.16it/s]\rSampling:   4%|▎         | 36/1000 [00:08<03:50,  4.18it/s]\rSampling:   4%|▎         | 37/1000 [00:08<03:50,  4.18it/s]\rSampling:   4%|▍         | 38/1000 [00:09<03:49,  4.18it/s]\rSampling:   4%|▍         | 39/1000 [00:09<03:49,  4.18it/s]\rSampling:   4%|▍         | 40/1000 [00:09<03:51,  4.15it/s]\rSampling:   4%|▍         | 41/1000 [00:09<03:52,  4.13it/s]\rSampling:   4%|▍         | 42/1000 [00:10<03:52,  4.11it/s]\rSampling:   4%|▍         | 43/1000 [00:10<03:53,  4.09it/s]\rSampling:   4%|▍         | 44/1000 [00:10<03:54,  4.07it/s]\rSampling:   4%|▍         | 45/1000 [00:10<03:57,  4.02it/s]\rSampling:   5%|▍         | 46/1000 [00:11<03:53,  4.08it/s]\rSampling:   5%|▍         | 47/1000 [00:11<03:53,  4.09it/s]\rSampling:   5%|▍         | 48/1000 [00:11<03:50,  4.12it/s]\rSampling:   5%|▍         | 49/1000 [00:11<03:50,  4.13it/s]\rSampling:   5%|▌         | 50/1000 [00:11<03:48,  4.15it/s]\rSampling:   5%|▌         | 51/1000 [00:12<03:47,  4.17it/s]\rSampling:   5%|▌         | 52/1000 [00:12<03:46,  4.18it/s]\rSampling:   5%|▌         | 53/1000 [00:12<03:44,  4.21it/s]\rSampling:   5%|▌         | 54/1000 [00:12<03:43,  4.23it/s]\rSampling:   6%|▌         | 55/1000 [00:13<03:40,  4.28it/s]\rSampling:   6%|▌         | 56/1000 [00:13<03:39,  4.30it/s]\rSampling:   6%|▌         | 57/1000 [00:13<03:39,  4.30it/s]\rSampling:   6%|▌         | 58/1000 [00:13<03:38,  4.31it/s]\rSampling:   6%|▌         | 59/1000 [00:14<03:40,  4.27it/s]\rSampling:   6%|▌         | 60/1000 [00:14<03:42,  4.23it/s]\rSampling:   6%|▌         | 61/1000 [00:14<03:48,  4.11it/s]\rSampling:   6%|▌         | 62/1000 [00:14<03:45,  4.16it/s]\rSampling:   6%|▌         | 62/1000 [00:14<03:44,  4.19it/s]\n  voice 105/106 outro3: If you enjoyed it, give this video a like and hit subscribe \n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.\n  self.gen = func(*args, **kwds)\n\rSampling:   0%|          | 0/1000 [00:00<?, ?it/s]\rSampling:   0%|          | 1/1000 [00:00<04:04,  4.09it/s]\rSampling:   0%|          | 2/1000 [00:00<03:58,  4.19it/s]\rSampling:   0%|          | 3/1000 [00:00<03:55,  4.24it/s]\rSampling:   0%|          | 4/1000 [00:00<03:56,  4.21it/s]\rSampling:   0%|          | 5/1000 [00:01<03:55,  4.23it/s]\rSampling:   1%|          | 6/1000 [00:01<03:57,  4.19it/s]\rSampling:   1%|          | 7/1000 [00:01<03:54,  4.23it/s]\rSampling:   1%|          | 8/1000 [00:01<03:54,  4.23it/s]\rSampling:   1%|          | 9/1000 [00:02<03:53,  4.24it/s]\rSampling:   1%|          | 10/1000 [00:02<03:55,  4.21it/s]\rSampling:   1%|          | 11/1000 [00:02<03:55,  4.20it/s]\rSampling:   1%|          | 12/1000 [00:02<03:53,  4.22it/s]\rSampling:   1%|▏         | 13/1000 [00:03<03:52,  4.24it/s]\rSampling:   1%|▏         | 14/1000 [00:03<03:49,  4.30it/s]\rSampling:   2%|▏         | 15/1000 [00:03<03:50,  4.28it/s]\rSampling:   2%|▏         | 16/1000 [00:03<03:52,  4.24it/s]\rSampling:   2%|▏         | 17/1000 [00:04<03:52,  4.23it/s]\rSampling:   2%|▏         | 18/1000 [00:04<03:54,  4.19it/s]\rSampling:   2%|▏         | 19/1000 [00:04<03:54,  4.18it/s]\rSampling:   2%|▏         | 20/1000 [00:04<04:00,  4.07it/s]\rSampling:   2%|▏         | 21/1000 [00:05<03:58,  4.10it/s]\rSampling:   2%|▏         | 22/1000 [00:05<03:57,  4.12it/s]\rSampling:   2%|▏         | 23/1000 [00:05<03:55,  4.15it/s]\rSampling:   2%|▏         | 24/1000 [00:05<03:52,  4.19it/s]\rSampling:   2%|▎         | 25/1000 [00:05<03:54,  4.16it/s]\rSampling:   3%|▎         | 26/1000 [00:06<03:53,  4.17it/s]\rSampling:   3%|▎         | 27/1000 [00:06<03:51,  4.19it/s]\rSampling:   3%|▎         | 28/1000 [00:06<03:52,  4.19it/s]\rSampling:   3%|▎         | 29/1000 [00:06<03:52,  4.17it/s]\rSampling:   3%|▎         | 30/1000 [00:07<03:53,  4.16it/s]\rSampling:   3%|▎         | 31/1000 [00:07<03:51,  4.19it/s]\rSampling:   3%|▎         | 32/1000 [00:07<03:50,  4.20it/s]\rSampling:   3%|▎         | 33/1000 [00:07<03:48,  4.24it/s]\rSampling:   3%|▎         | 34/1000 [00:08<03:49,  4.21it/s]\rSampling:   4%|▎         | 35/1000 [00:08<03:50,  4.18it/s]\rSampling:   4%|▎         | 36/1000 [00:08<03:51,  4.17it/s]\rSampling:   4%|▎         | 37/1000 [00:08<03:51,  4.17it/s]\rSampling:   4%|▍         | 38/1000 [00:09<03:52,  4.14it/s]\rSampling:   4%|▍         | 39/1000 [00:09<03:52,  4.14it/s]\rSampling:   4%|▍         | 40/1000 [00:09<03:50,  4.17it/s]\rSampling:   4%|▍         | 41/1000 [00:09<03:49,  4.19it/s]\rSampling:   4%|▍         | 42/1000 [00:10<03:47,  4.21it/s]\rSampling:   4%|▍         | 43/1000 [00:10<03:48,  4.20it/s]\rSampling:   4%|▍         | 44/1000 [00:10<03:48,  4.18it/s]\rSampling:   4%|▍         | 45/1000 [00:10<03:48,  4.19it/s]\rSampling:   5%|▍         | 46/1000 [00:10<03:48,  4.17it/s]\rSampling:   5%|▍         | 47/1000 [00:11<03:52,  4.11it/s]\rSampling:   5%|▍         | 48/1000 [00:11<03:50,  4.14it/s]\rSampling:   5%|▍         | 49/1000 [00:11<03:46,  4.19it/s]\rSampling:   5%|▌         | 50/1000 [00:11<03:46,  4.20it/s]\rSampling:   5%|▌         | 51/1000 [00:12<03:44,  4.24it/s]\rSampling:   5%|▌         | 52/1000 [00:12<03:43,  4.24it/s]\rSampling:   5%|▌         | 53/1000 [00:12<03:47,  4.17it/s]\rSampling:   5%|▌         | 54/1000 [00:12<03:45,  4.19it/s]\rSampling:   6%|▌         | 55/1000 [00:13<03:45,  4.19it/s]\rSampling:   6%|▌         | 56/1000 [00:13<03:45,  4.18it/s]\rSampling:   6%|▌         | 57/1000 [00:13<03:44,  4.21it/s]\rSampling:   6%|▌         | 58/1000 [00:13<03:48,  4.12it/s]\rSampling:   6%|▌         | 59/1000 [00:14<03:47,  4.13it/s]\rSampling:   6%|▌         | 60/1000 [00:14<03:46,  4.15it/s]\rSampling:   6%|▌         | 61/1000 [00:14<03:46,  4.15it/s]\rSampling:   6%|▌         | 62/1000 [00:14<03:47,  4.12it/s]\rSampling:   6%|▋         | 63/1000 [00:15<03:48,  4.10it/s]\rSampling:   6%|▋         | 64/1000 [00:15<03:47,  4.12it/s]\rSampling:   6%|▋         | 65/1000 [00:15<03:46,  4.13it/s]\rSampling:   7%|▋         | 66/1000 [00:15<03:43,  4.18it/s]\rSampling:   7%|▋         | 67/1000 [00:16<03:47,  4.09it/s]\rSampling:   7%|▋         | 68/1000 [00:16<03:45,  4.14it/s]\rSampling:   7%|▋         | 69/1000 [00:16<03:44,  4.15it/s]\rSampling:   7%|▋         | 70/1000 [00:16<03:41,  4.20it/s]\rSampling:   7%|▋         | 71/1000 [00:16<03:39,  4.23it/s]\rSampling:   7%|▋         | 72/1000 [00:17<03:44,  4.14it/s]\rSampling:   7%|▋         | 73/1000 [00:17<03:43,  4.15it/s]\rSampling:   7%|▋         | 74/1000 [00:17<03:42,  4.16it/s]\rSampling:   8%|▊         | 75/1000 [00:17<03:42,  4.17it/s]\rSampling:   8%|▊         | 76/1000 [00:18<03:43,  4.13it/s]\rSampling:   8%|▊         | 77/1000 [00:18<03:46,  4.08it/s]\rSampling:   8%|▊         | 78/1000 [00:18<03:44,  4.11it/s]\rSampling:   8%|▊         | 79/1000 [00:18<03:42,  4.15it/s]\rSampling:   8%|▊         | 80/1000 [00:19<03:41,  4.15it/s]\rSampling:   8%|▊         | 81/1000 [00:19<03:45,  4.08it/s]\rSampling:   8%|▊         | 82/1000 [00:19<03:42,  4.13it/s]\rSampling:   8%|▊         | 83/1000 [00:19<03:41,  4.15it/s]\rSampling:   8%|▊         | 84/1000 [00:20<03:40,  4.16it/s]\rSampling:   8%|▊         | 85/1000 [00:20<03:40,  4.15it/s]\rSampling:   9%|▊         | 86/1000 [00:20<03:40,  4.15it/s]\rSampling:   9%|▊         | 87/1000 [00:20<03:38,  4.17it/s]\rSampling:   9%|▉         | 88/1000 [00:21<03:38,  4.18it/s]\rSampling:   9%|▉         | 89/1000 [00:21<03:37,  4.20it/s]\rSampling:   9%|▉         | 90/1000 [00:21<03:37,  4.18it/s]\rSampling:   9%|▉         | 91/1000 [00:21<03:38,  4.16it/s]\rSampling:   9%|▉         | 92/1000 [00:22<03:38,  4.16it/s]\rSampling:   9%|▉         | 93/1000 [00:22<03:37,  4.16it/s]\rSampling:   9%|▉         | 94/1000 [00:22<03:35,  4.20it/s]\rSampling:  10%|▉         | 95/1000 [00:22<03:36,  4.19it/s]\rSampling:  10%|▉         | 96/1000 [00:23<03:35,  4.19it/s]\rSampling:  10%|▉         | 97/1000 [00:23<03:37,  4.15it/s]\rSampling:  10%|▉         | 98/1000 [00:23<03:35,  4.18it/s]\rSampling:  10%|▉         | 99/1000 [00:23<03:36,  4.16it/s]\rSampling:  10%|█         | 100/1000 [00:23<03:36,  4.15it/s]\rSampling:  10%|█         | 101/1000 [00:24<03:35,  4.17it/s]\rSampling:  10%|█         | 102/1000 [00:24<03:36,  4.15it/s]\rSampling:  10%|█         | 103/1000 [00:24<03:34,  4.17it/s]\rSampling:  10%|█         | 104/1000 [00:24<03:34,  4.17it/s]\rSampling:  10%|█         | 105/1000 [00:25<03:34,  4.18it/s]\rSampling:  11%|█         | 106/1000 [00:25<03:35,  4.14it/s]\rSampling:  11%|█         | 107/1000 [00:25<03:35,  4.15it/s]\rSampling:  11%|█         | 108/1000 [00:25<03:35,  4.13it/s]\rSampling:  11%|█         | 109/1000 [00:26<03:34,  4.15it/s]\rSampling:  11%|█         | 110/1000 [00:26<03:33,  4.18it/s]\rSampling:  11%|█         | 111/1000 [00:26<03:33,  4.16it/s]\rSampling:  11%|█         | 112/1000 [00:26<03:33,  4.16it/s]\rSampling:  11%|█▏        | 113/1000 [00:27<03:30,  4.21it/s]\rSampling:  11%|█▏        | 114/1000 [00:27<03:35,  4.12it/s]\rSampling:  12%|█▏        | 115/1000 [00:27<03:33,  4.14it/s]\rSampling:  12%|█▏        | 116/1000 [00:27<03:33,  4.13it/s]\rSampling:  12%|█▏        | 117/1000 [00:28<03:35,  4.09it/s]\rSampling:  12%|█▏        | 118/1000 [00:28<03:35,  4.10it/s]\rSampling:  12%|█▏        | 119/1000 [00:28<03:33,  4.13it/s]\rSampling:  12%|█▏        | 120/1000 [00:28<03:30,  4.18it/s]\rSampling:  12%|█▏        | 121/1000 [00:29<03:29,  4.20it/s]\rSampling:  12%|█▏        | 122/1000 [00:29<03:28,  4.21it/s]\rSampling:  12%|█▏        | 123/1000 [00:29<03:29,  4.18it/s]\rSampling:  12%|█▏        | 124/1000 [00:29<03:32,  4.12it/s]\rSampling:  12%|█▎        | 125/1000 [00:29<03:32,  4.12it/s]\rSampling:  13%|█▎        | 126/1000 [00:30<03:32,  4.12it/s]\rSampling:  13%|█▎        | 127/1000 [00:30<03:30,  4.14it/s]\rSampling:  13%|█▎        | 128/1000 [00:30<03:33,  4.09it/s]\rSampling:  13%|█▎        | 129/1000 [00:30<03:31,  4.11it/s]\rSampling:  13%|█▎        | 130/1000 [00:31<03:29,  4.15it/s]\rSampling:  13%|█▎        | 131/1000 [00:31<03:30,  4.14it/s]\rSampling:  13%|█▎        | 132/1000 [00:31<03:29,  4.14it/s]\rSampling:  13%|█▎        | 133/1000 [00:31<03:29,  4.14it/s]\rSampling:  13%|█▎        | 134/1000 [00:32<03:28,  4.16it/s]\rSampling:  14%|█▎        | 135/1000 [00:32<03:29,  4.14it/s]\rSampling:  14%|█▎        | 136/1000 [00:32<03:29,  4.13it/s]\rSampling:  14%|█▎        | 137/1000 [00:32<03:30,  4.10it/s]\rSampling:  14%|█▍        | 138/1000 [00:33<03:32,  4.06it/s]\rSampling:  14%|█▍        | 139/1000 [00:33<03:31,  4.08it/s]\rSampling:  14%|█▍        | 140/1000 [00:33<03:30,  4.09it/s]\rSampling:  14%|█▍        | 141/1000 [00:33<03:30,  4.09it/s]\rSampling:  14%|█▍        | 142/1000 [00:34<03:30,  4.07it/s]\rSampling:  14%|█▍        | 143/1000 [00:34<03:30,  4.07it/s]\rSampling:  14%|█▍        | 144/1000 [00:34<03:31,  4.04it/s]\rSampling:  14%|█▍        | 145/1000 [00:34<03:31,  4.05it/s]\rSampling:  15%|█▍        | 146/1000 [00:35<03:32,  4.01it/s]\rSampling:  15%|█▍        | 147/1000 [00:35<03:32,  4.02it/s]\rSampling:  15%|█▍        | 147/1000 [00:35<03:25,  4.15it/s]\n  voice 106/106 outro4: Want one more quiz? Check out one of our other videos!\n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.\n  self.gen = func(*args, **kwds)\n\rSampling:   0%|          | 0/1000 [00:00<?, ?it/s]\rSampling:   0%|          | 1/1000 [00:00<03:37,  4.59it/s]\rSampling:   0%|          | 2/1000 [00:00<03:40,  4.52it/s]\rSampling:   0%|          | 3/1000 [00:00<03:43,  4.45it/s]\rSampling:   0%|          | 4/1000 [00:00<03:45,  4.41it/s]\rSampling:   0%|          | 5/1000 [00:01<03:46,  4.39it/s]\rSampling:   1%|          | 6/1000 [00:01<03:48,  4.35it/s]\rSampling:   1%|          | 7/1000 [00:01<03:46,  4.38it/s]\rSampling:   1%|          | 8/1000 [00:01<03:46,  4.37it/s]\rSampling:   1%|          | 9/1000 [00:02<03:46,  4.37it/s]\rSampling:   1%|          | 10/1000 [00:02<03:46,  4.37it/s]\rSampling:   1%|          | 11/1000 [00:02<03:46,  4.37it/s]\rSampling:   1%|          | 12/1000 [00:02<03:46,  4.36it/s]\rSampling:   1%|▏         | 13/1000 [00:02<03:47,  4.35it/s]\rSampling:   1%|▏         | 14/1000 [00:03<03:50,  4.27it/s]\rSampling:   2%|▏         | 15/1000 [00:03<03:52,  4.24it/s]\rSampling:   2%|▏         | 16/1000 [00:03<03:50,  4.28it/s]\rSampling:   2%|▏         | 17/1000 [00:03<03:46,  4.33it/s]\rSampling:   2%|▏         | 18/1000 [00:04<03:44,  4.37it/s]\rSampling:   2%|▏         | 19/1000 [00:04<03:45,  4.36it/s]\rSampling:   2%|▏         | 20/1000 [00:04<03:43,  4.38it/s]\rSampling:   2%|▏         | 21/1000 [00:04<03:43,  4.38it/s]\rSampling:   2%|▏         | 22/1000 [00:05<03:44,  4.36it/s]\rSampling:   2%|▏         | 23/1000 [00:05<03:45,  4.34it/s]\rSampling:   2%|▏         | 24/1000 [00:05<03:47,  4.29it/s]\rSampling:   2%|▎         | 25/1000 [00:05<03:46,  4.31it/s]\rSampling:   3%|▎         | 26/1000 [00:05<03:43,  4.35it/s]\rSampling:   3%|▎         | 27/1000 [00:06<03:42,  4.36it/s]\rSampling:   3%|▎         | 28/1000 [00:06<03:43,  4.36it/s]\rSampling:   3%|▎         | 29/1000 [00:06<03:46,  4.28it/s]\rSampling:   3%|▎         | 30/1000 [00:06<03:45,  4.30it/s]\rSampling:   3%|▎         | 31/1000 [00:07<03:44,  4.32it/s]\rSampling:   3%|▎         | 32/1000 [00:07<03:44,  4.31it/s]\rSampling:   3%|▎         | 33/1000 [00:07<03:42,  4.34it/s]\rSampling:   3%|▎         | 34/1000 [00:07<03:41,  4.37it/s]\rSampling:   4%|▎         | 35/1000 [00:08<03:39,  4.40it/s]\rSampling:   4%|▎         | 36/1000 [00:08<03:39,  4.39it/s]\rSampling:   4%|▎         | 37/1000 [00:08<03:39,  4.38it/s]\rSampling:   4%|▍         | 38/1000 [00:08<03:38,  4.40it/s]\rSampling:   4%|▍         | 39/1000 [00:08<03:41,  4.34it/s]\rSampling:   4%|▍         | 40/1000 [00:09<03:40,  4.36it/s]\rSampling:   4%|▍         | 41/1000 [00:09<03:39,  4.36it/s]\rSampling:   4%|▍         | 42/1000 [00:09<03:39,  4.37it/s]\rSampling:   4%|▍         | 43/1000 [00:09<03:38,  4.39it/s]\rSampling:   4%|▍         | 44/1000 [00:10<03:40,  4.34it/s]\rSampling:   4%|▍         | 45/1000 [00:10<03:39,  4.35it/s]\rSampling:   5%|▍         | 46/1000 [00:10<03:39,  4.35it/s]\rSampling:   5%|▍         | 47/1000 [00:10<03:39,  4.34it/s]\rSampling:   5%|▍         | 48/1000 [00:11<03:40,  4.33it/s]\rSampling:   5%|▍         | 49/1000 [00:11<03:40,  4.31it/s]\rSampling:   5%|▌         | 50/1000 [00:11<03:38,  4.35it/s]\rSampling:   5%|▌         | 51/1000 [00:11<03:35,  4.39it/s]\rSampling:   5%|▌         | 52/1000 [00:11<03:35,  4.40it/s]\rSampling:   5%|▌         | 53/1000 [00:12<03:37,  4.36it/s]\rSampling:   5%|▌         | 54/1000 [00:12<03:39,  4.32it/s]\rSampling:   6%|▌         | 55/1000 [00:12<03:36,  4.36it/s]\rSampling:   6%|▌         | 56/1000 [00:12<03:37,  4.34it/s]\rSampling:   6%|▌         | 57/1000 [00:13<03:38,  4.32it/s]\rSampling:   6%|▌         | 58/1000 [00:13<03:36,  4.36it/s]\rSampling:   6%|▌         | 59/1000 [00:13<03:36,  4.35it/s]\rSampling:   6%|▌         | 60/1000 [00:13<03:36,  4.34it/s]\rSampling:   6%|▌         | 61/1000 [00:14<03:36,  4.34it/s]\rSampling:   6%|▌         | 62/1000 [00:14<03:38,  4.28it/s]\rSampling:   6%|▋         | 63/1000 [00:14<03:38,  4.29it/s]\rSampling:   6%|▋         | 64/1000 [00:14<03:38,  4.28it/s]\rSampling:   6%|▋         | 65/1000 [00:14<03:36,  4.31it/s]\rSampling:   7%|▋         | 66/1000 [00:15<03:35,  4.34it/s]\rSampling:   7%|▋         | 67/1000 [00:15<03:35,  4.32it/s]\rSampling:   7%|▋         | 68/1000 [00:15<03:36,  4.31it/s]\rSampling:   7%|▋         | 69/1000 [00:15<03:36,  4.29it/s]\rSampling:   7%|▋         | 70/1000 [00:16<03:36,  4.30it/s]\rSampling:   7%|▋         | 71/1000 [00:16<03:37,  4.28it/s]\rSampling:   7%|▋         | 72/1000 [00:16<03:36,  4.29it/s]\rSampling:   7%|▋         | 73/1000 [00:16<03:41,  4.19it/s]\rSampling:   7%|▋         | 74/1000 [00:17<03:39,  4.22it/s]\rSampling:   8%|▊         | 75/1000 [00:17<03:39,  4.22it/s]\rSampling:   8%|▊         | 76/1000 [00:17<03:39,  4.22it/s]\rSampling:   8%|▊         | 77/1000 [00:17<03:38,  4.23it/s]\rSampling:   8%|▊         | 78/1000 [00:18<03:38,  4.23it/s]\rSampling:   8%|▊         | 79/1000 [00:18<03:35,  4.27it/s]\rSampling:   8%|▊         | 80/1000 [00:18<03:37,  4.23it/s]\rSampling:   8%|▊         | 81/1000 [00:18<03:34,  4.28it/s]\rSampling:   8%|▊         | 82/1000 [00:18<03:33,  4.30it/s]\rSampling:   8%|▊         | 83/1000 [00:19<03:31,  4.34it/s]\rSampling:   8%|▊         | 84/1000 [00:19<03:30,  4.35it/s]\rSampling:   8%|▊         | 85/1000 [00:19<03:32,  4.30it/s]\rSampling:   9%|▊         | 86/1000 [00:19<03:33,  4.28it/s]\rSampling:   9%|▊         | 87/1000 [00:20<03:37,  4.20it/s]\rSampling:   9%|▉         | 88/1000 [00:20<03:38,  4.17it/s]\rSampling:   9%|▉         | 89/1000 [00:20<03:37,  4.19it/s]\rSampling:   9%|▉         | 90/1000 [00:20<03:36,  4.20it/s]\rSampling:   9%|▉         | 91/1000 [00:21<03:37,  4.19it/s]\rSampling:   9%|▉         | 92/1000 [00:21<03:36,  4.19it/s]\rSampling:   9%|▉         | 93/1000 [00:21<03:37,  4.17it/s]\rSampling:   9%|▉         | 94/1000 [00:21<03:35,  4.20it/s]\rSampling:  10%|▉         | 95/1000 [00:22<03:35,  4.21it/s]\rSampling:  10%|▉         | 96/1000 [00:22<03:33,  4.22it/s]\rSampling:  10%|▉         | 97/1000 [00:22<03:39,  4.12it/s]\rSampling:  10%|▉         | 98/1000 [00:22<03:37,  4.14it/s]\rSampling:  10%|▉         | 99/1000 [00:22<03:36,  4.16it/s]\rSampling:  10%|█         | 100/1000 [00:23<03:33,  4.22it/s]\rSampling:  10%|█         | 101/1000 [00:23<03:33,  4.22it/s]\rSampling:  10%|█         | 102/1000 [00:23<03:33,  4.21it/s]\rSampling:  10%|█         | 103/1000 [00:23<03:32,  4.21it/s]\rSampling:  10%|█         | 104/1000 [00:24<03:33,  4.20it/s]\rSampling:  10%|█         | 105/1000 [00:24<03:34,  4.18it/s]\rSampling:  11%|█         | 106/1000 [00:24<03:35,  4.15it/s]\rSampling:  11%|█         | 106/1000 [00:24<03:27,  4.30it/s]\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-16.mp4 (15.6 min), 1 warning(s)\n  ! outro2: starts 0.2 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-e11cfc783b35269f5a7b\n== __run_11\n-rw-r--r--+ 1 root root 113328 Nov 23 05:22 /usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf\n-rw-r--r--+ 1 root root 549824 Nov 23 05:22 /usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf\nthumbnail-a.jpg: 2560x1440, JPEG quality 95, 1.00 MB, band red\nthumbnail-b.jpg: 2560x1440, JPEG quality 95, 1.00 MB, band red\nstudio-thumbnails: quiz-16 published\n",
-  "rebuild_needed": "Run 45102898623 not approved (Claude, 23 Nov 2026): full GIF check found real faces in Q24, A28, A36 and riders in A21. GIF picks changed in 5e416a1; rebuild with `gh workflow run build-video.yml --ref claude/quiz-16 -f quiz=quiz-16` when no other build is running, then review the new build."
+  "log_tail": "Exported DAHbuiV9_yM pages 1-2 (horizontal_4k) in 71s\nExported DAHbuiWG494 pages 1-2 (horizontal_4k) in 81s\nExported DAHbug9YWsI pages 1-2 (horizontal_4k) in 61s\nExported DAHbujDwi9g pages 1-2 (horizontal_4k) in 51s\nExported DAHbujcSdDo pages 1-2 (horizontal_4k) in 50s\nExported DAHbuuFx-hs pages 1-2 (horizontal_4k) in 50s\nExported DAHbuhsQAmU pages 1-2 (horizontal_4k) in 71s\nExported DAHbugDLiGs pages 1-2 (horizontal_4k) in 61s\nExported DAHbugrSvcg pages 1-2 (horizontal_4k) in 61s\nExported DAHbunNexO4 pages 1-2 (horizontal_4k) in 71s\nExported DAHbuoQiLuw pages 1-2 (horizontal_4k) in 81s\nExported DAHburtmGIY pages 1-2 (horizontal_4k) in 71s\nExported DAHbur_Ot-s pages 1-2 (horizontal_4k) in 101s\nExported DAHbuqc3Nts pages 1-2 (horizontal_4k) in 81s\nExported DAHbuk0Abq8 pages 1-2 (horizontal_4k) in 81s\nExported DAHbunhkJFo pages 1-2 (horizontal_4k) in 70s\nExported DAHbusJYHCw pages 1-2 (horizontal_4k) in 71s\nExported DAHbupg53H4 pages 1-2 (horizontal_4k) in 81s\nExported DAHbuo49AuM pages 1-2 (horizontal_4k) in 71s\nExported DAHbuvwpjXA pages 1-2 (horizontal_4k) in 81s\nExported DAHbut9asaI pages 1-2 (horizontal_4k) in 60s\nExported DAHbuh_wM-k pages 1-2 (horizontal_4k) in 50s\nExported DAHbutJd8Vo pages 1-2 (horizontal_4k) in 61s\nslides.mp4 from 50 pairs\nExported DAHbu1xUVfY pages 1-1 (horizontal_4k) in 30s\nExported DAHbu1xUVfY pages 2-2 (horizontal_4k) in 30s\nExported DAHbu1xUVfY pages 3-3 (horizontal_4k) in 41s\nintro/rules/outro from DAHbu1xUVfY\ntotal 401528\ndrwxr-xr-x 3 runner runner      4096 Nov 23 11:03 .\ndrwxr-xr-x 5 runner runner      4096 Nov 23 10:43 ..\n-rw-r--r-- 1 runner runner      8725 Nov 23 11:02 canva_state.json\n-rw-r--r-- 1 runner runner   2253663 Nov 23 11:02 intro.mp4\n-rw-r--r-- 1 runner runner  15597032 Nov 23 11:03 outro.mp4\ndrwxr-xr-x 2 runner runner      4096 Nov 23 11:03 pairs\n-rw-r--r-- 1 runner runner   3016439 Nov 23 11:03 rules.mp4\n-rw-r--r-- 1 runner runner 390249424 Nov 23 11:01 slides.mp4\n-rw-r--r-- 1 runner runner      2550 Nov 23 11:01 slides.txt\n-rw-r--r-- 1 runner runner        17 Nov 23 11:03 source.sha\n-rw-r--r-- 1 runner runner        17 Nov 23 10:43 stored.sha\n== __run_6\n== __run_7\n== __run_8\nScript: 106 lines\nLoading Chatterbox (CPU)…\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.\n  deprecate(\"LoRACompatibleLinear\", \"1.0.0\", deprecation_message)\nloaded PerthNet (Implicit) at step 250,000\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-16.mp4 (15.6 min), 1 warning(s)\n  ! outro2: starts 0.2 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-4d341d0cbb5218c6ecac\n== __run_11\n-rw-r--r--+ 1 root root 113328 Nov 23 11:31 /usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf\n-rw-r--r--+ 1 root root 549824 Nov 23 11:31 /usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf\nthumbnail-a.jpg: 2560x1440, JPEG quality 95, 0.99 MB, band red\nthumbnail-b.jpg: 2560x1440, JPEG quality 95, 0.99 MB, band red\nstudio-thumbnails: quiz-16 published\n"
 }
