@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T02:12:24+00:00",
+  "generated": "2026-11-23T04:38:06+00:00",
   "channel": {
     "title": "One More Quiz!",
     "subscribers": 14,
@@ -148,7 +148,9 @@
       "subs_gained": 0,
       "subs_lost": 0,
       "subs_net": 0,
-      "subs_at_end": 10
+      "subs_at_end": 10,
+      "watch_hours_12m_at_end": 30.4,
+      "target_ctr": 0.04
     },
     {
       "week": "2026-10-19 to 2026-10-25",
@@ -160,7 +162,9 @@
       "views_change": 0,
       "watch_hours_change": 0.0,
       "subs_net_change": 0,
-      "subs_at_end": 10
+      "subs_at_end": 10,
+      "watch_hours_12m_at_end": 30.4,
+      "target_ctr": 0.04
     },
     {
       "week": "2026-10-26 to 2026-11-01",
@@ -172,7 +176,11 @@
       "views_change": 5,
       "watch_hours_change": 0.1,
       "subs_net_change": 0,
-      "subs_at_end": 10
+      "subs_at_end": 10,
+      "watch_hours_12m_at_end": 30.5,
+      "target_subs": 11.2,
+      "target_watch_hours_12m": 48.4,
+      "target_ctr": 0.04
     },
     {
       "week": "2026-11-02 to 2026-11-08",
@@ -184,7 +192,11 @@
       "views_change": 231,
       "watch_hours_change": 4.6,
       "subs_net_change": 0,
-      "subs_at_end": 10
+      "subs_at_end": 10,
+      "watch_hours_12m_at_end": 35.2,
+      "target_subs": 12.9,
+      "target_watch_hours_12m": 57.9,
+      "target_ctr": 0.04
     },
     {
       "week": "2026-11-09 to 2026-11-15",
@@ -196,7 +208,11 @@
       "views_change": 1618,
       "watch_hours_change": 19.3,
       "subs_net_change": 2,
-      "subs_at_end": 12
+      "subs_at_end": 12,
+      "watch_hours_12m_at_end": 59.2,
+      "target_subs": 14.5,
+      "target_watch_hours_12m": 67.5,
+      "target_ctr": 0.04
     },
     {
       "week": "2026-11-16 to 2026-11-22",
@@ -208,7 +224,11 @@
       "views_change": -174,
       "watch_hours_change": 0.5,
       "subs_net_change": 0,
-      "subs_at_end": 14
+      "subs_at_end": 14,
+      "watch_hours_12m_at_end": 83.7,
+      "target_subs": 16.1,
+      "target_watch_hours_12m": 77.1,
+      "target_ctr": 0.04
     }
   ]
 }

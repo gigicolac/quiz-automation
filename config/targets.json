@@ -1,0 +1,16 @@
+{
+  "_comment": "Month-end targets from Giulia's forecast model (Google Sheet GUMA_FY27_Forecast_Model, tab 'P-Tracker FY27 - OMQ', columns B, D, F; copied 23 Nov 2026). Watch hours are the 12-month total YouTube uses for the Partner Programme. scripts/channel_stats.py interpolates a target for each week's end date. Update this file if the sheet's targets change.",
+  "sheet": "https://docs.google.com/spreadsheets/d/1nCpaDOX1ZUq_Et4ZwKaSRGcDtS4aDPshZdaI8PPqq68/edit",
+  "ctr": 0.04,
+  "months": {
+    "2026-10": {"subs": 11, "watch_hours_12m": 47},
+    "2026-11": {"subs": 18, "watch_hours_12m": 88},
+    "2026-12": {"subs": 28, "watch_hours_12m": 257},
+    "2027-01": {"subs": 41, "watch_hours_12m": 591},
+    "2027-02": {"subs": 62, "watch_hours_12m": 1176},
+    "2027-03": {"subs": 91, "watch_hours_12m": 2131},
+    "2027-04": {"subs": 135, "watch_hours_12m": 3626},
+    "2027-05": {"subs": 199, "watch_hours_12m": 5899},
+    "2027-06": {"subs": 291, "watch_hours_12m": 9283}
+  }
+}
