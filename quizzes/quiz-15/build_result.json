@@ -1,527 +1,547 @@
 {
   "status": "success",
-  "release_tag": "quiz-15-preview-32",
-  "source_commit": "10125b7db78f6fea267cf82a7a914b86e36f1911",
-  "run_id": "43998375618",
-  "tts": "chatterbox",
+  "release_tag": "quiz-15-preview-34",
+  "source_commit": "9fbe7f3f4da1c3ec875b772928e5941919e774f1",
+  "run_id": "45108938485",
+  "tts": "dummy",
   "report": {
     "quiz": "quiz-15",
-    "tts": "chatterbox",
-    "duration_s": 965.19,
+    "tts": "dummy",
+    "duration_s": 927.53,
     "segments": [
       {
         "name": "intro",
         "start": 0.0,
-        "dur": 11.17
+        "dur": 8.63
       },
       {
         "name": "rules",
-        "start": 11.17,
+        "start": 8.63,
         "dur": 8.1
       },
       {
         "name": "q01",
-        "start": 19.27,
+        "start": 16.73,
         "dur": 10.6
       },
       {
         "name": "a01",
-        "start": 29.87,
-        "dur": 8.9
+        "start": 27.33,
+        "dur": 7.33
       },
       {
         "name": "q02",
-        "start": 38.77,
+        "start": 34.67,
         "dur": 10.6
       },
       {
         "name": "a02",
-        "start": 49.37,
-        "dur": 9.6
+        "start": 45.27,
+        "dur": 7.6
       },
       {
         "name": "q03",
-        "start": 58.97,
+        "start": 52.87,
         "dur": 10.6
       },
       {
         "name": "a03",
-        "start": 69.57,
-        "dur": 7.13
+        "start": 63.47,
+        "dur": 5.87
       },
       {
         "name": "q04",
-        "start": 76.7,
+        "start": 69.33,
         "dur": 10.6
       },
       {
         "name": "a04",
-        "start": 87.3,
-        "dur": 8.47
+        "start": 79.93,
+        "dur": 6.83
       },
       {
         "name": "q05",
-        "start": 95.77,
+        "start": 86.77,
         "dur": 10.6
       },
       {
         "name": "a05",
-        "start": 106.37,
-        "dur": 9.03
+        "start": 97.37,
+        "dur": 7.97
       },
       {
         "name": "q06",
-        "start": 115.4,
+        "start": 105.33,
         "dur": 10.6
       },
       {
         "name": "a06",
-        "start": 126.0,
-        "dur": 8.6
+        "start": 115.93,
+        "dur": 6.87
       },
       {
         "name": "q07",
-        "start": 134.6,
+        "start": 122.8,
         "dur": 10.6
       },
       {
         "name": "a07",
-        "start": 145.2,
-        "dur": 7.4
+        "start": 133.4,
+        "dur": 6.27
       },
       {
         "name": "q08",
-        "start": 152.6,
+        "start": 139.67,
         "dur": 10.6
       },
       {
         "name": "a08",
-        "start": 163.2,
-        "dur": 6.83
+        "start": 150.27,
+        "dur": 5.73
       },
       {
         "name": "q09",
-        "start": 170.03,
+        "start": 156.0,
         "dur": 10.6
       },
       {
         "name": "a09",
-        "start": 180.63,
-        "dur": 6.47
+        "start": 166.6,
+        "dur": 5.07
       },
       {
         "name": "q10",
-        "start": 187.1,
+        "start": 171.67,
         "dur": 10.6
       },
       {
         "name": "a10",
-        "start": 197.7,
-        "dur": 9.23
+        "start": 182.27,
+        "dur": 6.77
+      },
+      {
+        "name": "cp10",
+        "start": 189.03,
+        "dur": 7.33
       },
       {
         "name": "q11",
-        "start": 206.93,
+        "start": 196.36,
         "dur": 10.6
       },
       {
         "name": "a11",
-        "start": 217.53,
-        "dur": 6.9
+        "start": 206.96,
+        "dur": 5.97
       },
       {
         "name": "q12",
-        "start": 224.43,
+        "start": 212.93,
         "dur": 10.6
       },
       {
         "name": "a12",
-        "start": 235.03,
-        "dur": 7.47
+        "start": 223.53,
+        "dur": 6.5
       },
       {
         "name": "q13",
-        "start": 242.5,
+        "start": 230.03,
         "dur": 10.6
       },
       {
         "name": "a13",
-        "start": 253.1,
-        "dur": 7.53
+        "start": 240.63,
+        "dur": 6.57
       },
       {
         "name": "q14",
-        "start": 260.63,
+        "start": 247.2,
         "dur": 10.6
       },
       {
         "name": "a14",
-        "start": 271.23,
-        "dur": 8.53
+        "start": 257.8,
+        "dur": 6.8
       },
       {
         "name": "q15",
-        "start": 279.76,
+        "start": 264.6,
         "dur": 10.6
       },
       {
         "name": "a15",
-        "start": 290.36,
-        "dur": 6.97
+        "start": 275.2,
+        "dur": 6.3
       },
       {
         "name": "q16",
-        "start": 297.33,
+        "start": 281.5,
         "dur": 10.6
       },
       {
         "name": "a16",
-        "start": 307.93,
-        "dur": 8.57
+        "start": 292.1,
+        "dur": 7.37
       },
       {
         "name": "q17",
-        "start": 316.5,
+        "start": 299.46,
         "dur": 10.6
       },
       {
         "name": "a17",
-        "start": 327.1,
-        "dur": 7.0
+        "start": 310.06,
+        "dur": 6.6
       },
       {
         "name": "q18",
-        "start": 334.1,
+        "start": 316.66,
         "dur": 10.6
       },
       {
         "name": "a18",
-        "start": 344.7,
-        "dur": 7.77
+        "start": 327.26,
+        "dur": 6.33
       },
       {
         "name": "q19",
-        "start": 352.46,
+        "start": 333.6,
         "dur": 10.6
       },
       {
         "name": "a19",
-        "start": 363.06,
-        "dur": 8.67
+        "start": 344.2,
+        "dur": 7.17
       },
       {
         "name": "q20",
-        "start": 371.73,
+        "start": 351.36,
         "dur": 10.6
       },
       {
         "name": "a20",
-        "start": 382.33,
-        "dur": 9.07
+        "start": 361.96,
+        "dur": 7.2
+      },
+      {
+        "name": "cp20",
+        "start": 369.16,
+        "dur": 5.3
       },
       {
         "name": "q21",
-        "start": 391.4,
+        "start": 374.46,
         "dur": 10.6
       },
       {
         "name": "a21",
-        "start": 402.0,
-        "dur": 9.33
+        "start": 385.06,
+        "dur": 7.43
       },
       {
         "name": "q22",
-        "start": 411.33,
+        "start": 392.5,
         "dur": 10.6
       },
       {
         "name": "a22",
-        "start": 421.93,
-        "dur": 8.8
+        "start": 403.1,
+        "dur": 7.53
       },
       {
         "name": "q23",
-        "start": 430.73,
+        "start": 410.63,
         "dur": 10.6
       },
       {
         "name": "a23",
-        "start": 441.33,
-        "dur": 6.07
+        "start": 421.23,
+        "dur": 5.03
       },
       {
         "name": "q24",
-        "start": 447.4,
+        "start": 426.26,
         "dur": 10.6
       },
       {
         "name": "a24",
-        "start": 458.0,
-        "dur": 7.97
+        "start": 436.86,
+        "dur": 6.5
       },
       {
         "name": "q25",
-        "start": 465.96,
+        "start": 443.36,
         "dur": 10.6
       },
       {
         "name": "a25",
-        "start": 476.56,
-        "dur": 7.6
+        "start": 453.96,
+        "dur": 6.5
       },
       {
         "name": "q26",
-        "start": 484.16,
+        "start": 460.46,
         "dur": 10.6
       },
       {
         "name": "a26",
-        "start": 494.76,
-        "dur": 6.53
+        "start": 471.06,
+        "dur": 6.23
       },
       {
         "name": "q27",
-        "start": 501.3,
+        "start": 477.3,
         "dur": 10.6
       },
       {
         "name": "a27",
-        "start": 511.9,
-        "dur": 6.7
+        "start": 487.9,
+        "dur": 5.33
       },
       {
         "name": "q28",
-        "start": 518.6,
+        "start": 493.23,
         "dur": 10.6
       },
       {
         "name": "a28",
-        "start": 529.2,
-        "dur": 8.3
+        "start": 503.83,
+        "dur": 7.5
       },
       {
         "name": "q29",
-        "start": 537.5,
+        "start": 511.33,
         "dur": 10.6
       },
       {
         "name": "a29",
-        "start": 548.1,
-        "dur": 6.9
+        "start": 521.93,
+        "dur": 6.57
       },
       {
         "name": "q30",
-        "start": 555.0,
+        "start": 528.5,
         "dur": 10.6
       },
       {
         "name": "a30",
-        "start": 565.6,
-        "dur": 7.53
+        "start": 539.1,
+        "dur": 6.4
+      },
+      {
+        "name": "cp30",
+        "start": 545.5,
+        "dur": 6.87
       },
       {
         "name": "q31",
-        "start": 573.13,
+        "start": 552.36,
         "dur": 10.6
       },
       {
         "name": "a31",
-        "start": 583.73,
-        "dur": 6.73
+        "start": 562.96,
+        "dur": 6.07
       },
       {
         "name": "q32",
-        "start": 590.46,
+        "start": 569.03,
         "dur": 10.6
       },
       {
         "name": "a32",
-        "start": 601.06,
-        "dur": 9.83
+        "start": 579.63,
+        "dur": 8.3
       },
       {
         "name": "q33",
-        "start": 610.9,
+        "start": 587.93,
         "dur": 10.6
       },
       {
         "name": "a33",
-        "start": 621.5,
-        "dur": 5.67
+        "start": 598.53,
+        "dur": 5.3
       },
       {
         "name": "q34",
-        "start": 627.16,
+        "start": 603.83,
         "dur": 10.6
       },
       {
         "name": "a34",
-        "start": 637.76,
-        "dur": 7.37
+        "start": 614.43,
+        "dur": 6.77
       },
       {
         "name": "q35",
-        "start": 645.13,
+        "start": 621.2,
         "dur": 10.6
       },
       {
         "name": "a35",
-        "start": 655.73,
-        "dur": 7.6
+        "start": 631.8,
+        "dur": 5.57
       },
       {
         "name": "q36",
-        "start": 663.33,
+        "start": 637.36,
         "dur": 10.6
       },
       {
         "name": "a36",
-        "start": 673.93,
-        "dur": 7.07
+        "start": 647.96,
+        "dur": 6.77
       },
       {
         "name": "q37",
-        "start": 681.0,
+        "start": 654.73,
         "dur": 10.6
       },
       {
         "name": "a37",
-        "start": 691.6,
-        "dur": 7.9
+        "start": 665.33,
+        "dur": 6.67
       },
       {
         "name": "q38",
-        "start": 699.5,
+        "start": 672.0,
         "dur": 10.6
       },
       {
         "name": "a38",
-        "start": 710.1,
-        "dur": 7.87
+        "start": 682.6,
+        "dur": 6.87
       },
       {
         "name": "q39",
-        "start": 717.96,
+        "start": 689.46,
         "dur": 10.6
       },
       {
         "name": "a39",
-        "start": 728.56,
-        "dur": 8.6
+        "start": 700.06,
+        "dur": 7.7
       },
       {
         "name": "q40",
-        "start": 737.16,
+        "start": 707.76,
         "dur": 10.6
       },
       {
         "name": "a40",
-        "start": 747.76,
-        "dur": 9.97
+        "start": 718.36,
+        "dur": 6.27
+      },
+      {
+        "name": "cp40",
+        "start": 724.63,
+        "dur": 6.07
       },
       {
         "name": "q41",
-        "start": 757.73,
+        "start": 730.7,
         "dur": 10.6
       },
       {
         "name": "a41",
-        "start": 768.33,
-        "dur": 7.33
+        "start": 741.3,
+        "dur": 6.4
       },
       {
         "name": "q42",
-        "start": 775.66,
+        "start": 747.7,
         "dur": 10.6
       },
       {
         "name": "a42",
-        "start": 786.26,
-        "dur": 8.37
+        "start": 758.3,
+        "dur": 7.6
       },
       {
         "name": "q43",
-        "start": 794.63,
+        "start": 765.9,
         "dur": 10.6
       },
       {
         "name": "a43",
-        "start": 805.23,
-        "dur": 6.57
+        "start": 776.5,
+        "dur": 5.57
       },
       {
         "name": "q44",
-        "start": 811.79,
+        "start": 782.06,
         "dur": 10.6
       },
       {
         "name": "a44",
-        "start": 822.39,
-        "dur": 8.53
+        "start": 792.66,
+        "dur": 7.0
       },
       {
         "name": "q45",
-        "start": 830.93,
+        "start": 799.66,
         "dur": 10.6
       },
       {
         "name": "a45",
-        "start": 841.53,
-        "dur": 6.77
+        "start": 810.26,
+        "dur": 6.0
       },
       {
         "name": "q46",
-        "start": 848.29,
+        "start": 816.26,
         "dur": 10.6
       },
       {
         "name": "a46",
-        "start": 858.89,
-        "dur": 10.0
+        "start": 826.86,
+        "dur": 8.13
       },
       {
         "name": "q47",
-        "start": 868.89,
+        "start": 834.99,
         "dur": 10.6
       },
       {
         "name": "a47",
-        "start": 879.49,
-        "dur": 7.37
+        "start": 845.59,
+        "dur": 6.5
       },
       {
         "name": "q48",
-        "start": 886.86,
+        "start": 852.09,
         "dur": 10.6
       },
       {
         "name": "a48",
-        "start": 897.46,
-        "dur": 6.47
+        "start": 862.69,
+        "dur": 5.4
       },
       {
         "name": "q49",
-        "start": 903.93,
+        "start": 868.09,
         "dur": 10.6
       },
       {
         "name": "a49",
-        "start": 914.53,
-        "dur": 6.8
+        "start": 878.69,
+        "dur": 5.57
       },
       {
         "name": "q50",
-        "start": 921.33,
+        "start": 884.26,
         "dur": 10.6
       },
       {
         "name": "a50",
-        "start": 931.93,
-        "dur": 7.3
+        "start": 894.86,
+        "dur": 6.7
       },
       {
         "name": "outro",
-        "start": 939.23,
+        "start": 901.56,
         "dur": 25.97
       }
     ],
@@ -1029,12 +1049,12 @@
     ],
     "levels_db": {
       "voice_rms": -20.0,
-      "music_rms": -36.2,
-      "mix_peak": -0.3
+      "music_rms": -36.0,
+      "mix_peak": -7.7
     },
     "warnings": [
-      "outro2: starts 0.6 s late (previous line ran long)"
+      "outro2: starts 0.2 s late (previous line ran long)"
     ]
   },
-  "log_tail": "Exported DAHbIVvZ-v8 pages 1-2 (horizontal_4k) in 71s\nExported DAHbIenvk4s pages 1-2 (horizontal_4k) in 51s\nExported DAHbIcBw0H0 pages 1-2 (horizontal_4k) in 61s\nExported DAHbIYuu_W4 pages 1-2 (horizontal_4k) in 51s\nExported DAHbIW-vKN4 pages 1-2 (horizontal_4k) in 61s\nExported DAHbIcOg_8Q pages 1-2 (horizontal_4k) in 61s\nExported DAHbIbyit4k pages 1-2 (horizontal_4k) in 51s\nExported DAHbIadpQBU pages 1-2 (horizontal_4k) in 61s\nExported DAHbIaMFo94 pages 1-2 (horizontal_4k) in 61s\nExported DAHbIRX_rNc pages 1-2 (horizontal_4k) in 61s\nExported DAHbITq38SM pages 1-2 (horizontal_4k) in 61s\nExported DAHbIaXHlz0 pages 1-2 (horizontal_4k) in 62s\nExported DAHbIY-swTI pages 1-2 (horizontal_4k) in 71s\nExported DAHbIdI6aVk pages 1-2 (horizontal_4k) in 71s\nExported DAHbIbUexoQ pages 1-2 (horizontal_4k) in 82s\nExported DAHbIY9Fo_U pages 1-2 (horizontal_4k) in 71s\nExported DAHbIfBXb-Y pages 1-2 (horizontal_4k) in 82s\nExported DAHbIR0UgGo pages 1-2 (horizontal_4k) in 83s\nExported DAHbIWHydA8 pages 1-2 (horizontal_4k) in 61s\nExported DAHbISeItQc pages 1-2 (horizontal_4k) in 71s\nExported DAHbIXdIYiw pages 1-2 (horizontal_4k) in 71s\nExported DAHbIZAkcUU pages 1-2 (horizontal_4k) in 71s\nExported DAHbIS1j6eg pages 1-2 (horizontal_4k) in 71s\nslides.mp4 from 50 pairs\nExported DAHbIvWd_SM pages 1-1 (horizontal_4k) in 31s\nExported DAHbIvWd_SM pages 2-2 (horizontal_4k) in 31s\nExported DAHbIvWd_SM pages 3-3 (horizontal_4k) in 31s\nintro/rules/outro from DAHbIvWd_SM\ntotal 330776\ndrwxr-xr-x 3 runner runner      4096 Nov 17 02:08 .\ndrwxr-xr-x 5 runner runner      4096 Nov 17 01:49 ..\n-rw-r--r-- 1 runner runner      8725 Nov 17 02:06 canva_state.json\n-rw-r--r-- 1 runner runner   2214720 Nov 17 02:07 intro.mp4\n-rw-r--r-- 1 runner runner  15606894 Nov 17 02:08 outro.mp4\ndrwxr-xr-x 2 runner runner      4096 Nov 17 02:08 pairs\n-rw-r--r-- 1 runner runner   3016439 Nov 17 02:07 rules.mp4\n-rw-r--r-- 1 runner runner 317831454 Nov 17 02:06 slides.mp4\n-rw-r--r-- 1 runner runner      2550 Nov 17 02:06 slides.txt\n-rw-r--r-- 1 runner runner        17 Nov 17 02:08 source.sha\n-rw-r--r-- 1 runner runner        17 Nov 17 01:49 stored.sha\n== __run_6\n== __run_7\n== __run_8\nScript: 106 lines\nLoading Chatterbox (CPU)…\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.\n  deprecate(\"LoRACompatibleLinear\", \"1.0.0\", deprecation_message)\nloaded PerthNet (Implicit) at step 250,000\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-15.mp4 (16.1 min), 1 warning(s)\n  ! outro2: starts 0.6 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-8c199a4833894bd37b89\n== __run_11\n-rw-r--r--+ 1 root root 113328 Nov 17 02:32 /usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf\n-rw-r--r--+ 1 root root 549824 Nov 17 02:32 /usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf\nthumbnail-a.jpg: 2560x1440, JPEG quality 95, 0.96 MB, band red\nthumbnail-b.jpg: 2560x1440, JPEG quality 95, 0.94 MB, band blue\nstudio-thumbnails: quiz-15 unchanged\n"
+  "log_tail": "  voice 62/110 a29: The answer is Liverpool. They played nearly three hundred ti\n  voice 63/110 q30: Question thirty. Which Queen anthem is famous for its stomp-\n  voice 64/110 a30: The answer is We Will Rock You. Guitarist Brian May wrote it\n  voice 65/110 cp30: thirty down, twenty to go! twenty-two or more is brilliant. \n  voice 66/110 q31: Question thirty-one. At Eurovision, how many points is 'douz\n  voice 67/110 a31: The answer is Twelve. Twelve points is the top score a count\n  voice 68/110 q32: Question thirty-two. With which song did ABBA win Eurovision\n  voice 69/110 a32: The answer is Waterloo. In two thousand and five it was vote\n  voice 70/110 q33: Question thirty-three. What was Emma Bunton's nickname in th\n  voice 71/110 a33: The answer is Baby Spice. She was the youngest member of the\n  voice 72/110 q34: Question thirty-four. Which Beatles album cover shows them w\n  voice 73/110 a34: The answer is Abbey Road. The crossing in London became a pr\n  voice 74/110 q35: Question thirty-five. The Beatles' name is a pun on which ki\n  voice 75/110 a35: The answer is Beetles. It mixes 'beetles' with 'beat', as in\n  voice 76/110 q36: Question thirty-six. Michael Jackson first moonwalked on TV \n  voice 77/110 a36: The answer is Billie Jean. It spent seven weeks at No. one i\n  voice 78/110 q37: Question thirty-seven. Which twenty twelve K-pop song was th\n  voice 79/110 a37: The answer is Gangnam Style. Its horse-riding dance was copi\n  voice 80/110 q38: Question thirty-eight. Which Taylor Swift tour, from twenty \n  voice 81/110 a38: The answer is the Eras Tour. It ran for one hundred and fort\n  voice 82/110 q39: Question thirty-nine. Adele's albums 'nineteen', 'twenty-one\n  voice 83/110 a39: The answer is Her age. 'twenty-one' was the world's best-sel\n  voice 84/110 q40: Question forty. Ed Sheeran's albums are named after maths sy\n  voice 85/110 a40: The answer is Divide. His other albums include + (Plus), × (\n  voice 86/110 cp40: forty done! Only ten left, and these are the toughest. Stay \n  voice 87/110 q41: Question forty-one. In twenty twenty-one, which Ed Sheeran s\n  voice 88/110 a41: The answer is Shape of You. It was the UK's biggest-selling \n  voice 89/110 q42: Question forty-two. In which year did 'All I Want for Christ\n  voice 90/110 a42: The answer is twenty nineteen. It took twenty-five years aft\n  voice 91/110 q43: Question forty-three. Céline Dion won Eurovision in nineteen\n  voice 92/110 a43: The answer is Switzerland. She won by just one point, singin\n  voice 93/110 q44: Question forty-four. Which Dolly Parton song did Whitney Hou\n  voice 94/110 a44: The answer is I Will Always Love You. Whitney's version spen\n  voice 95/110 q45: Question forty-five. Which double-reed woodwind instrument u\n  voice 96/110 a45: The answer is the oboe. It plays an A, and the rest of the o\n  voice 97/110 q46: Question forty-six. Which Pink Floyd album's cover shows a b\n  voice 98/110 a46: The answer is Dark Side of the Moon. It spent more than nine\n  voice 99/110 q47: Question forty-seven. On which TV talent show was One Direct\n  voice 100/110 a47: The answer is the X Factor. They finished third on the show,\n  voice 101/110 q48: Question forty-eight. What do the four letters in ABBA stand\n  voice 102/110 a48: The answer is Their first names. Agnetha, Björn, Benny and A\n  voice 103/110 q49: Question forty-nine. What was Mel C's nickname in the Spice \n  voice 104/110 a49: The answer is Sporty Spice. She was famous for doing backfli\n  voice 105/110 q50: Question fifty. Which nineteen sixty-seven Beatles album's f\n  voice 106/110 a50: The answer is Sgt. Pepper's. It won the Grammy for Album of \n  voice 107/110 outro1: And that's the end of the quiz! How did you go?\n  voice 108/110 outro2: Drop your score in the comments below.\n  voice 109/110 outro3: If you enjoyed it, give this video a like and hit subscribe \n  voice 110/110 outro4: Want one more quiz? Check out one of our other videos!\nSlides: 100 pages found\nDone: /home/runner/work/_temp/out/quiz-15.mp4 (15.5 min), 1 warning(s)\n  ! outro2: starts 0.2 s late (previous line ran long)\n== __run_10\nhttps://github.com/gigicolac/quiz-automation/releases/tag/untagged-1c2567dca2acf8025ef4\n== __run_11\n-rw-r--r--+ 1 root root 113328 Nov 23 05:42 /usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf\n-rw-r--r--+ 1 root root 549824 Nov 23 05:42 /usr/share/fonts/truetype/google-fonts/Tinos-Italic.ttf\nthumbnail-a.jpg: 2560x1440, JPEG quality 95, 0.95 MB, band red\nthumbnail-b.jpg: 2560x1440, JPEG quality 95, 0.95 MB, band red\nstudio-thumbnails: quiz-15 published\n"
 }
