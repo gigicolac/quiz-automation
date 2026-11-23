@@ -1,0 +1,33 @@
+name: Channel stats
+# Weekly channel numbers (subscribers, watch hours, click-through rate) for the Monday report and the GUMA
+# forecast model (Giulia, 23 Nov 2026). Writes reports/channel-stats.json on main.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+      timezone: "Australia/Sydney"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: channel-stats
+  cancel-in-progress: false
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch channel numbers
+        env:
+          YT_CLIENT_ID: ${{ vars.YT_CLIENT_ID || secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/channel_stats.py
+      - name: Record
+        run: |
+          git add reports/channel-stats.json
+          git diff --cached --quiet && exit 0
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Channel stats"
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
