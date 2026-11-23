@@ -735,14 +735,12 @@
  {
   "n": 34,
   "question_gif": {
-   "source": "giphy",
-   "type": "gif",
-   "id": "gFtWgOgTT0X2fOHrKd",
-   "user": "epae_es",
-   "title": "Animated Santa Claus GIF by Epae",
-   "mp4": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2cwZWZtdjJlNWdmdnNrcGJtdHNveXNkZnZvOXI0d3l1cW94cXo5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gFtWgOgTT0X2fOHrKd/giphy.mp4",
-   "clean_mp4": "https://media.giphy.com/media/gFtWgOgTT0X2fOHrKd/giphy.mp4",
-   "still": "https://media0.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2cwZWZtdjJlNWdmdnNrcGJtdHNveXNkZnZvOXI0d3l1cW94cXo5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gFtWgOgTT0X2fOHrKd/giphy_s.gif"
+   "source": "giphy_still",
+   "type": "image",
+   "id": "4YxmeSG5KopiNknkWm",
+   "user": "wakuta",
+   "title": "Happy Santa Claus GIF by wakuta",
+   "url": "https://media3.giphy.com/media/v1.Y2lkPTJjZWFhODE1c2cwZWZtdjJlNWdmdnNrcGJtdHNveXNkZnZvOXI0d3l1cW94cXo5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4YxmeSG5KopiNknkWm/giphy_s.gif"
   },
   "answer_gif": {
    "source": "giphy_still",
