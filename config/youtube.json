@@ -63,7 +63,7 @@
   },
   "title_variants": [
     "{title}",
-    "{count} {series} Questions Every Dummy Should Know 🧠 Can You Score 40+? | Quiz #{number}"
+    "Think You REALLY Know {series}? 🤔 Prove It in {count} Questions | Quiz #{number}"
   ],
   "end_screen": {
     "left": "Video: Most recent upload",
@@ -153,7 +153,7 @@
       "movie quiz"
     ]
   },
-  "_title_variants": "A/B title B (16 Nov 2026): a cheeky score-threshold challenge. Quiz #9's B title '50 questions every dummy should know' led 59% to 41%, and 1M+ quiz videos use score thresholds ('Score at least 4/10', 'IQ above average if you get 45+ right', '35 right to pass'; docs/competitor-research.md). Monday run updates this from results; the claim must stay light, never a fake statistic presented as fact.",
+  "_title_variants": "Title B (23 Nov 2026): variations of the winning problem statement 'How well do you REALLY know X?' (Cartoons #14 A beat the 'every dummy' B 57% to 43%; #9 B led 56% but YouTube kept A). The Monday run moves to the next entry in title_b_queue each week and records it in quiz.json title_b_variant. No invented statistics: 'Most people can't score 40/50' is a challenge, keep it only while results support it.",
   "studio_education": {
     "type": "Activity",
     "problems": "one line per question: timecode then the question"
@@ -186,5 +186,11 @@
     "levels": {
       "_comment": "Studio Education level per quiz difficulty. Fill in Studio's exact option names once seen; until then the task picks the closest option."
     }
-  }
+  },
+  "title_b_queue": [
+    "Think You REALLY Know {series}? 🤔 Prove It in {count} Questions | Quiz #{number}",
+    "Do You REALLY Know {series}? Most People Can't Score 40/{count} 🧠 | Quiz #{number}",
+    "How Well Do You REALLY Know {series}? 🤔 Only True Fans Score 40+ | Quiz #{number}",
+    "You Don't REALLY Know {series} Until You Pass This Quiz 🧠 {count} Questions | Quiz #{number}"
+  ]
 }
