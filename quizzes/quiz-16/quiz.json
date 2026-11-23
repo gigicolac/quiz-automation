@@ -29,6 +29,15 @@
   "questions": {
    "decision": "auto-approved",
    "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Medium; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led animals; Q1 near-certain (lion), Q2 famous with a fun reveal (panda, 10-16 hours eating), Q3 a 'did you know?' twist (polar bear skin is black). Most recognisable picture at Q10 (Statue of Liberty). 8 movie questions spread through (Q6, 12, 18, 24, 29, 35, 40, 48). Weekly report 23 Nov applied: medium kept, hook test (thumbnail B 'Can you score 40+?'). GIF searches avoid real people's faces; movie rows use objects."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-24",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 45158668890 (rebuild after the 23 Nov GIF fixes for A21, Q24, A28, A36) succeeded: 4K 3840x2160, 935.9 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -35.7 dB, peak -0.3 dB; one minor warning (outro2 starts 0.2 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: cartoons/animation, objects, flags, animals, CGI or costumed characters, no clear real people's faces or unsuitable content. The replaced A21 (cartoon camel), Q24 (jack-in-the-box), A28 (Canadian flag) and A36 (neon pyramid) picks are in place. A12 (chopping onions) and A27 (hand silhouette in a guitar soundhole) show hands only; Q29 (Yoda) is a puppet character; Q35 is a CGI rat. Q15's first and last grabs were black; a continuous 1 fps strip from 272 s confirmed the gold-bars clip fades in and out from black and the answer slide follows correctly. Spot-checked full frames: intro, Q01/A01, Q25/A25 and outro (Giulia's fixed Canva outro design, unchanged); text fits its boxes. Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage suitable.",
+   "source_commit": "bf3fd9b",
+   "duration_s": 935.9,
+   "release_tag": "quiz-16-preview-36"
   }
  },
  "questions": [
