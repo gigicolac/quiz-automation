@@ -1,0 +1,305 @@
+{
+  "allow_branded": false,
+  "queries": [
+    {
+      "n": 1,
+      "question_query": "lion cartoon",
+      "answer_query": "lion roar animation",
+      "match": []
+    },
+    {
+      "n": 2,
+      "question_query": "panda cartoon",
+      "answer_query": "panda eating bamboo",
+      "match": []
+    },
+    {
+      "n": 3,
+      "question_query": "polar bear",
+      "answer_query": "polar bear cartoon",
+      "match": []
+    },
+    {
+      "n": 4,
+      "question_query": "hexagon animation",
+      "answer_query": "honeycomb",
+      "match": []
+    },
+    {
+      "n": 5,
+      "question_query": "ocean waves",
+      "answer_query": "earth globe spinning",
+      "match": []
+    },
+    {
+      "n": 6,
+      "question_query": "clownfish",
+      "answer_query": "clownfish anemone",
+      "match": []
+    },
+    {
+      "n": 7,
+      "question_query": "paris",
+      "answer_query": "eiffel tower",
+      "match": []
+    },
+    {
+      "n": 8,
+      "question_query": "flying animation",
+      "answer_query": "bat flying",
+      "match": []
+    },
+    {
+      "n": 9,
+      "question_query": "rainbow",
+      "answer_query": "rainbow animation",
+      "match": []
+    },
+    {
+      "n": 10,
+      "question_query": "statue of liberty",
+      "answer_query": "france flag",
+      "match": []
+    },
+    {
+      "n": 11,
+      "question_query": "rock crystal",
+      "answer_query": "diamond sparkle",
+      "match": []
+    },
+    {
+      "n": 12,
+      "question_query": "swamp",
+      "answer_query": "onion",
+      "match": []
+    },
+    {
+      "n": 13,
+      "question_query": "japan",
+      "answer_query": "tokyo city",
+      "match": []
+    },
+    {
+      "n": 14,
+      "question_query": "octopus",
+      "answer_query": "octopus cartoon",
+      "match": []
+    },
+    {
+      "n": 15,
+      "question_query": "gold bars",
+      "answer_query": "gold coins",
+      "match": []
+    },
+    {
+      "n": 16,
+      "question_query": "solar system planets",
+      "answer_query": "jupiter planet",
+      "match": []
+    },
+    {
+      "n": 17,
+      "question_query": "soccer ball",
+      "answer_query": "soccer goal",
+      "match": []
+    },
+    {
+      "n": 18,
+      "question_query": "bicycle moon",
+      "answer_query": "telephone ringing",
+      "match": []
+    },
+    {
+      "n": 19,
+      "question_query": "scotland",
+      "answer_query": "unicorn",
+      "match": []
+    },
+    {
+      "n": 20,
+      "question_query": "planets space",
+      "answer_query": "mars planet",
+      "match": []
+    },
+    {
+      "n": 21,
+      "question_query": "desert sand dunes",
+      "answer_query": "camel desert",
+      "match": []
+    },
+    {
+      "n": 22,
+      "question_query": "skeleton cartoon",
+      "answer_query": "bone cartoon",
+      "match": []
+    },
+    {
+      "n": 23,
+      "question_query": "olympic rings",
+      "answer_query": "greek temple",
+      "match": []
+    },
+    {
+      "n": 24,
+      "question_query": "toys",
+      "answer_query": "cowboy hat",
+      "match": []
+    },
+    {
+      "n": 25,
+      "question_query": "birds flying",
+      "answer_query": "white dove",
+      "match": []
+    },
+    {
+      "n": 26,
+      "question_query": "safari animals",
+      "answer_query": "giraffe",
+      "match": []
+    },
+    {
+      "n": 27,
+      "question_query": "guitar",
+      "answer_query": "guitar strings",
+      "match": []
+    },
+    {
+      "n": 28,
+      "question_query": "canada flag",
+      "answer_query": "ottawa",
+      "match": []
+    },
+    {
+      "n": 29,
+      "question_query": "spaceship",
+      "answer_query": "lightsaber",
+      "match": []
+    },
+    {
+      "n": 30,
+      "question_query": "running animal",
+      "answer_query": "cheetah running",
+      "match": []
+    },
+    {
+      "n": 31,
+      "question_query": "bee flower",
+      "answer_query": "honey dripping",
+      "match": []
+    },
+    {
+      "n": 32,
+      "question_query": "liquid metal",
+      "answer_query": "thermometer",
+      "match": []
+    },
+    {
+      "n": 33,
+      "question_query": "globe spinning",
+      "answer_query": "earth rotating",
+      "match": []
+    },
+    {
+      "n": 34,
+      "question_query": "teeth cartoon",
+      "answer_query": "tooth cartoon",
+      "match": []
+    },
+    {
+      "n": 35,
+      "question_query": "rat cartoon",
+      "answer_query": "chef cooking cartoon",
+      "match": []
+    },
+    {
+      "n": 36,
+      "question_query": "egypt pyramids",
+      "answer_query": "pyramid",
+      "match": []
+    },
+    {
+      "n": 37,
+      "question_query": "ants",
+      "answer_query": "antarctica penguins",
+      "match": []
+    },
+    {
+      "n": 38,
+      "question_query": "planet rotating",
+      "answer_query": "uranus planet",
+      "match": []
+    },
+    {
+      "n": 39,
+      "question_query": "x-ray",
+      "answer_query": "skeleton leg",
+      "match": []
+    },
+    {
+      "n": 40,
+      "question_query": "oscar trophy",
+      "answer_query": "ship ocean",
+      "match": []
+    },
+    {
+      "n": 41,
+      "question_query": "world map",
+      "answer_query": "vatican",
+      "match": []
+    },
+    {
+      "n": 42,
+      "question_query": "chemistry science",
+      "answer_query": "banana",
+      "match": []
+    },
+    {
+      "n": 43,
+      "question_query": "speech bubble",
+      "answer_query": "china flag",
+      "match": []
+    },
+    {
+      "n": 44,
+      "question_query": "sun space",
+      "answer_query": "sunrise earth",
+      "match": []
+    },
+    {
+      "n": 45,
+      "question_query": "fingerprint",
+      "answer_query": "koala",
+      "match": []
+    },
+    {
+      "n": 46,
+      "question_query": "new zealand",
+      "answer_query": "wellington",
+      "match": []
+    },
+    {
+      "n": 47,
+      "question_query": "ancient ruins",
+      "answer_query": "great pyramid giza",
+      "match": []
+    },
+    {
+      "n": 48,
+      "question_query": "film reel",
+      "answer_query": "red apple",
+      "match": []
+    },
+    {
+      "n": 49,
+      "question_query": "clocks",
+      "answer_query": "russia",
+      "match": []
+    },
+    {
+      "n": 50,
+      "question_query": "alphabet letters",
+      "answer_query": "letter q",
+      "match": []
+    }
+  ]
+}
