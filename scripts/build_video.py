@@ -17,6 +17,7 @@ and build_report.json (timeline and warnings).
 import argparse
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -157,6 +158,44 @@ def make_line(lid, kind, caption, **extra):
     return {"id": lid, "kind": kind, "caption": caption, "text": say_numbers(caption), **extra}
 
 
+def checkpoint_line(n, total, cfg):
+    """The score-check line after question n, if any (config/video.json `checkpoint`); never after the last."""
+    cp = cfg.get("checkpoint") or {}
+    every = cp.get("every") or 0
+    if not every or n % every or n >= total:
+        return None
+    return (cp.get("lines") or {}).get(str(n))
+
+
+def checkpoint_card(frame, out, headline, n, good, size, total=None):
+    """A score-check card: the previous answer frame blurred and darkened, with the headline and score line in the
+    thumbnail fonts (scripts/make_thumbnails.py), white with a soft shadow."""
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont
+    w, h = size
+    bg = Image.open(frame).convert("RGB").resize((w, h)).filter(ImageFilter.GaussianBlur(w // 60))
+    bg = Image.blend(bg, Image.new("RGB", (w, h), (12, 18, 40)), 0.55)
+    sans = os.environ.get("THUMB_SANS", "/usr/share/fonts/truetype/google-fonts/NunitoSans-Bold.ttf")
+    def font(px):
+        for f in (sans, "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"):
+            try:
+                return ImageFont.truetype(f, px)
+            except OSError:
+                continue
+        return ImageFont.load_default()
+    d = ImageDraw.Draw(bg)
+    rows = [(headline, font(h // 6), (255, 213, 0)), (f"{n} down, {total - n} to go" if total else f"{n} down", font(h // 11), (255, 255, 255)),
+            (f"{good}+ correct = brilliant!", font(h // 11), (255, 255, 255))]
+    heights = [d.textbbox((0, 0), t, font=f)[3] for t, f, _ in rows]
+    y = (h - sum(heights) - h // 20 * (len(rows) - 1)) // 2
+    for (text, f, colour), rh in zip(rows, heights):
+        tw = d.textbbox((0, 0), text, font=f)[2]
+        x = (w - tw) // 2
+        d.text((x + h // 160, y + h // 120), text, font=f, fill=(0, 0, 0))
+        d.text((x, y), text, font=f, fill=colour)
+        y += rh + h // 20
+    bg.save(out)
+
+
 def build_script(quiz, cfg):
     s = cfg["script"]
     qs = quiz["questions"]
@@ -171,6 +210,9 @@ def build_script(quiz, cfg):
         lines.append(make_line(f"q{n:02d}", "question", s["question"].format(n=n, question=clean(q["question"])), n=n))
         lines.append(make_line(f"a{n:02d}", "answer",
                                s["answer"].format(answer=answer, reveal=clean(q.get("reveal", ""))), n=n))
+        cp = checkpoint_line(n, len(qs), cfg)
+        if cp:
+            lines.append(make_line(f"cp{n:02d}", "checkpoint", cp["text"], n=n, good=cp["good"]))
     for i, part in enumerate(s["outro"], 1):
         lines.append(make_line(f"outro{i}", "outro", part["text"], at=part["at"]))
     return lines
@@ -511,6 +553,18 @@ def main():
         # answer page: as long as the voice needs (at least answer_min), looping the GIF if short
         a_need = max(vcfg["answer_start"] + vlen[aid] + vcfg["answer_tail"], vcfg["answer_min"])
         add(args.slides, as_, ae - as_, a_need, "loop", [(aid, vcfg["answer_start"])], aid)
+        cid = f"cp{n:02d}"
+        if cid in vo:  # score-check card (config checkpoint)
+            frame = work / f"{cid}-frame.png"
+            ffmpeg("-ss", f"{max(as_, ae - 0.2):.3f}", "-i", args.slides, "-frames:v", "1", frame)
+            card = work / f"{cid}.png"
+            line = next(l for l in lines if l["id"] == cid)
+            checkpoint_card(frame, card, cfg["checkpoint"].get("headline", "SCORE CHECK"), n, line["good"],
+                            (cfg["width"], cfg["height"]), total=n_q)
+            still = work / f"{cid}-still.mp4"
+            ffmpeg("-loop", "1", "-i", card, "-t", "1", "-r", str(cfg["fps"]), "-pix_fmt", "yuv420p", still)
+            c_need = max(cfg["checkpoint"].get("min_seconds", 4.0), 0.4 + vlen[cid] + 0.8)
+            add(still, 0, 1, c_need, "hold", [(cid, 0.4)], cid)
     d = duration(args.outro)
     outro_cues, t_free = [], 0.0
     for line in (l for l in lines if l["kind"] == "outro"):

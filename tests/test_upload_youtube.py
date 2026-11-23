@@ -79,3 +79,14 @@ class PlaylistTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FormatGateTests(unittest.TestCase):
+    def test_score_check_videos_wait_for_giulia(self):
+        quiz = {"id": "quiz-16", "review": {"video": {"decision": "approved"}}}
+        report = {"segments": [{"name": "q10"}, {"name": "cp10"}]}
+        self.assertIn("Giulia", up.format_gate(quiz, report, {"checkpoint_format_signed_off": False}))
+        quiz["review"]["video"]["giulia_approved"] = True
+        self.assertIsNone(up.format_gate(quiz, report, {}))
+        self.assertIsNone(up.format_gate({"id": "q"}, {"segments": [{"name": "q1"}]}, {}))
+        self.assertIsNone(up.format_gate({"id": "q"}, report, {"checkpoint_format_signed_off": True}))

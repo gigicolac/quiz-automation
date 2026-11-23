@@ -193,5 +193,7 @@
     "Do You REALLY Know {series}? Most People Can't Score 40/{count} 🧠 | Quiz #{number}",
     "How Well Do You REALLY Know {series}? 🤔 Only True Fans Score 40+ | Quiz #{number}",
     "You Don't REALLY Know {series} Until You Pass This Quiz 🧠 {count} Questions | Quiz #{number}"
-  ]
+  ],
+  "_checkpoint_format_signed_off": "Giulia asked (23 Nov 2026) to approve the first video with score-check cards before it uploads. While false, scripts/upload_youtube.py refuses a video with cpNN segments unless quiz.json review.video.giulia_approved is true. Set true once she has approved the format.",
+  "checkpoint_format_signed_off": false
 }

@@ -49,6 +49,18 @@ def chapters(report):
     return "\n".join(f"{t} {label}" for t, label in out)
 
 
+def format_gate(quiz, report, cfg):
+    """Giulia approves the first video with score-check cards herself (23 Nov 2026). Until config
+    `checkpoint_format_signed_off` is true, a video with cpNN segments needs review.video.giulia_approved."""
+    has_cp = any(s.get("name", "").startswith("cp") for s in report.get("segments", []))
+    if not has_cp or cfg.get("checkpoint_format_signed_off"):
+        return None
+    if quiz.get("review", {}).get("video", {}).get("giulia_approved") is True:
+        return None
+    return (f"{quiz['id']}: first videos with score-check cards wait for Giulia's own approval "
+            "(review.video.giulia_approved); not uploading.")
+
+
 def taken_slots(quizzes_dir, skip):
     taken = set()
     for f in Path(quizzes_dir).glob("*/upload.json"):
@@ -347,6 +359,9 @@ def main():
     review = quiz.get("review", {}).get("video", {})
     if review.get("decision") != "approved":
         raise SystemExit(f"{quiz['id']}: final video is not approved in quiz.json; not uploading.")
+    gate = format_gate(quiz, report, cfg)
+    if gate:
+        raise SystemExit(gate)
     record_path = qdir / "upload.json"
     record = json.loads(record_path.read_text()) if record_path.exists() else {}
     if args.mode == "update":

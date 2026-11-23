@@ -55,7 +55,7 @@ One branch per quiz: `claude/quiz-NN` from current `origin/main`. Copy the shape
     - **varied**: Q1 a near-certain "yes!", Q2 a famous one with a fun reveal, Q3 a "did you know?" twist that makes people want the next answer;
     - **short**: under 12 words each, so the countdown starts fast.
     - What held best so far: #9's opener (general knowledge, 60% still watching at Q3) vs #13's (2000s pop culture, 50%) and #10's (hard Disney, 33%). Note in `quiz.json` `review.questions` how Q1–3 follow these rules.
-  - **Keep people watching past 6 minutes** (Giulia's goal: average viewing of at least 6 minutes). Around Q8–12 put the most recognisable picture question of the quiz, and spread "wow" reveals evenly so no stretch of 5 questions is all hard. A score-checkpoint card every 10 questions is being added to the build (Giulia approved it on 23 Nov); her approval of the first video with it comes before that quiz is uploaded.
+  - **Keep people watching past 6 minutes** (Giulia's goal: average viewing of at least 6 minutes). Around Q8–12 put the most recognisable picture question of the quiz, and spread "wow" reveals evenly so no stretch of 5 questions is all hard. The build adds a voiced "SCORE CHECK" card after Q10, Q20, Q30 and Q40 (config/video.json `checkpoint`; Giulia approved the idea on 23 Nov). It is made in code, not in the Canva master.
   - **Movie questions in every quiz** (Giulia, 23 Nov: movie Shorts perform best). General Knowledge and Pop Culture quizzes include 6–8 movie questions spread through the 50 (one in most groups of 7), so every Short has at least one.
   - Question types from the 1M+ research: famous facts "everyone should know", with a picture people recognise on sight.
   - Each fact is checked against a reliable source; leave a question out if in doubt.
@@ -113,10 +113,12 @@ When a build succeeds:
    - The heading and hook are both full width and readable.
    - The fonts are Nunito Sans Bold and Tinos Italic.
    - The pictures are suitable.
-4. **Approve:** record `review.video` in `quiz.json`, in the same format as quiz-10:
-   - decision `approved`, by, date
-   - **evidence:** run ID, the numbers above, and which frames you looked at
-   - `source_commit`, `duration_s`, `release_tag`
+4. **Approve:** record `review.video` in `quiz.json`, in the same format as quiz-10.
+   - **Score-check format not yet signed off** (config/youtube.json `checkpoint_format_signed_off` is false): Giulia approves the first videos with score-check cards herself. Check the cpNN frames too, then record decision `awaiting_giulia` (not `approved`, so the daily upload skips it), merge, and email Giulia the video link with timestamps of the four cards. When she says yes: set decision `approved` and `giulia_approved: true` with her words and date, and set `checkpoint_format_signed_off` to true in a pipeline PR. `upload_youtube.py` refuses a video with cpNN segments until one of those is true.
+   - Fields:
+     - decision `approved`, by, date
+     - **evidence:** run ID, the numbers above, and which frames you looked at
+     - `source_commit`, `duration_s`, `release_tag`
 5. **PR:** open a pull request for the branch. It must change files in `quizzes/quiz-NN/` only. Then:
    - run `python -m unittest discover -s tests`
    - **merge** under Giulia's standing authorisation (AGENTS.md), saying so in the PR description with the run and checks

@@ -25,6 +25,39 @@ class ScriptTests(unittest.TestCase):
         self.assertIn("Quiz number 9", lines[0]["caption"])
 
 
+class CheckpointTests(unittest.TestCase):
+    def setUp(self):
+        self.cfg = json.loads((ROOT / "config" / "video.json").read_text())
+        self.quiz = {"number": 16, "series": "General Knowledge", "questions": [
+            {"n": i, "question": f"Q{i}?", "answer": "Yes", "reveal": ""} for i in range(1, 51)]}
+
+    def test_score_checks_after_every_tenth_answer_but_not_the_last(self):
+        lines = bv.build_script(self.quiz, self.cfg)
+        ids = [l["id"] for l in lines]
+        self.assertEqual([i for i in ids if i.startswith("cp")], ["cp10", "cp20", "cp30", "cp40"])
+        self.assertEqual(ids[ids.index("a10") + 1], "cp10")
+        self.assertEqual(ids[ids.index("cp10") + 1], "q11")
+        cp = lines[ids.index("cp10")]
+        self.assertEqual(cp["good"], 8)
+        self.assertIn("8 or more", cp["caption"])
+        self.assertIn("eight or more", cp["text"])
+
+    def test_no_checkpoints_when_disabled_or_short(self):
+        cfg = dict(self.cfg, checkpoint={"every": 0})
+        self.assertFalse([l for l in bv.build_script(self.quiz, cfg) if l["kind"] == "checkpoint"])
+        short = dict(self.quiz, questions=self.quiz["questions"][:10])
+        self.assertFalse([l for l in bv.build_script(short, self.cfg) if l["kind"] == "checkpoint"])
+
+    def test_card_renders(self):
+        import tempfile
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            frame, out = Path(tmp) / "f.png", Path(tmp) / "c.png"
+            Image.new("RGB", (640, 360), (200, 80, 40)).save(frame)
+            bv.checkpoint_card(frame, out, "SCORE CHECK", 10, 8, (640, 360))
+            self.assertEqual(Image.open(out).size, (640, 360))
+
+
 class NumberTests(unittest.TestCase):
     def test_numbers_become_words(self):
         self.assertEqual(bv.say_numbers("around 130 seeds"), "around one hundred and thirty seeds")
