@@ -1,0 +1,99 @@
+{
+  "quiz": "quiz-14",
+  "shorts": {
+    "1": {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-14-short-1.jpg",
+        "playlist": {
+          "id": "PLBCjuAjENH0Y",
+          "title": "TV Show Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-19T00:00:00Z",
+      "problems": "0:00 What kind of house does SpongeBob SquarePants live in, under the sea?\n0:20 In Tom and Jerry, what kind of animal is Jerry?\n0:41 Which famous question does Bugs Bunny ask while munching a carrot?\n1:01 What is the name of Ash's yellow electric Pokémon best friend?\n1:20 In Peppa Pig, what is the name of Peppa's little brother?\n1:40 What breed of dog is Scooby-Doo?\n1:58 What is the Teenage Mutant Ninja Turtles' favourite food?",
+      "video_id": "CxhTmqXtvMg",
+      "url": "https://youtube.com/shorts/CxhTmqXtvMg",
+      "title": "How much do you REALLY know? 🤔 TV Quiz #14",
+      "description": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?\n\nThis is just a taste of this week's TV Quiz #14, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/4B3omWtv5Lc\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #tv #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-24T06:22:32Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/4B3omWtv5Lc.",
+        "Playlist: check it is in 'TV Show Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-26T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Thu 26 Nov 2026 18:00 EST",
+        "Sydney": "Fri 27 Nov 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-14-short-2.jpg",
+        "playlist": {
+          "id": "PLBCjuAjENH0Y",
+          "title": "TV Show Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-18T00:00:00Z",
+      "problems": "0:00 In which town do The Simpsons live?\n0:17 Which day of the week does Garfield the cat famously hate?\n0:36 What does Popeye the Sailor eat to become super strong?\n0:56 Which Australian cartoon follows a Blue Heeler puppy and her little sister, Bingo?\n1:16 What is the name of the Scooby-Doo gang's colourful van?\n1:34 What is the name of the Flintstones' Stone Age hometown?\n1:55 Which Looney Tunes cat is forever trying to catch Tweety Bird?",
+      "video_id": "NxiOu2wZ3sY",
+      "url": "https://youtube.com/shorts/NxiOu2wZ3sY",
+      "title": "Can you beat the average score? 🧠 TV Quiz #14",
+      "description": "Sneak peek 👀 7 questions. Can you beat the average score?\n\nThis is just a taste of this week's TV Quiz #14, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/4B3omWtv5Lc\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #tv #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-24T06:22:38Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/4B3omWtv5Lc.",
+        "Playlist: check it is in 'TV Show Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-27T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Fri 27 Nov 2026 18:00 EST",
+        "Sydney": "Sat 28 Nov 2026 10:00 AEDT"
+      }
+    }
+  }
+}

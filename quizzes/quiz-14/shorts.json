@@ -1,0 +1,17 @@
+{
+  "_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+  "full_quiz_video_id": "4B3omWtv5Lc",
+  "series_tag": "tv",
+  "shorts": {
+    "1": {
+      "title": "How much do you REALLY know? 🤔 TV Quiz #14",
+      "opening": "Sneak peek 👀 7 questions, five seconds each. How much do you REALLY know?",
+      "pattern": "config default"
+    },
+    "2": {
+      "title": "Can you beat the average score? 🧠 TV Quiz #14",
+      "opening": "Sneak peek 👀 7 questions. Can you beat the average score?",
+      "pattern": "config default"
+    }
+  }
+}
