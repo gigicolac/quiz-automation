@@ -29,6 +29,15 @@
   "questions": {
    "decision": "auto-approved",
    "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Pop Culture rotation slot (2nd in performance_rank), seasonal for the 29 Nov release. Medium; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led; Q1 near-certain (Rudolph's red nose), Q2 famous with a fun reveal (the Grinch's heart), Q3 a 'did you know?' twist (Germany / Prince Albert). Most recognisable picture at Q10 (Gingerbread Man). 8 movie questions (Q5, 8, 11, 15, 20, 24, 28, 32). Family-friendly. GIF searches use cartoons and objects; no actors or singers."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-24",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 45283387089 (rebuild after the 24 Nov GIF fixes for Q3, Q7, Q14, Q25, Q32, Q34, Q38 and A27) succeeded: 4K 3840x2160, 944.3 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -35.8 dB, peak -0.3 dB; one minor warning (outro2 starts 0.1 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: cartoons, animation, Muppets, animals, flags, objects and scenery; no close-up real faces or unsuitable content. Continuous 1 fps strips checked for Q05, Q37/A30 and Q46: Q05 (remote-control jet) shows a man in sunglasses riding the model at mid-distance, mostly in profile or from behind; Q37 and A30 show a distant figure with a flag whose face is hidden by hair; Q46 is a staged Nutcracker ballet with costumed dancers at a distance. All judged acceptable under the runbook's distant-figure rule. Spot-checked full frames: intro, Q01/A01, Q25/A25 and outro; text fits its boxes. Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage of cartoons, animals, flags and Muppets suitable.",
+   "source_commit": "09dbe3a",
+   "duration_s": 944.33,
+   "release_tag": "quiz-18-preview-40"
   }
  },
  "questions": [
