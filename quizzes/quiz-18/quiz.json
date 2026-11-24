@@ -1,0 +1,353 @@
+{
+ "id": "quiz-18",
+ "number": 18,
+ "series": "Christmas",
+ "category": "Pop Culture",
+ "topic": "Christmas (films, songs and traditions)",
+ "difficulty": "medium",
+ "title": "How Well Do You REALLY Know Christmas? 🎄 50 Christmas Trivia Questions | Christmas Quiz #18",
+ "title_b_variant": "Think You REALLY Know {series}? 🤔 Prove It in {count} Questions | Quiz #{number}",
+ "description_hook": "🎄 From the Grinch to the Polar Express: 50 Christmas questions that'll sort the Santa's helpers from the Scrooges.",
+ "thumbnail_tagline": "Only REAL fans would know",
+ "tags": [
+  "christmas quiz",
+  "christmas trivia",
+  "christmas quiz with answers",
+  "christmas quiz for adults",
+  "christmas quiz game",
+  "christmas movie quiz",
+  "christmas quiz songs",
+  "christmas trivia questions",
+  "christmas quiz for kids",
+  "xmas quiz",
+  "holiday quiz",
+  "pop culture quiz"
+ ],
+ "tags_research": "23 Nov 2026: vidIQ out of credits (4 left), and the Google suggest endpoint is blocked from the cloud shell, so YouTube autocomplete via TubeAlfred for 'christmas quiz' (for kids, with answers, game, songs, for adults, music). Seasonal 1M+ pattern (docs/competitor-research.md); Quiz Blitz 'How much do you know about CHRISTMAS?' 103k in 7 days.",
+ "status": "questions_written",
+ "review": {
+  "questions": {
+   "decision": "auto-approved",
+   "note": "Giulia, 6 and 10 Nov 2026: no approval stops; fully automated. Written and fact-checked by Claude 23 Nov 2026 (weekly run). Pop Culture rotation slot (2nd in performance_rank), seasonal for the 29 Nov release. Medium; hardest Q36-50. Q1-3 follow the first-3 rules (23 Nov): under 12 words, picture-led; Q1 near-certain (Rudolph's red nose), Q2 famous with a fun reveal (the Grinch's heart), Q3 a 'did you know?' twist (Germany / Prince Albert). Most recognisable picture at Q10 (Gingerbread Man). 8 movie questions (Q5, 8, 11, 15, 20, 24, 28, 32). Family-friendly. GIF searches use cartoons and objects; no actors or singers."
+  },
+  "video": {
+   "decision": "approved",
+   "by": "Claude (automated, per Giulia)",
+   "date": "2026-11-24",
+   "evidence": "Giulia, 6 and 10 Nov 2026: no approval stops; standing authorisation for quiz-only PRs. Build video run 45283387089 (rebuild after the 24 Nov GIF fixes for Q3, Q7, Q14, Q25, Q32, Q34, Q38 and A27) succeeded: 4K 3840x2160, 944.3 s, 50 question and 50 answer segments plus intro, rules and outro, voice -20.0 dB RMS, music -35.8 dB, peak -0.3 dB; one minor warning (outro2 starts 0.1 s late). Claude checked all 100 GIF slots at three points each (start + 1 s, middle, end - 1 s), cropped and tiled into four sheets of 25: cartoons, animation, Muppets, animals, flags, objects and scenery; no close-up real faces or unsuitable content. Continuous 1 fps strips checked for Q05, Q37/A30 and Q46: Q05 (remote-control jet) shows a man in sunglasses riding the model at mid-distance, mostly in profile or from behind; Q37 and A30 show a distant figure with a flag whose face is hidden by hair; Q46 is a staged Nutcracker ballet with costumed dancers at a distance. All judged acceptable under the runbook's distant-figure rule. Spot-checked full frames: intro, Q01/A01, Q25/A25 and outro; text fits its boxes. Thumbnails A and B checked: heading and hook full width in Nunito Sans Bold / Tinos Italic, collage of cartoons, animals, flags and Muppets suitable.",
+   "source_commit": "09dbe3a",
+   "duration_s": 944.33,
+   "release_tag": "quiz-18-preview-40"
+  }
+ },
+ "questions": [
+  {
+   "n": 1,
+   "question": "What colour is Rudolph's famous nose?",
+   "answer": "Red! 🔴",
+   "reveal": "Rudolph first appeared in a 1939 booklet given away by a US department store."
+  },
+  {
+   "n": 2,
+   "question": "Which green character tries to steal Christmas?",
+   "answer": "The Grinch! 💚",
+   "reveal": "Dr. Seuss wrote that his heart was 'two sizes too small'."
+  },
+  {
+   "n": 3,
+   "question": "Which country started the Christmas tree tradition?",
+   "answer": "Germany! 🎄",
+   "reveal": "Queen Victoria's German husband, Prince Albert, made it popular in Britain."
+  },
+  {
+   "n": 4,
+   "question": "Counting Rudolph, how many reindeer pull Santa's sleigh?",
+   "answer": "Nine! 🦌",
+   "reveal": "Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner, Blitzen and Rudolph."
+  },
+  {
+   "n": 5,
+   "question": "In Home Alone, where is Kevin's family flying to?",
+   "answer": "Paris! ✈️",
+   "reveal": "In Home Alone 2, Kevin ends up in New York instead.",
+   "movie": true
+  },
+  {
+   "n": 6,
+   "question": "What do people traditionally kiss under at Christmas?",
+   "answer": "Mistletoe! 🌿",
+   "reveal": "The tradition goes back hundreds of years in Britain."
+  },
+  {
+   "n": 7,
+   "question": "In The Twelve Days of Christmas, what is given on day one?",
+   "answer": "A partridge in a pear tree! 🍐",
+   "reveal": "The song was first printed in England in 1780."
+  },
+  {
+   "n": 8,
+   "question": "In the film Elf, which city does Buddy travel to?",
+   "answer": "New York City! 🗽",
+   "reveal": "He was raised at the North Pole by Santa's elves.",
+   "movie": true
+  },
+  {
+   "n": 9,
+   "question": "Which snowman comes to life in a famous Christmas song?",
+   "answer": "Frosty! ⛄",
+   "reveal": "Frosty the Snowman became a hit song in 1950."
+  },
+  {
+   "n": 10,
+   "question": "Which biscuit runs away shouting 'You can't catch me'?",
+   "answer": "The Gingerbread Man! 🍪",
+   "reveal": "In the old folk tale, a clever fox finally catches him."
+  },
+  {
+   "n": 11,
+   "question": "In The Polar Express, where does the train take the boy?",
+   "answer": "The North Pole! 🚂",
+   "reveal": "Tom Hanks played six different roles in the film.",
+   "movie": true
+  },
+  {
+   "n": 12,
+   "question": "Which country does the poinsettia flower come from?",
+   "answer": "Mexico! 🌺",
+   "reveal": "It's named after Joel Poinsett, the first US ambassador to Mexico."
+  },
+  {
+   "n": 13,
+   "question": "In A Christmas Carol, what is Scrooge's first name?",
+   "answer": "Ebenezer! 🎩",
+   "reveal": "Charles Dickens wrote the story in about six weeks in 1843."
+  },
+  {
+   "n": 14,
+   "question": "On what date is Boxing Day?",
+   "answer": "26 December! 🎁",
+   "reveal": "It's the day after Christmas Day."
+  },
+  {
+   "n": 15,
+   "question": "What is the name of the Grinch's dog?",
+   "answer": "Max! 🐶",
+   "reveal": "Max is dressed up as a reindeer in the story.",
+   "movie": true
+  },
+  {
+   "n": 16,
+   "question": "What do children in France call Santa?",
+   "answer": "Père Noël! 🎅",
+   "reveal": "His name means 'Father Christmas'."
+  },
+  {
+   "n": 17,
+   "question": "Which of Santa's reindeer is named after the Roman god of love?",
+   "answer": "Cupid! 💘",
+   "reveal": "Cupid's arrows were said to make people fall in love."
+  },
+  {
+   "n": 18,
+   "question": "Where did the real Saint Nicholas live?",
+   "answer": "Turkey! 🇹🇷",
+   "reveal": "He was a bishop in Myra, in modern-day Turkey, in the 300s."
+  },
+  {
+   "n": 19,
+   "question": "What is the best-selling single of all time?",
+   "answer": "White Christmas! ❄️",
+   "reveal": "Bing Crosby's version is estimated to have sold over 50 million copies."
+  },
+  {
+   "n": 20,
+   "question": "Which Muppet plays Bob Cratchit in The Muppet Christmas Carol?",
+   "answer": "Kermit the Frog! 🐸",
+   "reveal": "Miss Piggy plays his wife, Emily Cratchit.",
+   "movie": true
+  },
+  {
+   "n": 21,
+   "question": "Apart from a toy and a joke, what's inside a Christmas cracker?",
+   "answer": "A paper crown! 👑",
+   "reveal": "London sweet maker Tom Smith invented crackers in the 1840s."
+  },
+  {
+   "n": 22,
+   "question": "What US military command tracks Santa on Christmas Eve?",
+   "answer": "NORAD! 📡",
+   "reveal": "It began in 1955 after a newspaper misprinted a phone number."
+  },
+  {
+   "n": 23,
+   "question": "Which spiky-leaved plant with red berries decorates Christmas cards?",
+   "answer": "Holly! 🌿",
+   "reveal": "Only female holly plants grow the red berries."
+  },
+  {
+   "n": 24,
+   "question": "In How the Grinch Stole Christmas, what is the town called?",
+   "answer": "Whoville! 🏘️",
+   "reveal": "The Grinch lives on a mountain called Mount Crumpit.",
+   "movie": true
+  },
+  {
+   "n": 25,
+   "question": "Which country gives London's Trafalgar Square tree every year?",
+   "answer": "Norway! 🇳🇴",
+   "reveal": "It has been a thank-you for Britain's help in World War II since 1947."
+  },
+  {
+   "n": 26,
+   "question": "What do children leave out for Santa's reindeer?",
+   "answer": "Carrots! 🥕",
+   "reveal": "And milk and cookies, or a mince pie, for Santa himself."
+  },
+  {
+   "n": 27,
+   "question": "Which Christmas song was the first ever played in space?",
+   "answer": "Jingle Bells! 🔔",
+   "reveal": "Astronauts on Gemini 6 played it on a harmonica and bells in 1965."
+  },
+  {
+   "n": 28,
+   "question": "Who is the Pumpkin King in The Nightmare Before Christmas?",
+   "answer": "Jack Skellington! 🎃",
+   "reveal": "He's from Halloween Town but falls in love with Christmas.",
+   "movie": true
+  },
+  {
+   "n": 29,
+   "question": "What is the name of Santa's wife?",
+   "answer": "Mrs Claus! 🤶",
+   "reveal": "She first appeared in an 1849 story."
+  },
+  {
+   "n": 30,
+   "question": "In which country is Lapland's Santa Claus Village?",
+   "answer": "Finland! 🇫🇮",
+   "reveal": "It sits right on the Arctic Circle in Rovaniemi."
+  },
+  {
+   "n": 31,
+   "question": "What three gifts did the wise men bring?",
+   "answer": "Gold, frankincense, myrrh! 🎁",
+   "reveal": "This is why many people give presents at Christmas."
+  },
+  {
+   "n": 32,
+   "question": "Which film has the line 'Every time a bell rings, an angel gets his wings'?",
+   "answer": "It's a Wonderful Life! 🔔",
+   "reveal": "The film came out in 1946.",
+   "movie": true
+  },
+  {
+   "n": 33,
+   "question": "When you eat a Yule log, what is it made of?",
+   "answer": "Chocolate cake! 🍫",
+   "reveal": "It's a rolled sponge decorated to look like a log."
+  },
+  {
+   "n": 34,
+   "question": "Whose 1930s adverts helped make Santa's red suit famous?",
+   "answer": "Coca-Cola's! 🥤",
+   "reveal": "Haddon Sundblom painted their Santas from 1931, but red Santas existed before."
+  },
+  {
+   "n": 35,
+   "question": "In which language is the song 'Feliz Navidad'?",
+   "answer": "Spanish! 🇪🇸",
+   "reveal": "José Feliciano wrote it in 1970."
+  },
+  {
+   "n": 36,
+   "question": "In which year was the first Christmas card sent?",
+   "answer": "1843! 💌",
+   "reveal": "Sir Henry Cole had 1,000 printed in London."
+  },
+  {
+   "n": 37,
+   "question": "Which reindeer's name means 'thunder'?",
+   "answer": "Donner! ⚡",
+   "reveal": "And Blitzen means 'lightning'."
+  },
+  {
+   "n": 38,
+   "question": "What was the original title of 'Twas the Night Before Christmas'?",
+   "answer": "A Visit from St. Nicholas! 🎅",
+   "reveal": "The poem was first printed, without a name, in 1823."
+  },
+  {
+   "n": 39,
+   "question": "How many gifts are given in total in The Twelve Days of Christmas?",
+   "answer": "364! 🎁",
+   "reveal": "That's almost one for every day of the year."
+  },
+  {
+   "n": 40,
+   "question": "In which country do children leave out shoes for Sinterklaas?",
+   "answer": "The Netherlands! 👞",
+   "reveal": "He arrives by steamboat in mid-November."
+  },
+  {
+   "n": 41,
+   "question": "What is the name of the Christmas witch who brings gifts in Italy?",
+   "answer": "La Befana! 🧹",
+   "reveal": "She flies on her broomstick on the night of 5 January."
+  },
+  {
+   "n": 42,
+   "question": "In which country is KFC a Christmas tradition?",
+   "answer": "Japan! 🍗",
+   "reveal": "It began with a 'Kentucky for Christmas' campaign in 1974."
+  },
+  {
+   "n": 43,
+   "question": "What colour are mistletoe berries?",
+   "answer": "White! ⚪",
+   "reveal": "They're poisonous, so keep them away from pets."
+  },
+  {
+   "n": 44,
+   "question": "Which Christmas carol was first sung in Austria in 1818?",
+   "answer": "Silent Night! 🌙",
+   "reveal": "It was first played on a guitar in the village of Oberndorf."
+  },
+  {
+   "n": 45,
+   "question": "Which country builds a giant straw goat each Christmas?",
+   "answer": "Sweden! 🐐",
+   "reveal": "The Gävle Goat is about 13 metres tall."
+  },
+  {
+   "n": 46,
+   "question": "Which ballet is set on Christmas Eve?",
+   "answer": "The Nutcracker! 🩰",
+   "reveal": "Tchaikovsky's ballet premiered in Russia in 1892."
+  },
+  {
+   "n": 47,
+   "question": "In the song, what brings Frosty the Snowman to life?",
+   "answer": "A magic hat! 🎩",
+   "reveal": "In the song, it's an old silk hat."
+  },
+  {
+   "n": 48,
+   "question": "Which Latin word meaning 'birth' gives us 'Noël'?",
+   "answer": "Natalis! 🎂",
+   "reveal": "It also gives us words like 'natal' and 'nativity'."
+  },
+  {
+   "n": 49,
+   "question": "In which year did 'All I Want for Christmas Is You' first come out?",
+   "answer": "1994! 🎶",
+   "reveal": "It finally reached No. 1 in the US 25 years later, in 2019."
+  },
+  {
+   "n": 50,
+   "question": "On Christmas Day 1914, what did many WWI soldiers do?",
+   "answer": "Stopped fighting! 🕊️",
+   "reveal": "Some swapped gifts and even played football together."
+  }
+ ]
+}
