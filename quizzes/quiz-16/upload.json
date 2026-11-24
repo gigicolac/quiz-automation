@@ -1,0 +1,52 @@
+{
+  "quiz": "quiz-16",
+  "channel": {
+    "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+    "title": "One More Quiz!"
+  },
+  "status": "scheduled",
+  "started_at": "2026-11-24T05:09:13.365551+00:00",
+  "title": "How Well Do You REALLY Know General Knowledge? 🧠 50 Questions Everyone Should Know | Quiz #16",
+  "intended_publish_at": "2026-11-26T20:00:00Z",
+  "publish_at_local": {
+    "US Eastern": "Thu 26 Nov 2026 15:00 EST",
+    "Sydney": "Fri 27 Nov 2026 07:00 AEDT"
+  },
+  "release_tag": "quiz-16-preview-36",
+  "playlist": "General Knowledge Quizzes",
+  "problems": "0:19 Which animal is known as the King of the Jungle?\n0:39 What do pandas spend most of their day eating?\n0:58 What colour is a polar bear's skin?\n1:16 How many sides does a hexagon have?\n1:32 What is the largest ocean on Earth?\n1:49 Which movie features a clownfish searching for his lost son?\n2:08 Which famous tower in Paris was finished in 1889?\n2:28 What is the only mammal that can truly fly?\n2:47 How many colours are in a rainbow?\n3:06 Which country gave the Statue of Liberty to the USA?\n3:24 What is the hardest natural substance on Earth?\n3:41 Which green ogre lives in a swamp in a 2001 film?\n3:58 What is the capital city of Japan?\n4:18 How many hearts does an octopus have?\n4:33 What is the chemical symbol for gold?\n4:50 What is the largest planet in our solar system?\n5:08 How many players does a soccer team have on the field?\n5:24 In the 1982 film E.T., what does E.T. want to do?\n5:44 What is the national animal of Scotland?\n6:01 Which planet is known as the Red Planet?\n6:20 What is the largest hot desert in the world?\n6:36 How many bones are in the adult human body?\n6:56 In which country did the Olympic Games begin?\n7:14 In Toy Story, what is the name of the cowboy?\n7:34 Which bird is a symbol of peace?\n7:50 What is the tallest animal in the world?\n8:07 How many strings does a standard guitar have?\n8:24 What is the capital city of Canada?\n8:41 Which film series features a spaceship called the Millennium Falcon?\n8:59 What is the fastest land animal?\n9:18 What do bees collect from flowers to make honey?\n9:37 Which metal is a liquid at room temperature?\n9:53 What is the imaginary line around the middle of the Earth?\n10:09 How many teeth does an adult usually have?\n10:25 In which film does a rat named Remy become a chef in Paris?\n10:43 Which country has more pyramids than Egypt?\n11:02 Which is the only continent with no native ants?\n11:19 Which planet spins on its side?\n11:37 What is the longest bone in the human body?\n11:53 Which 1997 film won 11 Oscars, a record shared with Ben-Hur?\n12:12 What is the smallest country in the world?\n12:29 Which element has the chemical symbol K?\n12:48 Which language has the most native speakers?\n13:07 Roughly how long does sunlight take to reach Earth?\n13:25 Which animal has fingerprints almost identical to ours?\n13:42 What is the capital city of New Zealand?\n14:00 Which Wonder of the Ancient World still stands?\n14:18 What was Disney's first feature-length animated film?\n14:36 How many time zones does Russia have?\n14:52 Which letter doesn't appear in any US state's name?",
+  "steps": {
+    "captions": "uploaded",
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PL2ijqZth2mEDrfRkon0zcRDgGIV_ONmzx",
+      "title": "General Knowledge Quizzes",
+      "created": false
+    }
+  },
+  "video_id": "MPS20PeP8f8",
+  "url": "https://youtu.be/MPS20PeP8f8",
+  "upload_completed_at": "2026-11-24T05:09:21Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: General Knowledge Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail, always running on every quiz (Giulia, 16 Nov; never title-only): How Well Do You REALLY Know General Knowledge? 🧠 50 Questions Everyone Should Know | Quiz #16 + thumbnail A | Think You REALLY Know General Knowledge? 🤔 Prove It in 50 Questions | Quiz #16 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-26T20:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-26T20:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-24T05:10:29Z"
+}
