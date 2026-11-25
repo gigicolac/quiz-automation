@@ -1,0 +1,99 @@
+{
+  "quiz": "quiz-15",
+  "shorts": {
+    "1": {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-15-short-1.jpg",
+        "playlist": {
+          "id": "PLWMwCKOBUjSk",
+          "title": "Music Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-19T00:00:00Z",
+      "problems": "0:00 Which pop star is known around the world as the 'King of Pop'?\n0:20 Which instrument has rows of black and white keys?\n0:41 How many members were in The Beatles?\n0:58 Elvis Presley is often called 'the King of' what?\n1:17 What is Michael Jackson's famous dance move that looks like gliding backwards?\n1:39 Which Swedish group sang 'Dancing Queen' and 'Mamma Mia'?\n1:59 Which singer released 'All I Want for Christmas Is You' in 1994?",
+      "video_id": "_yZ1tBZ8Nto",
+      "url": "https://youtube.com/shorts/_yZ1tBZ8Nto",
+      "title": "Can you beat the average score? 🧠 Music Quiz #15",
+      "description": "Sneak peek 👀 7 questions. Can you beat the average score?\n\nThis is just a taste of this week's Music Quiz #15, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/35SpyRfbR1E\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #music #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-25T05:04:01Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/35SpyRfbR1E.",
+        "Playlist: check it is in 'Music Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-28T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sat 28 Nov 2026 18:00 EST",
+        "Sydney": "Sun 29 Nov 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-15-short-2.jpg",
+        "playlist": {
+          "id": "PLWMwCKOBUjSk",
+          "title": "Music Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-18T00:00:00Z",
+      "problems": "0:00 Which British band recorded 'Bohemian Rhapsody'?\n0:18 How many strings does a standard guitar have?\n0:35 What spinning ball, covered in tiny mirrors, hangs above dance floors?\n0:56 Which K-pop group got their first US No. 1 with 'Dynamite' in 2020?\n1:16 Which singer had huge hits with 'Hello' and 'Rolling in the Deep'?\n1:35 Which singer-songwriter had hits with 'Perfect' and 'Thinking Out Loud'?\n1:55 What was Victoria Beckham's nickname in the Spice Girls?",
+      "video_id": "iAnHd9XGFNU",
+      "url": "https://youtube.com/shorts/iAnHd9XGFNU",
+      "title": "No multiple choice. No hints. Can you get them all? 🧠 Music Quiz #15",
+      "description": "Sneak peek 👀 No multiple choice, no hints, five seconds each. Can you get all 7?\n\nThis is just a taste of this week's Music Quiz #15, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/35SpyRfbR1E\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #music #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-25T05:04:08Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/35SpyRfbR1E.",
+        "Playlist: check it is in 'Music Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-29T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sun 29 Nov 2026 18:00 EST",
+        "Sydney": "Mon 30 Nov 2026 10:00 AEDT"
+      }
+    }
+  }
+}
