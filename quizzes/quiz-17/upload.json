@@ -4,7 +4,7 @@
     "id": "UCbP3HMh1h7XAWUruf_M8n7g",
     "title": "One More Quiz!"
   },
-  "status": "transferred",
+  "status": "scheduled",
   "started_at": "2026-11-25T03:57:15.485735+00:00",
   "title": "How Well Do You REALLY Know Pokémon? ⚡ 50 Pokémon Trivia Questions | Pokémon Quiz #17",
   "intended_publish_at": "2026-11-28T18:00:00Z",
@@ -17,9 +17,36 @@
   "problems": "0:19 What is the name of Ash's famous yellow Pokémon?\n0:37 Which ball do trainers throw to catch Pokémon?\n0:54 Which Pokémon is number 1 in the Pokédex?\n1:12 What type of Pokémon is Charmander?\n1:29 What does Pikachu evolve into?\n1:45 Which pink Pokémon sings everyone to sleep?\n2:03 What is the name of Team Rocket's talking cat Pokémon?\n2:22 Which Water-type starter is a small blue turtle?\n2:39 What colour is a shiny Charizard?\n2:56 Which sleepy giant Pokémon blocks the road in Pokémon Red and Blue?\n3:12 How many Pokémon were there in the original games?\n3:33 Which Pokémon evolves into Gyarados?\n3:51 What is the name of Ash's hometown?\n4:09 Which professor gives Ash his first Pokémon?\n4:26 What is the word 'Pokémon' short for?\n4:44 Name a type that's super effective against Water.\n5:02 Which Pokémon does Eevee become with a Water Stone?\n5:22 Which legendary Pokémon is on the cover of Pokémon Silver?\n5:39 What is the name of Ash's first rival in the anime?\n5:55 Which psychic Pokémon is the villain of the first Pokémon film?\n6:12 Which grinning purple Pokémon is a Ghost and Poison type?\n6:31 Who runs the Pokémon Centers in the anime?\n6:49 What is the name of Ash's talking Pokédex in the English dub?\n7:07 In the 2019 film Detective Pikachu, what does Pikachu wear?\n7:25 What does Charmeleon evolve into?\n7:43 How many Gym Badges do you need to enter the Pokémon League?\n8:00 What does Psyduck constantly suffer from?\n8:18 The Galar region is based on which country?\n8:36 Which Pokémon wears a skull and carries a bone?\n8:53 What does Bulbasaur evolve into?\n9:10 Which Electric move is Ash's Pikachu most famous for?\n9:28 In which year did the mobile game Pokémon GO come out?\n9:46 What is Eevee's Electric-type evolution called?\n10:04 Which Fire starter from Pokémon Gold and Silver has flames on its back?\n10:21 Which two Team Rocket members travel with Meowth?\n10:38 What is Pikachu's Pokédex number?\n10:57 Which pink Pokémon can transform into any other Pokémon?\n11:13 Name the three legendary birds of Kanto.\n11:33 What is Eevee's Ice-type evolution called?\n11:49 What item does a Pokémon hold to Mega Evolve?\n12:07 What is the region in Pokémon Scarlet and Violet called?\n12:23 Which legendary Pokémon did Ash see in the very first episode?\n12:41 Which professor gives you your starter in Pokémon Sun and Moon?\n12:58 Which type was added in Pokémon X and Y?\n13:15 What two types is Gyarados?\n13:32 Which Pokémon has the most different evolutions?\n13:49 Which professor hands out starters in Pokémon X and Y?\n14:08 Which Electric-type squirrel comes from Diamond and Pearl?\n14:25 Which Mythical Pokémon from Gen 2 can travel through time?\n14:42 Which Pokémon was the first one ever designed?",
   "steps": {
     "captions": "uploaded",
-    "thumbnail": "thumbnail-a.jpg"
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PLAbKRq-uoNSs",
+      "title": "Pokémon Quizzes",
+      "created": false
+    }
   },
   "video_id": "yyNI3nmC4DQ",
   "url": "https://youtu.be/yyNI3nmC4DQ",
-  "upload_completed_at": "2026-11-25T03:57:25Z"
+  "upload_completed_at": "2026-11-25T03:57:25Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: Pokémon Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail, always running on every quiz (Giulia, 16 Nov; never title-only): How Well Do You REALLY Know Pokémon? ⚡ 50 Pokémon Trivia Questions | Pokémon Quiz #17 + thumbnail A | Think You REALLY Know Pokémon? 🤔 Prove It in 50 Questions | Quiz #17 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-28T18:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-28T18:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-26T03:23:21Z"
 }
