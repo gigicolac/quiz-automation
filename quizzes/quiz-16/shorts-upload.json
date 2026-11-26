@@ -1,0 +1,99 @@
+{
+  "quiz": "quiz-16",
+  "shorts": {
+    "1": {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-16-short-1.jpg",
+        "playlist": {
+          "id": "PL2ijqZth2mEDrfRkon0zcRDgGIV_ONmzx",
+          "title": "General Knowledge Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-24T00:00:00Z",
+      "problems": "0:00 Which movie features a clownfish searching for his lost son?\n0:20 Which green ogre lives in a swamp in a 2001 film?\n0:39 In the 1982 film E.T., what does E.T. want to do?\n1:00 In Toy Story, what is the name of the cowboy?\n1:20 Which film series features a spaceship called the Millennium Falcon?\n1:39 In which film does a rat named Remy become a chef in Paris?\n1:58 Which 1997 film won 11 Oscars, a record shared with Ben-Hur?",
+      "video_id": "2yZ-d4Wltyg",
+      "url": "https://youtube.com/shorts/2yZ-d4Wltyg",
+      "title": "No multiple choice. No hints. Can you get them all? 🧠 General Knowledge Quiz #16",
+      "description": "Sneak peek 👀 No multiple choice, no hints, five seconds each. Can you get all 7?\n\nThis is just a taste of this week's General Knowledge Quiz #16, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/MPS20PeP8f8\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #generalknowledge #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-26T04:21:59Z",
+      "questions": [
+        6,
+        12,
+        18,
+        24,
+        29,
+        35,
+        40
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/MPS20PeP8f8.",
+        "Playlist: check it is in 'General Knowledge Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-11-30T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Mon 30 Nov 2026 18:00 EST",
+        "Sydney": "Tue 01 Dec 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-16-short-2.jpg",
+        "playlist": {
+          "id": "PL2ijqZth2mEDrfRkon0zcRDgGIV_ONmzx",
+          "title": "General Knowledge Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-22T00:00:00Z",
+      "problems": "0:00 Which film series features a spaceship called the Millennium Falcon?\n0:19 What is the fastest land animal?\n0:38 What do bees collect from flowers to make honey?\n0:56 Which metal is a liquid at room temperature?\n1:13 What is the imaginary line around the middle of the Earth?\n1:30 How many teeth does an adult usually have?\n1:46 In which film does a rat named Remy become a chef in Paris?",
+      "video_id": "VhK3ocA0vuM",
+      "url": "https://youtube.com/shorts/VhK3ocA0vuM",
+      "title": "Think you're smart? Prove it in 7 questions ⏱️ General Knowledge Quiz #16",
+      "description": "Sneak peek 👀 Think you're smart? 7 questions, five seconds each. Prove it.\n\nThis is just a taste of this week's General Knowledge Quiz #16, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/MPS20PeP8f8\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #generalknowledge #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-26T04:22:06Z",
+      "questions": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/MPS20PeP8f8.",
+        "Playlist: check it is in 'General Knowledge Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-12-01T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Tue 01 Dec 2026 18:00 EST",
+        "Sydney": "Wed 02 Dec 2026 10:00 AEDT"
+      }
+    }
+  }
+}

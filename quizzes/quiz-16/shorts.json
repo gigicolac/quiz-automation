@@ -1,0 +1,17 @@
+{
+  "_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+  "full_quiz_video_id": "MPS20PeP8f8",
+  "series_tag": "generalknowledge",
+  "shorts": {
+    "1": {
+      "title": "No multiple choice. No hints. Can you get them all? 🧠 General Knowledge Quiz #16",
+      "opening": "Sneak peek 👀 No multiple choice, no hints, five seconds each. Can you get all 7?",
+      "pattern": "config default"
+    },
+    "2": {
+      "title": "Think you're smart? Prove it in 7 questions ⏱️ General Knowledge Quiz #16",
+      "opening": "Sneak peek 👀 Think you're smart? 7 questions, five seconds each. Prove it.",
+      "pattern": "config default"
+    }
+  }
+}
