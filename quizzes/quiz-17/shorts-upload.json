@@ -1,0 +1,99 @@
+{
+  "quiz": "quiz-17",
+  "shorts": {
+    "1": {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-17-short-1.jpg",
+        "playlist": {
+          "id": "PLAbKRq-uoNSs",
+          "title": "Pokémon Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-20T00:00:00Z",
+      "problems": "0:00 What is the name of Ash's famous yellow Pokémon?\n0:18 Which ball do trainers throw to catch Pokémon?\n0:35 Which Pokémon is number 1 in the Pokédex?\n0:53 What type of Pokémon is Charmander?\n1:10 What does Pikachu evolve into?\n1:26 Which pink Pokémon sings everyone to sleep?\n1:44 What is the name of Team Rocket's talking cat Pokémon?",
+      "video_id": "HoxRvA6QFT4",
+      "url": "https://youtube.com/shorts/HoxRvA6QFT4",
+      "title": "Think you're smart? Prove it in 7 questions ⏱️ Pokémon Quiz #17",
+      "description": "Sneak peek 👀 Think you're smart? 7 questions, five seconds each. Prove it.\n\nThis is just a taste of this week's Pokémon Quiz #17, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/yyNI3nmC4DQ\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #pokémon #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-27T04:30:50Z",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/yyNI3nmC4DQ.",
+        "Playlist: check it is in 'Pokémon Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-12-02T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Wed 02 Dec 2026 18:00 EST",
+        "Sydney": "Thu 03 Dec 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-17-short-2.jpg",
+        "playlist": {
+          "id": "PLAbKRq-uoNSs",
+          "title": "Pokémon Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-22T00:00:00Z",
+      "problems": "0:00 Which Water-type starter is a small blue turtle?\n0:17 What colour is a shiny Charizard?\n0:33 Which sleepy giant Pokémon blocks the road in Pokémon Red and Blue?\n0:51 How many Pokémon were there in the original games?\n1:13 Which Pokémon evolves into Gyarados?\n1:31 What is the name of Ash's hometown?\n1:48 Which professor gives Ash his first Pokémon?",
+      "video_id": "qVUJXvRZ5Mk",
+      "url": "https://youtube.com/shorts/qVUJXvRZ5Mk",
+      "title": "7 questions, 5 seconds each. Can you keep up? ⏱️ Pokémon Quiz #17",
+      "description": "Sneak peek 👀 7 questions, five seconds each, no warm-up. Can you keep up?\n\nThis is just a taste of this week's Pokémon Quiz #17, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/yyNI3nmC4DQ\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #pokémon #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-27T04:30:57Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/yyNI3nmC4DQ.",
+        "Playlist: check it is in 'Pokémon Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-12-03T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Thu 03 Dec 2026 18:00 EST",
+        "Sydney": "Fri 04 Dec 2026 10:00 AEDT"
+      }
+    }
+  }
+}
