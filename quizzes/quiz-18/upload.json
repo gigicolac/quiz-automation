@@ -1,0 +1,52 @@
+{
+  "quiz": "quiz-18",
+  "channel": {
+    "id": "UCbP3HMh1h7XAWUruf_M8n7g",
+    "title": "One More Quiz!"
+  },
+  "status": "scheduled",
+  "started_at": "2026-11-27T03:29:58.281830+00:00",
+  "title": "How Well Do You REALLY Know Christmas? 🎄 50 Christmas Trivia Questions | Christmas Quiz #18",
+  "intended_publish_at": "2026-11-29T18:00:00Z",
+  "publish_at_local": {
+    "US Eastern": "Sun 29 Nov 2026 13:00 EST",
+    "Sydney": "Mon 30 Nov 2026 05:00 AEDT"
+  },
+  "release_tag": "quiz-18-preview-40",
+  "playlist": "Christmas Quizzes",
+  "problems": "0:18 What colour is Rudolph's famous nose?\n0:37 Which green character tries to steal Christmas?\n0:55 Which country started the Christmas tree tradition?\n1:14 Counting Rudolph, how many reindeer pull Santa's sleigh?\n1:34 In Home Alone, where is Kevin's family flying to?\n1:51 What do people traditionally kiss under at Christmas?\n2:08 In The Twelve Days of Christmas, what is given on day one?\n2:27 In the film Elf, which city does Buddy travel to?\n2:44 Which snowman comes to life in a famous Christmas song?\n3:02 Which biscuit runs away shouting 'You can't catch me'?\n3:20 In The Polar Express, where does the train take the boy?\n3:37 Which country does the poinsettia flower come from?\n3:56 In A Christmas Carol, what is Scrooge's first name?\n4:14 On what date is Boxing Day?\n4:31 What is the name of the Grinch's dog?\n4:48 What do children in France call Santa?\n5:05 Which of Santa's reindeer is named after the Roman god of love?\n5:22 Where did the real Saint Nicholas live?\n5:40 What is the best-selling single of all time?\n6:00 Which Muppet plays Bob Cratchit in The Muppet Christmas Carol?\n6:17 Apart from a toy and a joke, what's inside a Christmas cracker?\n6:36 What US military command tracks Santa on Christmas Eve?\n6:56 Which spiky-leaved plant with red berries decorates Christmas cards?\n7:12 In How the Grinch Stole Christmas, what is the town called?\n7:30 Which country gives London's Trafalgar Square tree every year?\n7:48 What do children leave out for Santa's reindeer?\n8:06 Which Christmas song was the first ever played in space?\n8:27 Who is the Pumpkin King in The Nightmare Before Christmas?\n8:44 What is the name of Santa's wife?\n9:01 In which country is Lapland's Santa Claus Village?\n9:19 What three gifts did the wise men bring?\n9:37 Which film has the line 'Every time a bell rings, an angel gets his wings'?\n9:54 When you eat a Yule log, what is it made of?\n10:12 Whose 1930s adverts helped make Santa's red suit famous?\n10:32 In which language is the song 'Feliz Navidad'?\n10:49 In which year was the first Christmas card sent?\n11:06 Which reindeer's name means 'thunder'?\n11:23 What was the original title of 'Twas the Night Before Christmas'?\n11:42 How many gifts are given in total in The Twelve Days of Christmas?\n11:59 In which country do children leave out shoes for Sinterklaas?\n12:16 What is the name of the Christmas witch who brings gifts in Italy?\n12:35 In which country is KFC a Christmas tradition?\n12:54 What colour are mistletoe berries?\n13:11 Which Christmas carol was first sung in Austria in 1818?\n13:29 Which country builds a giant straw goat each Christmas?\n13:46 Which ballet is set on Christmas Eve?\n14:04 In the song, what brings Frosty the Snowman to life?\n14:22 Which Latin word meaning 'birth' gives us 'Noël'?\n14:40 In which year did 'All I Want for Christmas Is You' first come out?\n15:00 On Christmas Day 1914, what did many WWI soldiers do?",
+  "steps": {
+    "captions": "uploaded",
+    "thumbnail": "thumbnail-a.jpg",
+    "playlist": {
+      "id": "PLT--e5F26W4E",
+      "title": "Christmas Quizzes",
+      "created": true
+    }
+  },
+  "video_id": "okPpHAgerx8",
+  "url": "https://youtu.be/okPpHAgerx8",
+  "upload_completed_at": "2026-11-27T03:30:04Z",
+  "studio_tasks": [
+    "End screen: Import the existing end screen from the previous quiz, then set the two elements. Left = Video: Most recent upload; right = Playlist: Christmas Quizzes.",
+    "Test & Compare (A/B), Title and thumbnail, always running on every quiz (Giulia, 16 Nov; never title-only): How Well Do You REALLY Know Christmas? 🎄 50 Christmas Trivia Questions | Christmas Quiz #18 + thumbnail A | Think You REALLY Know Christmas? 🤔 Prove It in 50 Questions | Quiz #18 + thumbnail B. Thumbnails A and B are thumbnail-a.jpg and thumbnail-b.jpg on the GitHub release named in upload.json release_tag.",
+    "Video location: Melbourne, VIC.",
+    "Category Education: Type = Activity; Problems = the 'problems' list in upload.json; Level = the option closest to 'medium'.",
+    "Caption certification: This content has never aired on television in the U.S.",
+    "Shorts remixing: allowed.",
+    "Pin the score comment once it is posted (every release)."
+  ],
+  "processing": "succeeded",
+  "publish_at": "2026-11-29T18:00:00Z",
+  "youtube_status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-29T18:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "finished_at": "2026-11-27T03:31:12Z"
+}
