@@ -1,0 +1,99 @@
+{
+  "quiz": "quiz-18",
+  "shorts": {
+    "1": {
+      "short": 1,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-18-short-1.jpg",
+        "playlist": {
+          "id": "PLT--e5F26W4E",
+          "title": "Christmas Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-25T00:00:00Z",
+      "problems": "0:00 In Home Alone, where is Kevin's family flying to?\n0:18 In the film Elf, which city does Buddy travel to?\n0:37 In The Polar Express, where does the train take the boy?\n0:54 What is the name of the Grinch's dog?\n1:10 Which Muppet plays Bob Cratchit in The Muppet Christmas Carol?\n1:29 In How the Grinch Stole Christmas, what is the town called?\n1:47 Who is the Pumpkin King in The Nightmare Before Christmas?",
+      "video_id": "cnOoOxPM9no",
+      "url": "https://youtube.com/shorts/cnOoOxPM9no",
+      "title": "7 questions, 5 seconds each. Can you keep up? ⏱️ Christmas Quiz #18",
+      "description": "Sneak peek 👀 7 questions, five seconds each, no warm-up. Can you keep up?\n\nThis is just a taste of this week's Christmas Quiz #18, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/okPpHAgerx8\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #christmas #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-28T04:11:36Z",
+      "questions": [
+        5,
+        8,
+        11,
+        15,
+        20,
+        24,
+        28
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/okPpHAgerx8.",
+        "Playlist: check it is in 'Christmas Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-12-04T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Fri 04 Dec 2026 18:00 EST",
+        "Sydney": "Sat 05 Dec 2026 10:00 AEDT"
+      }
+    },
+    "2": {
+      "short": 2,
+      "status": "scheduled",
+      "steps": {
+        "paid_promotion": "no",
+        "captions": "uploaded",
+        "thumbnail": "quiz-18-short-2.jpg",
+        "playlist": {
+          "id": "PLT--e5F26W4E",
+          "title": "Christmas Quizzes",
+          "created": false
+        }
+      },
+      "recording_date": "2026-11-22T00:00:00Z",
+      "problems": "0:00 In the film Elf, which city does Buddy travel to?\n0:18 Which snowman comes to life in a famous Christmas song?\n0:36 Which biscuit runs away shouting 'You can't catch me'?\n0:55 In The Polar Express, where does the train take the boy?\n1:12 Which country does the poinsettia flower come from?\n1:31 In A Christmas Carol, what is Scrooge's first name?\n1:51 On what date is Boxing Day?",
+      "video_id": "FlROJOidf1k",
+      "url": "https://youtube.com/shorts/FlROJOidf1k",
+      "title": "Smart enough for a perfect 7/7? 👀 Christmas Quiz #18",
+      "description": "Sneak peek 👀 Smart enough for a perfect 7/7?\n\nThis is just a taste of this week's Christmas Quiz #18, with 50 questions everyone should know. No multiple choice, just pure memory. 🧠\n\n👉 Watch the full quiz here: https://youtu.be/okPpHAgerx8\n\nDrop your score in the comments and challenge a friend to beat it! New quizzes every Thursday, Saturday and Sunday, so subscribe and you won't miss one.\n\n#shorts #quiz #christmas #trivia #quiztime #brainteaser #justonemorequiz",
+      "upload_completed_at": "2026-11-28T04:11:41Z",
+      "questions": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "countdown_seconds": 5.0,
+      "studio_tasks": [
+        "Related video: link to the full quiz https://youtu.be/okPpHAgerx8.",
+        "Playlist: check it is in 'Christmas Quizzes'.",
+        "Paid promotion: 'No, my video doesn't include paid promotion'.",
+        "Video location: Melbourne, VIC.",
+        "Recording date: check it is set (see recording_date in this record).",
+        "Category Education: Type = Activity; Problems = the 'problems' in this record; Level = Intermediate.",
+        "Altered or synthetic content: No (it's Giulia's own voice).",
+        "Pin the score comment once it is posted."
+      ],
+      "processing": "succeeded",
+      "publish_at": "2026-12-05T23:00:00Z",
+      "publish_at_local": {
+        "US Eastern": "Sat 05 Dec 2026 18:00 EST",
+        "Sydney": "Sun 06 Dec 2026 10:00 AEDT"
+      }
+    }
+  }
+}

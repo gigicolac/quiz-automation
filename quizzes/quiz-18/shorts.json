@@ -1,0 +1,17 @@
+{
+  "_comment": "Made from config/shorts.json title_hooks/opening_hooks (no hand-written titles for this quiz).",
+  "full_quiz_video_id": "okPpHAgerx8",
+  "series_tag": "christmas",
+  "shorts": {
+    "1": {
+      "title": "7 questions, 5 seconds each. Can you keep up? ⏱️ Christmas Quiz #18",
+      "opening": "Sneak peek 👀 7 questions, five seconds each, no warm-up. Can you keep up?",
+      "pattern": "config default"
+    },
+    "2": {
+      "title": "Smart enough for a perfect 7/7? 👀 Christmas Quiz #18",
+      "opening": "Sneak peek 👀 Smart enough for a perfect 7/7?",
+      "pattern": "config default"
+    }
+  }
+}
